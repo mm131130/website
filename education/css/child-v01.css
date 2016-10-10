@@ -1,0 +1,185 @@
+body{
+	background-color:#faf5e9;
+	}
+
+.box-content{
+	overflow:hidden;
+	max-width:1000px;
+	width:100%;
+	
+	margin:0 auto;
+	
+	}
+	
+.box-page-info{
+	display:block;
+	float:left;
+
+	height:800px;
+	width:780px;
+	padding:20px;
+	
+	margin:20px 0 0 20px;
+	border:2px #FC0 solid;		
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;	
+	}	
+	
+	
+footer > div{
+	overflow:hidden;
+	font-size:12px;
+	line-height:20px;
+	
+	letter-spacing:0.1em;
+	
+	padding:20px;
+	margin:20px auto;
+	max-width:1000px;
+	width:100%;	
+	
+border:2px #FC0 solid;		
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;	
+	}
+footer > div > div{
+	float:left;
+	width:33.333333%;
+	text-align:center;
+}
+footer p{
+	display:block;
+	padding:20px 0;
+}
+
+
+footer p span{
+	display:block;
+	font-size:14px;
+	padding-bottom:10px;
+	
+}
+span.top-one{
+	font-size: 18px;
+	
+	}
+	
+.browser-version{
+	display:block;
+	font-size:12px;
+	line-height:50px;
+	width:100%;
+	text-align:center;
+	
+	border:none;
+	}	
+	
+	
+	
+	
+	
+	
+	
+.banner-top{
+	font-size:36px;
+	line-height:200px;
+	text-align:center;
+	
+border:2px #FC0 solid;		
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+margin:20px 0;
+	
+	}	
+.top-menu{
+	overflow:hidden;
+	width:100%;
+border:2px #FC0 solid;	
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+
+	}
+	
+.top-menu li{
+	float:left;
+	
+
+	font-size:18px;
+	line-height:24px;
+letter-spacing:0.15em;	
+
+	border-right:1px #FC0 solid;
+	
+	text-align:center;
+	width:16.666666%;	
+
+	}	
+.top-menu li:last-child{
+	border:none;
+	}	
+	
+	
+a{
+	display:block;
+	color:#000;
+	padding:13px 20px;
+	letter-spacing:0.15em;	
+}
+li{
+	list-style:none;	
+	
+	}	
+	
+	
+.top-menu li a:hover{
+	background-color:#FC0;
+	color:#FFF;
+}
+	
+	
+	
+	
+
+
+.left-menu{
+	display:block;
+	float:left;
+	
+	width:200px;
+	
+	margin-top:20px;
+	border:2px #FC0 solid;
+	
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+	}
+.left-menu li{
+	font-size:14px;
+	line-height:20px;
+	letter-spacing:0.15em;
+
+	border-bottom:1px #FC0 solid;
+
+	}
+.left-menu li:first-child{
+	font-size:18px;
+	color:#FFF;
+
+	padding:13px 20px;	
+	
+	background-color:#FC0;	
+	border:none;
+	}		
+.left-menu li:last-child{
+	border:none;
+	}	
+.left-menu li a:hover{
+	background-color:#FC0;
+	color:#FFF;
+}
+	
