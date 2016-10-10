@@ -147,6 +147,8 @@ li{
 
 .left-menu{
 	display:block;
+	
+	overflow:hidden;
 	float:left;
 	
 	width:200px;
