@@ -26,7 +26,7 @@ $(function(){
 // btn mywish
 
 
-$('.box_this_page , .iphon5_size_out , .mobile_size , .just_one_page').each(function() {
+$('.box_this_page , .iphon5_size_out , .mobile_size , .page_home').each(function() {
 	var ts = $(this),
 	dot_btn_html = '',
 	now_pics_num = 0,
