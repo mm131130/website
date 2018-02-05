@@ -67,6 +67,19 @@ footer.v01
 	background-color:#FFF;
 	
 	padding-top:20px;
+	
+	-webkit-box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 6px 9px rgba(43,42,40,0.2),
+	0px 18px 21px rgba(43,42,40,0.1);
+	-moz-box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 6px 9px rgba(43,42,40,0.2),
+	0px 18px 21px rgba(43,42,40,0.1);
+	box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 6px 9px rgba(43,42,40,0.2),
+	0px 18px 21px rgba(43,42,40,0.1);
 }	
 .bag_box > div:not(.radius_box):not(.bag_info){
 	position:relative;	
