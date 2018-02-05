@@ -1,0 +1,119 @@
+/* 2017 mountain - chiou wen shan */
+/* 20171106 */
+
+/* head foot box */
+
+/* 
+header.v01
+	top_blue
+		event_info_A
+		btn_box_A
+
+	top_white
+		three_line
+		logo
+		nav_menu
+		event_info_B
+
+footer.v01
+	btn_box_B
+	btn_box_C
+*/
+
+
+
+
+.h_f{
+	overflow:hidden;
+	position:relative;
+	/*
+	-webkit-transition: -webkit-filter .27s ease-in;
+	-moz-transition: filter .27s ease-in;
+	-o-transition: filter .27s ease-in;
+	transition: -webkit-filter .27s ease-in;	
+	*/
+	}
+
+/* jq */
+.add_style{
+	background-color:#FFF;
+	}
+.add_bg_color{
+	background-color:#a97962 !important;
+	}
+
+
+.slid_box{
+	height:100vh;
+	width:100%;
+	background-color:rgba(0,0,0,0.75);
+	background-image:url(../img/t_banner_001.jpg);
+	background-size:cover;
+	background-position:center center;	
+	}
+	
+	
+	
+	
+	
+/* shappin bag list */	
+.bag_box{
+	overflow:hidden;
+	display:none;
+	position:absolute;
+	top:22px;
+	right:27px;
+	z-index:610;
+	background-color:#FFF;
+	
+	padding-top:20px;
+}	
+.bag_box > div:not(.radius_box):not(.bag_info){
+	position:relative;	
+	padding:12px 9px;
+	padding-left:80px;	
+	border-bottom:1px #e6e6e6 solid;	
+}
+.bag_info{
+	font-size:16px;
+	line-height:24px;
+	font-family:roboto_light;
+	text-align:center;
+	padding:9px;
+}
+.bag_info > *{
+	line-height:24px;
+}
+.bag_box a{
+	display:block;
+}
+.bag_box p{
+	padding:0;
+	font-size:12px;
+	line-height:16px;
+}
+.bag_box .product_img{
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translateY(-50%);
+	width:80px;
+	padding:0 4px;
+}
+.bag_box .product_name{
+	padding-bottom:6px;
+}
+.bag_box .p_price{
+	float:right;
+}
+.total_price{
+	line-height:18px;
+	padding:18px 9px!important;
+	text-align:right;
+}
+.total_price span{
+	font-size:16px;
+}
+.bag_box .btn_B_v02{
+	margin:9px;
+	}

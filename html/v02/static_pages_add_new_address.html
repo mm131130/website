@@ -1,0 +1,187 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="MOUNTAIN">
+<meta name="keywords" content="MOUNTAIN,MM,Designer,UI,UX">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../../img/mm_logo_02.png">
+<link media="all" rel="stylesheet" href="../../css/all.css"/>
+<link media="all" rel="stylesheet" href="../../css/btn.css"/>
+<link media="all" rel="stylesheet" href="../../css/fonts.css"/>
+<link media="all" rel="stylesheet" href="../../css/size.css"/>
+<link media="all" rel="stylesheet" href="../../css/ifchic_v01.css"/>
+
+<style>
+
+
+</style>
+<script src="../../jq/jquery-1.10.2.min.js"></script>
+<script>
+$(function(){
+$('.static_pages_menu').load('static_pages_menu.html');
+
+
+
+$('.ddm').each(function(){
+	var ts = $(this);
+	
+	ts.find('.ddm_btn').on('click',function(){
+	$(this).toggleClass('open');
+	if($(this).hasClass('open')){
+		ts.find('.ddm_menu').show();
+		$(this).find('.btn_img').addClass('btn_up').removeClass('btn_down');
+		$(this).addClass('border_color');
+	}else{
+		ts.find('.ddm_menu').hide();
+		$(this).find('.btn_img').removeClass('btn_up').addClass('btn_down');
+		$(this).removeClass('border_color');		
+	}
+	return false;	
+	});
+	
+	ts.find('.ddm_menu a').on('click',function(){
+		
+		ts.find('.ddm_btn').removeClass('open border_color');
+		ts.find('.btn_info').addClass('font_color');
+		var th_text = $(this).html();
+		ts.find('.ddm_menu').hide();
+		ts.find('.btn_info').html(th_text);
+		ts.find('.btn_img').removeClass('btn_up').addClass('btn_down');
+
+	return false;			
+	});
+});<!-- ddm end -->
+
+
+
+});
+</script>
+
+</head>
+<body>
+
+<div class="mw_1200 info_box">
+
+<div class="wm_25 static_pages_menu v01"></div>
+
+<div class="wm_75 form_box">
+
+<h1 class="page_name">ADD NEW ADDRESS</h1>
+<!--
+<div class="static-Pages-info">
+<p class="red">
+    <b>Assign Title</b> is required.<br>
+    <b>Address Line 1</b> is required.<br>
+    <b>City</b> is required.<br>
+    A phone number is required.<br>
+    <b>Zip/ Postal Code</b> is required.<br>
+    This country requires a state selection.
+    </p>
+</div>
+-->
+
+	<div class="wm_33">
+        <div class="input_name">Assign Address Title</div>
+        <input class="w_100" type="text">
+	</div>   
+
+
+	<div class="wm_33">
+        <div class="input_name">First Name</div>
+        <input class="w_100" type="text">
+	</div>  
+	<div class="wm_33">
+        <div class="input_name">Last Name</div>
+        <input class="w_100" type="text">
+	</div>      
+	<div class="wm_100">
+        <div class="input_name">Address Line 1</div>
+        <input class="w_100" type="text">
+	</div>      
+	<div class="wm_100">
+        <div class="input_name">Address Line 2</div>
+        <input class="w_100" type="text">
+	</div>      
+ 	<div class="wm_33">
+        <div class="input_name">City</div>
+        <input class="w_100" type="text">
+	</div>      
+       
+
+<div class="wm_33">
+<div class="input_name">State</div>
+<div class="ddm">
+<a class="ddm_btn" href="#"><span class="btn_img btn_down">&nbsp;</span><span class="btn_info">--</span></a>
+<div class="ddm_menu">
+    <a href="#">Alabama</a>
+    <a href="#">Alaska</a>
+    <a href="#">Arizona</a>
+    <a href="#">Arkansas</a>
+    <a href="#">California</a>
+    <a href="#">Colorado</a>
+    <a href="#">Connecticut</a>
+    <a href="#">Delaware</a>
+</div>
+</div>
+</div>
+        
+
+
+<div class="wm_33">
+ <div class="input_name">Country</div>
+    
+<div class="ddm">
+<a class="ddm_btn" href="#"><span class="btn_img btn_down">&nbsp;</span><span class="btn_info">United States</span></a>
+<div class="ddm_menu">
+        <a href="#">Trinidad and Tobago</a>
+        <a href="#">Tunisia</a>
+        <a href="#">Turkey</a>
+        <a href="#">Turkmenistan</a>
+        <a href="#">Turks and Caicos Islands</a>
+        
+        <a href="#">Tuvalu</a>
+        <a href="#">Uganda</a>
+        <a href="#">Ukraine</a>
+        <a href="#">United Arab Emirates</a>
+        <a href="#">United Kingdom</a>
+        
+        <a href="#">United States</a>
+        <a href="#">Uruguay</a>
+        <a href="#">Uzbekistan</a>
+        <a href="#">Vanuatu</a>
+        <a href="#">Vatican City State</a>
+        
+        <a href="#">Venezuela</a>
+        <a href="#">Vietnam</a>
+        <a href="#">Virgin Islands (British)</a>
+        <a href="#">Virgin Islands (U.S.)</a>
+        <a href="#">Wallis and Futuna</a>
+</div>        
+</div>
+</div>
+	<div class="wm_40">
+        <div class="input_name">Zip Code</div>
+        <input class="w_100" type="text">
+	</div>   
+
+	<div class="wm_60">
+        <div class="input_name">Contact Number</div>
+        <input class="w_100" type="text">
+	</div>   
+
+
+<a class="mw_320 btn_W shadow_v01" href="#">back</a>
+<a class="mw_320 btn_W shadow_v01" href="#">save</a>
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>

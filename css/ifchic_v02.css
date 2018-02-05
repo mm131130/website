@@ -1,0 +1,96 @@
+h1{
+	font-size:72px;
+	line-height:72px;
+	font-family:broadcast_matter;
+	color:#0f1329;
+	word-spacing:0;
+	letter-spacing:0;
+	}	
+h2{
+	font-size:18px;
+	line-height:18px;
+	font-family:roboto_Regular;
+	color:#0f1329;
+	padding:9px 0;
+	}
+h2 div{
+	font-size:16px;
+	padding:6px 0;
+	}	
+h2 .tag_word{
+	display:inline-block;
+	font-size:36px;
+	line-height:36px;
+	font-family:northwell_alt;
+	color:#a70a04;
+	}	
+h2 span{
+	display:block;
+	font-size:14px;
+	font-family:roboto_light;
+	padding:9px 0;
+	}
+h3{
+	font-size:16px;
+	line-height:24px;
+	font-family:roboto_light;
+	color:#0f1329;
+	text-transform:uppercase;
+	padding:9px 0;
+	}	
+h3 div{
+	font-size:14px;
+	line-height:18px;
+	text-transform: none;
+	padding:6px 0;	
+	}
+h3 .tag_word{
+	font-size:36px;
+	line-height:36px;
+	font-family:northwell_alt;
+	color:#a70a04;
+	}	
+	
+	
+	
+
+	
+p{
+	font-size:14px;
+	line-height:18px;
+	font-family:roboto_light;
+	color:#595a5e;	
+	padding:9px 0;
+	
+}
+p span{
+	font-family:roboto_Regular;
+	color:#0f1329;
+}
+p .tag_word{
+	display:block;
+	padding:6px 0;
+}		
+
+
+
+strong{
+	font-family:roboto_Regular;
+	color:#0f1329;
+	font-weight:normal;
+}		
+
+
+
+
+
+.handw_riting{
+	position:relative;
+	font-size:90px;
+	line-height:81px;
+	font-family:northwell_alt;
+	color:#0f1329;
+	word-spacing: -0.18em;	
+	padding:36px 0 0 0;
+	}
+		
