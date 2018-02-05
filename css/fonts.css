@@ -99,12 +99,12 @@ url("../font/noto_sans_TC_R/noto_sans_TC_regular.otf") format("opentype");
 
 @font-face {
 font-family:"roboto_Medium";
-src: url("../font/roboto/roboto_Medium.eot");
-src: url("../font/roboto/roboto_Medium.eot?#iefix") format("embedded-opentype"),
-url("../font/roboto/roboto_Medium.svg") format("svg"),
-url("../font/roboto/roboto_Medium.woff") format("woff"),
-url("../font/roboto/roboto_Medium.ttf") format("truetype"),
-url("../font/roboto/roboto_Medium.otf") format("opentype");
+src: url("../font/roboto/roboto_medium.eot");
+src: url("../font/roboto/roboto_medium.eot?#iefix") format("embedded-opentype"),
+url("../font/roboto/roboto_medium.svg") format("svg"),
+url("../font/roboto/roboto_medium.woff") format("woff"),
+url("../font/roboto/roboto_medium.ttf") format("truetype"),
+url("../font/roboto/roboto_medium.otf") format("opentype");
 }
 
 @font-face {
@@ -135,7 +135,7 @@ url("../font/roboto/roboto_thin.svg") format("svg"),
 url("../font/roboto/roboto_thin.woff") format("woff"),
 url("../font/roboto/roboto_thin.ttf") format("truetype"),
 url("../font/roboto/roboto_thin.otf") format("opentype");
-}
+}                  
 
 
 
