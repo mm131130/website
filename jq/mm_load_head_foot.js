@@ -4,28 +4,26 @@ $(function() {
 $('body').prepend('<header class="mm_v2018"></header>').append('<footer class="mm_v2018"></footer>');
 
 $('header.mm_v2018').load("mm_head_02.html", function() {
-var this_header = $(this);
+var this_header = $('header.mm_v2018');
 	
 	//$(window).on("load resize scroll" , function() {
 		
-	this_header.find('.mm_nav a').on('click' , function(){
-	$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
-	return false;
-	});		
+
 		
-$(window).resize(function() {
+		
+$(window).on('load resize', function() {
 	if ($(window).width() >= 768) {
 		this_header.find('.mm_nav > li').css('display', '');
 		this_header.find('.mm_nav > li > ul').css('display', '');
 	
 	}else if ($(window).width() <= 767) {
-			
+		//	menu_open_close();
 }
 });//window
 
 
 if ($(window).width() <= 767) {
-		
+
 	this_header.find('.mobile_btn').on('click' , function(){		
 			if($(this).hasClass('open')){
 				$(this).removeClass('open').siblings().slideUp();
@@ -37,7 +35,7 @@ if ($(window).width() <= 767) {
 		return false;
 		});
 		
-	this_header.find('li:not(".mobile_btn") a').on('click' , function(){
+	this_header.find('ul.mm_nav > li > a').on('click' , function(){
 			
 		if($(this).hasClass('open')){
 			$(this).removeClass('open').next().slideUp();
@@ -45,12 +43,12 @@ if ($(window).width() <= 767) {
 		}else{
 			this_header.find('.mm_nav ul').slideUp();
 			this_header.find('.mm_nav a').removeClass('open');
-			$(this).addClass('open').next().slideDown();			
+			$(this).addClass('open').next('ul').slideDown();
 				
-			}
-		$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
+		}
+		//$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
 			
-		return false;
+
 	});
 
 
@@ -58,12 +56,17 @@ if ($(window).width() <= 767) {
 		this_header.find('.mm_nav > li:not(".mobile_btn") , .mm_nav ul').slideUp();
 		this_header.find('*').removeClass('open');
 		
-	return false;
-	});
 
+	});
 }
 
+	this_header.find('.mm_nav a').on('click' , function(){
+		$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
+	return false;
+	});	
 
+
+	
 	//setTimeout(function(){ scroll(0, 0); }, 1);
 	if (window.location.hash) scroll(0, 0);	
 	if (window.location.hash) {
