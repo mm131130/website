@@ -19,7 +19,10 @@ header.mm_v2018{
 	
 	margin:0 auto;
 	
+		border-bottom:1px #e1e1e1 solid;
 	}
+	
+	
 footer.mm_v2018{
 	display:block;
 	clear:both;
@@ -145,6 +148,7 @@ footer.mm_v2018 .img_w{
 	
 	padding:18px;
 	background-color:#FFF;
+	/**/
 	border-top:1px #e1e1e1 solid;
 	border-bottom:1px #333333 solid;
 
@@ -345,9 +349,11 @@ footer.mm_v2018 .img_w{
 	
 .mm_logo_C{
 	position: relative;
-	border-top:1px #e1e1e1 solid;
+	
+	/*
+	border-top:1px #e1e1e1 solid;*/
 	}
-.mm_logo_C div{
+.mm_logo_C a{
 	position:absolute;
 	top:-9px;
 
@@ -366,9 +372,10 @@ footer.mm_v2018 .img_w{
 	background-image:url(../img_mm/mm_logo_mountain.svg);
 	background-position:center 2px;
 	background-size:126px 14px;
-/*	
+/*	border-bottom:1px #e1e1e1 solid;
 	border-bottom: 1px #e1e1e1 solid;
 */
+	
 	}	
 .mm_logo_C img{
 	width:auto;
@@ -569,10 +576,7 @@ footer.mm_v2018 .img_w{
 }	
 	*/
 	
-.logo_slide_show .btn_more{
-	display:none !important;
-	}	
-	
+
 	
 	
 
