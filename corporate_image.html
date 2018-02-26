@@ -246,12 +246,9 @@ transform: rotate(360deg);
 $(function() {
 
 //var max_page = 18;
-for ( var box=0 ; box <= 18 ; box++ ){
-	$('.jq_hw_num_c').append('<div> </div>');
+for ( var box=0 ; box <= 22 ; box++ ){
+	$('.jq_hw_num_c').append('<div></div>');
 }	
-
-
-
 $('.jq_hw_num_c > div').each(function(i) {
 
 var how_many_day = i+1;
@@ -276,10 +273,15 @@ var wall_paper_info = [
 
 '<span>16</span> Ooooop!',
 '<span>17</span> Spring',
-'<span>18</span> Happy New Year',
-'<span>19</span> Happy New Year'
-];
+'<span>18</span> New Year',
+'<span>19</span> New Year',
+'<span>20</span> Spring',
+'<span>21</span> XMAS',
+'<span>22</span> Valentine&prime;s Day',
 
+'<span>23</span> New Year'
+
+];
 
 $(this).append('<div class="copywriter"><p>Wallpaper</p><h2>'+ wall_paper_info[i] +'</h2></div>');
 $(this).prepend('<div class="parking_img_box"><img src="https://mm131130.github.io/website/img_parking/day_' + how_many_day + '.jpg"></div>');
@@ -317,14 +319,53 @@ $('.jq_hw_num_a > div').each(function(i) {
 <div class="brand_design">
 <div class="">
 <div class="img_box flex_box">
+<img src="img_mm/h_tai_chi.svg" height="120px">
+</div>
+
+<div class="item_title">
+online education
+<p class="job_type">Brand Design</p>
+<p>Our helps clients transform their lives and professionals transform their businesses through expert coaching, ongoing support, and guided mentorship.</p>
+
+</div>
+<a class="btn_more" href="style_guide_tai_chi.html">more</a>
+
+
+</div><div>
+<div class="img_box flex_box">
+<img src="img_mm/parking_v01.svg" height="72px">
+</div>
+
+<div class="item_title">
+parking APP
+<p class="job_type">Brand Design</p>
+
+<p>Smart parking APP. Recommend best choice parking lot.
+Fully functional indoor and outdoor parking navigation system.</p>
+</div>
+
+</div><div>
+<div class="img_box flex_box">
+<img src="img_mm/tli_v01.svg" height="72px">
+</div>
+
+<div class="item_title">
+online education
+<p class="job_type">Brand Design</p>
+<p>Chinese language teaching</p>
+</div>
+
+
+</div><div class="" style="display:none;">
+<div class="img_box flex_box">
 <img src="img_mm/ifchic_v02.svg" height="27px">
 </div>
 <div class="item_title">
 e-commerce
-<span>Brand Design</span>
-</div>
-<span>Shop designer fashion online at IFCHIC. Designer clothes, designer shoes, designer bags and designer accessories from top designer brands.</span>
+<p class="job_type">Brand Design</p>
 
+<p>Shop designer fashion online at IFCHIC. Designer clothes, designer shoes, designer bags and designer accessories from top designer brands.</p>
+</div>
 
 
 </div><div>
@@ -333,34 +374,14 @@ e-commerce
 </div>
 <div class="item_title">
 e-commerce
-<span>Brand Design</span>
+<p class="job_type">Brand Design</p>
+
+<p>Shop contemporary designer brands at ifchic. A curated selection of clothing, shoes and accessories.</p>
 </div>
-<span>Shop contemporary designer brands at ifchic. A curated selection of clothing, shoes and accessories.</span>
 <a class="btn_more" href="style_guide_if_01.html">more</a>
 
-</div><div>
-<div class="img_box flex_box">
-<img src="img_mm/parking_v01.svg" height="96px">
-</div>
-
-<div class="item_title">
-parking APP
-<span>Brand Design</span>
-</div>
-<span>Smart parking APP. Recommend best choice parking lot.
-Fully functional indoor and outdoor parking navigation system.</span>
 
 
-</div><div>
-<div class="img_box flex_box">
-<img src="img_mm/tli_v01.svg" height="81px">
-</div>
-
-<div class="item_title">
-online teaching
-<span>Brand Design</span>
-</div>
-<span>Chinese teaching platform</span>
 
 </div>
 </div>

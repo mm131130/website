@@ -282,6 +282,7 @@ li{
 	font-size:16px;
 	line-height:20px;
 	font-family:Arial, sans-serif;
+	font-family:roboto_light;	
 	color: #0f1329;
 	text-transform:none;
 	
@@ -542,6 +543,7 @@ input,
 	
 	
 /* dark_night */
+.dark_night,
 .dark_night p,
 .dark_night > a,
 .dark_night p a,
@@ -692,9 +694,13 @@ border-bottom-color:#f5c7c0;
 .add_top_line{
 	border-top:1px #CCC solid;
 	}
+	
+/*
 .img_box{
 	padding:27px 0;
 	}
+	
+*/		
 .signature_box{
 	text-align:right;
 	}
