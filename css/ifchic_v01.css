@@ -224,13 +224,38 @@ li{
 	color: #0f1329;	
 	padding:18px 0 9px 0;  	
 	}
-	
 .page_name p span{
 	display:inline-block;
 	color:#CCC;
 	color:#a6a6a6;
 	width:18px;		
 	}	
+.tag_content{
+	position:relative;
+	display:block;
+	clear: both;
+	overflow:hidden;
+	font-size:16px;
+	line-height:20px;
+	font-family:Arial, sans-serif;
+	font-family:roboto_light;	
+	color: #0f1329;
+	text-transform:none;
+	margin-bottom:9px;
+	}
+.tag_content:before,	
+.tag_content:after{
+	display:inline-block;
+	content:"";
+	text-align:center;
+	width:10px;
+	height:10px;
+	border-bottom:1px #a6a6a6 solid;
+	vertical-align:top;
+	margin:0 10px;
+	}		
+	
+	
 /* ifchic v01 */
 .info_box h1.page_name{
 	padding-top:118px;
@@ -272,46 +297,7 @@ li{
 .ifchic24_event_box{
 	text-align:center;
 	}	
-.tag_content{
-	
-	position:relative;
-	
-	display:block;
-	clear: both;
-	overflow:hidden;
-	font-size:16px;
-	line-height:20px;
-	font-family:Arial, sans-serif;
-	font-family:roboto_light;	
-	color: #0f1329;
-	text-transform:none;
-	
-	
-	margin-bottom:9px;
-	
-	}
-.tag_content:before,	
-.tag_content:after{
-	display:inline-block;
-	content:"";
-	
-	/*
-	font-size:16px;
-	line-height:20px;
-	
-	color:#999;
-	*/
-	text-align:center;
-	width:10px;
-	
-	height:10px;
-	
-	border-bottom:1px #a6a6a6 solid;
-	
-	vertical-align:top;
-	
-	margin:0 10px;
-	}	
+
 	
 .ifchic_slogan{
 	font-size:12px;
