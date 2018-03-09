@@ -64,10 +64,10 @@ table{
 
 
 .flex_box{
-	display: -webkit-box;
+	display: -webkit-box ;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex;
+	display: flex !important;
 	/*左右至中*/
 	-webkit-box-align: center;
 	-webkit-align-items: center;
