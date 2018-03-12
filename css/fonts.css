@@ -165,7 +165,7 @@ url("../font/bodoni_mt/bodoni_mt.woff") format("woff"),
 url("../font/bodoni_mt/bodoni_mt.ttf") format("truetype"),
 url("../font/bodoni_mt/bodoni_mt.otf") format("opentype");
 }
-
+/*
 @font-face {
 font-family:"northwell_alt";
 src: url("../font/northwell/northwell_alt.eot");
@@ -175,6 +175,14 @@ url("../font/northwell/northwell_alt.woff") format("woff"),
 url("../font/northwell/northwell_alt.ttf") format("truetype"),
 url("../font/northwell/northwell_alt.otf") format("opentype");
 }
+*/
+@font-face {
+font-family:"northwell_alt";
+src: url("../font/northwell/northwell_alt.ttf");
+
+}
+
+
 @font-face {
 font-family:"broadcast_matter";
 src: url("../font/broadcast_matter/broadcast_matter.eot");
