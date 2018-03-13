@@ -3,6 +3,13 @@
 .h_100vh{
 	height:100vh;
 	}
+@media screen and (max-width:1023px) {
+.h_100vh{
+	height:100%;
+	}
+}	
+	
+	
 .mw_1200{
 	max-width:1200px;
 	width:100%;
