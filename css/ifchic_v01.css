@@ -400,6 +400,7 @@ li{
 .box_note a{
 	font-family:roboto_Regular;
 	text-transform:uppercase;
+	
 	}
 .note_info_01,
 .note_info_02{
@@ -974,7 +975,7 @@ border-bottom-color:#f5c7c0;
 	content:'';
 	width:50px;
 	height:50px;
-	background-image:url(../img/icon_2017.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	background-position-y:-1450px;
 	background-position-x:-300px;
 	}	
