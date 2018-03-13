@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+	//Your email address is required
+	//A password is required
+	//Your email or password is incorrect
+	
+    function form_check() {
+
+	$('form input').each(function() {
+		if ($(this).val() == '') {
+			$(this).css('border-color', 'red').attr('placeholder' , 'Your email address is required');
+		}else{
+			
+		}
+	});
+		
+
+	}
+});
+</script>
+</head>
+<body>
+
+<header>
+<div class="mw_1200 sm_nav">
+
+<a class="b_three_line" href="#">&nbsp;</a>
+
+<div class="right_box">
+<a class="b_my_wish" href="#">My Wish<span class="num_boo">999</span></a>
+<a class="b_shopping_bag" href="#">shopping bag<span class="num_boo">999</span></a>
+<a class="b_login_register" href="sm_login_register.html">Login / Register</a>
+</div>
+
+<div class="vino_logo">
+<a href="index.html">
+<img src="../img_vino/ms_vino_logo_01_b.svg">
+</a>
+<p>Sammarinese</p>
+</div>
+</div>
+</header>
+
+
+
+<div class="flex_box h_100vh">
+<!--
+<div class="popup_bg">
+<div class="mw_360 dark_night forgot_box">
+	<div class="hand_info">
+	<div>Forgot Password</div>
+	<p>Enter your email and you will receive a message with a link to reset your password.</p>
+	</div>
+	<input class="wm_66" type="text" placeholder="Email Address">
+    <a class="wm_33 b_go_info" href="#"> 
+	<button class="btn_B_v01">Submit</button></a>
+</div>
+
+<div class="mw_360 dark_night check_info">
+	<div class="hand_info">
+	<div>Check Your Email</div>
+	<p>We have sent a password to reset your password to your mailbox Click the link in the confirmation email to reset your password.</p></div>
+	<a class="wm_100 b_go_signin" href="#"> 
+   <button class="btn_B_v01">Close</button></a>
+</div>
+ 
+</div>
+-->
+
+<div class="mw_1200 signin_register v07">
+
+
+<form class="wm_50">
+	<div class="box_name">Login</div>
+	<p class="wm_100 sm_note_01">Required Fields *</p>
+	<input class="wm_100" type="text" placeholder="Email Address *"> 
+	<input class="wm_100" type="text" placeholder="Password *">
+
+	<a class="wm_50 sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Show Password</a>
+	<a class="wm_50 b_go_forgot" href="#">Forgot your password?</a> 
+	<button class="wm_100 btn_wine_red">Login</button>
+</form>
+
+<form class="wm_50">
+	<div class="box_name">Need an account?</div>
+
+	<p class="wm_100 sm_note_01">Required Fields *</p>
+	<div class="wm_33 sm_ddm">
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Title *</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="sm_ddm_menu">
+		<a href="#">Ms</a>
+		<a href="#">Mrs</a>
+		<a href="#">Miss</a>
+		<a href="#">Mr</a>
+	</div>
+	</div>  
+	<input class="wm_33" type="text" placeholder="First Name *"> 
+	<input class="wm_33" type="text" placeholder="Last Name *">
+	<input class="wm_100" type="text" placeholder="Email Address *"> 
+	<input class="wm_50" type="text" placeholder="Password *">
+	<input class="wm_50" type="text" placeholder="Re-enter Password *">
+	<p class="wm_100 sm_note_01">8-10 characters minimum</p> 
+
+
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>I want to receive marketing communications, including emails, from MOUNTAIN and its family of brands.</a>
+
+
+  <button class="wm_100 btn_wine_red">Create an Account</button> 
+  
+<p class="wm_100 sm_note_01">
+By clicking "Create an Account", you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>, including the use of cookies and the transfer of your personal information to the Taiwan, a jurisdiction that may not provide an equivalent level of data protection to the laws in your home country.</p>
+</form>
+</div>
+</div>
+
+
+<footer>
+<div class="mw_1200">
+<div class="vino_logo v02">
+<a href="index.html">
+<img src="../img_vino/ms_vino_logo_01_b.svg">
+</a>
+<p>Sammarinese</p>
+</div>
+<p class="sm_copyright">© 2018 MOUNTAIN. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -11,13 +11,10 @@
 <link media="all" rel="stylesheet" href="../css/mm_v2018.css"/>
 
 <style>
-body{
-	overflow:hidden;
-	}
 .drink_night{
 	
 	color:#FFF;
-		background-color:#3f0514;
+	background-color:#3f0514;
 	
 	}
 .drink_night *:not(textarea):not(input){
@@ -45,29 +42,22 @@ body{
 	color:#5d0b24;
 	}	
 .drink_night a:hover{
-	color:#e4e0b9 !important;
+	color:#e9d98e !important;
 	}	
 
 /*
-.vino_sr{
-
-	}
+.vino_sr{}
 */	
 
 .vino_btn_X{
-
 	display:block;	
 	position:absolute;
 	top:0;
 	right:0;
-	
 	z-index:1;
-
 	width:50px !important;
 	height:50px !important;
-	
 	padding:0 !important;
-		
 	background-image:url(../img_vino/sm_icon_v01.svg);	
 	background-position-y:-50px;		
 	background-position-x:0;	
@@ -334,7 +324,7 @@ input,
 	font-size:36px;
 	line-height:36px;
 	font-family:northwell_alt;
-/*color:#f8f7e9;*/
+	color:#f8f7e9;
 	
 	word-spacing:0;
 	
@@ -342,20 +332,16 @@ input,
 
 	}
 .sm_note_box:hover{
-	/*color:#e4e0b9;*/
+	color:#e4e0b9;
 	}	
+	
+	
 .sm_item_menu{
 	position:fixed;
 	top:50%;
 	left:0;
 	z-index:900;
 	transform:translateY(-50%);
-	
-	max-width:210px;
-	width:100%;
-	
-	padding:18px;
-	
 	}	
 
 .sm_item_menu p,
@@ -368,109 +354,98 @@ input,
 	
 	text-transform:uppercase;
 	/*color:#5d0b24;	*/
-	padding:9px 0;
+	padding:12px 0;
 
 	}
 .sm_item_menu p{
-	color:#666;	
+	color:#e9d98e !important;
 	text-transform: none;
 }
+
 .sm_item_menu a:hover{
-	/*color:#981643;	*/
-	}
-a.w_100{
-	margin:0;
-	padding:0;
-	}
+		/*color:#981643;	*/
+}
+
+
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script>
-
 $(function(){
+	//Your email address is required
+	//A password is required
+	//Your email or password is incorrect
 	
-		
-	$('a').on('click' , function(){
-		$('html, body').animate({scrollTop : $(this.hash).offset().top }, 210, 'swing');	
-	return false;
-	});	
+    function form_check() {
 
-	
+	$('form input').each(function() {
+		if ($(this).val() == '') {
+			$(this).css('border-color', 'red').attr('placeholder' , 'Your email address is required');
+		}else{
+			
+		}
 	});
+		
 
-
+	}
+});
 </script>
 </head>
 <body>
 
-
-
-<div class="sm_item_menu">
-<p>Vino Front End<br>
-Log in & Create an Account</p>
-<a href="#box_1">Log In</a>
-<a href="#box_2">Create an Account</a>
-<a href="#box_3">Reset Your Password</a>
-<a href="#box_4">Check Your Email</a>
-<a href="#box_5">Confirm Email</a>
-
-<a href="#box_6">Unsubscribe Newsletter</a>
-<a href="#box_7">Reset Password</a>
-<a href="#box_8">Use facebook account log in</a>
-<a href="#box_9">Use facebook create an account</a>
+<!-- ajax sample -->
+<div class="page_name">
+<div class="tag_content">Font End</div>
+Login & Create Account
+<p>///</p>
 </div>
+
 
 
 <div>
-<div id="box_1" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
-<a class="vino_btn_X" href="#box_1">&nbsp;</a>
+<a class="vino_btn_X" href="#">&nbsp;</a>
 <div class="box_name">Log in</div>      
-<p>Need an account? <a class="" href="#box_2">Create an account</a>.</p>  
+<p>Need an account? <a class="" href="#">Create an account</a>.</p>  
 <input type="text" placeholder="Email">  
 <input type="text" placeholder="Password">
-<a href="#box_3">Forgot your password?</a>
-<a class="w_100" href="#box_1">
+<a class="" href="#">Forgot your password?</a>
 <button type="button" class="btn_wine_red" onclick="form_check()">Log in</button>
-</a>
+
 </form>
 </div>
  
-<div id="box_2" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
-<a class="vino_btn_X" href="#box_1">&nbsp;</a>
+<a class="vino_btn_X" href="#">&nbsp;</a>
 <div class="box_name">Create an Account</div>  
-<p>Already have an account? <a href="#box_1">Sign In</a>.</p>
+<p>Already have an account? <a href="#">Sign In</a>.</p>
 <input type="text" placeholder="Email">  
 <input type="text" placeholder="Password">
-<a class="w_100" href="#box_1">
 <button type="button" class="btn_wine_red" onclick="form_check()">Create Account</button>
-</a>
+
 </form>
 </div>
 
-<div id="box_3" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
-<a class="vino_btn_X" href="#box_1">&nbsp;</a>
+<a class="vino_btn_X" href="#">&nbsp;</a>
 <div class="box_name">Reset Your Password</div>  
-<input type="text" placeholder="Email"> 
-<a class="w_100" href="#box_4"> 
+<input type="text" placeholder="Email">  
 <button type="button" class="btn_wine_red" onclick="form_check()">Sumbmit</button>
-</a>
 </form>
 </div>
 
-<div id="box_4" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
-<a class="sm_note_box" href="#box_5">Go To Email<br>Template</a>
-<a class="vino_btn_X" href="#box_1">&nbsp;</a>
-<div class="box_name">Check your email</div>
-<a class="w_100" href="#box_1"> 
-<button type="button" class="btn_wine_red" onclick="form_check()">Close</button></a>
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Check your email</div>  
+<button type="button" class="btn_wine_red" onclick="form_check()">Close</button>
 </form>
 </div>
 
 
-<div id="box_5" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <div class="vino_logo">
 <img src="../img_vino/ms_vino_logo_01_b.svg">
 <p>Sammarinese</p>
@@ -478,20 +453,16 @@ Log in & Create an Account</p>
 <form class="mw_450">
 <div class="box_name">Reset Your Password</div> 
 <p>We've just received a password reset request for <strong>mountain@mountain.com</strong>. Please click the link below to reset your password.</p>
-<a class="w_100" href="#box_6">
-<button type="button" class="btn_wine_red" onclick="form_check()">Reset Password</button></a>
+<button type="button" class="btn_wine_red" onclick="form_check()">Reset Password</button>
 </form>
-<p class=" mw_360">
+<p>
 Copyright © 2018 Mountain - All rights reserved.<br>
 Ailing address is : Mountain :<br>
-If you would like to update your email preferences or unsubscribe, please <a href="#box_6">click here</a>.
+If you would like to update your email preferences or unsubscribe, please <a href="#">click here</a>.
 </p>
 </div>
 
-
-
-
-<div id="box_6" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
 <div class="box_name">Are you sure?
 <p>You want to unsubscribe from our Daily Newsletter?</p>
@@ -509,16 +480,12 @@ The emails are spam and should be reported
 
 <textarea class="" rows="6" placeholder="If you have a moment, please let us know why you unsubscribed..."></textarea>
 <p>Yes, please unsubscribe me from the Daily Newsletter.</p>
-<a class="w_100" href="#box_1">
-<button type="button" class="btn_wine_red" onclick="check()">Unsubscribe</button></a>
-<a href="#box_1">Return to our website</a>
+<button type="button" class="btn_wine_red" onclick="check()">Unsubscribe</button>
+<a href="#">Return to our website</a>
 </form>
 </div>
 
-
-
-
-<div id="box_7" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450">
 <div class="box_name">Reset Password</div>  
 <input type="text" placeholder="Password">
@@ -529,36 +496,128 @@ The emails are spam and should be reported
 </div>
 
 
+<div class="page_name">
+<h2>Login With Facebook</h2>
+</div>
 
-
-<div id="box_8" class="form_vino h_100vh flex_box">
+<div>
+<div class="form_vino">
 <form class="mw_450" method="post">
 <div class="box_name">Log in</div>        
-<a class="btn_fb" href="#">Continue With Facebook</a>
+<a class=" w_100 btn_fb" href="#">Continue With Facebook</a>
 <div class="or_line"><span>or</span></div>
-<p>Need an account? <a href="#box_9">Create an account</a>.</p>
+<p>Need an account? <a class="" href="">Create an account</a>.</p>
 <input type="text" placeholder="Email">  
 <input type="text" placeholder="Password">
-<a href="#box_3">Forgot your password?</a>
+<a class="" href="">Forgot your password?</a>
 <button type="button" class="btn_wine_red" onclick="check()">Log in</button>
 
 </form>
 </div>
 
-<div id="box_9" class="form_vino h_100vh flex_box">
+<div class="form_vino">
 <form class="mw_450 form_vino">
 <div class="box_name">Create an account</div>  
-<a class="btn_fb" href="#">Sign up With Facebook</a>
+<a class=" w_100 btn_fb" href="#">Sign up With Facebook</a>
 <p>We won’t post without your permission.</p>
 <div class="or_line"><span>or</span></div>
-<p>Already have an account? <a href="#box_8">Sign In</a>.</p>
+<p>Already have an account? <a href="#">Sign In</a>.</p>
 <input type="text" placeholder="Email">  
 <input type="text" placeholder="Password">
 <button type="button" class="btn_wine_red" onclick="form_check()">Create Account</button>
 
 </form>
 </div>
+</div>
 
+
+
+
+
+
+<div class="drink_night"> 
+
+<div class="page_name">
+<div class="tag_content">Back End</div>
+Login & Create Account
+<p>///</p>
+</div>
+
+
+
+
+<div class="form_vino">
+<form class="mw_450">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Log in</div>     
+<p>Need an account? <a class="" href="#">Create an account</a>.</p>     
+<input type="text" placeholder="Email">  
+<input type="text" placeholder="Password">
+<a class="" href="#">Forgot your password?</a>
+<button type="button" class="btn_wine_red" onclick="form_check()">Log in</button>
+</form>
+</div>
+
+
+
+
+<div class="form_vino">
+<form class="mw_450">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Create an Account</div>  
+<p>Already have an account? <a href="#">Sign In</a>.</p>
+<input type="text" placeholder="Employee ID">
+<input type="text" placeholder="Email">  
+<input type="text" placeholder="Password">
+<button type="button" class="btn_wine_red" onclick="form_check()">Create Account</button>
+</form>
+</div>
+
+
+
+<div class="form_vino">
+<form class="mw_450">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Apply New Password</div>
+<input type="text" placeholder="Employee ID">
+<input type="text" placeholder="Email">
+
+<button type="button" class="btn_wine_red" onclick="form_check()">Sumbmit</button>
+</form>
+</div>
+
+<div class="form_vino">
+<form class="mw_450">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Check your email</div>  
+<button type="button" class="btn_wine_red" onclick="form_check()">Close</button>
+</form>
+</div>
+
+<div class="form_vino">
+<div class="vino_logo">
+<img src="../img_vino/ms_vino_logo_01_w.svg">
+<p>Sammarinese</p>
+</div>
+<form class="mw_450">
+<div class="box_name">Reset Your Password</div> 
+<p>We've just received a password reset request for <strong>mountain@mountain.com</strong>. Please click the link below to reset your password.</p>
+<button type="button" class="btn_wine_red" onclick="form_check()">Reset Password</button>
+</form>
+<p>Copyright © 2018 Mountain - All rights reserved.</p>
+</div>
+
+<div class="form_vino">
+<form class="mw_450">
+<div class="box_name">Reset Password</div>  
+<input type="text" placeholder="Password">
+<input type="text" placeholder="Password Confirmation">
+<button type="button" class="btn_wine_red" onclick="form_check()">Reset</button>
+</form>
+</div>
+
+
+</div>
 
 </body>
 </html>

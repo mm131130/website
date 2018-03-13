@@ -528,30 +528,6 @@ input,
 	
 	
 	
-/* dark_night */
-.dark_night,
-.dark_night p,
-.dark_night > a,
-.dark_night p a,
-.dark_night > *,
-.dark_night .b_learn_more,
-.dark_night .heading,
-.dark_night .hand_writing,
-.dark_night .big_num_2{
-	color:#FFF;
-	}
-.dark_night a:hover{
-	color:#fadeda;
-	}	
-	
-.dark_night textarea,
-.dark_night input{
-	padding-top:11px;
-	padding-bottom:11px;
-	border:none;
-	}
-	
-	
 	
 	
 	
@@ -1236,6 +1212,9 @@ border-bottom-color:#f5c7c0;
 	color:#595a5e;
 	}
 .important_day{
+	/**/
+	display:block;
+	
 	overflow:hidden;
 	position: relative;
 	z-index:1 !important

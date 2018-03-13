@@ -1,5 +1,5 @@
 /* 20160502 */
-
+/* 20180312 */
 @font-face {
 font-family:"monotype";
 src: url("../font/monotype/monotype.eot");
@@ -18,6 +18,59 @@ url("../font/monotype_TI/monotype_TI.woff") format("woff"),
 url("../font/monotype_TI/monotype_TI.ttf") format("truetype"),
 url("../font/monotype_TI/monotype_TI.otf") format("opentype");
 }
+
+
+
+
+
+@font-face{
+font-family:"modern_display";
+font-style:normal;
+font-weight:normal;
+src:url("../font/modern_display/modern_display.eot");
+src:url("../font/modern_display/modern_display.eot?#iefix") format("embedded-opentype"),
+url("../font/modern_display/modern_display.woff") format("woff"),
+url("../font/modern_display/modern_display.ttf") format("truetype"),
+url("../font/modern_display/modern_display.svg") format("svg");
+}
+
+@font-face{
+font-family:"modern_display_TI";
+font-style:normal;
+font-weight:normal;
+src:url("../font/modern_display_TI/modern_display_TI.eot");
+src:url("../font/modern_display_TI/modern_display_TI.eot?#iefix") format("embedded-opentype"),
+url("../font/modern_display_TI/modern_display_TI.woff") format("woff"),
+url("../font/modern_display_TI/modern_display_TI.ttf") format("truetype"),
+url("../font/modern_display_TI/modern_display_TI.svg") format("svg");
+}
+
+
+
+@font-face {
+font-family:"bodoni";
+src: url("../font/bodoni/bodoni.eot");
+src: url("../font/bodoni/bodoni.eot?#iefix") format("embedded-opentype"),
+/*url("../font/bodoni/bodoni.svg") format("svg"),
+url("../font/bodoni/bodoni.otf") format("opentype"),
+*/
+url("../font/bodoni/bodoni.woff") format("woff"),
+url("../font/bodoni/bodoni.ttf") format("truetype");
+
+}
+@font-face {
+font-family:"bodoni_mt";
+src: url("../font/bodoni_mt/bodoni_mt.eot");
+src: url("../font/bodoni_mt/bodoni_mt.eot?#iefix") format("embedded-opentype"),
+/*
+url("../font/bodoni_mt/bodoni_mt.otf") format("opentype"),
+url("../font/bodoni_mt/bodoni_mt.svg") format("svg"),*/
+url("../font/bodoni_mt/bodoni_mt.woff") format("woff"),
+url("../font/bodoni_mt/bodoni_mt.ttf") format("truetype");
+
+}
+
+
 @font-face {
 font-family:"helveticaNeue";
 src: url('../font/helveticaNeue/helveticaNeue.eot');	
@@ -27,6 +80,8 @@ url("../font/helveticaNeue/helveticaNeue.woff") format("woff"),
 url("../font/helveticaNeue/helveticaNeue.ttf") format("truetype"),
 url("../font/helveticaNeue/helveticaNeue.otf") format("opentype");
 }
+
+
 @font-face {
 font-family:"helveticaNeue_TI";
 src: url('../font/helveticaNeue_TI/helveticaNeue_TI.eot');
@@ -67,12 +122,13 @@ url("../font/helveticaNeue_MD/helveticaNeue_MD.otf") format("opentype");
 }
 @font-face {
 font-family:"flood_std_regular";
-src:url("../font/flood/flood_std_regular.eot");
+src:url("../font/flood/flood_std_regular.otf");
+/*
 src:url("../font/flood/flood_std_regular.eot?#iefix") format("embedded-opentype"),
 url("../font/flood/flood_std_regular.woff") format("woff"),
 url("../font/flood/flood_std_regular.ttf") format("truetype"),
 url("../font/flood/flood_std_regular.svg") format("svg"),
-url("../font/flood/flood_std_regular.otf") format("opentype");
+url("../font/flood/flood_std_regular.otf") format("opentype");*/
 }
 @font-face {
 font-family:"noto_sans_TC_L";
@@ -108,13 +164,13 @@ url("../font/roboto/roboto_medium.otf") format("opentype");
 }
 
 @font-face {
-font-family:"roboto_regular";
+font-family:"roboto_Regular";
 src: url("../font/roboto/roboto_regular.eot");
 src: url("../font/roboto/roboto_regular.eot?#iefix") format("embedded-opentype"),
 url("../font/roboto/roboto_regular.svg") format("svg"),
 url("../font/roboto/roboto_regular.woff") format("woff"),
-url("../font/roboto/roboto_Regular.ttf") format("truetype"),
-url("../font/roboto/roboto_Regular.otf") format("opentype");
+url("../font/roboto/roboto_regular.ttf") format("truetype"),
+url("../font/roboto/roboto_regular.otf") format("opentype");
 }
 
 @font-face {
@@ -135,37 +191,20 @@ url("../font/roboto/roboto_thin.svg") format("svg"),
 url("../font/roboto/roboto_thin.woff") format("woff"),
 url("../font/roboto/roboto_thin.ttf") format("truetype"),
 url("../font/roboto/roboto_thin.otf") format("opentype");
-}                  
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-font-family:"bodoni";
-src: url("../font/bodoni/bodoni.eot");
-src: url("../font/bodoni/bodoni.eot?#iefix") format("embedded-opentype"),
-url("../font/bodoni/bodoni.svg") format("svg"),
-url("../font/bodoni/bodoni.woff") format("woff"),
-url("../font/bodoni/bodoni.ttf") format("truetype"),
-url("../font/bodoni/bodoni.otf") format("opentype");
 }
-@font-face {
-font-family:"bodoni_mt";
-src: url("../font/bodoni_mt/bodoni_mt.eot");
-src: url("../font/bodoni_mt/bodoni_mt.eot?#iefix") format("embedded-opentype"),
-url("../font/bodoni_mt/bodoni_mt.svg") format("svg"),
-url("../font/bodoni_mt/bodoni_mt.woff") format("woff"),
-url("../font/bodoni_mt/bodoni_mt.ttf") format("truetype"),
-url("../font/bodoni_mt/bodoni_mt.otf") format("opentype");
-}
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
 font-family:"northwell_alt";
 src: url("../font/northwell/northwell_alt.eot");
@@ -175,14 +214,6 @@ url("../font/northwell/northwell_alt.woff") format("woff"),
 url("../font/northwell/northwell_alt.ttf") format("truetype"),
 url("../font/northwell/northwell_alt.otf") format("opentype");
 }
-*/
-@font-face {
-font-family:"northwell_alt";
-src: url("../font/northwell/northwell_alt.ttf");
-
-}
-
-
 @font-face {
 font-family:"broadcast_matter";
 src: url("../font/broadcast_matter/broadcast_matter.eot");
@@ -215,22 +246,31 @@ url("../font/levibrush/levibrush.otf") format("opentype");
 }
 
 @font-face {
-font-family:"dubiel_plain";
-src: url("../font/dubiel_plain/dubiel.eot");
+font-family:"dubiel";
+src: url("../font/dubiel_plain/dubiel.ttf");
+/*
 src: url("../font/dubiel_plain/dubiel.eot?#iefix") format("embedded-opentype"),
 url("../font/dubiel_plain/dubiel.svg") format("svg"),
 url("../font/dubiel_plain/dubiel.woff") format("woff"),
 url("../font/dubiel_plain/dubiel.ttf") format("truetype"),
 url("../font/dubiel_plain/dubiel.otf") format("opentype");
+*/
 }
 @font-face {
+font-family:"dubiel_IT";
+src: url("../font/dubiel_plain/dubiel_IT.ttf");
+
+}
+
+@font-face {
 font-family:"didot";
-src: url("../font/didot/didot.eot");
+src: url("../font/didot/didot.ttf");
+/*
 src: url("../font/didot/didot.eot?#iefix") format("embedded-opentype"),
 url("../font/didot/didot.svg") format("svg"),
 url("../font/didot/didot.woff") format("woff"),
 url("../font/didot/didot.ttf") format("truetype"),
-url("../font/didot/didot.otf") format("opentype");
+url("../font/didot/didot.otf") format("opentype");*/
 }
 
 
@@ -275,51 +315,56 @@ url("../font/sabon_roman.otf") format("opentype");
 
 @font-face {
 font-family:"open_sans_Light";
-src: url("../font/open_sans/open_sans_Light.eot");
+src: url("../font/open_sans/open_sans_Light.ttf");
+/*
 src: url("../font/open_sans/open_sans_Light.eot?#iefix") format("embedded-opentype"),
 url("../font/open_sans/open_sans_Light.svg") format("svg"),
 url("../font/open_sans/open_sans_Light.woff") format("woff"),
 url("../font/open_sans/open_sans_Light.ttf") format("truetype"),
-url("../font/open_sans/open_sans_Light.otf") format("opentype");
+url("../font/open_sans/open_sans_Light.otf") format("opentype");*/
 }
 
 @font-face {
 font-family:"open_sans_Regular";
-src: url("../font/open_sans/open_sans_Regular.eot");
+src: url("../font/open_sans/open_sans_Regular.ttf");
+/*
 src: url("../font/open_sans/open_sans_Regular.eot?#iefix") format("embedded-opentype"),
 url("../font/open_sans/open_sans_Regular.svg") format("svg"),
 url("../font/open_sans/open_sans_Regular.woff") format("woff"),
 url("../font/open_sans/open_sans_Regular.ttf") format("truetype"),
-url("../font/open_sans/open_sans_Regular.otf") format("opentype");
+url("../font/open_sans/open_sans_Regular.otf") format("opentype");*/
 }
 @font-face {
 font-family:"open_sans_SemiBold";
-src: url("../font/open_sans/open_sans_SemiBold.eot");
+src: url("../font/open_sans/open_sans_SemiBold.ttf");
+/*
 src: url("../font/open_sans/open_sans_SemiBold.eot?#iefix") format("embedded-opentype"),
 url("../font/open_sans/open_sans_SemiBold.svg") format("svg"),
 url("../font/open_sans/open_sans_SemiBold.woff") format("woff"),
 url("../font/open_sans/open_sans_SemiBold.ttf") format("truetype"),
-url("../font/open_sans/open_sans_SemiBold.otf") format("opentype");
+url("../font/open_sans/open_sans_SemiBold.otf") format("opentype");*/
 }
 
 
 @font-face {
 font-family:"open_sans_Bold";
-src: url("../font/open_sans/open_sans_Bold.eot");
+src: url("../font/open_sans/open_sans_Bold.ttf");
+/*
 src: url("../font/open_sans/open_sans_Bold.eot?#iefix") format("embedded-opentype"),
 url("../font/open_sans/open_sans_Bold.svg") format("svg"),
 url("../font/open_sans/open_sans_Bold.woff") format("woff"),
 url("../font/open_sans/open_sans_Bold.ttf") format("truetype"),
-url("../font/open_sans/open_sans_Bold.otf") format("opentype");
+url("../font/open_sans/open_sans_Bold.otf") format("opentype");*/
 }
 @font-face {
 font-family:"open_sans_ExtraBold";
-src: url("../font/open_sans/open_sans_ExtraBold.eot");
+src: url("../font/open_sans/open_sans_ExtraBold.ttf");
+/*
 src: url("../font/open_sans/open_sans_ExtraBold.eot?#iefix") format("embedded-opentype"),
 url("../font/open_sans/open_sans_ExtraBold.svg") format("svg"),
 url("../font/open_sans/open_sans_ExtraBold.woff") format("woff"),
 url("../font/open_sans/open_sans_ExtraBold.ttf") format("truetype"),
-url("../font/open_sans/open_sans_ExtraBold.otf") format("opentype");
+url("../font/open_sans/open_sans_ExtraBold.otf") format("opentype");*/
 }
 
 
@@ -343,15 +388,29 @@ url("../font/modern_display/modern_display.ttf") format("truetype"),
 url("../font/modern_display/modern_display.svg") format("svg");
 }
 
+
+
 @font-face{
-font-family:"modern_display_TI";
+font-family:"alex_brush_regular";
 font-style:normal;
 font-weight:normal;
+src:url("../font/alex_brush_regular/alex_brush_regular.ttf");
 
-src:url("../font/modern_display_TI/modern_display_TI.eot");
+}
 
-src:url("../font/modern_display_TI/modern_display_TI.eot?#iefix") format("embedded-opentype"),
-url("../font/modern_display_TI/modern_display_TI.woff") format("woff"),
-url("../font/modern_display_TI/modern_display_TI.ttf") format("truetype"),
-url("../font/modern_display_TI/modern_display_TI.svg") format("svg");
+
+@font-face{
+font-family:"arizonia_regular";
+font-style:normal;
+font-weight:normal;
+src:url("../font/arizonia_regular/arizonia_regular.ttf");
+
+}
+
+@font-face{
+font-family:"notera";
+font-style:normal;
+font-weight:normal;
+src:url("../font/notera/notera.ttf");
+
 }
