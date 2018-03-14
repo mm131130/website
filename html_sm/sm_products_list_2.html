@@ -16,18 +16,13 @@
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
 <style>
 
-.sm_banner{
-	padding:30px 0;	
-	}
 
-	
-	
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
-<script src="../jq/sm_v2018.js"></script>
+
 <script>
 $(function(){
-	
+/*
 $('.b_plus_minus').on('click', function(){
 	var ts = $(this);
 	if(ts.hasClass('r')){
@@ -35,10 +30,77 @@ $('.b_plus_minus').on('click', function(){
 	}else{
 		ts.addClass('rotate_135 , r');			
 	}
-	
 	return false;
-
 });
+*/
+function shop_now_v01(){
+$('.vino_info').each(function(){
+	var ts = $(this);
+	ts.on('click', function(){
+		ts.addClass('r');
+		ts.find('.sm_p_info').slideUp(108);
+		ts.find('.shop_now_box').slideDown(108);	
+		ts.find('.b_plus_minus').addClass('rotate_135');	
+		ts.find('.vino_p_img').addClass('img_w');
+	return false;		
+	});
+	
+	
+	ts.find('.b_plus_minus').on('click', function(){
+	
+	if(ts.hasClass('r')){
+		ts.removeClass('r');
+		ts.find('.sm_p_info').slideDown(108);
+		ts.find('.shop_now_box').slideUp(108);	
+		ts.find('.b_plus_minus').removeClass('rotate_135');	
+		ts.find('.vino_p_img').removeClass('img_w');
+	}else{
+		ts.addClass('r');
+		ts.find('.sm_p_info').slideUp(108);
+		ts.find('.shop_now_box').slideDown(108);	
+		ts.find('.b_plus_minus').addClass('rotate_135');	
+		ts.find('.vino_p_img').addClass('img_w');				
+	}
+	return false;
+	});
+});
+} // f - shop_now - v01
+
+
+function shop_now_v02(){
+$('.vino_info').each(function(){
+	var ts = $(this);
+	ts.on('click', function(){
+		ts.addClass('r');
+		ts.find('.sm_p_info').hide();
+		ts.find('.shop_now_box').show();	
+		ts.find('.b_plus_minus').addClass('rotate_135');	
+		ts.find('.vino_p_img').addClass('img_w');
+	return false;		
+	});
+	
+	
+	ts.find('.b_plus_minus').on('click', function(){
+	
+	if(ts.hasClass('r')){
+		ts.removeClass('r');
+		ts.find('.sm_p_info').show();
+		ts.find('.shop_now_box').hide();	
+		ts.find('.b_plus_minus').removeClass('rotate_135');	
+		ts.find('.vino_p_img').removeClass('img_w');
+	}else{
+		ts.addClass('r');
+		ts.find('.sm_p_info').hide();
+		ts.find('.shop_now_box').show();	
+		ts.find('.b_plus_minus').addClass('rotate_135');	
+		ts.find('.vino_p_img').addClass('img_w');				
+	}
+	return false;
+	});
+});
+} // f - shop_now - v02
+
+
 
 	function get_products_list(){
 		$.ajax({
@@ -54,12 +116,12 @@ $('.b_plus_minus').on('click', function(){
 	var product_box = new Array;
 	//var product_box = [];
 	
-	var home_page_products_list = '<div class="vino_info"><a class="my_wish_icon" href="#">&nbsp;</a><div class="vino_kind">' 
+	var home_page_products_list = '<div class="vino_info"><div class="vino_kind">' 
 	+ $(this).find("kind").text() + '</div><img class="vino_p_img" src="' 
-	+ $(this).find("img_url").text() + '"><div class="vino_area">' 
+	+ $(this).find("img_url").text() + '"><div class="sm_p_info"><div class="vino_area">' 
 	+ $(this).find("area").text() + '</div><div class="vino_name">' 	
-	+ $(this).find("name").text() + '</div><div class="vino_price">' 
-	+ $(this).find("price").text() + '</div></div>';		
+	+ $(this).find("name").text() + '</div></div><div class="shop_now_box"><div class="vino_price">' 
+	+ $(this).find("price").text() + '</div><a class="btn_wine_red num_add_bag" href="#">Add To Shopping Bag</a><a class="btn_white num_add_wish" href="#">Add To Wish List</a><a href="#">View Product Details</a></div><a class="b_plus_minus" href="#">&nbsp;</a></div>';		
 	
 	
 
@@ -104,10 +166,10 @@ $('.b_plus_minus').on('click', function(){
 		ts.addClass('click_icon');	
 	}
 	
-	num_my_wish();
 	return false;
-});
-	
+	});
+	shop_now_v02();
+	//num_my_wish();
 }
 
 });//ajax
@@ -123,21 +185,24 @@ $('.b_plus_minus').on('click', function(){
 
 function num_my_wish(){
 	
-	$('.vino_products_box .click_icon').each(function(i) {
-		var num_my_wish = i+1;
-		
-		$('.b_my_wish .num_boo').html(num_my_wish);
-        
+	$('.num_add_bag , .num_add_wish').each(function(i) {
+		var num_bag = i+1;
+		var num_wish = i+1;
+
+		if($(this).hasClass('num_add_bag')){
+			$('.b_shopping_bag .num_boo').html(num_bag);
+		}else{
+			$('.b_my_wish .num_boo').html(num_wish);
+		}
     });
-	
-	}
+}// f _ num_my_wish
 
 
 });
 
+
+	
 </script>
-
-
 </head>
 <body>
 
@@ -167,16 +232,11 @@ function num_my_wish(){
 <img src="../img_vino/bg_sign_in_07.jpg" >
 </div>
 
+
+
+
 <div class="mw_1200 vino_products_box">
-
-
 </div>
-
-
-
-
-
-
 
 <footer>
 <div class="mw_1200">

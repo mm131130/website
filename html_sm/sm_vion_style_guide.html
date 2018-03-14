@@ -58,36 +58,50 @@
 .color_wine .wine_glass{
 	position:relative;
 	display: inline-block;
+	
+	
 	border-radius:0 0 36px 36px;
 	width:42px;
-	
-
 	border:1px #CCCCCC solid;
+
+	border-bottom:2px #CCCCCC solid;
 	
 	text-align:center;
 	margin:20px;
 	
-	padding:18px 0 2px 0;
-	
+	padding:24px 0 4px 0;
 	}
+	
+	
+	
+.wine_color:nth-last-child(2){
+	border-radius:0 0 18px 18px;
+	
+}
+	
 	
 .color_wine .wine_color{
 	display: inline-block;
 	height:42px;
-	border-radius:0 0 18px 18px;
+	
 	width:36px;
 	}
 	
 .color_wine .num_text{
 	position:absolute;
-	bottom:-56px;
+	bottom:0;
+	
+	
 	left:50%;
-	transform:translateX(-50%);
+	
+	transform:translate(-50% , calc(100% + 20px));
+	
 	display:block;
 	font-size:12px;
 	line-height:18px;
-	color:#170003;
+	color:#a39849;
 	text-align:center;
+	letter-spacing:0.027em;
 	
 	
 	padding:9px 0; 
@@ -146,8 +160,17 @@ Sammarinese Vino
 
 
 <div class="wine_glass">
+<div class="wine_color" style="background-color:#fdfdf7">&nbsp;</div>
+<div class="wine_color" style="background-color:#fbfbf2">&nbsp;</div>
 <div class="wine_color" style="background-color:#f8f7e9">&nbsp;</div>
-<div class="num_text">#f8f7e9</div>
+
+
+
+<div class="num_text">
+#fdfdf7<br>
+#fbfbf2<br>
+#f8f7e9
+</div>
 </div>
 <div class="wine_glass">
 <div class="wine_color" style="background-color:#f1efd8">&nbsp;</div>
@@ -157,7 +180,21 @@ Sammarinese Vino
 
 <div class="wine_glass">
 <div class="wine_color" style="background-color:#e4e0b9">&nbsp;</div>
-<div class="num_text">#e4e0b9</div>
+<div class="wine_color" style="background-color:#ccc589">&nbsp;</div>
+<div class="wine_color" style="background-color:#b6ad64">&nbsp;</div>
+<div class="wine_color" style="background-color:#a39849">&nbsp;</div>
+
+<div class="num_text">#e4e0b9<br>
+#ccc589<br>
+#b6ad64<br>
+#a39849
+
+
+
+</div>
+
+
+
 </div>
 
 

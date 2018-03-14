@@ -26,18 +26,24 @@ $(function(){
 	//A password is required
 	//Your email or password is incorrect
 	
-    function form_check() {
-
-	$('form input').each(function() {
-		if ($(this).val() == '') {
-			$(this).css('border-color', 'red').attr('placeholder' , 'Your email address is required');
-		}else{
-			
-		}
+$('.b_shopping_bag , .b_my_wish').hide();
+	
+	$('.b_login').on('click', function(){
+		$('.b_login_register').addClass('now_in').html('Sign Out');
+		$('.b_shopping_bag , .b_my_wish').show();
+		return false;
 	});
-		
-
-	}
+	
+	$('.b_login_register').on('click', function(){
+		if($(this).hasClass('now_in')){
+		$(this).removeClass('now_in').html('Sign In');
+		$('.b_shopping_bag , .b_my_wish').hide();	
+		}
+		return false;
+	});	
+	
+	
+	
 });
 </script>
 </head>
@@ -51,7 +57,7 @@ $(function(){
 <div class="right_box">
 <a class="b_my_wish" href="#">My Wish<span class="num_boo">999</span></a>
 <a class="b_shopping_bag" href="#">shopping bag<span class="num_boo">999</span></a>
-<a class="b_login_register" href="sm_login_register.html">Login / Register</a>
+<a class="b_login_register" href="#">Login / Register</a>
 </div>
 
 <div class="vino_logo">
@@ -95,12 +101,11 @@ $(function(){
 <form class="wm_50">
 	<div class="box_name">Login</div>
 	<p class="wm_100 sm_note_01">Required Fields *</p>
-	<input class="wm_100" type="text" placeholder="Email Address *"> 
-	<input class="wm_100" type="text" placeholder="Password *">
-
+	<input class="wm_100" name="email" type="text" placeholder="Email Address *"> 
+	<input class="wm_100" name="pwd" type="text" placeholder="Password *">
 	<a class="wm_50 sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Show Password</a>
 	<a class="wm_50 b_go_forgot" href="#">Forgot your password?</a> 
-	<button class="wm_100 btn_wine_red">Login</button>
+	<button class="wm_100 btn_wine_red b_login">Login</button>
 </form>
 
 <form class="wm_50">
@@ -116,11 +121,11 @@ $(function(){
 		<a href="#">Mr</a>
 	</div>
 	</div>  
-	<input class="wm_33" type="text" placeholder="First Name *"> 
-	<input class="wm_33" type="text" placeholder="Last Name *">
-	<input class="wm_100" type="text" placeholder="Email Address *"> 
-	<input class="wm_50" type="text" placeholder="Password *">
-	<input class="wm_50" type="text" placeholder="Re-enter Password *">
+	<input class="wm_33" name="fname" type="text" placeholder="First Name *"> 
+	<input class="wm_33" name="lname" type="text" placeholder="Last Name *">
+	<input class="wm_100" name="email" type="text" placeholder="Email Address *"> 
+	<input class="wm_50" name="pwd" type="text" placeholder="Password *">
+	<input class="wm_50" name="pwd_cfm" type="text" placeholder="Re-enter Password *">
 	<p class="wm_100 sm_note_01">8-10 characters minimum</p> 
 
 

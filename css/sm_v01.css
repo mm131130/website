@@ -1,6 +1,7 @@
 /* 20180313 */
 
 .drink_night{
+	overflow:hidden;
 	color:#FFF;
 	background-color:#3f0514;
 	}
@@ -21,7 +22,8 @@
 .drink_night .vino_btn_X:hover{
 	background-position-y:-150px;	
 	}
-.drink_night form{
+.drink_night form,
+.drink_night .input_box{
 	border:1px #5d0b24 solid !important;  
 	}
 .drink_night a{
@@ -59,6 +61,8 @@
 	background-position-y:-100px;	
 	}
 	
+	
+.btn_white,	
 .btn_wine_red,
 .btn_fb{
 	display:block;
@@ -71,12 +75,32 @@
 	padding:11px 0;
 	
 	width:100%;
-	background-color:#3a5998;
+
 	border-radius:6px;
 	}
+
+.btn_white{
+	color:#2c0006 !important;
+	padding:10px 0;
+	background-color:#f8f7e9;
+	border:1px #e4e0b9 solid;
+	}	
+.btn_white:hover{
+	background-color:#f1efd8;	
+
+	}	
+	
+	
+		
+	
+.btn_fb{
+	background-color:#3a5998;
+	}	
 .btn_fb:hover{
 	background-color:#4971c2;
 	}
+	
+	
 .btn_wine_red{
 	background-color:#5d0b24;
 	}	
@@ -117,6 +141,18 @@
 .sm_check_box:hover .btn_img{
 	background-position-y:-55px;	
 	}
+
+
+
+.radio_list{
+	padding-top:6px;
+	padding-bottom:6px;
+	}	
+.radio_list .sm_radio_box{
+	display:inline-block;
+	}	
+
+
 
 
 /* jq */
@@ -255,15 +291,20 @@
 	border-bottom-width:2px;
 	border-radius:6px;		
 	}
-.sm_ddm_menu > *{
+.sm_ddm_menu *{
 	display:block;
 	font-size:14px;
 	line-height:18px;
 	color:#a0a0a0;
+	color:#a39849 !important;
 	padding:11px 12px;	
 	}
 	
+.sm_ddm_menu a:hover{
 
+	color:#5d0b24 !important;
+
+	}
 
 
 p{
@@ -322,7 +363,7 @@ form p a{
 	}	
 	
 .sm_note_01{
-font-size:12px;
+	font-size:12px;
 	font-family: roboto_regular;
 	padding:0 12px 0 30px;
 	}	
@@ -336,7 +377,8 @@ form > a{
 	
 
 .or_line span,
-.box_name{
+.box_name,
+.main_title{
 	display:block;
 	font-size: 30px;
     line-height: 30px;
@@ -348,7 +390,34 @@ form > a{
     letter-spacing: 0;
 	
 	padding:14px 0 6px 0;
+
 }
+
+
+.main_title{
+	display:block;
+	clear: both;
+	padding:90px 0 30px 0;
+	}
+.subtitle{
+	display:block;
+	clear: both;
+	font-size:21px;
+	font-family: roboto_light;
+	padding:36px 0 12px 0;	
+}
+.subtitle p{
+	padding:6px 0 0 0;
+}
+
+form .subtitle{
+	padding-left:14px;
+	padding-right:14px;
+	margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+
 .box_name p{
 	font-size:18px;
 }
@@ -382,6 +451,46 @@ form > a{
 	/*
 	color:#d5b84f;*/
 	}
+	
+	
+	
+	
+	
+	
+	
+/* form */
+
+form{
+	display:block;
+	
+	overflow: hidden;
+	
+	padding-bottom:36px;}
+.user_picture{
+	position:relative;
+	left:50%;
+	transform:translateX(-50%);
+	display:inline-block;
+	text-align:center;
+	}
+.box_user_picture{
+	overflow:hidden;
+	display:inline-block;	
+		width:150px;
+	height:150px;
+
+	border-radius:50%;
+	border:1px #2c0006 solid;
+	border:1px #2c0006 solid;
+	border-bottom-width:3px;
+	border-right-width:3px;	
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 textarea {
@@ -422,7 +531,8 @@ input:focus:-ms-input-placeholder{
 	
 
 textarea,
-input{
+input,
+.input_box{
 	display:block;
 
 	font-size:14px;
@@ -441,6 +551,33 @@ input{
 	border-radius:6px;	
 	
 	}
+	
+.label_box,
+label{
+		display:block;
+		clear:both;
+		font-size:12px;
+		line-height:18px;
+		color:#e4e0b9;
+		color:#b6ad64;
+		
+		color:#a39849;
+		padding:0 14px;
+		
+		width:100%;
+}
+
+.input_box{
+	padding:11px 13px;
+	border:1px #fbfbf2 solid;
+	border-left-width:2px;
+	border-right-width:2px;
+	border-radius:0;
+	margin-top:6px;
+	margin-bottom:6px;
+	
+	}	
+	
 		
 textarea:focus	,
 input:focus{
@@ -574,9 +711,18 @@ footer > div{
 
 	}
 .sm_item_menu p{
-	color:#666;	
+	font-size:14px;
+	color: #999;	
 	text-transform: none;
 }
+.sm_item_menu p span{
+	display:block;
+	clear:both;
+	font-size:14px;
+	color: #666;	
+	text-transform: uppercase;
+}
+
 .sm_item_menu a:hover{
 	/*color:#981643;	*/
 	}
@@ -667,7 +813,9 @@ header{
 	display:inline-block;
 	text-align:center;
 	width:25%;
-	padding:27px 12px;
+	
+	margin:27px 0;
+	padding:0 12px;
 	}
 	
 	
@@ -688,9 +836,9 @@ header{
 	}	
 	
 	
-	.vino_info{
-		position:relative;
-		}
+.vino_info{
+	position:relative;
+	}
 	
 .vino_info > *{
 	display: block;
@@ -702,10 +850,13 @@ header{
 	letter-spacing:0.06em;
 	padding:6px 0;
 	}
-.vino_info img{
+.vino_p_img{
 	display:inline-block;
-	width:210px;
-	}	
+	width:auto;
+	height:240px;
+transition:all .11s ease-in-out;
+	padding:0;
+	}
 .vino_info > * span{
 	display: block;
 	font-size:12px;
@@ -729,6 +880,58 @@ header{
     font-family: modern_display;
     text-transform: uppercase;
     letter-spacing: 0;
-	
 	padding:6px 0 0 0;
 	}	
+	
+
+.b_plus_minus{
+	position:relative;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	transition:all .21s ease-in-out;
+	}
+.b_plus_minus:before{
+	position: absolute;
+	top:50%;
+	left:50%;
+	
+	transform:translate(-50%,-50%);
+	
+	content:"";
+	display:inline-block;
+	width:50px;
+	height:50px;
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-x:-450px;
+	background-position-y:-100px;
+
+	}
+.b_plus_minus:hover:before{
+	background-position-y:-50px;
+	}
+	
+	/*jq*/
+.rotate_135{
+	transform:rotate(135deg);
+	}
+.img_w{
+	height:146px !important;
+	}
+.shop_now_box{
+	display:none;
+	padding:0 12px 0 12px;
+	background-color:#fff;
+	}
+.shop_now_box a{
+	display: inline-block;
+	font-size:12px;
+	line-height:18px;
+	width:100%;
+	margin:2px 0;
+	}	
+.shop_now_box .vino_price{
+	padding:14px 0 12px 0;
+	}
+	
+	
