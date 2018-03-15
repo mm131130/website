@@ -29,13 +29,29 @@
 
 
 <div class="sm_item_menu">
-<p>My Account
-<span>- Manage account</span>
-<span>- Teacher account</span>
-</p>
+<p>My Account</p>
 <a href="#">Settings</a>
+<div>
+- Account Basics<br>
+- Profile<br>
+- Password<br>
+- Email Notifications
+</div>
 <a href="#">Shipping Addresses</a>
+<div>
+- Add New Shipping Address<br>
+- Shipping Address List<br>
+- Shipping Address Delete / Edit
+</div>
+
 <a href="#">Payment Methods</a>
+<div>
+- Add New Payment Methods<br>
+- Payment Methods List<br>
+- Payment Methods Delete / Edit<br>
+- Credit Card<br>
+- Billing Address
+</div>
 <a href="#">Order History</a>
 <a href="#">Open Items</a>
 <a href="#">Shipments</a>
@@ -64,11 +80,11 @@
 
 <div class="wm_100">
 <label for="">Email Address</label>
-<input id="" class="" type="text" placeholder=""> 
+<input type="text" class="" id="" placeholder="" value="mountain@mountain.com"> 
 </div>
 <div class="wm_100">
-<label for="">Username</label>
-<input id="" class="" type="text" placeholder=""> 
+<label for="">Nickname</label>
+<input id="" class="" name="nname" type="text" placeholder=""> 
 </div>
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Save</button>
 
@@ -78,16 +94,18 @@
 
 <form class="mw_1200">
 <div class="subtitle">Profile</div>
+
+<!--
 <div class="wm_50">
-<div class="label_box">Employee number</div>
+<div class="label_box">Employee Number</div>
 <div class="input_box">C8888820180314</div>
 </div>
 
 <div class="wm_50">
 <label for="">ID Number</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="idnum" type="text" placeholder=""> 
 </div>
-<!--
+
 <div class="wm_100 label_box">Title</div>
 <div class="wm_100 radio_list">
 <a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Mr.</a>
@@ -111,12 +129,12 @@
 </div>  
 <div class="wm_33">
 <label for="">First Name</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="fname" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="">Last Name</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="lname" type="text" placeholder=""> 
 </div>
 
 <!--
@@ -129,23 +147,19 @@
 -->
 <div class="wm_50">
 <label for="">Phone Number (optional)</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="pnum" type="text" placeholder=""> 
 </div>
 <div class="wm_50">
 <label for="">Country</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="country" type="text" placeholder=""> 
 </div>
-
-
-
-
 
 
 <div class="w_100">
 <label class="wm_100" for="">Date of Birth (optional)</label>
-<input id="" class="wm_33" type="text" placeholder="Month"> 
-<input id="" class="wm_33" type="text" placeholder="Day">
-<input id="" class="wm_33" type="text" placeholder="Year">
+<input id="" class="wm_33" name="birthm" type="text" placeholder="Month"> 
+<input id="" class="wm_33" name="birthd" type="text" placeholder="Day">
+<input id="" class="wm_33" name="birthy" type="text" placeholder="Year">
 </div>
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Save</button>
 
@@ -162,15 +176,15 @@
 
 <div class="wm_100">
 <label for="">Enter Current Password</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="pwd_now" type="text" placeholder=""> 
 </div>
 <div class="wm_100">
 <label for="">Enter New Password (at least 6 digits)</label>
-<input id="" class="" type="text" placeholder="">
+<input id="" class="" name="pwd" type="text" placeholder="">
 </div>
 <div class="wm_100">
 <label for="">Re-enter Password</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="pwd_cfm" type="text" placeholder=""> 
 </div>
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">change</button>
 </form>
@@ -225,12 +239,11 @@ Receive monthly #ifchic24 Event reminder
 
 <div class="w_100">
 <label class="wm_100" for="">Recipient</label>
-<input id="" class="wm_50" type="text" placeholder=""> 
-
-<input id="" class="wm_50" type="text" placeholder=""> 
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
 </div>
 
-
+<!--
 <div class="wm_100">
 <label for="">Address Line 1</label>
 <input id="" class="" type="text" placeholder=""> 
@@ -240,30 +253,37 @@ Receive monthly #ifchic24 Event reminder
 <label for="">Address Line 2</label>
 <input id="" class="" type="text" placeholder=""> 
 </div>
+-->
+
+<div class="wm_100">
+<label for="">Address</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
 
 <div class="wm_50">
 <label for="">Country</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="country" type="text" placeholder=""> 
 </div>
 
 <div class="wm_50">
 <label for="">City</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="city" type="text" placeholder=""> 
 </div>
 
-<div class="wm_50">
+<div class="wm_33">
 <label for="">State/Region</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="state_region" type="text" placeholder=""> 
 </div>
 
-<div class="wm_50">
+<div class="wm_33">
 <label for="">Zip Code</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="zipc" type="text" placeholder=""> 
 </div>
 
-<div class="wm_50">
+<div class="wm_33">
 <label for="">Phone Number</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="pnum" type="text" placeholder=""> 
 </div>
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">add</button>
 </form>
@@ -276,28 +296,28 @@ Receive monthly #ifchic24 Event reminder
 <div class="subtitle">Credit Card</div>
 <div class="wm_50">
 <label for="">Card Holder's Name</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="holder_name" type="text" placeholder=""> 
 </div>
 
 <div class="wm_50">
 <label for="">Card Number</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="cname" type="text" placeholder=""> 
 </div>
 
 
 <div class="wm_33">
 <label for="">Exp Month</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="expm" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="">Exp Year</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="expy" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="">Security Code</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="securityc" type="text" placeholder=""> 
 </div>
 
 
@@ -310,31 +330,30 @@ Receive monthly #ifchic24 Event reminder
 
 
 <div class="wm_100">
-<label for="">Address 01</label>
-<input id="" class="" type="text" placeholder=""> 
+<label for="">Address</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
 </div>
-<div class="wm_100">
-<label for="">Address 02/Floor/Apt # (optional)</label>
-<input id="" class="" type="text" placeholder=""> 
-</div>
+
+
+
 <div class="wm_100">
 <label for="">Country</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="country" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="city">City</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="city" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="state">State/Region</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="state_region" type="text" placeholder=""> 
 </div>
 
 <div class="wm_33">
 <label for="zip_code">Zip Code</label>
-<input id="" class="" type="text" placeholder=""> 
+<input id="" class="" name="zipc" type="text" placeholder=""> 
 </div>
 
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Add</button>
