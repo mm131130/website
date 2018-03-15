@@ -16,7 +16,7 @@ $('.sm_ddm').each(function() {
 	
 	ts.find('.sm_ddm_menu a').on('click', function(){
 		var th_text = $(this).html();
-		ts.find('.btn_info').html(th_text);
+		ts.find('.btn_info').html(th_text).css({color:'#170003'});
 		ts.removeClass('open').find('.sm_ddm_menu').hide();	
 		return false;
 	});
@@ -30,6 +30,13 @@ $('.sm_radio_box , .sm_check_box').on('click', function() {
 	}else{
 		ts.addClass('click_item').find('.btn_img').addClass('click_icon');	
 	}
+	
+	
+	if(ts.hasClass('sm_radio_box')){
+		ts.siblings().removeClass('click_item').find('.btn_img').removeClass('click_icon');	
+	}
+	
+
 	return false;
 
 });//radio_box and check_box
