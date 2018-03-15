@@ -24,14 +24,21 @@
 	}
 .drink_night form,
 .drink_night .input_box{
-	border:1px #5d0b24 solid !important;  
+	border:1px #5d0b24 solid;
+	border-bottom-color:#981643;
 	}
+	
+	
 .drink_night a{
 	color:#5d0b24;
 	}	
 .drink_night a:hover{
 	color:#e4e0b9 !important;
 	}	
+	
+.drink_night .sm_item_menu p{
+	color: #fcd88c;
+	}
 
 /*
 .vino_sr{
@@ -218,6 +225,7 @@
 	font-size:14px;
 	line-height:18px;
 	color:#a0a0a0;
+	color:#d5b84f;
 	padding:11px 12px;
 	}	
 .btn_img{
@@ -280,14 +288,10 @@
 	/*
 	border:1px #999999 solid;
 	border:1px #0f1329 solid;	
-	border:1px #9d9d9d solid;		*/
-
-	
-	
+	border:1px #9d9d9d solid;	
+	*/
 	border:1px #e9d98e solid;
 	border-top:1px #e6e6e6 solid;
-
-
 	border-bottom-width:2px;
 	border-radius:6px;		
 	}
@@ -347,7 +351,20 @@ a:hover{
 	border:1px #CCCCCC solid; 
 	}
 
+/* form */
 
+form{
+	display:block;
+	padding-bottom:36px;
+	}
+
+form:after{
+	content:'';
+	display:block;
+	clear:both;
+	width:100%;
+	
+	}
 
 form p{
 	font-size:14px;
@@ -458,14 +475,7 @@ form .subtitle{
 	
 	
 	
-/* form */
 
-form{
-	display:block;
-	
-	overflow: hidden;
-	
-	padding-bottom:36px;}
 .user_picture{
 	position:relative;
 	left:50%;
@@ -632,7 +642,7 @@ input,
 	padding-bottom:10px;
 	}	
 .sm_nav .vino_logo{
-	border-top:1px #dfdfe1 solid;
+
 	border-bottom:1px #dfdfe1 solid;	
 	}
 	
@@ -696,7 +706,7 @@ footer > div{
 	padding:18px;
 	
 	}	
-
+.sm_item_menu div,
 .sm_item_menu p,
 .sm_item_menu a{
 	display:block;
@@ -710,6 +720,8 @@ footer > div{
 	padding:9px 0;
 
 	}
+	
+	
 .sm_item_menu p{
 	font-size:14px;
 	color: #999;	
@@ -740,7 +752,7 @@ header{
 	
 .sm_nav{
 	text-align:left;
-	
+	border-bottom:1px #dfdfe1 solid;	
 	
 	}
 .b_three_line{
@@ -761,15 +773,19 @@ header{
 	display:block;
 	font-size:12px;
 	line-height:24px;
+	
+	padding:0 12px;
+	
+	
 	}
-.right_box > *{
+.right_box > a{
 	display:inline-block;
 	font-size:12px;
 	line-height:24px;
 	color:#3f0514;
 	text-transform:uppercase;
 	
-	padding:13px 12px 13px 0;
+	padding:13px 0 13px 12px;
 	}
 .right_box > *:hover{
 	color:#981643;
@@ -788,6 +804,42 @@ header{
 	background-color:#3f0514;
 	border-radius:50%;
 	margin-left:4px;
+	}
+
+.sm_nav.v2 .right_box {
+	
+	}
+	
+	
+.sm_nav.v2 .b_my_wish,
+.sm_nav.v2 .b_shopping_bag{
+	font-size:14px;
+	padding-left:36px;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+}
+
+.sm_nav.v2 .b_my_wish{
+	background-position-y:-150px;		
+	background-position-x:-400px;	
+
+	}
+	
+.sm_nav.v2 .b_shopping_bag{
+	
+	background-position-y:-150px;		
+	background-position-x:-500px;	
+
+	}	
+.sm_nav.v2 .b_my_wish:hover,
+.sm_nav.v2 .b_shopping_bag:hover{
+		background-position-y:-100px;		
+}
+	
+	
+	
+.sm_nav.v2 .num_boo{
+	margin-left:0;
+
 	}
 
 
