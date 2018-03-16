@@ -68,12 +68,9 @@
 .img_sun,	
 .img_moon{
 	display:block;
-
 	width:120px;
 	height:120px;
-	background-image:url(../img/mm_icon_v2018.svg);		
-
-
+	background-image:url(http://mountain-mm.myweb.hinet.net/img/mm_icon_v2018.svg);		
     -webkit-animation:rotate_item 60s linear infinite;
     -moz-animation:rotate_item 60s linear infinite;
     animation:rotate_item 60s linear infinite;
