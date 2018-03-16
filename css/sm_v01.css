@@ -4,6 +4,7 @@
 	overflow:hidden;
 	color:#FFF;
 	background-color:#3f0514;
+	background-color:rgba(63, 5, 20, 0.90);
 	}
 .drink_night *:not(textarea):not(input){
 	color:#FFF;
@@ -24,8 +25,10 @@
 	}
 .drink_night form,
 .drink_night .input_box{
-	border:1px #5d0b24 solid;
-	border-bottom-color:#981643;
+	border:1px #5d0b24 solid !important;
+	border-bottom-color:#981643 !important;
+	
+	background-color:#3f0514;
 	}
 	
 	
@@ -90,6 +93,7 @@
 	color:#2c0006 !important;
 	padding:10px 0;
 	background-color:#f8f7e9;
+	background-color:#fbfbf2;	
 	border:1px #e4e0b9 solid;
 	}	
 .btn_white:hover{
@@ -305,30 +309,146 @@
 	}
 	
 .sm_ddm_menu a:hover{
-
 	color:#5d0b24 !important;
-
 	}
+	
+	
 
 
-p{
-	font-size:12px;
-	line-height:18px;
-    font-family: roboto_regular;
-	color: #666;
-	padding:9px 0;	
+
+
+
+table{
+	width:100%;
 	}
-p strong{
-	font-family:roboto_regular;
-	font-weight:normal;
-	color:#5d0b24;
+table a{
+	border-bottom:1px #981643 solid;
+	}
+table a:hover:not('.sm_radio_box'):not('.sm_radio_box'){
+	border-bottom:1px #3f0514 solid;
+	}
+	
+	
+/* my account */
+table img,
+.t_return,
+.t_img,
+.t_quantity{
+	width:72px;
+	}	
+.t_box_a{
+	padding:0;
+	text-align:center;
 	}	
 	
-p a{
+table tr:first-child td{
 	font-size:12px;
-	line-height:18px;
-   font-family:roboto_regular;
+	color:#a39849;
 	}
+
+.product_description{
+	line-height:20px;
+	}
+.product_description p{
+	padding:0;
+	}	
+.product_description span{
+	padding-right:6px;
+	}	
+	
+.total_price,
+.i_num{
+	font-size:21px;
+	line-height:30px;
+	color:#2c0006;	
+	}	
+.i_num{
+	display:block;
+	clear:both;
+	}
+.payment_total .price{
+    border-bottom: 1px #CCCCCC dashed;
+	}		
+.total_price{
+	border-top:1px #CCCCCC solid;
+	}
+.total_price span{
+	font-size:14px;
+	}		
+.payment_total p{
+	text-align:right;
+	padding: 9px 12px;
+	}
+.payment_total span{
+	position:relative;
+	left:0;
+	}
+table .sm_radio_box,
+table .sm_check_box{
+	padding:0;
+	text-align:center;
+	border:none;
+}
+table .sm_radio_box .btn_img,
+table .sm_check_box .btn_img{
+	display:inline-block;
+	position:static;
+	}	
+	
+	
+	
+	
+				
+tr{
+	}
+td {
+	width: auto;
+    font-size: 14px;
+    line-height: 18px;
+	color:#2c0006;
+    padding: 12px 6px;
+    border: 1px #e6e6e6 solid;
+    vertical-align: middle;
+}
+
+
+h5{
+	font-size:14px;
+	color:#a39849;
+	padding:9px 0 3px 0;
+	}		
+
+p{
+	font-size:14px;
+	line-height:18px;
+	font-family: roboto_regular;
+	color: #666;
+	color:#2c0006;	
+	padding:9px 0;
+
+
+	}
+p strong{
+	font-family: roboto_Medium;
+	font-weight:normal;
+	color:#5d0b24;
+	color:#981643;
+	}	
+p a{
+	border-bottom:1px #981643 solid;
+	}
+p a:hover{
+	border-bottom:1px #3f0514 solid;
+	}	
+p span{
+	font-size:inherit;
+	color:#d5b84f;
+	
+	padding-right:6px;
+	vertical-align:baseline;
+	}	
+	
+	
 
 a{
 	color:#5d0b24;
@@ -383,7 +503,32 @@ form p a{
 	font-size:12px;
 	font-family: roboto_regular;
 	padding:0 12px 0 30px;
+	}
+	
+.sm_note_02{
+	position:relative;
+	font-size:14px;
+	font-family: roboto_regular;
+	color:#999;
+	text-align:left !important;
+	padding:6px 12px;
+	}
+.sm_note_02:before{
+	position:absolute;
+	left:0;
+	display:block;
+	content:"*";
+	font-size:18px;
+	line-height:18px;
+	font-family: roboto_regular;
+color:#999;
+text-align:center;
+
+width:12px;
+
+
 	}	
+			
 form > a{
 	display:inline-block;
 	font-size:14px;
@@ -409,8 +554,6 @@ form > a{
 	padding:14px 0 6px 0;
 
 }
-
-
 .main_title{
 	display:block;
 	clear: both;
@@ -433,8 +576,6 @@ form .subtitle{
 	margin-left: 1.5%;
     margin-right: 1.5%;
 }
-
-
 .box_name p{
 	font-size:18px;
 }
@@ -623,6 +764,12 @@ input,
 	width:100%;
 	padding:11px 0;
 	}
+.vino_logo img{
+	
+	width:76px;
+	
+	}	
+	
 .vino_logo div{
 	display:inline-block;
 	font-size:150px;
@@ -642,8 +789,16 @@ input,
 	padding-bottom:10px;
 	}	
 .sm_nav .vino_logo{
-
-	border-bottom:1px #dfdfe1 solid;	
+	border-top:1px #dfdfe1 solid;	
+	}
+	
+	
+footer{
+	display:block;
+	clear:both;
+	
+    
+	
 	}
 	
 	
@@ -651,6 +806,8 @@ footer > div{
 	border-top:1px #dfdfe1 solid;
 	}
 .sm_copyright{
+	font-size:12px;
+	color:#999;
 	display:inline-block;
 	padding:25px 12px;
 	
@@ -693,18 +850,18 @@ footer > div{
 .sm_note_box:hover{
 	/*color:#e4e0b9;*/
 	}	
+	
+	
+	
 .sm_item_menu{
 	position:fixed;
 	top:50%;
 	left:0;
 	z-index:900;
 	transform:translateY(-50%);
-	
 	max-width:210px;
 	width:100%;
-	
 	padding:18px;
-	
 	}	
 .sm_item_menu div,
 .sm_item_menu p,
@@ -717,11 +874,9 @@ footer > div{
 	
 	text-transform:uppercase;
 	/*color:#5d0b24;	*/
-	padding:9px 0;
+	padding:3px 0;
 
 	}
-	
-	
 .sm_item_menu p{
 	font-size:14px;
 	color: #999;	
@@ -734,7 +889,6 @@ footer > div{
 	color: #666;	
 	text-transform: uppercase;
 }
-
 .sm_item_menu a:hover{
 	/*color:#981643;	*/
 	}
@@ -743,6 +897,15 @@ a.w_100{
 	padding:0;
 	}
 	
+	
+	
+	.my_account_menu a{
+		font-size:14px;
+		line-height:18px;
+		padding:9px;
+		
+		display:block;
+		clear:both;}
 	
 	
 /* header */
