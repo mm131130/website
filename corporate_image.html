@@ -246,13 +246,7 @@ transform: rotate(360deg);
 
 $(function() {
 
-//var max_page = 18;
-for ( var box=0 ; box <= 22 ; box++ ){
-	$('.jq_hw_num_c').append('<div></div>');
-}	
-$('.jq_hw_num_c > div').each(function(i) {
-
-var how_many_day = i+1;
+var wall_paper_box = ''; 
 var wall_paper_info = [
 '<span>1</span>',
 '<span>2</span>',
@@ -277,17 +271,56 @@ var wall_paper_info = [
 '<span>18</span> New Year',
 '<span>19</span> New Year',
 '<span>20</span> Spring',
+
 '<span>21</span> XMAS',
 '<span>22</span> Valentine&prime;s Day',
-
 '<span>23</span> New Year'
 
 ];
 
+
+for ( var box = 0 ; box <= 22 ; box++ ){
+var p_num = box;
+wall_paper_box += '<div><div class="parking_img_box"><img src="http://mountain-mm.myweb.hinet.net/img_parking/day_' + (box+1) + '.jpg"></div><div class="copywriter"><p>Wallpaper</p><h2>' + wall_paper_info[p_num] + '</h2></div></div>';
+}	
+
+$('.jq_hw_num_c').append(wall_paper_box);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//var max_page = 18;
+
+/* 生成物件 v01
+
+// 1. 做盒子
+for ( var box=0 ; box <= 22 ; box++ ){
+	$('.jq_hw_num_c').append('<div></div>');
+}	
+
+
+// 2. 把內容放入盒子
+$('.jq_hw_num_c > div').each(function(i) {
+
+var how_many_day = i+1;
+
+// 3. each 每一個做一次下面動作
 $(this).append('<div class="copywriter"><p>Wallpaper</p><h2>'+ wall_paper_info[i] +'</h2></div>');
 $(this).prepend('<div class="parking_img_box"><img src="http://mountain-mm.myweb.hinet.net/img_parking/day_' + how_many_day + '.jpg"></div>');
 
 });
+*/
+
+
 //https://mm131130.github.io/website/style_trend.html#style_trend_list
 /*http://mountain-mm.myweb.hinet.net/css/all.css
 $('.jq_hw_num_a > div').each(function(i) {
@@ -303,90 +336,12 @@ $('.jq_hw_num_a > div').each(function(i) {
 
 });
 
-</script>
+</script>z
 </head>
 <body>   
 
 
 
-<div class="mw_1200 logo_slide_show">
-<!--
-<div class="btn_prev_next">
-<a class="b_prev" href="#">< Prev</a>
-<a class="b_next" href="#">Next ></a>
-</div>
--->
-
-<div class="brand_design">
-<div class="">
-<div class="img_box flex_box">
-<img src="img_mm/h_tai_chi.svg" height="120px">
-</div>
-
-<div class="item_title">
-online education
-<p class="job_type">Brand Design</p>
-<p>Our helps clients transform their lives and professionals transform their businesses through expert coaching, ongoing support, and guided mentorship.</p>
-
-</div>
-<a class="btn_more" href="style_guide_tai_chi.html">more</a>
-
-
-</div><div>
-<div class="img_box flex_box">
-<img src="img_mm/parking_v01.svg" height="72px">
-</div>
-
-<div class="item_title">
-parking APP
-<p class="job_type">Brand Design</p>
-
-<p>Smart parking APP. Recommend best choice parking lot.
-Fully functional indoor and outdoor parking navigation system.</p>
-</div>
-
-</div><div>
-<div class="img_box flex_box">
-<img src="img_mm/tli_v01.svg" height="72px">
-</div>
-
-<div class="item_title">
-online education
-<p class="job_type">Brand Design</p>
-<p>Chinese language teaching</p>
-</div>
-
-
-</div><div class="" style="display:none;">
-<div class="img_box flex_box">
-<img src="img_mm/ifchic_v02.svg" height="27px">
-</div>
-<div class="item_title">
-e-commerce
-<p class="job_type">Brand Design</p>
-
-<p>Shop designer fashion online at IFCHIC. Designer clothes, designer shoes, designer bags and designer accessories from top designer brands.</p>
-</div>
-
-
-</div><div>
-<div class="img_box flex_box">
-<img src="img_mm/ifchic_v01.svg" height="36px">
-</div>
-<div class="item_title">
-e-commerce
-<p class="job_type">Brand Design</p>
-
-<p>Shop contemporary designer brands at ifchic. A curated selection of clothing, shoes and accessories.</p>
-</div>
-<a class="btn_more" href="style_guide_if_01.html">more</a>
-
-
-
-
-</div>
-</div>
-</div><!-- logo_slide_show -->
 
 
 
@@ -438,4 +393,3 @@ e-commerce
 
 </body>
 </html>
-<noscript>

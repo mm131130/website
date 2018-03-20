@@ -1,0 +1,101 @@
+<script>
+$(function(){
+$('.btn_prev_next').each(function() {
+	var ts = $('.btn_prev_next');
+	ts.find('.b_prev , .b_next').on('click' , function(){
+	if( $(this).hasClass('b_next') ){
+		$('.brand_design > *:first-child').appendTo('.brand_design');
+	}else if( $(this).hasClass('b_prev') ){	
+		$('.brand_design > *:last-child').prependTo('.brand_design');
+	}
+	return false;
+	});	
+});	
+});	
+</script>
+
+
+<div class="btn_prev_next">
+<a class="b_prev" href="#">< Prev</a>
+<a class="b_next" href="#">Next ></a>
+</div>
+
+
+<div class="brand_design">
+
+<div>
+
+<div class="img_box flex_box vino_logo">
+<img src="img_vino/ms_vino_logo_01_black.svg">
+<p>Sammarinese</p>
+</div>
+<div class="item_title">
+<p class="job_type">E-commerce</p>
+<p>The San Marino wine is part of the local cultural heritage and tradition, and the band inherits the rich taste of SAMMARINESE.</p>
+</div>
+
+</div><div>
+
+<div class="img_box flex_box">
+<img src="http://mountain-mm.myweb.hinet.net/img_mm/h_tai_chi.svg" height="120px">
+</div>
+
+<div class="item_title">
+<p class="job_type">Online education</p>
+<p>Our helps clients transform their lives and professionals transform their businesses through expert coaching, ongoing support, and guided mentorship.</p>
+
+</div>
+<a class="btn_more" href="style_guide_tai_chi.html">more</a>
+
+</div><div>
+
+<div class="img_box flex_box">
+<img src="http://mountain-mm.myweb.hinet.net/img_mm/parking_v01.svg" height="72px">
+</div>
+<div class="item_title">
+<p class="job_type">Parking APP</p>
+<p>Smart parking APP. Recommend best choice parking lot.
+Fully functional indoor and outdoor parking navigation system.</p>
+</div>
+
+</div><div>
+
+<div class="img_box flex_box">
+<img src="http://mountain-mm.myweb.hinet.net/img_mm/tli_v01.svg" height="72px">
+</div>
+<div class="item_title">
+<p class="job_type">Online Education</p>
+<p>Chinese language teaching</p>
+</div>
+
+</div><div>
+
+<div class="img_box flex_box">
+<img src="http://mountain-mm.myweb.hinet.net/img_mm/ifchic_v02.svg" height="27px">
+</div>
+<div class="item_title">
+
+<p class="job_type">E-commerce</p>
+
+<p>Shop designer fashion online at IFCHIC. Designer clothes, designer shoes, designer bags and designer accessories from top designer brands.</p>
+</div>
+
+
+</div><div>
+<div class="img_box flex_box">
+<img src="http://mountain-mm.myweb.hinet.net/img_mm/ifchic_v01.svg" height="36px">
+</div>
+<div class="item_title">
+
+<p class="job_type">E-commerce</p>
+
+<p>Shop contemporary designer brands at ifchic. A curated selection of clothing, shoes and accessories.</p>
+</div>
+<a class="btn_more" href="style_guide_if_01.html">more</a>
+
+
+
+
+</div>
+</div>
+

@@ -1,0 +1,49 @@
+/* 20180320 
+- lord
+- lord div
+- deputy
+- deputy p
+- secondary
+*/
+.lord{
+	display:block;
+	text-align:center;
+	font-size:27px;
+	line-height:36px;
+	font-family:roboto_light;
+	color:#999;
+	padding-top:45px;
+	}
+.lord div{
+	font-size:54px;
+	line-height:54px;
+	font-family:roboto_thin;
+	color: #CCC;
+	}	
+.deputy{
+	font-size:18px;
+	line-height:18px;
+	font-family:roboto_light;
+	color:#2c0006;
+	text-transform:uppercase;
+	padding:27px 0 6px 0;	
+	}
+.deputy p{
+	font-size:27px;
+	line-height:27px;
+	font-family:"notera";
+	color:#666;
+	text-transform: none;
+	padding:0;
+	}
+.secondary{
+	font-size:14px;
+	line-height:18px;
+	font-family:roboto_Regular;
+	color:#999;
+	padding:18px 0 9px 0;	
+	}
+	
+	
+	
+	

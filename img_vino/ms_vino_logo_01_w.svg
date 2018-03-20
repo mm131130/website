@@ -3,6 +3,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="76px" height="76px" viewBox="0 0 76 76" enable-background="new 0 0 76 76" xml:space="preserve">
-<path fill="#F8F7E9" d="M74,62c-3.314,0-6-2.686-6-6V13h-7h-1L46,59.667V13h-7h-1L27,49.667L16,13H9H8v43c0,3.314-2.686,6-6,6H0v1
-	h17v-1h-2c-3.314,0-6-2.686-6-6V16.343L22.957,63H23h1l3.5-11.667l10.5-35V63h8l14-46.667V56c0,3.314-2.686,6-6,6h-2v1h24v-1H74z"/>
+<g>
+	<path fill="#F8F7E9" d="M11.5,13v46c0,1.657-1.343,3-3,3h-5v1h17v-1h-5c-1.657,0-3-1.343-3-3V17c0-1.657,1.343-3,3-3h3v-1"/>
+	<polygon fill="#F8F7E9" points="19.5,13 11.5,13 26.457,63 26.5,63 30.5,49.667 	"/>
+	<polygon fill="#F8F7E9" points="49.5,36.333 49.5,13 41.5,13 41.5,63 45.5,49.667 	"/>
+	<polygon fill="#F8F7E9" points="26.5,63 27.5,63 42.5,13 41.5,13 	"/>
+	<polygon fill="#F8F7E9" points="41.5,63 42.5,63 57.5,13 56.5,13 	"/>
+	<path fill="#F8F7E9" d="M56.5,13v46c0,1.657-1.343,3-3,3h-5v1h24v-1h-5c-1.657,0-3-1.343-3-3V13H56.5z"/>
+</g>
 </svg>

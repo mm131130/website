@@ -169,6 +169,7 @@ footer.mm_v2018 .img_w{
 
 
 .logo_slide_show{
+	
 	display:block;
 	clear:both;
 	position:relative;
@@ -178,8 +179,11 @@ footer.mm_v2018 .img_w{
 	border-bottom: 1px #e1e1e1 solid;
 	}
 .brand_design{
-
+	overflow:hidden;
+	white-space: nowrap;
 	}
+	
+	
 .brand_design *{
 	font-size:12px;
 	line-height:18px;
@@ -188,8 +192,10 @@ footer.mm_v2018 .img_w{
 	color:#656d78;	
 	letter-spacing: 0.05em;
 	word-spacing:	 0.05em;
+	white-space: normal;
 	}
 .brand_design > div{
+
 	display:inline-block;	
 	
 	width:25%;
@@ -230,7 +236,8 @@ footer.mm_v2018 .img_w{
 
 .btn_more{
 	display:block;
-	float:right;
+	/*float:right;*/
+	
 	font-family:roboto_Regular, Helvetica, Arial, sans-serif;	
 	color:#000;
 	
@@ -292,10 +299,27 @@ footer.mm_v2018 .img_w{
 	text-align:right;
 	}
 .btn_prev_next a:hover{
-	color:#FFF;
-	background-color:#e9573f;
+	color:#e9573f;
+	/*background-color:#e9573f;*/
 }
+.btn_prev_next:before{
+	content:"";
+	position:absolute;
+	left:50%;
+	top:50%;
+	display:block;
+	width:1px;	
+	height:100px;
+	
+	
+	background-color:#e1e1e1;
 
+
+	transform:translate(-50%,-50%) rotate(23.5deg);
+	
+	
+	
+	}
 	
 	
 
@@ -485,12 +509,15 @@ footer.mm_v2018 .img_w{
 	}
 }
 @media screen and (max-width:767px){
-.brand_design > div{
-	width:50%;
-	}
+
+	
+	/*
 .brand_design > div:nth-child(2){
 	border:none;
 	}	
+	
+	*/
+	
 .mm_nav > li{
 	display:none;
 	}
@@ -511,7 +538,22 @@ footer.mm_v2018 .img_w{
 	width:100%;
 	}
 }
+
+@media screen and (max-width:1024px){
+.brand_design{
+
+	}	
+	
+.brand_design > div{
+	width:33.333333%;
+
+	}
+	
+	
+	
+}
 @media screen and (max-width:1023px){
+	
 .btn_prev_next{
 	left:66.666666%;
 	}
@@ -521,6 +563,13 @@ footer.mm_v2018 .img_w{
 	}*/
 }
 @media screen and (max-width:767px){
+.brand_design{
+
+	}	
+	
+.brand_design > div{
+	width:50%;
+	}	
 /*	
 .brand_design a{
 	width:50%;
@@ -628,3 +677,69 @@ footer.mm_v2018 .img_w{
 	padding-bottom:11px;
 	border:none;
 	}
+	
+	
+	
+	
+	/* 20180319 for vino 
+
+
+lord
+deputy
+secondary*/
+.lord{
+	display:block;
+	text-align:center;
+	font-size:27px;
+	line-height:36px;
+	font-family:roboto_light;
+	color:#999;
+	padding-top:45px;
+	}
+.lord div{
+	font-size:36px;
+	font-family:roboto_thin;
+	}
+.deputy{
+	font-size:18px;
+	line-height:18px;
+	font-family:roboto_light;
+	color:#2c0006;
+	text-transform:uppercase;
+	
+	padding:27px 0 6px 0;	
+	}
+.deputy p{
+	font-size:27px;
+	line-height:27px;
+	font-family:"notera";
+	color:#666;
+	text-transform: none;
+	padding:0;
+	}
+.secondary{
+	font-size:14px;
+	line-height:18px;
+	font-family:roboto_Regular;
+	color:#999;
+	padding:18px 0 9px 0;	
+	}
+	
+	
+	
+	
+	
+/* Sammarinese */	
+.vino_logo img{
+	width:76px;
+	height:76px;
+	}
+.vino_logo p{
+	font-size:16px;
+	line-height:18px;
+    font-family: roboto_light;
+	color:#000;
+	text-transform:uppercase;
+	letter-spacing:0.15em;
+	}	
+	

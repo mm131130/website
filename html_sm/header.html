@@ -14,65 +14,151 @@
 <link media="all" rel="stylesheet" href="../css/fonts.css"/>
 <link media="all" rel="stylesheet" href="../css/size.css"/>
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/mm_v2018_2.css"/>
 <style>
 
 .sm_banner{
 	padding:30px 0;	
 	}
-.my_account_menu{
-	display:inline-block;
-	position:relative;
+
+	
+/* 20180319 for vino
+lord
+deputy
+secondary
+ */
+
+body{
+	background-color:rgb(250,245,240);
 	}
-.my_account_menu > div{
-	display: none;
-	position:absolute;
-	left:50%;
-	transform:translateX(-50%);
-	background-color:#fdfdf7;
-	padding:12px;
-	min-width:210px;
-	width:100%;
-	background-color:#fdfdf7;
-	border:1px #e4e0b9 solid;
-	border-radius:6px;
-	}	
-.my_account_menu:hover > div{
-	display: block;
-	}		
-.my_account_menu > div:before{
-	content:"";
-	position: absolute;
-	top:-12px;
-	left:50%;
 
-	transform:translateX(-50%);
-	
-	
-	border-style: solid;
-	border-width:0 12px 12px 12px;
-	border-color:#e4e0b9 transparent;
-	transition:all 0.1s ease-in-out;
 
-}			
-		
-.my_account_menu a{
+
+
+
+
+.open_diary{
+	font-size:36px;
+	line-height:36px;
+	
+	}
+
+
+
+
+header{
 	display:block;
-	clear: both;
-	font-size:14px;
-	line-height:18px;
-	text-transform:uppercase;
-	padding:16px 0;
+	clear:both;
+	}
+header > *{
+	background-color:#FFF;
+	}
+.sm_nav > *{
+	display:none;
+	}
+.sm_nav > .b_three_line,
+.sm_nav > .b_search,
+.sm_nav > .b_login_register{
+	display: inline-block;
+	}	
+	
+
+/*
+	@media screen and ( max-width : 1023px ){
 		
-}
+		.sm_nav > *{
+			float:none;
+			display:block !important;
+			}
+			
+.my_account_menu a:before{
+	display:none !important;
+	}
 
 
-
-
+	.my_account_menu > div{
+	display:block;
+	
+    position: static;
+  
+   
+    transform:none;
+    min-width: 100%;
+    width: 100%;	
+	
+	
+	    padding:0;
+    border-radius: 0;
+    background-color: inherit;
+			
+	}
+.bg_wine a{
+	color:#3f0514;
+	padding:16px 12px;
+	}
+.bg_wine a:hover{
+	color:#981643;
+	}	
+	
+.bg_wine a:before{
+	display:none;
+		
+		}	
+	
+	
+		body{
+			
+			background-color:#30C;
+			}
+		
+		
+		}
+*/		
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/sm_v2018.js"></script>
 <script>
 $(function(){
+	
+	
+	$('.sm_nav.v2').each(function() {
+		var sm_nav_v2 = $('.sm_nav.v2');
+		sm_nav_v2.find('.b_login_register').on('click', function(){
+			$(this).hide().siblings().show();
+		});
+		
+		sm_nav_v2.find('.fb_sign_out').on('click', function(){
+			sm_nav_v2.find(' > *').css('display', '');
+		});
+    });
+	
+	
+	
+	
+	
+	
+	
+	$('.sm_nav.v1').each(function() {
+    	var sm_nav_v1 = $('.sm_nav.v1');
+		
+		sm_nav_v1.find('.b_login_register').on('click', function(){
+			
+			
+			
+			if($(this).hasClass('open')){
+			$(this).removeClass('open').html('Login / Register');
+				sm_nav_v1.find(' > *').css('display', '');
+			}else{
+			
+			$(this).addClass('open').html('Sign Out').siblings().show();
+		
+			}
+			
+		});
+		
+	});  
+    
+	
 });
 
 </script>
@@ -81,74 +167,58 @@ $(function(){
 </head>
 <body>
 
-<div class="box_name">v02 header</div>
 
-<header>
-<div class="mw_1200 sm_nav">
-<a class="b_three_line" href="#">&nbsp;</a>
-<div class="right_box">
-<a class="b_login_register" href="sm_login_register.html">Log In / Register</a>
+<div class="lord">
+<div>header</div>
 </div>
+
+<div class="lord">
+<p>20180319</p>
+<div>v03</div>
 </div>
-</header>
 
 <header>
 <div class="mw_1200 sm_nav v2">
-
 <a class="b_three_line" href="#">&nbsp;</a>
 
-
-<div class="right_box">
+<a class="b_login_register" href="#">Log In / Register</a>
 
 <div class="my_account_menu">
 <a class="b_my_account" href="#">Hi Mountain</a>
-<div>
-<a href="#">Settings</a>
-<a href="#">Order History</a>
-<a href="#">Returns</a>
-<a class="" href="#">Sign Out</a>
+	<div class="bg_wine">
+    <a href="#">Settings</a>
+    <a href="#">Order History</a>
+    <a href="#">Returns</a>
+    <a class="fb_sign_out" href="#">Sign Out</a>
+	</div>
 </div>
-</div>
-
-
-
-<a class="b_my_wish" href="#">999</a>
-<a class="b_shopping_bag" href="#">999</a>
+<a class="b_my_wish num_zero" href="#"><span class="icon_img">&nbsp;</span></a>
+<a class="b_shopping_bag" href="#"><span class="icon_img">&nbsp;</span>9,999</a>
+<a class="b_search" href="#"><span class="icon_img">&nbsp;</span>&nbsp;</a>
 
 
 </div>
 
-
-</div>
+<div class="mw_1200 vino_logo"><a href="index.html"><img src="../img_vino/ms_vino_logo_01_b.svg"></a><p>Sammarinese</p></div>
 </header>
 
 
 
 
 
-
-<div class="box_name">v01 header</div>
-<header>
-<div class="mw_1200 sm_nav">
-<a class="b_three_line" href="#">&nbsp;</a>
-<div class="right_box">
-<a class="b_login_register" href="sm_login_register.html">Log In / Register</a>
-</div>
+<div class="lord">
+<p>20180316</p>
+<div>v01</div>
 </div>
 
-</header>
-
 <header>
-<div class="mw_1200 sm_nav">
-
+<div class="mw_1200 sm_nav v1">
 <a class="b_three_line" href="#">&nbsp;</a>
-<div class="right_box">
+
 <a class="b_my_account" href="#">Hi Mountain</a>
 <a class="b_my_wish" href="#">My Wish<span class="num_boo">999</span></a>
-<a class="b_shopping_bag" href="#">shopping bag<span class="num_boo">999</span></a>
-<a class="b_login_register" href="sm_login_register.html">Sign Out</a>
-</div>
-
+<a class="b_shopping_bag num_zero" href="#">Shopping Bag<span class="num_boo">999</span></a>
+<a class="b_login_register" href="#">Log In / Register</a>
 
 </div>
 </header>

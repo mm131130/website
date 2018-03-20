@@ -224,22 +224,26 @@ li{
 	color: #0f1329;	
 	padding:18px 0 9px 0;  	
 	}
+
 .page_name p span{
 	display:inline-block;
 	color:#CCC;
 	color:#a6a6a6;
 	width:18px;		
-	}	
+	}/* slash = / */
 .tag_content{
 	position:relative;
 	display:block;
 	clear: both;
+	/*
 	overflow:hidden;
+	*/
 	font-size:16px;
 	line-height:20px;
 	font-family:Arial, sans-serif;
 	font-family:roboto_light;	
-	color: #0f1329;
+	color:#0f1329;
+	text-align:center;
 	text-transform:none;
 	margin-bottom:9px;
 	}
