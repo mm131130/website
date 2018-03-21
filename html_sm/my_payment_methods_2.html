@@ -41,7 +41,17 @@ $(function(){
 <div class="main_title">Payment Methods</div>
 
 <div class="wm_25 left_menu">&nbsp;</div><div class="wm_50">
-<form class="mw_1200">
+
+<a href="#" class="account_list_btn">Add new payment methods</a>
+
+<form class="account_info">
+
+<div class="wm_100">
+<label for="">Assign Title</label>
+<input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
+</div>
+
+
 <div class="subtitle">Credit Card</div>
 <div class="wm_50">
 <label for="">Card Holder's Name</label>
@@ -64,7 +74,25 @@ $(function(){
 <input id="" class="" name="securityc" type="text" placeholder=""> 
 </div>
 <div class="subtitle">Billing Address</div>
+
+<!--
 <a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Use an existing address</a>
+-->
+<div class="wm_100">
+<div class="label_box">Use an existing address</div>
+	<div class="sm_ddm">
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Title *</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="sm_ddm_menu">
+<a href="#">My sweet home</a> 
+<a href="#">Grandma home</a>
+<a href="#">School</a>
+<a href="#">Office</a>
+	
+	</div>
+	</div>  
+</div>  
+
+
 <div class="wm_100">
 <label for="">Address</label>
 <textarea class="" rows="2" name="address_post" placeholder=""></textarea>
@@ -87,7 +115,80 @@ $(function(){
 </div>
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Add</button>
 </form>
-</div><!-- 75 -->
+
+
+
+
+<div class="account_list_btn">My sweet home<div class="btn_img btn_up">&nbsp;</div></div>  
+
+
+
+<div class="account_info">
+<a href="#" class="wm_50 edit_btn">Edit</a><a href="#" class="wm_50 edit_btn">Cancel</a>
+<div class="subtitle">Credit Card</div>
+
+<div class="wm_50">
+<div class="label_box">Card Holder's Name</div>
+<div class="input_box">VISA</div>
+</div>
+<div class="wm_50">
+<div class="label_box">Card Number</div>
+<div class="input_box">8888 8888 8888 8888</div>
+</div>
+<div class="wm_33">
+<div class="label_box">Exp Month</div>
+<div class="input_box">08</div>
+</div>
+<div class="wm_33">
+<div class="label_box">Exp Year</div>
+<div class="input_box">2118</div>
+</div>
+<div class="wm_33">
+<div class="label_box">Security Code</div>
+<div class="input_box">888</div>
+</div>
+
+<div class="subtitle">Billing Address</div>
+
+
+<div class="wm_100">
+<div class="label_box">Address</div>
+<div class="input_box">122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</div>
+</div>
+
+<div class="wm_100">
+<div class="label_box">Country</div>
+<div class="input_box">ROC</div>
+</div>
+
+<div class="wm_33">
+<div class="label_box">City</div>
+<div class="input_box">Taipei</div>
+</div>
+<div class="wm_33">
+<div class="label_box">State/Region</div>
+<div class="input_box">Zhongzheng</div> 
+</div>
+<div class="wm_33">
+<div class="label_box">Zip Code</div>
+<div class="input_box">0811</div> 
+</div>
+</div>
+
+
+<div class="account_list_btn">Grandma home<div class="btn_img btn_down">&nbsp;</div></div>    
+
+<div class="account_list_btn">School<div class="btn_img btn_down">&nbsp;</div></div>       
+
+<div class="account_list_btn">Office<div class="btn_img btn_down">&nbsp;</div></div>
+
+    
+</div><!-- wm_50 -->
+
+
+
+
+
 </div><!-- 1200 -->
 </body>
 </html>

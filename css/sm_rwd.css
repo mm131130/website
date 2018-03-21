@@ -1,0 +1,39 @@
+@media screen and (max-width:1023px) {
+
+}	
+@media screen and (max-width:767px) {
+.account_info{
+	padding:24px 0;
+	}		
+	
+.account_info .w_100{
+	
+	width:100%;
+	margin:0;
+	}	
+	
+	
+.account_info .w_100 .wm_50{
+
+	width:41%;
+	}
+.account_info .w_100 input.wm_50{
+	float:left !important;
+	}
+	
+.account_info button ~ button{
+	
+	margin-top:0;
+	}
+.account_info .edit_btn{
+	float:left;
+	width:41%;
+	margin-left:4.5%;
+		margin-right:4.5%;
+	
+	}
+
+
+}
+
+

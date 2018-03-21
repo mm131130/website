@@ -29,6 +29,7 @@
 	border-bottom-color:#981643 !important;
 	
 	background-color:#3f0514;
+
 	}
 	
 	
@@ -82,10 +83,8 @@
 	color:#FFF !important;
 	text-align:center;
 	text-transform:uppercase;
-	padding:11px 0;
-	
+	padding:11px 12px;
 	width:100%;
-
 	border-radius:6px;
 	}
 
@@ -447,7 +446,7 @@ font-family: roboto_light;
 h5{
 	font-size:14px;
 	line-height:18px;	
-	font-family: roboto_regular;	
+	font-family:roboto_regular;	
 	color:#a39849;
 	padding:9px 0 3px 0;
 	}		
@@ -599,19 +598,49 @@ form > a{
 	display:block;
 	clear: both;
 	font-size:21px;
+	font-size:18px;
+	line-height:18px;
+	color:#a39849;
 	font-family: roboto_light;
-	padding:36px 0 12px 0;	
+	font-family:roboto_Regular;	
+	padding:24px 0 12px 0;	
 }
 .subtitle p{
 	padding:6px 0 0 0;
 }
 
+
+.secondary{
+	display:block;
+	clear: both;
+	font-size:14px;
+	line-height:18px;
+	font-family:roboto_regular;
+	color:#a39849;
+	text-transform:uppercase;
+	padding:36px 0 12px 0;	
+}	
+
+
+.secondary,
+.subtitle,
+form .secondary,
 form .subtitle{
 	padding-left:14px;
 	padding-right:14px;
 	margin-left: 1.5%;
     margin-right: 1.5%;
 }
+
+
+form button{
+	margin-top:30px;
+}
+
+
+
+
+
 .box_name p{
 	font-size:18px;
 }
@@ -663,14 +692,21 @@ form .subtitle{
 .box_user_picture{
 	overflow:hidden;
 	display:inline-block;	
-		width:150px;
-	height:150px;
+	width:90px;
+	height:90px;
 
 	border-radius:50%;
 	border:1px #2c0006 solid;
-	border:1px #2c0006 solid;
+	border:1px #e9d98e solid;
+	border-left-width:2px;
+	border-right-width:2px;
+
+	
+	background-color:#f8f7e9;
+	/*
 	border-bottom-width:3px;
-	border-right-width:3px;	
+	border-right-width:3px;
+	*/
 	}
 	
 	
@@ -781,6 +817,7 @@ label ~ *{
 	border:none;
 
 	background-color:#f8f7e9;
+
 	}	
 	
 .textarea_focus,
@@ -1136,6 +1173,8 @@ a:hover color:#981643;
 	position:relative;
 	padding:0;
 	}
+	
+	
 .left_menu a,	
 .my_account_menu > a{
 	position:relative;
@@ -1145,6 +1184,12 @@ a:hover color:#981643;
 	line-height:18px;
 	padding:16px 12px;
 }
+.left_menu p a{
+	display:inline-block;
+	margin-left:6px;
+	margin-right:6px;
+	}
+
 .my_account_menu > a:before{
 	display:none;
 	content:"";
@@ -1418,3 +1463,123 @@ transition:all .11s ease-in-out;
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* 20180321 */
+	
+	
+.account_list_btn{}
+.account_input{}
+.account_info{}
+	
+.account_list_btn,
+.account_info{  
+	position:relative;
+	display:block;
+	clear:both;
+	padding:24px;
+	border:1px #dfdfe1 solid;
+	border-radius:4px;
+	margin-bottom:18px;
+	}	
+		
+	
+.account_list_btn{
+	font-size:13px;
+	line-height:18px;
+	font-family:roboto_Medium;
+	color:#981643;
+	text-align:center;
+	text-transform:uppercase;	
+	}
+.account_list_btn:hover{
+	color:#5d0b24;		
+	background-color:#fbfbf2;
+	}	
+.account_list_btn:hover .btn_img{
+	background-position-y:-110px;	
+	}
+.account_list_btn .btn_img{
+	position:absolute;
+	top:34px;
+	right:34px;
+	transform:translate(50%,-50%);	
+	}		
+.account_info:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+	
+	
+	
+/* 20180321 */
+
+.subtitle{
+	color:#a39849;
+	}
+
+	
+.edit_btn{
+	display:inline-block;
+	font-size:13px;
+	line-height:18px;
+	font-family:roboto_Medium;
+	color:#ed8b17;
+	text-align:center;
+	text-transform:uppercase;
+	padding:9px 12px;
+	border-bottom:1px #fcd88c solid;
+	
+	border:2px #fcd88c solid;
+	border-radius:6px;
+	margin:12px;
+	}
+.edit_btn:hover{
+	color:#981643;
+	border-color:#981643;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+.list_style > p{
+	position:relative;
+	display:block;
+	text-align:left;
+	padding:9px 18px;
+}
+.list_style > p:before{
+    position:absolute;
+    top:50%;
+    left:9px;
+    transform:translate(-50%,-50%);
+    content: "";
+    width:6px;
+    height:6px;
+    background-color:#981643;
+    border-radius:50%;
+}	
