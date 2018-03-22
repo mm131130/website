@@ -73,6 +73,21 @@
 	}
 	
 	
+.p_remove .btn_img{
+	display:block;	
+	width:50px;
+	height:50px;
+	padding:0;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-50px;		
+	background-position-x:-700px;	
+	}
+.p_remove:hover .btn_img{
+	background-position-y:-100px;	
+	}
+		
+	
+	
 .btn_white,	
 .btn_wine_red,
 .btn_fb{
@@ -365,6 +380,9 @@ table tr:first-child td{
 	display:block;
 	clear:both;
 	}
+	
+	
+	
 .payment_total .price{
     border-bottom: 1px #CCCCCC dashed;
 	}		
@@ -380,8 +398,16 @@ table tr:first-child td{
 	}
 .payment_total span{
 	position:relative;
-	left:0;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 table .sm_radio_box,
 table .sm_check_box{
 	padding:0;
@@ -393,6 +419,12 @@ table .sm_check_box .btn_img{
 	display:inline-block;
 	position:static;
 	}	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -603,7 +635,7 @@ form > a{
 	color:#a39849;
 	font-family: roboto_light;
 	font-family:roboto_Regular;	
-	padding:24px 0 12px 0;	
+	padding:20px 0 12px 0;	
 }
 .subtitle p{
 	padding:6px 0 0 0;
@@ -740,7 +772,9 @@ input,
 	border:1px #e9d98e solid;	
 	border-left-width:2px;
 	border-right-width:2px;
-	border-radius:6px;	
+	border-radius:6px;
+	
+	letter-spacing:0.06em;
 
 	
 	}
@@ -1184,6 +1218,45 @@ a:hover color:#981643;
 	line-height:18px;
 	padding:16px 12px;
 }
+
+.left_menu p{
+	overflow:hidden;
+	
+	position:relative;
+	}
+.left_menu p.delete_slash:before{
+	display:block;
+	content:"";
+	position:absolute;
+	top:50%;	
+	left:50%;
+	z-index:100;
+
+	
+	transform:translate(-50% , -50%) rotate(81deg);
+	
+	
+	width:1px;
+	height:300px;
+	
+	
+	background-color:#F00;
+	}
+	
+.delete_slash	*,
+.delete_slash{
+	color:#CCC !important;
+	border-color:#CCC !important;
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
 .left_menu p a{
 	display:inline-block;
 	margin-left:6px;
@@ -1483,6 +1556,10 @@ transition:all .11s ease-in-out;
 .account_input{}
 .account_info{}
 	
+	
+	
+	
+	
 .account_list_btn,
 .account_info{  
 	position:relative;
@@ -1492,9 +1569,7 @@ transition:all .11s ease-in-out;
 	border:1px #dfdfe1 solid;
 	border-radius:4px;
 	margin-bottom:18px;
-	}	
-		
-	
+	}
 .account_list_btn{
 	font-size:13px;
 	line-height:18px;
@@ -1502,19 +1577,53 @@ transition:all .11s ease-in-out;
 	color:#981643;
 	text-align:center;
 	text-transform:uppercase;	
+	margin-bottom:9px;	
 	}
 .account_list_btn:hover{
 	color:#5d0b24;		
 	background-color:#fbfbf2;
+	}
+	
+	
+.b_open_close{
+	position:relative;
+	display:inline-block;
+	padding-left:34px;
+	padding-right:34px;
+
 	}	
+.b_del{
+	
+	display:block;
+	
+	position:absolute;
+	top:50%;
+	right:7px;
+	z-index:100;
+	transform:translateY(-50%);	
+	
+	width:36px;
+	line-height:36px;
+	color:#fdfdf7;
+	height:36px;
+
+	background-color:#5d0b24;
+	
+	border-radius:50%;
+}
+.b_del:hover{
+		color:#fdfdf7;
+	background-color:#981643;
+	}	
+		
 .account_list_btn:hover .btn_img{
 	background-position-y:-110px;	
 	}
 .account_list_btn .btn_img{
 	position:absolute;
-	top:34px;
-	right:34px;
-	transform:translate(50%,-50%);	
+	top:50%;
+	right:0;
+	transform:translate(0,-50%);	
 	}		
 .account_info:after {
     content: '';
@@ -1522,7 +1631,9 @@ transition:all .11s ease-in-out;
     clear: both;
     width: 100%;
 }
-
+.jb_add_date{
+	margin-bottom:18px;	
+	}
 	
 	
 	
@@ -1555,15 +1666,6 @@ transition:all .11s ease-in-out;
 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-
-	
 
 	
 .list_style > p{
@@ -1583,3 +1685,13 @@ transition:all .11s ease-in-out;
     background-color:#981643;
     border-radius:50%;
 }	
+
+
+
+
+
+
+.delete_slash{
+	
+	
+	}

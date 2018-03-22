@@ -15,6 +15,7 @@
 
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
 <link media="all" rel="stylesheet" href="../css/size.css"/>
+<link media="all" rel="stylesheet" href="../css/sm_rwd.css"/>
 
 <style>
 
@@ -23,14 +24,11 @@
 <script src="../jq/sm_v2018.js"></script>
 <script>
 $(function(){
+	
 	$('.left_menu').load('menu_my_account_2.html');
 	$('body').prepend('<header class="v01"></header>').append('<footer class="v01"></footer>');
 	$('header.v01').load('head_01.html');
 	$('footer.v01').load('foot_01.html');
-
-	
-			
-	
 
 });
 </script>
@@ -45,13 +43,10 @@ $(function(){
 <a href="#" class="account_list_btn">Add new payment methods</a>
 
 <form class="account_info">
-
 <div class="wm_100">
 <label for="">Assign Title</label>
 <input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
 </div>
-
-
 <div class="subtitle">Credit Card</div>
 <div class="wm_50">
 <label for="">Card Holder's Name</label>
@@ -74,24 +69,21 @@ $(function(){
 <input id="" class="" name="securityc" type="text" placeholder=""> 
 </div>
 <div class="subtitle">Billing Address</div>
-
 <!--
 <a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Use an existing address</a>
 -->
 <div class="wm_100">
 <div class="label_box">Use an existing address</div>
 	<div class="sm_ddm">
-	<a class="sm_ddm_btn" href="#"><span class="btn_info">Title *</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Select one</span><span class="btn_img btn_down">&nbsp;</span></a>
 	<div class="sm_ddm_menu">
-<a href="#">My sweet home</a> 
-<a href="#">Grandma home</a>
-<a href="#">School</a>
-<a href="#">Office</a>
-	
+		<a href="#">My sweet home</a> 
+		<a href="#">Grandma home</a>
+		<a href="#">School</a>
+		<a href="#">Office</a>
 	</div>
 	</div>  
 </div>  
-
 
 <div class="wm_100">
 <label for="">Address</label>
@@ -116,12 +108,7 @@ $(function(){
 <button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Add</button>
 </form>
 
-
-
-
 <div class="account_list_btn">My sweet home<div class="btn_img btn_up">&nbsp;</div></div>  
-
-
 
 <div class="account_info">
 <a href="#" class="wm_50 edit_btn">Edit</a><a href="#" class="wm_50 edit_btn">Cancel</a>
@@ -147,10 +134,7 @@ $(function(){
 <div class="label_box">Security Code</div>
 <div class="input_box">888</div>
 </div>
-
 <div class="subtitle">Billing Address</div>
-
-
 <div class="wm_100">
 <div class="label_box">Address</div>
 <div class="input_box">122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</div>

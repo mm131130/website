@@ -1,0 +1,462 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+.payment_total{
+	position:relative;
+	
+	
+	
+	
+}
+.payment_total:after{
+	display:block;
+	content:'';
+	
+	position: absolute;
+	top:0;
+	right:171px;
+	z-index:100;
+	
+	
+	
+	
+	width:1px;
+	height:100%;
+	
+	
+	background-color:#981643;
+	
+}
+
+.payment_total p{
+	color:#d5b84f;
+	text-align:right;
+	padding:3px 0 3px 12px;
+	
+	
+	}
+.payment_total p span{
+
+	}
+
+
+.payment_total span{
+	display:inline-block;
+	color:#2c0006;
+	
+	font-size:14px;
+	text-align:left;
+	
+	width:170px;
+	
+	margin-left:12px;
+	
+	padding:0 0 0 12px;
+	}
+
+.payment_total .price{
+
+	padding-top:12px;	
+	padding-bottom:12px;
+    border-bottom: 1px #CCCCCC dashed;	
+	}		
+.payment_total .subtotal{
+	margin-top:9px;
+	padding-top:12px;	
+    border-top: 1px #CCCCCC dashed;	
+	}			
+	
+.payment_total .total_price{
+	display:block;
+	line-height:21px;	
+	padding-top:12px;	
+	padding-bottom:12px;	
+	border-top:1px #CCCCCC solid;
+	}
+.payment_total .total_price span{
+	font-size:21px;
+	line-height:21px;
+	}
+.payment_total > *:nth-first-child(2){
+	padding-top:12px;
+	}		
+.payment_total > *:nth-last-child(2){
+	padding-bottom:12px;
+	}	
+	
+	
+	
+	
+/*
+
+p_table
+p_img
+
+p_description
+p_price
+p_qty
+p_total_price
+p_remove
+
+*/
+.products_list_box{
+		border-top:1px #e6e6e6 solid;	
+			
+	}
+	
+.p_table{
+	display:table;
+	width:100%;
+		
+	overflow:hidden;
+		
+	border:1px #e6e6e6 solid;	
+		border-top:none;	
+	}
+.p_table > *{
+	
+	display:table-cell;
+	vertical-align: middle;
+	font-size:14px;
+
+	line-height:18px;
+	text-align:center;
+	
+	border-left:1px #e6e6e6 solid;
+	
+	}
+.p_table > *:first-child{
+	border:none;
+	}
+	
+	
+.p_img{
+	width:72px;
+	
+	}
+.p_img img{
+	min-width:72px;
+	width:100%;
+	
+	}
+.p_description{
+	
+	padding:12px;
+	text-align:left;
+	width:-moz-calc(100% - 372px);	
+	width:-webkit-calc(100% - 372px);	
+	width:calc(100% - 372px);	
+	}
+.p_description p{
+	padding:0;
+	}	
+	
+	
+.p_price{
+	width:120px;
+	}
+.p_qty{
+	position:relative;
+	width:90px;
+	}
+.p_qty:hover *{
+	display:block !important;
+
+	}	
+/*
++ - 
+plus
+less
+*/
+.p_qty .less,
+.p_qty .plus{
+	display:none;
+	position:absolute;
+	width:24px;
+	height:24px;
+	/*border:1px #CCCCCC solid;*/
+	border-radius:50%;
+	background-color:#FFF;
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-y:-13px;
+	}	
+.p_qty .less{
+	top:25%;
+	right:0;
+	
+	background-color:#981643;	
+	background-position-x:-663px;	
+	transform:translate(50% , -50%);
+	}
+.p_qty .plus{
+	top:75%;
+	left:0;
+	background-color:#981643;	
+	background-position-x:-613px;	
+	transform:translate(-50% , -50%);
+	}		
+.p_qty .less:hover,
+.p_qty .plus:hover{
+	background-color:#5d0b24;	
+	background-position-y:-163px;
+	}	
+	
+	
+	
+	
+	
+.p_total_price{
+	padding-left:12px;
+	padding-right:12px;
+	text-align:left;
+	width:120px;
+	
+	border-color:#981643;
+	
+
+	}
+.p_remove{
+	
+	width:50px;
+	
+	
+	}
+	
+	
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+	$('.left_menu').load('menu_my_account_2.html');
+	$('body').prepend('<header class="v01"></header>').append('<footer class="v01"></footer>');
+	$('header.v01').load('head_01.html');
+	$('footer.v01').load('foot_01.html');
+	
+	
+	$('.products_list_box').each(function() {
+		var ts = $(this);
+		//<div class="how_many"></div>').prepend('<a class="plus" href="#">&nbsp;</a>').append('<a class="less" href="#">&nbsp;</a>
+		ts.find('.p_qty').html('<a class="plus" href="#">&nbsp;</a><div class="how_many">0</div><a class="less" href="#">&nbsp;</a>');  
+   
+	 });
+	
+	
+	
+	
+	$('.p_qty').each(function () {
+	var num = 0;
+	var ts = $(this);
+	function change_num(num_info){
+	num += num_info;
+	ts.find('.how_many').text(num);
+	}
+
+
+
+	$(".less").on( 'click', function(){
+	  	if(num === 1){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(-1); 
+		}   
+	});
+
+
+
+	$(".plus").on('click', function(){
+	  	if(num === 15){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(1); 
+	  	}   
+	});
+	
+	change_num(1);
+	});
+	
+	/*
+	var a = $('.p_price').html();
+	var b =
+	var c =
+*/
+
+
+});
+</script>
+</head>
+<body>
+<div class="mw_1200 h_100vh">
+
+
+
+<div class="wm_50">
+Shipping Address
+<form class="account_info">
+<div class="wm_100">
+<label for="">Assign Title *</label>
+<input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
+</div>
+<div class="subtitle">Address</div>
+<div class="w_100">
+<label class="wm_100" for="">Recipient *</label>
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
+</div>
+
+<div class="wm_100">
+<label for="">Address *</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
+<div class="wm_50">
+<label for="">Country *</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">City *</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">State/Region *</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Zip Code *</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Phone Number *</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">add</button>
+</form>
+
+
+
+</div><div class="wm_50">
+Billing Address
+<form class="account_info">
+<div class="wm_100">
+<label for="">Assign Title *</label>
+<input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
+</div>
+<div class="subtitle">Address</div>
+<div class="w_100">
+<label class="wm_100" for="">Recipient *</label>
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
+</div>
+
+<div class="wm_100">
+<label for="">Address *</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
+<div class="wm_50">
+<label for="">Country *</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">City *</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">State/Region *</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Zip Code *</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Phone Number *</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">add</button>
+</form>
+</div>
+
+
+
+
+
+<div class="products_list_box">
+<div class="p_table">
+<div class="p_img"><img src="../img_vino/p_sm_caldese_1.jpg"></div>
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_price">$100.00</div>
+<div class="p_qty">4</div>
+<div class="p_total_price">$400.00</div>
+<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+</div>
+
+
+<div class="p_table">
+<div class="p_img"><img src="../img_vino/p_sm_caldese_1.jpg"></div>
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_price">$100.00</div>
+<div class="p_qty">4</div>
+<div class="p_total_price">$400.00</div>
+<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+</div>
+
+
+
+
+
+</div>
+
+<div class=" payment_total">
+
+<p class="price">Shopping Bag <span>$1200.00</span></p>
+<p class="important_color">Promo Code <span>-$160.00</span></p>
+<p>Sales Tax <span>$0.00</span></p>
+<p>Shipping <span>$40.00</span></p>
+<p class="total_price">TOTAL <span>$1,060.00</span></p>
+</div>
+
+
+</div><!-- 1200 -->
+
+
+
+
+
+</body>
+</html>
