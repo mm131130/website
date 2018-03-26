@@ -276,7 +276,9 @@ $(function(){
 	  		change_num(0); 
 	  	}else{
 	  		change_num(-1); 
-		}   
+		}
+		
+	return false;	  
 	});
 
 
@@ -286,7 +288,9 @@ $(function(){
 	  		change_num(0); 
 	  	}else{
 	  		change_num(1); 
-	  	}   
+	  	}
+			
+	return false;	 	  
 	});
 	
 	change_num(1);
@@ -307,7 +311,7 @@ $(function(){
 
 
 
-<div class="wm_50">
+<div class="wm_33">
 Shipping Address
 <form class="account_info">
 <div class="wm_100">
@@ -355,7 +359,39 @@ Shipping Address
 
 
 
-</div><div class="wm_50">
+
+
+<!--
+<div class="subtitle">Address</div>
+<div>
+<p>My sweet home</p>  
+<p>Recipient<span>Mountain Chiou</span></p>
+<p>Address<span>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</span></p>
+<p>Country<span>ROC</span></p>
+<p>City<span>Taipei</span></p>
+<p>State/Region<span>Zhongzheng</span></p> 
+<p>Zip Code<span>0811</span></p> 
+<p>Phone Number<span>8888 888 888</span></p> 
+</div>
+-->
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="wm_33">
 Billing Address
 <form class="account_info">
 <div class="wm_100">
@@ -405,6 +441,52 @@ Billing Address
 
 
 
+<div class="wm_33">
+<form class="mw_1200">
+<div class="subtitle">Credit Card</div>
+<div class="wm_50">
+<label for="">Card Holder's Name</label>
+<input id="" class="" name="holder_name" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="">Card Number</label>
+<input id="" class="" name="cname" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Exp Month</label>
+<input id="" class="" name="expm" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Exp Year</label>
+<input id="" class="" name="expy" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Security Code</label>
+<input id="" class="" name="securityc" type="text" placeholder=""> 
+</div>
+</form>
+
+
+</div>
+
+
+
+
+
+<div class="wm_50">
+<div class="subtitle">Shipping Address</div>
+<p>Mountain Chiou</p>
+<p>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</p>
+<p>8888 888 888</p> 
+</div>
+<div class="wm_50">
+<div class="subtitle">Billing Address</div>
+<p>Mountain Chiou</p>
+<p>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</p>
+<p>8888 888 888</p> 
+</div>
+
+
 
 <div class="products_list_box">
 <div class="p_table">
@@ -415,9 +497,9 @@ Billing Address
     <p><span>Kind</span>Red Wine</p>
     <p><span>Item Number</span>r000420180305</p>
 </div>
-<div class="p_price">$100.00</div>
-<div class="p_qty">4</div>
-<div class="p_total_price">$400.00</div>
+
+<div class="p_qty">1</div>
+<div class="p_total_price">$100.00</div>
 <a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
 </div>
 
@@ -430,20 +512,15 @@ Billing Address
     <p><span>Kind</span>Red Wine</p>
     <p><span>Item Number</span>r000420180305</p>
 </div>
-<div class="p_price">$100.00</div>
-<div class="p_qty">4</div>
-<div class="p_total_price">$400.00</div>
+
+<div class="p_qty">1</div>
+<div class="p_total_price">100.00</div>
 <a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
 </div>
-
-
-
-
-
 </div>
 
-<div class=" payment_total">
 
+<div class="payment_total">
 <p class="price">Shopping Bag <span>$1200.00</span></p>
 <p class="important_color">Promo Code <span>-$160.00</span></p>
 <p>Sales Tax <span>$0.00</span></p>

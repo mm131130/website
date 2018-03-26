@@ -24,6 +24,7 @@ img{
 	border: 0;
 }
 img{
+	width:100%;
 	vertical-align:top;
 }
 button,
@@ -53,6 +54,9 @@ a{
 	text-decoration:none;
     letter-spacing: 0.024em;
     word-spacing: 0.18em;
+	
+    letter-spacing: 0.018em;
+    word-spacing: 0.09em;	
 }
 table{ 
 	width:auto; 

@@ -375,20 +375,6 @@ url("../font/open_sans/open_sans_ExtraBold.otf") format("opentype");*/
 
 
 
-@font-face{
-font-family:"modern_display";
-font-style:normal;
-font-weight:normal;
-
-src:url("../font/modern_display/modern_display.eot");
-
-src:url("../font/modern_display/modern_display.eot?#iefix") format("embedded-opentype"),
-url("../font/modern_display/modern_display.woff") format("woff"),
-url("../font/modern_display/modern_display.ttf") format("truetype"),
-url("../font/modern_display/modern_display.svg") format("svg");
-}
-
-
 
 @font-face{
 font-family:"alex_brush_regular";

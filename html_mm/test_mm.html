@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<style>
+.chang_your_life{
+	white-space: nowrap;
+	}
+.chang_your_life img{
+	display:inline-block;
+	width:25%;
+	
+	
+	
+	
+	}	
+	.chang_your_life{
+		
+		
+	
+	
+	
+	
+	}
+
+</style>
+
+
+
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script>
+
+$(function(){
+$('.chang_your_life').each(function() {
+	var ts = $('.chang_your_life');
+	ts.find('.btn_L , .btn_R').on('click' , function(){
+	if( $(this).hasClass('btn_L') ){
+		$('.photo_box > img:last-child').prependTo('.photo_box');
+	}else if( $(this).hasClass('btn_R') ){	
+		$('.photo_box > img:first-child').appendTo('.photo_box');
+	}
+	return false;
+	});
+	
+});	
+
+
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="chang_your_life">
+
+<div class="btn_L_R">
+<a class="btn_L" href="#">L</a>
+<a class="btn_R" href="#">R</a>
+</div>
+<div class="photo_box">
+<img src="../img_test/201308-1.jpg">
+<img src="../img_test/201308-2.jpg">
+<img src="../img_test/201308-3.jpg">
+<img src="../img_test/201308-4.jpg">
+<img src="../img_test/201308-5.jpg">
+
+<img src="../img_test/201308-6.jpg">
+<img src="../img_test/201308-7.jpg">
+<img src="../img_test/201308-8.jpg">
+<img src="../img_test/201308-9.jpg">
+<img src="../img_test/201308-10.jpg">
+</div>
+</div>
+
+
+<div class="dd"></div>
+
+</body>
+</html>

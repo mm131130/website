@@ -1,7 +1,13 @@
 /* max width */
 
 .h_100vh{
+	/*
+	height:-moz-calc(100% - 120px);
+	height:-webkit-calc(100% - 120px);
+	height:calc(100vh - 120px );*/
 	height:100vh;
+	
+	
 	}
 @media screen and (max-width:1023px) {
 .h_100vh{
@@ -35,7 +41,6 @@
 	width:100%;
 	margin:0 auto;
 	}	
-	
 .mw_360{
 	clear:both;
 	max-width:360px;
@@ -193,6 +198,10 @@
 *[class^="wm_"]:not([class^="wm_100"]){
 	float:left;
 	}
+	
+	
+	
+	
 	
 @media screen and (max-width:767px) {
 *[class^="wm_"],

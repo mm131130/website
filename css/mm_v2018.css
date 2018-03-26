@@ -427,6 +427,8 @@ footer.mm_v2018 .img_w{
 	background-image:url(../img_mm/mm_logo_mountain.svg);
 	background-position:center 2px;
 	background-size:126px 14px;
+	
+border-bottom:1px #e1e1e1 solid;	
 	}	
 .mm_logo_C img{
 	width:auto;
@@ -641,14 +643,16 @@ footer.mm_v2018 .img_w{
 .page_name p{
 	font-size:14px;
 	line-height:18px;
+ font-family:roboto_light;		
 	color: #0f1329;	
-	padding:18px 0 9px 0;  	
+	padding:9px 0 9px 0;  	
 	}
 .page_name p span{
 	display:inline-block;
 	color:#CCC;
 	color:#a6a6a6;
-	width:18px;		
+	width:18px;
+	padding:0;		
 	}	
 .tag_content{
 	position:relative;
@@ -708,26 +712,42 @@ lord
 deputy
 secondary*/
 .lord{
-	display:block;
-	text-align:center;
-	font-size:27px;
-	line-height:36px;
-	font-family:roboto_light;
-	color:#999;
-	padding-top:45px;
+
+    display: inline-block;
+    clear: both;
+    font-size: 21px;
+    line-height: 24px;
+	font-family:roboto_light;	
+    color: #595a5e;
+    color: #0f1329;
+    text-align: center;
+    text-transform: uppercase;
+	
+	width:100%;
+    padding:90px 0 9px 0;	
+	
 	}
 .lord div{
-	font-size:36px;
+	font-size:54px;
+	line-height:54px;
 	font-family:roboto_thin;
-	}
+	color: #CCC;
+	}	
 .deputy{
-	font-size:18px;
-	line-height:18px;
-	font-family:roboto_light;
-	color:#2c0006;
-	text-transform:uppercase;
 	
-	padding:27px 0 6px 0;	
+	
+    display: inline-block;
+    clear: both;
+    font-size: 21px;
+    line-height: 24px;
+    font-family: roboto_light;
+    color: #595a5e;
+    color: #0f1329;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding:90px 0 9px 0;	
+	
 	}
 .deputy p{
 	font-size:27px;
@@ -749,6 +769,7 @@ secondary*/
 	
 	
 	
+	
 /* Sammarinese */	
 .vino_logo img{
 	width:76px;
@@ -762,4 +783,33 @@ secondary*/
 	text-transform:uppercase;
 	letter-spacing:0.15em;
 	}	
+	
+	
+	
+	
+	
+	
+.popup_shodow_02{
+	
+	-webkit-box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 3px 6px rgba(43,42,40,0.2),
+	0px 9px 12px rgba(43,42,40,0.1);
+	-moz-box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 3px 6px rgba(43,42,40,0.2),
+	0px 9px 12px rgba(43,42,40,0.1);
+	box-shadow:
+	0px 1px 3px rgba(43,42,40,0.3),
+	0px 3px 6px rgba(43,42,40,0.2),
+	0px 9px 12px rgba(43,42,40,0.1);
+	
+	
+	}
+	
+.color_vino{
+	background: -webkit-linear-gradient(top, #f1efd8 50%, #f8f7e9 90%) !important;	
+	background: -moz-linear-gradient(top, #f1efd8 50%, #f8f7e9 90%) !important;	
+	background: linear-gradient(top, #f1efd8 50%, #f8f7e9 90%) !important;	
+}	
 	

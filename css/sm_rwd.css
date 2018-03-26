@@ -4,36 +4,59 @@
 @media screen and (max-width:767px) {
 .account_info{
 	padding:24px 0;
-	}		
-	
+	}
 .account_info .w_100{
-	
 	width:100%;
 	margin:0;
-	}	
-	
-	
+	}
 .account_info .w_100 .wm_50{
-
 	width:41%;
 	}
 .account_info .w_100 input.wm_50{
 	float:left !important;
 	}
+	/*
 	
+.account_info .w_100 input.wm_33{
+	float:left !important;
+	}		
+	
+
+	
+.account_info .w_100 .wm_33{
+	width:28.333333%;
+	margin-left:2.5%;
+	margin-right:2.5%;	
+	}
+.account_info .w_100 *:nth-first-child(2){
+	margin-left:4.5%;
+	margin-right:0.5%;
+	width:28.333333%;
+	}	
+.account_info .w_100 *:last-child{
+	margin-right:0.5%;
+	margin-right:4.5%;
+	width:28.333333%;
+	}		
+	*/
+
 .account_info button ~ button{
-	
 	margin-top:0;
 	}
 .account_info .edit_btn{
 	float:left;
 	width:41%;
 	margin-left:4.5%;
-		margin-right:4.5%;
+	margin-right:4.5%;
+	}
+	
+form .wm_50.sm_radio_box,
+form .wm_50.b_forgot{
+	float:left !important;
+	width:41%;
+	
 	
 	}
-
-
 }
 
 
