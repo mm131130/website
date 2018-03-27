@@ -383,13 +383,43 @@ background-color:#2c0006;
 	
 	}	
 .vino_logo.h_100vh{
+	position:relative;
 	padding:90px 30px;
 	}		
 .vino_logo img{
-	max-width:546px !important;
+	max-width:364px !important;
 	width:100%;
 	height:auto;
 	}	
+	
+	
+	
+.next_page{
+	position:absolute;
+	bottom:12px;
+	left:50%;
+	transform:translateX(-50%);
+	
+	
+	display:block;
+	
+	
+	width:60px;
+	height:60px;
+	
+	border:1px #000000 solid;
+	border-radius:50%;
+	
+	background-color:#F00;
+	}	
+@media screen and (max-width:767px){
+.next_page{
+	display:none;
+	}		
+	
+	
+}
+	
 	
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
@@ -485,6 +515,10 @@ $('footer.mm_v2018').load('../html_mm/mm_foot_02.html');
 
 <div class="vino_logo h_100vh flex_box">
 <img src="../img_vino/ms_vino_logo_02_b.svg">
+
+
+<!-- 
+<a class="next_page" href="#">next_page</a>-->
 </div>
 
 <div class="page_name">
