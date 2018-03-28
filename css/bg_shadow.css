@@ -179,7 +179,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', end
 	background-position:center center;	
 	}
 .bg_img_13{
-	background-image: url(../img/banner_005.jpg);
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/banner_005.jpg);
 	background-size:cover;
 	background-position:center center;	
 }		
@@ -290,25 +290,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', end
 		
 
 .shadow_32{
- border:1px #CCCCCC solid;	
+	border:1px #CCCCCC solid;	
 	-webkit-box-shadow:
 0 27px 12px rgba(198,184,173,0.55),
 0 54px 45px rgba(192,189,184,0.4),
 0 99px 90px rgba(226,227,232,0.3);
-
 	-moz-box-shadow:
 0 27px 12px rgba(198,184,173,0.55),
 0 54px 45px rgba(192,189,184,0.4),
 0 99px 90px rgba(226,227,232,0.3);
-
 	box-shadow:
 0 27px 12px rgba(198,184,173,0.55),
 0 54px 45px rgba(192,189,184,0.4),
 0 99px 90px rgba(226,227,232,0.3);
-
 }	
-		
-
 
 .popup_shodow_01{
 	background-color:rgba(255,255,255,0.9);	
@@ -326,7 +321,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', end
 	0px 18px 21px rgba(239,190,178,0.2);
 	}		
 .popup_shodow_02{
-
 	background-color:rgba(255,255,255,0.9);	
 	-webkit-box-shadow:
 	0px 1px 3px rgba(43,42,40,0.3),
@@ -340,7 +334,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', end
 	0px 1px 3px rgba(43,42,40,0.3),
 	0px 3px 6px rgba(43,42,40,0.2),
 	0px 9px 12px rgba(43,42,40,0.1);
-	
-	
 	}
-	
