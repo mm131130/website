@@ -25,20 +25,49 @@
 	}
 .drink_night form,
 .drink_night .input_box{
+	/*
 	border:1px #5d0b24 solid !important;
-	border-bottom-color:#981643 !important;
-	
+	*/
+	border-top:1px #981643 solid !important;
+	border-bottom:1px #981643 solid !important;
 	background-color:#3f0514;
-
 	}
+.drink_night form .p_remove{
+	top:-17px;
+	right:12px;
+	
+	width:34px;
+	height:34px;
+	
+	border: 2px #981643 solid;
+	}	
+	
+
+.drink_night p{
+	color:#fbfbf2 !important;
+	color:#fbfbf2 !important;
+	}	
+.drink_night .sm_note_02{
+
+	color: #CCC !important;
+	}	
+.drink_night * a{
+	color:#fcd88c !important;
+	}		
+.drink_night * a:hover{
+	color:#fff !important;
+	}		
+		
 	
 	
 .drink_night a{
 	color:#5d0b24;
 	}	
+	
+	/*
 .drink_night a:hover{
 	color:#e4e0b9 !important;
-	}	
+	}	*/
 	
 .drink_night .sm_item_menu p{
 	color: #fcd88c;
@@ -61,10 +90,11 @@
 
 	width:50px !important;
 	height:50px !important;
-	
 	padding:0 !important;
+	
+	
 		
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	background-position-y:-50px;		
 	background-position-x:0;	
 	}
@@ -83,7 +113,7 @@
 	/*border:1px #e4e0b9 solid;*/
 	border-radius:50%;
 
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	background-position-y:-60px;		
 	background-position-x:-710px;	
 	}
@@ -162,7 +192,7 @@
 	width:30px;
 	height:40px;
 	
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	background-position-y:-5px;		
 	background-position-x:-110px;	
 	}
@@ -212,7 +242,7 @@
 	
 	padding:0 !important;
 	
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	background-position-y:-5px;		
 	background-position-x:-405px;	
 	}
@@ -260,7 +290,7 @@
 .btn_img{
 	width:30px;
 	height:30px;
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	}
 
 .sm_ddm_btn .btn_img{
@@ -1043,10 +1073,10 @@ footer{
 	
 	position:relative;
 	bottom:0;
-	
+	/*
 	transform:translateY(100%);
 	
-    
+    */
 	
 	}
 	
@@ -1211,7 +1241,7 @@ header{
 	display:inline-block;
 	width:50px;
 	height:50px;
-	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
 	background-position-y:-100px;		
 	background-position-x:-50px;	
 	}	
@@ -1232,7 +1262,7 @@ header{
 	top:50%;
 	left:0;
 	transform:translateY(-50%);
-	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);
 	background-position-y:-100px;	
 	width:50px;
 	height:50px;		
@@ -1624,7 +1654,7 @@ transition:all .11s ease-in-out;
 	display:inline-block;
 	width:50px;
 	height:50px;
-	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);
 	background-position-x:-450px;
 	background-position-y:-100px;
 
@@ -1915,7 +1945,7 @@ less
 	/*border:1px #CCCCCC solid;*/
 	border-radius:50%;
 
-	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);
 	background-position-y:-60px;
 	
 	color:#2c0006;

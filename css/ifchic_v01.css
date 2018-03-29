@@ -343,9 +343,9 @@ li{
 	-moz-column-count: 2;
 	-moz-column-gap: 1em;
 	-webkit-column-count: 2;
-  -webkit-column-gap: 1em;
-  column-count: 2;
-  column-gap: 1em;
+	-webkit-column-gap: 1em;
+	column-count: 2;
+	column-gap: 1em;
 	
 	}
 
@@ -781,6 +781,7 @@ border-bottom-color:#f5c7c0;
 	color:#F00 !important;
 	font-family: roboto_Regular;
 	font-style:italic;
+	background-image:;
 	}
 	
 	

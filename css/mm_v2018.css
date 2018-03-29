@@ -73,7 +73,8 @@ footer.mm_v2018 .img_w{
 				
 .mm_nav a{
 	font-size:14px;
-	line-height:24px;	
+	line-height:24px;
+	font-family:roboto_Regular;
 	color:#000;
 	padding:13px 0;
 	}		
@@ -105,8 +106,8 @@ footer.mm_v2018 .img_w{
 
 	width:50px;
 	height:60px;
-	
-	background-image: url(../img_mm/icon_2017.svg);
+
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/icon_2017.svg);
 	background-position:-50px -195px;
 	}
 .mobile_btn:hover{
@@ -296,10 +297,11 @@ footer.mm_v2018 .img_w{
 	padding:0;
 	
 	transform:translateX(-50%);
+	/*
 	width:144px;
 	background-color:#FFF;
-	background-image: url(../img_mm/slash.svg);
-	background-position:center center;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/slash.svg);
+	background-position:center center;*/
 	}
 .btn_prev_next a{
 	display:block;
@@ -347,21 +349,25 @@ footer.mm_v2018 .img_w{
 .mm_sign{
 	position:relative;
 	display:block;
-	font-size:12px;
-	line-height:12px;
-	font-family:Helvetica, Arial, sans-serif;	
-	color:#999;
-	letter-spacing:1em;
-	padding:36px 18px;	
-	
+	padding:32px 18px 33px 18px;	
 	border-top: 1px #e1e1e1 solid;
 	}
 	
-.mm_sign span{
-	line-height:12px;
+.mm_sign *{
+	position:relative;
+	display:inline-block;
+
+	font-size:14px;
+	line-height:24px;
+	font-family:Helvetica, Arial, sans-serif;	
 	font-family:roboto_Regular;
-	color:#CCC;
-	letter-spacing:0.075em;
+	color:#999;
+	letter-spacing:0.021em;
+	}
+	
+	
+.mm_sign span{
+	padding:0;
 	padding-right:12px;
 
 	}			
@@ -379,79 +385,65 @@ footer.mm_v2018 .img_w{
 	display:block;
 	width:150px;
 	height:150px;
-	
-	background-image:url(../img_mm/mm_logo.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
 	background-size:300px;
 	background-position:-150px -150px;
 	}		
-	
 .mm_logo_B{
+	display:inline-block;
 	position:absolute;
 	top:50%;
 	right:18px;
-	
 	margin-top:-18px;
-	
 	display:block;
 	width:36px;
 	height:36px;
-	
-	background-image:url(../img_mm/mm_logo.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
 	background-size:120px;
-	
 	background-position:-12px -12px;
 	}			
-	
-	
+.mm_logo_D{
+	display:inline-block;
+	width:108px;
+	height:12px;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
+	background-position:center ;
+	background-size:108px 12px;
+	}	
+		
 	
 .mm_logo_C{
 	position: relative;
-	
-	/*
-	border-top:1px #e1e1e1 solid;*/
 	}
 .mm_logo_C a{
 	position:absolute;
 	top:-9px;
-
 	right: 25%;
 	z-index:100;
-	
 	display:block;
-	
 	margin-right: -81px;
 	width:174px;
 	height:24px;
 	
 	background-color:#fff;	
-	background-image:url(../img_mm/mm_logo_mountain.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
 	background-position:center 2px;
 	background-size:126px 14px;
 	
-border-bottom:1px #e1e1e1 solid;	
+	border-bottom:1px #e1e1e1 solid;	
 	}	
 .mm_logo_C img{
 	width:auto;
 	height:14px;
 	}				
-.mm_logo_D{
-	display:inline-block;
 
-	width:108px;
-	height:12px;
-		
-	background-image:url(../img_mm/mm_logo_mountain.svg);
-	background-position:center ;
-	background-size:108px 12px;
-	}	
-	
 	
 	
 .banner_box{
 	position:relative;
 	height:100vh;
 	height:450px;
-	background-image:url(../img_mm/photo-bg002-3.jpg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/photo-bg002-3.jpg);
 	background-position:center center;
 	background-size:cover;
 	}
@@ -812,4 +804,61 @@ secondary*/
 	background: -moz-linear-gradient(top, #f1efd8 50%, #f8f7e9 90%) !important;	
 	background: linear-gradient(top, #f1efd8 50%, #f8f7e9 90%) !important;	
 }	
+	
+	
+	
+	
+	
+
+
+.jb_scroll_down,
+.jb_change_size{
+	position:relative;
+	left:50%;
+	display: inline-block;
+	
+	margin:0 auto 45px auto;
+
+	width:50px;
+	height:50px;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_icon_2018.svg);
+	background-position-x:0;	
+	background-position-y:-50px;
+	transform:translateX(-50%);
+	}
+.h_100vh .jb_scroll_down{
+position:absolute;
+	bottom:0;
+	}
+.jb_scroll_down:hover,			
+.jb_change_size:hover{
+
+	background-position-y:-100px;
+	}		
+	
+.change{
+	background-position-x:-50px;	
+	}		
+
+
+.jb_scroll_down{
+	
+	background-position-x:-100px;	
+	}	
+
+.drink_night .jb_scroll_down,
+.drink_night .jb_change_size,
+.drink_night .change{
+	background-position-y:-150px;	
+	}
+.drink_night .jb_scroll_down:hover,
+.drink_night .jb_change_size:hover,
+.drink_night .change:hover{
+	background-position-y:0;	
+	}
+		
+	
+	
+	
+	
 	

@@ -56,85 +56,11 @@ form p{
 
 
 <script>
+
+
 $(function() {
 
-$('body').prepend('<header class="mm_v2018"></header>').append('<footer class="mm_v2018"></footer>');
 
-$('header.mm_v2018').load("../html_mm/mm_head_02.html", function() {
-var this_header = $('header.mm_v2018');
-	
-	//$(window).on("load resize scroll" , function() {
-		
-
-		
-		
-$(window).on('load resize', function() {
-	if ($(window).width() >= 768) {
-		this_header.find('.mm_nav > li').css('display', '');
-		this_header.find('.mm_nav > li > ul').css('display', '');
-	
-	}else if ($(window).width() <= 767) {
-		//	menu_open_close();
-}
-});//window
-
-
-if ($(window).width() <= 767) {
-
-	this_header.find('.mobile_btn').on('click' , function(){		
-			if($(this).hasClass('open')){
-				$(this).removeClass('open').siblings().slideUp();
-				
-			}else{
-				$(this).addClass('open').siblings().slideDown();			
-				
-			}
-		return false;
-		});
-		
-	this_header.find('ul.mm_nav > li > a').on('click' , function(){
-			
-		if($(this).hasClass('open')){
-			$(this).removeClass('open').next().slideUp();
-				
-		}else{
-			this_header.find('.mm_nav ul').slideUp();
-			this_header.find('.mm_nav a').removeClass('open');
-			$(this).addClass('open').next('ul').slideDown();
-				
-		}
-		//$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
-			
-
-	});
-
-
-	this_header.find('.mm_nav ul a').on('click' , function(){
-		this_header.find('.mm_nav > li:not(".mobile_btn") , .mm_nav ul').slideUp();
-		this_header.find('*').removeClass('open');
-		
-
-	});
-}
-
-	this_header.find('.mm_nav a').on('click' , function(){
-		$('html, body').stop(true).animate({scrollTop: $(this.hash).offset().top }, 1000, 'swing');	
-	return false;
-	});	
-
-
-	
-	//setTimeout(function(){ scroll(0, 0); }, 1);
-	if (window.location.hash) scroll(0, 0);	
-	if (window.location.hash) {
-		$('html, body').stop(true).animate({scrollTop: $(window.location.hash).offset().top + 'px'}, 1000, 'swing');
-	}
-
-
-
-});		
-
-$('footer.mm_v2018').load('../html_mm/mm_foot_02.html');
 });
 </script>
 </head>
@@ -146,8 +72,6 @@ $('footer.mm_v2018').load('../html_mm/mm_foot_02.html');
 </div>
 
 <div class="mw_1200">
-
-
 
 <div class="wm_66">
 <form class="">
@@ -269,7 +193,7 @@ By clicking "Create an Account", you agree to our <a href="#">terms of service</
 
 
 <div class="vino_logo">
-<img src="../img_vino/ms_vino_logo_01_b.svg">
+<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_b.svg">
 <p>Sammarinese</p>
 </div>
 <form>
@@ -409,7 +333,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_caldese_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_caldese_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Tessano</p>
     <p>Red Wine</p>
@@ -422,7 +346,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_brugneto_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_brugneto_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Brugneto</p>
     <p>Red Wine</p>
@@ -435,7 +359,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_sangiovese_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_sangiovese_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Sangiovese</p>
     <p>Red Wine</p>
@@ -548,7 +472,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_caldese_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_caldese_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Tessano</p>
     <p>Red Wine</p>
@@ -561,7 +485,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_brugneto_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_brugneto_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Brugneto</p>
     <p>Red Wine</p>
@@ -574,7 +498,7 @@ The emails are spam and should be reported
 
 <div class="p_table">
 <div class="p_description">
-	<img  src="../img_vino/p_sm_sangiovese_1.jpg">
+	<img src="http://mountain-mm.myweb.hinet.net/img_vino/p_sm_sangiovese_1.jpg">
     <p class="brands">San Marino</p>
     <p class="product_name">Sangiovese</p>
     <p>Red Wine</p>
