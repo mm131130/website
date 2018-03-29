@@ -208,7 +208,9 @@ url("../font/roboto/roboto_thin.otf") format("opentype");
 @font-face {
 font-family:"northwell_alt";
 src: url("../font/northwell/northwell_alt.woff");
+src: url("../font/northwell/northwell_alt.svg") format("svg"),
 
+url("../font/northwell/northwell_alt.otf") format("opentype");
 /*
 src: url("../font/northwell/northwell_alt.eot?#iefix") format("embedded-opentype"),
 url("../font/northwell/northwell_alt.svg") format("svg"),
