@@ -297,9 +297,11 @@ footer.mm_v2018 .img_w{
 	padding:0;
 	
 	transform:translateX(-50%);
+		background-color:#FFF;
+	
 	/*
 	width:144px;
-	background-color:#FFF;
+
 	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/slash.svg);
 	background-position:center center;*/
 	}
