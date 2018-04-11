@@ -1054,6 +1054,8 @@ border-bottom-color:#f5c7c0;
 	display:inline-block;
 	margin:0 50px 180px 50px;
 	}
+	
+
 
 @media screen and (max-width:767px) {
 .this_page{
@@ -1097,6 +1099,7 @@ border-bottom-color:#f5c7c0;
 	width:100%;
 
 	padding:18px;	
+
 	background-color:#FFF;
 	background-color:#fffcfc;
 
@@ -1113,6 +1116,8 @@ border-bottom-color:#f5c7c0;
 	0px 1px 3px rgba(43,42,40,0.3),
 	0px 6px 9px rgba(43,42,40,0.2),
 	0px 18px 21px rgba(43,42,40,0.1);
+	
+	
 	}
 
 
@@ -1169,6 +1174,9 @@ border-bottom-color:#f5c7c0;
 .popup_event_box p{
 	padding:0 0 9px 0;
 	}	
+	
+	
+	
 
 
 
