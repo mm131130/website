@@ -4,15 +4,21 @@
 	/*
 	height:-moz-calc(100% - 120px);
 	height:-webkit-calc(100% - 120px);
-	height:calc(100vh - 120px );*/
-	height:100vh;
-	
+	height:calc(100vh - 120px );
+	max-height:100vh;
+	*/
+	min-height:100vh;
+	height:100%;
 	
 	}
 @media screen and (max-width:1023px) {
 .h_100vh{
 	height:100%;
 	}
+	
+.vino_logo.h_100vh{
+	height:100vh;	
+	}	
 }	
 	
 	
