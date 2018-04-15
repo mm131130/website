@@ -17,6 +17,7 @@
 	}
 	
 .vino_logo.h_100vh{
+	min-height:auto;
 	height:100vh;	
 	}	
 }	
