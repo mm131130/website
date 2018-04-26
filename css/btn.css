@@ -394,6 +394,10 @@
 	left:50%;
 	bottom:36px;
 	transform:translateX(-50%);
+-ms-transform:translateX(-50%);
+-moz-transform:translateX(-50%);
+-webkit-transform:translateX(-50%);
+-o-transform:translateX(-50%);
 	white-space:nowrap;
 	}
 .dot_box a{
@@ -427,6 +431,10 @@
 	left:100%;
 	bottom:50%;
 	transform:translate(-30px , 50%);
+			-ms-transform:translate(-30px , 50%);
+-moz-transform:translate(-30px , 50%);
+-webkit-transform:translate(-30px , 50%);
+-o-transform:translate(-30px , 50%);
 	}
 .dot_box.v3 a{
 	display:block;
@@ -623,6 +631,10 @@ plus_img
 	width:31px;
 	border-left:1px #e6e6e6 solid;
 	transform:translateY(-50%);
+		-ms-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+-webkit-transform:translateY(-50%);
+-o-transform:translateY(-50%);
 	}
 .ddm_btn:hover .btn_info{
 	color:#eb8c02;
@@ -682,7 +694,10 @@ plus_img
 	padding:0;
 	
 	transform:translateY(100%);
-	
+		-ms-transform:translateY(100%);
+-moz-transform:translateY(100%);
+-webkit-transform:translateY(100%);
+-o-transform:translateY(100%);
 	
 	/*
 	transition:all .3s ease-in-out;

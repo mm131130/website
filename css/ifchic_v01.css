@@ -780,6 +780,13 @@ border-bottom-color:#f5c7c0;
 -moz-transform:translate(-50%,-50%) rotate(9deg);
 -webkit-transform:translate(-50%,-50%) rotate(9deg);
 -o-transform:translate(-50%,-50%) rotate(9deg);
+/*
+-ms-transform:
+-moz-transform:
+-webkit-transform:
+-o-transform:
+*/
+
 	}	
 .p_discount{
 	color:#F00 !important;
