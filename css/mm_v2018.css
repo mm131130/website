@@ -186,7 +186,9 @@ footer.mm_v2018 .img_w{
 	
 	
 .this_page{
-	border-bottom:1px #e1e1e1 solid;
+
+	/*
+	border-bottom:1px #e1e1e1 solid;*/
 	}
 
 
@@ -707,7 +709,11 @@ footer.mm_v2018 .img_w{
 	border:none;
 	}
 	
-	
+.dark_night .ifchic_slogan {
+  
+    color:#CCCCCC;
+
+}
 	
 	
 	/* 20180319 for vino 
