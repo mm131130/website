@@ -112,7 +112,8 @@ top_blue btn_box_A
 	width:104px;
 	
 	height:36px;
-	background-image: url(../img/ifchic_v01.svg);
+
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/ifchic_v01.svg);
 	background-size:cover;
 	}
 	
@@ -159,6 +160,10 @@ top_blue btn_box_A
 	z-index:300;
 	
 	transform:translateY(100%);
+	-ms-transform:translateY(-100%);	
+-moz-transform:translateY(-100%);	
+-webkit-transform:translateY(-100%);	
+-o-transform:translateY(-100%);	
 	padding:0 18px 0 18px;
 	
 	background-color:#FFF;
@@ -260,6 +265,7 @@ top_blue btn_box_A
 	background-color:#0f1329;
 	
 	border-radius:50%;
+	/**/
 	}
 .info_btn:hover{
 	background-color:#969696;
@@ -435,7 +441,12 @@ footer.v01 .mw_1200{
 	top:-18px;
 	left:9px;
 	padding:18px;
-	transform:translateY(-100%);	
+	transform:translateY(-100%);
+
+-ms-transform:translateY(-100%);	
+-moz-transform:translateY(-100%);	
+-webkit-transform:translateY(-100%);	
+-o-transform:translateY(-100%);		
 	background-color:#0f1329;
 	
 	-webkit-box-shadow:
@@ -498,11 +509,15 @@ header.v01 .mw_1200{
 	width:50px;
 	height:50px;
 	
-	background-image:url(../img/icon_2017.svg);
+	background-image:url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	background-position-y:-1050px;
 	background-position-x:0;
 	
-	transform: translateY(-50%);
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);	
+-moz-transform:translateY(-50%);	
+-webkit-transform:translateY(-50%);	
+-o-transform:translateY(-50%);	
 	}
 .three_line:hover{
 	background-position-y:-1100px;

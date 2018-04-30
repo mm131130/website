@@ -46,21 +46,13 @@
 	background: linear-gradient(to bottom, #6681b2 0%,#647aa8 100%);	
 	}
 .clock_01 .sec{
-	
 	position:absolute;
 	top:50%;
 	left:100%;
-	
 	z-index:100;
-	
-	
 	margin:-270px 0 0 -60px;
-	
-
 	width:120px;  
-	height:540px;  	
-
-
+	height:540px;
     -webkit-animation:rotate_item 60s linear infinite;
     -moz-animation:rotate_item 60s linear infinite;
     animation:rotate_item 60s linear infinite;	
@@ -124,7 +116,11 @@
 	color:#fce1bc;
 	letter-spacing:1px;
 	word-spacing:0.05em;
-	
+
+	-ms-transform:translate(-50%,-50%);
+-moz-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+-o-transform:translate(-50%,-50%);
 		
 	transform:translate(-50%,-50%);
 	}
@@ -225,6 +221,11 @@
 	left:50%;
 	width:auto;
 	height:100%;
+		
+	-ms-transform:translate(-50%,-50%);
+-moz-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+-o-transform:translate(-50%,-50%);
 	transform:translateX(-50%);
 	}		
 
