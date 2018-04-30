@@ -59,16 +59,14 @@ body{
 .page_style_guide_if_01 img{
 	
 	position:relative;
-
 	margin-left:50%;
-	
 	display:inline-block;
-	
+	-ms-transform:translateX(-50%);	
+	-moz-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);	
 	transform:translateX(-50%);
-	
 	max-width:900px;
-	
-
 	width: 100%;
 	}		
 	
@@ -97,6 +95,10 @@ h2{
 	position:absolute;
 	top:50%;
 	left:50%;
+	-ms-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
 	
 	text-align:center;
@@ -152,6 +154,10 @@ h2{
 	width:79px;
 	
 	margin:0 auto;
+	-ms-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);	
 	transform:translate(-50%,-50%);
 }	
 
