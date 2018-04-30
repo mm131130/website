@@ -265,7 +265,7 @@
 	left:0;
 	z-index:10;
 	display:inline-block;
-	background-image: url(../img/icon_2017.svg);
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	width:26px;
 	height:30px;
 	background-position-y:-810px;	
@@ -459,7 +459,7 @@
 .dot_box .btn_dot{
 	float:left;
 	display:inline-block;
-	background-image: url(../img/icon_2017.svg);
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	background-position-y:-800px;
 	width:50px;
 	height:50px;	
@@ -525,7 +525,7 @@ plus_img
 	margin-top:-25px;	
 	
 	display:inline-block;
-	background-image: url(../img/icon_2017.svg);
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	background-position-y:-800px;
 	width:50px;
 	height:50px;	
@@ -610,7 +610,7 @@ plus_img
 .btn_img{
 	width:30px;
 	height:30px;
-	background-image: url(../img/icon_2017.svg);	
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);	
 	}
 .btn_radio .btn_img,
 .btn_check_box .btn_img{
@@ -672,7 +672,7 @@ plus_img
 	display:block;
 	width:30px;
 	height:30px;
-	background-image: url(../img/icon_2017.svg);
+	background-image: url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
 	background-position-y:-460px;	
 	background-position-x:-110px;
 	}
