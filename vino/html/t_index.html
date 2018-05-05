@@ -1,0 +1,443 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<style>
+
+
+	
+/* header */
+header{
+	}
+.sm_nav{
+	text-align:left;
+	border-bottom:1px #dfdfe1 solid;	
+	}
+.sm_nav *{
+	position:relative;
+	display:inline-block;
+	font-size:14px;
+	line-height:18px;
+	font-family: roboto_regular;
+	color:#3f0514;
+	text-transform:uppercase;
+	}	
+
+
+	
+	
+ .vino_logo{
+	display:inline-block !important;
+	width:auto;
+	padding:0 12px;
+	}
+.vino_logo img{
+	width:50px;
+	height:50px;
+	padding: 0;
+	}	
+.vino_logo *{
+	vertical-align:middle;
+	display:inline-block;
+	font-size:14px;
+	line-height: 18px;
+	font-family: roboto_regular;
+	color: #170003;
+	text-transform: uppercase;	
+    letter-spacing: 0.15em;
+    padding:0 0 0 6px;
+	}
+
+footer .vino_logo{
+	float: right;
+	}
+.b_three_line{
+	display: none !important;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	padding: 0 !important;
+
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-100px;		
+	background-position-x:-50px;	
+	}	
+.b_three_line:hover{
+	background-position-y:-50px;
+	}		
+	
+.sm_menu > *{
+	display: inline-block;
+	padding:16px 12px;
+}
+
+
+
+
+
+.b_login_register,
+.sm_profile,
+.b_search{
+	float: right;
+}
+
+
+.b_login_register{
+	display: inline-block;
+	padding:16px 12px;
+}
+
+
+
+
+
+
+
+.sm_profile{
+	display: none;
+}
+
+
+.b_my_wish,
+.b_shopping_bag{
+	display:inline-block;
+	font-size:12px;
+	line-height:18px;
+	padding:16px 12px 16px 38px;
+	position:relative;
+	height:50px;
+}
+.b_search,
+.b_my_wish .icon_img,
+.b_shopping_bag .icon_img{
+	position:absolute;
+	top:50%;
+	left:0;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-y:-100px;	
+	width:50px;
+	height:50px;		
+	}
+.b_search{
+	position: relative;
+	-webkit-transform:none;
+	    -ms-transform:none;
+	        transform:none;	
+	background-position-x:-550px;	
+	}
+.b_my_wish .icon_img{
+	background-position-x:-400px;	
+	}
+.b_shopping_bag .icon_img{
+	background-position-x:-500px;	
+	}
+.num_zero .icon_img{
+	background-position-y:0 !important;
+	}	
+
+
+/*
+.sm_nav > *:not(:first-child):not(:last-child):after{
+	position:absolute;
+	top:50%;
+	left:0;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	display:block;
+	content:"";
+	width:1px;
+	height:18px;
+	background-color:#CCC;
+	}
+
+*:hover > .sm_num_boo{
+	background-color:#981643;
+	}		
+
+.sm_num_boo{
+	position:absolute;
+	top:50%;
+	right:20px;
+	
+	-webkit-transform:translate(50%,-50%);
+	
+	    -ms-transform:translate(50%,-50%);
+	
+	        transform:translate(50%,-50%);
+	display:inline-block;
+	font-size:12px;
+	line-height:24px;
+	color: #FFF;
+	text-align:center;
+	width:24px;
+	background-color:#3f0514;
+	border-radius:50%;
+	}
+	
+	
+.b_three_line{
+	float:none;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-100px;		
+	background-position-x:-50px;	
+	}	
+.b_three_line:hover{
+	background-position-y:-50px;
+	}	
+	
+		
+.sm_nav.v1 .b_login_register:after{
+	display:none !important;
+	}
+	
+
+.b_search,
+.b_my_wish .icon_img,
+.b_shopping_bag .icon_img{
+	position:absolute;
+	top:50%;
+	left:0;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-y:-100px;	
+	width:50px;
+	height:50px;		
+	}
+
+
+.b_my_wish,
+.b_shopping_bag{
+	display:inline-block;
+	font-size:12px;
+	line-height:18px;
+	padding:16px 12px 16px 38px;
+	position:relative;
+	height:50px;
+}
+.sm_nav.v1 .b_my_wish,
+.sm_nav.v1 .b_shopping_bag{
+	padding:16px 40px 16px 12px;
+}
+.b_search{
+	position: static;
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	}
+.b_search{
+	background-position-x:-550px;	
+	}
+.b_my_wish .icon_img{
+	background-position-x:-400px;	
+	}
+.b_shopping_bag .icon_img{
+	background-position-x:-500px;	
+	}	
+	
+.b_search:hover,
+.b_my_wish:hover .icon_img,
+.b_shopping_bag:hover .icon_img{
+	background-position-y:-50px;		
+	}
+
+.sm_nav.v2 .b_my_wish:before,
+.sm_nav.v2 .b_shopping_bag:before{
+	position:absolute;
+	left:0;
+	display:block;
+	content:"";
+	width:1px;
+	height:24px;
+	background-color:#CCC;
+	
+	}	
+*/	
+
+			
+	/*
+.num_zero{
+	color:#b6ad64;
+	cursor: default !important;
+	min-width:50px;
+	width:auto;
+	height:50px;
+	padding:16px 12px 16px 12px !important;
+	}
+.num_zero:hover{
+	color:#b6ad64;
+	}
+.num_zero .icon_img{
+	background-position-y:0 !important;
+	}	
+.num_zero .sm_num_boo{
+	display:none;
+	}
+	
+	
+	
+	
+	
+ .vino_logo{
+	display:inline-block !important;
+	float:none;
+	width:auto;
+	padding:0 12px;
+	}
+.vino_logo img{
+	width:50px;
+	height:50px;
+	padding: 0;
+	}	
+.vino_logo *{
+	vertical-align:middle;
+	display:inline-block;
+	font-size:12px;
+	line-height: 18px;
+	font-family: roboto_regular;
+	color: #170003;
+	text-transform: uppercase;	
+    letter-spacing: 0.15em;
+
+    padding:0 4px;
+	}
+footer > div > *{
+	vertical-align:middle;
+	}
+footer .vino_logo{
+	padding:11px;
+	float:right;
+	}
+	
+	
+.vino_logo.v1{
+	text-align:center;
+	margin:0 auto;
+	padding-bottom:12px;
+	
+	width:100%;
+	}	
+.vino_logo.v1 *{
+	 display:block;
+	}	
+.vino_logo.v1 img{
+	display:inline-block;
+	width:72px;
+	height:72px;
+	}	
+	
+*/	
+	
+	
+
+
+
+	
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+
+<script>
+$(function(){
+$('.sm_nav').each(function() {
+	var sm_nav= $('.sm_nav');
+	sm_nav.find('.b_login_register').on('click', function(){
+		$(this).hide().siblings().show();
+	});
+		
+		sm_nav.find('.fb_sign_out').on('click', function(){
+			sm_nav.find(' > *').css('display', '');
+		});
+});
+});
+
+</script>
+
+
+</head>
+<body>
+
+<header>
+
+
+<div class="mw_1200 sm_nav">
+
+<a class="vino_logo" href="index.html"><img src="../img_vino/ms_vino_logo_01_b.svg"><span>Sammarinese</span></a>
+
+<div class="sm_menu">
+<a class="b_three_line" href="#">&nbsp;</a>
+<a href="products.html">Wines</a>
+<a href="#">About Us</a>
+<a href="#">Contacts</a>
+</div>	
+
+<a class="b_login_register" href="#">Log In / Register</a>
+
+<div class="sm_profile">
+
+<div class="my_account_menu">
+	<a class="b_my_account" href="#">Hi Mountain</a>
+	<div class="bg_wine">
+    <a href="my_settings.html">Settings</a>
+    <a href="my_order.html">Order History</a>
+    <a href="my_returns.html">Returns</a>
+    <a class="fb_sign_out" href="#">Sign Out</a>
+	</div>
+</div>
+<a class="b_my_wish num_zero" href="#"><span class="icon_img">&nbsp;</span><div></div></a>
+<a class="b_shopping_bag" href="#"><span class="icon_img">&nbsp;</span><div>9,999</div></a>
+</div>
+
+<a class="b_search" href="#"><span class="icon_img">&nbsp;</span>&nbsp;</a>
+</div>
+
+
+
+
+
+
+</header>
+
+<div class=" mw_1200 sm_banner">
+<img src="../img_vino/bg_sign_in_07.jpg" >
+</div>
+
+
+<div class="substandard">Editor's Choice</div>
+
+
+
+<div class="mw_1200 editors_choice_xml">
+	
+
+</div>
+
+
+<footer>
+<div class="mw_1200">
+<a class="vino_logo" href="index.html"><img src="../img_vino/ms_vino_logo_01_b.svg"><span>Sammarinese</span></a>
+<p class="sm_copyright">© 2018 MOUNTAIN. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

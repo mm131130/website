@@ -1,0 +1,206 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+
+.popup_bg{
+	display:none ;
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:900;
+	
+	
+	}
+	
+.popup_bg form{
+	
+	position: absolute;
+	top:50%;
+	left:50%;
+	
+	transform:translate(-50%,-50%);
+	
+	box-shadow:
+	-9px 12px 3px rgba(23, 0, 3,0.063),	
+	9px 12px 3px rgba(23, 0, 3,0.063),
+	0 18px 12px rgba(23, 0, 3,0.15),	
+	0 24px 18px rgba(23, 0, 3,0.075);		
+
+background: rgba(63, 5, 20, 0.9);
+background: -moz-radial-gradient(center, ellipse cover, rgb(44, 0, 6,0.9) 0%, rgba(63, 5, 20, 0.9) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgb(44, 0, 6,0.9) 0%, rgba(63, 5, 20, 0.9) 100%);
+background: radial-gradient(ellipse at center, rgb(44, 0, 6,0.9) 0%, rgba(63, 5, 20, 0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', endColorstr='#3f0514',GradientType=1 ); 
+	}		
+
+
+
+	
+	
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script src="../jq/sm_v2018_load.js"></script>
+<script>
+$(function(){
+	
+$('.sm_check_box').on('click', function(){
+	$('.popup_bg').show();
+	
+	
+});	
+
+$('.popup_bg').each(function() {
+	var ts =$(this);
+	
+	
+    
+
+		$('.vino_btn_X , button').on('click', function(){
+			ts.hide();
+		//	$(body).css({background: 'rgba(63, 5, 20, 0.9)'});
+			
+			
+	});
+	
+    
+});		
+	
+
+});
+</script>
+</head>
+<body>
+
+<div class="popup_bg drink_night form_vino ">
+
+<form class="mw_450">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="box_name">Return</div>      
+
+<textarea class="" rows="6" placeholder="If you have a moment, please let us know why you return...(optional)"></textarea>
+
+<div class="sm_ddm">
+<a class="sm_ddm_btn" href="#"><span class="btn_info">Please tell us reason (optional)</span><span class="btn_img btn_down">&nbsp;</span></a>
+<div class="sm_ddm_menu">
+<a href="#">Defect</a>
+<a href="#">Changed Mind</a>
+<a href="#">perfume</a>
+<a href="#">flavor</a>
+<a href="#">color</a>
+<a href="#">Not as expected</a>
+</div>
+</div>  
+<div class="sm_note_02">
+No refunds or exchanges for purchases made with event and for all sale items!
+</div>
+
+<a class="w_100" href="#">
+<button type="button" class="btn_wine_red" onclick="">Return</button>
+</a>
+</form>
+</div>
+
+
+
+
+
+<div class="mw_1200 h_100vh">
+<div class="main_title">Order Detail</div>
+<div class="wm_25 left_menu">&nbsp;</div><div class="wm_75">
+
+<p class="wm_100">Here are the details of your order.</p>
+<table class="t_detail" width="0" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="t_img">Image</td>
+<td>Description</td>
+<td>Price</td>
+<td class="t_quantity">Quantity</td>
+<td>Total</td>
+<td class="t_return">Return</td>
+</tr>
+
+<tr>
+
+<td><img src="../img_vino/p_sm_caldese_1.jpg"></td>
+<td class="product_description">
+<p class="brands">San Marino</p>
+<p class="product_name">Tessano</p>
+<p><span>Kind</span>Red Wine</p>
+<p><span>Item Number</span>r000420180305</p>
+</td>
+
+<td>$100.00</td>
+<td class="t_box_a">4</td>
+<td>$400.00</td>
+<td class="t_box_a">
+<a class="sm_check_box" href="#"><span class="btn_img">&nbsp;</span></a>
+</td>     
+</tr>
+</table>
+
+
+<div class="wm_33">
+<h5>Order Info</h5>
+<p><span>Order Number</span>
+<span class="i_num">PO1508AEJA</span></p>
+<p>
+<span>Date of Order</span>16/03/2018<br>
+<span>Order Status</span>Payment Error</p>
+<h5>Shipping Options</h5>
+<p>SPS Ground</p>
+
+
+
+</div><div class="wm_33">
+<h5>Shipping Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+
+<h5>Billing Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+
+
+</div><div class="wm_33 payment_total">
+
+
+<h5>Payment Total</h5>
+
+<p class="price"><span>Price</span>$9,999.00</p>
+<p><span>Subtotal</span>$9,999.00<br>
+<span>Sales Tax</span>$9,999.00<br>
+<span>Shipping</span>$0.00</p>
+<p class="total_price"><span>Total</span>$9,999.00</p>
+<div class="sm_note_02">
+No refunds or exchanges for purchases made with event and for all sale items.
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>

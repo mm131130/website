@@ -1,0 +1,327 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_rwd.css"/>
+<style>
+
+
+.address_page{
+	/*background-color:#9F3;*/
+	
+	padding-bottom:50px;
+	
+}
+.account_info{
+	display:none;
+	}
+
+
+	
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+	$('.left_menu').load('menu_my_account_2.html');
+	$('body').prepend('<header class="v01"></header>').append('<footer class="v01"></footer>');
+	$('header.v01').load('head_01.html');
+	$('footer.v01').load('foot_01.html');
+
+
+/*
+
+	$('.account_list_btn').on('click', function(){
+		var ts = $(this);
+
+		if(ts.hasClass('open')){
+			ts.removeClass('open').next('.account_info').slideUp();		
+			ts.find('.btn_img').addClass('btn_down').addClass('btn_down');			
+		}else{
+			ts.addClass('open').next('.account_info').slideDown();
+			ts.find('.btn_img').addClass('btn_up').removeClass('btn_down');				
+		}
+
+	return false;
+	});
+	
+
+	$('.jb_add_date').on('click', function(){
+		var ts = $(this);
+
+		if(ts.hasClass('open')){
+			ts.removeClass('open').next('.account_info').slideUp();		
+			//ts.find('.btn_img').addClass('btn_down').addClass('btn_down');			
+		}else{
+			ts.addClass('open').next('.account_info').slideDown();
+			//ts.find('.btn_img').addClass('btn_up').removeClass('btn_down');				
+		}
+
+	return false;
+	});	
+	
+
+	$('.jb_build_info').on('click', function(){
+		var ts = $(this);
+		
+		ts.parent().hide();
+		ts.parent().parent().prepend('<div class="account_list_btn">Home<div class="btn_img btn_up">&nbsp;</div></div>');
+
+		
+
+	return false;
+	});	
+		
+		
+		
+		*/
+		
+		
+		
+		
+	$('.address_page').each(function(){
+		
+		var ts = $(this);
+		
+		
+		ts.find('.account_list_btn').on('click', function(){
+
+
+		if($(this).hasClass('open')){
+			$(this).removeClass('open').next('.account_info').slideUp();		
+			$(this).find('.btn_img').addClass('btn_down').addClass('btn_down');			
+		}else{
+			$(this).addClass('open').next('.account_info').slideDown();
+			$(this).find('.btn_img').addClass('btn_up').removeClass('btn_down');				
+		}
+
+	return false;
+	});
+	
+		/*
+	ts.find('.b_del').on('click', function(){
+		$(this).parent().slideUp(100 , function(){
+			$(this).remove();
+		});
+		
+		$(this).parent().next('.account_info').slideUp();
+	return false;
+	});*/
+	
+	
+	ts.find('.b_del').on('click', function(){
+		$(this).parent().next('.account_info').remove();
+		$(this).parent().remove();
+	
+		
+		
+	return false;
+	});
+		
+		ts.find('.jb_add_date.sa , .jb_add_date.ba').on('click', function(){
+			
+		if($(this).hasClass('open')){
+			$(this).removeClass('open').next('.account_info').slideUp(360 , function(){
+				$(this).next('.account_info').remove();
+				
+				});
+			
+		}else if($(this).hasClass('ba')){
+			//$(this).after('<form class="account_info"></form>');	
+			//$(this).next('.account_info').load('form_b_a.html');
+			$(this).addClass('open').next('.account_info').slideDown();	
+					
+		}else if($(this).hasClass('sa')){
+			//$(this).after('<form class="account_info"></form>');	
+			//$(this).next('.account_info').load('form_s_a.html');
+			$(this).addClass('open').next('.account_info').slideDown();			
+		}
+		return false;
+			
+		});
+		
+		
+
+		ts.find('.jb_add').on('click', function(){	
+			//ts.prepend('<div class="account_list_btn">Home<div class="btn_img btn_up">&nbsp;</div></div>');
+	$(this).parent().prev().before('<div class="account_list_btn"><div class="b_open_close">My sweet home<div class="btn_img btn_down">&nbsp;</div></div><a class="b_del" href="#">DEL</a></div>');
+			
+			
+			
+			$(this).parent().slideUp(360 , function(){
+				$(this).parent('form').remove();
+			});
+			$(this).parent().prev().removeClass('open');
+			
+		//ts.parent().parent().prepend('<div class="account_list_btn">Home<div class="btn_img btn_up">&nbsp;</div></div>');
+		return false;
+		});		
+			
+});
+
+
+var val = $('#usernameid').val();
+
+var empte_val = $('input').val('');
+	
+	
+	
+});
+</script>
+</head>
+<body>
+
+
+<div class="mw_1200 h_100vh">
+
+<div class="main_title">Address</div>
+
+<div class="wm_25 left_menu">&nbsp;</div><div class="wm_50 address_page">
+
+    
+    
+  <!--  
+<div class="account_list_btn">My sweet home<div class="btn_img btn_down">&nbsp;</div></div>  
+  -->
+<div class="account_list_btn">
+<div class="b_open_close">My sweet home<div class="btn_img btn_down">&nbsp;</div></div>
+<a class="b_del" href="#">DEL</a>
+</div>  
+  
+  
+  
+  
+<div class="account_info">
+
+<!--
+<a href="#" class="wm_50 edit_btn">Edit</a><a href="#" class="wm_50 edit_btn">Cancel</a>-->
+<div class="wm_100">
+<div class="input_box">My sweet home</div>
+</div>
+<div class="subtitle">Address</div>
+<div class="w_100">
+<div class="wm_100 label_box">Recipient</div>
+<div class="wm_50 input_box">Mountain</div><div class="wm_50 input_box">Chiou</div>
+</div>
+<div class="wm_100">
+<div class="label_box">Address</div>
+<div class="input_box">122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</div>
+</div>
+<div class="wm_50">
+<div class="label_box">Country</div>
+<div class="input_box">ROC</div>
+</div>
+<div class="wm_50">
+<div class="label_box">City</div>
+<div class="input_box">Taipei</div>
+</div>
+<div class="wm_33">
+<div class="label_box">State/Region</div>
+<div class="input_box">Zhongzheng</div> 
+</div>
+<div class="wm_33">
+<div class="label_box">Zip Code</div>
+<div class="input_box">0811</div> 
+</div>
+<div class="wm_33">
+<div class="label_box">Phone Number</div>
+<div class="input_box">8888 888 888</div> 
+</div>
+</div>
+
+<a href="#" class="btn_wine_red jb_add_date sa">Add new shipping address</a>
+
+
+<form class="account_info">
+<div class="wm_100">
+<label for="">Assign Title *</label>
+<input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
+</div>
+<div class="subtitle">Address</div>
+<div class="w_100">
+<label class="wm_100" for="">Recipient *</label>
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
+</div>
+
+<div class="wm_100">
+<label for="">Address *</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
+<div class="wm_50">
+<label for="">Country *</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">City *</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">State/Region *</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Zip Code *</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Phone Number *</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red jb_add">add</button>
+</form>
+
+<a href="#" class="btn_wine_red jb_add_date ba">Add new billing address</a>
+<form class="account_info">
+<div class="wm_100">
+<label for="">Assign Title *</label>
+<input id="" name="lname" type="text" placeholder="e.g. My sweet home"> 
+</div>
+<div class="subtitle">Billing Address</div>
+<div class="wm_100">
+<label for="">Address</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+<div class="wm_100">
+<label for="">Country</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="city">City</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="state">State/Region</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="zip_code">Zip Code</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red jb_add">Add</button>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+.payment_total p{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:72px;
+	
+color:#d5b84f;	
+	}
+.payment_total span{
+	float:right;
+color:#2c0006;
+	text-align:left;
+	padding:0;
+	padding-left:12px;
+	width:120px;
+	}
+	
+.payment_total p:first-child{
+	padding-top:12px;
+	padding-bottom:12px;
+	border-bottom: 1px #CCCCCC dashed;		
+	}
+	
+.payment_total p:last-child{
+	padding-top:12px;
+	padding-bottom:12px;
+	border-top:1px #CCCCCC solid;	
+	}		
+	
+.payment_total > p:nth-child(2){
+	padding-top:12px;
+	}	
+.payment_total > p:nth-last-child(2){
+	padding-bottom:12px;
+	}
+/*
+
+p_table
+p_img
+
+p_description
+p_price
+p_qty
+p_total_price
+p_remove
+
+*/
+.products_list_box{
+	border-top:1px #e6e6e6 solid;	
+	}
+.item_name > *{
+	font-size:12px !important;
+	color:#a39849;
+	}
+
+.p_table *:nth-child(2){
+	
+	width:120px;
+	}	 	
+
+
+.p_table{
+	position:relative;
+	display:table;
+	width:100%;
+	border-bottom:1px #e6e6e6 solid;	
+		/*border-top:none;	*/
+	}
+.p_table > *{
+	display:table-cell;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align:center;
+	
+	/* border-left:1px #e6e6e6 solid; */
+	
+	}
+.p_table > *:first-child{
+	border:none;
+	}
+.p_img{
+	width:72px;
+	}
+.p_img img{
+	min-width:72px;
+	width:100%;
+	}
+	
+	
+.p_description{
+	position: relative;
+	padding:12px 12px 12px 72px;
+	text-align:left;
+	width:-moz-calc(100% - 240px);	
+	width:-webkit-calc(100% - 240px);	
+	width:calc(100% - 240px);	
+	}
+.p_description img{
+	position:absolute;
+	top:50%;	
+	left:0;
+	transform:translateY(-50%);
+	width:72px;
+	}
+.p_description p{
+	padding:0;
+	}	
+	
+.p_price{
+	text-align:left;
+	
+	padding-left:12px;
+	width:120px;
+	}
+.p_qty{
+	position:relative;
+	width:120px;
+	}
+.p_qty:hover *{
+	display:block !important;
+	}	
+	
+
+.p_remove{
+	position:absolute;
+	top:50%;
+	right:12px;
+	transform:translate(0 , -50%);
+
+	}	
+	
+	
+	
+/*
++ - 
+plus
+less
+*/
+.p_qty .less,
+.p_qty .plus{
+	display:none;
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	/*border:1px #CCCCCC solid;*/
+	border-radius:50%;
+
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-y:-60px;
+	
+	color:#2c0006;
+	background-color:#981643;	
+	background-color:#fbfbf2;		
+	
+	top:50%;
+	}	
+.p_qty .less{
+	left:0;
+
+	background-position-x:-660px;	
+	transform:translate(0 , -50%);
+	}
+.p_qty .plus{
+
+	right:0;
+
+	background-position-x:-610px;	
+	transform:translate(0 , -50%);
+	}		
+.p_qty .less:hover,
+.p_qty .plus:hover{
+
+	background-position-y:-110px;
+	}	
+	
+	
+	
+	
+	
+.p_total_price{
+	padding-left:12px;
+	padding-right:12px;
+	text-align:left;
+	width:120px;
+	border-color:#981643;
+	}
+
+
+
+
+
+.info_card{
+	display:block;
+	margin-top:3px;
+	
+	padding:9px 13px;
+	border-radius:4px;
+	border:1px #CCCCCC solid;
+	}	
+.info_card .assign_title{
+		font-size:12px;
+	font-family:roboto_Medium;
+	text-transform:uppercase;
+	color:#a39849;
+	}		
+	
+.info_card p{
+
+	padding:3px 0;
+	}	
+.info_card p:first-child{
+	font-size:12px
+	}
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+	$('.left_menu').load('menu_my_account_2.html');
+	$('body').prepend('<header class="v01"></header>').append('<footer class="v01"></footer>');
+	$('header.v01').load('head_01.html');
+	$('footer.v01').load('foot_01.html');
+	
+	
+	$('.products_list_box').each(function() {
+		var ts = $(this);
+		//<div class="how_many"></div>').prepend('<a class="plus" href="#">&nbsp;</a>').append('<a class="less" href="#">&nbsp;</a>
+		ts.find('.p_qty').html('<a class="plus" href="#">&nbsp;</a><div class="how_many">0</div><a class="less" href="#">&nbsp;</a>');  
+   
+	 });
+	
+	
+	
+	
+	$('.p_qty').each(function () {
+	var num = 0;
+	var ts = $(this);
+	function change_num(num_info){
+	num += num_info;
+	ts.find('.how_many').text(num);
+	}
+
+
+
+	$(".less").on( 'click', function(){
+	  	if(num === 1){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(-1); 
+		}
+		
+	return false;	  
+	});
+
+
+
+	$(".plus").on('click', function(){
+	  	if(num === 15){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(1); 
+	  	}
+			
+	return false;	 	  
+	});
+	
+	change_num(1);
+	});
+	
+	/*
+	var a = $('.p_price').html();
+	var b =
+	var c =
+*/
+
+
+});
+</script>
+</head>
+<body>
+
+
+
+
+<div class="mw_1200">
+
+
+<div class="main_title">Check Out</div>
+
+<div class="subtitle">Car</div>
+
+<div class="products_list_box">
+<div class="p_table item_name">
+
+    <div class="p_description">ITEM</div>
+    <div>QTY</div>
+    <div class="p_price">PRICE</div>
+    
+</div>
+
+
+
+<div class="p_table">
+<div class="p_description">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_qty">1</div>
+<div class="p_price">$100.00</div>
+<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+</div>
+<div class="p_table">
+<div class="p_description">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_qty">1</div>
+<div class="p_price">$100.00</div>
+<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+</div>
+<div class="p_table">
+<div class="p_description">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_qty">1</div>
+<div class="p_price">$100.00</div>
+<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+</div>
+
+</div><!-- products_list_box -->
+
+<div class="payment_total">
+
+
+	<p>Shopping Bag <span>$1200.00</span></p>
+	<p>Promo Code <span>-$160.00</span></p>
+	<p>Sales Tax <span>$0.00</span></p>
+	<p>Shipping <span>$40.00</span></p>
+	<p>Total <span>$1,060.00</span></p>
+    
+    
+</div><div class="wm_33">
+
+
+
+<div class="subtitle">Shipping Address</div>
+
+<div class="wm_100">
+	<div class="label_box">Select Address</div>
+	<div class="sm_ddm">
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Address List</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="sm_ddm_menu">
+		<a href="#">My sweet home</a>
+		<a href="#">Grandma home</a>
+		<a href="#">School</a>
+		<a href="#">Office</a>
+	</div>
+	</div>  
+</div>  
+
+
+<div class="wm_100 info_card">
+	<p class="assign_title">My sweet home</p>
+	<p>Mountain Chiou</p>
+	<p>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</p>
+	<p>8888 888 888</p>
+</div>
+
+<a class="wm_100 btn_wine_red" href="#">Add New Address</a>
+
+<div class="w_100">
+<label class="wm_100" for="">Recipient*</label>
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
+</div>
+<div class="wm_100">
+<label for="">Address*</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+<div class="wm_50">
+<label for="">Country*</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="">City*</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="">State/Region*</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="">Zip Code*</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+<div class="wm_100">
+<label for="">Phone Number*</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+
+
+<a class="wm_100 btn_wine_red" href="#">Save</a>
+
+
+</div><div class="wm_33">
+
+<div class="subtitle">Billing Address</div>
+
+<div class="wm_100">
+	<div class="label_box">Select Address</div>
+	<div class="sm_ddm">
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Address List</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="sm_ddm_menu">
+		<a href="#">My sweet home</a>
+		<a href="#">Grandma home</a>
+		<a href="#">School</a>
+		<a href="#">Office</a>
+	</div>
+	</div>  
+</div>  
+
+
+<div class="wm_100 info_card">
+	<p class="assign_title">My sweet home</p>
+	<p>Mountain Chiou</p>
+	<p>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</p>
+	<p>8888 888 888</p>
+</div>
+
+<a class="wm_100 btn_wine_red" href="#">Add New Address</a>
+
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Use an existing address</a>
+
+<div class="wm_100">
+<label for="">Address*</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+<div class="wm_50">
+<label for="">Country*</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="city">City*</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="state">State/Region*</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="zip_code">Zip Code*</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+<a class="wm_100 btn_wine_red" href="#">Save</a>
+
+</div><div class="wm_33">
+
+
+<div class="subtitle">Payment Info</div>
+<a class="wm_50 btn_white" href="#">Credit Card</a>
+<a class="wm_50 btn_white" href="#">Paypal</a>
+<div class="wm_100">
+<label for="">Card Holder's Name*</label>
+<input id="" class="" name="holder_name" type="text" placeholder=""> 
+</div>
+<div class="wm_100">
+<label for="">Card Number*</label>
+<input id="" class="" name="cname" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Exp Month*</label>
+<input id="" class="" name="expm" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Exp Year*</label>
+<input id="" class="" name="expy" type="text" placeholder=""> 
+</div>
+<div class="wm_33">
+<label for="">Security Code*</label>
+<input id="" class="" name="securityc" type="text" placeholder=""> 
+</div>
+
+<a class="wm_100 btn_wine_red" href="#">Next</a>
+
+</div>
+
+
+
+
+</div><!-- 1200 -->
+
+
+
+
+<div class="mw_1200">
+
+<div class="main_title">Confirmation</div>
+
+<div class="subtitle">Car</div>
+
+<div class="products_list_box">
+<div class="p_table">
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+</div>
+<div class="">1</div>
+<div class="p_price">$100.00</div>
+</div>
+
+
+<div class="p_table">
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+</div>
+<div class="">1</div>
+<div class="p_price">$100.00</div>
+</div>
+</div>
+<div class="subtitle">Shipping Address</div>
+
+<p>122, Sec. 1, Chongqing S. Rd., Zhongzheng District Taipei City 10048, Taiwan (ROC)</p>
+
+
+<div class="subtitle">Shipping Option</div>
+<div>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Ground 5 - 7 business days <span>$4.95</span></a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Ground 5 - 7 business days <span>free shipping</span></a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Express 1 - 3 business days <span>$15.00</span></a>
+</div>
+
+<div class="subtitle">Summary</div>
+<div class="payment_total">
+
+
+	<p>Shopping Bag <span>$1200.00</span></p>
+	<p>Promo Code <span>-$160.00</span></p>
+	<p>Sales Tax <span>$0.00</span></p>
+	<p>Shipping <span>$40.00</span></p>
+	<p>Total <span>$1,060.00</span></p>
+    
+    
+</div>
+
+
+<div class="subtitle">Payment Info</div>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>XXXX XXXX XXXX 1234</a>
+
+
+
+<div class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>I agree to <a href="#">Terms and Conditions</a></div>
+
+
+<a class="wm_50 btn_white" href="#">Back</a>
+<a class="wm_50 btn_wine_red" href="#">Proceed to Checkout</a>
+
+</div><!-- 1200 -->
+
+
+
+
+</body>
+</html>

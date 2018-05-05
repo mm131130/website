@@ -1,0 +1,465 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+
+
+/*
+customers_account_list
+c_info
+c_pice
+c_citle
+c_name
+*/
+
+.c_info{
+	display:inline-block;
+	position:relative;
+	padding:9px 9px 9px 72px;
+	width:30.333333%;
+	min-height:72px;
+	height:100%;
+	border:1px #ccc solid;
+	margin:9px 1.5%;
+	
+	border-radius:4px;
+	
+	}
+	
+	
+	
+
+
+
+.c_title{
+	font-size:12px;	
+	line-height:18px;
+	font-family:roboto_Regular;
+	}
+.c_name{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+	font-family:roboto_light;
+	}
+
+
+
+
+
+
+
+
+/**/
+.table_box > *:first-child *{
+		font-size:12px;
+		color:#666;
+		color:#a39849;
+	
+		text-transform:uppercase;
+	}
+.table_box > *:first-child{
+	padding:0;
+	}	
+	
+.info_tr{
+	position:relative;
+	display:table;
+	width:100%;
+	border-bottom:1px #e6e6e6 solid;
+	padding:24px 0;
+	
+	}
+.info_tr > *{
+	display:table-cell;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	color:#5d0b24;
+
+	color:#484848;
+	text-align:left;
+	padding:16px 9px;
+	}
+
+.info_tr > *{
+	width:16.666666%;
+	width:15%;	
+	}
+	
+.btn_box{
+	
+	width:50px;
+	}
+	
+.p_img,			
+.c_img{
+	padding:0 !important;
+	position:relative;
+	width:82px;
+	text-align:center;
+	}
+
+
+
+.c_img img{
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	
+	
+	top:50%;
+	left:50%;
+	
+	transform:translate(-50%, -50%);
+	
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	border:1px #2c0006 solid;
+
+	
+	}
+
+.p_img img{
+
+	width:82px;
+	height:82px;
+
+	
+	}
+	
+	
+	
+	
+	
+.p_description{
+width:-moz-calc(70% - 132px);	
+	width:-webkit-calc(70% - 132px);	
+	width:calc(70% - 132px);		
+	
+	}
+.email{
+
+	width:-moz-calc(40% - 132px);	
+	width:-webkit-calc(40% - 132px);	
+	width:calc(40% - 132px);	
+	}
+	
+.b_check_box{
+	
+
+	}
+	
+.b_remove{
+	display:block;	
+	width:30px;
+	height:30px;
+	
+	color:#2c0006;
+	
+	/*
+	background-color:#fbfbf2;	
+	border-radius:50%;
+*/
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-60px;		
+	background-position-x:-710px;	
+	}
+.b_remove:hover{
+	background-position-y:-110px;	
+	}
+		
+.b_check_box{
+	display:block;	
+	width:30px;
+	height:30px;
+	
+	color:#2c0006;	/*
+	background-color:#fbfbf2;	
+	border-radius:50%;
+*/
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-60px;		
+	background-position-x:-160px;	
+	}
+.b_check_box:hover{
+	background-position-y:-110px;	
+	}
+	
+.payment_total{
+	text-align:right;
+	}
+.payment_total p{
+	
+	padding:0;
+	}
+.payment_total span{
+	color: #666;
+	color:#484848;	
+	padding-left: 9px;
+	width:-moz-calc(15% + 50px);	
+	width:-webkit-calc(15% + 50px);	
+	width:calc(15% + 50px);		
+	
+	
+	}
+.payment_total > *:first-child,
+.payment_total > *:last-child{
+border-top:1px #5d0b24 solid !important;
+	}	
+.i_total_price span{
+	font-size:18px;
+	color:#981643;
+
+	}	
+	
+
+@media screen and (max-width:1023px) {
+	.table_box > *:first-child{
+		display:none;
+	
+	}
+.info_tr{
+	position:relative;
+	display: inline-block;
+	width: auto;
+	border:1px #e6e6e6 solid;	
+	text-align: center;	
+width:22%;
+	margin:0 1.5%;	
+	}
+.info_tr > *{
+	display: block;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align: center;
+	padding:9px;
+	
+	width:auto;
+	}
+	
+	
+.c_img img {
+	display:inline-block;
+
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    border: 1px #2c0006 solid;
+}	
+	
+.f_name,
+.l_Name{
+
+	display:inline-block;	
+	font-size:18px;
+  
+	 }
+	
+.f_name{
+	padding-right:1px;
+	 }
+
+.l_Name{
+	padding-left:1px;
+	 } 	 
+	 
+	 
+	 
+.product_name{
+	font-size:18px;
+	 }
+	 
+	 .btn_box{
+		 position:absolute;
+		 right:0;
+		 top:0;
+		 }
+	 
+
+}	
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+
+var c_list = '';
+for ( var i=0; i < 51; i++ ){
+c_list += '<div class="c_info"><div class="c_pice"><img src="../img_test/201308-' + (i+1) + '.jpg"></div><div class="c_title">Mr.</div><div class="c_name">Mountain Chiou</div></div>';
+}
+$('.customers_account_list').append( c_list );
+	
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--
+Customers Account
+
+<div class="mw_1200 customers_account_list">
+
+<div class="c_info">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="c_pice"><img src="../img_test/201308-1.jpg"></div>
+<div class="c_title">Mr.</div>
+<div class="c_name">Mountain Chiou</div>
+<div class="b_my_wish"><span class="icon_img">&nbsp;</span>10</div>
+<div class="b_shopping_bag"><span class="icon_img">&nbsp;</span>9</div>
+</div>
+
+
+</div>
+
+-->
+
+
+
+<div class="mw_1200 table_box">
+
+<div class="w_20 left_menu">
+
+<a href="#">User</a> 
+
+
+</div><div class="w_80">
+
+
+
+
+
+<div class="info_tr">
+	<div class="c_img">Image</div>
+    <div class="u_name">User Name</div>
+    <div class="f_name">First Name</div>
+    <div class="l_Name">Last Name</div>
+    <div class="email">Email</div>
+    <div class="phone">Phone</div>
+     <div class="btn_box"><a class="b_check_box" href="#">&nbsp;</a></div>  
+</div>
+
+<div class="info_tr">
+    
+    <div class="c_img"><img src="../img_test/201308-1.jpg"></div>
+    <div class="u_name">MM</div>
+    <div class="f_name">W</div>
+    <div class="l_Name">Mountain</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <div class="btn_box"><a class="b_check_box" href="#">&nbsp;</a></div>    
+
+
+</div><div class="info_tr">
+    
+    <div class="c_img"><img src="../img_test/201308-1.jpg"></div>
+    <div class="u_name">MM</div>
+    <div class="f_name">W</div>
+    <div class="l_Name">Mountain</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <div class="btn_box"><a class="b_check_box" href="#">&nbsp;</a></div>    
+
+
+</div><div class="info_tr">
+    
+    <div class="c_img"><img src="../img_test/201308-1.jpg"></div>
+    <div class="u_name">MM</div>
+    <div class="f_name">W</div>
+    <div class="l_Name">Mountain</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <div class="btn_box"><a class="b_check_box" href="#">&nbsp;</a></div>    
+
+
+</div><div class="info_tr">
+    
+    <div class="c_img"><img src="../img_test/201308-1.jpg"></div>
+    <div class="u_name">MM</div>
+    <div class="f_name">W</div>
+    <div class="l_Name">Mountain</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <div class="btn_box"><a class="b_check_box" href="#">&nbsp;</a></div>    
+</div>
+
+</div>
+
+
+
+
+<div class="mw_1200 table_box">
+
+
+<div class="info_tr">
+	<div class="c_img">Image</div>
+	<div class="p_description">Description</div>
+	<div>QTY</div>
+	<div class="p_price">PRICE</div>   
+	<div class="btn_box"></div>  
+</div>
+
+<div class="info_tr">
+<div class="p_img">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_qty">1</div>
+<div class="p_price">$100.00</div>
+<div class="btn_box">
+<a class="b_remove" href="#">&nbsp;</a>
+</div>
+
+</div>
+
+
+<div class="payment_total">
+
+	<p>Shopping Bag <span>$1200.00</span></p>
+	<p>Promo Code <span>-$160.00</span></p>
+	<p>Sales Tax <span>$0.00</span></p>
+	<p>Shipping <span>$40.00</span></p>
+	<p class="i_total_price">Total<span>$1,060.00</span></p>
+    
+    
+</div>
+
+
+</div><!-- w 80 -->
+</div><!-- w 1200 -->
+
+</body>
+</html>

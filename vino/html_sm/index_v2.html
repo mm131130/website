@@ -1,0 +1,194 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<style>
+
+.sm_banner{
+	padding:30px 0;	
+	}
+
+	
+	
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+	
+$('.b_plus_minus').on('click', function(){
+	var ts = $(this);
+	if(ts.hasClass('r')){
+		ts.removeClass('rotate_135 , r');	
+	}else{
+		ts.addClass('rotate_135 , r');			
+	}
+	
+	return false;
+
+});
+
+	function get_products_list(){
+		$.ajax({
+			url:"../xml/vino_list_001.xml",
+			cache:false,
+			dataType:"xml",
+			success:function(xml){
+				$(xml).find("sm_vino").each(function() {
+					//var index=0;
+				$('.vino_products_box').empty();
+					$(this).find("info").each(function() {
+	var product_list = '';
+	var product_box = new Array;
+	//var product_box = [];
+	
+	var home_page_products_list = '<div class="vino_info"><a class="my_wish_icon" href="#">&nbsp;</a><div class="vino_kind">' 
+	+ $(this).find("kind").text() + '</div><img class="vino_p_img" src="' 
+	+ $(this).find("img_url").text() + '"><div class="vino_area">' 
+	+ $(this).find("area").text() + '</div><div class="vino_name">' 	
+	+ $(this).find("name").text() + '</div><div class="vino_price">' 
+	+ $(this).find("price").text() + '</div></div>';		
+	
+	
+
+
+	var products = '<div class="vino_info"><a class="b_my_wish" href="#">&nbsp;</a><div class="vino_kind">' 
+	
+	+ $(this).find("kind").text() + '</div><img src="' 
+	+ $(this).find("img_url").text() + '"><div class="vino_name"><span>name</span>' 
+	+ $(this).find("name").text() + '</div><div class="vino_price"><span>price</span>' 
+	+ $(this).find("price").text() + '</div><div class="vino_color"><span>color</span>' 
+	+ $(this).find("color").text() + '</div><div class="vino_perfume"><span>perfume</span>' 
+	+ $(this).find("perfume").text() + '</div><div class="vino_flavor"><span>flavor</span>' 
+	+ $(this).find("flavor").text() + '</div><div class="vino_serving_suggestions"><span>gastronomic combinations</span>' 
+	+ $(this).find("gastronomic_combinations").text() + '</div><div class="vino_tasting_temperature"><span>tasting temperature</span>' 
+	+ $(this).find("tasting_temperature").text() + '</div><div class="vino_area"><span>area</span>' 
+	+ $(this).find("area").text() + '</div><div class="vino_producer"><span>producer</span>' 
+	+ $(this).find("producer").text() + '</div><div class="vino_analysis"><span>analysis</span>' 
+	+ $(this).find("analysis").text() + '</div></div>';		
+		
+	product_box.push( home_page_products_list );
+	
+	for ( var i=0; i < product_box.length; i++ ){
+		product_list += product_box[i];
+	}
+
+	$('.vino_products_box').append( product_list );
+
+
+	
+	//index += 1;
+	});
+	//$('.finishers_all').append( index );		
+	
+
+	});//products_list
+	
+	$('.my_wish_icon').on('click', function() {
+	var ts = $(this);
+	if(ts.hasClass('click_icon')){
+		ts.removeClass('click_icon');		
+	}else{
+		ts.addClass('click_icon');	
+	}
+	
+	num_my_wish();
+	return false;
+});
+	
+}
+
+});//ajax
+		
+						
+	
+		
+	}//function getXMLRacers
+	get_products_list();
+	
+//$('.vino_products_box > *').append('<a class="b_my_wish" href="#">&nbsp;</a>');
+
+
+function num_my_wish(){
+	
+	$('.vino_products_box .click_icon').each(function(i) {
+		var num_my_wish = i+1;
+		
+		$('.b_my_wish .num_boo').html(num_my_wish);
+        
+    });
+	
+	}
+
+
+});
+
+</script>
+
+
+</head>
+<body>
+
+<header>
+
+<div class="mw_1200 sm_nav">
+
+<a class="b_three_line" href="#">&nbsp;</a>
+
+<div class="right_box">
+
+<a class="b_login_register" href="sm_login_register.html">Sign Out</a>
+
+</div>
+
+<div class="vino_logo">
+<a href="index.html">
+<img src="../img_vino/ms_vino_logo_01_b.svg">
+</a>
+<p>Sammarinese</p>
+</div>
+</div>
+
+</header>
+
+<div class=" mw_1200 sm_banner">
+<img src="../img_vino/bg_sign_in_07.jpg" >
+</div>
+
+<div class="mw_1200 vino_products_box">
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+<div class="mw_1200">
+<div class="vino_logo v02">
+<a href="index.html">
+<img src="../img_vino/ms_vino_logo_01_b.svg">
+</a>
+<p>Sammarinese</p>
+</div>
+<p class="sm_copyright">© 2018 MOUNTAIN. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

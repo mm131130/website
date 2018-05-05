@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sm_vino>
+
+<info>
+<kind>red wine</kind>
+<item_num>r000120180305</item_num>
+<img_url>../img_vino/p_sm_tessano_1.jpg</img_url>
+<name>Tessano</name>
+<price>NT$2,499</price>
+<color>Deep and intense, bright ruby red with hints of burgundy.</color>
+<perfume>
+Full and enveloping. 
+Refined, elegant and delicate. 
+Complex and with a rich variety of nuances that range from vanilla to toasted almonds, coffee, liquorice and cinnamon.</perfume>
+<flavor>
+Dry, full, delicate and harmonious. 
+This is a prestigious wine with just the right balance of quality tannins and measured acidity. 
+Warm and austere with an excellent structure and considerable depth. 
+Persistent taste-olfactory sensations.</flavor>
+<gastronomic_combinations>Rich red meat dishes, game and mature cheeses.</gastronomic_combinations>
+<tasting_temperature>18°C</tasting_temperature>
+<serving_instructions>-</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 13.5% - Total acidity 5.3%</analysis>
+</info>    
+
+
+<info>
+<kind>red wine</kind>
+<item_num>r000220180305</item_num>
+<img_url>../img_vino/p_sm_brugneto_1.jpg</img_url>
+<name>Brugneto</name>
+<price>NT$1,618</price>
+<color>Intense ruby red with violet overtones when young, verging on garnet red with ageing.</color>
+<perfume>Refined, full and variegated, with traces of blackberry and bilberry</perfume>
+<flavor>Dry with a full-bodied structure, but also harmonious, soft and elegant.</flavor>
+<gastronomic_combinations>Strongly flavoured dishes of red meats, game and matured cheeses.</gastronomic_combinations>
+<tasting_temperature>18 - 20°C</tasting_temperature>
+<serving_instructions>-</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+
+<analysis>Alcohol 13% - Total acidity 5.5%</analysis>
+</info>    
+
+
+
+
+<info>
+<kind>red wine</kind>
+<item_num>r000320180305</item_num>
+<img_url>../img_vino/p_sm_sangiovese_1.jpg</img_url>
+
+<name>Sangiovese</name>
+<price>NT$1,488</price>
+<color>
+Intense ruby red with violet overtones when young, verging on garnet red with ageing.
+</color>
+<perfume>
+Refined, intense, fruity, with traces of fresh fruit with an aroma of grape blossom.
+</perfume>
+<flavor>
+Full-bodied structure, harmonious and soft with a persistent taste.
+</flavor>
+<gastronomic_combinations>
+Very easy to combine with almost all dishes, but it can be drunk alone for a relaxing moment.
+</gastronomic_combinations>
+<tasting_temperature>
+16 - 18°C
+</tasting_temperature>
+<serving_instructions>-</serving_instructions>
+
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+
+<analysis>Alcohol 13% - Total acidity 5.4%</analysis>
+</info>    
+
+
+<info>
+<kind>red wine</kind>
+<item_num>r000420180305</item_num>
+<img_url>../img_vino/p_sm_rosso_dei_castelli_sammarinesi_1.jpg</img_url>
+
+<name>Rosso Dei Castelli</name>
+<price>NT$999</price>
+<color>Medium intense ruby red.</color>
+<perfume>Refined, fruity, pleasant vinosity, with aromas of cherry and strawberry.</perfume>
+<flavor>Dry, sharply full-bodied but harmonious and balanced.</flavor>
+<gastronomic_combinations>Various traditional San Marinese dishes, pasta with meat sauces, braised or grilled chicken and veal.</gastronomic_combinations>
+<tasting_temperature>16°C</tasting_temperature>
+<serving_instructions>-</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 12% - Total acidity 6%</analysis>
+</info>    
+
+
+
+
+
+
+
+<!-- white 1 -->
+
+<info>
+<kind>white wine</kind>
+<item_num>w000120180305</item_num>
+<img_url>../img_vino/p_sm_roncale_1.jpg</img_url>
+<name>Roncale</name>
+<price>NT$1,468</price>
+<color>Pale yellow with greenish tinges.</color> 
+<perfume>Refined and delicately fruity.</perfume>
+<flavor>Dry, fruity and with body, harmonious and persistent with a slightly bitter aftertaste.</flavor>
+<gastronomic_combinations>
+Hors d'oeuvres, cold summer dishes (pasta dishes with tomato and basil, cold veal with tuna sauce, chicken galantine etc.), fish-based dishes and in particular, grilled fish.
+</gastronomic_combinations>
+<tasting_temperature>12°C</tasting_temperature>
+<serving_instructions>Uncork just before serving.</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 12% - Total acidity 5.8%</analysis>
+</info>
+
+
+
+<!-- white 2 -->
+<info>
+<kind>white wine</kind>
+<item_num>w000220180305</item_num>
+<img_url>../img_vino/p_sm_caldese_1.jpg</img_url>
+<name>Caldese</name>
+<price>NT$2,208</price>
+<color>Pale yellow with darker yellow tinges. </color>
+<perfume>Refined full and variegated with notes of esotic fruit.</perfume>
+<flavor>Dry, fruity and with body, harmonious and very persistent.</flavor>
+<gastronomic_combinations>
+Hors d'oeuvres, fish-based dishes and in particular, grilled fish and spicy white meat.
+</gastronomic_combinations>
+<tasting_temperature>12° to 14°C</tasting_temperature>
+<serving_instructions>Uncork just before serving.</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 13% - Total acidity 5.5%</analysis>
+</info>
+
+
+
+<!-- white 3 -->
+<info>
+<kind>white wine</kind>
+<item_num>w000320180305</item_num>
+<img_url>../img_vino/p_sm_biancale_1.jpg</img_url>
+<name>Biancale</name>
+<price>NT$1,398</price>
+<color>Pale yellow with brilliant greenish overtones. </color>
+<perfume>Refined, intense, fruity and flowery, with an aroma of grape blossom;</perfume>
+<flavor>Dry but soft and well-balanced. Fresh and lively flavour with a pleasantly bitter aftertaste. </flavor>
+<gastronomic_combinations>
+Excellent as an aperitif, with fish dishes, particularly fried fish and fish kebabs, with salami hors d'oeuvres and with rice and pasta dishes with delicately flavoured sauces.
+</gastronomic_combinations>
+<tasting_temperature>10 - 12°C</tasting_temperature>
+<serving_instructions>Uncork immediately before serving.</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+
+<analysis>Alcohol 12% - Total acidity 6%</analysis>
+
+</info>
+
+
+<!-- white 4 -->
+
+<info>
+<kind>white wine</kind>
+<item_num>w000420180305</item_num>
+<img_url>../img_vino/p_sm_bianco_del_castelli_1.jpg</img_url>
+<name>Bianco Del Castelli</name>
+<price>NT$999</price>
+<color>Pale yellow, brilliant.</color>
+<perfume>Refined, delicately fruity, fresh and persistent.</perfume>
+<flavor>Dry, savoury, pleasantly bitter aftertaste.</flavor>
+<gastronomic_combinations>
+Excellent refreshment wine between meals or for serving with light hors d'oeuvres and other simple dishes, fish in particular.
+</gastronomic_combinations>
+<tasting_temperature>8 - 10°C</tasting_temperature>
+<serving_instructions>Uncork immediately before serving.</serving_instructions>
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 12% - Total acidity 6%</analysis>
+</info>
+
+
+
+<!-- white 5 -->
+<info>
+<kind>white wine</kind>
+<item_num>w000520180305</item_num>
+<img_url>../img_vino/p_sm_moscato_spumante_1.jpg</img_url>
+<name>Moscato Spumante</name>
+<price>NT$1,468</price>
+<color>Pale yellow, brilliant.</color>
+<perfume>Delicately fruity with typical grape aroma and traces of sage and ripe pear.</perfume>
+<flavor>Sweet and harmonious, fresh and aromatic.</flavor>
+<gastronomic_combinations>Suitable for a wide variety of desserts.</gastronomic_combinations>
+<tasting_temperature>8°C</tasting_temperature>
+<serving_instructions>Uncork immediately before serving</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>
+Alcohol 7% - Total acidity 7%
+</analysis>
+</info>
+
+
+<!-- white 6 -->
+
+<info>
+<kind>white wine</kind>
+<item_num>w000620180305</item_num>
+<img_url>../img_vino/p_sm_moscato_1.jpg</img_url>
+<name>Moscato</name>
+<price>NT$</price>
+<color>Pale straw</color>
+<perfume>Fine, aromatic, persistent, fruity and typical of Muscat grapes.</perfume>
+<flavor>Sweet but balanced sapid.</flavor>
+
+<gastronomic_combinations>
+Desserts and particularly dry pastries.</gastronomic_combinations>
+<tasting_temperature>8°C</tasting_temperature>
+<serving_instructions>Uncork the bottle at the moment.</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 6% - Total acidity 6%</analysis>
+</info>
+
+
+
+<!-- white 7 -->
+<info>
+<kind>white wine</kind>
+<item_num>w000720180305</item_num>
+<img_url>../img_vino/p_sm_riserva_titano_1.jpg</img_url>
+<name>Riserva Titano</name>
+<price>NT$1,468</price>
+<color>Pale yellow</color>>
+<perfume>Refined, intense and complex, with distinct traces of crusty bread and roast almonds.</perfume>
+<flavor>Keen, fresh and lively, pleasantly savoury.</flavor>
+<gastronomic_combinations>
+Suitable as an aperitif and for a wide variety of fish and meat dishes. Should never be served with desserts.
+</gastronomic_combinations>
+<tasting_temperature>8°C</tasting_temperature>
+
+<serving_instructions>Uncork immediately before serving.</serving_instructions>
+
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 12% - Total acidity 7%</analysis>
+
+</info>
+
+
+
+
+<!-- white 8 -->
+
+<info>
+<kind>white wine</kind>
+<item_num>w000820180305</item_num>
+<img_url>../img_vino/p_sm_grilet_1.jpg</img_url>
+<name>Grilet</name>
+<price>NT$1,088</price>
+<color>Pale yellow</color>
+<perfume>Refined and fruity with a slight smell of crusty bread.</perfume>
+<flavor>
+Dry, savoury, lively and persistent.
+</flavor>
+<gastronomic_combinations>
+Excellent as an aperitif, with salami, herb or asparagus omelettes, fried fish and pasta dishes with tomato sauce. Ideal with the oven-baked pizzas.</gastronomic_combinations>
+<tasting_temperature>8°C</tasting_temperature>
+<serving_instructions>Uncork immediately before serving</serving_instructions>
+<area>San Marino</area>
+<producer>Consortium of Traditional Wines</producer>
+<analysis>Alcohol 10.5% - Total acidity 7%</analysis>
+</info>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</sm_vino>

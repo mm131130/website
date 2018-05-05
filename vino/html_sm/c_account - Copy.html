@@ -1,0 +1,118 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+
+
+/*
+customers_account_list
+c_info
+c_pice
+c_citle
+c_name
+*/
+
+.c_info{
+	display:inline-block;
+	position:relative;
+	padding:9px 9px 9px 72px;
+	width:30.333333%;
+	min-height:72px;
+	height:100%;
+	border:1px #ccc solid;
+	margin:9px 1.5%;
+	
+	border-radius:4px;
+	
+	}
+.c_pice{
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	top:50%;
+	
+	left:36px;
+	
+	transform:translate(-50%, -50%);
+	
+	width:36px;
+	height:36px;
+	border-radius:50%;
+	border:1px #2c0006 solid;
+
+	
+	}
+
+
+
+.c_title{
+	font-size:12px;	
+	line-height:18px;
+	font-family:roboto_Regular;
+	}
+.c_name{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+	font-family:roboto_light;
+	}
+
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+
+var c_list = '';
+for ( var i=0; i < 51; i++ ){
+c_list += '<div class="c_info"><div class="c_pice"><img src="../img_test/201308-' + (i+1) + '.jpg"></div><div class="c_title">Mr.</div><div class="c_name">Mountain Chiou</div></div>';
+}
+$('.customers_account_list').append( c_list );
+	
+});
+</script>
+
+
+</head>
+
+<body>
+
+Customers Account
+
+<div class="mw_1200 customers_account_list">
+
+<div class="c_info">
+<a class="vino_btn_X" href="#">&nbsp;</a>
+<div class="c_pice"><img src="../img_test/201308-1.jpg"></div>
+<div class="c_title">Mr.</div>
+<div class="c_name">Mountain Chiou</div>
+<div class="b_my_wish"><span class="icon_img">&nbsp;</span>10</div>
+<div class="b_shopping_bag"><span class="icon_img">&nbsp;</span>9</div>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>

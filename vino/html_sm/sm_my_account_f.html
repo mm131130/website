@@ -1,0 +1,711 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+
+
+/* my account */
+table img,
+.t_return,
+.t_img,
+.t_quantity{
+	width:72px;
+	}	
+.t_box_a{
+	padding:0;
+	text-align:center;
+	}	
+	
+
+table tr:first-child td{
+	font-size:12px;
+	color:#a39849;
+	}
+
+	
+.product_description{
+
+	line-height:20px;
+	}
+.product_description p{
+	padding:0;
+	}	
+.product_description span{
+	padding-right:6px;
+	}	
+	
+
+	
+.total_price,
+.i_num{
+	font-size:21px;
+	line-height:30px;
+	color:#2c0006;	
+	}	
+.i_num{
+	display:block;
+	clear:both;
+	}
+.payment_total .price{
+    border-bottom: 1px #CCCCCC dashed;
+	}		
+.total_price{
+	border-top:1px #CCCCCC solid;
+	}
+.total_price span{
+	font-size:14px;
+	}		
+.payment_total p{
+	text-align:right;
+	padding: 9px 12px;
+	}
+.payment_total span{
+	position:relative;
+	left:0;
+	}
+		
+	
+table .sm_radio_box,
+table .sm_check_box{
+	padding:0;
+	text-align:center;
+	border:none;
+}
+table .sm_radio_box .btn_img,
+table .sm_check_box .btn_img{
+	display:inline-block;
+	position:static;
+	}
+
+	
+	
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+
+	
+
+	
+var order_detail_list = '<tr><td class="t_box_a"><img src="' + $(this).find("img_url").text() + '"></td><td class="product_description">' + $(this).find("area").text() + '<br>' + $(this).find("name").text() + '<br><span>Kind</span>' + $(this).find("kind").text() + '<br><span>Item Number</span>' + $(this).find("item_num").text() +'</td><td>' + $(this).find("price").text() + '</td><td>1</td><td>' + $(this).find("price").text() + '</td><td class="t_box_a"><a class="sm_check_box" href="#"><span class="btn_img">&nbsp;</span></a></td> </tr>';       
+	
+	
+	
+			
+	
+
+});
+</script>
+</head>
+<body>
+
+
+<div class="sm_item_menu">
+<p>My Account</p>
+<a href="#">Settings</a>
+<div>
+- Account Basics<br>
+- Profile<br>
+- Password<br>
+- Email Notifications
+</div>
+<a href="#">Shipping Addresses</a>
+<div>
+- Add New Shipping Address<br>
+- Shipping Address List<br>
+- Shipping Address Delete / Edit
+</div>
+
+<a href="#">Payment Methods</a>
+<div>
+- Add New Payment Methods<br>
+- Payment Methods List<br>
+- Payment Methods Delete / Edit<br>
+- Credit Card<br>
+- Billing Address
+</div>
+<a href="#">Order History</a>
+<a href="#">Open Items</a>
+<a href="#">Shipments</a>
+<a href="#">Returns</a>
+<a href="#">Site Credits</a>
+<a href="#">Vino Rewards</a>
+</div>
+
+<div class="mw_1200">
+
+<div class="wm_20">&nbsp;
+</div><div class="wm_80">
+
+
+<div class="main_title">Order History</div>
+<p>Here are the orders you have placed since your account was created.<br>
+To return, please click on the order number that contains the item(s) you wish to return.<br>
+Please review our Returns & Exchanges for more information.</p>
+<table class="" width="0" border="0" cellspacing="0" cellpadding="0">
+<tr>    
+<td>Date</td>
+<td class="t_box_a">Order Number</td>
+<td>Total</td>
+<td>Payment</td>
+<td>Status</td>
+
+</tr><tr>
+       
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>$9,999.00</td>
+<td>Credit Card</td>
+<td>Shipped</td>       
+
+</tr><tr>   
+                     
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>$9,999.00</td>
+<td>Credit Card</td>
+<td>Shipped</td>    
+
+</tr><tr>
+            
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>$9,999.00</td>
+<td>Credit Card</td>
+<td>Shipped</td>    
+
+</tr><tr>
+            
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>$9,999.00</td>
+<td>Credit Card</td>
+<td>Shipped</td>    
+
+</tr>
+</table>
+
+
+
+
+
+
+<div class="main_title">Order Detail</div>
+
+
+<p>Here are the details of your order.</p>
+<table class="t_detail" width="0" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="t_img">Image</td>
+<td>Description</td>
+<td>Price</td>
+<td class="t_quantity">Quantity</td>
+<td>Total</td>
+<td class="t_return">Return</td>
+</tr>
+
+<tr>
+
+<td><img src="../img_vino/p_sm_caldese_1.jpg"></td>
+<td class="product_description">
+<p class="brands">San Marino</p>
+<p class="product_name">Tessano</p>
+<p><span>Kind</span>Red Wine</p>
+<p><span>Item Number</span>r000420180305</p>
+</td>
+
+<td>$100.00</td>
+<td class="t_box_a">4</td>
+<td>$400.00</td>
+<td class="t_box_a">
+<a class="sm_check_box" href="#"><span class="btn_img">&nbsp;</span></a>
+</td>     
+</tr>
+</table>
+
+
+<div class="wm_33">
+<h5>Order Info</h5>
+<p><span>Order Number</span>
+<span class="i_num">PO1508AEJA</span></p>
+<p>
+<span>Date of Order</span>16/03/2018<br>
+<span>Order Status</span>Payment Error</p>
+<h5>Shipping Options</h5>
+<p>SPS Ground</p>
+
+
+
+</div><div class="wm_33">
+<h5>Shipping Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+
+<h5>Billing Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+
+
+</div><div class="wm_33 payment_total">
+
+
+<h5>Payment Total</h5>
+<p class="price"><span>Price</span>$9,999.00</p>
+<p><span>Subtotal</span>$9,999.00<br>
+<span>Sales Tax</span>$9,999.00<br>
+<span>Shipping</span>$0.00</p>
+<p class="total_price"><span>Total</span>$9,999.00</p>
+<div class="sm_note_02">
+No refunds or exchanges for purchases made with event and for all sale items.
+</div>
+</div>
+
+
+
+
+<div class="main_title">Return</div>
+<p>All of your return within the past 6 months are listed here.<br>
+If you have any questions, please contact us.</p>
+
+ <table class="" width="0" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+
+<td>Date</td>
+<td class="t_box_a">Return Number</td>
+<td class="t_box_a">Order Number</td>
+<td>Status</td>
+
+</tr><tr>
+       
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">RE1508AAAB</a></td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>Payment Refund</td>       
+         
+            
+            </tr><tr>   
+                     
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">RE1508AAAB</a></td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>Payment Refund</td> 
+            
+            </tr><tr>
+            
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">RE1508AAAB</a></td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>Payment Refund</td> 
+            </tr><tr>
+            
+<td>03/16/2018</td>
+<td class="t_box_a"><a href="#">RE1508AAAB</a></td>
+<td class="t_box_a"><a href="#">PO1508AEJA</a></td>
+<td>Payment Refund</td> 
+        </tr>
+    </table>
+
+
+
+<div class="main_title">Return Detail</div>
+
+
+<table class="t_detail" width="0" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="t_img">Image</td>
+<td>Description</td>
+<td>Price</td>
+<td class="t_quantity">Quantity</td>
+<td>Total</td>
+
+</tr>
+
+<tr>
+
+<td><img src="../img_vino/p_sm_caldese_1.jpg"></td>
+<td class="product_description">
+<p class="brands">San Marino</p>
+<p class="product_name">Tessano</p>
+<p><span>Kind</span>Red Wine</p>
+<p><span>Item Number</span>r000420180305</p>
+
+<p><span>Promo</span> 50% off (code : YANG0905)</p>
+<p><span>Comment</span>Ordered 2 pieces by mistake</p>
+<p><span>Reason</span>Changed Mind</p>
+
+
+
+
+
+</td>
+
+<td>$100.00</td>
+<td class="t_box_a">4</td>
+<td>$400.00</td>
+   
+</tr>
+</table>
+
+
+<div class="wm_33">
+<h5>Order Info</h5>
+
+<p>
+<span>Return Number</span>
+<span class="i_num">RE1508AAAB</span>
+<span>Date of Return</span>16/03/2018
+</p>
+<p>
+<span>Order Number</span>PO1508AEJA<br>
+<span>Date of Order</span>16/03/2018<br>
+<span>Order Status</span>Canceled - Mountain Team
+</p>
+
+
+<h5>Shipping Options</h5>
+<p>SPS Ground</p>
+
+
+</div><div class="wm_33">
+<h5>Shipping Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+<h5>Shipping Address</h5>
+<p>Mountain Chiou<br>
+1600 pennsylvania ave nw washington dc 20500 United States</p>
+
+
+</div><div class="wm_33 payment_total">
+
+
+<h5>Refund Amount</h5>
+<p class="price"><span>Price</span>$9,999.00</p>
+
+<p>
+<span>Amount Refund</span>$9,999.00<br>
+<span>Sales Tax Refundx</span>$9,999.00
+</p>
+
+<p class="total_price"><span>Total Refund</span>$9,999.00</p>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="main_title">Settings</div>
+
+
+<form class="mw_1200">
+<div class="subtitle">Account Basics</div>
+<div class="user_picture">
+    <div class="box_user_picture"><img src="../img_vino/user_picture_1.jpg"></div>
+	<button class="btn_wine_red">Change Picture</button>
+</div>
+
+<div class="wm_100">
+<label for="">Email Address</label>
+<input type="text" class="" id="" placeholder="" value="mountain@mountain.com"> 
+</div>
+<div class="wm_100">
+<label for="">Nickname</label>
+<input id="" class="" name="nname" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Save</button>
+
+</form>
+
+
+
+<form class="mw_1200">
+<div class="subtitle">Profile</div>
+
+<!--
+<div class="wm_50">
+<div class="label_box">Employee Number</div>
+<div class="input_box">C8888820180314</div>
+</div>
+
+<div class="wm_50">
+<label for="">ID Number</label>
+<input id="" class="" name="idnum" type="text" placeholder=""> 
+</div>
+
+<div class="wm_100 label_box">Title</div>
+<div class="wm_100 radio_list">
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Mr.</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Mrs.</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Ms.</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Miss.</a>
+</div>
+-->
+
+<div class="wm_33">
+<div class="label_box">Title</div>
+	<div class="sm_ddm">
+	<a class="sm_ddm_btn" href="#"><span class="btn_info">Title *</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="sm_ddm_menu">
+		<a href="#">Ms</a>
+		<a href="#">Mrs</a>
+		<a href="#">Miss</a>
+		<a href="#">Mr</a>
+	</div>
+	</div>  
+</div>  
+<div class="wm_33">
+<label for="">First Name</label>
+<input id="" class="" name="fname" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Last Name</label>
+<input id="" class="" name="lname" type="text" placeholder=""> 
+</div>
+
+<!--
+<div class="wm_100 label_box">Gender</div>
+<div class="wm_100 radio_list">
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Male</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Female</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Other</a>
+</div>
+-->
+<div class="wm_50">
+<label for="">Phone Number (optional)</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+<div class="wm_50">
+<label for="">Country</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+
+<div class="w_100">
+<label class="wm_100" for="">Date of Birth (optional)</label>
+<input id="" class="wm_33" name="birthm" type="text" placeholder="Month"> 
+<input id="" class="wm_33" name="birthd" type="text" placeholder="Day">
+<input id="" class="wm_33" name="birthy" type="text" placeholder="Year">
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Save</button>
+
+</form>
+
+
+
+
+
+
+
+<form class="mw_1200">
+<div class="subtitle">Password</div>
+
+<div class="wm_100">
+<label for="">Enter Current Password</label>
+<input id="" class="" name="pwd_now" type="text" placeholder=""> 
+</div>
+<div class="wm_100">
+<label for="">Enter New Password (at least 6 digits)</label>
+<input id="" class="" name="pwd" type="text" placeholder="">
+</div>
+<div class="wm_100">
+<label for="">Re-enter Password</label>
+<input id="" class="" name="pwd_cfm" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">change</button>
+</form>
+
+
+
+
+
+<form class="mw_1200">
+
+<div class="subtitle">Email Notifications</div>
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>
+Sign up for our newsletter
+</a>
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>
+Receive special offers from our partners
+</a>
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>
+Receive monthly ifchic Coin Summary
+</a>
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>
+Receive monthly #ifchic24 Event reminder
+</a>
+
+
+
+<div class="subtitle">Frequency
+<p>Daily Newsletter (Receive the latest in fashion and shop straight from the world's best runways, every day)</p>
+</div>
+
+<div class="wm_100 radio_list">
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Every Day</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Twice per Week</a>
+<a class="sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Once per Week</a>
+</div>
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Special Announcements (Sale alerts, Moda Friends Events, and exclusive news)</a>
+
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Shopping Bag Reminders</a>
+
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Trunkshow iOS Notification (messages about your preferred designers from the MOUNTAIN app)</a>
+
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Save</button>
+</form>
+
+
+<div class="main_title">shipping address</div>
+
+<form class="mw_1200">
+
+
+<div class="subtitle">Where would you like to ship?</div>
+
+<div class="w_100">
+<label class="wm_100" for="">Recipient</label>
+<input id="" class="wm_50" name="fname" type="text" placeholder="First Name"> 
+<input id="" class="wm_50" name="lname" type="text" placeholder="Last Name"> 
+</div>
+
+<!--
+<div class="wm_100">
+<label for="">Address Line 1</label>
+<input id="" class="" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">Address Line 2</label>
+<input id="" class="" type="text" placeholder=""> 
+</div>
+-->
+
+<div class="wm_100">
+<label for="">Address</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
+
+<div class="wm_50">
+<label for="">Country</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">City</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">State/Region</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Zip Code</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Phone Number</label>
+<input id="" class="" name="pnum" type="text" placeholder=""> 
+</div>
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">add</button>
+</form>
+    
+
+
+<div class="main_title">Payment Methods</div>
+
+<form class="mw_1200">
+<div class="subtitle">Credit Card</div>
+<div class="wm_50">
+<label for="">Card Holder's Name</label>
+<input id="" class="" name="holder_name" type="text" placeholder=""> 
+</div>
+
+<div class="wm_50">
+<label for="">Card Number</label>
+<input id="" class="" name="cname" type="text" placeholder=""> 
+</div>
+
+
+<div class="wm_33">
+<label for="">Exp Month</label>
+<input id="" class="" name="expm" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Exp Year</label>
+<input id="" class="" name="expy" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="">Security Code</label>
+<input id="" class="" name="securityc" type="text" placeholder=""> 
+</div>
+
+
+
+
+
+<div class="subtitle">Billing Address</div>
+
+<a class="wm_100 sm_check_box" href="#"><span class="btn_img">&nbsp;</span>Use an existing address</a>
+
+
+<div class="wm_100">
+<label for="">Address</label>
+<textarea class="" rows="2" name="address_post" placeholder=""></textarea>
+</div>
+
+
+
+<div class="wm_100">
+<label for="">Country</label>
+<input id="" class="" name="country" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="city">City</label>
+<input id="" class="" name="city" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="state">State/Region</label>
+<input id="" class="" name="state_region" type="text" placeholder=""> 
+</div>
+
+<div class="wm_33">
+<label for="zip_code">Zip Code</label>
+<input id="" class="" name="zipc" type="text" placeholder=""> 
+</div>
+
+<button class="wm_50 btn_white">back</button><button class="wm_50 btn_wine_red">Add</button>
+</form>
+</div>
+
+</div>
+
+</body>
+</html>
