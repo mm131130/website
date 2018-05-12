@@ -421,6 +421,7 @@ footer.mm_v2018 .img_w{
 	display:inline-block;
 	width:108px;
 	height:12px;
+	margin: 6px 0;
 	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
 	background-position:center ;
 	background-size:108px 12px;
