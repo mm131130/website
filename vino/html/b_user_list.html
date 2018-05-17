@@ -1,0 +1,731 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>MOUNTAIN - Vino</title>
+
+<meta name="description" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_mm/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css/all.css"/>
+<link media="all" rel="stylesheet" href="../css/fonts.css"/>
+
+<link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/size.css"/>
+
+<style>
+
+
+/*
+customers_account_list
+c_info
+c_pice
+c_citle
+c_name
+*/
+
+.c_info{
+	display:inline-block;
+	position:relative;
+	padding:9px 9px 9px 72px;
+	width:30.333333%;
+	min-height:72px;
+	height:100%;
+	border:1px #ccc solid;
+	margin:9px 1.5%;
+	
+	border-radius:4px;
+	
+	}
+	
+	
+	
+
+
+
+.c_title{
+	font-size:12px;	
+	line-height:18px;
+	font-family:roboto_Regular;
+	}
+.c_name{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+	font-family:roboto_light;
+	}
+
+
+
+
+
+
+
+
+/**/
+
+.table_box {
+	width: 100%;
+	
+
+	}
+.table_box > *:first-child *{
+		font-size:12px;
+		color:#666;
+		color:#a39849;
+		text-transform:uppercase;
+
+	}
+.table_box > *:first-child{
+	padding:0;
+		border-top:1px #e6e6e6 solid;
+	}	
+	
+.info_tr{
+	position:relative;
+	display:table;
+	width:100%;
+	border-bottom:1px #e6e6e6 solid;
+	padding:24px 0;
+	
+	}
+
+
+
+
+.info_tr > *{
+	display:table-cell;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	color:#5d0b24;
+
+	color:#484848;
+	text-align:left;
+	padding:16px 9px;
+	}
+
+.info_tr > *{
+	width:16.666666%;
+	width:15%;	
+	}
+	
+.btn_box{
+	
+	width:50px;
+	padding: 0;
+	text-align: center; 
+	}
+	
+.p_img,			
+.c_img{
+	padding:0 !important;
+	position:relative;
+	width:82px;
+	text-align:center;
+	margin: 30px 0;
+	}
+
+.c_img img{
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	
+	
+	top:50%;
+	left:50%;
+	
+	
+	-webkit-transform:translate(-50%, -50%);
+	
+	
+	    -ms-transform:translate(-50%, -50%);
+	
+	
+	        transform:translate(-50%, -50%);
+	
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	border:1px #2c0006 solid;
+
+	
+	}
+
+.p_img img{
+
+	width:82px;
+	height:82px;
+
+	
+	}
+	
+	
+	
+	
+	
+.p_description{
+width:-moz-calc(70% - 132px);	
+	width:-webkit-calc(70% - 132px);	
+	width:calc(70% - 132px);		
+	
+	}
+.email{
+
+	width:-moz-calc(40% - 132px);	
+	width:-webkit-calc(40% - 132px);	
+	width:calc(40% - 132px);	
+	}
+
+
+.sort{
+	text-align: right;
+
+	padding:9px 0;
+}
+
+
+.b_add{
+	display:inline-block;	
+	width:50px;
+	line-height:50px;
+	text-align: center;
+	background-color:#981643;
+	border-radius: 50%;
+
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:0;		
+	background-position-x:-600px;
+	}
+
+.b_add:hover{
+
+	background-color:#5d0b24;
+
+	}
+
+
+.b_sort_table{
+	display:inline-block;
+		width:50px;
+	line-height:50px;
+	text-align: center;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-250px;		
+	background-position-x:-50px;	
+	}
+.b_sort_block{
+		display:inline-block;
+			width:50px;
+	line-height:50px;
+	text-align: center;	
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-250px;		
+	background-position-x:0;	
+	}
+.b_sort_table:hover,
+.b_sort_block:hover{
+
+	background-position-y:-300px;		
+
+	}
+	
+.b_check_box{
+	
+
+	}
+	
+.b_remove{
+	display:inline-block;	
+	width:50px;
+	height:50px;
+	
+	color:#2c0006;
+	
+	/*
+	background-color:#fbfbf2;	
+	border-radius:50%;
+*/
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-50px;		
+	background-position-x:-700px;	
+	}
+.b_remove:hover{
+	background-position-y:-100px;	
+	}
+.b_edit{
+color:#981643;
+	width: 50px !important;
+	line-height: 50px !important;
+}	
+
+
+.b_edit:hover{
+	color:#5d0b24;
+
+
+}	
+
+
+
+
+.b_check_box{
+	display:inline-block;		
+	width:50px;
+	height:50px;
+	
+	color:#2c0006;	/*
+	background-color:#fbfbf2;	
+	border-radius:50%;
+*/
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-50px;		
+	background-position-x:-150px;	
+	}
+.b_check_box:hover{
+	background-position-y:-100px;	
+	}
+
+
+.pagination{
+	display: inline-block;
+	overflow:hidden;
+	vertical-align: top;
+	text-align: right;
+
+}
+.mw_1200.pagination{
+	display:block;
+
+
+}
+.pagination > *{
+	display: inline-block;
+
+	font-size: 14px;
+	line-height:50px;
+	text-align: center;
+	text-align: ;
+	width: 36px;
+	padding: 0;
+
+}	
+.pagination a{
+	color:#981643;
+	
+
+}	
+
+.pagination a:hover{
+	color:#5d0b24;
+
+
+}	
+.pagination_info{
+	display:inline-block;
+	float: left;
+	font-size: 12px;
+	line-height:18px;
+	color: #999;
+	letter-spacing: 0.09em;
+	text-align: right;
+
+
+
+
+		text-transform:uppercase;
+
+		padding: 16px 9px !important;
+		width:auto;
+}
+.pagination_info span{
+	font-size:14px;
+	color: #5d0b24;
+	vertical-align:  baseline;
+}
+
+
+/*
+.pagination a:not([class="pagination_previous"]):not([class="pagination_next"]):not([class="current"]){
+
+
+.pagination a:not([class="pagination_previous"],[class="pagination_next"],[class="current"]){
+
+
+
+	text-decoration: underline;
+
+}	
+
+
+*/
+
+
+
+
+.un_click,
+.current{
+	cursor:default;
+	color:#484848;
+	color:#666 !important;
+}
+.current:hover{
+	color:#666 !important;
+}
+	
+.payment_total{
+	text-align:right;
+	}
+.payment_total p{
+	
+	padding:0;
+	}
+.payment_total span{
+	color: #666;
+	color:#484848;	
+	padding-left: 9px;
+	width:-moz-calc(15% + 50px);	
+	width:-webkit-calc(15% + 50px);	
+	width:calc(15% + 50px);		
+	
+	
+	}
+.payment_total > *:first-child,
+.payment_total > *:last-child{
+border-top:1px #5d0b24 solid !important;
+	}	
+.i_total_price span{
+	font-size:18px;
+	color:#981643;
+
+	}	
+	
+
+
+
+
+
+
+
+
+
+.f_sort_block{
+
+
+
+
+}
+
+
+.f_sort_block.table_box > *:first-child{
+	display:none;
+	}
+.f_sort_block .info_tr{
+	position:relative;
+	display: inline-block;
+	width: auto;
+	border:1px #e6e6e6 solid;	
+	text-align: center;	
+	width:31.333333%;
+	margin:15px 1%;	
+	}
+.f_sort_block .info_tr > *{
+	display: block;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align: center;
+	padding:0;
+	width:auto;
+	}
+.f_sort_block .c_img img {
+	display:inline-block;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    border: 1px #2c0006 solid;
+	}
+.f_sort_block .f_name{
+	padding-right:1px;
+	}
+.f_sort_block .l_name{
+	padding-left:1px;
+	}
+.f_sort_block .u_name,
+.f_sort_block .f_name,
+.f_sort_block .l_name,
+.f_sort_block .product_name,
+.f_sort_block .p_qty,
+.f_sort_block .p_price{
+	font-size:18px;
+	padding: 9px 0 !important;
+	} 
+.f_sort_block .p_qty{
+	padding-top: 18px !important;
+	} 
+.f_sort_block .f_name,
+.f_sort_block .l_name{
+	display:inline-block;
+	} 
+.f_sort_block .btn_box{
+	position:absolute;
+	top:0;	
+	right:0;
+	}
+.f_sort_block .b_edit{
+	display:inline-block !important;	
+}	 
+
+
+
+
+
+@media screen and (max-width:1023px) {
+
+
+.table_box > *:first-child{
+	display:none;
+	}
+.info_tr{
+	position:relative;
+	display: inline-block;
+	width: auto;
+	border:1px #e6e6e6 solid;	
+	text-align: center;	
+	width:31.333333%;
+	margin:15px 1%;	
+	}
+.info_tr > *{
+	display: block;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align: center;
+	padding:0;
+	width:auto;
+	}
+.c_img img {
+	display:inline-block;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    border: 1px #2c0006 solid;
+	}
+.f_name{
+	padding-right:1px;
+	}
+.l_name{
+	padding-left:1px;
+	}
+.u_name,
+.f_name,
+.l_name,
+.product_name,
+.p_qty,
+.p_price{
+	font-size:18px;
+	padding: 9px 0 !important;
+	} 
+.p_qty{
+	padding-top: 18px !important;
+	} 
+.f_name,
+.l_name{
+	display:inline-block;
+	} 
+.btn_box{
+	position:absolute;
+	top:0;	
+	right:0;
+	}
+.b_edit{
+	display:inline-block !important;	
+}	 
+
+}	
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/sm_v2018.js"></script>
+<script>
+$(function(){
+
+var c_list = '';
+for ( var i=0; i < 51; i++ ){
+c_list += '<div class="c_info"><div class="c_pice"><img src="../img_test/201308-' + (i+1) + '.jpg"></div><div class="c_title">Mr.</div><div class="c_name">Mountain Chiou</div></div>';
+}
+$('.customers_account_list').append( c_list );
+	
+
+$('.b_sort_block').on('click', function(event) {
+	event.preventDefault();
+	$('.table_box').addClass('f_sort_block');
+});
+
+
+
+$('.b_sort_table').on('click', function(event) {
+	event.preventDefault();
+	$('.f_sort_block').removeClass('f_sort_block');
+});
+
+
+
+
+
+
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+<header>
+	
+<div class="mw_1200 sm_nav">
+<a class="vino_logo" href="b_user_list.html"><img src="../img_vino/ms_vino_logo_01_b.svg"><span>Sammarinese</span></a>
+
+<div class="sm_menu">
+<a class="b_three_line" href="#">&nbsp;</a>
+<a href="b_user_list.html">User</a>
+<a href="b_products_list.html">Prodsucts</a>
+</div>	
+<a class="b_login_register" href="b_login_register.html">Sign Out</a>
+</div>
+</header>
+
+
+
+	
+</div>
+<div class="main_title">User</div>
+
+<div class="mw_1200 sort">
+
+<div class="pagination">
+	
+	<a class="pagination_previous un_click" href="#"><</a>
+	<a class="current" href="#">1</a>
+	<a href="#">2</a>
+	<p>...</p>
+	<a href="#">27</a>
+	<a class="pagination_next" href="#">></a>
+</div>
+
+	<a class="b_add" href="b_add_user_account.html">&nbsp;</a>
+	<a class="b_sort_block" href="#">&nbsp;</a>
+	<a class="b_sort_table" href="#">&nbsp;</a>
+</div>
+
+
+
+
+<div class="mw_1200 table_box">
+
+<div class="info_tr item_name">
+	<div class="c_img">Image</div>
+    <div class="u_name">User Name</div>
+    <div class="email">Email</div>
+    <div class="phone">Phone</div>
+    <div class="btn_box">edit</div>
+	<div class="btn_box">del</div>  
+</div>
+
+<div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+    <div class="c_img"><img src="../img_vino/user_photo.jpg"></div>
+    <div class="u_name">Mountain Chiou</div>
+    <div class="email">mountain@mountain.com</div>
+    <div class="phone">8888 888 888</div>
+    <a class="b_edit" href="b_edit_user_account.html">EDIT</a>
+	<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div>
+
+
+</div>
+
+
+<div class="mw_1200 pagination">
+	<div class="pagination_info">Showing <span>1 - 60</span> of <span>3225</span> items</div>	
+	<a class="pagination_previous un_click" href="#"><</a>
+	<a class="current" href="#">1</a>
+	<a href="#">2</a>
+	<p>...</p>
+	<a href="#">27</a>
+	<a class="pagination_next" href="#">></a>
+</div>
+
+
+</body>
+</html>

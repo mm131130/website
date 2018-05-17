@@ -185,7 +185,8 @@ $('.vino_info').each(function(){
 	var products_info_array = new Array;
 	var editors_list = '';
 	var editors_choice_array = new Array;
-
+	var backend_ps = [];
+	var backend_ps_list = '';
 	//var product_box = [];
 	
 	var p_info = '<div class="vino_info"><a class="my_wish_icon" href="#">&nbsp;</a><div class="vino_kind">' 
@@ -212,6 +213,7 @@ $('.vino_info').each(function(){
 		
 	products_info_array.push( p_info );
 	editors_choice_array.push( p_info );
+	backend_ps.push( products );
 	
 	for ( var ai=0; ai < products_info_array.length; ai++ ){
 		info_list += products_info_array[ai];
@@ -222,9 +224,15 @@ $('.vino_info').each(function(){
 		editors_list += editors_choice_array[bi];
 	}
 
+	for ( var bi=0; bi < backend_ps.length; bi++ ){
+		backend_ps_list += backend_ps[bi];
+	}
+
+
 
 	$('.box_xml').append( info_list );
 	$('.editors_choice_xml').append( editors_list );
+	$('.backend_ps_xml').append( backend_ps_list );
 	
 	//index += 1;
 	});

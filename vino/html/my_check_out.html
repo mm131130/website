@@ -17,6 +17,8 @@
 <link media="all" rel="stylesheet" href="../css/size.css"/>
 
 <style>
+/*
+
 .payment_total p{
 	padding-top:3px;
 	padding-bottom:3px;
@@ -51,7 +53,7 @@ color:#2c0006;
 .payment_total > p:nth-last-child(2){
 	padding-bottom:12px;
 	}
-/*
+
 
 p_table
 p_img
@@ -245,51 +247,111 @@ $(function(){
 		//<div class="how_many"></div>').prepend('<a class="plus" href="#">&nbsp;</a>').append('<a class="less" href="#">&nbsp;</a>
 		ts.find('.p_qty').html('<a class="plus" href="#">&nbsp;</a><div class="how_many">0</div><a class="less" href="#">&nbsp;</a>');  
    
+
+
+
+
+
+
 	 });
 	
 	
-	
-	
+
 	$('.p_qty').each(function () {
-	var num = 0;
-	var ts = $(this);
-	function change_num(num_info){
-	num += num_info;
-	ts.find('.how_many').text(num);
+
+		var ts = $(this);
+		var how_many_num = 0;
+		var max_num = 10;
+
+	
+
+
+
+	var product_price = ts.next('.p_price').text();
+	
+	var subtotal = [];
+	var info_list = '';
+	
+
+
+		function change_num(chang_num){
+			how_many_num += chang_num;
+			ts.find('.how_many').html(how_many_num );
+
+	var num_A = product_price.match(/\d+(.\d+)?/g); 
+	var num_B = num_A * how_many_num ;
+	ts.next('.p_price').text('$' + num_B +'.00');
+
+
+
+
+
+                
+
+
+//var p_price = $('.products_list_box .p_price').html(); 
+
+
+//
+/*
+var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
+subtotal.push( info_price );
+for ( var ai=0; ai < subtotal.length; ai++ ){
+		info_list = subtotal[ ai ];
 	}
-
-
-
-	$(".less").on( 'click', function(){
-	  	if(num === 1){
-	  		change_num(0); 
-	  	}else{
-	  		change_num(-1); 
-		}
-		
-	return false;	  
-	});
-
-
-
-	$(".plus").on('click', function(){
-	  	if(num === 15){
-	  		change_num(0); 
-	  	}else{
-	  		change_num(1); 
-	  	}
-			
-	return false;	 	  
-	});
-	
-	change_num(1);
-	});
-	
-	/*
-	var a = $('.p_price').html();
-	var b =
-	var c =
 */
+var totalRow =0;
+
+var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
+
+//totalRow += parseFloat(info_price);   
+
+
+//subtotal += parseFloat(subtotal[i]);   
+
+      //info_list = info_list + parseInt($(this).text());  
+
+
+
+     // info_price = info_price + parseInt($(this).text());  
+
+
+
+//$('.item_subtotal span').html(totalRow);
+
+		}
+
+
+
+
+
+
+
+		ts.find('.plus').on('click',function(){
+
+			if(how_many_num === max_num){	
+				change_num(0);
+			}else{
+				change_num(+1);
+			}
+
+		});
+		ts.find('.less').on('click',function(){
+
+			if(how_many_num === 1){
+				change_num(0);
+			}else{
+				change_num(-1);
+			}
+
+		});
+
+		 change_num(1);
+	});
+
+
+
+
 
 
 });
@@ -357,14 +419,17 @@ $(function(){
 
 </div><!-- products_list_box -->
 
-<div class="payment_total">
+<div class="payment_total padding_left_72px">
 
 
-	<p>Shopping Bag <span>$1200.00</span></p>
-	<p>Promo Code <span>-$160.00</span></p>
-	<p>Sales Tax <span>$0.00</span></p>
-	<p>Shipping <span>$40.00</span></p>
-	<p>Total <span>$1,060.00</span></p>
+
+
+
+<p class="item_subtotal">Subtotal<span>$1,200.00</span></p>
+<p>Promo Code <span>-$160.00</span></p>
+<p>Sales Tax<span>$0.00</span></p>
+<p>Shipping<span>$40.00</span></p>
+<p class="item_total_price">Total<span>$1,060.00</span></p>
     
     
 </div><div class="wm_33">
