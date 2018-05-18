@@ -14,189 +14,18 @@
 <link media="all" rel="stylesheet" href="../css/fonts.css"/>
 
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
+<link media="all" rel="stylesheet" href="../css/sm_v02.css"/>
+
 <link media="all" rel="stylesheet" href="../css/size.css"/>
 
 <style>
-/*
-
-.payment_total p{
-	padding-top:3px;
-	padding-bottom:3px;
-	padding-left:72px;
-	
-color:#d5b84f;	
-	}
-.payment_total span{
-	float:right;
-color:#2c0006;
-	text-align:left;
-	padding:0;
-	padding-left:12px;
-	width:120px;
-	}
-	
-.payment_total p:first-child{
-	padding-top:12px;
-	padding-bottom:12px;
-	border-bottom: 1px #CCCCCC dashed;		
-	}
-	
-.payment_total p:last-child{
-	padding-top:12px;
-	padding-bottom:12px;
-	border-top:1px #CCCCCC solid;	
-	}		
-	
-.payment_total > p:nth-child(2){
-	padding-top:12px;
-	}	
-.payment_total > p:nth-last-child(2){
-	padding-bottom:12px;
-	}
 
 
-p_table
-p_img
-
-p_description
-p_price
-p_qty
-p_total_price
-p_remove
-
-*/
-.products_list_box{
-	border-top:1px #e6e6e6 solid;	
-	}
-.item_name > *{
-	font-size:12px !important;
-	color:#a39849;
-	}
-
-.p_table *:nth-child(2){
-	
-	width:120px;
-	}	 	
 
 
-.p_table{
-	position:relative;
-	display:table;
-	width:100%;
-	border-bottom:1px #e6e6e6 solid;	
-		/*border-top:none;	*/
-	}
-.p_table > *{
-	display:table-cell;
-	vertical-align: middle;
-	font-size:14px;
-	line-height:18px;
-	text-align:center;
-	
-	/* border-left:1px #e6e6e6 solid; */
-	
-	}
-.p_table > *:first-child{
-	border:none;
-	}
-.p_img{
-	width:72px;
-	}
-.p_img img{
-	min-width:72px;
-	width:100%;
-	}
-	
-	
-.p_description{
-	position: relative;
-	padding:12px 12px 12px 72px;
-	text-align:left;
-	width:-moz-calc(100% - 240px);	
-	width:-webkit-calc(100% - 240px);	
-	width:calc(100% - 240px);	
-	}
-.p_description img{
-	position:absolute;
-	top:50%;	
-	left:0;
-	transform:translateY(-50%);
-	width:72px;
-	}
-.p_description p{
-	padding:0;
-	}	
-	
-.p_price{
-	text-align:left;
-	
-	padding-left:12px;
-	width:120px;
-	}
-.p_qty{
-	position:relative;
-	width:120px;
-	}
-.p_qty:hover *{
-	display:block !important;
-	}	
-	
 
-.p_remove{
-	position:absolute;
-	top:50%;
-	right:12px;
-	transform:translate(0 , -50%);
 
-	}	
-	
-	
-	
-/*
-+ - 
-plus
-less
-*/
-.p_qty .less,
-.p_qty .plus{
-	display:none;
-	display:block;
-	position:absolute;
-	width:30px;
-	height:30px;
-	/*border:1px #CCCCCC solid;*/
-	border-radius:50%;
 
-	background-image:url(../img_vino/sm_icon_v01.svg);
-	background-position-y:-60px;
-	
-	color:#2c0006;
-	background-color:#981643;	
-	background-color:#fbfbf2;		
-	
-	top:50%;
-	}	
-.p_qty .less{
-	left:0;
-
-	background-position-x:-660px;	
-	transform:translate(0 , -50%);
-	}
-.p_qty .plus{
-
-	right:0;
-
-	background-position-x:-610px;	
-	transform:translate(0 , -50%);
-	}		
-.p_qty .less:hover,
-.p_qty .plus:hover{
-
-	background-position-y:-110px;
-	}	
-	
-	
-	
 	
 	
 .p_total_price{
@@ -207,14 +36,9 @@ less
 	border-color:#981643;
 	}
 
-
-
-
-
 .info_card{
 	display:block;
 	margin-top:3px;
-	
 	padding:9px 13px;
 	border-radius:4px;
 	border:1px #CCCCCC solid;
@@ -224,15 +48,19 @@ less
 	font-family:roboto_Medium;
 	text-transform:uppercase;
 	color:#a39849;
-	}		
-	
+	}
 .info_card p{
-
 	padding:3px 0;
 	}	
 .info_card p:first-child{
 	font-size:12px
 	}
+
+
+
+
+
+
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/sm_v2018.js"></script>
@@ -240,118 +68,74 @@ less
 
 <script>
 $(function(){
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
-	$('.products_list_box').each(function() {
+	$('.table_box').each(function() {
 		var ts = $(this);
 		//<div class="how_many"></div>').prepend('<a class="plus" href="#">&nbsp;</a>').append('<a class="less" href="#">&nbsp;</a>
 		ts.find('.p_qty').html('<a class="plus" href="#">&nbsp;</a><div class="how_many">0</div><a class="less" href="#">&nbsp;</a>');  
    
-
-
-
-
-
-
 	 });
 	
 	
-
+	
+	
 	$('.p_qty').each(function () {
 
-		var ts = $(this);
-		var how_many_num = 0;
-		var max_num = 10;
+	var num = 0;
+	var ts = $(this);
 
+
+
+	var price = ts.next('.p_price').text();
 	
+	function change_num(num_info){
+		num += num_info;
+		ts.find('.how_many').text(num);
 
+		var price_num = price.match(/\d+(.\d+)?/g); 
+		var product_price = price_num * num ;
+		ts.next('.p_price').text('$' + product_price );
 
-
-	var product_price = ts.next('.p_price').text();
-	
-	var subtotal = [];
-	var info_list = '';
-	
-
-
-		function change_num(chang_num){
-			how_many_num += chang_num;
-			ts.find('.how_many').html(how_many_num );
-
-	var num_A = product_price.match(/\d+(.\d+)?/g); 
-	var num_B = num_A * how_many_num ;
-	ts.next('.p_price').text('$' + num_B +'.00');
-
-
-
-
-
-                
-
-
-//var p_price = $('.products_list_box .p_price').html(); 
-
-
-//
-/*
-var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
-subtotal.push( info_price );
-for ( var ai=0; ai < subtotal.length; ai++ ){
-		info_list = subtotal[ ai ];
 	}
-*/
-var totalRow =0;
-
-var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
-
-//totalRow += parseFloat(info_price);   
-
-
-//subtotal += parseFloat(subtotal[i]);   
-
-      //info_list = info_list + parseInt($(this).text());  
 
 
 
-     // info_price = info_price + parseInt($(this).text());  
-
-
-
-//$('.item_subtotal span').html(totalRow);
-
+	ts.find(".less").on( 'click', function(){
+	  	if(num === 1){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(-1); 
 		}
-
-
-
-
-
-
-
-		ts.find('.plus').on('click',function(){
-
-			if(how_many_num === max_num){	
-				change_num(0);
-			}else{
-				change_num(+1);
-			}
-
-		});
-		ts.find('.less').on('click',function(){
-
-			if(how_many_num === 1){
-				change_num(0);
-			}else{
-				change_num(-1);
-			}
-
-		});
-
-		 change_num(1);
+	return false;	  
 	});
 
 
 
-
+	ts.find(".plus").on('click', function(){
+	  	if(num === 15){
+	  		change_num(0); 
+	  	}else{
+	  		change_num(1); 
+	  	}
+	return false;	 	  
+	});
+	
+	change_num(1);
+	});
+	
 
 
 });
@@ -362,27 +146,28 @@ var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
 
 
 
-<div class="mw_1200">
 
+<div class="mw_1200">
 
 <div class="main_title">Check Out</div>
 
-<div class="subtitle">Car</div>
 
-<div class="products_list_box">
-<div class="p_table item_name">
 
-    <div class="p_description">ITEM</div>
-    <div>QTY</div>
-    <div class="p_price">PRICE</div>
-    
+<div class="wm_100 table_box">
+
+
+<div class="info_tr">
+	<div class="c_img">Image</div>
+	<div class="p_description">Description</div>
+	<div class="item_qty">QTY</div>
+	<div class="p_price">PRICE</div>
+	<div class="btn_box">del</div>  
 </div>
-
-
-
-<div class="p_table">
-<div class="p_description">
+<div class="info_tr">
+<div class="p_img">
 	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
     <p class="brands">San Marino</p>
     <p class="product_name">Tessano</p>
     <p><span>Kind</span>Red Wine</p>
@@ -390,11 +175,13 @@ var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
 </div>
 <div class="p_qty">1</div>
 <div class="p_price">$100.00</div>
-<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
-</div>
-<div class="p_table">
-<div class="p_description">
+
+<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+<div class="p_img">
 	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
     <p class="brands">San Marino</p>
     <p class="product_name">Tessano</p>
     <p><span>Kind</span>Red Wine</p>
@@ -402,11 +189,13 @@ var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
 </div>
 <div class="p_qty">1</div>
 <div class="p_price">$100.00</div>
-<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
-</div>
-<div class="p_table">
-<div class="p_description">
+
+<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+<div class="p_img">
 	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
     <p class="brands">San Marino</p>
     <p class="product_name">Tessano</p>
     <p><span>Kind</span>Red Wine</p>
@@ -414,25 +203,39 @@ var info_price = $('.products_list_box .p_price').text().match(/\d+(.\d+)?/g);
 </div>
 <div class="p_qty">1</div>
 <div class="p_price">$100.00</div>
-<a class="p_remove" href="#"><span class="btn_img">&nbsp;</span></a>
+
+<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
+</div><div class="info_tr">
+<div class="p_img">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_qty">1</div>
+<div class="p_price">$100.00</div>
+
+<div class="btn_box"><a class="b_remove" href="#">&nbsp;</a></div>
 </div>
 
-</div><!-- products_list_box -->
+<div class="payment_total">
+	<p>Subtotal <span>$1200.00</span></p>
+	<p>Promo Code <span>-$160.00</span></p>
+	<p>Sales Tax <span>$0.00</span></p>
+	<p>Shipping <span>$40.00</span></p>
+	<p>Total <span>$1,060.00</span></p>
+</div>
 
-<div class="payment_total padding_left_72px">
+</div>
 
 
 
 
 
-<p class="item_subtotal">Subtotal<span>$1,200.00</span></p>
-<p>Promo Code <span>-$160.00</span></p>
-<p>Sales Tax<span>$0.00</span></p>
-<p>Shipping<span>$40.00</span></p>
-<p class="item_total_price">Total<span>$1,060.00</span></p>
-    
-    
-</div><div class="wm_33">
+<div class="wm_33">
 
 
 

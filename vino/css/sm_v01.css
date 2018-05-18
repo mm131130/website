@@ -1853,6 +1853,9 @@ border-color:#e4e0b9 transparent;
 	}
 
 	
+
+
+
 .edit_btn{
 	display:inline-block;
 	font-size:13px;
@@ -1872,6 +1875,10 @@ border-color:#e4e0b9 transparent;
 	color:#981643;
 	border-color:#981643;
 	}
+
+
+
+
 
 	
 	
@@ -1901,183 +1908,9 @@ border-color:#e4e0b9 transparent;
 
 
 
-.products_list_box{
-	border-top:1px #e6e6e6 solid;	
-	}
-.item_name > *{
-	font-size:12px !important;
-	color:#a39849 !important;
-	}
-.p_table > *:nth-child(2){
-	width:120px;
-	}
-.p_table{
-	position:relative;
-	display:table;
-	width:100%;
-	border-bottom:1px #e6e6e6 solid;	
-	}
-.p_table > *{
-	display:table-cell;
-	vertical-align: middle;
-	font-size:14px;
-	line-height:18px;
-	text-align:center;
-	}
-.p_table > *:first-child{
-	border:none;
-	}
-.p_img{
-	width:72px;
-	}
-.p_img img{
-	min-width:72px;
-	width:100%;
-	}
-.p_description{
-	position: relative;
-	padding:12px 12px 12px 84px;
-	text-align:left;
-	color:#981643;	
-	width:calc(100% - 240px);	
-	}
-.p_description p{	
-color:#981643;
-
-}
-.p_description .product_name{
-	color:#5d0b24;		
-	
-	}	
-
-	
-.p_description img{
-	position:absolute;
-	top:50%;	
-	left:0;
-	-webkit-transform:translateY(-50%);
-	    -ms-transform:translateY(-50%);
-	        transform:translateY(-50%);
-	width:72px;
-	}
-.p_description p{
-	padding:0;
-	}	
-	
-.p_price{
-	text-align:left;
-	
-	padding-left:12px;
-	width:120px;
-	}
-.p_qty{
-	position:relative;
-	width:120px;
-	}
-.p_qty:hover *{
-	display:block !important;
-	}
-	
-	
-	
-.p_table .p_remove{
-	position:absolute;
-	top:50%;
-	right:12px;
-	-webkit-transform:translate(0 , -50%);
-	    -ms-transform:translate(0 , -50%);
-	        transform:translate(0 , -50%);
-	}	
-	
-	
-
-	
-/*
-+ - 
-plus
-less
-*/
-.p_qty .less,
-.p_qty .plus{
-	display:none;
-	display:block;
-	position:absolute;
-	width:30px;
-	height:30px;
-	/*border:1px #CCCCCC solid;*/
-	border-radius:50%;
-
-	background-image:url(../img_vino/sm_icon_v01.svg);
-	background-position-y:-60px;
-	
-	color:#2c0006;
-	background-color:#981643;	
-	background-color:#fbfbf2;		
-	
-	top:50%;
-	}	
-.p_qty .less{
-	left:0;
-	background-position-x:-660px;	
-	-webkit-transform:translate(0 , -50%);	
-	    -ms-transform:translate(0 , -50%);	
-	        transform:translate(0 , -50%);
-	}
-.p_qty .plus{
-	right:0;
-	background-position-x:-610px;	
-	-webkit-transform:translate(0 , -50%);	
-	    -ms-transform:translate(0 , -50%);	
-	        transform:translate(0 , -50%);
-	}		
-.p_qty .less:hover,
-.p_qty .plus:hover{
-	background-position-y:-110px;
-	}
-	
-	
-	
-	
 
 
 
-
-.payment_total p{
-	padding-top:3px;
-	padding-bottom:3px;
-	padding-left:72px;
-	color:#d5b84f;	
-	}
-.payment_total span{
-	float:right;
-	color:#2c0006;
-	text-align:left;
-	padding:0;
-	padding-left:12px;
-	width:120px;
-	}
-.payment_total p:first-child{
-	padding-top:12px;
-	padding-bottom:12px;
-	border-bottom: 1px #CCCCCC dashed;		
-	}
-.payment_total p:last-child{
-	padding-top:12px;
-	padding-bottom:12px;
-	border-top:1px #CCCCCC solid;	
-	}
-.payment_total > p:nth-child(2){
-	padding-top:12px;
-	}	
-.payment_total > p:nth-last-child(2){
-	padding-bottom:12px;
-	}
-	
-	
-	
-	
-	
-	
 	
 /* Shopping Bag - list for products */
 /* size_rwd_t */
@@ -2175,4 +2008,605 @@ less
 	color:#5d0b24;
 	padding:18px;
 	
-	}			
+	}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 20180518 */
+
+
+/* table */
+.table_box {
+	width: 100%;
+	}
+.table_box > *:first-child *{
+	font-size:12px;
+	color:#666;
+	color:#a39849;
+	text-transform:uppercase;
+	}
+.table_box > *:first-child{
+	padding:0;
+	border-top:1px #e6e6e6 solid;
+	}
+
+
+/* tr */
+.info_tr{
+	position:relative;
+	display:table;
+	width:100%;
+	border-bottom:1px #e6e6e6 solid;
+	padding:24px 0;
+	}
+.info_tr > *{
+	display:table-cell;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	color:#5d0b24;
+	color:#484848;
+	text-align:left;
+	padding:16px 9px;
+	}
+.info_tr > *{
+	width:16.666666%;
+	width:15%;	
+	}
+	
+
+
+
+
+
+
+	
+/*  
+.p_img = product img		
+.c_img = user img
+*/	
+.p_img,			
+.c_img{
+	padding:0 !important;
+	position:relative;
+	width:82px;
+	text-align:center;
+	margin: 30px 0;
+	}
+
+.c_img img{
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	border:1px #2c0006 solid;
+	}
+
+.p_img img{
+	width:82px;
+	height:82px;
+	}
+
+/* product description */
+.p_description{
+	position: relative;
+	text-align:left;
+	color:#981643;	
+	width:-moz-calc(70% - 132px);	
+	width:-webkit-calc(70% - 132px);	
+	width:calc(70% - 132px);	
+	}
+
+.p_description p{	
+	color:#981643;
+	}
+
+.p_description .product_name{
+	color:#5d0b24;		
+	}	
+
+.p_description p{
+	padding:0;
+	}	
+	
+
+
+/*
++ - 
+plus less
+*/
+
+.p_qty{
+	position:relative;
+	width:120px;
+	text-align: center; 
+	}
+.p_qty:hover *{
+	display:block !important;
+	}	
+.p_qty .less,
+.p_qty .plus{
+	display:none;
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-image:url(../img_vino/sm_icon_v01.svg);
+	background-position-y:-60px;
+	color:#2c0006;
+	background-color:#981643;	
+	background-color:#fbfbf2;		
+	
+	top:50%;
+	}	
+.p_qty .less{
+	left:0;
+	background-position-x:-660px;	
+	-webkit-transform:translate(0 , -50%);	
+	    -ms-transform:translate(0 , -50%);	
+	        transform:translate(0 , -50%);
+	}
+.p_qty .plus{
+	right:0;
+	background-position-x:-610px;	
+	-webkit-transform:translate(0 , -50%);
+		-ms-transform:translate(0 , -50%);	
+	        transform:translate(0 , -50%);
+	}
+.p_qty .less:hover,
+.p_qty .plus:hover{
+	background-position-y:-110px;
+	}
+.how_many{
+	text-align: center;
+}
+.item_qty{
+	width: 120px;
+
+
+}
+
+
+
+
+	
+.btn_box{
+	width:60px;
+	padding: 0;
+	text-align: center; 
+	}
+
+.b_remove{
+	display:inline-block;	
+	width:50px;
+	height:50px;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-50px;		
+	background-position-x:-700px;	
+	}
+.b_remove:hover{
+	background-position-y:-100px;	
+	}
+
+.b_check_box{
+	display:inline-block;		
+	width:50px;
+	height:50px;
+	color:#2c0006;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-position-y:-50px;		
+	background-position-x:-150px;	
+	}
+.b_check_box:hover{
+	background-position-y:-100px;	
+	}
+
+.info_tr a{
+	color: #981643;
+	}
+.info_tr a:hover{
+	color: #5d0b24;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.email{
+	width:-moz-calc(40% - 132px);	
+	width:-webkit-calc(40% - 132px);	
+	width:calc(40% - 132px);	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination{
+	display: inline-block;
+	overflow:hidden;
+	vertical-align: top;
+	text-align: right;
+
+}
+.mw_1200.pagination{
+	display:block;
+}
+.pagination > *{
+	display: inline-block;
+
+	font-size: 14px;
+	line-height:50px;
+	text-align: center;
+	text-align: ;
+	width: 36px;
+	padding: 0;
+
+}	
+.pagination a{
+	color:#981643;
+	
+
+}	
+
+.pagination a:hover{
+	color:#5d0b24;
+
+
+}	
+.pagination_info{
+	display:inline-block;
+	float: left;
+	font-size: 12px;
+	line-height:18px;
+	color: #999;
+	letter-spacing: 0.09em;
+	text-align: right;
+	text-transform:uppercase;
+	padding: 16px 9px !important;
+	width:auto;
+}
+.pagination_info span{
+	font-size:14px;
+	color: #5d0b24;
+	vertical-align:  baseline;
+}
+
+
+
+
+.un_click,
+.current{
+	cursor:default;
+	color:#484848;
+	color:#666 !important;
+}
+.current:hover{
+	color:#666 !important;
+}
+	
+
+
+
+
+
+
+
+
+.payment_total{
+	text-align:left;
+	}
+
+.info_tr ~	.payment_total {
+	text-align:right;
+	}
+
+.payment_total p{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:12px;
+	color:#d5b84f;	
+	}	
+
+.info_tr ~ .payment_total span{
+	text-align: left;
+	padding-left: 9px;
+	width:-moz-calc(15% + 50px);	
+	width:-webkit-calc(15% + 50px);	
+	width:calc(15% + 50px);		
+	}
+	
+.payment_total span{
+	float:right;
+	color:#2c0006;
+	text-align:right;
+	padding:0;
+	width:120px;
+	}
+
+.i_total_price span{
+	font-size:18px;
+	color:#981643;
+	}	
+	
+
+.payment_total p:first-child{
+	padding-top:12px;
+	padding-bottom:12px;
+	border-top:1px #5d0b24 solid !important;
+	border-bottom: 1px #CCCCCC dashed;		
+	}
+.payment_total p:last-child{
+	padding-top:12px;
+	padding-bottom:12px;
+
+		border-top:1px #5d0b24 solid !important;	
+	}
+.payment_total > p:nth-child(2){
+	padding-top:12px;
+	}	
+.payment_total > p:nth-last-child(2){
+	padding-bottom:12px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+/* sort function */
+
+.sort{
+	text-align: right;
+	padding:9px 0;
+	}
+.b_add{
+	display:inline-block;	
+	width:50px;
+	line-height:50px;
+	text-align: center;
+	background-color:#981643;
+	border-radius: 50%;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:0;		
+	background-position-x:-600px;
+	}
+.b_add:hover{
+	background-color:#5d0b24;
+	}
+.b_sort_table{
+	display:inline-block;
+	width:50px;
+	line-height:50px;
+	text-align: center;
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-250px;		
+	background-position-x:-50px;	
+	}
+.b_sort_block{
+	display:inline-block;
+	width:50px;
+	line-height:50px;
+	text-align: center;	
+	background-image:url(../img_vino/sm_icon_v01.svg);	
+	background-position-y:-250px;		
+	background-position-x:0;	
+	}
+.b_sort_table:hover,
+.b_sort_block:hover{
+	background-position-y:-300px;		
+	}
+
+
+
+
+/* click function */	
+.f_sort_block.table_box > *:first-child{
+	display:none;
+	}
+.f_sort_block .info_tr{
+	position:relative;
+	display: inline-block;
+	width: auto;
+	border:1px #e6e6e6 solid;	
+	text-align: center;	
+	width:31.333333%;
+	margin:15px 1%;	
+	}
+.f_sort_block .info_tr > *{
+	display: block;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align: center;
+	padding:0;
+	width:auto;
+	}
+.f_sort_block .c_img img {
+	display:inline-block;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    border: 1px #2c0006 solid;
+	}
+.f_sort_block .f_name{
+	padding-right:1px;
+	}
+.f_sort_block .l_name{
+	padding-left:1px;
+	}
+.f_sort_block .u_name,
+.f_sort_block .f_name,
+.f_sort_block .l_name,
+.f_sort_block .product_name,
+.f_sort_block .p_qty,
+.f_sort_block .p_price{
+	font-size:18px;
+	padding: 9px 0 !important;
+	} 
+.f_sort_block .p_qty{
+	padding-top: 18px !important;
+	} 
+.f_sort_block .f_name,
+.f_sort_block .l_name{
+	display:inline-block;
+	} 
+.f_sort_block .b_remove{
+	position:absolute;
+	top:0;	
+	right:0;
+	}
+.f_sort_block .b_edit{
+	display:inline-block !important;	
+}	 
+
+
+
+
+
+@media screen and (max-width:1023px) {
+
+
+.table_box > *:first-child{
+	display:none;
+	}
+.info_tr{
+	position:relative;
+	display: inline-block;
+	width: auto;
+	border:1px #e6e6e6 solid;	
+	text-align: center;	
+	width:31.333333%;
+	margin:15px 1%;	
+	}
+.info_tr > *{
+	display: block;
+	vertical-align: middle;
+	font-size:14px;
+	line-height:18px;
+	text-align: center;
+	padding:0;
+	width:auto;
+	}
+.c_img img {
+	display:inline-block;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: none;
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    border: 1px #2c0006 solid;
+	}
+.f_name{
+	padding-right:1px;
+	}
+.l_name{
+	padding-left:1px;
+	}
+.u_name,
+.f_name,
+.l_name,
+.product_name,
+.p_qty,
+.p_price{
+	font-size:18px;
+	padding: 9px 0 !important;
+	} 
+.p_qty{
+	padding-top: 18px !important;
+	} 
+.f_name,
+.l_name{
+	display:inline-block;
+	} 
+.btn_box{
+	position:absolute;
+	top:0;	
+	right:0;
+	}
+.b_edit{
+	display:inline-block !important;	
+}	 
+
+}	
+	

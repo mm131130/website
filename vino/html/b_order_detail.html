@@ -63,7 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c0006', end
 <script>
 $(function(){
 	
-$('.sm_check_box').on('click', function(){
+$('.b_check_box').on('click', function(){
 	$('.popup_bg').show();
 	
 	
@@ -90,6 +90,25 @@ $('.popup_bg').each(function() {
 </script>
 </head>
 <body>
+
+
+
+<header>
+	
+<div class="mw_1200 sm_nav">
+<a class="vino_logo" href="b_user_list.html"><img src="../img_vino/ms_vino_logo_01_b.svg"><span>Sammarinese</span></a>
+
+<div class="sm_menu">
+<a class="b_three_line" href="#">&nbsp;</a>
+<a href="b_user_list.html">User</a>
+<a href="b_products_list.html">Prodsucts</a>
+</div>	
+<a class="b_login_register" href="index.html">Sign Out</a>
+</div>
+</header>
+
+
+
 
 <div class="popup_bg drink_night form_vino ">
 
@@ -126,37 +145,46 @@ No refunds or exchanges for purchases made with event and for all sale items!
 
 <div class="mw_1200 h_100vh">
 <div class="main_title">Order Detail</div>
-<div class="wm_25 left_menu">&nbsp;</div><div class="wm_75">
+
 
 <p class="wm_100">Here are the details of your order.</p>
-<table class="t_detail" width="0" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td class="t_img">Image</td>
-<td>Description</td>
-<td>Price</td>
-<td class="t_quantity">Quantity</td>
-<td>Total</td>
-<td class="t_return">Return</td>
-</tr>
 
-<tr>
 
-<td><img src="../img_vino/p_sm_caldese_1.jpg"></td>
-<td class="product_description">
-<p class="brands">San Marino</p>
-<p class="product_name">Tessano</p>
-<p><span>Kind</span>Red Wine</p>
-<p><span>Item Number</span>r000420180305</p>
-</td>
 
-<td>$100.00</td>
-<td class="t_box_a">4</td>
-<td>$400.00</td>
-<td class="t_box_a">
-<a class="sm_check_box" href="#"><span class="btn_img">&nbsp;</span></a>
-</td>     
-</tr>
-</table>
+
+
+<div class="table_box">
+
+
+<div class="info_tr">
+	<div class="c_img">Image</div>
+	<div class="p_description">Description</div>
+
+		<div class="p_price">PRICE</div>
+	<div class="item_qty">QTY</div>
+	<div class="p_price">Total</div>
+
+</div>
+<div class="info_tr">
+<div class="p_img">
+	<img  src="../img_vino/p_sm_caldese_1.jpg">
+</div>
+<div class="p_description">
+    <p class="brands">San Marino</p>
+    <p class="product_name">Tessano</p>
+    <p><span>Kind</span>Red Wine</p>
+    <p><span>Item Number</span>r000420180305</p>
+</div>
+<div class="p_price">$100.00</div>
+<div class="p_qty">4</div>
+<div class="p_price">$400.00</div>
+
+
+</div>
+</div>
+
+
+
 
 
 <div class="wm_30">
