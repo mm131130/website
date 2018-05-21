@@ -51,7 +51,7 @@
 
 	color: #CCC !important;
 	}	
-.drink_night * a{
+.drink_night *:not('.sm_ddm_menu') a{
 	color:#fcd88c !important;
 	}		
 .drink_night * a:hover{
@@ -140,7 +140,9 @@
 	*/
 
 	border-radius:6px;
-	}
+	margin-top:12px;
+	margin-bottom:12px;
+		}
 
 .btn_white{
 	color:#2c0006 !important;
@@ -367,7 +369,8 @@
 	font-size:14px;
 	line-height:18px;
 	color:#a0a0a0;
-	color:#a39849 !important;
+	color:#981643 !important;
+
 	padding:11px 12px;	
 	}
 	
@@ -541,7 +544,7 @@ h5{
 	line-height:18px;	
 	font-family:roboto_Medium;	
 	color:#a39849;
-	padding:9px 0 3px 0;
+	padding:16px 0 8px 0;
 	}		
 
 p{
@@ -776,18 +779,7 @@ form .secondary,
 form .subtitle{
 	padding-left:12px;
 	padding-right:12px;
-	
-	/*
-	margin-left: 1.5%;
-	margin-right: 1.5%;*/
 }
-
-
-form button{
-	margin-top:12px;
-	margin-bottom:12px;	
-}
-
 
 
 .or_line{
@@ -812,12 +804,8 @@ form button{
 	position:absolute;
 	top:50%;
 	left:0;
-	
 	width:100%;
-	
 	border-bottom:1px #e9d98e solid;
-	/*
-	color:#d5b84f;*/
 	}
 	
 	
@@ -832,13 +820,9 @@ form button{
 	clear: both;
 	position:relative;
 	left:50%;
-
-
 	-webkit-transform:translateX(-50%);
 	    -ms-transform:translateX(-50%);
 	        transform:translateX(-50%);
-	
-
 	text-align:center;
 	}
 .box_product_picture,
@@ -1760,11 +1744,7 @@ border-color:#e4e0b9 transparent;
 .account_list_btn{}
 .account_input{}
 .account_info{}
-	
-	
-	
-	
-	
+
 .account_list_btn,
 .account_info{  
 	position:relative;
@@ -1789,18 +1769,14 @@ border-color:#e4e0b9 transparent;
 	background-color:#fbfbf2;
 	}
 	
-	
 .b_open_close{
 	position:relative;
 	display:inline-block;
 	padding-left:34px;
 	padding-right:34px;
-
 	}	
 .b_del{
-	
 	display:block;
-	
 	position:absolute;
 	top:50%;
 	right:7px;
@@ -2366,7 +2342,7 @@ plus less
 	text-align:left;
 	}
 
-.info_tr ~	.payment_total {
+.info_tr ~ .payment_total {
 	text-align:right;
 	}
 
@@ -2379,7 +2355,7 @@ plus less
 
 .info_tr ~ .payment_total span{
 	text-align: left;
-	padding-left: 9px;
+	margin-left: 9px;
 	width:-moz-calc(15% + 50px);	
 	width:-webkit-calc(15% + 50px);	
 	width:calc(15% + 50px);		
@@ -2399,24 +2375,34 @@ plus less
 	}	
 	
 
-.payment_total p:first-child{
+.payment_total .i_subtotal{
 	padding-top:12px;
 	padding-bottom:12px;
-	border-top:1px #5d0b24 solid !important;
+	margin-bottom:9px;
 	border-bottom: 1px #CCCCCC dashed;		
 	}
-.payment_total p:last-child{
-	padding-top:12px;
+.payment_total .i_total{
+	display: block;
+	padding-top:12px;	
 	padding-bottom:12px;
+	margin-top:9px;
+	border-top:1px #CCCCCC solid ;	
+	}
 
-		border-top:1px #5d0b24 solid !important;	
+.i_subtotal{}
+.i_total{}
+
+
+
+
+.info_tr ~ .payment_total .i_subtotal{
+	border-top:1px #5d0b24 solid;
+	border-bottom: 1px #CCCCCC dashed;		
 	}
-.payment_total > p:nth-child(2){
-	padding-top:12px;
-	}	
-.payment_total > p:nth-last-child(2){
-	padding-bottom:12px;
+.info_tr ~ .payment_total .i_total{
+	border-top:1px #5d0b24 solid;	
 	}
+
 
 
 
@@ -2594,7 +2580,12 @@ plus less
 	} 
 .p_qty{
 	padding-top: 18px !important;
-	} 
+	padding-bottom: 18px !important;
+    display: inline-block !important;
+  
+    width: 120px !important;
+
+}	
 .f_name,
 .l_name{
 	display:inline-block;
