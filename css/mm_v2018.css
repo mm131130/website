@@ -306,14 +306,10 @@ footer.mm_v2018 .img_w{
 	-ms-transform:translateX(-50%);
 -moz-transform:translateX(-50%);
 -webkit-transform:translateX(-50%);
--o-transform:translateX(-50%);
-		background-color:#FFF;
-	
-	/*
-	width:144px;
+	-o-transform:translateX(-50%);
 
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/slash.svg);
-	background-position:center center;*/
+	background-color:#FFF;
+	width:144px;
 	}
 .btn_prev_next a{
 	display:block;
@@ -421,7 +417,6 @@ footer.mm_v2018 .img_w{
 	display:inline-block;
 	width:108px;
 	height:12px;
-	margin: 6px 0;
 	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
 	background-position:center ;
 	background-size:108px 12px;
