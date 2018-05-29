@@ -55,7 +55,7 @@ h3{
 	color:#595a5e;
 	color:#0f1329;
 	padding:27px 0 18px 0;	
-	padding:15px 0;		
+	padding:18px 0;		
 }
 h2,
 h3{
@@ -876,7 +876,7 @@ border-bottom-color:#f5c7c0;
 	
 	letter-spacing:0.06em;
   
-	padding:6px 0;
+	padding:9px 0;
 	}		
 .tag:after,	
 .tag:before{
@@ -1077,7 +1077,7 @@ border-bottom-color:#f5c7c0;
 	}
 .this_page > .popup_event_box{
 	display:inline-block;
-	margin:0 50px 180px 50px;
+	margin:150px 50px 150px 50px;
 	}
 	
 
@@ -1085,6 +1085,7 @@ border-bottom-color:#f5c7c0;
 @media screen and (max-width:767px) {
 .this_page{
 	overflow:hidden;
+	
 }
 .this_page .popup_event_box{
 	display:block;
