@@ -72,7 +72,9 @@ body{
 	}
 .wine_color{
 	display: inline-block;
-	height:40px; 
+	height:40px;
+	width:-moz-calc(100% - 6px); 
+	width:-webkit-calc(100% - 6px); 
 	width:calc(100% - 6px);
 	}	
 .wine_color:nth-last-child(2){
@@ -105,8 +107,6 @@ left:calc(50% - 1px);
 	display:inline-block;
 	height:40px;
 	border-left:2px #CCCCCC solid;
-	-webkit-transform:translate(-50%,0);
-		-ms-transform:translate(-50%,0);	
 	transform:translate(-50%,0);
 	}
 		
@@ -182,8 +182,6 @@ left:calc(50% - 1px);
 .a_t:before{
 	top:-12px;
 	left:50%;
-	-webkit-transform:translateX(-50%);
-		-ms-transform:translateX(-50%);	
 	transform:translateX(-50%);
 	border-width:0 6px 12px 6px;
 	border-color:#981643 transparent;
@@ -191,28 +189,21 @@ left:calc(50% - 1px);
 .a_r:before{
 	top:50%;
 	right:-12px;
-	-webkit-transform:translateY(-50%);
-	    -ms-transform:translateY(-50%);
-	        transform:translateY(-50%);
-	
+	transform:translateY(-50%);
 	border-width:6px 0 6px 12px;
 	border-color:transparent #981643;
 }
 .a_d:before{
 	bottom:-12px;
 	left:50%;
-	-webkit-transform:translateX(-50%);
-	    -ms-transform:translateX(-50%);
-	        transform:translateX(-50%);
+	transform:translateX(-50%);
 	border-width:12px 6px 0 6px;
 	border-color:#981643 transparent;
 }	
 .a_l:before{
 	top:50%;
 	left:-12px;
-	-webkit-transform:translateY(-50%);
-	    -ms-transform:translateY(-50%);
-	        transform:translateY(-50%);
+	transform:translateY(-50%);
 	border-width:6px 12px 6px 0;
 	border-color:transparent #981643;
 }		
@@ -351,9 +342,7 @@ background-color:#2c0006;
 	width:60px;
 	height:60px;
 		border-radius:50%;	
-	-webkit-transform:translate(-50% , -50px);	
-	    -ms-transform:translate(-50% , -50px);	
-	        transform:translate(-50% , -50px);
+	transform:translate(-50% , -50px);
 
 	
 	}
@@ -366,9 +355,7 @@ background-color:#2c0006;
 	background-color:#170003;
 	
 	border:none;	
-	-webkit-transform:translate(-50% , 35px);	
-	    -ms-transform:translate(-50% , 35px);	
-	        transform:translate(-50% , 35px);	
+	transform:translate(-50% , 35px);	
 	}
 	
 .color_box.v3,
@@ -430,9 +417,7 @@ background-color:#2c0006;
 	position:absolute;
 	bottom:12px;
 	left:50%;
-	-webkit-transform:translateX(-50%);
-	    -ms-transform:translateX(-50%);
-	        transform:translateX(-50%);
+	transform:translateX(-50%);
 	
 	
 	display:block;
@@ -473,9 +458,16 @@ $(function() {
 
 
 <div class="cis_vino h_100vh flex_box">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_02_b.svg" style="max-width:360px;">
+<img src="../img_vino/ms_vino_logo_02_b.svg" style="max-width:360px;">
 <a class="jb_scroll_down" href="#go_to_here"></a>
 </div>
+
+
+
+
+
+
+
 
 
 
@@ -483,6 +475,14 @@ $(function() {
 <div class="tag_content">Sammarinese</div>
 Style Guide
 <p>photoshop<span>/</span>photography</p>
+</div>
+
+
+
+<div class="mw_1200">
+
+<img src="../img_vino/style_guide_sm.jpg">
+
 </div>
 
 
