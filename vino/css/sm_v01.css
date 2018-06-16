@@ -134,14 +134,14 @@
 	color:#FFF !important;
 	text-align:center;
 	text-transform:uppercase;
-	padding:11px 12px;
+	padding:11px 12px !important;
 	/*
 	width:100%;	
 	*/
 
 	border-radius:6px;
-	margin-top:12px;
-	margin-bottom:12px;
+	margin-top:12px !important;
+	margin-bottom:12px !important;
 		}
 
 .btn_white{
@@ -1587,6 +1587,7 @@ border-color:#e4e0b9 transparent;
 	padding:18px 9px;
 	}
 
+
 .box_xml > *,
 .editors_choice_xml > *,
 .products_list > *,
@@ -1594,12 +1595,46 @@ border-color:#e4e0b9 transparent;
 	display:inline-block;
 	text-align:center;
 	width:25%;
-	
 	margin:27px 0;
 	padding:0 12px;
 	}
+.box_xml{
+	overflow: hidden;
 	
+	}
+
+
+.box_xml > *{
 	
+
+	}
+
+@media screen and (max-width:1023px) {
+
+
+
+
+.box_xml > *{
+	width: 33.333333%;
+	}
+
+
+
+}
+@media screen and (max-width:767px) {
+
+
+
+
+.box_xml > *{
+	width:50%;
+	}
+
+
+
+}
+
+
 	
 	
 .hmp{
@@ -1621,16 +1656,37 @@ border-color:#e4e0b9 transparent;
 	position:relative;
 	}
 	
-.vino_info > *{
-	display: block;
+
+	/**/
+.vino_info{
+
 	font-size:14px;
 	line-height:18px;
 	font-family:roboto_light;
 	color:#170003;
 	color:#3f0514;
 	letter-spacing:0.06em;
+
+	}
+
+
+.vino_info > *{
 	padding:6px 0;
 	}
+
+
+
+.vino_info span{
+	display: block;
+
+	font-family:roboto_regular;
+	color: #999;
+	text-transform:uppercase;
+	padding:3px 0;
+	}
+
+
+
 .vino_p_img{
 	display:inline-block;
 	width:auto;
@@ -1639,15 +1695,7 @@ border-color:#e4e0b9 transparent;
 	transition:all .03s ease-in-out;*/
 	padding:0;
 	}
-.vino_info > * span{
-	display: block;
-	font-size:12px;
-	line-height:18px;
-	font-family:roboto_regular;
-	color: #999;
-	text-transform:uppercase;
-	padding:3px 0;
-	}
+
 .vino_kind{
 	display: block;
 	font-size:12px;
