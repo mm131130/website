@@ -1,14 +1,9 @@
 $(function(){
 
-
 $('body').prepend('<header class="mm_v2018"></header>').append('<footer class="mm_v2018"></footer>');
 
 $('header.mm_v2018').load("../html_mm/mm_head_02.html");
 $('footer.mm_v2018').load('../html_mm/mm_foot_02.html');
-
-
-
-
 $('header.mm_v2018').each(function() {
     
 var this_header = $('header.mm_v2018');
@@ -129,20 +124,6 @@ $('.sm_radio_box , .sm_check_box').on('click', function() {
 });//radio_box and check_box
 
 
-
-/*
-
-$('.b_my_wish').on('click', function() {
-	var ts = $(this);
-	
-	if(ts.hasClass('click_icon')){
-		ts.removeClass('click_icon');		
-	}else{
-		ts.addClass('click_icon');	
-	}
-	return false;
-});
-*/
 
 $('.sm_nav.v2').each(function() {
 		var sm_nav_v2 = $('.sm_nav.v2');
