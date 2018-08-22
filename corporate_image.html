@@ -195,14 +195,16 @@
 	z-index:200;
 	
 	bottom:0;
-	left:36%;
-    margin-bottom: -136px;
+	left:50%;
+    margin-bottom: -190px;
     margin-left: -25px;
 
 	width:56px;
 	-webkit-animation:sun_moon 9s linear infinite;
 	-moz-animation:sun_moon 9s linear infinite;
 	animation:sun_moon 9s linear infinite;
+
+/* 	background-color: #fff; */
 	}
 .sun_moon img{
 	position: static;
@@ -213,7 +215,7 @@
 	}
 .sun_moon img:first-child{
 	
-	margin-bottom:390px;
+	margin-bottom:450px;
 	
 	}
 .sun_moon img:last-child{
@@ -302,26 +304,33 @@ var wall_paper_info = [
 ];
 
 
-for ( var box = 1 ; box <= 42 ; box++ ){
-var p_num = box;
+// for( var box = 1 ; box <= 116 ; box++ ){
+// var p_num = box;
 
-if (box >= 1 && box <= 9){
-		p_num = '0'+ box;
-	}
+// if(box >= 1 && box <= 9){
+// 		p_num = '0'+ box;
+// 	}
 
-wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div></div>';
-
-
-
+// wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div><div>'+ p_num +'</div></div>';
 // wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div>
 // <div class="copywriter"><p>Wallpaper</p><h2>' + wall_paper_info[p_num] + '</h2></div></div>';
+//}	
 
 
+var boxN = 1;
 
-}	
+while(boxN <= 132){
 
+var p_num = boxN;
 
+	if(boxN >= 1 && boxN <= 9){
+		p_num = '0'+ boxN;
+	}
 
+wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div><div class="p_num" >'+ p_num +'</div></div>';
+
+boxN++;
+}
 
 
 
@@ -334,7 +343,7 @@ $('.jq_hw_num_c').empty().prepend(wall_paper_box);
 
 
 
-
+ 
 
 
 
@@ -384,22 +393,22 @@ $('.jq_hw_num_a > div').each(function(i) {
 
 
 
-
+<!-- 
 <div class="cloud_up_down">
 	<div class="mm_logo_A">&nbsp;</div>
 	<div class="cloud"><img src="http://mountain-mm.myweb.hinet.net/img_mm/cloud.png"></div>
 	<div class="cloud_shadow"><img src="http://mountain-mm.myweb.hinet.net/img_mm/cloud_shadow.png"></div>
-</div>
+</div> -->
 
 
-<div id="corporate_image" class="page_name">corporate image
+<div id="page_corporate" class="page_name">corporate image
 <p>html<span>/</span>css<span>/</span>rwd</p>
 </div>
 
 
 
 
-<div class="mw_1200 corporate_image">
+<div class="mw_1200 page_corporate">
 
 <div>
 <div class="parking_img_box animation_sun_moon">
@@ -425,7 +434,7 @@ $('.jq_hw_num_a > div').each(function(i) {
 
 
 
-<div class="mw_1200 corporate_image jq_hw_num_c">
+<div class="page_corporate jq_hw_num_c">
 
 
 <div>
