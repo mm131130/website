@@ -429,13 +429,14 @@ footer.mm_v2018 .img_w{
 	}
 .mm_logo_C a{
 	position:absolute;
-	top:-9px;
+	top:-22px;
 	right: 25%;
 	z-index:100;
 	display:block;
 	margin-right: -81px;
+
 	width:174px;
-	height:24px;
+	height:45px;
 	
 	background-color:#fff;	
 	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
@@ -781,21 +782,7 @@ secondary*/
 	
 	
 	
-	
-/* Sammarinese */	
-.vino_logo img{
-	width:81px;
-	height:81px;
-	}
-.vino_logo p{
-	font-size:16px;
-	line-height:18px;
-    font-family: roboto_light;
-	color:#000;
-	text-transform:uppercase;
-	letter-spacing:0.15em;
-	}	
-	
+
 	
 	
 	
