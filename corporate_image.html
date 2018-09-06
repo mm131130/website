@@ -141,15 +141,18 @@
 	}
 .img_cloud{
 	z-index:300;
-	-webkit-transform:translate(-67px,-113px) !important;
-	-moz-transform:translate(-67px,-113px) !important;
-	-ms-transform:translate(-67px,-113px) !important;
-	transform:translate(-67px,-113px) !important;
+	-webkit-transform:translate(-50%,-113px) !important;
+	-moz-transform:translate(-50%,-113px) !important;
+	-ms-transform:translate(-50%,-113px) !important;
+	transform:translate(-50%,-113px) !important;
 	}
 .img_shadow{
 	opacity:1;
 	z-index:50;
-	transform:translate(-78px,-114px) !important;
+	-webkit-transform:translate(-88px,-114px) !important;
+	-moz-transform:translate(-88px,-114px) !important;
+	-ms-transform:translate(-88px,-114px) !important;
+	transform:translate(-88px,-114px) !important;
 	
 	-webkit-animation:opacity_shadow 9s linear infinite;
 	-moz-animation:opacity_shadow 9s linear infinite;
@@ -162,10 +165,10 @@
 	
 	opacity:1;
 	z-index:100;
-	-webkit-transform:translate(-80px,-139px) !important;
-		-moz-transform:translate(-80px,-139px) !important;
-			-ms-transform:translate(-80px,-139px) !important;	
-	transform:translate(-80px,-139px) !important;
+	-webkit-transform:translate(-100px,-139px) !important;
+		-moz-transform:translate(-100px,-139px) !important;
+			-ms-transform:translate(-100px,-139px) !important;	
+	transform:translate(-100px,-139px) !important;
 	
 	}
 .animation_sun_moon .bg_img_c{
@@ -252,74 +255,108 @@
 
 
 
+
+
+.dot_box.v4{
+	
+	transform: translateX(-45px);
+}
+
+
+.dot_box.v4 > *{
+	position: relative;
+	background: none;
+	width: 90px;
+	height: 60px;
+}
+
+
+.dot_box.v4 .img_box{
+	position: absolute;
+	overflow: hidden;
+
+
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+
+	display: block;
+
+	width:8px;
+	height:8px;
+	border-radius: 50%;
+	border: 1px #fff solid;
+
+	background-color: #000;
+
+transition: all 0.3s;
+}
+
+.dot_box.v4  .btn_text{
+	position: absolute;
+	bottom: -24px;
+	left: 50%;
+
+	display: block;
+
+	opacity: 0;
+
+	transform: translateX(-50%);
+
+
+
+	line-height: 24px;
+	color: #000;
+	text-shadow:0 3px 9px rgba(255,255,255,0.6),0 2px 6px rgba(255,255,255,0.8) ;
+
+transition: all 0.6s;
+}
+
+
+.dot_box.v4 > *:hover .img_box, 
+.dot_box.v4 > *.open_icon .img_box{
+	width:56px;
+	height:56px;
+	margin: -30px 0 0 -30px;
+	border: 2px #fff solid;
+}
+
+.img_box img{
+	position:absolute;
+	left: 50%;
+	display: none;
+	width: 100px;
+	margin-left: -50px;
+	margin-top: -15px;
+
+}
+.dot_box.v4 > *:hover .img_box img, 
+.open_icon .img_box img{
+	display:block !important;
+
+}
+.dot_box.v4 > *:hover .btn_text, 
+.open_icon .btn_text{
+	opacity:1 !important;
+}
+
+
+.page_num{
+	position: absolute;
+}
+
 </style>
 
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45405867-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-45405867-1');
-</script>
 <script src="jq/jquery_3_2_1_min.js"></script>
 <script src="jq/mm_load_head_foot.js"></script>
 <script> 
 
 $(function() {
 
-var wall_paper_box = ''; 
-var wall_paper_info = [
-'<span>1</span>',
-'<span>2</span>',
-'<span>3</span> Dark',
-'<span>4</span> Daytime',
-'<span>5</span> Ooooop!',
-
-'<span>6</span>',
-'<span>7</span> Download',
-'<span>8</span> Upload',
-'<span>9</span> Wait...',
-'<span>10</span> Lightning',
-
-'<span>11</span> Rainbow',
-'<span>12</span> Day and night',
-'<span>13</span> Have a cup of coffee',
-'<span>14</span> Rain',
-'<span>15</span> Message',
-
-'<span>16</span> Ooooop!',
-'<span>17</span> Spring',
-'<span>18</span> New Year',
-'<span>19</span> New Year',
-'<span>20</span> Spring',
-
-'<span>21</span> XMAS',
-'<span>22</span> Valentine&prime;s Day',
-'<span>23</span> New Year'
-
-];
-
-
-// for( var box = 1 ; box <= 116 ; box++ ){
-// var p_num = box;
-
-// if(box >= 1 && box <= 9){
-// 		p_num = '0'+ box;
-// 	}
-
-// wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div><div>'+ p_num +'</div></div>';
-// wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div>
-// <div class="copywriter"><p>Wallpaper</p><h2>' + wall_paper_info[p_num] + '</h2></div></div>';
-//}	
-
-
+var wall_paper_box ='';
 var boxN = 1;
 
-while(boxN <= 132){
+while(boxN <= 152){
 
 var p_num = boxN;
 
@@ -327,93 +364,31 @@ var p_num = boxN;
 		p_num = '0'+ boxN;
 	}
 
-wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div><div class="p_num" >'+ p_num +'</div></div>';
+wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div></div>';
 
 boxN++;
 }
 
-
-
-
 $('.jq_hw_num_c').empty().prepend(wall_paper_box);
 
 
-
-
-
-
-
- 
-
-
-
-
-
-//var max_page = 18;
-
-/* 生成物件 v01
-
-// 1. 做盒子
-for ( var box=0 ; box <= 22 ; box++ ){
-	$('.jq_hw_num_c').append('<div></div>');
-}	
-
-
-// 2. 把內容放入盒子
-$('.jq_hw_num_c > div').each(function(i) {
-
-var how_many_day = i+1;
-
-// 3. each 每一個做一次下面動作
-$(this).append('<div class="copywriter"><p>Wallpaper</p><h2>'+ wall_paper_info[i] +'</h2></div>');
-$(this).prepend('<div class="parking_img_box"><img src="http://mountain-mm.myweb.hinet.net/img_parking/day_' + how_many_day + '.jpg"></div>');
-
-});
-*/
-
-
-//https://mm131130.github.io/website/style_trend.html#style_trend_list
-/*http://mountain-mm.myweb.hinet.net/css/all.css
-$('.jq_hw_num_a > div').each(function(i) {
-	var jq_hw_num_a = (i+1);
-	$('.page_name').prepend('<div>' + jq_hw_num_a + '</div>');
-    
-});
-*/
-
-
-
-
-
-});
+});//end
 
 </script>
 </head>
 <body>   
 
-
-
-<!-- 
-<div class="cloud_up_down">
-	<div class="mm_logo_A">&nbsp;</div>
-	<div class="cloud"><img src="http://mountain-mm.myweb.hinet.net/img_mm/cloud.png"></div>
-	<div class="cloud_shadow"><img src="http://mountain-mm.myweb.hinet.net/img_mm/cloud_shadow.png"></div>
-</div> -->
-
-
 <div id="page_corporate" class="page_name">corporate image
 <p>html<span>/</span>css<span>/</span>rwd</p>
 </div>
 
-
-
-
 <div class="mw_1200 page_corporate">
 
 <div>
+
 <div class="parking_img_box animation_sun_moon">
 
-<img class="img_parking_text" src="http://mountain-mm.myweb.hinet.net/img_parking/parking_text.png">
+<img class="img_parking_text" src="img_parking/parking_text.png">
 <img class="img_cloud" src="http://mountain-mm.myweb.hinet.net/img_parking/cloud_p_01.png">
 <div class="sun_moon">
   <img src="http://mountain-mm.myweb.hinet.net/img_parking/sun_01.png">
@@ -424,10 +399,8 @@ $('.jq_hw_num_a > div').each(function(i) {
 <img class="img_shadow" src="http://mountain-mm.myweb.hinet.net/img_parking/cloud_p_02.png">
 <img class="bg_img_c" src="http://mountain-mm.myweb.hinet.net/img_parking/day_20.jpg">
 
-
-
 </div>
-<div class="copywriter"><p>Wallpaper</p><h2>wait...</h2></div>
+
 </div>
 </div>
 
