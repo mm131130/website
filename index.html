@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
 
-<link media="all" rel="shortcut icon" href="http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.png">
+<link media="all" rel="shortcut icon" href="img_mm/mm_logo.png">
 <link media="all" rel="stylesheet" href="css/all.css"/>
 <link media="all" rel="stylesheet" href="css/fonts.css"/>
 <link media="all" rel="stylesheet" href="css/size.css"/>
@@ -472,6 +472,121 @@ $('.logo_slide_show').load('html_mm/cis_list.html');
 
 //end
 </script>
+
+
+
+
+<style>
+
+	.cloud_banner{
+
+	position: relative;
+    display: block;
+    height: 540px;
+
+
+
+
+        background-image: url(img_mm/mm_banner_03.jpg);
+    background-size: cover;
+
+    background-position: center center;
+	}
+
+
+
+
+.mm_logo{
+	top:33.333333%;
+	z-index: 100;
+
+	width:90px;
+	height:90px;
+
+	margin-top: -45px;
+	margin-left: -45px;
+
+}
+.cloud,
+.cloud_shadow{
+	bottom: 0;
+	max-width: 350px;
+	width: 100%;
+
+	margin-left: -175px;
+}
+.mm_logo,
+.cloud,
+.cloud_shadow{
+	position: absolute;
+	left: 50%;
+}
+
+
+.cloud{
+	bottom:-15%;
+	z-index: 300;
+
+
+	-webkit-transform:rotate(-9deg);
+	-moz-transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg);
+	transform:rotate(-9deg);
+
+	-webkit-animation: cloudMove 6s ease-in-out infinite;
+	-moz-animation: cloudMove 6s ease-in-out infinite;	
+	animation: cloudMove 6s ease-in-out infinite;
+}
+
+.cloud_shadow{
+	bottom: -21%;
+	z-index: 200;
+	opacity: 0.9;
+
+	-webkit-animation: cloudShodowSize 6s ease-in-out infinite;
+	-moz-animation: cloudShodowSize 6s ease-in-out infinite;	
+	animation: cloudShodowSize 6s ease-in-out infinite;
+}
+
+
+
+@-webkit-keyframes cloudMove { 
+33.333333% {
+	bottom:21%;
+	-webkit-transform:rotate(18deg);
+	-moz-transform:rotate(18deg);
+	-ms-transform:rotate(18deg);
+	transform:rotate(18deg);
+	}
+}
+@keyframes cloudMove { 
+33.333333% {
+	bottom:21%;
+	-webkit-transform:rotate(18deg);
+	-moz-transform:rotate(18deg);
+	-ms-transform:rotate(18deg);
+	transform:rotate(18deg);
+	}
+}
+@-webkit-keyframes cloudShodowSize { 
+33.333333% {
+	-webkit-transform:scale(0.54);
+	-moz-transform:scale(0.54);
+	transform:scale(0.54);
+	opacity:0.3;
+}
+}
+@keyframes cloudShodowSize { 
+33.333333% {
+	-webkit-transform:scale(0.54);
+	-moz-transform:scale(0.54);
+	transform:scale(0.54);
+	opacity:0.3;
+}
+
+}
+
+</style>
 </head>
 
 <body>
@@ -488,16 +603,21 @@ signin_and_register
 event_popup
 -->
 
-<div class="mw_1200 logo_slide_show">
+
+
+
+
+<div class="cloud_banner">
+
+	<img class="mm_logo" src="img_mm/mm_logo_2.svg">
+	<img class="cloud" src="img_mm/cloud.png">
+	<img class="cloud_shadow" src="img_mm/cloud_shadow.png">
 </div>
 
 
 
-
-
-
-
-
+<div class="mw_1200 logo_slide_show">
+</div>
 
 
 
