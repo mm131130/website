@@ -197,7 +197,6 @@ footer.mm_v2018 .img_w{
 
 
 .logo_slide_show{
-	
 	display:block;
 	clear:both;
 	position:relative;
@@ -206,6 +205,12 @@ footer.mm_v2018 .img_w{
 	width:100%;
 	border-bottom: 1px #e1e1e1 solid;
 	}
+
+.cloud_banner ~ .logo_slide_show{
+	margin-top:0;
+	
+	}
+
 .brand_design{
 	overflow:hidden;
 	white-space: nowrap;
