@@ -1,12 +1,17 @@
 <script>
 $(function(){
 $('.btn_prev_next').each(function() {
+
 	var ts = $('.btn_prev_next');
 	ts.find('.b_prev , .b_next').on('click' , function(){
 	if( $(this).hasClass('b_next') ){
-		$('.brand_design > *:first-child').appendTo('.brand_design');
+		$('.brand_design > *:first-child').stop(true).animate({marginLeft:'-25%'}, 360, function(){
+			$(this).appendTo('.brand_design').css({marginLeft:''});
+		});
 	}else if( $(this).hasClass('b_prev') ){	
-		$('.brand_design > *:last-child').prependTo('.brand_design');
+
+		$('.brand_design > *:last-child').css({marginLeft:'-25%'}).prependTo('.brand_design').stop(true).animate({marginLeft:'0%'}, 360);
+
 	}
 	return false;
 	});	
