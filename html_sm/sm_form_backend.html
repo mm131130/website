@@ -15,19 +15,22 @@
 <link media="all" rel="stylesheet" href="../css/size.css"/>
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
 <link media="all" rel="stylesheet" href="../css/sm_rwd.css"/>
+
+<link media="all" rel="stylesheet" href="../css/head_v03.css"/>
+
 <link media="all" rel="stylesheet" href="../css/mm_v2018.css"/>
 <style>
 
 body{
 		background-color:#faf5f0;
 		}
-.mw_1200 > *{
+
+
+/* .mw_1200 > *{
 	float:none !important;
 	display:inline-block;
 	padding:12px;
-
-	
-	}
+	} */
 
 form{
 	padding:12px;
@@ -92,15 +95,40 @@ form p{
 		}
 
 
+
+
+.sm_slogan{
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+
+	letter-spacing:0.36em;
+
+	padding: 22px 0;
+	width: 100%;
+
+}
+
+
+
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/sm_v2018.js"></script>
+
+<script src="../jq/mm_load_head_foot-2.js"></script>
+
+
 <script>
 
-$(function(){
-	
+$(function() {
 
-	});
+	// $('body').prepend('<header class="m_v2019"></header>').append('<footer class="mm_v2018"></footer>');
+
+	// $('header.m_v2019').load('../html_mm/mm_head_03.html' );
+
+});
 
 </script>
 </head>
@@ -120,9 +148,9 @@ $(function(){
 
 
 <div class="wm_33">
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
+
 </div>
 
 
@@ -135,19 +163,17 @@ $(function(){
 <input class="wm_100" name="pwd" type="text" placeholder="Password *">
 	<a class="wm_50 sm_radio_box" href="#"><span class="btn_img">&nbsp;</span>Show Password</a>
 	<a class="wm_50 b_forgot" href="#">Forgot your password?</a> 
-
 <button type="button" class="wm_100 btn_wine_red">Login</button>
-
-
-
 </form>
+
+<div class="sm_slogan">vino &bull; wine</div>
 
 
 
 </div><div class="wm_33">
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
+
 </div>
 
 
@@ -166,13 +192,13 @@ $(function(){
 <button type="button" class="wm_100 btn_wine_red">Create Account</button>
 
 </form>
-
+<div class="sm_slogan">vino &bull; wine</div>
 
 
 </div><div class="wm_33">
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
+
 </div>
 
 
@@ -186,14 +212,14 @@ $(function(){
 <button type="button" class="wm_100 btn_wine_red">Sumbmit</button>
 
 </form>
-
+<div class="sm_slogan">vino &bull; wine</div>
 
 
 </div><div class="wm_33">
 
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
+
 </div>
 
 
@@ -203,23 +229,23 @@ $(function(){
 
 <button type="button" class="wm_100 btn_wine_red">Close</button>
 </form>
-
+<div class="sm_slogan">vino &bull; wine</div>
 
 
 </div><div class="wm_33">
 
-
-
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
 </div>
+
 <form>
 <div class="box_name">Reset Your Password</div> 
 <p>We've just received a password reset request for <strong>mountain@mountain.com</strong>. Please click the link below to reset your password.</p>
 
 <button type="button" class="wm_100 btn_wine_red">Reset Password</button>
 </form>
+
+
 <div class="sm_note_02">
 Copyright © 2018 Mountain - All rights reserved.<br>
 Ailing address is : Mountain :<br>
@@ -227,11 +253,13 @@ If you would like to update your email preferences or unsubscribe, please <a hre
 </div>
 
 
+<div class="sm_slogan">vino &bull; wine</div>
+
 
 </div><div class="wm_33">
-<div class="vino_logo">
-<img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_w.svg">
-<p>Sammarinese</p>
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_w.svg">
+
 </div>
 
 
@@ -242,6 +270,7 @@ If you would like to update your email preferences or unsubscribe, please <a hre
 <input class="wm_100" name="pwd_cfm" type="text" placeholder="Re-enter Password *">
 <button type="button" class="wm_100 btn_wine_red">Reset</button>
 </form>
+<div class="sm_slogan">vino &bull; wine</div>
 
 
 

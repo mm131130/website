@@ -1,8 +1,19 @@
 $( function() {
 
-$('body').prepend('<header class="m_v2019"></header>').append('<footer class="mm_v2018"></footer>');
 
-$('header.m_v2019').load('mm_head_03.html' , function(){
+    // $('body').prepend('<header class="m_v2019"></header>').append('<footer class="mm_v2018"></footer>');
+
+    // $('header.m_v2019').each( function(){
+
+
+
+
+
+
+
+    $('body').prepend('<header class="m_v2019"></header>').append('<footer class="mm_v2018"></footer>');
+
+    $('header.m_v2019').load('../html_mm/mm_head_03.html' , function(){
 
 var ts = $(this);
 

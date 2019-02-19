@@ -15,19 +15,16 @@
 <link media="all" rel="stylesheet" href="../css/size.css"/>
 <link media="all" rel="stylesheet" href="../css/sm_v01.css"/>
 <link media="all" rel="stylesheet" href="../css/sm_rwd.css"/>
+
+<link media="all" rel="stylesheet" href="../css/head_v03.css"/>
+
 <link media="all" rel="stylesheet" href="../css/mm_v2018.css"/>
 <style>
 
 body{
 		background-color:#faf5f0;
 		}
-.mw_1200 > *{
-	float:none !important;
-	display:inline-block;
-	padding:12px;
 
-	
-	}
 
 form{
 	padding:12px;
@@ -54,15 +51,25 @@ form p{
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/sm_v2018.js"></script>
 
+<script src="../jq/mm_load_head_foot-2.js"></script>
+
 
 <script>
 
-
 $(function() {
 
+	// $('body').prepend('<header class="m_v2019"></header>').append('<footer class="mm_v2018"></footer>');
+
+	// $('header.m_v2019').load('../html_mm/mm_head_03.html' );
 
 });
+
+
+
 </script>
+
+<script src="../jq/mm_load_head_foot-2.js"></script>
+
 </head>
 <body>
 
@@ -192,10 +199,15 @@ By clicking "Create an Account", you agree to our <a href="#">terms of service</
 
 
 
-<div class="vino_logo">
+<!-- <div class="vino_logo v1">
 <img src="http://mountain-mm.myweb.hinet.net/img_vino/ms_vino_logo_01_b.svg">
 <p>Sammarinese</p>
+</div> -->
+
+<div class="vino_logo v1">
+<img src="../img_vino/ms_vino_logo_02_b.svg">
 </div>
+
 <form>
 <div class="box_name">Reset Your Password</div> 
 <p>We've just received a password reset request for <strong>mountain@mountain.com</strong>. Please click the link below to reset your password.</p>

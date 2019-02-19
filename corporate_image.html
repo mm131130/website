@@ -20,7 +20,7 @@
 
 <link media="all" rel="stylesheet" href="css/head_foot_v01.css"/>
 <link media="all" rel="stylesheet" href="css/head_foot_v02.css"/>
-
+<link media="all" rel="stylesheet" href="css/head_v03.css"/>
 <link media="all" rel="stylesheet" href="css/home_page_slide_show.css"/>
 
 <link media="all" rel="stylesheet" href="css/ifchic_v01.css"/>
@@ -119,6 +119,15 @@
 	-webkit-animation:bg_color 9s linear infinite;
 	-moz-animation:bg_color 9s linear infinite;
 	animation:bg_color 9s linear infinite;
+
+
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+
+    margin-bottom: 120px;
 }
 .animation_sun_moon .img_parking_text,
 .animation_sun_moon .img_cloud,
@@ -129,15 +138,22 @@
 	
 	top:50%;
 	left:50%;
-	width:155px;
+	/* width:155px; */
+
+	width: auto;
 	height:auto;
 }
+
+
+
 .img_parking_text{
-	width:72px !important;	
+
+
+
 	z-index:400;
-	-webkit-transform:translate(-36px,-17px) !important;
-	-moz-transform:translate(-36px,-17px) !important;	
-	transform:translate(-36px,-17px) !important;
+	-webkit-transform:translate(-50%, 81px) !important;
+	-moz-transform:translate(-50%, 81px) !important;	
+	transform:translate(-50%, 81px) !important;
 	}
 .img_cloud{
 	z-index:300;
@@ -149,10 +165,10 @@
 .img_shadow{
 	opacity:1;
 	z-index:50;
-	-webkit-transform:translate(-88px,-114px) !important;
-	-moz-transform:translate(-88px,-114px) !important;
-	-ms-transform:translate(-88px,-114px) !important;
-	transform:translate(-88px,-114px) !important;
+	-webkit-transform:translate(-175px,-114px) !important;
+	-moz-transform:translate(-175px,-114px) !important;
+	-ms-transform:translate(-175px,-114px) !important;
+	transform:translate(-175px,-114px) !important;
 	
 	-webkit-animation:opacity_shadow 9s linear infinite;
 	-moz-animation:opacity_shadow 9s linear infinite;
@@ -160,15 +176,14 @@
 	}
 
 .img_parking_box{
-	
-	width:171px !important;
+
 	
 	opacity:1;
 	z-index:100;
-	-webkit-transform:translate(-100px,-139px) !important;
-		-moz-transform:translate(-100px,-139px) !important;
-			-ms-transform:translate(-100px,-139px) !important;	
-	transform:translate(-100px,-139px) !important;
+	-webkit-transform:translate(-50% , -139px) !important;
+		-moz-transform:translate(-50% , -139px) !important;
+			-ms-transform:translate(-50% , -139px) !important;	
+	transform:translate(-50% , -139px) !important;
 	
 	}
 .animation_sun_moon .bg_img_c{
@@ -185,53 +200,71 @@
 
 
 
-
-
-
-
-
-
-
-
 .sun_moon{
 	position:absolute;
 	z-index:200;
 	
-	bottom:0;
+	top:100%;
 	left:50%;
-    margin-bottom: -190px;
-    margin-left: -25px;
 
-	width:56px;
+/*     margin-bottom: -190px;
+    margin-left: -25px; */
+
+	width:900px;
+
+	height: 90px;
+
 	-webkit-animation:sun_moon 9s linear infinite;
 	-moz-animation:sun_moon 9s linear infinite;
 	animation:sun_moon 9s linear infinite;
 
-/* 	background-color: #fff; */
+	/* background-color: #fff; */
+
+	-webkit-transform: rotate(0deg) translate(-50% , 0%) rotate(0deg);
+		-moz-transform: rotate(0deg) translate(-50% , 0%) rotate(0deg);
+			-ms-transform: rotate(0deg) translate(-50% , 0%) rotate(0deg);
+				transform: rotate(0deg) translate(-50% , 0%) rotate(0deg);
+
+
+				text-align: left;
+
 	}
 .sun_moon img{
 	position: static;
 	
-	width:56px;
+	width:90px;
 	height:auto;
 	transform:none;
 	}
 .sun_moon img:first-child{
+
+
 	
-	margin-bottom:450px;
+
 	
 	}
 .sun_moon img:last-child{
-	-webkit-animation:sun_moon 9s linear infinite;
-	-moz-animation:sun_moon 9s linear infinite;
-	animation:sun_moon 9s linear infinite;
+	-webkit-animation:rotate_365 9s linear infinite;
+	-moz-animation:rotate_365 9s linear infinite;
+	animation:rotate_365 9s linear infinite;
 
-	float:right;
+	float: right;
 	}
 	
 	
 
 @keyframes sun_moon { 
+100% {
+	-webkit-transform: rotate(0deg) translate(-50% , 0%) rotate(360deg);
+		-moz-transform: rotate(0deg) translate(-50% , 0%) rotate(360deg);
+			-ms-transform: rotate(0deg) translate(-50% , 0%) rotate(360deg);
+				transform: rotate(0deg) translate(-50% , 0%) rotate(360deg);
+}
+
+}
+
+
+@keyframes rotate_365 { 
 100% {
 	-webkit-transform: rotate(360deg);
 		-moz-transform: rotate(360deg);
@@ -240,6 +273,8 @@
 }
 
 }
+
+
 @keyframes bg_color { 
 50% {
 	background-color:#1b2b43;
@@ -356,7 +391,10 @@ $(function() {
 var wall_paper_box ='';
 var boxN = 1;
 
-while(boxN <= 152){
+
+
+
+while(boxN <= 155){
 
 var p_num = boxN;
 
@@ -364,10 +402,11 @@ var p_num = boxN;
 		p_num = '0'+ boxN;
 	}
 
-wall_paper_box += '<div><div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div></div>';
+wall_paper_box += '<div class="parking_img_box"><img src="img_parking/20180711/p' + p_num + '.jpg"></div>';
 
 boxN++;
 }
+
 
 $('.jq_hw_num_c').empty().prepend(wall_paper_box);
 
@@ -382,11 +421,11 @@ $('.jq_hw_num_c').empty().prepend(wall_paper_box);
 <p>html<span>/</span>css<span>/</span>rwd</p>
 </div>
 
-<div class="mw_1200 page_corporate">
+<!-- <div class="mw_1200 page_corporate">
 
-<div>
+<div> -->
 
-<div class="parking_img_box animation_sun_moon">
+<div class="mw_1200 parking_img_box animation_sun_moon ">
 
 <img class="img_parking_text" src="img_parking/parking_text.png">
 <img class="img_cloud" src="http://mountain-mm.myweb.hinet.net/img_parking/cloud_p_01.png">
@@ -401,13 +440,15 @@ $('.jq_hw_num_c').empty().prepend(wall_paper_box);
 
 </div>
 
+
+
+<!-- </div>
 </div>
-</div>
+ -->
 
 
 
-
-<div class="page_corporate jq_hw_num_c">
+<div class="mw_1200 page_corporate jq_hw_num_c ">
 
 
 <div>

@@ -1,6 +1,6 @@
 /* v20180125 add */
 	
-header.mm_v2018{
+/* header.mm_v2018{
 	display:block;
 	clear:both;	
 	position:fixed;
@@ -20,7 +20,7 @@ header.mm_v2018{
 	margin:0 auto;
 	
 		border-bottom:1px #e1e1e1 solid;
-	}
+	} */
 	
 	
 footer.mm_v2018{
@@ -33,13 +33,26 @@ footer.mm_v2018 .img_w{
 	}
 	
 	
-.mm_nav{
+/* .mm_nav{
 	position:relative;
+	text-align: right;
 	}
+ */
+
+.mm_nav .mm_logo_E{
+	float: left;
+}
+
+
+
+/* 
+
 .mm_nav li{
 	padding:0;
 	list-style:none;
 	}	
+
+
 .mm_nav > li{
 	position:static;
 	display:inline-block;
@@ -78,24 +91,15 @@ footer.mm_v2018 .img_w{
 	color:#000;
 	padding:13px 0;
 	}		
-	
 .mm_nav div a{
 
 	}	
-	
-	
-	
-
 .mm_nav .bold{
-
 	font-size:12px;
 	line-height:24px;	
 	font-family:Arial, sans-serif;
 	color:#656d78;		
 	}
-	
-	
-	
 .mm_nav a:hover{
 	color:#e9573f;
 	}		
@@ -113,9 +117,9 @@ footer.mm_v2018 .img_w{
 .mobile_btn:hover{
 	background-position-y:-245px;
 	}	
-	
+	 */
 
-	
+/* 	
 	
 .num_boo{
 
@@ -123,19 +127,7 @@ footer.mm_v2018 .img_w{
 
 
 .num_boo span{
-	/*
-		display:inline-block;
-	position:relative;
-	padding-right:46px !important;
-	
-	position:absolute;
-	top:50%;
-	right:18px;
-	
-	transform:translateY(-50%);
-	*/
-	
-	
+
 	display:inline-block;
 	font-size: 12px;
 	
@@ -160,6 +152,8 @@ footer.mm_v2018 .img_w{
 	background-color:#e9573f;
 }	
 		
+
+
 .mm_nav ul{
 	overflow:hidden;
 	
@@ -174,24 +168,20 @@ footer.mm_v2018 .img_w{
 	
 	padding:18px;
 	background-color:#FFF;
-	/**/
+
 	border-top:1px #e1e1e1 solid;
 	border-bottom:1px #333333 solid;
 
 	background-color:#FFF;
+
+
+
 	}				
 .mm_nav li li{
 	float:left;
 	}			
 	
-	
-	
-.this_page{
-
-	/*
-	border-bottom:1px #e1e1e1 solid;*/
-	}
-
+*/
 
 /* logo box slide show */
 
@@ -455,6 +445,33 @@ footer.mm_v2018 .img_w{
 	height:14px;
 	}				
 
+
+
+.mm_logo_E,
+.mm_logo_E a{
+	padding: 0 !important;
+	}
+.mm_logo_E{
+	padding-right:18px !important;
+	}
+.mm_logo_E span:first-child{
+	display:inline-block;
+	padding: 0 !important;
+	width:60px;
+	height:60px;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
+	background-size:200%;
+	}	
+.mm_logo_E span:last-child{
+	display:inline-block;
+	padding: 0 !important;
+	width:108px;
+	height:60px;
+	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
+	background-size:100% auto;
+	background-position: center center;
+	}	
+
 	
 	
 .banner_box{
@@ -535,21 +552,54 @@ footer.mm_v2018 .img_w{
 	
 	
 
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
 .mm_nav > li:hover > ul{
 	display:block;
 	}
-}
-@media screen and (max-width:767px){
+} */
 
-	
-	/*
-.brand_design > div:nth-child(2){
-	border:none;
-	}	
-	
-	*/
-	
+
+
+@media screen and (max-width:767px){
+/* .mm_nav > *:nth-child(3){
+	border-top: 1px #e9573f solid;
+	}
+
+
+.mm_nav > .mobile_btn{
+	overflow: hidden;
+	position: relative;
+
+
+	}
+
+.mm_nav > .mobile_btn.open:before{
+	position: absolute;
+	left: 50%;
+
+	bottom: 0;
+
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: #e9573f;
+
+	transform: rotate(0) translate(-50%, 50%) rotate(45deg);
+	}
+
+
+
+.mm_nav .mm_logo_E{
+	float: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	} */
+/* .mm_logo_E span:last-child{
+	float: left;
+}
+
+
 .mm_nav > li{
 	display:none;
 	}
@@ -568,7 +618,7 @@ footer.mm_v2018 .img_w{
 	}	
 .mm_nav li li.w_25{
 	width:100%;
-	}
+	} */
 }
 
 @media screen and (max-width:1024px){
@@ -633,14 +683,14 @@ footer.mm_v2018 .img_w{
 .page_name{
 	display: block;
 	font-size: 36px;
-	line-height: 36px;
+	/* line-height: 36px; */
 	font-family: roboto_thin;
 	color: #0f1329;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0;
 	word-spacing: 0.12em;
-	padding:90px 0 30px 0;  	
+	padding:99px 0 30px 0;  	
 	}
 .page_name h2{ 
 	font-size:24px;
