@@ -72,8 +72,10 @@ body{
 	
 	
 .mm_about h4{
+
+	opacity: 0.45;
 	
-	color:#999;
+	color:#000;
 	
 	text-transform:uppercase;
 	
@@ -86,23 +88,16 @@ body{
 	}
 
 .mm_about p{
-	
 	font-size:24px;
-	line-height:30px;
-	
-
-	
-	
+	line-height:30px;	
+		color:#000;
 	}
 .mm_about a{
 	display:block;
-	
 	font-size:24px;
 	line-height:30px;
 	font-family:roboto_light;
-	color:#FFF;
-	
-	
+		color:#000;
 	}
 .mm_about a:hover{	
     color: #e9573f;
@@ -117,11 +112,8 @@ body{
 	width:66.666666%;
 	
 	margin:0 3% 0 30.333333%;
-	}	
-	
-	
-	
 	}
+}
 
 /* foot dark_night */
 .mm_sign{
@@ -136,6 +128,97 @@ body{
 .mm_logo_B {
     background-position: -72px -12px;
 	}	
+
+
+
+
+.bg_color{
+  bottom: -21%;
+  z-index: 200;
+  opacity: 0.9;
+
+  -webkit-animation: bg_color 12s ease-in-out infinite;
+  -moz-animation: bg_color 12s ease-in-out infinite;  
+  animation: bg_color 12s ease-in-out infinite;
+}
+
+
+@keyframes bg_color{ 
+0% {
+  background-color: #ed5565;
+  }
+10% {
+  background-color: #fc6e51;
+  }
+20% {
+  background-color: #ffce54;
+  }
+30% {
+  background-color: #8cc152;
+  }
+40% {
+  background-color: #48cfad;
+  }
+50% {
+  background-color: #3bafda;
+  }
+60% {
+  background-color: #4a89dc;
+  }
+70% {
+  background-color: #967adc;
+  }
+80% {
+  background-color: #ec87c0;
+  }
+90% {
+  background-color: #d770ad;
+  }
+100% {
+  background-color: #ed5565;
+  }
+
+
+}
+
+
+@-webkit-keyframes bg_color { 
+0% {
+  background-color: #ed5565;
+  }
+10% {
+  background-color: #fc6e51;
+  }
+20% {
+  background-color: #ffce54;
+  }
+30% {
+  background-color: #8cc152;
+  }
+40% {
+  background-color: #48cfad;
+  }
+50% {
+  background-color: #3bafda;
+  }
+60% {
+  background-color: #4a89dc;
+  }
+70% {
+  background-color: #967adc;
+  }
+80% {
+  background-color: #ec87c0;
+  }
+90% {
+  background-color: #d770ad;
+  }
+100% {
+  background-color: #ed5565;
+  }
+
+}
+
 </style>
 
 
@@ -162,13 +245,13 @@ $(function(){
 
 </head>
 
-<body>
+<body class="bg_color">
 
 
 
  
 
-<div class="mw_1200 dark_night mm_about">
+<div class="mw_1200 mm_about">
 
 <div>
 <h4>Hello!</h4>
