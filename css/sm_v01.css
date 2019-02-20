@@ -33,15 +33,24 @@
 	background-color:#3f0514;
 	}
 .drink_night form .p_remove{
-	top:-17px;
+
+
+	top:-15px;
 	right:12px;
 	
-	width:34px;
-	height:34px;
 	
-	border: 2px #981643 solid;
+
+/* 	
+border: 2px #981643 solid;
+background-position-y:-62px;		
+	background-position-x:-712px;	
+ */
 	}	
-	
+.drink_night .p_remove:hover{
+	background-position-y:-160px;
+	background-color: #981643;
+	}	
+
 
 .drink_night p{
 	color:#fbfbf2 !important;
@@ -113,7 +122,7 @@
 	/*border:1px #e4e0b9 solid;*/
 	border-radius:50%;
 
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);	
+	background-image:url(../img_vino/sm_icon_v01.svg);	
 	background-position-y:-60px;		
 	background-position-x:-710px;	
 	}
@@ -223,16 +232,21 @@
 * .click_icon{
 	background-position-y:-105px !important;	
 	}
-.click_icon:hover,
+
 .sm_radio_box:hover .click_icon,
 .sm_check_box:hover .click_icon{
 	background-position-y:-155px !important;		
 	}
+.click_icon:hover{
+	background-position-y:-55px !important;		
+	}
+	
+	
+	
 	
 	
 .my_wish_icon{
 	display:block;
-	
 	position:absolute;
 	top:0;
 	right:0;
@@ -247,7 +261,6 @@
 	background-position-x:-405px;	
 	}
 .my_wish_icon:hover{
-
 	background-position-y:-55px;		
 	}
 
@@ -1031,46 +1044,13 @@ input,
 	margin-bottom:3px; 
 }
 	
-/* Main title */
-
-
-.vino_logo{
-	text-align:center;
-	width:100%;
-	padding:11px 0;
-	}
-.vino_logo img{
-	width:76px;
-	}
-.vino_logo div{
-	display:inline-block;
-	font-size:150px;
-	line-height:120px;
-	font-family: modern_display;
-	color:#170003;
-	padding-top:40px;
-	}
-.vino_logo p{
-	display:block;
-	font-size:16px;
-	line-height:18px;
-    font-family: roboto_light;
-	color:#170003;
-	text-transform:uppercase;
-	letter-spacing:0.15em;
-	padding-top:0;
-	padding-bottom:10px;
-	}	
 	
-.sm_nav .vino_logo{
-	border-top:1px #dfdfe1 solid;	
-	}
+	
 	
 	
 footer{
 	display:block;
 	clear:both;
-	
 	position:relative;
 	bottom:0;
 	/*
@@ -1084,6 +1064,14 @@ footer{
 footer > div{
 	border-top:1px #dfdfe1 solid;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 .sm_copyright{
 	font-size:12px;
 	color:#999;
@@ -1091,23 +1079,7 @@ footer > div{
 	padding:25px 12px;
 	
 	}	
-.vino_logo.v02{
-	display:inline-block;
-	float:right;
-	width:auto;
-	padding: 11px 12px;
-	}
-
-.vino_logo.v02 img{
-	width:46px;
-	}
 	
-.vino_logo.v02 p{
-	display:inline-block;
-	font-size:12px;
-	font-family: roboto_regular;
-	padding:14px 0;
-}
 	
 	
 .sm_note_box{
@@ -1195,9 +1167,11 @@ header{
 	float:right;
 	position:relative;
 	display:inline-block;
-	font-size:14px;
+	font-size:12px;
 	line-height:24px;
 	color:#3f0514;
+	
+	text-transform:uppercase;
 	padding:13px 12px;	
 	}	
 .sm_nav > *:not(:first-child):not(:last-child):after{
@@ -1271,7 +1245,7 @@ header{
 .b_my_wish,
 .b_shopping_bag{
 	display:inline-block;
-	font-size:14px;
+	font-size:12px;
 	line-height:18px;
 	padding:16px 12px 16px 38px;
 	position:relative;
@@ -1334,6 +1308,74 @@ header{
 .num_zero .sm_num_boo{
 	display:none;
 	}
+	
+
+
+
+
+
+	
+	
+	
+	
+.vino_logo{
+	display:inline-block !important;
+	float:none;
+	width:auto;
+	padding:2px 12px;
+	}
+.vino_logo img{
+	width:81px;
+	height:81px;
+	}
+.vino_logo p{
+	font-size:16px;
+	line-height:18px;
+    font-family: roboto_light;
+	color:#000;
+	text-transform:uppercase;
+	letter-spacing:14px;
+	letter-spacing: 0.72em;
+	margin-right: -14px;
+	}
+.vino_logo *{
+	vertical-align:middle;
+	display:inline-block;
+	font-size:12px;
+	line-height: 18px;
+	font-family: roboto_regular;
+	color: #170003;
+	text-transform: uppercase;	
+	}
+.vino_logo.v1{
+	text-align:center;
+	margin:0 auto;
+	padding: 24px 0;
+	width:100%;
+	}	
+.vino_logo.v1 img{
+	display:inline-block;
+	width:auto;
+	height:54px;
+	}	
+	
+
+
+
+footer > div > *{
+	vertical-align:middle;
+	}
+footer .vino_logo{
+	padding:11px;
+	float:right;
+	}
+	
+	
+	
+	
+	
+	
+	
 .left_menu{
 	}
 
@@ -1359,7 +1401,7 @@ a:hover color:#981643;
 	position:relative;
 	display:block;
 	clear: both;
-	font-size:14px;
+	font-size:12px;
 	line-height:18px;
 	padding:16px 12px;
 }
@@ -1606,7 +1648,8 @@ border-color:#e4e0b9 transparent;
 	display:inline-block;
 	width:auto;
 	height:240px;
-transition:all .11s ease-in-out;
+	/*
+	transition:all .03s ease-in-out;*/
 	padding:0;
 	}
 .vino_info > * span{
@@ -1655,7 +1698,7 @@ transition:all .11s ease-in-out;
 	width:50px;
 	height:50px;
 	background-image:url(http://mountain-mm.myweb.hinet.net/img_vino/sm_icon_v01.svg);
-	background-position-x:-450px;
+	background-position-x:-600px;
 	background-position-y:-100px;
 
 	}
