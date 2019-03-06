@@ -1,0 +1,3061 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+<link media="all" rel="stylesheet" href="../css-all/all.css"/>
+<link media="all" rel="stylesheet" href="../css-all/size.css"/>
+
+<link media="all" rel="stylesheet" href="../css-all/fonts.css"/>
+<link media="all" rel="stylesheet" href="../css-if/btn.css"/>
+<link media="all" rel="stylesheet" href="../css-if/2019_1.css"/>
+
+
+<style>
+
+/* 
+header
+    m_v2019
+        logo-M-mountain
+        three_line
+        mm_nav 
+*/
+
+
+body{
+    background-image:url(../img-m/bg_01.jpg);
+    background-repeat:repeat !important;
+    background-color: #35373c;
+}
+
+
+
+
+.open_close{
+    overflow: hidden;
+    position: fixed;
+
+    top: 83px;
+
+    top: calc( 33.333333% - 61px );
+
+    left: 11px;
+
+    z-index: 1300;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+
+
+    border-radius: 50%;
+
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out; 
+
+/* transform: rotate(180deg); */
+}
+
+
+.open_close .line_A,
+.open_close .line_B{
+    position: absolute;
+
+top: 50%;
+left: 50%;
+
+    display: block;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #fff;
+-webkit-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out; 
+
+}
+
+
+.open_close .line_A{
+    -webkit-transform: rotate(0deg) translate(-50%, -6px) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -6px) rotate(45deg);
+    transform: rotate(0deg) translate(-50%, -6px) rotate(45deg);
+}
+.open_close .line_B{
+    -webkit-transform: rotate(0deg) translate(-50%, 6px) rotate(-45deg);
+    -ms-transform: rotate(0deg) translate(-50%, 6px) rotate(-45deg);
+    transform: rotate(0deg) translate(-50%, 6px) rotate(-45deg);
+}
+
+
+.open_close.baby_come_back{
+
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);  
+    transform: rotate(180deg);
+
+    -webkit-animation:knock 0.45s ease-in-out ;
+    -moz-animation:knock 0.45s ease-in-out ;
+    animation:knock 0.45s ease-in-out ;
+}
+
+
+@keyframes knock { 
+
+50% {
+
+    left: 36px;
+} 
+    
+66% {
+    left:0px;
+    
+    }       
+}
+
+
+
+
+
+.open_close.baby_come_back .line_A,
+.open_close.baby_come_back .line_B{
+    width: 30px;
+    /* height: 2px; */
+}
+
+.open_close.baby_come_back .line_A{
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);    
+transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+}
+.open_close.baby_come_back .line_B{
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);    
+transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.kami{
+    background-color: #2d2d2f;
+}
+
+.content_menu{
+  position: fixed;
+
+    top: 144px;
+    top: calc( 33.333333%  );
+    /* left: 72px; */
+
+    z-index: 1200;
+
+    max-width: 250px;
+    width: 100%;
+    /* height: 300px; */  
+   left:0;
+
+
+-webkit-transform:translate(-100%, 0%);
+-ms-transform:translate(-100%, 0%);    
+transform:translate(-100%, 0%); 
+
+-webkit-transition: all 0.27s ease-in-out;
+-o-transition: all 0.27s ease-in-out;
+transition: all 0.27s ease-in-out; 
+
+transition-delay: 0.30s;
+-moz-transition-delay: 0.30s; /* Firefox 4 */
+-webkit-transition-delay: 0.30s; /* Safari 和 Chrome */
+-o-transition-delay: 0.30s; /* Opera */
+
+}
+
+
+.content_menu.come_back{
+ left: 72px;
+
+/*  height: 600px;
+
+ margin-top: -200px;
+ */
+
+webkit-transform:translate(0%, 0%);
+-ms-transform:translate(0%, 0%);    
+transform:translate(0%, 0%); 
+
+/*     -webkit-animation:come_back 0.45s ease-in-out forwards;
+    -moz-animation:come_back 0.45s ease-in-out forwards;
+    animation:come_back 0.45s ease-in-out forwards; */
+}
+.content_menu a {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100%;
+    min-height: 50px;
+
+    color: #000;
+
+    background-color: #fff;
+
+    -webkit-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+}
+.content_menu a span{
+    display: inline-block;
+    font-size: 14px;
+    color: #7f7a75;
+    line-height:18px;
+    -webkit-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+
+}
+.content_menu a:hover span{
+    color:red;
+}
+.content_menu a .num {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+
+    text-align: center;
+
+    width: 50px;
+}
+.content_menu a .txt {
+ padding:16px 16px 16px 50px;
+}
+
+.content_menu .tag_who {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.content_menu .tag_who{
+    color: #fff;
+    background-color: red ;
+}
+.content_menu .tag_who span{
+    color: #fff;
+}
+.content_menu .tag_who:hover{
+    background-color: #000;
+}
+.content_menu .tag_who:hover span{
+    color: #fff;
+}
+
+
+
+
+
+@keyframes come_back { 
+0% {
+     left: 0px;   
+    -webkit-transform:translate(-100%, 0%);
+    -ms-transform:translate(-100%, 0%);    
+    transform:translate(-100%, 0%); 
+} 
+50% {
+    left: 0px;    
+    -webkit-transform:translate(-100%, 0%);
+    -ms-transform:translate(-100%, 0%);    
+    transform:translate(-100%, 0%); 
+} 
+100% {
+    left:72px;
+    -webkit-transform:translate(0%, 0%);
+    -ms-transform:translate(0%, 0%);    
+    transform:translate(0%, 0%); 
+    
+    }       
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+.open_close{
+    left: -72px;
+}
+.content_menu{
+   left:0 !important;
+-webkit-transform:translate(-100%, 0%);
+-ms-transform:translate(-100%, 0%);    
+transform:translate(-100%, 0%) !important; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.screen_size .open_close,
+.screen_size .content_menu{
+
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.screen_size{
+    width: 100%;
+min-height: 100vh;
+    height: 100%;
+    border:2px #000 solid;
+/*     background-color: red;
+
+    background-color: #fff; */
+
+    overflow: hidden;
+    position: relative;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    background-color: #fff;
+    border-bottom:1px #e1e1e1 solid;
+}
+.screen_size header{
+    position: absolute;
+}
+.m_v2019{
+
+    z-index: 1200;
+}
+
+.m_v2019 > div{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.three_line{
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+}
+.three_line .line{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+
+    -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
+    transition: width , height , 0.3s ease-in-out , -webkit-transform;
+    -o-transition: transform , width , height , 0.3s ease-in-out;
+    transition: transform , width , height , 0.3s ease-in-out;
+    transition: transform , width , height , 0.3s ease-in-out , -webkit-transform; 
+
+    transition: transform , width , height , 0.3s ease-in-out; 
+
+}
+.three_line .line._a{
+    -webkit-transform: translate(-50%, calc(-50% - 6px));
+    -ms-transform: translate(-50%, calc(-50% - 6px));
+    transform: translate(-50%, calc(-50% - 6px));
+}
+.three_line .line._b{
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.three_line .line._c{
+    -webkit-transform: translate(-50%, calc(-50% + 6px));
+    -ms-transform: translate(-50%, calc(-50% + 6px));
+    transform: translate(-50%, calc(-50% + 6px));
+}
+.three_line:hover .line{
+    background-color:#e9573f;
+}
+
+
+
+.three_line.click .line._a{
+     width: 18px;
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+}
+.three_line.click .line._b{
+    width: 0;
+}
+.three_line.click .line._c{
+       width: 18px;
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+.mm_nav{
+    display: inline-block;
+    background-color: #fff;
+    transition: all 0.27s ease-in-out;
+}
+.mm_nav li{
+    padding:0;
+    }   
+.mm_nav > li{
+    display: inline-block;
+    }  
+.mm_nav li div,
+.mm_nav li a{
+    display: block;
+    font-size:14px;
+    line-height: 18px;
+    font-family:roboto_Regular;
+    color:#000;
+    padding:16px; 
+    width: 100%;  
+    }   
+.mm_nav > li > a{
+    overflow: hidden;
+    position: relative;
+    font-size:12px;
+    line-height: 24px;
+    text-transform:uppercase;
+    padding:18px 16px;
+    }
+.mm_nav .bold{
+    font-size:12px;  
+    font-family:Arial, sans-serif;
+    color:#656d78;      
+    }
+.mm_nav a:hover{
+    color:#e9573f !important;
+    }
+.mm_nav ul{
+    position:absolute;
+    top:100%;
+
+    left:0;
+    right: 0;
+
+    z-index:90;
+
+    display: none;
+
+    -webkit-box-pack: center ;
+    -ms-flex-pack: center ;
+    justify-content: center ;
+    -webkit-box-align: stretch ;
+    -ms-flex-align: stretch ;
+    align-items: stretch ;
+
+    padding:0 0 0 0;
+    border-top:1px #e1e1e1 solid;
+    border-bottom:1px #333333 solid;
+    background-color:#FFF;
+
+
+    max-height: 100vh;
+    height:auto;
+
+       
+/*     -webkit-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s; */
+
+
+    /* height: 0; */
+    /* overflow: hidden; */
+
+    } 
+
+
+
+
+
+ul ul li {
+    display:block;
+    text-align:left;
+    padding:9px 0;
+}   
+ul ul li{
+    min-width: 150px;
+    width: 33.333333%;
+}
+ul ul li:only-child,
+ul ul li:first-child:nth-last-child(1){
+   
+}
+ul ul li:only-child *,
+ul ul li:first-child:nth-last-child(1) *{
+    text-align: center;
+}
+
+
+ul ul li:first-child:nth-last-child(2),
+ul ul li:first-child:nth-last-child(2)~li{
+ 
+}
+
+ul ul li:first-child:nth-last-child(3),
+ul ul li:first-child:nth-last-child(3)~li{
+
+}
+
+
+ul ul li:first-child:nth-last-child(4),
+ul ul li:first-child:nth-last-child(4)~li{
+    width: 25%;
+    /* background-color:#8cc152; */
+}
+
+ul ul li:first-child:nth-last-child(5),
+ul ul li:first-child:nth-last-child(5)~li{
+    width:20%;
+}
+
+ul ul li:first-child:nth-last-child(6),
+ul ul li:first-child:nth-last-child(6)~li{
+    width:16.666666%;
+   
+}
+ul ul li:first-child:nth-last-child(7),
+ul ul li:first-child:nth-last-child(7)~li{
+    width: 14.285714%;
+}
+
+ul ul li:first-child:nth-last-child(8),
+ul ul li:first-child:nth-last-child(8)~li{
+    width: 12.5%;
+}
+
+ul ul li:first-child:nth-last-child(9),
+ul ul li:first-child:nth-last-child(9)~li{
+    width: 11.111111%;
+}
+
+
+
+
+
+
+.new_in{
+    display: none;
+
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 55px);
+
+    font-size: 27px;
+    line-height: 45px;
+
+    font-family:modern_display;
+
+    color:#e9573f;
+
+    text-align: center;
+    width: 50px;
+
+
+    padding-top: 5px;
+}
+.new_in.num_boo span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e9573f;
+}
+.new_in:hover{
+    color: #000 !important;
+}
+.new_in:hover span{
+    background-color: #000;
+}
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+ul > li:hover ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+}
+
+
+@media screen and (max-width:1023px) {
+
+.new_in,
+.m_v2019 > div{
+    display: block;
+}
+
+.m_v2019{
+    display: block;
+    text-align: center;
+    /* background-color: red; */
+}
+.logo-M-mountain{
+    display: inline-block !important;
+}
+
+.three_line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    }
+
+.mm_nav{
+    position: fixed;
+
+    top: 60px;
+
+    left:0;
+
+    text-align: left;
+
+    border-top:1px #e1e1e1 solid;
+    border-right:1px #e1e1e1 solid;
+    border-bottom:1px #e1e1e1 solid;
+
+    margin-left:-100%;
+
+    /* min-height: auto; */
+
+        max-height:calc(100vh - 60px);
+
+    width:100%;
+    min-width: 300px;
+    max-width: 50% ;
+
+    overflow-y: auto;
+}
+
+
+.screen_size .mm_nav{
+    position: absolute;
+
+}
+
+
+/* .mm_nav ul{
+
+    display:none;
+    position: static !important;
+    max-height: 100% ;
+    height: 100% ;
+}
+ */
+
+.mm_nav ul{
+    display: none;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: none;
+    max-height:none;
+}
+
+/* jQ */
+
+*[class*="_nav"] .open_menu{
+    display: block;
+}
+
+
+
+
+
+.mm_nav > li{
+    display: block;
+    border-bottom:1px #656d78 solid;
+}
+.mm_nav li ul{
+    border:none;
+}
+.mm_nav ul li{
+    border-top:1px #e1e1e1 solid;
+    width: 100% !important;
+}
+.mm_nav ul li .bold{
+    padding-left: 18px;
+}
+.mm_nav ul li a{
+    padding-left: 27px;
+}
+.mm_nav ul li:first-child{
+    padding-top: 10px;
+}
+.mm_nav ul li:last-child{  
+    padding-bottom: 10px;
+}
+
+
+}
+
+
+
+/* jQ */
+*[class*="_nav"].margin_change{
+    /* display: */
+    margin-left:0% ; 
+}
+
+
+
+
+
+
+
+
+
+.logo-M-mountain{
+    display: block;
+
+    background: url('../img-m/m_mountain_b_v1.svg');
+    background-position-y: 0px;
+    background-position-x: 0px;
+
+    background-size:auto 100%;
+
+    width: 216px;
+    height: 60px;
+
+    background-color: #fff;
+}
+.logo-M-mountain:hover{
+    background: url('../img-m/m_mountain_g_v1.svg');
+    background-position-y: 0px;
+    background-position-x: 0px;
+
+    background-size: auto 100%;
+}
+
+.logo-M-mountain > img{
+    width: auto;
+    height: 100%;
+
+}
+
+
+
+
+.logo-M-mountain.v2{
+    background: url('../img-m/m_mountain_b_v2.svg');
+    background-position-y: 0px;
+    background-position-x: 0px;
+    width: 230px;
+    height: 72px;
+}
+.logo-M-mountain.v2:hover{
+    background: url('../img-m/m_mountain_w_v2.svg');
+
+}
+
+
+
+
+
+/* .kami .logo-M-mountain.v2{
+    background: url('../img-m/m_mountain_w_v2.svg');
+}
+
+
+ */
+
+
+.logo_if_v1{
+    display: block;
+
+    background: url('../img-if/ifchic_v01.svg');
+
+    width: 108px;
+    height:37px;
+
+    background-size: auto 100%;
+    background-position: center center;
+    margin:9px;
+}
+.if_v2 .logo_if_v1{
+   height:60px;
+
+    background-size: 100% auto;
+
+    margin: 0;
+
+}
+
+
+
+@media screen and (max-width:1023px) {
+.logo-M-mountain{
+    background-position-y: -6px;
+    background-position-x: -72px;
+
+    background-size:auto 72px;
+    width: 188px;
+}
+.logo-M-mountain:hover{
+    background: url('../img-m/m_mountain_g_v1.svg');
+    background-position-y: -6px;
+    background-position-x: -72px;
+
+    background-size:auto 72px;
+
+}
+}
+
+
+
+
+
+.box{
+    border: 1px #000 solid;
+    height: 3000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.if_v1 > header{
+    border-bottom: 1px #C8C8C8 solid;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+}
+.top_white{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end ;    
+
+    height: 63px;
+}
+
+.top_white > *{
+}
+
+.top_white > *:last-child{
+    margin-left: auto;
+}
+
+.if_nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;    
+    -ms-flex-pack: center;    
+    justify-content: center;
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+}
+.if_nav .btn_box_A {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
+
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    justify-content: center;
+
+    border-bottom: 1px #969696 solid;
+    padding:0;
+}
+.if_nav .btn_box_A > a:after{
+    display: none;
+}
+
+.if_nav .btn_box_A .btn_s_r,
+.if_nav .btn_box_A .btn_my_account{
+    width: 100% !important;
+}
+
+.if_nav .btn_box_A .btn_shopping_bag,
+.if_nav .btn_box_A .btn_mywish,
+.if_nav .btn_box_A .btn_search{
+    display: inline-block !important;
+    width: 33.333333% !important;
+}
+
+
+
+
+
+.if_nav > li{
+    padding: 0;
+    border: 1px #e6e6e6 solid;
+    border-color: transparent;
+
+}
+.if_nav > li > a{
+    font-family: roboto_Regular;
+    color: #0f1329;
+}
+.if_nav a {
+    display: block;
+    
+    font-size: 12px;
+    line-height: 18px;
+    font-family: roboto_light;
+
+    text-transform: uppercase;
+
+    padding: 14px 12px 12px 12px;
+    width: auto;
+    text-align: center;
+}
+.if_nav > li > a {
+    position: relative;
+}
+.if_nav > li > a:before {
+
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+
+    width: auto;
+    height: 1px;
+    background-color: #fff;
+}
+.if_nav ul{
+    position:absolute;
+
+    top: 100%;
+    left:0;
+    right: 0;
+    z-index:1;
+
+    display: none;
+
+    -webkit-box-pack: center ;
+    -ms-flex-pack: center ;
+    justify-content: center ;
+    -webkit-box-align: stretch ;
+    -ms-flex-align: stretch ;
+    align-items: stretch ;
+
+    padding:0 0 0 0;
+
+    background-color:#FFF;
+
+
+    max-height: 100vh;
+    height:auto;
+
+    border-top: 1px #c8c8c8 solid;
+    border-bottom: 1px #c8c8c8 solid;
+
+    -webkit-box-shadow: 0px 2px 2px rgba(43,42,40,0.18), 0px 4px 4px rgba(43,42,40,0.135), 0px 6px 6px rgba(43,42,40,0.09);
+    -moz-box-shadow: 0px 2px 2px rgba(43,42,40,0.18), 0px 4px 4px rgba(43,42,40,0.135), 0px 6px 6px rgba(43,42,40,0.09);
+    box-shadow: 0px 2px 2px rgba(43,42,40,0.18), 0px 4px 4px rgba(43,42,40,0.135), 0px 6px 6px rgba(43,42,40,0.09);
+
+}
+
+.if_nav ul div,
+.links_bold {
+    display: block;
+    clear: both;
+
+
+    font-size: 12px !important;
+
+    font-family: roboto_Medium !important;   
+    color: #0f1329;
+
+    text-transform: uppercase !important;
+
+    padding: 9px 18px;
+}
+
+.if_nav ul a {
+    text-transform: none;
+
+    font-size: 14px;
+   
+    text-align: left;
+    padding: 9px 18px;
+}
+
+
+.top_blue {
+    overflow: hidden;
+    background-color: #0f1329;
+}
+.top_blue > div{
+    display: flex;
+     justify-content: space-between;
+}
+.top_blue *{
+    font-size: 12px;
+    line-height: 24px;
+    color: #969696; 
+}
+.top_blue strong,
+.top_blue a{
+    color: #fff;
+}
+
+.event_info_A {
+    display: block;
+    padding: 0 9px;
+}
+
+
+.btn_box_A {
+    display: block;
+    padding: 0 9px;
+    overflow: hidden;
+}
+.btn_box_A a span{
+    display: inline-block;
+}
+.btn_box_A > a:after {
+    display: inline-block;
+    content: 'I';
+    width: 24px;
+    color: #969696;
+    text-align: center;
+    opacity: 0.81;
+}
+.btn_box_A > a:last-child:after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.v1.btn_shopping_bag:before,
+.v1.btn_mywish:before,
+.v1.btn_search:before{
+    display: inline-block;
+    content:'\00a0';
+    width:26px;
+    height:24px;
+    background: url('../img-if/icon_2017.svg');
+    background-position-y: -1163px;
+}
+
+.v1.btn_mywish:before{
+    background-position-x: -162px;
+}
+.v1.btn_shopping_bag:before{
+    background-position-x: -412px;
+}
+.v1.btn_search:before{
+    background-position-x: -312px;
+}
+.v1.btn_shopping_bag:hover:before,
+.v1.btn_mywish:hover:before,
+.v1.btn_search:hover:before{
+    background-position-y: -1113px;
+}
+
+.v1.btn_shopping_bag:before,
+.v1.btn_mywish:before{
+    -webkit-transform: rotate(23.5deg);
+    -moz-transform: rotate(23.5deg);
+    transform: rotate(23.5deg);
+}
+
+.if_nav .v1.btn_shopping_bag:before,
+.if_nav .v1.btn_mywish:before,
+.if_nav .v1.btn_search:before{
+    background-position-y: -1063px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
+
+
+
+.v2[class^="btn_"]{
+     position: relative;   
+}
+.v2.btn_shopping_bag:before,
+.v2.btn_mywish:before,
+.v2.btn_search:before{
+
+
+    display: inline-block;
+    content:'\00a0';
+    width:60px;
+    height:60px;
+    background: url('../img-if/icon_2017.svg');
+    background-position-y: -1045px;
+}
+
+.v2.btn_mywish:before{
+    background-position-x: -245px;
+}
+.v2.btn_shopping_bag:before{
+    background-position-x: -445px;
+}
+.v2.btn_search:before{
+    background-position-x: -345px;
+}
+.v2.btn_shopping_bag:hover:before,
+.v2.btn_mywish:hover:before,
+.v2.btn_search:hover:before{
+    background-position-y: -1095px;
+}
+
+
+
+
+.v2[class^="btn_"] .num_boo{
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    font-size: 12px !important;
+        font-family: sans-serif;
+    font-style:normal;
+
+}
+.v2[class^="btn_"]:hover .num_boo{
+
+    background-color:#a97962;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.three_line{
+    display: none;
+    background: none;
+}
+
+.event_info_B{
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    float: right;
+    color: #969696;
+    text-align: left;
+
+
+    max-width: 270px;
+    width:100%;
+    min-height: 60px;
+    padding: 0 9px 0 60px;
+    
+}
+.event_info_B p{
+ 
+    font-size: 12px;
+    line-height: 14px;
+    font-family: roboto_Regular;
+    padding: 0;
+}
+.btn_promo_info {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+
+    width: 36px;
+    height: 36px;
+
+
+    font-size: 14px;
+    line-height: 36px;
+    font-family: roboto_Regular;
+    color: #FFF;
+    text-align: center;
+
+    -webkit-transform: rotate(0deg) translate(-50% , -50%) rotate(9deg);
+    -moz-transform: rotate(0deg) translate(-50% , -50%) rotate(9deg);
+    transform: rotate(0deg) translate(-50% , -50%) rotate(9deg);
+
+
+    transition: transform 0.27s ease-in-out;
+
+    background-color: #0f1329; 
+
+    border-radius: 50%;
+}
+.btn_promo_info:hover {
+    color: #fff !important;
+    background-color: #a97962;
+    
+    -webkit-transform: rotate(0deg) translate(-50% , -50%) rotate(-9deg);
+    -moz-transform: rotate(0deg) translate(-50% , -50%) rotate(-9deg);   
+    transform: rotate(0deg) translate(-50% , -50%) rotate(-9deg);
+}
+
+
+
+
+@media screen and (max-width:1023px) {
+
+.btn_promo_info {
+    -webkit-transform: rotate(0deg) translate(-50% , -50%) rotate(-12deg);
+    -moz-transform: rotate(0deg) translate(-50% , -50%) rotate(-12deg);   
+    transform: rotate(0deg) translate(-50% , -50%) rotate(-12deg);
+}
+.btn_promo_info:hover {
+
+    -webkit-transform: rotate(0deg) translate(-50% , -50%) rotate(12deg);
+    -moz-transform: rotate(0deg) translate(-50% , -50%) rotate(12deg);   
+    transform: rotate(0deg) translate(-50% , -50%) rotate(12deg);
+}
+
+}
+
+
+
+
+
+.event_info_B .btn_X{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.offer_info_box {
+    display: none;
+    position: absolute;
+ 
+    z-index: 300;
+    width: 270px;
+
+    color: #fff;
+    text-align: left;
+    padding: 18px;
+    background-color: #a97962;
+    background-color: #0f1329;
+
+/*  
+    -webkit-box-shadow: 0px 2px 2px rgba(43,42,40,0.3), 0px 4px 4px rgba(43,42,40,0.2), 0px 6px 6px rgba(43,42,40,0.1);
+    -moz-box-shadow: 0px 2px 2px rgba(43,42,40,0.3), 0px 4px 4px rgba(43,42,40,0.2), 0px 6px 6px rgba(43,42,40,0.1);
+    box-shadow: 
+    0px 2px 2px rgba(43,42,40,0.3), 
+    0px 4px 4px rgba(43,42,40,0.2), 
+    0px 6px 6px rgba(43,42,40,0.1);
+ */
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+
+    -webkit-box-shadow:
+    0px 6px 6px rgba(0,0,0,0.18),
+    0px 12px 12px rgba(0,0,0,0.135),
+    0px 18px 18px rgba(0,0,0,0.09);
+    -moz-box-shadow:
+    0px 6px 6px rgba(0,0,0,0.18),
+    0px 12px 12px rgba(0,0,0,0.135),
+    0px 18px 18px rgba(0,0,0,0.09);
+    box-shadow:
+    0px 6px 6px rgba(0,0,0,0.18),
+    0px 12px 12px rgba(0,0,0,0.135),
+    0px 18px 18px rgba(0,0,0,0.09);
+}
+
+.offer_info_box p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFF;
+}
+
+.offer_info_box .arrow_top{
+    left: 30px;
+}
+
+
+.small_list{
+}
+.my_account_box,
+.bag_list_box,
+.wish_list_box{
+    display: none;
+    position:absolute;      
+    z-index: 300;
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+
+
+
+
+.small_list{
+    overflow:hidden;
+    background-color:#FFF;
+    border-bottom: 1px #e6e6e6 solid;    
+    padding-top:12px;
+    
+    -webkit-box-shadow:
+    0px 1px 1px rgba(43,42,40,0.3),
+    0px 3px 3px rgba(43,42,40,0.2),
+    0px 9px 9px rgba(43,42,40,0.1);
+    -moz-box-shadow:
+    0px 1px 1px rgba(43,42,40,0.3),
+    0px 3px 3px rgba(43,42,40,0.2),
+    0px 9px 9px rgba(43,42,40,0.1);
+    box-shadow:
+    0px 1px 1px rgba(43,42,40,0.3),
+    0px 3px 3px rgba(43,42,40,0.2),
+    0px 9px 9px rgba(43,42,40,0.1);
+    max-width:270px;
+    width:100%;
+}
+.small_list a{
+      display: block;
+}
+.small_list > *{
+      padding: 9px; 
+}
+
+
+.small_list .arrow_down{
+    top:0;
+    bottom: auto;
+    left:calc( 100% - 36px );
+    -webkit-transform: translate(-50% , 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.small_list .product_info{
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px #e6e6e6 solid;
+}
+.small_list .product_info *{
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0;
+}
+
+.small_list .product_img{
+    position: absolute;
+    top:0;
+    left: 9px;
+    width:90px;
+}
+
+.small_list .product_name{
+    padding-bottom: 9px;
+}
+
+.small_list .total_price{
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    padding:16px 9px;
+}
+
+
+.bag_info{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: roboto_light;
+    text-align: center;
+    padding: 0 18px 18px 18px;
+}
+
+
+
+.my_account_box > a{
+      font-size: 14px;
+      line-height: 18px;
+      padding: 16px 9px;   
+      border-bottom: 1px #e6e6e6 solid;
+}
+
+
+
+.bag_list_box .product_info{
+   padding-left:108px;
+}
+.bag_list_box .p_price{
+    float: right;
+}
+
+.wish_list_box .product_img{
+      position: static;
+      width:50%;
+      float: right;
+      text-align: center;
+}
+.wish_list_box .product_img img{
+    max-width:120px;
+    width: 100%;
+}
+.wish_list_box .p_price{
+
+}
+.small_list > *[class^=btn_]{
+    display: inline-block;
+    width: calc(100% - 36px);
+    margin:18px ;
+}
+
+
+.if_nav .small_list{
+
+    display: none;
+    padding: 0px;
+    margin-top: 0px;
+
+
+}
+.if_nav .product_info > *{
+
+    text-align: left;
+}
+
+.if_nav .my_account_box{
+    border:none;
+    border-top: 1px #e6e6e6 solid;
+
+}
+
+
+@media screen and (min-width:1024px) {
+.my_account_box,
+.bag_list_box,
+.wish_list_box{
+    top: 24px;
+}
+}
+@media screen and (max-width:1023px) {
+.my_account_box,
+.bag_list_box,
+.wish_list_box{
+    top: 48px;
+    left: 50% !important;
+    max-width: none;
+    width: 72%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+
+.small_list .arrow_down{
+ 
+    left: 50%;
+    -webkit-transform: translate(-50% , 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+}
+
+@media screen and (max-width:767px) {
+.small_list{
+    display: block;
+  
+    position: static;
+    transform: none;
+    max-width: none;
+    width: 100%;
+
+    box-shadow: none;
+
+    margin-top: 79px;
+
+}
+.small_list .arrow_down{
+    display: none;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* if_nav */
+
+
+
+
+
+@media screen and (min-width:1024px) {
+.if_nav > li:hover:not(.not_menu) {
+    background-color: #FFF;
+    border-left: 1px #e6e6e6 solid;
+    border-right: 1px #e6e6e6 solid;
+    border-top: 1px #c8c8c8 solid;
+    border-bottom: 1px #FFF solid;
+}
+.if_nav > li:hover:not(.not_menu) > a:before {
+    display: block;
+}
+}
+@media screen and (max-width:1023px) {
+
+.top_blue,
+.top_white{
+    text-align: center;
+}
+
+.top_blue > div{
+    display: inline-block;
+}
+.event_info_A,
+.event_info_A *{
+    line-height: 16px;
+}
+
+.btn_box_A > *{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.btn_box_A a > *{
+    display: inline-block;
+}
+.btn_box_A .btn_text{
+    display: none;
+}
+
+
+
+
+.top_white{
+    display: block;
+    height: 60px;
+    /* justify-content: center ; */
+    text-align: center;
+}
+.three_line{
+    display: block;
+}
+.logo_if_v1{
+    display: inline-block;
+}
+.event_info_B{
+    /* display: none; */
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+/* nav menu */
+
+.if_nav{
+    /* display: none; */
+    display: block;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow-y:auto;
+
+
+    margin-left: -100%;
+
+
+    height:auto;
+    max-height:calc(100vh - 108px);
+
+    width:100%;
+    min-width: 300px;
+    max-width: 50% ;
+
+    border-top: 1px #C8C8C8 solid;
+    border-right: 1px #969696 solid ;
+    border-bottom: 1px #969696 solid;
+}
+.screen_size .if_nav{
+    position: absolute;
+    z-index: 300;
+}
+
+
+.if_nav ul{
+    display: none ;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: none;
+    overflow: hidden;
+    max-height: none;
+    border: none;
+}
+
+
+.if_nav ul > li:first-child{
+    padding-top: 0;
+}
+
+.if_nav ul li,
+.if_nav ul li *{
+    width: 100%;
+    text-align: left !important;
+}
+.if_nav *:not('.btn_box_A'){
+    border: none !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.if_nav > li{
+
+    border: none;
+    border-bottom: 1px #969696 solid;
+}
+.if_nav > li:last-child{
+    border-bottom: none;
+}
+.if_nav li > a{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+.if_nav ul a{
+    padding-left: 24px;
+}
+}
+/* 1023 */
+
+
+
+
+
+
+
+
+.if_v2 header > *{
+    display: inline-block;
+
+}
+
+
+.if_v2 .if_nav{
+    /* display: none; */
+    display: block;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow-y:auto;
+
+
+    margin-left: -100%;
+    margin-left: 0%;
+
+
+
+    height:auto;
+    max-height:calc(100vh - 108px);
+
+    width:100%;
+    min-width: 300px;
+    max-width: 50% ;
+
+    border-top: 1px #C8C8C8 solid;
+    border-right: 1px #969696 solid ;
+    border-bottom: 1px #969696 solid;
+}
+.if_v2 .if_nav{
+    position: absolute;
+    z-index: 300;
+}
+.if_v2 .if_nav ul{
+    display: none ;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: none;
+    overflow: hidden;
+    max-height: none;
+    border: none;
+}
+
+
+@media screen and (max-width:1023px) {
+.event_info_B{
+    max-width: none;
+    width: auto;
+    padding-right:0; 
+}
+.offer_info_box{
+
+    width: 50% ;
+}
+.offer_info_box .arrow_top{
+    left:calc(100% - 30px) ;
+}
+.promo_event_txt{
+    font-size: 14px !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+.promo_event_txt span{
+    display: block;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+
+    text-align: center;
+    width: 100%;
+
+
+    padding-top: 12px;
+}
+}
+
+
+
+
+@media screen and (max-width:767px) {
+
+.if_nav{
+    width:calc(100% - 60px);
+    min-width: none;
+    max-width: none;
+}
+
+.offer_info_box{
+    top: 79px !important;
+    width: calc(100% - 60px) ;
+}
+
+}
+
+
+
+/* 767 */
+
+
+
+
+
+
+
+.m_v2019_2{
+    display: flex;
+    justify-content: space-between ;
+    background:none;
+    border: none; 
+}
+.m_v2019_2 > *{
+    display: inline-block;
+}
+.m_v2019_2 .three_line{
+    display: block;
+    margin:6px 0; 
+}
+.m_v2019_2 .three_line.click span{
+    background-color: #fff;
+}
+.m_v2019_2 .mm_nav{
+    position:fixed;
+    top: 72px;
+    right: 0;
+
+    max-width: 320px;
+    width: 100%;
+
+    max-height: calc(100vh - 144px);
+    overflow-y: auto;
+}
+.screen_size .m_v2019_2 .mm_nav{
+    position: absolute;
+}
+.m_v2019_2 .mm_nav{
+    position:fixed;
+    top: 72px;
+    right: 0;
+}
+.m_v2019_2 .mm_nav ul{
+    position: static;
+
+    width: 100% ;
+
+    max-height: none;
+    height: 100%;
+    padding:10px 0 10px 0; 
+}
+
+
+.m_v2019_2 .mm_nav ul li{
+    display: block;
+    min-width: none;
+}
+.m_v2019_2 .mm_nav ul a{
+    padding-left: 32px;
+}
+.m_v2019_2 .mm_nav li{
+    display: block;
+}
+.m_v2019_2 .mm_nav li,
+.m_v2019_2 .mm_nav a{
+    position: static;
+    display: block;
+    width: 100% !important;
+}
+.m_v2019_2 .mm_nav li:hover ul{
+    display: block;
+}
+
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+
+
+<script>
+
+$(function(){
+// var winw = $(window).width();
+// var winw;
+
+
+
+$('.open_close').on('click',function() {
+
+    $(this).toggleClass('baby_come_back').next('.content_menu').toggleClass('come_back');
+
+});
+
+
+
+
+var header_H = 0;
+var info_box_L = 0;
+var info_box_W = 0;
+
+// var btn_s_r_L = 0;
+// var btn_s_r_W = 0;
+
+var btn_my_account_L = 0;
+var btn_my_account_W = 0;
+
+var btn_shopping_bag_L = 0;
+var btn_shopping_bag_W = 0;
+
+var btn_mywish_L = 0;
+var btn_mywish_W = 0;
+
+// var btn_search_L = 0;
+// var btn_search_W = 0;
+
+var winw = 0;
+
+$(window).on('resize load' , function() {
+
+
+
+winw = $(window).width();
+header_H = $('.if_v1 > header').outerHeight();
+
+info_box_L = $('.if_v1 .event_info_B').offset().left;
+info_box_W = $('.if_v1 .event_info_B').outerWidth();
+
+
+// btn_s_r_L = $('.if_v1 .btn_s_r').offset().left;
+// btn_s_r_W = $('.if_v1 .btn_s_r').outerWidth();
+
+btn_my_account_L = $('.if_v1 .btn_my_account').offset().left;
+btn_my_account_W = $('.if_v1 .btn_my_account').outerWidth();
+
+btn_shopping_bag_L = $('.if_v1 .btn_shopping_bag').offset().left;
+btn_shopping_bag_W = $('.if_v1 .btn_shopping_bag').outerWidth();
+
+btn_mywish_L = $('.if_v1 .btn_mywish').offset().left;
+btn_mywish_W = $('.if_v1 .btn_mywish').outerWidth();
+
+// btn_search_L = $('.if_v1 .btn_search').offset().left;
+// btn_search_W = $('.if_v1 .btn_search').outerWidth();
+
+
+$('.screen_size').each(function() {
+    
+var if_v1 = $(this);
+
+if_v1.find('.offer_info_box').css({ left: ( info_box_W + info_box_L - 2 )  + 'px'  , top: header_H + 'px' });
+if_v1.find('.my_account_box').css({ left: ( btn_my_account_W + btn_my_account_L - 2 )  + 'px' });
+if_v1.find('.bag_list_box').css({ left: ( btn_shopping_bag_W + btn_shopping_bag_L - 2 )  + 'px' });
+if_v1.find('.wish_list_box').css({ left: ( btn_mywish_W + btn_mywish_L - 2 )  + 'px' });
+
+if( winw >= 1024 ){
+    $('.if_v1 .promo_event_txt').prependTo('.if_v1 .event_info_B');
+}else if( winw <= 1023 ){
+    $('.if_v1 .promo_event_txt').prependTo('.if_v1 .offer_info_box');
+}
+if( winw >= 768 ){
+    if_v1.find('*').removeClass('click abc open open_menu');
+    if_v1.find('*').css({margin: ''});
+
+     if_v1.find('*[class*="_nav"] > li').css('display', '');
+     if_v1.find('*[class*="_nav"] > li > ul').css('display', '');
+
+     if_v1.find('.btn_box_A').appendTo('.if_v1 .top_blue > div');
+     if_v1.find('.my_account_box').appendTo('.if_v1');
+     if_v1.find('.bag_list_box').appendTo('.if_v1');
+     if_v1.find('.wish_list_box').appendTo('.if_v1');
+
+}else if( winw <= 767 ){
+     if_v1.find('.btn_box_A').prependTo('.if_v1 .if_nav');
+     if_v1.find('.my_account_box').insertAfter('.if_v1 .btn_box_A .btn_my_account');
+     if_v1.find('.bag_list_box').insertAfter('.if_v1 .btn_box_A');
+     if_v1.find('.wish_list_box').insertAfter('.if_v1 .btn_box_A');
+}
+
+if_v1.find('.btn_s_r , .btn_my_account , .btn_shopping_bag , .btn_mywish , .btn_search , .btn_promo_info').on('click', function() {
+
+    if( winw >= 768 ){
+       if( $('.three_line').hasClass('click') ){
+            $('.three_line').removeClass('click');
+            $('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+        }
+    }
+
+    if( $(this).hasClass('btn_s_r') ){
+        // $('').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }else if($(this).hasClass('btn_my_account')){
+        if_v1.find('.my_account_box').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }else if($(this).hasClass('btn_shopping_bag')){
+        if_v1.find('.bag_list_box').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }else if($(this).hasClass('btn_mywish')){
+        if_v1.find('.wish_list_box').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }else if($(this).hasClass('btn_search')){
+        // if_v1.find('').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }else if($(this).hasClass('btn_promo_info')){
+        if_v1.find('.offer_info_box').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
+
+    }
+
+        // .offer_info_box
+    return false;
+});
+
+});
+// screen_size
+});
+// resize
+
+
+$('header').each(function() {
+
+var ts = $(this);
+ts.find('.three_line').on('click', function() {
+
+    ts.siblings('[class$="_box"]').slideUp(180);
+
+        if($(this).hasClass('click')){
+            $(this).removeClass('click');
+            ts.find('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+        }else{
+            $(this).addClass('click');  
+            ts.find('[class*="_nav"]').animate({marginLeft: '0%'}, 100);
+        }
+
+    return false;
+    });
+
+    ts.find('[class*="_nav"] > li').on('click', function() {
+
+    if( ts.parents('.screen_size').find('.three_line').hasClass('click')  ){
+
+        if($(this).hasClass('open')){
+            $(this).removeClass('open');
+            $(this).find('> ul').slideUp(300);
+
+        }else{
+            $(this).addClass('open');
+            $(this).siblings().removeClass('open');
+            $(this).find('> ul').slideDown(300);
+            $(this).siblings('li').find('> ul').slideUp(300);
+        } 
+    }
+
+    return false;
+    });
+
+});// header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.screen_size').each(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+});
+
+
+
+
+
+});
+// end
+</script>
+</head>
+<body>
+
+<div class="screen_size kami">
+<header class="m_v2019_2">
+
+<a class="logo-M-mountain v2" href="#">&nbsp;</a>
+    <a class="three_line" href="#">
+        <span class="line _a"></span>
+        <span class="line _b"></span>
+        <span class="line _c"></span>
+    </a>
+
+<ul class="mm_nav">
+
+<li>
+<a href="#">Web Develop</a>   
+
+<ul>
+<li>
+    <div class="bold">Portfolio</div>
+    <a href="prtfolio.html#ui">UI</a>
+
+    <a href="prtfolio.html#cis">CIS</a>
+    <a href="prtfolio.html#website">Website</a>
+    <a href="prtfolio.html#edm">EDM</a>
+    <a href="prtfolio.html#graphic_design">Graphic Design</a>
+</li>      
+<li>
+
+    <div class="bold">SAMMARINESE</div>
+    <a href="html_sm/sm_form_frontend.html">Frontend UI/UX</a> 
+    <a href="html_sm/sm_form_backend.html">Backend UI/UX</a>
+    <a href="html_sm/sm_style_guide.html">Style Guide</a> 
+
+</li>        
+<li>
+    <div class="bold">ifchic</div>
+    <a href="index.html#page_home">Home Page</a>
+    <a href="index.html#page_product">Product Page</a>
+    <a href="index.html#signin_and_register">Sign in &amp; Register</a>
+    <a href="popup.html#event_popup">Event Popup<span class="num_boo">60</span></a>
+    <a href="style_guide_if_01.html">Style Guide</a> 
+</li>
+<li>
+    <div class="bold">Parking</div>
+    <a class="add_num_corporate_image" href="corporate_image.html#corporate_image">Corporate Image<span class="num_boo">132</span></a>
+    <div class="bold">Other</div>
+    <a href="index.html#clock">Clock</a>
+</li>
+</ul>
+    
+</li>
+
+<li>
+    <a class="add_num_style_trend_list" href="style_trend.html#style_trend_list">style &amp; trend list<span class="num_boo">42</span></a>
+</li>
+
+<li>
+    <a class="add_num_style_hotsopt" href="style_trend.html#style_hotsopt">style hotsopt<span class="num_boo">41</span></a>
+</li>
+
+<li>
+    <a href="about.html">about</a>
+</li>
+
+</ul>
+</header>
+
+<a class="open_close" href="#">
+    <span class="line_A">&nbsp;</span>
+    <span class="line_B">&nbsp;</span>
+</a>
+
+
+
+
+
+<div class="content_menu">
+    <a href="#page_num_1" class="tag_who"><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses Anytime Black Dresses Anytime Black Dresses Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
+
+</div>
+
+
+
+
+
+
+</div>
+
+ 
+
+<div class="screen_size">
+
+<header class="m_v2019">
+
+
+<div class="mw_1200">
+
+    <a class="logo-M-mountain" href="#">&nbsp;</a>
+
+    <a class="three_line" href="#">
+        <span class="line _a"></span>
+        <span class="line _b"></span>
+        <span class="line _c"></span>
+    </a>
+
+
+
+
+
+<ul class="mm_nav">
+
+<li>
+<a href="#">Web Develop</a>   
+
+<ul>
+<li>
+    <div class="bold">Portfolio</div>
+    <a href="prtfolio.html#ui">UI</a>
+
+    <a href="prtfolio.html#cis">CIS</a>
+    <a href="prtfolio.html#website">Website</a>
+    <a href="prtfolio.html#edm">EDM</a>
+    <a href="prtfolio.html#graphic_design">Graphic Design</a>
+</li>      
+<li>
+
+    <div class="bold">SAMMARINESE</div>
+    <a href="html_sm/sm_form_frontend.html">Frontend UI/UX</a> 
+    <a href="html_sm/sm_form_backend.html">Backend UI/UX</a>
+    <a href="html_sm/sm_style_guide.html">Style Guide</a> 
+
+</li>        
+<li>
+    <div class="bold">ifchic</div>
+    <a href="index.html#page_home">Home Page</a>
+    <a href="index.html#page_product">Product Page</a>
+    <a href="index.html#signin_and_register">Sign in &amp; Register</a>
+    <a href="popup.html#event_popup">Event Popup<span class="num_boo">60</span></a>
+    <a href="style_guide_if_01.html">Style Guide</a> 
+</li>
+<li>
+    <div class="bold">Parking</div>
+    <a class="add_num_corporate_image" href="corporate_image.html#corporate_image">Corporate Image<span class="num_boo">132</span></a>
+    <div class="bold">Other</div>
+    <a href="index.html#clock">Clock</a>
+</li>
+</ul>
+    
+</li>
+
+<li>
+    <a class="add_num_style_trend_list" href="style_trend.html#style_trend_list">style &amp; trend list<span class="num_boo">42</span></a>
+</li>
+
+<li>
+    <a class="add_num_style_hotsopt" href="style_trend.html#style_hotsopt">style hotsopt<span class="num_boo">41</span></a>
+</li>
+
+<li>
+    <a href="about.html">about</a>
+</li>
+
+</ul>
+
+
+<a class="new_in" href="#">N<span class="num_boo">99</span></a>
+
+</div>
+</header>
+
+</div>
+
+
+
+
+<!-- m v1 --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- if h v2 -->
+
+<div class="screen_size if_v2">
+
+<header>
+
+<!--     <div class="event_info_A"><strong>Sign up</strong> now to receive <strong>20% OFF</strong> first purchase!</div> -->
+    
+
+
+    <a class="three_line" href="#">
+        <span class="line _a"></span>
+        <span class="line _b"></span>
+        <span class="line _c"></span>
+
+    </a>
+
+    <a class="logo_if_v1" href="#">&nbsp;</a>
+
+    <div class="">
+        <a class="btn_shopping_bag v2" href="#"><span class="num_boo">99</span></a>
+        <a class="btn_mywish v2" href="#"><span class="num_boo">99</span></a>
+        <a class="btn_search v2" href="#"></a>
+    </div>
+
+
+<div class="event_info_B">
+    
+   
+      <a class="btn_promo_info" href="#">info</a>
+</div>
+
+
+
+
+<div class="offer_info_box">
+<div class="arrow_top">&nbsp;</div>
+
+     <p class="promo_event_txt">
+      Celebrate Mother's Day.
+      Enjoy 20%off at checkout.
+      Enter code <span>LOVEMOM14</span> 
+      </p>
+<p>
+30% off sale styles and 50% off select sale styles listed in the 50% Off Select Sale Styles assortment under the Sale tab at ifchic. Offers valid on purchases made at ifchic from May 28, 12:01am EST through June 4, 11:59pm EST. Offers not valid in ifchic, at ifchic or on phone orders. Offers cannot be applied to previous purchases and cannot be redeemed for cash or used in combination with any other offer. 
+</p>
+<p>
+Offers not valid on full-price items. To redeem online, enter code in the promo code box at checkout. Limit one promo code per order. Offers not valid in the U.S., Canada, the United Kingdom or Hong Kong. Terms of offers are subject to change.
+</p>
+</div>
+
+
+
+
+
+
+
+<ul class="if_nav">
+
+        <a class="btn_s_r" href="#">Register <span>or</span> Sign In</a>
+        <a class="btn_my_account" href="#">Hello! Mountain</a>
+
+
+
+<li>
+    <a href="#">New In</a>
+    <ul>
+        <li>
+        <a class="links_bold" href="#">New Arrivals</a>
+        <a href="#">Bags</a>
+        <a href="#">Clothing</a>
+        <a href="#">Eyewear</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Shoes</a>
+        </li>   
+    </ul>
+    
+</li><li>
+    <a href="#">Designers</a>
+    <ul>
+        <li>
+        <a class="links_bold" href="#">Featured</a>
+        <a href="#">Accessories</a>
+        <a href="#">Clothing</a>
+        <a href="#">Denim</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Shoes</a>
+        
+        </li><li>   
+            
+        <a class="links_bold" href="#">New in</a>
+        <a href="#">CC Skye</a>
+        <a href="#">Don Cheng</a>
+        <a href="#">Etnia Barcelona</a>
+        <a href="#">Gemma Redux</a>
+        <a href="#">Joomi Lim</a>
+        
+        <!--
+        <a href="#">Mata Hari</a>
+        <a href="#">nOir</a>
+        <a href="#">Spitﬁre</a>
+        -->
+        </li><li>   
+            
+        <a class="links_bold" href="#">Designers A - Z</a>
+ 
+        </li>
+                
+    </ul>
+    
+    
+</li><li><a href="#">Clothing</a>
+
+    <ul>
+    <li>
+
+    <a class="links_bold" href="#">Tops</a>
+    <a href="#">Short Sleeved</a>
+    <a href="#">Long Sleeved</a>
+    <a href="#">Tanks and Camis</a>
+    <a href="#">Blouses</a>
+    <a href="#">Shirt</a>
+    <!--
+    <a href="#">Knitwear</a>-->
+    
+    </li><li>
+   
+    <a class="links_bold" href="#">Bottoms</a>
+    <a href="#">Shorts</a>
+    <a href="#">Skirts</a>
+    <a href="#">Pants</a>
+    <a href="#">Jumpsuits</a>
+    
+    </li><li>
+   
+    <a class="links_bold" href="#">Dresses</a>
+    <a href="#">Knee Length</a>
+    <a href="#">Maxi</a>
+    <a href="#">Midi</a>
+    <a href="#">Mini</a>
+
+    </li><li class="outerwear">
+
+    <a class="links_bold" href="#">Outerwear</a>
+    <a href="#">Jackets</a>
+    <a href="#">Coats</a>
+    <a href="#">Blazers</a>
+
+    </li><li>
+
+    <a class="links_bold" href="#">Accessories</a>
+    <a href="#">Hats</a>
+    
+    </li><li>
+
+    <a class="links_bold" href="#">Men</a>
+    <a href="#">Clothing</a>
+    <a href="#">Bags</a>
+    <a href="#">Accessories</a>
+    <a href="#">Shoes</a>
+    
+    </li>               
+    </ul>
+    
+  
+</li><li><a href="#">Shoes</a>  
+
+    <ul>
+      <li>    
+    <a class="links_bold" href="#">Shop All</a>
+    <a href="#">Boots</a>
+    <a href="#">Flats</a>
+    <a href="#">Heels</a>
+    <a href="#">Sandals</a>
+    <a href="#">Sneakers</a>
+     </li>              
+    </ul>
+    
+
+</li><li><a href="#">Accessories</a>
+
+    <ul>
+      <li>
+    <a class="links_bold" href="#">Jewelry</a>
+    <a href="#">Bracelets</a>
+    <a href="#">Earrings</a>
+    <a href="#">Necklaces</a>
+    <a href="#">Rings</a>
+
+
+</li><li>
+
+        <a class="links_bold" href="#">Eyewear</a>
+        <a href="#">Cat Eye</a>
+        <a href="#">Oversized</a>
+        <a href="#">Round &amp; Oval</a>
+        <a href="#">Square &amp; Rectangle</a>
+        <a href="#">Wayfarer</a>
+       
+</li><li>
+      
+    <a class="links_bold" href="#">Bags</a>
+        <a href="#">Backpacks</a>
+        <a href="#">Black Handbags</a>
+        <a href="#">Clutches &amp; Evening</a>
+        <a href="#">Cross Body Bags</a>
+        <a href="#">Shoulder bags</a>
+        <!--
+        <a href="#">Satchels</a>
+        <a href="#">Technology</a>
+        <a href="#">Totes</a>-->
+    </li>       
+    </ul>
+
+</li><li class=""><a href="#">Style Hotspot</a>
+
+    <ul> 
+      <li>
+        <a class="links_bold" href="#">View All</a>
+        <a href="#">Own The Night</a>
+        <a href="#">Cres. E Dim.</a>
+        <a href="#">Big Park</a>
+        <a href="#">Greylin</a>
+        <a href="#">Big Park</a>
+        <!-- <a href="#">Greylin</a> -->
+      </li>
+    </ul>
+    
+</li><li class="not_menu"><a href="#">#ifchic24</a></li>
+</ul>
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+</div>
+<!-- if v2 -->
+
+
+<!-- if h v1 -->
+
+<div class="screen_size if_v1">
+
+<header class="">
+
+<div class="top_blue">
+
+    <div class="mw_1200">
+    <div class="event_info_A"><strong>Sign up</strong> now to receive <strong>20% OFF</strong> first purchase!</div>
+    
+    <div class="btn_box_A">
+        <!-- <a class="btn_signin" href="#"><span>sign in</span></a>-->
+       
+        <a class="btn_s_r" href="#">Register <span>or</span> Sign In</a>
+        <a class="btn_my_account" href="#">Hello! Mountain</a>
+        <a class="btn_shopping_bag v1" href="#"><span class="btn_text">shopping bag</span> <span class="num_boo">99</span></a>
+        <a class="btn_mywish v1" href="#"><span class="btn_text">mywish</span> <span class="num_boo">99</span></a>
+        <a class="btn_search v1" href="#"><span class="btn_text">search</span></a>
+
+    </div>
+
+   <!--  <div class="search_box">
+        <form class="v2 dark_night">
+        <input class="w_100" type="text" placeholder="Search"><a class="btn_search_enter" href="#">&nbsp;</a></form>
+    </div> -->
+
+
+    
+    </div>
+
+</div>
+
+<div class="mw_1200 top_white">
+
+    <a class="three_line" href="#">
+        <span class="line _a"></span>
+        <span class="line _b"></span>
+        <span class="line _c"></span>
+
+    </a>
+
+<a class="logo_if_v1" href="#">&nbsp;</a>
+
+<ul class="if_nav">
+
+<li>
+    <a href="#">New In</a>
+    <ul>
+        <li>
+        <a class="links_bold" href="#">New Arrivals</a>
+        <a href="#">Bags</a>
+        <a href="#">Clothing</a>
+        <a href="#">Eyewear</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Shoes</a>
+        </li>   
+    </ul>
+    
+</li><li>
+    <a href="#">Designers</a>
+    <ul>
+        <li>
+        <a class="links_bold" href="#">Featured</a>
+        <a href="#">Accessories</a>
+        <a href="#">Clothing</a>
+        <a href="#">Denim</a>
+        <a href="#">Jewelry</a>
+        <a href="#">Shoes</a>
+        
+        </li><li>   
+            
+        <a class="links_bold" href="#">New in</a>
+        <a href="#">CC Skye</a>
+        <a href="#">Don Cheng</a>
+        <a href="#">Etnia Barcelona</a>
+        <a href="#">Gemma Redux</a>
+        <a href="#">Joomi Lim</a>
+        
+        <!--
+        <a href="#">Mata Hari</a>
+        <a href="#">nOir</a>
+        <a href="#">Spitﬁre</a>
+        -->
+        </li><li>   
+            
+        <a class="links_bold" href="#">Designers A - Z</a>
+ 
+        </li>
+                
+    </ul>
+    
+    
+</li><li><a href="#">Clothing</a>
+
+    <ul>
+    <li>
+
+    <a class="links_bold" href="#">Tops</a>
+    <a href="#">Short Sleeved</a>
+    <a href="#">Long Sleeved</a>
+    <a href="#">Tanks and Camis</a>
+    <a href="#">Blouses</a>
+    <a href="#">Shirt</a>
+    <!--
+    <a href="#">Knitwear</a>-->
+    
+    </li><li>
+   
+    <a class="links_bold" href="#">Bottoms</a>
+    <a href="#">Shorts</a>
+    <a href="#">Skirts</a>
+    <a href="#">Pants</a>
+    <a href="#">Jumpsuits</a>
+    
+    </li><li>
+   
+    <a class="links_bold" href="#">Dresses</a>
+    <a href="#">Knee Length</a>
+    <a href="#">Maxi</a>
+    <a href="#">Midi</a>
+    <a href="#">Mini</a>
+
+    </li><li class="outerwear">
+
+    <a class="links_bold" href="#">Outerwear</a>
+    <a href="#">Jackets</a>
+    <a href="#">Coats</a>
+    <a href="#">Blazers</a>
+
+    </li><li>
+
+    <a class="links_bold" href="#">Accessories</a>
+    <a href="#">Hats</a>
+    
+    </li><li>
+
+    <a class="links_bold" href="#">Men</a>
+    <a href="#">Clothing</a>
+    <a href="#">Bags</a>
+    <a href="#">Accessories</a>
+    <a href="#">Shoes</a>
+    
+    </li>               
+    </ul>
+    
+  
+</li><li><a href="#">Shoes</a>  
+
+    <ul>
+      <li>    
+    <a class="links_bold" href="#">Shop All</a>
+    <a href="#">Boots</a>
+    <a href="#">Flats</a>
+    <a href="#">Heels</a>
+    <a href="#">Sandals</a>
+    <a href="#">Sneakers</a>
+     </li>              
+    </ul>
+    
+
+</li><li><a href="#">Accessories</a>
+
+    <ul>
+      <li>
+    <a class="links_bold" href="#">Jewelry</a>
+    <a href="#">Bracelets</a>
+    <a href="#">Earrings</a>
+    <a href="#">Necklaces</a>
+    <a href="#">Rings</a>
+
+
+</li><li>
+
+        <a class="links_bold" href="#">Eyewear</a>
+        <a href="#">Cat Eye</a>
+        <a href="#">Oversized</a>
+        <a href="#">Round &amp; Oval</a>
+        <a href="#">Square &amp; Rectangle</a>
+        <a href="#">Wayfarer</a>
+       
+</li><li>
+      
+    <a class="links_bold" href="#">Bags</a>
+        <a href="#">Backpacks</a>
+        <a href="#">Black Handbags</a>
+        <a href="#">Clutches &amp; Evening</a>
+        <a href="#">Cross Body Bags</a>
+        <a href="#">Shoulder bags</a>
+        <!--
+        <a href="#">Satchels</a>
+        <a href="#">Technology</a>
+        <a href="#">Totes</a>-->
+    </li>       
+    </ul>
+
+</li><li class=""><a href="#">Style Hotspot</a>
+
+    <ul> 
+      <li>
+        <a class="links_bold" href="#">View All</a>
+        <a href="#">Own The Night</a>
+        <a href="#">Cres. E Dim.</a>
+        <a href="#">Big Park</a>
+        <a href="#">Greylin</a>
+        <a href="#">Big Park</a>
+        <!-- <a href="#">Greylin</a> -->
+      </li>
+    </ul>
+    
+</li><li class="not_menu"><a href="#">#ifchic24</a></li>
+</ul>
+
+
+<div class="event_info_B">
+<a class="btn_X v1" href="#">&nbsp;</a>
+<p class="promo_event_txt">
+Celebrate Mother's Day.
+Enjoy 20%off at checkout.
+Enter code <span>LOVEMOM14</span> 
+</p>
+<a class="btn_promo_info" href="#">info</a>
+</div>
+
+</div>
+</header>
+
+
+
+
+
+
+
+<div class="offer_info_box">
+        <div class="arrow_top">&nbsp;</div>
+<p>
+30% off sale styles and 50% off select sale styles listed in the 50% Off Select Sale Styles assortment under the Sale tab at ifchic. Offers valid on purchases made at ifchic from May 28, 12:01am EST through June 4, 11:59pm EST. Offers not valid in ifchic, at ifchic or on phone orders. Offers cannot be applied to previous purchases and cannot be redeemed for cash or used in combination with any other offer. 
+</p>
+<p>
+Offers not valid on full-price items. To redeem online, enter code in the promo code box at checkout. Limit one promo code per order. Offers not valid in the U.S., Canada, the United Kingdom or Hong Kong. Terms of offers are subject to change.
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- my_account_box -->
+
+<div class="small_list my_account_box">
+    <div class="arrow_down">&nbsp;</div>
+    <a href="#">Settings</a>
+    <a href="#">Order History</a>
+    <a href="#">Returns</a>
+    <a href="#">Sign Out</a>
+</div>
+
+
+<!-- bag_list_box -->
+
+<div class="small_list bag_list_box">
+    <div class="arrow_down">&nbsp;</div>
+
+<div class="product_info">
+
+<a class="btn_X v1" href="#">&nbsp;</a>
+    <a class="product_img" href="#"><img src="../img-if/products_pics/p-03.jpg" alt="ifchic Bag 5PM COUTURE Owl Clutch"></a>
+    <a class="product_brand" href="#">5PM COUTURE</a>
+    <a class="product_name" href="#">Owl Clutch</a>
+    <p>color <span>Black</span></p>
+    <p>qty <span>1</span></p>
+    
+    <div class="p_price"><span class="o_price">$137.00</span><span class="p_discount">$68.50</span></div>
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+    <a class="product_img" href="#"><img src="../img-if/products_pics/amy-studded-clutch-003.jpg" alt="ifchic Bag Mata Hari Amy Studded Clutch"></a>
+    <a class="product_brand" href="#">Mata Hari</a>
+    <a class="product_name" href="#">Amy Studded Clutch</a>
+    <p>color <span>Red</span></p>
+    <p>qty <span>1</span></p>
+
+    <div class="p_price"><span class="o_price">$97.00</span><span class="p_discount">$80.00</span></div> 
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+    <a class="product_img" href="#"><img src="../img-if/products_pics/p_bag_08.jpg" alt="ifchic Ring Noir Bang Ring"></a>
+    <a class="product_brand" href="#">Noir</a>
+    <a class="product_name" href="#">Bang Ring</a>
+    <p>color <span>Gold</span></p>
+    <p>qty <span>1</span></p>
+
+    <div class="p_price">$19.00</div>
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+    <a class="product_img" href="#"><img src="../img-if/products_pics/p_bag_07.jpg" alt="ifchic Accessories nOir DC BATMAN CUFF"></a>
+    <a class="product_brand" href="#">nOir</a>
+    <a class="product_name" href="#">DC "BATMAN" CUFF</a>
+    <p>color <span>Gold</span></p>
+    <p>qty <span>1</span></p>
+
+    <div class="p_price">$65.00</div>
+
+</div>
+
+<a class="btn_W" href="#">more items <span class="num_boo">99</span></a>
+<p class="total_price">total <span>$167.50</span></p>
+<a class="btn_B" href="#">checkout</a>
+
+<div class="bag_info">
+<p>There are no items in your shopping bag</p>
+free shipping &amp; returns on orders above $75
+</div>
+
+</div>
+
+<!-- bag_list_box -->
+
+
+
+
+<!-- wish_list_box -->
+
+<div class="small_list wish_list_box" >
+    <div class="arrow_down">&nbsp;</div>
+
+<div class="product_info">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+<div class="product_img"><img src="../img-if/products_pics/p01.jpg"></div>    
+    <div class="product_brand">HELMUT LANG</div>
+    <div class="product_name">Side-tie crepe dress</div>
+    <div class="p_price">$482.00</div>
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+<div class="product_img"><img src="../img-if/products_pics/p02.jpg"></div>
+    <div class="product_brand">OSMAN</div>
+    <div class="product_name">Hemera tie-waist crepe dress</div>
+    <div class="p_price"><span class="o_price">$695.00</span><span class="p_discount">$556.00</span></div>
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+<div class="product_img"><img src="../img-if/products_pics/p03.jpg"></div>
+    <div class="product_brand">RAEY</div>
+    <div class="product_name">Side-split triangle dress</div>
+    <div class="p_price">$609.00</div>
+</div>
+
+<div class="product_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+<div class="product_img"><img src="../img-if/products_pics/p04.jpg"></div>
+    <div class="product_brand">LEMAIRE</div>
+    <div class="product_name">Tie-waist cotton-crepe dress</div>
+    <div class="p_price">$829.00</div>
+</div>
+
+<a class="btn_W" href="#">more items <span class="num_boo">99</span></a>
+</div>
+
+<!-- wish_list_box -->
+
+
+
+
+
+</div>
+<!-- if v2 -->
+
+
+</body>
+</html>

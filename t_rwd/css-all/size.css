@@ -1,0 +1,327 @@
+/* max width */
+
+.h_100vh{
+	/*
+	height:-moz-calc(100% - 120px);
+	height:-webkit-calc(100% - 120px);
+	height:calc(100vh - 120px );
+	max-height:100vh;
+	*/
+	min-height:100vh;
+	height:100%;
+	}
+
+@media screen and (max-width:1023px) {
+.h_100vh{
+	height:100%;
+	}
+	
+.vino_logo.h_100vh{
+	min-height:auto;
+	height:100vh;	
+	}	
+}
+
+
+.w_360{
+	max-width:360px;
+	width:100%;
+	}
+
+.w_240{
+	max-width:240px;
+	width:100%;
+	}
+.mw_1200{
+	max-width:1200px;
+	width:100%;
+	margin:0 auto;
+	}
+.mw_900{
+	max-width:900px;
+	width:100%;
+	margin:0 auto;	
+	}		
+.mw_600{
+	max-width:600px;
+	width:100%;
+	margin:0 auto;	
+	}	
+.mw_540{
+	max-width:540px;
+	width:100%;
+	margin:0 auto;	
+	}		
+.mw_450{
+	max-width:450px;
+	width:100%;
+	margin:0 auto;
+	}	
+.mw_360{
+	clear:both;
+	max-width:360px;
+	width:100%;
+	margin:0 auto;	
+	}	
+.mw_270{
+	clear:both;
+	max-width:270px;
+	width:100%;
+	margin:0 auto;	
+	}		
+
+
+
+
+
+
+
+
+
+.w_100{
+	display:block;	
+	clear:both;
+	width:100%;
+	}
+
+.w_91{
+	width:91.666666%;
+	}	
+
+.w_90{
+	width:90%;
+	}
+
+
+.w_83{
+	width:83.333333%;
+	}
+
+.w_80{
+	width:80%;
+	}
+.w_75{
+	width:75%;
+	}	
+.w_70{
+	width:70%;
+	}
+.w_66{
+	width:66.666666%;
+	}
+.w_60{
+	width:60%;
+	}
+.w_58{
+	width:58.333333%;
+	}
+.w_50{
+	width:50%;
+	}
+.w_41{
+	width:41.666666%;
+	}	
+.w_40{
+	width:40%;
+	}	
+.w_33{
+	width:33.333333%;
+	}	
+.w_30{
+	width:30%;
+	}	
+.w_25{
+	width:25%;
+	}
+.w_21{
+	width:21%;
+	}					
+.w_20{
+	width:20%;
+	}	
+.w_10{
+	width:10%;
+	}
+.w_16{
+	width:16.666666%;
+	}		
+.w_8{
+	width:8.333333%;
+	}		
+
+
+
+
+*[class^="col_m_"],
+*[class^="wm_"]{
+	margin-left:1%;
+	margin-right:1%;
+	}
+.wm_100{
+	width:98%;
+	}
+.wm_90{
+	width:88%;
+	}	
+.wm_80{
+	width:78%;
+	}
+.wm_75{
+	width:73%;
+	}	
+.wm_70{
+	width:68%;
+	}
+.wm_66{
+	width:64.666666%;
+	}	
+.wm_60{
+	width:58%;
+	}
+.wm_58{
+	width:56.333333%;
+	}	
+.wm_50{
+	width:48%;
+	}
+.wm_41{
+	width:39.666666%;
+	}	
+.wm_40{
+	width:38%;
+	}	
+.wm_33{
+	width:31.333333%;
+	}	
+.wm_30{
+	width:28%;
+	}	
+.wm_25{
+	width:23%;
+	}				
+.wm_20{
+	width:18%;
+	}	
+.wm_12{
+	width:10.5%;
+	}		
+.wm_16{
+	width:14.666666%;
+	}	
+.wm_10{
+	width:8%;
+	}
+/* 12 */			
+.wm_8{
+	width:6.333333%;
+	}	
+	
+		
+		
+
+
+/* 12 */
+.col_12{
+  width:100%;
+  }
+/* 11 */
+.col_11{
+  width:91.666666%;
+  }
+/* 10 */
+.col_10{
+  width:83.333333%;
+  }
+/* 9 */
+.col_9{
+  width:75%;
+  }
+/* 8 */
+.col_8{
+  width:66.666666%;
+  }
+/* 7 */
+.col_7{
+  width:58.333333%;
+  }
+/* 6 */
+.col_6{
+  width:50%;
+  }
+/* 5 */
+.col_5{
+  width:41.666666%;
+  }
+/* 4 */
+.col_4{
+  width:33.333333%;
+  }
+/* 3 */
+.col_3{
+  width:25%;
+  }
+/* 2 */
+.col_2{
+  width:16.666666%;
+  }
+/* 1 */
+.col_1{
+  width:8.333333%;
+  }
+.col_m_12{
+  width:98%;
+  }
+.col_m_11{
+  width:89.666666%;
+  }
+.col_m_10{
+  width:81.333333%;
+  }
+.col_m_9{
+  width:73%;
+  }
+.col_m_8{
+  width:64.666666%;
+  }
+.col_m_7{
+  width:56.333333%;
+  }
+.col_m_6{
+  width:48%;
+  }
+.col_m_5{
+  width:39.666666%;
+  }
+.col_m_4{
+  width:31.333333%;
+  }
+.col_m_3{
+  width:23%;
+  }
+.col_m_2{
+  width:14.666666%;
+  }
+.col_m_1{
+  width:6.333333%;
+  }
+	
+
+
+
+*[class^="col_"],
+*[class^="col_m_"],
+*[class^="w_"]:not([class^="w_100"]),	
+*[class^="wm_"]:not([class^="wm_100"]){
+	float:left;
+	}
+	
+@media screen and (max-width:767px) {
+*[class^="wm_"],
+*[class^="w_"]{
+	display:inline-block;
+	float:none !important;
+	margin-left:4.5%;
+	margin-right:4.5%;	
+	width:91%;
+	}	
+}

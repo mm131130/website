@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css-all/all.css"/>
+<link media="all" rel="stylesheet" href="../css-all/size.css"/>
+
+<style>
+
+.products_list_page{
+
+}
+
+
+body{
+	width: 100%;
+    height: 100vh;
+}
+
+/* .ps_list_box{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch ;
+    justify-content: flex-start ;
+
+	width: 100%;
+	height: 100vh;
+}
+
+
+.product_box{
+	display: inline-block;
+	width: 20%;
+	height: 100vh;
+}
+
+
+
+
+ */
+
+.ps_list_box{
+	width: 100%;
+	height: 100%;
+
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.ps_list_box > div{
+	display: block; 
+	position: relative;
+	overflow: hidden;
+	width: 25%;
+	height: 100%;    
+}
+.ps_list_box img{
+  position: relative;
+  left: 50%;
+  width: auto;
+  height: 100%;
+
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+
+
+.display_box{
+	position:fixed;
+	top: 0;
+	right: 0;
+	z-index: 300;
+}
+
+a.row_one,
+a.row_two,
+a.column,
+a.list{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+    background-image: url(../img-if/icon_2017.svg);
+    background-position-y: -1000px;
+   
+}
+a.row_one{
+    background-position-x: -1350px;
+}
+a.row_two{
+    background-position-x: -1400px;
+}
+a.column{
+    background-position-x: -1450px;
+}
+a.list{
+    background-position-x: -1500px;
+}
+
+.display_box a:hover{
+    background-position-y: -1050px;
+}
+.display_box .click{
+    background-position-y: -1100px;
+}
+.display_box .click:hover{
+    background-position-y: -1150px;
+}
+
+
+
+.wish_icon{
+	position: absolute;
+	top: 0;
+	left: calc(100% - 50px);
+
+	z-index: 100;
+
+    display: -block;
+
+    width:50px;
+    height:50px;
+    background: url('../img-if/icon_2017.svg');
+    background-position-y: -1050px;
+	
+	-webkit-transform: rotate(18deg);
+	-ms-transform: rotate(18deg);
+ 	transform: rotate(18deg);
+}
+.wish_icon{
+    background-position-x: -150px;
+}
+.wish_icon:hover{
+    background-position-y: -1100px;
+}
+.wish_icon.click{
+	background-position-x: -100px;
+}
+
+
+
+
+.ps_list_box.row_one,
+.ps_list_box.row_two{
+	overflow-x:auto; 
+}
+.ps_list_box .product_box{
+	position: relative;
+}
+.ps_list_box .text{
+	position: absolute;
+	top: calc(100% - 18px);
+	transform: translate(0 , -100%);
+	width:calc(100% - 36px);
+	background-color: #fff;
+	margin:0 18px;
+}
+
+
+
+
+
+.ps_list_box.row_two > div{
+	width: 20%;
+	height: 50%;    
+}
+
+.ps_list_box.column{
+	/* display: block; */
+    flex-direction: row;
+
+    max-width: 1200px;
+    width: 100%;
+
+    height: auto;
+    margin: 0 auto;
+
+    /* padding-left: 300px; */
+
+    /* border: 1px red solid; */
+}
+.ps_list_box.column > div{
+	width: 25%;
+	height: auto;    
+}
+.ps_list_box.column img{
+	height: 486px;
+
+}
+
+.ps_list_box.column .text,
+.ps_list_box.list .text{
+	position: static;
+	transform: none;
+	width:100%;
+
+	margin:0;
+}
+
+
+
+
+
+
+
+.ps_list_box .text{
+	padding: 18px;
+	height: auto;
+}
+.ps_list_box .text *{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.ps_list_box .text .product_price{
+	padding-top: 9px;
+}
+
+
+
+
+
+
+
+.ps_list_box.list{
+	/* display: block; */
+  flex-direction: row;
+  padding: 18px 9px;
+
+      max-width: 1200px;
+    width: 100%;
+	height: auto;
+
+    margin: 0 auto;
+
+
+}
+.ps_list_box.list > .product_box{
+	/* display: block; */
+	/* clear: both; */
+	width:calc(25% - 18px) ;
+	height: auto;
+
+	margin:18px 9px;
+
+	    overflow: unset; 
+
+}
+
+
+.ps_list_box.list .product_box > *{
+    display: inline-flex;
+
+}
+
+
+
+.ps_list_box.list img{
+	position: static;
+	transform: none;
+
+	width: 50%;
+	height: auto;
+}
+.ps_list_box.list .text{
+	/* width: calc(100% - 160px); */
+
+	flex-direction: column ;	
+	width: 50%;
+	height: 100%;
+}
+.ps_list_box.list .text .product_price{
+    margin-top: auto;
+}
+
+.ps_list_box.list .wish_icon{
+	top: -25px;
+}
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/if.js"></script>
+
+<script>
+// $(function() {
+// $(window).load(get_products_list());
+
+$(window).on('load' , function() {
+
+// get_products_list();
+
+// });
+
+
+// $(window).on('load' , function() {
+
+// $('.ps_list_box .product_box').each(function() {
+//   var wish_html = '<a class="wish_icon" href="#">&nbsp;</a>';
+//   $(this).append(wish_html);
+// });
+
+
+$('.wish_icon').on('click', function() {
+	$(this).toggleClass('click');
+	return false;
+});
+
+
+
+$('.row_one, .row_two, .column , .list').on('click', function() {
+		$('.ps_list_box').removeClass().addClass('ps_list_box');
+		$(this).addClass('click').siblings().removeClass('click');
+	if($(this).hasClass('row_one')){
+		
+		$('.ps_list_box').addClass('row_one');
+
+	}else if($(this).hasClass('row_two')){
+		$('.ps_list_box').addClass('row_two');
+
+	}else if($(this).hasClass('column')){
+		$('.ps_list_box').addClass('column');
+
+
+	}else if($(this).hasClass('list')){
+		$('.ps_list_box').addClass('list');
+
+
+	}
+
+	return false;
+
+});
+
+
+
+
+});
+// end
+</script>
+</head>
+<body>
+
+
+
+
+<div class="display_box">
+
+	<a class="row_one" href="#">&nbsp;</a>
+	<a class="row_two" href="#">&nbsp;</a>
+	<a class="column" href="#">&nbsp;</a>
+	<a class="list" href="#">&nbsp;</a>	
+</div>
+
+	<div class="ps_list_box">
+		
+		<div class="product_box">
+			<div class="item_num"></div>
+			<img src="">
+			<div class="text">
+				<div class="product_brand"></div>
+				<div class="product_name"></div>
+				<div class="product_price"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+<!-- screen_size -->
+
+</body>
+</html>

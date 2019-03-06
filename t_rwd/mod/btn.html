@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css-all/all.css"/>
+<link media="all" rel="stylesheet" href="../css-all/size.css"/>
+<link media="all" rel="stylesheet" href="../css-if/btn.css"/>
+<style>
+
+
+
+.m_logo_v10{
+      display: inline-block;
+      background-image:url(../img-m/m_logo_v10_b.svg);
+      background-size:auto 100%;
+
+      width: 228px;
+      height:63px;
+
+      background-color: red;
+}
+.m_logo_v10 > img{
+      width: auto;
+      height: 100%;
+
+}
+
+.m_logo_v10:hover{
+    background-image:url(../img-m/m_logo_v10_g.svg);
+      background-color: black;
+}
+
+
+.bg_000 .m_logo_v10,
+.bg_000.m_logo_v10{
+      background-image:url(../img-m/m_logo_v10_w.svg);
+
+}
+
+
+
+
+
+.btn_demo{
+      overflow: hidden;
+ 
+}
+
+
+.btn_X{
+
+      position: static;     
+}
+.btn_demo .box{
+      position: static;
+      transform: none;
+      display: inline-block;
+
+      float: left;
+      width: 25%;
+}
+.box > .note_{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 18px;
+      color: #c8c8c8;
+
+
+      padding: 16px;
+
+}
+
+.box .btn_L,
+.box .btn_R{
+
+      position: static;
+    transform: none;
+}
+.btn_arrow > *{
+      display: inline-block;
+}
+
+.t_v1 a,
+.t_v2 a{
+      display: inline-block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page_num{
+
+      /* position: relative; */
+/*       position: absolute;
+
+      top: 50%;
+      left: 50%;
+      z-index: 300; */
+
+      overflow: hidden;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+
+      align-items: center;
+      /* 垂直 置中 */
+      justify-content:center ;
+      /* 左右 置中 */
+
+      /* 
+      display: flex;
+      align-items: center;
+
+      flex-direction:column;
+      垂直 
+      flex-direction: row-reverse;
+      橫排順序321
+
+      */
+
+
+
+      width: 210px;
+
+    /*   border: 1px red solid; */
+
+}
+
+.page_num > div{
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      font-family: roboto_light;
+
+      color: #0f1329;
+
+
+      text-align: center;
+
+      width: 50px;
+      padding:12px 0; 
+      background-color: red;
+}
+
+
+.page_num .line{
+    /*   position: relative; */
+
+      width: calc(100% - 100px) ;
+      height: 8px;
+
+
+      border-radius: 4px;
+
+      background-color: #a97962;
+      background-color: #d2d3da;
+
+
+      padding: 0;
+}
+.page_num .line .buoy{
+      width: calc(66.666666% - 4px);
+      height: 4px;
+
+      margin: 2px;
+      padding: 0;
+      border-radius: 2px;
+
+      background-color: #0f1329;
+
+
+    -webkit-transition: all 0.27s ease-in-out;
+    -o-transition: all 0.27s ease-in-out;  
+    transition: all 0.27s ease-in-out;
+
+}
+
+.page_num > div:last-child{
+      opacity:0.45;
+}
+
+
+
+
+
+
+.page_num.v1{
+      display: block;
+      width: 60px;
+}
+
+
+.page_num.v1:before{
+      content: '';
+      display: block;
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      width: 1px;
+      height: 100px;
+
+      background-color: #d2d3da;
+
+
+      -webkit-transform: translate(-50% , -50%) rotate(45deg);
+    -ms-transform: translate(-50% , -50%) rotate(45deg);
+    transform:  translate(-50% , -50%) rotate(45deg);
+
+ /*     opacity:0.45; */
+
+}
+.page_num.v1 > div{
+      display:block; 
+
+      line-height: 25px;
+
+      width: 60px;
+      padding:  0;
+
+
+
+
+
+}
+
+.page_num.v1 div:first-child{
+      text-align: left;
+      /* padding: 5px 5px 2px 5px; */
+}
+.page_num.v1 div:last-child{
+      text-align: right;
+      /* padding:  2px 5px 5px 5px; */
+      
+}
+
+.page_num.v3 .line .buoy{
+      position: relative;
+      border-radius: 2px 0 0 2px;
+
+
+
+}
+.page_num.v3 .line .buoy:before{
+      content: '';
+      position: absolute;
+
+
+      top: 2px;
+      right: 0;
+
+      width: 1px;
+      height: 36px;
+
+
+      background-color: #0f1329;
+
+      -webkit-transform:translateY(-50%) rotate(23.5deg);
+    -moz-transform:translateY(-50%) rotate(23.5deg);
+    transform:translateY(-50%) rotate(23.5deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+
+
+<script>
+
+</script>
+</head>
+<body>
+
+
+
+<a class="m_logo_v10" href="#">
+      <!-- <img src="../img-m/m_logo_v10_b.svg"> -->
+      &nbsp;
+</a>
+ <img src="../img-m/m_logo_v10_g.svg">
+
+
+<div>
+
+<a class="btn_X v1" href="#">&nbsp;</a>
+<a class="btn_X hover v1" href="#">&nbsp;</a>
+
+<a class="btn_X v2" href="#">&nbsp;</a>
+<a class="btn_X hover v2" href="#">&nbsp;</a>
+
+<a class="btn_X v3" href="#">&nbsp;</a>
+<a class="btn_X hover v3" href="#">&nbsp;</a>
+
+<a class="btn_X v4" href="#">&nbsp;</a>
+<a class="btn_X hover v4" href="#">&nbsp;</a>
+
+<a class="btn_X v5" href="#">&nbsp;</a>
+<a class="btn_X hover v5" href="#">&nbsp;</a>
+
+
+</div>
+
+
+
+<div class="mw_1400">
+      
+<div class="page_num v1">
+
+<div>01</div>
+<div>06</div>
+
+</div>
+
+<div class="page_num v2">
+<div>01</div>
+<div class="line"><div class="buoy">&nbsp;</div></div>
+<div>06</div>
+
+</div>
+
+
+<div class="page_num v3">
+<div>06</div>
+<div class="line"><div class="buoy">&nbsp;</div></div>
+<div>06</div>
+</div>
+
+
+
+
+</div>
+
+<div class="btn_demo mw_1200">
+
+
+
+
+
+
+
+
+<div class="box btn_arrow">
+      
+<a class="btn_L" href="#">&nbsp;</a>
+<a class="btn_R" href="#">&nbsp;</a>
+<a class="btn_L v2" href="#">&nbsp;</a>
+<a class="btn_R v2" href="#">&nbsp;</a>
+
+</div>
+
+
+
+
+<div class="box dot_box t_v1"><a href="#">TEXT t_v1</a><a class="click_now" href="#">TEXT t_v1</a></div>
+
+<div class="box dot_box t_v2">
+      <a href="#">
+            <span class="btn_info"><div>Denim on Denim t_v2</div>Denim Is Universal And Seasonless, It Goes Beyond The Simple Jeans. Double Up You Denim With Contrasting Wash For A Stylish Chic.</span>
+            <span class="btn_num">01</span>
+      <a class="click_now" href="#">
+            <span class="btn_info"><div>Denim on Denim t_v2</div>Denim Is Universal And Seasonless, It Goes Beyond The Simple Jeans. Double Up You Denim With Contrasting Wash For A Stylish Chic.</span>
+            <span class="btn_num">01</span>
+      </a>
+</div>
+
+
+<div class="box dot_box t_v3">
+      <a href="#">
+            <span class="btn_info">Denim on Denim t_v3</span>
+            <span class="btn_num">01</span>
+      <a class="click_now" href="#">
+            <span class="btn_info">Denim on Denim t_v3</span>
+            <span class="btn_num">01</span>
+    
+      </a>
+</div>
+
+
+
+
+</div>
+<div class="btn_demo mw_1200">
+
+
+
+<div class="box dot_box v1"><a href="#">&nbsp;</a><a class="click_now" href="#">&nbsp;</a><div class="note_">ICON v1</div></div>
+<div class="box dot_box v2"><a href="#">&nbsp;</a><a class="click_now" href="#">&nbsp;</a><div class="note_">ICON v2</div></div>
+<div class="box dot_box v3"><a href="#">&nbsp;</a><a class="click_now" href="#">&nbsp;</a><div class="note_">ICON v3</div></div>
+<div class="box dot_box v4"><a href="#">&nbsp;</a><a class="click_now" href="#">&nbsp;</a><div class="note_">ICON v4</div></div>
+</div>
+
+</body>
+</html>

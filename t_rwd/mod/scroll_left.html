@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css-all/all.css"/>
+<link media="all" rel="stylesheet" href="../css-all/size.css"/>
+
+<style>
+/* 
+
+#17181a
+#28282a
+#575859
+#e6404a
+#db3039
+#5f232a
+#46171d
+
+*/
+
+
+.line{
+
+      position: fixed;
+      left: 40%;
+      top: 0;
+
+      z-index: 9999;
+
+
+width: 1px;
+height: 100%;
+
+background: red;
+
+
+transform: translateX(-50%);
+
+
+
+}
+
+body{
+      background-color: #17181a;
+ 
+}
+.screen_size{
+   
+}
+.products_list_page{
+
+      width: 100%;
+      height: calc(100vh - 160px);
+      /* border: 1px red solid; */
+      white-space: nowrap;
+}
+.products_list_page > div{
+      display: inline-block;
+      border: 1px red solid;
+      width: 20%;
+      height: 100%;
+}
+
+
+
+
+.dot_box{
+      position:fixed;
+      z-index:300;
+      margin-top:0px;
+      -webkit-transition:all 0.21s;
+      -o-transition:all 0.21s;
+      transition:all 0.21s;
+}
+
+
+.dot_box a{
+      display: block;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      -webkit-transition:all 0.45s;
+      -o-transition:all 0.45s;
+      transition:all 0.45s;
+
+}
+
+.dot_box a:before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      content:'';
+      display: block;
+
+      width: 11px;
+      height: 11px;
+/* 
+      margin-top: -9px;
+      margin-left: -9px; */
+
+      background-color:#e6404a;
+
+      border: 1px #5f232a solid;
+      border-radius: 50%;
+
+
+
+      background: #5f232a;
+      border-color:  #e6404a ;
+
+
+
+      -webkit-transition:all 0.45s;
+      -o-transition:all 0.45s;
+      transition:all 0.45s;
+
+      transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+.p_top{
+}
+
+.p_bottom{
+      left: calc(50% - 60px);
+      bottom: 25px;
+      width: 100%;
+}
+.p_bottom > a{
+      display: inline-block !important;
+}
+
+.p_left{
+      top: calc( 66.666666% - 60px );
+      left: 0;
+}
+.p_right{
+      top: calc( 33.333333% - 60px );
+      right: 0;
+}
+
+
+
+
+
+/* jQ */
+
+.p_left .tag_who,
+.p_right .tag_who {
+      margin-top: 35px;
+      margin-bottom: 35px;
+}
+.p_bottom .tag_who {
+/*       margin-top: 35px; */
+      margin-left: 35px;
+      margin-right: 35px;
+}
+.dot_box a.tag_who:before {
+
+
+      background-color:#e6404a;
+
+      border: 1px #5f232a solid;
+
+      width: 18px !important;
+      height: 18px !important;
+      border-width: 3px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.display_menu{
+
+      position: fixed;
+      top:0;
+      right:0;
+      z-index: 600;
+
+}
+
+.control_menu{
+      position: fixed;
+      bottom:75px;
+      left: 50%;
+      z-index: 600;
+
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+.control_menu > *{
+      display: block;
+      font-size: 12px;
+      line-height: 18px;
+      color: #fff;
+
+      padding: 16px 0;
+
+      width: 50px;
+      background-color: red;
+
+      -webkit-transition:all 0.27s ease-in-out;
+      -o-transition:all 0.27s ease-in-out;
+      transition:all 0.27s ease-in-out; 
+}
+.c_Top{
+      position: absolute;
+      top: -100%;
+
+
+      border-radius: 4px 4px 0 0;
+      }
+.c_Bottom{
+      position: absolute;
+      bottom: -100%;
+      border-radius: 0 0 4px 4px;
+}
+.c_Prev{
+      position: absolute;
+      top: 0;
+      left: -100%;
+      border-radius: 4px 0 0 4px;
+}
+.c_Next{
+      position: absolute;
+      top: 0;
+      right: -100%;
+      border-radius: 0 4px 4px 0;
+}
+
+
+
+.c_Left{
+      position: absolute;
+      top: 0;
+      left: -200%;
+      border-radius: 4px 0 0 4px;
+
+}
+
+.c_Right{
+
+      position: absolute;
+      top: 0;
+      right: -200%;
+      border-radius: 0 4px 4px 0;
+}
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+
+<script>
+$(function(){
+
+var win_S_L = 0;
+var win_W = $(window).width();
+
+$('.screen_size').each(function() {
+      var now_product = 0;
+
+      var ts = $(this);
+
+      var build_product = '';
+
+      for (var i = 1; i <= 30; i++) {
+            build_product += '<div>'+ (i) +'</div>';
+      }
+      
+ts.find('.products_list_page').html(build_product);
+
+     
+var hmp = ts.find('.products_list_page > div').length;
+
+
+var build_dot_btn = '';
+ts.find('.products_list_page > div').each(function(i) {
+
+      build_dot_btn += '<a href="#">' + (i+1) + '</a>'
+  
+});
+
+ts.find('.dot_box.demo').html(build_dot_btn);
+
+var product_box_L = [];  
+var product_box_W = []; 
+
+get_box_TH();
+
+function get_box_TH(){
+      ts.find('.products_list_page > div').each(function(i) {
+            product_box_L.push( $(this).offset().left );
+            product_box_W.push( $(this).outerWidth() );
+
+      });
+}
+
+
+
+ts.find('.dot_box.p_right > a , .dot_box.p_left > a').on('click',function() {
+      now_product = $(this).index();
+      moveDot_T(now_product);
+      moveBody_L(now_product);
+
+      $(this).addClass('tag_who').siblings().removeClass('tag_who');
+
+      return false;
+});
+
+ts.find('.dot_box.demo.p_bottom > a').on('click',function() {
+
+      now_product = $(this).index();
+
+      moveDot_L(now_product);
+      moveBody_L(now_product);
+
+      $(this).addClass('tag_who').siblings().removeClass('tag_who');
+
+      return false;
+});
+
+
+
+
+function moveDot_T(go){
+      ts.find('.dot_box.p_left , .dot_box.p_right').stop(true).animate({ marginTop: - ( go * 90 ) + 'px' },300);
+      ts.find('.dot_box.p_left a, .dot_box.p_right a').eq(go).addClass('tag_who').siblings().removeClass('tag_who');
+}
+
+
+
+function moveDot_L(go){
+      ts.find('.dot_box.p_bottom').stop(true).animate({ marginLeft: - ( go * 50 ) + 'px' },300);      
+      ts.find('.dot_box.p_bottom a').eq(go).addClass('tag_who').siblings().removeClass('tag_who');
+}
+function moveBody_L(go){
+      var left_space = win_W/2 - product_box_W[go]/2;
+      $('html, body').stop(true).animate({ scrollLeft: product_box_L[go] - left_space}, 360);
+}
+
+
+ts.find('.c_Top , .c_Bottom, .c_Prev , .c_Next , .c_Left , .c_Right').on('click', function() {
+
+if( $(this).hasClass('c_Top') ){
+      moveBody_L(now_product = 0);
+      moveDot_L(now_product = 0);
+}else if( $(this).hasClass('c_Bottom') ){
+      moveBody_L(now_product = hmp-1 );
+      moveDot_L(now_product = hmp-1 );
+
+}else if( $(this).hasClass('c_Left') ){
+      moveBody_L(now_product = 0);
+      moveDot_L(now_product = 0);
+
+}else if( $(this).hasClass('c_Right') ){
+      moveBody_L( now_product = hmp-1 );
+      moveDot_L(now_product = hmp-1 );
+
+}else if( $(this).hasClass('c_Prev') ){
+
+      if(now_product === 0 ){
+            moveBody_L( now_product ); 
+            moveDot_L(now_product = 0);
+      }else{
+
+            now_product -= 1;
+            moveBody_L( now_product ); 
+            moveDot_L( now_product );    
+      }
+
+}else if( $(this).hasClass('c_Next') ){
+
+      if(now_product === hmp-1 ){
+            moveBody_L(now_product ); 
+            moveDot_L(now_product = hmp-1 );  
+      }else{
+
+            now_product += 1;
+            moveBody_L( now_product );
+            moveDot_L(now_product);       
+      }
+   
+ 
+}else{
+
+
+}
+
+
+return false;
+ 
+});
+
+
+
+
+// var ppp = win_W/2 - ( product_box_W[0]/2+9 );
+
+
+// $(window).on('scroll load', function() {
+      
+//       win_S_L = $(window).scrollLeft();
+
+
+
+//       for (var sp = 0; sp <= hmp; sp++) {
+
+//             if( win_S_L + win_W/2  >= product_box_L[sp] ) {
+//                   now_product = sp; 
+//                   // ts.find('.dot_box.p_bottom').css({ marginLeft: - ( now_product * 50 ) + 'px' });
+//                   // ts.find('.dot_box.p_bottom a').eq(now_product).addClass('tag_who').siblings().removeClass('tag_who');
+
+
+//                   moveDot_L(now_product);
+
+//             }
+
+//       }
+
+// });//window scroll
+
+moveDot_T( now_product );
+moveDot_L( now_product );
+moveBody_L( now_product );
+
+});
+
+});
+// end
+</script>
+</head>
+<body>
+<div class="line"></div>
+<!-- 
+demo_page
+content_box
+screen_size 
+-->
+
+<div class="screen_size ">
+
+
+
+
+
+
+<div class="display_menu">
+      <a class="one_line" href="#">1</a>
+      <a class="two_line" href="#">2</a>
+      <a class="queue" href="#">queue</a>
+</div>
+
+
+
+<div class="control_menu">
+      <a class="c_Top" href="#"><span>T<span></a>
+      <a class="c_Left" href="#"><span>L<span></a>
+      <a class="c_Prev" href="#"><span>P<span></a>
+      <div class="content_num"><span>999</span><span>999</span></div>
+      <a class="c_Next" href="#"><span>N<span></a>
+      <a class="c_Right" href="#"><span>R<span></a>      
+      <a class="c_Bottom" href="#"><span>B<span></a>
+</div>
+
+
+
+<div class="dot_box demo p_left"></div>
+
+<div class="dot_box demo p_right"></div>
+
+<div class="dot_box demo p_bottom"></div>
+
+<div class="products_list_page">
+      
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
