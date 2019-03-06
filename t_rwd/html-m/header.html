@@ -54,15 +54,18 @@ header
 */
 
 
+
+
+
+
+
+
+
 body{
     background-image:url(../img-m/bg_01.jpg);
     background-repeat:repeat !important;
     background-color: #35373c;
 }
-
-
-
-
 .open_close{
     overflow: hidden;
     position: fixed;
@@ -87,8 +90,6 @@ transition: all 0.3s ease-in-out;
 
 /* transform: rotate(180deg); */
 }
-
-
 .open_close .line_A,
 .open_close .line_B{
     position: absolute;
@@ -169,7 +170,7 @@ transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
 
 
 .kami{
-    background-color: #2d2d2f;
+    /* background-color: #2d2d2f; */
 }
 
 .content_menu{
@@ -370,6 +371,13 @@ min-height: 100vh;
     overflow: hidden;
     position: relative;
 }
+
+
+
+
+
+
+footer,
 header{
     position: fixed;
     top: 0;
@@ -379,15 +387,24 @@ header{
     background-color: #fff;
     border-bottom:1px #e1e1e1 solid;
 }
+footer{
+    top: 100%;
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+
+}
+
+
+.screen_size footer,
 .screen_size header{
     position: absolute;
 }
-.m_v2019{
-
+/* .m_v2019{
     z-index: 1200;
-}
+} */
 
-.m_v2019 > div{
+.m_HF header > div{
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,6 +560,14 @@ header{
 
 
 
+.m_HF.v2{
+
+
+}
+
+
+
+
 ul ul li {
     display:block;
     text-align:left;
@@ -648,15 +673,15 @@ ul ul li:first-child:nth-last-child(9)~li{
 
 
 @media screen and (min-width:1024px) {
-ul > li:hover ul{
+ 
+.if_v1 ul > li:hover ul,
+.m_HF.v1 ul > li:hover ul{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
 }
-
-
 @media screen and (max-width:1023px) {
 
 .new_in,
@@ -705,22 +730,10 @@ ul > li:hover ul{
 
     overflow-y: auto;
 }
-
-
 .screen_size .mm_nav{
     position: absolute;
 
 }
-
-
-/* .mm_nav ul{
-
-    display:none;
-    position: static !important;
-    max-height: 100% ;
-    height: 100% ;
-}
- */
 
 .mm_nav ul{
     display: none;
@@ -736,11 +749,6 @@ ul > li:hover ul{
 *[class*="_nav"] .open_menu{
     display: block;
 }
-
-
-
-
-
 .mm_nav > li{
     display: block;
     border-bottom:1px #656d78 solid;
@@ -764,8 +772,6 @@ ul > li:hover ul{
 .mm_nav ul li:last-child{  
     padding-bottom: 10px;
 }
-
-
 }
 
 
@@ -935,8 +941,49 @@ ul > li:hover ul{
     background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
     background: linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
 }
+.if_v1 > footer{
+
+    border-top: 1px #C8C8C8 solid;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
+}
+.if_v1 footer > div{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.if_v1 .btn_box_C *,
+.if_v1 .btn_box_B *{
+    display: inline-block;
+}
+
+.if_v1 .btn_box_C a,
+.if_v1 .btn_box_B a{
+
+    font-size: 12px;
+    line-height: 18px;
+
+    padding: 9px;
+}
+
+
+
+.text_copyright{
+
+    font-size: 12px;
+    line-height: 18px;
+
+    padding: 9px;
+
+}
+
+
+
 .top_white{
     position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -947,13 +994,10 @@ ul > li:hover ul{
 
     height: 63px;
 }
-
-.top_white > *{
-}
-
 .top_white > *:last-child{
     margin-left: auto;
 }
+
 
 .if_nav{
     display: -webkit-box;
@@ -1242,9 +1286,6 @@ ul > li:hover ul{
     background-position-y: -1095px;
 }
 
-
-
-
 .v2[class^="btn_"] .num_boo{
     position: absolute;
     top: 6px;
@@ -1253,22 +1294,10 @@ ul > li:hover ul{
     font-size: 12px !important;
         font-family: sans-serif;
     font-style:normal;
-
 }
 .v2[class^="btn_"]:hover .num_boo{
-
-    background-color:#a97962;
-
-
+   background-color:#a97962;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1727,9 +1756,7 @@ ul > li:hover ul{
     background-color: #fff;
     overflow-y:auto;
 
-
     margin-left: -100%;
-
 
     height:auto;
     max-height:calc(100vh - 108px);
@@ -1802,24 +1829,18 @@ ul > li:hover ul{
 
 .if_v2 header > *{
     display: inline-block;
-
 }
-
-
 .if_v2 .if_nav{
     /* display: none; */
     display: block;
     position: fixed;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    overflow-y:auto;
 
+    overflow-y:auto;
 
     margin-left: -100%;
     margin-left: 0%;
-
-
 
     height:auto;
     max-height:calc(100vh - 108px);
@@ -1828,6 +1849,7 @@ ul > li:hover ul{
     min-width: 300px;
     max-width: 50% ;
 
+    background-color: #fff;
     border-top: 1px #C8C8C8 solid;
     border-right: 1px #969696 solid ;
     border-bottom: 1px #969696 solid;
@@ -1891,7 +1913,6 @@ ul > li:hover ul{
     min-width: none;
     max-width: none;
 }
-
 .offer_info_box{
     top: 79px !important;
     width: calc(100% - 60px) ;
@@ -1909,42 +1930,41 @@ ul > li:hover ul{
 
 
 
-.m_v2019_2{
+.m_HF.v2 header{
     display: flex;
     justify-content: space-between ;
     background:none;
     border: none; 
 }
-.m_v2019_2 > *{
+.m_HF.v2 > *{
     display: inline-block;
 }
-.m_v2019_2 .three_line{
+.m_HF.v2 .three_line{
     display: block;
     margin:6px 0; 
 }
-.m_v2019_2 .three_line.click span{
+.m_HF.v2 .three_line.click span{
     background-color: #fff;
 }
-.m_v2019_2 .mm_nav{
+.m_HF.v2 .mm_nav{
     position:fixed;
     top: 72px;
-    right: 0;
+    left: 100%;
 
     max-width: 320px;
     width: 100%;
-
     max-height: calc(100vh - 144px);
+
+    margin-left: 0px;
+
     overflow-y: auto;
 }
-.screen_size .m_v2019_2 .mm_nav{
+
+.m_HF.v2 .mm_nav{
     position: absolute;
 }
-.m_v2019_2 .mm_nav{
-    position:fixed;
-    top: 72px;
-    right: 0;
-}
-.m_v2019_2 .mm_nav ul{
+
+.m_HF.v2 .mm_nav ul{
     position: static;
 
     width: 100% ;
@@ -1955,56 +1975,51 @@ ul > li:hover ul{
 }
 
 
-.m_v2019_2 .mm_nav ul li{
+.m_HF.v2 .mm_nav ul li{
     display: block;
     min-width: none;
 }
-.m_v2019_2 .mm_nav ul a{
+.m_HF.v2 .mm_nav ul a{
     padding-left: 32px;
 }
-.m_v2019_2 .mm_nav li{
+.m_HF.v2 .mm_nav li{
     display: block;
 }
-.m_v2019_2 .mm_nav li,
-.m_v2019_2 .mm_nav a{
+.m_HF.v2 .mm_nav li,
+.m_HF.v2 .mm_nav a{
     position: static;
     display: block;
     width: 100% !important;
 }
-.m_v2019_2 .mm_nav li:hover ul{
+
+
+
+
+
+/* .m_HF.v2 .mm_nav li:hover ul{
     display: block;
 }
 
 
-
+ */
 
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 
 
 <script>
-
 $(function(){
-// var winw = $(window).width();
-// var winw;
 
 
 
-$('.open_close').on('click',function() {
 
-    $(this).toggleClass('baby_come_back').next('.content_menu').toggleClass('come_back');
-
-});
-
+// $(window).on('load' , function() {
 
 
 
 var header_H = 0;
 var info_box_L = 0;
 var info_box_W = 0;
-
-// var btn_s_r_L = 0;
-// var btn_s_r_W = 0;
 
 var btn_my_account_L = 0;
 var btn_my_account_W = 0;
@@ -2015,21 +2030,34 @@ var btn_shopping_bag_W = 0;
 var btn_mywish_L = 0;
 var btn_mywish_W = 0;
 
-// var btn_search_L = 0;
-// var btn_search_W = 0;
-
 var winw = 0;
 
-$(window).on('resize load' , function() {
 
+
+
+$(window).on('resize load' , function() {
+winw = 0;
+
+header_H = 0;
+info_box_L = 0;
+info_box_W = 0;
+
+btn_my_account_L = 0;
+btn_my_account_W = 0;
+
+btn_shopping_bag_L = 0;
+btn_shopping_bag_W = 0;
+
+btn_mywish_L = 0;
+btn_mywish_W = 0;
 
 
 winw = $(window).width();
+
 header_H = $('.if_v1 > header').outerHeight();
 
 info_box_L = $('.if_v1 .event_info_B').offset().left;
 info_box_W = $('.if_v1 .event_info_B').outerWidth();
-
 
 // btn_s_r_L = $('.if_v1 .btn_s_r').offset().left;
 // btn_s_r_W = $('.if_v1 .btn_s_r').outerWidth();
@@ -2047,47 +2075,57 @@ btn_mywish_W = $('.if_v1 .btn_mywish').outerWidth();
 // btn_search_W = $('.if_v1 .btn_search').outerWidth();
 
 
-$('.screen_size').each(function() {
-    
-var if_v1 = $(this);
-
-if_v1.find('.offer_info_box').css({ left: ( info_box_W + info_box_L - 2 )  + 'px'  , top: header_H + 'px' });
-if_v1.find('.my_account_box').css({ left: ( btn_my_account_W + btn_my_account_L - 2 )  + 'px' });
-if_v1.find('.bag_list_box').css({ left: ( btn_shopping_bag_W + btn_shopping_bag_L - 2 )  + 'px' });
-if_v1.find('.wish_list_box').css({ left: ( btn_mywish_W + btn_mywish_L - 2 )  + 'px' });
 
 if( winw >= 1024 ){
     $('.if_v1 .promo_event_txt').prependTo('.if_v1 .event_info_B');
 }else if( winw <= 1023 ){
     $('.if_v1 .promo_event_txt').prependTo('.if_v1 .offer_info_box');
 }
+
+
 if( winw >= 768 ){
-    if_v1.find('*').removeClass('click abc open open_menu');
-    if_v1.find('*').css({margin: ''});
+    $('.if_v1 *').removeClass('click abc open open_menu');
+    $('.if_v1 *').css({margin: ''});
 
-     if_v1.find('*[class*="_nav"] > li').css('display', '');
-     if_v1.find('*[class*="_nav"] > li > ul').css('display', '');
+    $('.if_v1 .offer_info_box').css({ left: ( info_box_W + info_box_L - 2 )  + 'px'  , top: header_H + 'px' });
 
-     if_v1.find('.btn_box_A').appendTo('.if_v1 .top_blue > div');
-     if_v1.find('.my_account_box').appendTo('.if_v1');
-     if_v1.find('.bag_list_box').appendTo('.if_v1');
-     if_v1.find('.wish_list_box').appendTo('.if_v1');
+    $('.if_v1 .my_account_box').css({ left: ( btn_my_account_W + btn_my_account_L - 2 )  + 'px' });
+    $('.if_v1 .bag_list_box').css({ left: ( btn_shopping_bag_W + btn_shopping_bag_L - 2 )  + 'px' });
+    $('.if_v1 .wish_list_box').css({ left: ( btn_mywish_W + btn_mywish_L - 2 )  + 'px' });
+
+    $('.if_v1 *[class*="_nav"] > li').css('display', '');
+    $('.if_v1 *[class*="_nav"] > li > ul').css('display', '');
+
+    $('.if_v1 .btn_box_A').appendTo('.if_v1 .top_blue > div');
+    $('.if_v1 .my_account_box').appendTo('.if_v1');
+    $('.if_v1 .bag_list_box').appendTo('.if_v1');
+    $('.if_v1 .wish_list_box').appendTo('.if_v1');
+
+    if( $('.if_v1 .three_line').hasClass('click') ){
+        $('.if_v1 .three_line').removeClass('click');
+        $('.if_v1 [class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+    }
 
 }else if( winw <= 767 ){
-     if_v1.find('.btn_box_A').prependTo('.if_v1 .if_nav');
-     if_v1.find('.my_account_box').insertAfter('.if_v1 .btn_box_A .btn_my_account');
-     if_v1.find('.bag_list_box').insertAfter('.if_v1 .btn_box_A');
-     if_v1.find('.wish_list_box').insertAfter('.if_v1 .btn_box_A');
+$('.if_v1 .offer_info_box').css({ left:' 100% '  , top: header_H + 'px' });
+     $('.if_v1 .btn_box_A').prependTo('.if_v1 .if_nav');
+
+     $('.if_v1 .my_account_box').insertAfter('.if_v1 .btn_box_A .btn_my_account');
+     $('.if_v1 .bag_list_box').insertAfter('.if_v1 .btn_box_A');
+     $('.if_v1 .wish_list_box').insertAfter('.if_v1 .btn_box_A');
 }
 
-if_v1.find('.btn_s_r , .btn_my_account , .btn_shopping_bag , .btn_mywish , .btn_search , .btn_promo_info').on('click', function() {
 
-    if( winw >= 768 ){
-       if( $('.three_line').hasClass('click') ){
-            $('.three_line').removeClass('click');
-            $('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
-        }
-    }
+});
+
+
+
+
+$('.screen_size').each(function() {
+    
+var if_v1 = $(this);
+
+if_v1.find('.btn_s_r , .btn_my_account , .btn_shopping_bag , .btn_mywish , .btn_search , .btn_promo_info').on('click', function() {
 
     if( $(this).hasClass('btn_s_r') ){
         // $('').slideToggle(300).siblings('[class$="_box"]').slideUp(180);
@@ -2109,37 +2147,48 @@ if_v1.find('.btn_s_r , .btn_my_account , .btn_shopping_bag , .btn_mywish , .btn_
 
     }
 
-        // .offer_info_box
+    // .offer_info_box
     return false;
-});
+});// 
 
-});
-// screen_size
-});
-// resize
+// });// .screen_size
 
 
-$('header').each(function() {
 
-var ts = $(this);
-ts.find('.three_line').on('click', function() {
 
-    ts.siblings('[class$="_box"]').slideUp(180);
+
+
+
+
+
+// $('header').each(function() {
+
+// var ts = $(this);
+
+    if_v1.find('.three_line').on('click', function() {
+
+        if_v1.siblings('[class$="_box"]').slideUp(180);
 
         if($(this).hasClass('click')){
             $(this).removeClass('click');
-            ts.find('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+            if_v1.find('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+
+            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '0px'}, 100);
+
         }else{
             $(this).addClass('click');  
-            ts.find('[class*="_nav"]').animate({marginLeft: '0%'}, 100);
-        }
 
+            if_v1.find('[class*="_nav"]').animate({marginLeft: '0%'}, 100);
+
+            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '-320px'}, 100);
+        }
+        
     return false;
     });
 
-    ts.find('[class*="_nav"] > li').on('click', function() {
+    if_v1.find('[class*="_nav"] > li').on('click', function() {
 
-    if( ts.parents('.screen_size').find('.three_line').hasClass('click')  ){
+    if( if_v1.find('.three_line').hasClass('click') ){
 
         if($(this).hasClass('open')){
             $(this).removeClass('open');
@@ -2171,42 +2220,15 @@ ts.find('.three_line').on('click', function() {
 
 
 
-$('.screen_size').each(function() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-});
-
-
-
-
-
-});
-// end
+});// end
 </script>
 </head>
 <body>
 
-<div class="screen_size kami">
-<header class="m_v2019_2">
+<div class="screen_size kami m_HF v2">
 
+
+<header class="">
 <a class="logo-M-mountain v2" href="#">&nbsp;</a>
     <a class="three_line" href="#">
         <span class="line _a"></span>
@@ -2270,26 +2292,8 @@ $('.screen_size').each(function() {
 </ul>
 </header>
 
-<a class="open_close" href="#">
-    <span class="line_A">&nbsp;</span>
-    <span class="line_B">&nbsp;</span>
-</a>
 
 
-
-
-
-<div class="content_menu">
-    <a href="#page_num_1" class="tag_who"><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses Anytime Black Dresses Anytime Black Dresses Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-    <a href="#page_num_1" ><span class="num">01</span><span class="txt">Anytime Black Dresses</span></a>
-
-</div>
 
 
 
@@ -2300,9 +2304,9 @@ $('.screen_size').each(function() {
 
  
 
-<div class="screen_size">
+<div class="screen_size m_HF v1">
 
-<header class="m_v2019">
+<header class="">
 
 
 <div class="mw_1200">
@@ -2669,8 +2673,15 @@ Offers not valid on full-price items. To redeem online, enter code in the promo 
 <!-- if v2 -->
 
 
-<!-- if h v1 -->
 
+
+
+
+
+
+
+
+<!-- if h v1 -->
 <div class="screen_size if_v1">
 
 <header class="">
@@ -3050,6 +3061,45 @@ free shipping &amp; returns on orders above $75
 <!-- wish_list_box -->
 
 
+<footer class="">
+
+<div class="mw_1200">
+
+<!-- <div class="newsletter_box">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+    <h3>THE ifchic NEWSLETTER</h3>
+    <p>Receive the latest fashion news, beauty inspiration, shopping ideas and more straight to your inbox every day.</p>
+    <form class="v2">
+    <input class="w_100" type="text" placeholder="Enter your email"><a class="btn_right" href="#">&nbsp;</a>
+    </form>
+    <p>To opt-out of email sharing or to view our <a href="#">Privacy Policy</a>.</p>
+</div>
+ -->
+
+
+
+
+<!-- <a class="btn_use_info" href="#">useful information...</a> -->
+
+<div class="btn_box_B">
+    <a href="useful_information_v1/customer_care_about_us.html">about us</a>
+    <a href="useful_information_v1/customer_care_contact_us.html">contact us</a>
+    <a href="useful_information_v1/customer_care_terms_conditions.html">terms &amp; conditions</a>
+    <a href="useful_information_v1/customer_care_privacy_cookie_policy.html">privacy &amp; cookie policy</a>
+    <a href="useful_information_v1/customer_care_ifchic24_Event_FAQ.html">#ifchic24</a>
+</div>
+    
+<div class="btn_box_C">
+    <a class="btn_newsletter" href="#">newsletter</a>
+    <a class="social_media_btn icon_pinterest" href="#">&nbsp;</a>
+    <a class="social_media_btn icon_facebook" href="#">&nbsp;</a>
+    <a class="social_media_btn icon_instagram" href="#">&nbsp;</a>
+    <div class="text_copyright">© MOUNTAIN 2018</div>
+</div>
+
+
+</div>
+</footer>
 
 
 

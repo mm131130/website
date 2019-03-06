@@ -585,27 +585,6 @@ page_info
 
 
 
-.rwd_size_box{
-  padding:90px 0 45px 0;
-  text-align: center;
-}
-
-.rwd_size_box a{
-  display: inline-block;
-  font-size: 16px;
-  line-height: 18px;
-  color: #0f1329;
-  text-align: center;
-  padding: 16px ;
-}
-.rwd_size_box a span{
-  display: block;
-  font-size: 12px;
-  line-height: 18px;
-
-}
-
-
 
 
 /* product_list_page */

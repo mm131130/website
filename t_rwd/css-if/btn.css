@@ -58,17 +58,34 @@ plus_img
 */
 
 
-
-
-
-
-
 /* 
 .arrow_top,
 .arrow_down,
 .arrow_left,
 .arrow_right 
 */
+
+
+
+
+/*
+.icon_pinterest
+.icon_facebook
+.icon_instagram
+.icon_twitter
+.icon_email
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,13 +293,30 @@ plus_img
     background-color: #a97962;
 }
 
+
+
+
+
+.mm_nav .num_boo{
+
+    font-family: roboto_Regular;
+    margin-left: 9px;
+
+}
 .mm_nav ul .num_boo{
-    line-height: 24px !important;
+    font-size: 12px !important;
+
+    /* line-height: 24px; */
+        vertical-align: baseline;
     /* padding:13px 18px !important;  */
-    padding-top:13px ; 
-    padding-bottom:13px ; 
+/*     padding-top:13px ; 
+    padding-bottom:13px ;  */
 }     
 
+.mm_nav a:hover .num_boo{
+    color: #fff !important;
+    background-color: #e9573f !important;
+}
 
 
 
@@ -1519,5 +1553,111 @@ transform: translateY(-50%) rotate(180deg);
 .l_icon.v1{
     background-position-x:-150px;    
 }
+
+
+
+
+
+
+
+
+
+/*
+.icon_pinterest
+.icon_facebook
+.icon_instagram
+.icon_twitter
+.icon_email
+*/
+.social_media_btn{
+    display: inline-block;
+    clear: none;
+    width:36px; 
+    height:36px;
+    background-image:url(../img-if/icon_2017.svg);
+    background-position-y:-1257px;
+    padding:0 !important;
+    }
+    
+.icon_pinterest{
+    background-position-x:-7px; 
+    }
+.icon_facebook{
+    background-position-x:-57px;    
+    }   
+.icon_instagram{
+    background-position-x:-257px;   
+    }
+.icon_twitter{
+    background-position-x:-157px;       
+    }
+.icon_email{
+    background-position-x:-207px;   
+    }
+.social_media_btn:hover{
+    background-position-y:-1307px;  
+    }  
+
+
+
+.v2 .social_media_btn{
+    width:50px; 
+    height:50px;
+    background-position-y:-1250px;
+    }
+    
+.v2 .icon_pinterest{
+    background-position-x:-300px; 
+    }
+.v2 .icon_facebook{
+    background-position-x:-350px;    
+    }   
+.v2 .icon_instagram{
+    background-position-x:-550px;   
+    }
+.v2 .icon_twitter{
+    background-position-x:-450px;       
+    }
+.v2 .icon_email{
+    background-position-x:-500px;   
+    }
+.v2 .social_media_btn:hover{
+    background-position-y:-1300px;  
+    }  
+
+
+@media screen and (max-width:767px) {
+
+.social_media_btn{
+    width:50px; 
+    height:50px;
+    background-position-y:-1250px;
+    }
+    
+.icon_pinterest{
+    background-position-x:-300px; 
+    }
+.icon_facebook{
+    background-position-x:-350px;    
+    }   
+.icon_instagram{
+    background-position-x:-550px;   
+    }
+.icon_twitter{
+    background-position-x:-450px;       
+    }
+.icon_email{
+    background-position-x:-500px;   
+    }
+.social_media_btn:hover{
+    background-position-y:-1300px;  
+    }  
+
+
+}
+
+
+
+
 
 

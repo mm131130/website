@@ -100,10 +100,16 @@ a{
     font-family: roboto_Regular;
     color: #0f1329;
 }
-a:hover{
+a:hover,
+a:hover span{
     color: #a97962 !important;
-
 }
+
+
+
+
+
+
 
 
 
@@ -136,7 +142,6 @@ b{
 .dark_night *,
 .dark_night .tag:before,
 .dark_night .tag:after{
-
   color: #fff !important;
 }
 .dark_night .double_quotes:after,   

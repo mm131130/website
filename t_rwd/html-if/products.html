@@ -75,7 +75,11 @@ body{
 
 .ps_list_box{
 	width: 100%;
-	height: 100%;
+
+	position: relative;
+
+	top: 88px;
+	height: calc( 100% - 124px );
 
   	display: -webkit-box;
   	display: -ms-flexbox;
@@ -86,6 +90,9 @@ body{
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+
+
+
 }
 .ps_list_box > div{
 	display: block; 
@@ -325,28 +332,17 @@ a.list{
 <script src="../jq/if.js"></script>
 
 <script>
-// $(function() {
-// $(window).load(get_products_list());
+
+
 
 $(window).on('load' , function() {
 
-// get_products_list();
 
+
+// $('.wish_icon').on('click', function() {
+// 	$(this).toggleClass('click');
+// 	return false;
 // });
-
-
-// $(window).on('load' , function() {
-
-// $('.ps_list_box .product_box').each(function() {
-//   var wish_html = '<a class="wish_icon" href="#">&nbsp;</a>';
-//   $(this).append(wish_html);
-// });
-
-
-$('.wish_icon').on('click', function() {
-	$(this).toggleClass('click');
-	return false;
-});
 
 
 

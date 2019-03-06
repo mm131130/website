@@ -40,10 +40,14 @@
 <link media="all" rel="stylesheet" href="../css-all/size.css"/>
 <link media="all" rel="stylesheet" href="../css-all/fonts.css"/>
 
+
+<link media="all" rel="stylesheet" href="../css-m/m_HF.css"/>
+
 <link media="all" rel="stylesheet" href="../css-if/2019_1.css"/>
 
 <link media="all" rel="stylesheet" href="../css-if/btn.css"/>
 <link media="all" rel="stylesheet" href="../css-if/rwd_demo_2.css"/>
+
 
 <style>
 
@@ -85,8 +89,6 @@ transition: all 0.3s ease-in-out;
 
 .open_close .line_A,
 .open_close .line_B{
-
-
     position: absolute;
 
 top: 50%;
@@ -168,22 +170,89 @@ transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
     background-color: #2d2d2f;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.rwd_size_box h1 {
+    opacity: 0.36;
+    width: 100%;
+}
+
+.rwd_size_box{
+  padding:90px 0 45px 0;
+  text-align: center;
+}
+
+.rwd_size_box > div{
+    display: inline-block;
+}
+
+.rwd_size_box a{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  color: #0f1329;
+  text-align: center;
+  padding: 16px ;
+
+
+      -webkit-transition: all 0.21s ease-in-out;
+    -o-transition: all 0.21s ease-in-out;
+    transition: all 0.21s ease-in-out;
+}
+.rwd_size_box a span{
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+      -webkit-transition: all 0.21s ease-in-out;
+    -o-transition: all 0.21s ease-in-out;
+    transition: all 0.21s ease-in-out;
+}
+
+
+
+
+
+.rwd_size_box div:hover a{
+    opacity: 0.36;
+}
+.rwd_size_box a:hover span,
+.rwd_size_box a:hover{
+    opacity: 1 !important;
+    color: red !important;
+}
+/* .content_menu a:hover .list_num{
+    background: red;
+} */
+
+.rwd_size_box a:hover ~ a{
+    opacity:0.72;
+}
+
+
+
+
+
+
+
 .content_menu{
   position: fixed;
 
     top: 144px;
     top: calc( 33.333333% - 96px );
     /* left: 72px; */
-
     z-index: 1200;
-
     max-width: 250px;
     width: 100%;
     /* height: 300px; */
-
-    
-
-   
    left:-320px;
 
 /* 
@@ -201,23 +270,6 @@ transition: all 0.27s ease-in-out;
 -o-transition-delay: 0.30s; /* Opera */ 
 }
 
-
-.content_menu.come_back{
- /* left: 72px; */
-
-/*  height: 600px;
-
- margin-top: -200px;
- */
-
-/* webkit-transform:translate(0%, 0%);
--ms-transform:translate(0%, 0%);    
-transform:translate(0%, 0%);  */
-
-/*     -webkit-animation:come_back 0.45s ease-in-out forwards;
-    -moz-animation:come_back 0.45s ease-in-out forwards;
-    animation:come_back 0.45s ease-in-out forwards; */
-}
 
 
 
@@ -249,12 +301,7 @@ transform:translate(0%, 0%);  */
     transition: all 0.45s;
 
 }
-.content_menu a:hover span{
- 
-    color:red;
-}
 .content_menu a .num {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -270,25 +317,44 @@ transform:translate(0%, 0%);  */
 }
 
 .content_menu .tag_who {
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: #fff;
+  background-color: red ;
 }
-.content_menu .tag_who{
-color: #fff;
-background-color: red ;
-}
-
 .content_menu .tag_who span{
 color: #fff;
 }
+
+
+
+
+
+.content_menu a:hover{
+background-color: #000;
+}
+.content_menu a:hover span{
+color: #fff !important;
+}
+
+
 .content_menu .tag_who:hover{
 background-color: #000;
 }
 .content_menu .tag_who:hover span{
-color: #fff;
+color: #fff !important;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -330,22 +396,13 @@ transform:translate(0%, 0%);
 @media screen and (max-width:767px) {
 
 .open_close{
-
     left: -72px;
-
-
 }
 .content_menu{
-
-   
-   left:0 !important;
-
-
--webkit-transform:translate(-100%, 0%);
--ms-transform:translate(-100%, 0%);    
-transform:translate(-100%, 0%) !important; 
-
-
+  left:0 !important;
+  -webkit-transform:translate(-100%, 0%);
+  -ms-transform:translate(-100%, 0%);    
+  transform:translate(-100%, 0%) !important; 
 }
 
 }
@@ -362,7 +419,6 @@ transform:translate(-100%, 0%) !important;
 
 .screen_size .open_close,
 .screen_size .content_menu{
-
     position: absolute;
 }
 
@@ -411,8 +467,6 @@ transform:translate(-100%, 0%) !important;
       -ms-transform: translate(-100% , -50%);
       transform:rotate(0deg) translate(-200% , -50%) rotate(45deg);
 }
-
-
 .control_menu > *{
       display: block;
 
@@ -428,15 +482,10 @@ transform:translate(-100%, 0%) !important;
       -o-transition:all 0.27s ease-in-out;
       transition:all 0.27s ease-in-out; 
 }
-
-
-
 .control_menu > a{
     overflow: hidden;
     padding:  0;
-
 }
-
 .control_menu > a span{
       display: block;
 
@@ -470,13 +519,13 @@ transform:translate(-100%, 0%) !important;
 
 
 .content_num{
-      overflow: hidden;
-      position: relative;
+  overflow: hidden;
+  position: relative;
 
-    padding: 0;
+  padding: 0;
 
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .content_num span{
   position: absolute;
@@ -494,17 +543,17 @@ transform:translate(-100%, 0%) !important;
   padding: 0;
 }
 .content_num span:first-child{
-      /* text-align: left; */
-      padding: 6px 6px 1px 6px;
-      padding: 0 0 25px 0;
-      -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-      -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-      transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  /* text-align: left; */
+  padding: 6px 6px 1px 6px;
+  padding: 0 0 25px 0;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
   }
 
 .content_num span:last-child{
-    opacity: 0.63;
-      /* text-align: right; */
+  opacity: 0.63;
+    /* text-align: right; */
       padding: 1px 6px 6px 6px;
       padding: 25px 0 0 0;
       /* font-size: 12px; */
@@ -562,14 +611,12 @@ transform:translate(-100%, 0%) !important;
     color: #000 !important;
     background: #fff !important;
 }
-
 .un_work > span{
     opacity: 0.27;
     font-size: 14px !important;
     color: #000 !important;
 
     text-transform: lowercase;
-
 }
 
 
@@ -579,7 +626,7 @@ transform:translate(-100%, 0%) !important;
   left: -90px;
 }
 *[class*="mobile_rwd_"] .content_menu {
-left: -320px;
+  left: -320px !important;
 }
 *[class*="mobile_rwd_"] .control_menu .c_Prev{
   display: none;
@@ -754,7 +801,7 @@ left: -320px;
 <script>
 
 
-  
+
 $(window).on('load', function() {
 var win_W = $(window).width();
 var win_H = $(window).height();
@@ -978,11 +1025,6 @@ $('.rwd_size_box a').on('click' , function() {
       now_page = 0;
       now_product = 0;
 
-
-
-
-
-
     $('.demo_box').removeClass().addClass('demo_box').find('*').css({display : '' , top : '' , bottom : '' , marginBottom : ''});
     $('.demo_box .popup_event_box').siblings().removeClass('filter_ef');
     // .siblings('.popup_bg').remove()
@@ -1021,13 +1063,60 @@ rwd_change();
 
 get_box_TH();
 
-
-
-
 return false;
 
 });// a btn
 
+
+
+
+
+
+
+$('.m_HF').each(function() {
+  var ts_H = $(this);
+
+    ts_H.find('.three_line').on('click', function() {
+
+        // ts_H.siblings('[class$="_box"]').slideUp(180);
+
+        if($(this).hasClass('click')){
+            $(this).removeClass('click');
+            // ts_H.find('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
+
+            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '0px'}, 100);
+
+        }else{
+            $(this).addClass('click');  
+
+            // ts_H.find('[class*="_nav"]').animate({marginLeft: '0%'}, 100);
+
+            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '-320px'}, 100);
+        }
+        
+    return false;
+    });
+
+    ts_H.find('[class*="_nav"] > li').on('click', function() {
+
+    if( ts_H.find('.three_line').hasClass('click') ){
+
+        if($(this).hasClass('open')){
+            $(this).removeClass('open');
+            $(this).find('> ul').slideUp(300);
+
+        }else{
+            $(this).addClass('open');
+            $(this).siblings().removeClass('open');
+            $(this).find('> ul').slideDown(300);
+            $(this).siblings('li').find('> ul').slideUp(300);
+        } 
+    }
+
+    return false;
+    });
+
+});// header
 
 
 
@@ -1045,10 +1134,77 @@ $('.screen_size').each(function() {
 </head>
 <body>
 
+
+
+
+<header class="m_HF v2">
+<a class="logo-M-mountain v2" href="#">&nbsp;</a>
+    <a class="three_line" href="#">
+        <span class="line _a"></span>
+        <span class="line _b"></span>
+        <span class="line _c"></span>
+    </a>
+
+<ul class="mm_nav">
+
+<li>
+<a href="#">Web Develop</a>   
+
+<ul>
+<li>
+    <div class="bold">Portfolio</div>
+    <a href="prtfolio.html#ui">UI</a>
+
+    <a href="prtfolio.html#cis">CIS</a>
+    <a href="prtfolio.html#website">Website</a>
+    <a href="prtfolio.html#edm">EDM</a>
+    <a href="prtfolio.html#graphic_design">Graphic Design</a>
+</li>      
+<li>
+
+    <div class="bold">SAMMARINESE</div>
+    <a href="html_sm/sm_form_frontend.html">Frontend UI/UX</a> 
+    <a href="html_sm/sm_form_backend.html">Backend UI/UX</a>
+    <a href="html_sm/sm_style_guide.html">Style Guide</a> 
+
+</li>        
+<li>
+    <div class="bold">ifchic</div>
+    <a href="index.html#page_home">Home Page</a>
+    <a href="index.html#page_product">Product Page</a>
+    <a href="index.html#signin_and_register">Sign in &amp; Register</a>
+    <a href="popup.html#event_popup">Event Popup<span class="num_boo">60</span></a>
+    <a href="style_guide_if_01.html">Style Guide</a> 
+</li>
+<li>
+    <div class="bold">Parking</div>
+    <a class="add_num_corporate_image" href="corporate_image.html#corporate_image">Corporate Image<span class="num_boo">132</span></a>
+    <div class="bold">Other</div>
+    <a href="index.html#clock">Clock</a>
+</li>
+</ul>
+    
+</li>
+
+<li>
+    <a class="add_num_style_trend_list" href="style_trend.html#style_trend_list">style &amp; trend list<span class="num_boo">42</span></a>
+</li>
+
+<li>
+    <a class="add_num_style_hotsopt" href="style_trend.html#style_hotsopt">style hotsopt<span class="num_boo">41</span></a>
+</li>
+
+<li>
+    <a href="about.html">about</a>
+</li>
+
+</ul>
+</header>
+
 <div class="demo_box w_fullscreen open_left_menu">
 
 
-<div class="rwd_size_box">
+<div class="rwd_size_box dark_night">
 
       <h1>RWD Mockup</h1>
 
