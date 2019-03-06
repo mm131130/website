@@ -330,12 +330,12 @@ ul ul li:first-child:nth-last-child(9)~li{
     display: inline-block !important;
 }
 
-.three_line{
+/* .three_line{
     position: absolute;
     top: 0;
     left: 0;
     display: block;
-    }
+    } */
 
 .mm_nav{
     position: fixed;
@@ -425,6 +425,8 @@ header.m_HF.v2{
     justify-content: space-between ;
     background:none;
     border: none; 
+
+
 }
 header.m_HF.v2 > *{
     display: inline-block;
@@ -449,11 +451,25 @@ header.m_HF.v2 .mm_nav{
     margin-left: 0px;
 
     overflow-y: auto;
+
+    -moz-box-shadow:
+    -10px 30px 20px rgba(0,0,0,0.15),
+    -20px 60px 40px rgba(0,0,0,0.12),
+    -30px 90px 60px rgba(0,0,0,0.09);
+    -webkit-box-shadow:
+    -10px 30px 20px rgba(0,0,0,0.15),
+    -20px 60px 40px rgba(0,0,0,0.12),
+    -30px 90px 60px rgba(0,0,0,0.09);
+    box-shadow:
+    -10px 30px 20px rgba(0,0,0,0.15),
+    -20px 60px 40px rgba(0,0,0,0.12),
+    -30px 90px 60px rgba(0,0,0,0.09);
 }
 
 header.m_HF.v2 .mm_nav{
     position: absolute;
 }
+
 
 header.m_HF.v2 .mm_nav ul{
     position: static;
@@ -462,7 +478,7 @@ header.m_HF.v2 .mm_nav ul{
 
     max-height: none;
     height: 100%;
-    padding:10px 0 10px 0; 
+    padding:0; 
 }
 
 

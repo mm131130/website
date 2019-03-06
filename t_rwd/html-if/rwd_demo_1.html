@@ -238,6 +238,13 @@ transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
 }
 
 
+@media screen and (max-width:767px) {
+
+.rwd_size_box > div{
+  display: none;
+}
+
+}
 
 
 
@@ -635,7 +642,13 @@ transform:translate(0%, 0%);
 
 
 
+@media screen and (max-width:767px) {
 
+.control_menu{
+  display: none;
+}
+
+}
 
 .ps_list_box{
   width: 100%;
@@ -803,11 +816,19 @@ transform:translate(0%, 0%);
 
 
 $(window).on('load', function() {
+
+
+
+
 var win_W = $(window).width();
 var win_H = $(window).height();
 var now_page = 0;
 var content_T = [];  
 var content_H = []; 
+
+
+
+
 
 
 var touch_space = win_H/3;
@@ -828,11 +849,6 @@ if ($(this).hasClass('baby_come_back')) {
   $('.content_menu').delay(300).animate({left:'-320px'}, 300);
 
 }
-  
-
-
-
-
     return false;
 
 });
@@ -982,11 +998,6 @@ return false;
 
 
 
-
-
-
-
-
 function get_box_TH(){
 
 content_T.length = 0;
@@ -998,18 +1009,8 @@ content_H.length = 0;
   });
 
 }
+
 get_box_TH();
-
-
-
-
-
-
-
-
-
-
-
 
 
 function rwd_change(){
