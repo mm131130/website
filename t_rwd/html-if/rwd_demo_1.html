@@ -275,6 +275,10 @@ transition: all 0.27s ease-in-out;
 -moz-transition-delay: 0.30s; /* Firefox 4 */
 /* -webkit-transition-delay: 0.30s; Safari 和 Chrome
 -o-transition-delay: 0.30s; /* Opera */ 
+
+
+
+
 }
 
 
@@ -473,8 +477,12 @@ transform:translate(0%, 0%);
       -webkit-transform: translate(-100% , -50%) ;
       -ms-transform: translate(-100% , -50%);
       transform:rotate(0deg) translate(-200% , -50%) rotate(45deg);
+
+
+
 }
 .control_menu > *{
+  z-index: 1;
       display: block;
 
       line-height: 18px;
@@ -1085,14 +1093,14 @@ $('.m_HF').each(function() {
             $(this).removeClass('click');
             // ts_H.find('[class*="_nav"]').animate({marginLeft: '-100%'}, 100);   
 
-            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '0px'}, 100);
+           ts_H.find('[class*="_nav"]').animate({marginLeft: '120px'}, 100);
 
         }else{
             $(this).addClass('click');  
 
             // ts_H.find('[class*="_nav"]').animate({marginLeft: '0%'}, 100);
 
-            $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '-320px'}, 100);
+           ts_H.find('[class*="_nav"]').animate({marginLeft: '-320px'}, 100);
         }
         
     return false;
@@ -1202,7 +1210,7 @@ $('.screen_size').each(function() {
 </ul>
 </header>
 
-<div class="demo_box w_fullscreen open_left_menu">
+<div class="demo_box mobile_rwd_425 open_left_menu">
 
 
 <div class="rwd_size_box dark_night">
@@ -1247,6 +1255,31 @@ $('.screen_size').each(function() {
 
 
 <div class="content_box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 <!-- p01 -->
@@ -1316,6 +1349,7 @@ $('.screen_size').each(function() {
 
 <div date-text="Black" class="page">
 <img src="../img-if/second_layer/black-dress-1-1.jpg">
+
 <div class="mw_450 page_info">
 <div class="heading">
 <div class="tag">Cover Story</div>
@@ -3063,59 +3097,6 @@ As we go to press, the rumors are still flying that Oprah is considering running
 
 
 
-
-<div date-title="Photo" date-content="photo" class="screen_size">
-
-<div class="slide_show new_in">
-  <a class="btn_L v2" href="#">&nbsp;</a>
-  <a class="btn_R v2" href="#">&nbsp;</a>
-
-  <div class="btn_LR v1">
-     <a class="l_icon v1" href="#">&nbsp;</a><a class="r_icon v1" href="#">&nbsp;</a>
-  </div>
-
-  <div class="dot_box v1"></div>
-
-<div class="page_box">
-
-<!-- p01 -->
-
-<div class="page">
-  <img src="../img-m/banner/mm_banner_01.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_02.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_03.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_04.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_05.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_06.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_07.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_08.jpg">
-</div><div class="page">
-  <img src="../img-m/banner/mm_banner_09.jpg">
-</div>
-
-
-
-
-
-
-
-</div>
-<!-- page_box -->
-
-</div>
-<!-- slide_show -->
-
-
-
-
-</div>
 
 
 

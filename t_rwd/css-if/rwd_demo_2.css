@@ -171,11 +171,6 @@
 
     margin-top: 20px !important;
     margin-bottom: 20px !important;
-
-
-
-
-
 }
 
 }
@@ -344,10 +339,12 @@ page_info
     display: none;
 }
 
+
+/* 
 *[class*="mobile_rwd_"] .dot_box{
     left: 50%;
     width: 100%;
-}
+} */
 
 
 @media screen and (max-width:767px) {
@@ -590,14 +587,40 @@ page_info
 }
 
 .ipad_h .products_list_page .ps_list_box > div{
-
-
     width: 33.333333%;
-
     height: 50%;
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -708,17 +731,45 @@ page_info
 
 
 
+/* .logo-M-mountain */
+
+.black_white_m_photo .logo-mountain {
+
+    position: absolute;
+    top: 33.333333%;
+    left: 66.666666%;
+    z-index: 100;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
 
 
+.black_white_m_photo .page_info {
+    text-align: left;
+
+    top: calc( 100% - 18px );
+    left: 18px;
+
+    -webkit-transform: translate(0% , -100%);
+    -moz-transform: translate(0% , -100%);
+    transform: translate(0% , -100%);
+    padding: 27px;
 
 
 
+    width: 33.333333%;
+
+
+    background-color: #fff;
+}
 
 
 
-
+/* black_dress */
 
 
 

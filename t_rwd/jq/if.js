@@ -9,9 +9,9 @@ function get_products_list(){
 
       $(xml).find("products_list").each(function() {
 
-$('.ps_list_box').empty();
+$('.ps_list').empty();
 
-var pi_;
+var pi_ = [];
 
 $(this).find("product_info").each(function() {
 
@@ -21,7 +21,21 @@ $(this).find("product_info").each(function() {
   + $(this).find("product_name").text() + '</div><div class="product_price">' 
   + $(this).find("product_price").text() + '</div></div></div>';
 
-  $('.ps_list_box').append(pi_);
+  $('.ps_list').append(pi_);
+
+
+
+// for (var i = 0 ; i <= 10; i++) {
+
+//   var dd += pi_[i];
+
+
+// }
+
+
+
+// $('.ps_list').append(dd);
+
 
 });// xml product_info
 

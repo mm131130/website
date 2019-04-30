@@ -34,7 +34,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
 
-<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+<link media="all" rel="shortcut icon" href="../img-m/m_v2.svg">
 <link media="all" rel="stylesheet" href="../css-all/all.css"/>
 <link media="all" rel="stylesheet" href="../css-all/size.css"/>
 
@@ -46,23 +46,62 @@
 <style>
 
 
-.cloud_box > div{
+body,
+.screen_size{
+  height: 100%;
+}
+/* flex-direction: row | row-reverse | column | column-reverse; */
+.cloud_box {
+/* display: flex; */
+/* flex-direction: row-reverse;
+flex-wrap: wrap; */
+}
+.cloud_box {
 
-    width: 100%; 
-    height: 100vh;
+/* display: inline-flex; */
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+height: 100%;
+
+}
+
+
+
+
+
+
+.cloud_box > div{
+  position: relative;
+
+    width: 20%; 
+    height: 20%;
 }
 
 
 .cloud_box > div img{
-    position: relative;
-    left: 50%;
-    width: auto; 
+    /* position: relative; */
+    /* left: 50%; */
+    width: 100%; 
     height: 100%;
 
-    transform: translate(-50% , 0);
+    /* transform: translate(-50% , 0); */
 }
 
+div.num{
+  position: absolute;
+  top: 0;
+  left: 0;
 
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+
+}
 
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
@@ -75,7 +114,7 @@ $(function(){
 
 var build_cloud_box = '';
 
-for (var i = 0; i <= 181; i++) {
+for (var i = 0; i <= 190; i++) {
 
     var num = i+1;
 
@@ -85,7 +124,7 @@ for (var i = 0; i <= 181; i++) {
     }
     
 
-    build_cloud_box += '<div><img src="../img-m/cloud_img/p' + ( num ) + '.jpg"></div>';
+    build_cloud_box += '<div><div class="num">'+ ( num )  +'</div><img src="../img-m/cloud_img/p' + ( num ) + '.jpg"></div>';
 
 
 }

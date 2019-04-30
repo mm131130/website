@@ -14,19 +14,19 @@ $('.ddm').each(function () {
   var ts_ddm = $(this);
   var btn_text = '';
 
-$(this).find('.ddm_btn').on('click', function() {
-  $(this).find('.btn_img').toggleClass('clic_rotate');
-  $(this).next().slideToggle();
-   return false;
-});
+  $(this).find('.ddm_btn').on('click', function() {
+    $(this).find('.btn_img').addClass('clic_rotate');
+    $(this).next().slideToggle();
+     return false;
+  });
 
-$(this).find('.ddm_menu a').on('click', function() {
-  btn_text = $(this).text();
-  ts_ddm.find('.btn_info').text(btn_text).addClass('click');
-  ts_ddm.find('.btn_img').removeClass('clic_rotate');
-  ts_ddm.find('.ddm_menu').slideUp();
-  return false;
-});
+  $(this).find('.ddm_menu a').on('click', function() {
+    btn_text = $(this).text();
+    ts_ddm.find('.btn_info').text(btn_text).addClass('click');
+    ts_ddm.find('.btn_img').removeClass('clic_rotate');
+    ts_ddm.find('.ddm_menu').slideUp();
+    return false;
+  });
 
 });
 
@@ -191,22 +191,41 @@ ts.find('.coin_icon').delay(270)
 
 ts.find('.slide_show').each(function() {
 
+  var ts_slide_show = $(this);
+
   var build_dot_btn = '';
   var build_img_btn = '';
+
   var now_tag = 0;
   var hmp = $(this).find('.page_box > .page').length;
   var img_url = [];
+  var img_url_2 = [];  
+
+ // var build_img_btn_2 = '';
+
 
 $(this).find('.page_box > .page').each(function(i) {
     img_url.push($(this).attr('date-icon-src'));
-    build_dot_btn += '<a href="#">&nbsp;</a>';
-    build_img_btn += '<a href="#"><span class="img_box"><img src=" '+ img_url[i] +' "></span></a>';
+
+
+// if( ts_slide_show.hasClass('.black_white_m_photo') ){
+//       img_url_2.push( $(this).find('img').attr('src') );
+// }
+
+
+
+  build_dot_btn += '<a href="#">&nbsp;</a>';
+  build_img_btn += '<a href="#"><span class="img_box"><img src=" '+ img_url[i] +' "></span></a>';
+  // build_img_btn_2 += '<a href="#"><span class="img_box"><img src=" '+ img_url_2[i] +' "></span></a>';
+
 
 });
              
       $(this).find('.dot_box').html(build_dot_btn);
 
       $(this).find('.dot_box.icon').html(build_img_btn);
+
+      // $('.black_white_m_photo').find('.dot_box').html(build_img_btn_2);
 
       $(this).find('.page_num').append('<div>'+ hmp +'</div>').prepend('<div>'+ (now_tag + 1) +'</div>');
 

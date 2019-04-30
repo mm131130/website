@@ -414,68 +414,15 @@ footer{
     justify-content: space-between;
 }
 
-.three_line{
-    display: none;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-}
-.three_line .line{
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    width: 30px;
-    height: 2px;
-    background-color: #000;
-
-    -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    -o-transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , 0.3s ease-in-out , -webkit-transform; 
-
-    transition: transform , width , height , 0.3s ease-in-out; 
-
-}
-.three_line .line._a{
-    -webkit-transform: translate(-50%, calc(-50% - 6px));
-    -ms-transform: translate(-50%, calc(-50% - 6px));
-    transform: translate(-50%, calc(-50% - 6px));
-}
-.three_line .line._b{
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.three_line .line._c{
-    -webkit-transform: translate(-50%, calc(-50% + 6px));
-    -ms-transform: translate(-50%, calc(-50% + 6px));
-    transform: translate(-50%, calc(-50% + 6px));
-}
-.three_line:hover .line{
-    background-color:#e9573f;
-}
 
 
 
-.three_line.click .line._a{
-     width: 18px;
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-}
-.three_line.click .line._b{
-    width: 0;
-}
-.three_line.click .line._c{
-       width: 18px;
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-}
+
+
+
+
+
+
 
 
 
@@ -698,12 +645,12 @@ ul ul li:first-child:nth-last-child(9)~li{
     display: inline-block !important;
 }
 
-.three_line{
+/* .three_line{
     position: absolute;
     top: 0;
     left: 0;
     display: block;
-    }
+    } */
 
 .mm_nav{
     position: fixed;
@@ -949,11 +896,9 @@ ul ul li:first-child:nth-last-child(9)~li{
     background: linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%);
 }
 .if_v1 footer > div{
-
     display: flex;
     justify-content: space-between;
 }
-
 .if_v1 .btn_box_C *,
 .if_v1 .btn_box_B *{
     display: inline-block;
@@ -2008,14 +1953,10 @@ ul ul li:first-child:nth-last-child(9)~li{
 
 
 <script>
+
 $(function(){
 
-
-
-
-// $(window).on('load' , function() {
-
-
+var winw = 0;
 
 var header_H = 0;
 var info_box_L = 0;
@@ -2030,12 +1971,8 @@ var btn_shopping_bag_W = 0;
 var btn_mywish_L = 0;
 var btn_mywish_W = 0;
 
-var winw = 0;
-
-
-
-
 $(window).on('resize load' , function() {
+
 winw = 0;
 
 header_H = 0;
@@ -2182,7 +2119,7 @@ if_v1.find('.btn_s_r , .btn_my_account , .btn_shopping_bag , .btn_mywish , .btn_
 
             $('.m_HF.v2 [class*="_nav"]').animate({marginLeft: '-320px'}, 100);
         }
-        
+
     return false;
     });
 
@@ -2897,10 +2834,7 @@ Offers not valid on full-price items. To redeem online, enter code in the promo 
 <div class="event_info_B">
 <a class="btn_X v1" href="#">&nbsp;</a>
 <p class="promo_event_txt">
-Celebrate Mother's Day.
-Enjoy 20%off at checkout.
-Enter code <span>LOVEMOM14</span> 
-</p>
+Celebrate Mother's Day. Enjoy 20%off at checkout. Enter code <span>LOVEMOM14</span></p>
 <a class="btn_promo_info" href="#">info</a>
 </div>
 
@@ -2910,8 +2844,7 @@ Enter code <span>LOVEMOM14</span>
 
 
 
-
-
+<!-- offer_info_box -->
 
 <div class="offer_info_box">
         <div class="arrow_top">&nbsp;</div>
@@ -2922,22 +2855,6 @@ Enter code <span>LOVEMOM14</span>
 Offers not valid on full-price items. To redeem online, enter code in the promo code box at checkout. Limit one promo code per order. Offers not valid in the U.S., Canada, the United Kingdom or Hong Kong. Terms of offers are subject to change.
 </p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- my_account_box -->

@@ -7,6 +7,35 @@ three_line
 
 */
 
+
+
+
+.logo-M{
+    display: block;
+
+    background: url('../img-m/m_v1.svg');
+    background-position-y: 0px;
+    background-position-x: 0px;
+
+    background-size:auto 100%;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #fff;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+
+}
+a.logo-M:hover{
+    /* background: url('../img-m/m_mountain_g_v1.svg'); */
+    background-position-y: 0px;
+    background-position-x: 0px;
+    background-size: auto 100%;
+}
+
 .logo-M-mountain{
     display: block;
 
@@ -20,8 +49,12 @@ three_line
     height: 60px;
 
     background-color: #fff;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
 }
-.logo-M-mountain:hover{
+a.logo-M-mountain:hover{
     background: url('../img-m/m_mountain_g_v1.svg');
     background-position-y: 0px;
     background-position-x: 0px;
@@ -39,10 +72,41 @@ three_line
     width: 230px;
     height: 72px;
 }
-.logo-M-mountain.v2:hover{
-    background: url('../img-m/m_mountain_w_v2.svg');
+a.logo-M-mountain.v2:hover{
+    background: url('../img-m/m_mountain_g_v2.svg');
 
 }
+
+
+
+
+
+
+.logo-mountain{
+    display: block;
+
+    background: url('../img-m/mountain_b_v3.svg');
+    background-position-y: 0px;
+    background-position-x: 0px;
+
+    background-size:auto 100%;
+
+    width: 144px;
+    height: 16px;
+
+/*     background-color: #fff; */
+
+  transition: all 0.3s ease-in-out; 
+}
+a.logo-mountain:hover{
+
+    background: url('../img-m/mountain_w_v3.svg');
+
+}
+
+
+
+
 
 
 @media screen and (max-width:1023px) {
@@ -52,7 +116,7 @@ three_line
     background-size:auto 72px;
     width: 188px;
 }
-.logo-M-mountain:hover{
+a.logo-M-mountain:hover{
     background: url('../img-m/m_mountain_g_v1.svg');
     background-position-y: -6px;
     background-position-x: -72px;
@@ -63,68 +127,9 @@ three_line
 
 
 
-.three_line{
-    display: none;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-}
-.three_line .line{
-    position: absolute;
 
-    top: 50%;
-    left: 50%;
 
-    width: 30px;
-    height: 2px;
-    background-color: #000;
 
-    -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    -o-transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , 0.3s ease-in-out , -webkit-transform; 
-
-    transition: transform , width , height , 0.3s ease-in-out; 
-
-}
-.three_line .line._a{
-    -webkit-transform: translate(-50%, calc(-50% - 6px));
-    -ms-transform: translate(-50%, calc(-50% - 6px));
-    transform: translate(-50%, calc(-50% - 6px));
-}
-.three_line .line._b{
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.three_line .line._c{
-    -webkit-transform: translate(-50%, calc(-50% + 6px));
-    -ms-transform: translate(-50%, calc(-50% + 6px));
-    transform: translate(-50%, calc(-50% + 6px));
-}
-.three_line:hover .line{
-    background-color:#e9573f;
-}
-
-/* jQ */
-
-.three_line.click .line._a{
-     width: 18px;
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-}
-.three_line.click .line._b{
-    width: 0;
-}
-.three_line.click .line._c{
-       width: 18px;
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-}
 
 
 
@@ -158,6 +163,8 @@ footer.m_HF{
 .screen_size footer.m_HF,
 .screen_size header.m_HF{
     position: absolute;
+
+    z-index: 600;
 }
 
 /* .m_v2019{
@@ -425,17 +432,24 @@ header.m_HF.v2{
     justify-content: space-between ;
     background:none;
     border: none; 
-
-
 }
 header.m_HF.v2 > *{
     display: inline-block;
 }
+
+body > header.m_HF.v2 .three_line{
+
+    width: 73px;
+    height: 72px;
+    /* margin:6px 0; */
+}
 header.m_HF.v2 .three_line{
     display: block;
-    margin:6px 0;
+
     background:none;
 }
+
+
 header.m_HF.v2 .three_line.click span{
     background-color: #fff;
 }
@@ -448,7 +462,7 @@ header.m_HF.v2 .mm_nav{
     width: 100%;
     max-height: calc(100vh - 144px);
 
-    margin-left: 0px;
+    margin-left: 120px;
 
     overflow-y: auto;
 
@@ -498,3 +512,24 @@ header.m_HF.v2 .mm_nav a{
     display: block;
     width: 100% !important;
 }
+
+
+
+
+@media screen and (max-width:1023px) {
+header.m_HF.v2 .logo-M-mountain.v2{
+    /* left: 50%; */
+    margin-left:50%;
+
+    transform: translateX(-36px);
+}
+
+
+
+}
+
+
+
+
+
+
