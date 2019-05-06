@@ -336,12 +336,14 @@ transform:none !important;
 	
 	}	
 .page_num{
+	display: inline-block;
+	position: relative;
 	overflow:hidden;
 	font-size:36px;
 	font-family:roboto_thin;
 	color:#CCC;
 	}	
-.page_num:before{
+.page_num:after{
 	position: absolute;
 	left:50%;
 	top:50%;
@@ -360,17 +362,22 @@ transform:none !important;
 	
 	text-align:center;
 	
-	width:27px;
+	width:84px;
 	
 	}	
 .page_num span:first-child{
 	padding-top:3px;
 	padding-bottom:18px;
+	padding-right:12px;
+
+	text-align:right;
 	}	
 	
 .page_num span:last-child{
 	padding-top:18px;
-	padding-bottom:3px;	
+	padding-bottom:3px;
+	padding-left:12px;
+	text-align:left;
 	}	
 		
 	
