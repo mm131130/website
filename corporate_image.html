@@ -87,12 +87,19 @@ body{
 	top:0;
 	left:0;
 	/* width:155px; */
-	width: 100%;
+	width: auto;
 	height:100%;
 
-	transform: none;
+	/* transform: none; */
+	margin-left: 50%;
+
 }
 
+.animation_sun_moon .img_shadow{
+	position: static;
+
+
+}
 
 
 .img_parking_text{
@@ -261,8 +268,15 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 
 
 
+@media screen and (max-width:767px){
+.sun_moon{
+	top: 105%;
+    left: 50%;
+    width: 1000px;
+    height: 80px;
+}
 
-
+}
 
 .page{
 	text-align: center;
@@ -276,6 +290,22 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 	margin-top: 61px;
 
 
+
+}
+@media screen and (max-width:1024px){
+
+
+
+.cloud_img .btn_L{
+	top: 66.666666%;
+
+}
+
+
+.cloud_img .btn_R{
+	top: 33.333333%;
+
+}
 
 }
 .cloud_img .page_box{
@@ -302,6 +332,10 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 
 
 }
+
+
+
+
 
 /* 
 .cloud_img .page{
@@ -518,15 +552,42 @@ transition: all 0.6s;
 
 	top: 50%;
 	left: calc(50% + 360px);
+	z-index: 10;
 
 		-webkit-transform: translateY(-50%);	
 		-ms-transform: translateY(-50%);	
 		transform: translateY(-50%);
 }
 
+@media screen and (max-width:1024px){
+
+	.cloud_img .page_num{
+		display: inline-block;
+
+	    width: -webkit-max-content;
+	    width: -moz-max-content;
+	    width: max-content;
+
+	    top: 80%;
+
+		left: calc(100% );
+
+		padding: 0 18px;
+
+		transform: translate(-100% , -50%);
+
+
+
+
+		
+	}
+
+}
 .cloud_img .page_num > *:first-child{
 	color: #000;
 }
+
+
 
 
 
@@ -596,9 +657,12 @@ transition: all 0.6s;
 	position: static;
 	top: 0;
 	left: 0;
-	transform: none;
+/* 	transform: none; */
+
+	width: auto;
 	height:100%;
-	width: 100%;
+
+	margin-left: 50%;
 }
 
 .column .btn_L,
@@ -615,8 +679,19 @@ transition: all 0.6s;
 }
  */
 
+@media screen and (max-width:1024px){
+.column .page{
+
+	width: 30%;
+	    margin: 9px;
+
+}
+}
 
 @media screen and (max-width:767px){
+.row_or_column{
+		display: none;
+	}
 .cloud_img{
 	width: 100%;
 	height: auto;
@@ -630,7 +705,7 @@ transition: all 0.6s;
 .cloud_img .page_box{
 
 
-	display: -webkit-box;
+/* 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 
@@ -646,7 +721,7 @@ transition: all 0.6s;
 	-ms-flex-direction:	column-reverse;	
 	flex-direction:column-reverse;
 
-
+ */
 
 	margin-left:0 !important;
 
@@ -672,11 +747,10 @@ transition: all 0.6s;
 	border: 3px #000 solid;
 }
 
-.cloud_img .page img {
+.cloud_img .page > div > img {
 	max-height: none;
+	height:480px !important;
 
-	height:100%;
-	width: 100%;
 }
 .cloud_img .btn_L,
 .cloud_img .btn_R,
@@ -685,6 +759,8 @@ transition: all 0.6s;
 	display: none;
 }
 }
+
+
 
 
 
