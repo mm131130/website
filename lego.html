@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+
+<link media="all" rel="stylesheet" href="../css-all/all.css">
+
+<link media="all" rel="stylesheet" href="../css-m/v2019_1.css">
+
+<link media="all" rel="stylesheet" href="../css-all/fonts.css">
+<link media="all" rel="stylesheet" href="../css-all/size.css">
+
+<link media="all" rel="stylesheet" href="../css-sm/sm_btn.css">
+<link media="all" rel="stylesheet" href="../css-sm/sm_2019_1.css">
+
+
+
+
+<!-- <link media="all" rel="stylesheet" href="../css-sm/sm_rwd.css"/> -->
+<!-- 
+<link media="all" rel="stylesheet" href="../css-sm/head_v03.css"/>
+
+<link media="all" rel="stylesheet" href="../css-sm/mm_v2018.css"/> -->
+<style>
+
+span{
+
+	display: inline-block;
+
+	padding: 18px;
+
+}
+
+
+
+
+</style>
+<script src="jq/jquery_3_2_1_min.js"></script>
+
+<!-- <script src="../jq/mm_load_head_foot-2.js"></script> -->
+
+
+<script>
+
+$(function() {
+
+
+	var nt_total = [];
+
+
+
+
+// $('.total').css({backgroundColor:'red'}).text(sum);
+
+// function sumData(nn){
+	
+// var sum = 0; 	
+ 
+//     for (var i = 0; i < nn.length; i++) {
+//         sum += nn[i];
+// 	}
+
+//     return sum;
+
+// }
+
+
+	$('.buy_list').each(function() {
+		nt_total.push( $(this).find('.nt').text() );
+	});
+
+
+
+
+
+
+    // return sum;
+
+
+// var data=[1,3,5,7]
+// console.log(SumData(data));
+
+
+ var sum = 0;
+
+function SumData(arr){
+	var num = sun;
+
+
+   
+    for (var i = 0; i < arr.length; i++) {
+        num += arr[i];
+    };
+    return num;
+}
+
+SumData(nt_total);
+
+$('.total').css({backgroundColor:'red'}).text(sum);
+
+console.log(SumData(nt_total));
+
+});
+
+</script>
+</head>
+<body>
+
+
+
+<div class="buy_list">
+
+<div class="total">total</div>
+Product Num USD NT Buy Qty
+
+
+<div>
+<span>70638</span><span>20</span><span>16</span><span class="nt">480</span><span>4</span>
+
+</div><div>
+<span>70650</span><span>20</span><span>16</span><span class="nt">480</span><span>4</span>
+
+</div><div>
+<span>70618</span><span>160</span><span>128</span><span class="nt">4000</span><span>2</span>
+
+</div><div>
+<span>70677</span><span>130</span><span>104</span><span class="nt">3000</span><span>1</span>
+
+</div><div>
+<span>70675</span><span>50</span><span>40</span><span class="nt">1200</span><span>2</span>
+
+</div><div>
+<span>75957</span><span>40</span><span>32</span><span class="nt">960</span><span>2</span>
+
+</div><div>
+<span>70834</span><span>60</span><span>48</span><span class="nt">1440</span><span>1</span>
+
+</div><div>
+<span>70836</span><span>20</span><span>16</span><span class="nt">480</span><span>1</span>
+
+</div><div>
+<span>70823</span><span>15</span><span>12</span><span class="nt">360</span><span>1</span>
+
+</div><div>
+<span>70842</span><span>30</span><span>24</span><span class="nt">720</span><span>1</span>
+</div>
+
+
+19160
+
+</div>
+</body>
+</html>
