@@ -111,7 +111,7 @@ footer.mm_v2018 .img_w{
 	width:50px;
 	height:60px;
 
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/icon_2017.svg);
+	background-image:url(../img_mm/icon_2017.svg);
 	background-position:-50px -195px;
 	}
 .mobile_btn:hover{
@@ -392,7 +392,7 @@ footer.mm_v2018 .img_w{
 	display:block;
 	width:150px;
 	height:150px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
+	background-image:url(../img_mm/mm_logo.svg);
 	background-size:300px;
 	background-position:-150px -150px;
 	}		
@@ -405,7 +405,7 @@ footer.mm_v2018 .img_w{
 	display:block;
 	width:36px;
 	height:36px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
+	background-image:url(../img_mm/mm_logo.svg);
 	background-size:120px;
 	background-position:-12px -12px;
 	}			
@@ -413,7 +413,7 @@ footer.mm_v2018 .img_w{
 	display:inline-block;
 	width:108px;
 	height:24px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
+	background-image:url(../img_mm/mm_logo_mountain.svg);
 	background-position:center ;
 	background-size:108px 12px;
 	}	
@@ -434,7 +434,7 @@ footer.mm_v2018 .img_w{
 	height:45px;
 	
 	background-color:#fff;	
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
+	background-image:url(../img_mm/mm_logo_mountain.svg);
 	background-position:center;
 	background-size:126px 14px;
 	
@@ -459,7 +459,7 @@ footer.mm_v2018 .img_w{
 	padding: 0 !important;
 	width:60px;
 	height:60px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo.svg);
+	background-image:url(../img_mm/mm_logo.svg);
 	background-size:200%;
 	}	
 .mm_logo_E span:last-child{
@@ -467,7 +467,7 @@ footer.mm_v2018 .img_w{
 	padding: 0 !important;
 	width:108px;
 	height:60px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_logo_mountain.svg);
+	background-image:url(../img_mm/mm_logo_mountain.svg);
 	background-size:100% auto;
 	background-position: center center;
 	}	
@@ -478,7 +478,7 @@ footer.mm_v2018 .img_w{
 	position:relative;
 	height:100vh;
 	height:450px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/photo-bg002-3.jpg);
+	background-image:url(../img_mm/photo-bg002-3.jpg);
 	background-position:center center;
 	background-size:cover;
 	}
@@ -883,7 +883,7 @@ secondary*/
 
 	width:50px;
 	height:50px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img_mm/mm_icon_2018.svg);
+	background-image:url(../img_mm/mm_icon_2018.svg);
 	background-position-x:0;	
 	background-position-y:-50px;
 	transform:translateX(-50%);

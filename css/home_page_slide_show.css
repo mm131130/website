@@ -149,7 +149,7 @@
 	-webkit-transform:translateY(-50%);	
 	-moz-transform:translateY(-50%);	
 	transform:translateY(-50%);	
-	background-image:url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
+	background-image:url(../img/icon_2017.svg);
 	background-position-y:-400px;
 	}
 .btn_L{	
@@ -930,7 +930,7 @@ transform:translate(-50% , -55%) rotate(-9deg);
 	height:50px;
 	
 	margin-top:-25px;
-	background-image:url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
+	background-image:url(../img/icon_2017.svg);
 	background-position-y:0;	
 	}
 .btn_L_A{
@@ -1165,7 +1165,7 @@ background: linear-gradient(
 	width:40px;
 	height:50px;
 
-	background-image:url(http://mountain-mm.myweb.hinet.net/img/icon_2017.svg);
+	background-image:url(../img/icon_2017.svg);
 	background-position-y:-450px;
 	
 	
