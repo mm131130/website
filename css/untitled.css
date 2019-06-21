@@ -1,0 +1,79 @@
+
+	
+/* Main title */
+.vino_logo{
+	text-align:center;
+	width:100%;
+	padding:11px 0;
+	}
+.vino_logo img{
+	width:76px;
+	}
+.vino_logo div{
+	display:inline-block;
+	font-size:150px;
+	line-height:120px;
+	font-family: modern_display;
+	color:#170003;
+	padding-top:40px;
+	}
+.vino_logo p{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+    font-family: roboto_light;
+	color:#170003;
+	text-transform:uppercase;
+	letter-spacing:0.15em;
+	padding-top:0;
+	padding-bottom:10px;
+	}	
+	
+	
+
+	
+	
+ .vino_logo{
+	display:inline-block;
+	float:none;
+	width:auto;
+	padding:0;
+	}
+.vino_logo img{
+	width:50px;
+	height:50px;
+	
+	}	
+.vino_logo *{
+	vertical-align:middle;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: roboto_regular;
+	color: #170003;
+	text-transform: uppercase;	
+    letter-spacing: 0.15em;
+
+}	
+	
+	
+.vino_logo.v02{
+	display:inline-block;
+	float:right;
+	width:auto;
+	padding: 11px 12px;
+	}
+
+.vino_logo.v02 img{
+	width:46px;
+	}
+	
+.vino_logo.v02 p{
+	display:inline-block;
+	font-size:12px;
+	font-family: roboto_regular;
+	padding:14px 0;
+}
+	
+	
+	
