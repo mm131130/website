@@ -57,15 +57,155 @@
 <link media="all" rel="stylesheet" href="../css-sm/mm_v2018.css"/> -->
 <style>
 
+
+body{
+  padding: 0;
+
+  margin: 0;
+}
+
 span{
 
 	display: inline-block;
 
-	padding: 18px;
+
+
+}
+.buy_list a{
+  display: inline-block;
+
+
+/* 
+ min-width: 50px;
+  height: 50px;
+ */
+  text-align: center;
+
+
+
 
 }
 
+.buy_list .img{
 
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  width: 100% !important;
+
+  z-index: 900;
+
+
+
+
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      display: none;
+
+
+
+      background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.buy_list .img img{
+  width: 100%;
+  max-width: 400px;
+
+
+}
+/* jq */
+.show{
+
+    display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+}
+
+.info_tr{
+  display: block;
+
+width: 100%;
+/* border: 1px red solid; */
+overflow: hidden;
+
+
+}
+.info_tr > *{
+  display: block;
+
+  float: left;
+
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+width: calc( 16.666666% - 2px );
+
+border: 1px rgba(0, 0, 0, 0.21) solid;
+border-bottom: 1px rgba(0, 0, 0, 0.6) solid;
+border-top: none;
+border-right: none;
+padding: 15px 0;
+
+
+color: rgba(0, 0, 0, 0.45);
+
+}
+.info_tr > *:nth-last-child(3),
+.info_tr > *:nth-last-child(5),
+.info_tr > *:first-child{
+  font-size: 16px;
+color: rgba(0, 0, 0, 1);
+
+}
+.info_tr > *:last-child{
+
+border-right: 1px rgba(0, 0, 0, 0.21) solid;
+
+}
+
+.buy_list .info_tr:first-child > *{
+  border-top: 1px rgba(0, 0, 0, 0.3) solid;
+  font-size: 12px;
+
+}
+.del_item{
+  position: relative;
+
+}
+.del_item > *{
+  color: rgba(0, 0, 0, 0.15) !important;
+
+
+}
+.del_item:before{
+
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: red;
+
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 
 </style>
@@ -81,6 +221,24 @@ $(function() {
 
 	var nt_total = [];
 
+
+
+$('.buy_list').each(function() {
+  $(this).find('> div a').on('click', function() {
+    $(this).next().addClass('show');
+
+    return false;
+   });
+
+    $(this).find('> div .img').on('click', function() {
+    $(this).removeClass('show');
+
+    return false;
+   });
+
+
+  
+});
 
 
 
@@ -99,40 +257,7 @@ $(function() {
 // }
 
 
-	$('.buy_list').each(function() {
-		nt_total.push( $(this).find('.nt').text() );
-	});
 
-
-
-
-
-
-    // return sum;
-
-
-// var data=[1,3,5,7]
-// console.log(SumData(data));
-
-
- var sum = 0;
-
-function SumData(arr){
-	var num = sun;
-
-
-   
-    for (var i = 0; i < arr.length; i++) {
-        num += arr[i];
-    };
-    return num;
-}
-
-SumData(nt_total);
-
-$('.total').css({backgroundColor:'red'}).text(sum);
-
-console.log(SumData(nt_total));
 
 });
 
@@ -142,45 +267,79 @@ console.log(SumData(nt_total));
 
 
 
-<div class="buy_list">
+<div class="buy_list ">
 
-<div class="total">total</div>
-Product Num USD NT Buy Qty
+<div class="info_tr">
+<span>img_btn</span><span>Product Num</span><span>USD</span><span>USD 80% off</span><span>TWD</span><span>Qty</span>
+
+</div><div class="info_tr">
 
 
-<div>
+<a href="#">img</a>
+<div class="img"><img src="img_lego/31084.png"></div>
+<span>31084</span><span>90</span><span>72</span><span class="nt">2234</span><span>3</span>
+
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70638.png"></div>
 <span>70638</span><span>20</span><span>16</span><span class="nt">480</span><span>4</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70650.png"></div>
 <span>70650</span><span>20</span><span>16</span><span class="nt">480</span><span>4</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70618.png"></div>
+
 <span>70618</span><span>160</span><span>128</span><span class="nt">4000</span><span>2</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70677.png"></div>
+
 <span>70677</span><span>130</span><span>104</span><span class="nt">3000</span><span>1</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70675.png"></div>
+
 <span>70675</span><span>50</span><span>40</span><span class="nt">1200</span><span>2</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/75957.png"></div>
+
 <span>75957</span><span>40</span><span>32</span><span class="nt">960</span><span>2</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70834.png"></div>
+
 <span>70834</span><span>60</span><span>48</span><span class="nt">1440</span><span>1</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70836.png"></div>
+
 <span>70836</span><span>20</span><span>16</span><span class="nt">480</span><span>1</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70823.png"></div>
+
 <span>70823</span><span>15</span><span>12</span><span class="nt">360</span><span>1</span>
 
-</div><div>
+</div><div class="info_tr">
+<a href="#">img</a>
+<div class="img"><img src="img_lego/70842.png"></div>
+
 <span>70842</span><span>30</span><span>24</span><span class="nt">720</span><span>1</span>
 </div>
 
 
-19160
+
 
 </div>
 </body>
