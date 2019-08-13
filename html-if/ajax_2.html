@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css-all/all.css">
+<link media="all" rel="stylesheet" href="../css-all/size.css">
+<link media="all" rel="stylesheet" href="../css-all/fonts.css">
+
+<link media="all" rel="stylesheet" href="../css-m/m_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-m/m_HF.css">
+
+<link media="all" rel="stylesheet" href="../css-if/if_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-if/if_btn.css">
+
+
+<style>
+body{
+    background-image:url(../img-m/bg_01.jpg);
+    background-repeat:repeat !important;
+    background-color: #35373c;
+}	 
+
+body, html{
+	height: 100%;
+}
+
+
+.slide_show.products_box{
+	overflow-x: auto;
+}
+
+.products_box .page_box{
+    width: 100%;
+    height: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.products_box .product_box{
+	display: block;	
+	position: relative;
+	overflow: hidden;
+
+	font-size: 12px;
+	line-height: 18px;
+
+	width: 28.571428%;
+	height: 100%;
+
+	-webkit-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+
+}
+.two_line .product_box{
+	width: 18.181818%;
+	height: 50%;
+}
+
+
+
+
+
+
+/* 
+.column.products_box{
+	-webkit-box-orient: horizontal;
+ 	-webkit-box-direction: normal;
+ 	-ms-flex-direction: row;
+ 	flex-direction: row;
+}
+.column .product_box{
+	width: 20%;
+	height: 450px;
+}
+ */
+
+
+ 
+.column.products_box .page_box{
+
+	-webkit-box-orient: horizontal;
+ 	-webkit-box-direction: normal;
+ 	-ms-flex-direction: row;
+ 	flex-direction: row;
+
+	max-width:1200px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+.column .product_box{
+	width: 33.333333%;
+	width: 25%;
+	height: 450px;
+} 
+
+
+
+.products_box img {
+    width: auto;
+    height: 100%;
+
+    /* height: calc(100% - 120px); */
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+
+.ipad_w .products_box{
+	overflow-x: auto;
+}
+.ipad_w .products_box .product_box{
+	width: 42.857142%;
+}
+.ipad_w .two_line .product_box{
+	width: 28%;
+}
+.ipad_w .column .product_box{
+	width: 33.333333%;
+}
+
+
+
+.ipad_h .products_box{
+	overflow-x: auto;
+}
+.ipad_h .products_box .product_box{
+	width: 75%;
+}
+.ipad_h .two_line .product_box{
+	width: 40%;
+}
+.ipad_h .column.products_box{
+	width:80%;
+}
+.ipad_h .column .product_box{
+	width: 50%;
+}
+
+
+
+
+[class*="mobile_rwd_"] .products_box{
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+}
+[class*="mobile_rwd_"] .products_box .product_box{
+	width:80%;
+}
+[class*="mobile_rwd_"] .two_line .product_box{
+	width: 66%;
+}
+[class*="mobile_rwd_"] .column .product_box{
+	width: 100%;
+	max-width: 320px;
+	height: calc(100vh - 90px);
+
+}
+
+
+
+@media screen and (max-width:1024px) {
+.products_box{
+	overflow-x: auto;
+}
+.products_box .product_box{
+	width: 42.857142%;
+}
+.two_line .product_box{
+	width: 28%;
+}
+.column .product_box{
+	width: 33.333333%;
+}
+}
+
+@media screen and (max-width:1023px) {
+.products_box{
+	overflow-x: auto;
+}
+.products_box .product_box{
+	width: 75%;
+}
+.two_line .product_box{
+	width: 40%;
+}
+.column.products_box{
+	width:80%;
+}
+.column .product_box{
+	width: 50%;
+}
+}
+
+@media screen and (max-width:767px) {
+.products_box{
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+}
+.products_box .product_box{
+	width:80%;
+}
+.two_line .product_box{
+	width: 66%;
+}
+.column .product_box{
+	width: 100%;
+	max-width: 320px;
+	height: calc(100vh - 90px);
+}
+}
+
+
+
+
+.display_box{
+	position:fixed ;
+	z-index: 300;
+
+}
+
+
+.display_box a{
+
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+
+
+.page_num{
+
+	position:fixed ;
+	z-index: 300;
+}
+
+
+/* 
+	width: 100%;
+    height: 50px;
+ */    
+/*     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; */
+
+
+
+
+
+.products_box .dot_box.icon._v3{
+	position:fixed ;
+
+	bottom: 0;
+	z-index: 300;
+
+
+	-webkit-transform: translateX(-49px);
+	-ms-transform: translateX(-49px);
+	transform: translateX(-49px);
+}
+
+/* .products_box .dot_box a{
+	display: block;
+
+	width: 50px;
+	height: 50px;
+
+	color: #fff;
+
+	background-color: red;
+} */
+/*  */
+
+
+
+
+
+
+/* del */
+.products_box .page_box > div{
+	position: relative;
+
+}
+
+.products_box .page_box > div:before{
+	display: block;
+
+	content: '';
+	position: absolute;
+
+	top: 0;
+	left: 50%;
+
+	z-index: 300;
+
+	width: 1px;
+	height: 100%;
+
+	background-color: red;
+
+	transform: translate(-50%, 0);
+
+
+}	
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/load_if.js"></script>
+
+
+<script>
+
+$(window).on('load', function() {
+
+
+
+
+var p_i = '';
+var dot_box_products_list = '';
+var products_num = 0;
+var show_item = 0;
+
+
+
+$('.products_box').each(function() {
+
+	var products_box = $(this);
+
+	products_box.find('.page_box > div').each(function(i) {
+		products_num = i+1 ;
+
+		// $(this).find('.item_num').html(products_num);
+		// build_dot_btn += '<a href="#item_'+ products_num +'">' + products_num + '</a>';
+		// $(this).attr('id', 'item_' + products_num );
+		dot_box_products_list += '<a href="#"><span class="img_box"><img src="  "></span></a>';
+
+	});
+
+products_box.find('.dot_box').html(dot_box_products_list);
+
+products_box.find('.dot_box a').on('click', function(){
+    slide_move($(this).index());
+    $('.one_line').css({background: '#000'});
+    return false;
+});
+
+
+var products_L = [];
+var products_W = [];
+var slide_show_W = 0;
+var product_box_W = 0;
+
+function products_LW(){
+	products_L.length = 0;
+	products_W.length = 0;
+	slide_show_W = 0;
+	product_box_W = 0;
+
+	slide_show_W = products_box.outerWidth();
+	product_box_W = products_box.find('.page_box > div').outerWidth();
+
+  products_box.find('.page_box > div').each(function() {
+      products_L.push( $(this).position().left );
+      products_W.push( $(this).outerWidth() );
+ 
+  });
+}
+
+
+
+
+function slide_move(index){
+    show_item = index;
+    // change_btn_style();
+ 
+if( ( products_L[ show_item ] + product_box_W) >= ( slide_show_W / 2 )  ){
+    products_box.stop(true).animate({ scrollLeft: ( product_box_W * index ) - ( slide_show_W / 2 - product_box_W / 2 ) },360);
+
+}else{
+    products_box.stop(true).animate({ scrollLeft: ( product_box_W * index ) },360);
+
+}
+    // products_box.stop(true).animate({ scrollLeft: product_box_W * index },360);
+    products_box.find('.dot_box').stop(true).animate({marginLeft: -98 * index +'px'},270);
+    // $(this).find('.page_num').empty().html('<span>'+ (show_item + 1) +'</span><span>'+ hm_item +'</span>' );
+}
+
+
+
+
+$('.one_line , .two_line , .column').on('click',  function() {
+
+	// $('.dot_btn').css({ marginLeft:' 0px' });
+	// $('.dot_btn a').removeClass('this_product').eq(0).addClass('this_product');
+	// $('html, body').stop(true).animate({ scrollLeft: '0px' }, 360);
+
+	$('.products_box').removeClass('one_line two_line column');
+
+	if ($(this).hasClass('one_line')) {
+
+
+	}else if($(this).hasClass('two_line')) {
+		$('.products_box').addClass('two_line');
+
+	}else if($(this).hasClass('column')) {
+		$('.products_box').addClass('column');
+	}
+
+products_LW();
+	return false;
+
+});
+
+products_LW();
+
+}); //products_box
+
+
+
+});
+
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<div class="display_box">
+	<a class="one_line" href="#">1</a>
+	<a class="two_line" href="#">2</a>
+	<a class="column" href="#">3</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="slide_show products_box">
+
+    <a class="btn_L v2" href="#">&nbsp;</a>
+    <a class="btn_R v2" href="#">&nbsp;</a>
+
+	<div class="dot_box icon _v3"></div>
+
+<div class="page_num v2">
+  <div>1</div>
+  <div class="total_num">100</div>
+</div>
+
+<div class="page_box">
+
+
+
+</div>
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+
+
+
+
+
+<!-- 
+<div class="page_num v2">
+  <div>1</div>
+  <div class="total_num">100</div>
+</div>
+
+    <div class="dot_box v4"></div>
+    <div class="page_num">1/4</div>
+
+<div class="products_box column">
+<div class="product_box">
+	<img src="">
+	<div class="text">
+		<div class="item_num">item_num</div>
+		<div class="product_brand">product_brand</div>
+		<div class="product_name"></div>
+		<div class="product_price">product_price</div>
+	</div>
+
+</div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
