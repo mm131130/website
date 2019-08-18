@@ -404,10 +404,9 @@
 
 
      width: 100%;
-
-
-	min-height: 90px;
-    height: 100%;
+     
+  min-height: 90px;
+  height: auto;
 	}
 .flex_center_center{
     display: -webkit-box;
@@ -646,6 +645,8 @@
   max-width: 375px;
   height: 100%;
   min-height: 668px;
+    height:auto;
+
 }
 }
 
@@ -655,8 +656,11 @@
 .mobile_size_iphone7:not(.rwd_demo){
     width: 100%;
     max-width: 414px;
-    height: 100%;
+
     min-height: 736px;
+    height:auto;
+
+
     margin-left:calc( ( 30% - 414px  ) / 2) ;
     margin-right:calc( ( 30% - 414px  ) / 2) ;
 }
@@ -669,6 +673,8 @@
     max-width: 375px;
     height: 100%;
     min-height: 668px;
+    height:auto;
+
     margin-left:calc( ( 30% - 375px  ) / 2) ;
     margin-right:calc( ( 30% - 375px  ) / 2) ;
 }
@@ -681,6 +687,8 @@
     max-width: 320px;
     height: 100%;
     min-height: 568px;
+    height:auto;
+
     margin-left:calc( ( 30% - 320px  ) / 2) ;
     margin-right:calc( ( 30% - 320px  ) / 2) ;
 }
