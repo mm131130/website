@@ -1294,23 +1294,18 @@ l
     /* position: fixed; */
 
     position: absolute;
-
     z-index: 300;
 
     display: block;
-
     width:100px;
     height:50px;
-
-
 }
-
 .btn_LR.v1{
     top: calc(100% - 68px);
-    left:  calc(100% - 118px);
+    left: calc(100% - 118px);
 
 }
-.btn_LR > *{
+.btn_LR > a{
     float: left;
     display: inline-block;
 
@@ -1321,16 +1316,13 @@ l
     width:50px;
     height:50px;
 
-    background-image:url(../img-if/icon_2017.svg);
 
-        background-position-y:-150px;
+    background-position-y: 0 !important;
 
     }
 
-.btn_LR > *:after{
-    /* position: relative; */
 
-    /* display: inline-block; */
+.btn_LR > :after{
 
     content: '';
 
@@ -1339,19 +1331,21 @@ l
     position: absolute;
     top: 7px;
     left: 7px;
+    top: 0;
+    left: 0;
     z-index: -1;
 
     width:36px;
     height:36px;
-
+    width:50px;
+    height:50px;
 
     background-color: #000;
-    border-radius: 50%;
-    }
+    /* border-radius: 50%; */
+    }/* 
+.btn_LR > :before{}
 
-
-
-/* .btn_LR > *:before{
+.btn_LR > :before{
 
     content: '';
     position: absolute;
@@ -1372,37 +1366,35 @@ l
     -moz-transform:translate(-50% , -50%);     
     transform:translate(-50% , -50%);
     }
-
  */
 
 
-.btn_LR > *:first-child{
-        background-position-x:-150px;
-    }
 
-.btn_LR > *:last-child{
-        background-position-x:-50px;
-    }
-
-.btn_LR > *:hover{
-    background-position-y:0px;
-
+.btn_LR > :hover{
+    /* background-position-y:0px; */
+    background-position-y:-150px ;
    }
-.btn_LR > *:hover:after{
-
-    background-color: red;
+.btn_LR > :hover:after{
+    background-color: #a97962;
    }
 
 
 
 
 /* jQ */
-.btn_LR .un_click{
-    cursor: default; 
-background-position-y:-400px;
+.btn_LR a.un_click{
+cursor: default; 
+
+background-color: #fff;
+background-position-y:0 ;
+
 }
 .btn_LR .un_click:hover{
-background-position-y:-400px;
+
+    /* background-position-y:-150px !important; */
+
+
+
 }
 
 
@@ -2712,8 +2704,6 @@ transform:rotate(0deg) translateY(-50%) rotate(-180deg);
     background-image:url(../img-if/icon_2017.svg);
     background-position-y:-450px; 
 }
-
-
 .t_icon.v1{
     background-position-x:0px;  
 }
@@ -2730,6 +2720,28 @@ transform:rotate(0deg) translateY(-50%) rotate(-180deg);
     background-position-x:-150px;    
 }
 
+.t_icon.v2,
+.r_icon.v2,
+.d_icon.v2,
+.l_icon.v2{
+    background-image:url(../img-if/icon_2017.svg);
+    background-position-y:-450px; 
+}
+.t_icon.v2{
+    background-position-x:-200px;  
+}
+
+.r_icon.v2{
+    background-position-x:-250px;   
+}
+
+.d_icon.v2{
+    background-position-x:-300px;  
+}
+
+.l_icon.v2{
+    background-position-x:-350px;    
+}
 
 
 
