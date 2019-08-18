@@ -49,22 +49,22 @@ tangerine_regular */
 
 @font-face {
 font-family:"roboto_Medium";
-src: url("../font/roboto/roboto_Medium.eot");
-src: url("../font/roboto/roboto_Medium.eot?#iefix") format("embedded-opentype"),
-url("../font/roboto/roboto_Medium.svg") format("svg"),
-url("../font/roboto/roboto_Medium.woff") format("woff"),
-url("../font/roboto/roboto_Medium.ttf") format("truetype"),
-url("../font/roboto/roboto_Medium.otf") format("opentype");
+src: url("../font/roboto/roboto_medium.eot");
+src: url("../font/roboto/roboto_medium.eot?#iefix") format("embedded-opentype"),
+url("../font/roboto/roboto_medium.svg") format("svg"),
+url("../font/roboto/roboto_medium.woff") format("woff"),
+url("../font/roboto/roboto_medium.ttf") format("truetype"),
+url("../font/roboto/roboto_medium.otf") format("opentype");
 }
 
 @font-face {
 font-family:"roboto_Regular";
-src: url("../font/roboto/roboto_Regular.eot");
-src: url("../font/roboto/roboto_Regular.eot?#iefix") format("embedded-opentype"),
-url("../font/roboto/roboto_Regular.svg") format("svg"),
-url("../font/roboto/roboto_Regular.woff") format("woff"),
-url("../font/roboto/roboto_Regular.ttf") format("truetype"),
-url("../font/roboto/roboto_Regular.otf") format("opentype");
+src: url("../font/roboto/roboto_regular.eot");
+src: url("../font/roboto/roboto_regular.eot?#iefix") format("embedded-opentype"),
+url("../font/roboto/roboto_regular.svg") format("svg"),
+url("../font/roboto/roboto_regular.woff") format("woff"),
+url("../font/roboto/roboto_regular.ttf") format("truetype"),
+url("../font/roboto/roboto_regular.otf") format("opentype");
 }
 
 @font-face {
