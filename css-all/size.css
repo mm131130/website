@@ -404,7 +404,7 @@
 
 
      width: 100%;
-     
+
   min-height: 90px;
   height: auto;
 	}
@@ -651,21 +651,16 @@
 }
 
 
-/* .components_demo.mobile_size_iphone7 > div, */
+
 .rwd_demo.mobile_size_iphone7 > div,
 .mobile_size_iphone7:not(.rwd_demo){
     width: 100%;
     max-width: 414px;
-
     min-height: 736px;
-    height:auto;
-
-
+    /* height:auto; */
     margin-left:calc( ( 30% - 414px  ) / 2) ;
     margin-right:calc( ( 30% - 414px  ) / 2) ;
 }
-
-/* .components_demo.mobile_size_iphone6 > div, */
 .rwd_demo.mobile_size_iphone6 > div,
 .mobile_size_iphone6:not(.rwd_demo){
     position: relative;
@@ -673,25 +668,22 @@
     max-width: 375px;
     height: 100%;
     min-height: 668px;
-    height:auto;
-
+    /* height:auto; */
     margin-left:calc( ( 30% - 375px  ) / 2) ;
     margin-right:calc( ( 30% - 375px  ) / 2) ;
 }
-
-/* .components_demo.mobile_size_iphone5 > div, */
-
 .rwd_demo.mobile_size_iphone5 > div,
 .mobile_size_iphone5:not(.rwd_demo){
     width: 100%;
     max-width: 320px;
     height: 100%;
     min-height: 568px;
-    height:auto;
-
+    /* height:auto; */
     margin-left:calc( ( 30% - 320px  ) / 2) ;
     margin-right:calc( ( 30% - 320px  ) / 2) ;
 }
+
+
 
 
 [class*="mobile_size_"] div[class*="product_"], 
