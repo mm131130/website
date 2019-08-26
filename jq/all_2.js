@@ -270,7 +270,6 @@ win_S_T = $(window).scrollTop();
 
 
 function rwd_change(){
-
   $('.rwd_demo[class*="mobile_"] .popup_event_box , .rwd_demo.ipad_h .popup_event_box').siblings('*:not(.popup_bg)*:not(.coin_icon)*:not(.popup_event_box)*:not(.add_coins_note) ').addClass('filter_ef');
 }
 
@@ -341,6 +340,13 @@ get_box_TH();
 return false;
 
 });
+
+
+
+
+
+
+
 
 
 
@@ -440,7 +446,11 @@ coin_event_box_TH();
 
 
 
+// $(window).resize( function() {
 
+// get_box_TH();
+
+// });
 
 
 
@@ -785,7 +795,16 @@ ts.find('.popup_bg').delay(360).fadeOut(360, function(){
 
 
 
+$('.icon_my_favorites').on('click', function() {
 
+if ($(this).hasClass('click')) {
+
+}
+
+
+
+  return false;
+});
 
 
 
@@ -813,14 +832,19 @@ $('.slide_show').each(function() {
              
       $(this).find('.dot_box').html(build_dot_btn);
       $(this).find('.dot_box.icon').html(build_img_btn);
-      $(this).find('.page_num').append('<div>'+ hmp +'</div>').prepend('<div>'+ (now_tag + 1) +'</div>');
+
+      // $(this).find('.page_num.v4').append('<div>'+ hmp +'</div>').prepend('<div>'+ (now_tag + 1) +'</div>');
+      $(this).find('.page_num.v4 .total_page_num').text(hmp);
+
+
+
 
       function slide_LR(i){
           now_tag = i;
 
           ts_slide_show.find('.page_box').stop(true).css({ marginLeft:- 100 * i + '%' });
-          ts_slide_show.find('.buoy').css({ width:'calc(' + (100 / hmp) * ( now_tag + 1) + '% - 4px)' });
-          ts_slide_show.find('.page_num > *:first-child').text(now_tag + 1);
+          ts_slide_show.find('.page_num .buoy').css({ width:'calc(' + (100 / hmp) * ( now_tag + 1) + '% - 4px)' });
+          ts_slide_show.find('.now_page_num').text(now_tag + 1);
 
         chang_style();
       }
@@ -905,7 +929,17 @@ if( ts_slide_show.parent().hasClass('product_owl_clutch') ){
 });// slide show
 
 
+if(win_W < 767) {
+    $('.rwd_demo').removeClass().addClass('rwd_demo mobile_size_iphone5');
+}
+
+
 });// end
+
+
+
+
+
 
 
 $(window).resize( function() {
@@ -921,7 +955,7 @@ $(window).resize( function() {
 
   }else if(win_W < 767) {
     $('.rwd_demo').removeClass().addClass('rwd_demo mobile_size_iphone5');
-    $('.rwd_size_box .w-ipad_h').addClass('is_you').siblings().removeClass('is_you');
+    // $('.rwd_size_box .w-ipad_h').addClass('is_you').siblings().removeClass('is_you');
   }
 
 });
