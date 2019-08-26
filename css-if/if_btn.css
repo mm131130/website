@@ -968,10 +968,7 @@ _v2 box
 
 
 .dot_box.icon._v2 a{
-    /* margin: 0; */
-
-
-
+    margin:0 18px;
 }
 
 .dot_box.icon._v2 .img_box,
@@ -1009,9 +1006,7 @@ _v2 box
 
 .dot_box.icon._v3 > a{
     margin:0 18px;
-
     border-radius: 300px;
-
 }
 
 .dot_box.icon._v3 .img_box{
@@ -1945,7 +1940,6 @@ label ~ *{
 .icon_my_favorites,
 .icon_shopping_bag,
 .icon_search{
-
     position: relative;
 
     display: inline-block;
@@ -1961,19 +1955,19 @@ label ~ *{
     -webkit-transform: rotate(0deg) rotate(9deg) ;
     -ms-transform: rotate(0deg) rotate(9deg) ;
     transform: rotate(0deg) rotate(9deg) ;
-
-
-
     /* background-color: red; */
 }
+
+
+
+
+
+
+
 .status_pressed.icon_search,
 a.icon_search:hover{
     background-position-y:-1100px;
 }
-
-
-
-
 
 .icon_shopping_bag{
     background-position-x:-450px;
