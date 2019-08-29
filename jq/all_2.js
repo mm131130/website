@@ -322,7 +322,7 @@ function coin_event_box_TH(){
   coin_event_box_H = $('.rwd_demo .coin_event_box').outerHeight();
   coin_T = coin_event_box_T + ( coin_event_box_H / 2 );
   $('.coin_icon').css({top : coin_T +'px'});
-  $('.coin_event_box h4').text(coin_T);
+  // $('.coin_event_box h4').text(coin_T);
 }
 
 
