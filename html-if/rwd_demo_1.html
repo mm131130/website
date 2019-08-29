@@ -52,9 +52,332 @@
 
 body{
 
+  overflow: hidden;
+
  background-image:url(../img-m/bg_01.jpg);
  background-repeat:repeat !important;
  background-color: #35373c;
+}
+
+
+.loading_box{
+  position:fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:3000;
+
+
+/*   background: url('../img-m/image/bg-pan.jpg') ;
+background-size: cover;
+background-position: center center; */
+
+background-color: #fff;
+
+  opacity: 0.96;
+
+
+}
+.loading_box img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0.96;
+  width: auto;
+  height: 100%;
+
+}
+
+
+.loading_box [class*="logo-"]{
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+    -moz-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    -webkit-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 30px rgba(0,0,0,0.2),
+    -30px 90px 60px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.loading_box .loading_icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+ width: 90px;
+  height: 90px;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px red solid; */
+  /* background-color: red; */
+
+
+
+
+}
+.loading_box .loading_icon.v1{
+
+    -webkit-animation:box_rotate 1.8s infinite;
+    -moz-animation:box_rotate 1.8s infinite;    
+    animation:box_rotate 1.8s infinite;
+}
+
+
+.loading_box .loading_icon.v2{
+/* 
+    -webkit-animation:box_rotate_30 3.6s infinite;
+    -moz-animation:box_rotate_30 3.6s infinite;    
+    animation:box_rotate_30 3.6s infinite; */
+}
+
+.loading_box .loading_icon div{
+
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #000;
+  /* border: 1px red solid; */
+
+}
+
+
+.loading_box .loading_icon div:nth-child(1),
+.loading_box .loading_icon div:nth-child(4),
+.loading_box .loading_icon div:nth-child(7){
+
+/*     -webkit-animation: box_L 1.8s ease-in-out infinite;
+    -moz-animation: box_L 1.8s ease-in-out infinite;    
+    animation: box_L 1.8s ease-in-out infinite; */
+}
+
+
+
+.p1{
+
+  top:-30px;
+  left:-30px;
+  transform-origin: bottom right;
+
+
+}
+.p2{
+  top:-30px;
+  left:30px;
+  transform-origin: bottom center ;
+}
+.p3{
+  top:-30px;
+  left:90px;
+  transform-origin: bottom left ;
+}
+
+.p4{
+  top:30px;
+  left:-30px;
+  transform-origin: center right ;
+  /* transform: translateY(-50%); */
+}
+.p5{
+  top:30px;
+  left:30px;
+  transform-origin: center center ;
+  /* transform: translateY(-50%); */
+
+}
+.p6{
+  top:30px;
+  left:90px;
+  transform-origin: center left ;
+  /* transform: translateY(-50%); */
+
+}
+.p7{
+  transform-origin: top right;
+  top:90px;
+  left:-30px;
+}
+.p8{
+  transform-origin: top center ;
+  top:90px;
+  left:30px;
+  /* transform: translateX(-50%); */
+
+}
+.p9{
+  transform-origin: top left ;
+  top:90px;
+  left:90px;
+}
+
+
+
+
+.v2 .p1{
+
+  top:-30px;
+  left:-30px;
+  transform-origin: bottom right;
+
+
+}
+.v2 .p2{
+  top:-30px;
+  left:30px;
+  transform-origin: bottom center ;
+}
+.v2 .p3{
+  top:-30px;
+  left:90px;
+  transform-origin: bottom left ;
+}
+
+.v2 .p4{
+  top:30px;
+  left:-30px;
+  transform-origin: center right ;
+  /* transform: translateY(-50%); */
+}
+.v2 .p5{
+  top:30px;
+  left:30px;
+  transform-origin: center center ;
+  /* transform: translateY(-50%); */
+
+}
+.v2 .p6{
+  top:30px;
+  left:90px;
+  transform-origin: center left ;
+  /* transform: translateY(-50%); */
+
+}
+.v2 .p7{
+  transform-origin: top right;
+  top:90px;
+  left:-30px;
+}
+.v2 .p8{
+  transform-origin: top center ;
+  top:90px;
+  left:30px;
+  /* transform: translateX(-50%); */
+
+}
+.v2 .p9{
+  transform-origin: top left ;
+  top:90px;
+  left:90px;
+}
+
+
+.loading_box .loading_icon.v2 div{
+
+
+    -webkit-animation:box_TL 1.8s infinite;
+    -moz-animation:box_TL 1.8s infinite;    
+    animation:box_TL 1.8s infinite;
+
+}
+
+
+
+@-webkit-keyframes box_TL {
+50%{
+  opacity: 0.3;
+  top:30px;
+  left:30px;
+
+  background-color: #f2433a;
+
+  border-radius: 4px;
+
+  }
+100% {
+  opacity: 1;
+
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+}
+}
+@keyframes box_TL { 
+50%{
+  opacity: 0.3;
+  background-color: #f2433a;
+  border-radius: 4px;
+
+  top:30px;
+  left:30px;
+  }
+100% {
+  opacity: 1;
+
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+
+} 
+}
+
+@-webkit-keyframes box_rotate_30 {
+  100% {
+    -webkit-transform:translate(-50%, -50%) rotate(30deg);
+    -ms-transform:translate(-50%, -50%) rotate(30deg);
+    transform:translate(-50%, -50%) rotate(30deg);
+  }
+}
+@keyframes box_rotate_30 { 
+  100% {
+    -webkit-transform:translate(-50%, -50%) rotate(30deg);
+    -ms-transform:translate(-50%, -50%) rotate(30deg);
+    transform:translate(-50%, -50%) rotate(30deg);
+  } 
+}
+
+@-webkit-keyframes box_rotate {
+  50%{
+    background-color: rgba(0, 0, 0,0.1);
+    }
+  100%{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes box_rotate { 
+  50%{
+    background-color: rgba(0, 0, 0,0.1);
+  }
+  100% {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  } 
 }
 
 
@@ -68,9 +391,22 @@ body{
 $(window).on('load', function() {
 
 
+  function loading(){
+// setTimeout
+// setInterval
+  setTimeout( function() {
+    $('.loading_box').fadeOut('360', function() {
+        $('body').css({ overflow: 'unset'});
+    });
+  
+        },15000
+      );
+  }
+
+  loading();
+
+
 $('.slide_U_D').on('click', function() {
-
-
 
 if ($(this).hasClass('open')) {
   $(this).removeClass('open');
@@ -82,9 +418,6 @@ if ($(this).hasClass('open')) {
   $(this).next().slideDown();
 
 }
-
-
-
   return false;
 });
 
@@ -94,6 +427,42 @@ if ($(this).hasClass('open')) {
 </head>
 <body>
 
+
+
+<div class="loading_box">
+
+
+<!--   <div class="loading_icon v1">
+    <div class="p1">&nbsp;</div>
+    <div class="p2">&nbsp;</div>
+    <div class="p3">&nbsp;</div>
+    <div class="p4">&nbsp;</div>
+    <div class="p5">&nbsp;</div>
+
+    <div class="p6">&nbsp;</div>
+    <div class="p7">&nbsp;</div>
+    <div class="p8">&nbsp;</div>
+    <div class="p9">&nbsp;</div>
+  </div>
+
+ -->
+
+  <div class="loading_icon v2">
+    <div class="p1">&nbsp;</div>
+    <div class="p2">&nbsp;</div>
+    <div class="p3">&nbsp;</div>
+    <div class="p4">&nbsp;</div>
+    <div class="p5">&nbsp;</div>
+
+    <div class="p6">&nbsp;</div>
+    <div class="p7">&nbsp;</div>
+    <div class="p8">&nbsp;</div>
+    <div class="p9">&nbsp;</div>
+  </div>
+  <!-- <a class="logo-m-b w_180 white " href="#">&nbsp;</a> -->
+<!-- <img src="../img-m/image/bg-pan.jpg"> -->
+
+</div>
 
 <a class="open_close" href="#">
     <span class="line_A">&nbsp;</span>

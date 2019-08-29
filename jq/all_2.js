@@ -7,6 +7,41 @@
 $(window).on('load', function() {
 
 
+
+
+
+  $('.radio_btn , .select_btn').on('click', function() {
+
+    if ($(this).hasClass('radio_btn')) {
+      $(this).addClass('click').siblings('.radio_btn').removeClass('click');
+
+    }else{
+    
+
+    if ($(this).hasClass('click')) {
+
+    $(this).removeClass('click');
+
+
+    }else{
+
+
+    $(this).addClass('click');
+
+    }
+
+
+
+
+    }
+
+
+
+
+    return false;
+  });
+
+
 $('body').prepend('<header class="m_HF v2"></header>');
 
 
@@ -800,7 +835,6 @@ $('.icon_my_favorites').on('click', function() {
 if ($(this).hasClass('click')) {
 
 }
-
 
 
   return false;

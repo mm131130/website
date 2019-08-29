@@ -3151,13 +3151,13 @@ transform:rotate(0deg) translateY(-50%) rotate(-180deg);
 
 
 
-.select_btn > .icon.click,
-.radio_btn > .icon.click{
+.select_btn.click > .icon,
+.radio_btn.click > .icon{
   background-position-y: -857px;
 }
 
-.select_btn:hover > .icon.click,
-.radio_btn:hover > .icon.click{
+.select_btn.click:hover > .icon,
+.radio_btn.click:hover > .icon{
   background-position-y: -907px;
 }
 
