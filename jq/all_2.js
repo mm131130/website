@@ -4,46 +4,10 @@
 
 // open_close
 
-$(window).on('load', function() {
 
-
-
-
-
-  $('.radio_btn , .select_btn').on('click', function() {
-
-    if ($(this).hasClass('radio_btn')) {
-      $(this).addClass('click').siblings('.radio_btn').removeClass('click');
-
-    }else{
-    
-
-    if ($(this).hasClass('click')) {
-
-    $(this).removeClass('click');
-
-
-    }else{
-
-
-    $(this).addClass('click');
-
-    }
-
-
-
-
-    }
-
-
-
-
-    return false;
-  });
-
+$(function() {
 
 $('body').prepend('<header class="m_HF v2"></header>');
-
 
 $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
 
@@ -119,6 +83,42 @@ $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
         $('html, body').stop(true).animate({scrollTop: $(window.location.hash).offset().top }, 1000 );
     }
 });// header
+
+
+});
+
+$(window).on('load', function() {
+
+  $('.radio_btn , .select_btn').on('click', function() {
+
+    if ($(this).hasClass('radio_btn')) {
+      $(this).addClass('click').siblings('.radio_btn').removeClass('click');
+
+    }else{
+    
+
+    if ($(this).hasClass('click')) {
+
+    $(this).removeClass('click');
+
+
+    }else{
+
+
+    $(this).addClass('click');
+
+    }
+
+
+
+
+    }
+
+
+
+
+    return false;
+  });
 
 
 
