@@ -238,7 +238,13 @@ header .mm_nav.v1{
 
 .mm_nav .bold{
     /* font-family:Arial, sans-serif; */
-    font-size: 12px;
+    /* font-size: 14px; */
+
+    font-family: roboto_Medium;
+    text-transform:uppercase;
+    letter-spacing: 0.09em;
+
+
     color:#656d78;
     color:#000;
     }
