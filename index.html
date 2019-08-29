@@ -41,9 +41,6 @@
 
 <link media="all" rel="stylesheet" href="css-m/m_v2019_1.css">
 
-<link media="all" rel="stylesheet" href="css-if/btn.css">
-<link media="all" rel="stylesheet" href="css-if/if_v2019_1.css">
-
 
 <style>
 body{
@@ -52,146 +49,6 @@ body{
     background-color: #35373c;
 }
 
-
-.cloud_banner{
-  display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-
-/*     -webkit-box-shadow:
-    0px 0 60px rgba(0,0,0,0.18) inset,
-    0px 0 120px rgba(0,0,0,0.135) inset,
-    0px 0 180px rgba(0,0,0,0.09) inset;
-    -moz-box-shadow:
-    0px 0 60px rgba(0,0,0,0.18) inset,
-    0px 0 120px rgba(0,0,0,0.135) inset,
-    0px 0 180px rgba(0,0,0,0.09) inset;
-    box-shadow:
-    0px 0 90px rgba(0,0,0,0.6) inset,
-    0px 0 180px rgba(0,0,0,0.4) inset; */
-
-
-
-
-
-
-}
-
-
-
-.cloud_banner{
-
-    position: relative;
-
-    height: 450px;
-    background-image: url("img_m/mm_banner_03.jpg");
-    background-size: cover;
-
-    background-position: center center;
-
-    margin-top: 60px;
-    }
-
-
-
-
-.mm_logo{
-    top:45%;
-    z-index: 100;
-
-    width:120px;
-    height:120px;
-
-    margin-top: -60px;
-    margin-left: -60px;
-
-}
-.cloud,
-.cloud_shadow{
-    bottom: 0;
-    max-width: 350px;
-    width: 100%;
-
-    margin-left: -175px;
-}
-.mm_logo,
-.cloud,
-.cloud_shadow{
-    position: absolute;
-    left: 50%;
-}
-
-
-.cloud{
-    bottom:-15%;
-    z-index: 300;
-
-
-    -webkit-transform:rotate(-9deg);
-    -moz-transform:rotate(-9deg);
-    -ms-transform:rotate(-9deg);
-    transform:rotate(-9deg);
-
-    -webkit-animation: cloudMove 6s ease-in-out infinite;
-    -moz-animation: cloudMove 6s ease-in-out infinite;  
-    animation: cloudMove 6s ease-in-out infinite;
-}
-
-.cloud_shadow{
-    bottom: -21%;
-    z-index: 200;
-    opacity: 0.9;
-
-    -webkit-animation: cloudShodowSize 6s ease-in-out infinite;
-    -moz-animation: cloudShodowSize 6s ease-in-out infinite;    
-    animation: cloudShodowSize 6s ease-in-out infinite;
-}
-
-
-
-@-webkit-keyframes cloudMove { 
-33.333333% {
-    bottom:12%;
-    -webkit-transform:rotate(18deg);
-    -moz-transform:rotate(18deg);
-    -ms-transform:rotate(18deg);
-    transform:rotate(18deg);
-    }
-}
-@keyframes cloudMove { 
-33.333333% {
-    bottom:12%;
-    -webkit-transform:rotate(18deg);
-    -moz-transform:rotate(18deg);
-    -ms-transform:rotate(18deg);
-    transform:rotate(18deg);
-    }
-}
-@-webkit-keyframes cloudShodowSize { 
-33.333333% {
-    -webkit-transform:scale(0.54);
-    -moz-transform:scale(0.54);
-    transform:scale(0.54);
-    opacity:0.3;
-}
-}
-@keyframes cloudShodowSize { 
-33.333333% {
-    -webkit-transform:scale(0.54);
-    -moz-transform:scale(0.54);
-    transform:scale(0.54);
-    opacity:0.3;
-}
-
-}
-
-
 </style>
 <script src="jq/jquery_3_2_1_min.js"></script>
 
@@ -199,34 +56,18 @@ body{
 
 $(function(){
 
-// window.location.href='https://mm131130.github.io/website/html-if/rwd_demo_1.html'; 
 
-
-// $(body).on('click', function() {
-  
-// window.location.href='html-if/rwd_demo_1.html';
-// });
-
-
-
-
-
-
-  loading();
 
   function loading(){
 // setTimeout
 // setInterval
     setTimeout( function() {
       window.location.href='html-if/rwd_demo_1.html';
-        },  
-        1000
+        },0
       );
-    
-
   }
 
-
+  loading();
 
 });// end
 </script>
@@ -236,23 +77,9 @@ $(function(){
 
 <body>
 
-    <!-- <img class="mm_logo" src="img-m/mm_logo_2.svg"> -->
-
-<!-- <div class="cloud_banner ">
-
-    <div class="logo-m-b w_180">&nbsp;</div> 
-    <img class="cloud" src="img-m/cloud.png">
-    <img class="cloud_shadow" src="img-m/cloud_shadow.png">
-</div>   -->
-
-
-
-
 <dov class="h_100vh flex_box">
     <a href="html-if/rwd_demo_1.html" class="logo-m-b w_180">&nbsp;</a> 
 </dov>
-
-
 
 </body>
 </html>
