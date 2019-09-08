@@ -205,15 +205,154 @@ transform: translate(0, -50%);
   transform: none;
 }
 
+.page_num{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  transform: none;
+}
+
+
+.btn_LR,
+.btn_L,
+.btn_R{
+  position: static;
+}
+
+
+
+
+
+.loading_icon{
+
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+
+
+  background-color: #000;
+}
+
+.loading_icon div{
+  display: block;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  border: 1px red solid;
+  /* background-color: red; */
+
+  /* transform: translate(50px, -50%); */
+
+/*   -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+ */
+  /* transform-origin:  50px 50px; */
+  /* transform: translate(30px, -50%); */
+
+  /* transform:rotate(0deg); */
+  /* transform-origin: center center; */
+
+
+  margin-left: -6px;
+
+
+}
+
+
+.loading_icon .box_01{
+
+  transform:translate(30px, -50%) rotate(0deg) ;
+
+
+}
+
+
+
+
+
+.loading_icon .box_02{
+  transform:rotate(30deg) translate(30px, -50%);
+
+
+
+}
+.loading_icon .box_03{
+  transform:rotate(60deg) translate(30px, -50%) ;
+
+}
+.loading_icon .box_04{
+  transform:rotate(90deg) translate(30px, -50%) ;
+
+}
+
+.loading_icon .box_05{
+
+  transform:rotate(120deg) ;
+
+}
+.loading_icon .box_06{
+
+  transform:rotate(150deg) ;
+}
+.loading_icon .box_07{
+  transform:rotate(180deg) ;
+
+}
+.loading_icon .box_08{
+  transform:rotate(210deg) ;
+
+}
+
+.loading_icon .box_09{
+
+  transform:rotate(240deg) ;
+
+}
+.loading_icon .box_10{
+
+  transform:rotate(270deg) translate(30px, -50%) ;
+}
+.loading_icon .box_11{
+  transform:rotate(300deg) translate(30px, -50%) ;
+
+}
+.loading_icon .box_12{
+  transform:rotate(330deg) translate(30px, -50%) ;
+
+}
+
+
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/all_2.js"></script>
-
-
-
 <script>
 
+
+
+
+$(window).on('load', function() {
+
+
+
+ 
+
+
+});
+
+
+
 </script>
+
+
 </head>
 <body>
 
@@ -236,6 +375,91 @@ Sign in & Register
 <div class="content_box if_bg">
 
 
+
+
+<!-- 
+<div class="mobile_size_iphone6">
+
+  <div class="loading_icon">
+    <div class="box_01">1</div>
+    <div class="box_02">2</div>
+    <div class="box_03">3</div>
+    <div class="box_04">4</div>
+    <div class="box_05">5</div>
+
+    <div class="box_06">6</div>
+    <div class="box_07">7</div>
+    <div class="box_08">8</div>
+    <div class="box_09">9</div>
+    <div class="box_10">10</div>
+
+    <div class="box_11">11</div>
+    <div class="box_12">12</div>
+  </div>
+
+
+
+</div> -->
+
+
+
+
+<!-- 
+<div class="mobile_size_iphone6">
+  <div class="m_l_subtitle">Left & Right Btn</div>
+
+<div>
+<a class="btn_L v1" href="#" >&nbsp;</a>
+<a class="btn_R v1" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v2" href="#" >&nbsp;</a>
+<a class="btn_R v2" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v3" href="#" >&nbsp;</a>
+<a class="btn_R v3" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v4" href="#" >&nbsp;</a>
+<a class="btn_R v4" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v11" href="#" >&nbsp;</a>
+<a class="btn_R v11" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v12" href="#" >&nbsp;</a>
+<a class="btn_R v12" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v13" href="#" >&nbsp;</a>
+<a class="btn_R v13" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v14" href="#" >&nbsp;</a>
+<a class="btn_R v14" href="#" >&nbsp;</a>
+</div>
+
+<div>
+<a class="btn_L v15" href="#" >&nbsp;</a>
+<a class="btn_R v15" href="#" >&nbsp;</a>
+</div>
+
+
+
+<div class="btn_LR">
+     <a class="l_icon v2 un_click" href="#">&nbsp;</a><a class="r_icon v2" href="#">&nbsp;</a>
+  </div>
+
+</div> -->
 
 
 <div class="mobile_size_iphone6 un_bg dark_night">
@@ -394,7 +618,7 @@ Sign in & Register
 
 
 <div class="select_btn">
-    <a class="icon click" href="#">&nbsp;</a>
+    <a class="icon" href="#">&nbsp;</a>
     <div>By signing up, you agree to our <a href="#">Terms &amp; Privacy Policy</a>.</div>
 </div>
 
@@ -520,6 +744,106 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p>
 </div>
 
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">Radio & Select Btn</div>
+
+
+
+<h6>Radio list</h6>
+
+    <ul class="radio_btn_list">
+      <a href="#">XS</a>
+      <a href="#">S</a>
+      <a href="#">M</a>
+      <a href="#">L</a>
+    </ul>
+
+<h6>Select list</h6>
+
+    <ul class="select_btn_list">
+      <a class="" href="#">Activewear</a>
+      <a href="#">All-In-Ones</a>
+      <a href="#">Beachwear</a>
+      <a href="#">Coats</a>
+      <a href="#">Denim</a>
+      <a href="#">Dresses</a>
+      <a href="#">Jackets</a>
+      <a href="#">Jeans</a>
+      <a href="#">Knitwear</a>
+      <a href="#">Lingerie and Nightwear</a>
+      <a href="#">Shorts</a>
+      <a href="#">Skirts</a>
+      <a href="#">Suits</a>
+      <a href="#">Tops</a>
+      <a href="#">Trousers</a>
+    </ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+  <div class="m_l_subtitle">Page Num</div>
+
+<h6>v1</h6>
+<div class="page_num v1">
+  <div class="now_page_num">1</div>
+  <div class="total_page_num">88</div>
+</div>
+
+<h6>v2</h6>
+<div class="page_num v2">
+  <div class="now_page_num">1</div>
+  <div class="total_page_num">88</div>
+</div>
+
+<h6>v3</h6>
+<div class="page_num v3">
+  <div class="now_page_num">1</div>
+  <div class="total_page_num">88</div>
+</div>
+
+<h6>v4 - 1</h6>
+<div class="page_num v4">
+  <div class="now_page_num">1</div>
+  <span class="line"><span class="buoy">&nbsp;</span></span>
+  <div class="total_page_num">88</div>
+</div>
+
+<h6>v4 - 2</h6>
+<div class="page_num v4">
+  <div class="now_page_num">1</div>
+  <span class="line v2"><span class="buoy">&nbsp;</span></span>
+  <div class="total_page_num">88</div>
+</div>
+
+<h6>v4 - 3</h6>
+<div class="page_num v4">
+  <div class="now_page_num">1</div>
+  <span class="line v3"><span class="buoy">&nbsp;</span></span>
+  <div class="total_page_num">88</div>
+</div>
+
+
+
+<h6>v5</h6>
+<div class="page_num v5">
+  <span class="line v4"><span class="buoy"><span class="now_page_num">88</span></span></span>
+</div>
+
+
+
+</div>
 
 
 

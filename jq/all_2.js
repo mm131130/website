@@ -1,7 +1,5 @@
 // 20190727
-
 // three_line
-
 // open_close
 
 
@@ -66,10 +64,6 @@ $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
            ts_H.find('[class*="_nav"]').animate({left: '-400px'}, 100 );
 
         });
-
-
-
-
     $('html, body').animate({scrollTop: $(this.hash).offset().top }, 1000);
 
     return false;
@@ -78,47 +72,214 @@ $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
 
 
     if (window.location.hash) scroll(0, 0);
-
     if (window.location.hash) {
         $('html, body').stop(true).animate({scrollTop: $(window.location.hash).offset().top }, 1000 );
     }
-});// header
-
-
+  });// header
 });
+
+
+
+
+
+
+
+
 
 $(window).on('load', function() {
 
-  $('.radio_btn , .select_btn').on('click', function() {
 
-    if ($(this).hasClass('radio_btn')) {
-      $(this).addClass('click').siblings('.radio_btn').removeClass('click');
+$('.radio_btn_list a, .radio_btn, .sm_radio_box, .select_btn_list a, .select_btn, .sm_check_box').on('click', function() {
 
-    }else{
-    
+    if( $(this).parent().hasClass('radio_btn_list') || $(this).hasClass('radio_btn') || $(this).hasClass('sm_radio_box') ) {
+      $(this).addClass('click').siblings().removeClass('click');
 
-    if ($(this).hasClass('click')) {
-
-    $(this).removeClass('click');
-
-
-    }else{
-
-
-    $(this).addClass('click');
+    }else if( $(this).parent().hasClass('select_btn_list') || $(this).hasClass('select_btn') || $(this).hasClass('sm_check_box') ){
+      $(this).toggleClass('click');
 
     }
-
-
-
-
-    }
-
-
-
-
     return false;
+});
+
+
+
+var address_list = [
+'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">No.45, Shifu Rd., Xinyi Dist., Taipei City 110</div><div class="phone_num">8888-888-888</div>',
+'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">Chongqing S. Rd., Zhongzheng District Taipei City 10048</div><div class="phone_num">8888-888-888</div>',
+'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">No. 1, Sec. 4, Roosevelt Rd., Taipei 10617</div><div class="phone_num">8888-888-888</div>'
+];
+
+
+
+$('.ddm_if , .ddm_sm , .ddm').each(function () {
+  var ts_ddm = $(this);
+  var btn_text = '';
+
+
+if ($(this).find('.ddm_menu').hasClass('month')) {
+
+  var month = [];
+  for (var i = 1 ; i <= 12; i++) {
+    if(i <= 9 ){
+      i = '0' + i;
+    }
+    month += '<a href="#">' + i + '</a>';
+  }
+  $(this).find('.month').html(month);
+
+}else if ($(this).find('.ddm_menu').hasClass('day')) {
+  
+  var day = [];
+  for (var i = 1 ; i <= 31; i++) {
+    if(i <= 9 ){i = '0' + i;}
+    day += '<a href="#">' + i + '</a>';
+  }
+
+  $(this).find('.month').html(day);
+
+}else if ($(this).find('.ddm_menu').hasClass('year')) {
+  var year = [];
+  for (var i = 1 ; i <= 15; i++) {
+    year += '<a href="#">' + ( 2019 + i - 1) + '</a>';
+  }
+  $(this).find('.year').html(year);
+
+}
+
+$(this).find('a.ddm_btn').on('click', function() {
+
+    if ( ts_ddm.hasClass('click_rotate') ) {
+      $(this).next().slideUp(180 , function(){
+        ts_ddm.removeClass('click_rotate');
+      });
+
+    }else{
+        ts_ddm.addClass('click_rotate');
+        $(this).next().slideDown();
+    }
+    return false;
+});
+
+$(this).find('.ddm_menu a').on('click', function() {
+
+    if($(this).parent('.ddm_menu').hasClass('issue') ){
+      btn_text = $(this).find('> span:first-child').text();
+    }else{
+      btn_text = $(this).text(); 
+    }
+
+    if ( $(this).text() === 'Home') {
+      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[0]);
+    }else if ( $(this).text() === 'Offect') {
+      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[1]);
+    }else if ( $(this).text() === 'School') {
+      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[2]);
+    }
+
+    ts_ddm.find('.btn_info').text(btn_text).addClass('click');
+
+    ts_ddm.find('.ddm_menu').slideUp(180 , function(){
+      ts_ddm.removeClass('click_rotate');
+    });
+
+  return false;
   });
+
+});
+
+
+$('.search').each( function() {
+  var search = $(this);
+  $(this).find('input').on('input', function() {
+
+    if ($(this).val() === 'mo') {
+      search.find('.ddm_menu').slideDown();
+      search.find('.btn_X').addClass('show');
+    }else{
+      search.find('.ddm_menu').slideUp();
+      search.find('.btn_X').removeClass('show');
+    }
+  return false;
+  });
+
+
+  $(this).find('a.btn_X , .ddm_menu a').on('click', function() {
+    search.find('input').val('');
+    search.find('.btn_X').removeClass('show');
+    search.find('.ddm_menu').slideUp(function(){
+    if( search.hasClass('v1') ){
+      search.find('a.icon_search').removeClass('open');
+      search.find('input').slideUp();
+    }
+  });
+
+  return false;
+  });
+
+  $(this).find('a.icon_search').on('click', function() {
+
+  if($(this).hasClass('open')){
+      $(this).removeClass('open');
+      search.find('input').val('');
+      search.find('.ddm_menu').slideUp( function(){
+      search.find('input').slideUp();
+      });
+  }else{
+      $(this).addClass('open');
+      search.find('input').slideDown();
+  }
+  
+  return false;
+  });
+
+});
+// search
+
+$('.plus_less_box').each(function () {
+    var qty = $(this);
+    var num = 0;
+    function change_num(num_info){
+      num += num_info;
+      qty.find('.num_box').text(num);
+    }
+
+    $(this).find(".less_icon").on('click', function(){
+      if(num === 1){
+        change_num(0); 
+      }else{
+        change_num(-1); 
+      }
+    return false;     
+    });
+
+    $(this).find(".plus_icon").on('click', function(){
+      change_num(1); 
+      return false;         
+    });
+    
+    change_num(1);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,11 +308,6 @@ $('.change-size').on('click', function() {
 
 
 
-
-
-
-
-
 $('.open_close').on('click',function() {
 
   $('.m_HF.v2 .three_line').removeClass('click');
@@ -171,8 +327,6 @@ $('.open_close').on('click',function() {
   
   return false;
 });
-
-
 
 
 
@@ -202,7 +356,6 @@ var build_menu = '';
 
 $('.rwd_demo > div').each(function(i) {
   $(this).attr('id' , 'page_num_'+ (i+1));
-
   btn_text.push($(this).attr('date-title'));
   build_menu += '<a href="#page_num_'+ (i+1) +'"><span class="num">'+ (i+1) +'</span><span class="txt">'+ btn_text[i] +'</span></a>';
 });
@@ -274,11 +427,6 @@ function get_box_TH(){
       content_H.push( $(this).outerHeight() );
       content_T[0] = 0;
   });
-
-  // $('.rwd_demo > div:nth-child(3n + 1)').each(function() {
-  //     content_T_14710.push( $(this).position().top );
-  // });
-
 }
 
 var win_S_T = 0;
@@ -301,35 +449,42 @@ win_S_T = $(window).scrollTop();
 
 });//window scroll
 
-
-
-
 function rwd_change(){
   $('.rwd_demo[class*="mobile_"] .popup_event_box , .rwd_demo.ipad_h .popup_event_box').siblings('*:not(.popup_bg)*:not(.coin_icon)*:not(.popup_event_box)*:not(.add_coins_note) ').addClass('filter_ef');
 }
-
 
 rwd_change();
 
 
 
+
+
+
+
+// offset
+// .position().top
+
 var coin_event_box_T = 0;
 var coin_event_box_H = 0;
 var coin_T = 0;
-
 function coin_event_box_TH(){
-  coin_event_box_T = $('.rwd_demo .coin_event_box').position().top;
-  coin_event_box_H = $('.rwd_demo .coin_event_box').outerHeight();
+
+  $('.rwd_demo').each(function() {
+    coin_event_box_T = $(this).find('.coin_event_box').position().top;
+    coin_event_box_H = $(this).find('.coin_event_box').outerHeight();
+  });
+
+  // coin_event_box_T = $('.rwd_demo .coin_event_box').position().top;
+  // coin_event_box_H = $('.rwd_demo .coin_event_box').outerHeight();
+
   coin_T = coin_event_box_T + ( coin_event_box_H / 2 );
   $('.coin_icon').css({top : coin_T +'px'});
-  // $('.coin_event_box h4').text(coin_T);
+
 }
 
-
-
-
-
 $('.rwd_demo .popup_event_box').after('<div class="popup_bg">&nbsp;</div>');
+
+
 
 $('.rwd_size_box > a').on('click' , function() {
 
@@ -375,6 +530,16 @@ get_box_TH();
 return false;
 
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -479,205 +644,6 @@ coin_event_box_TH();
 
 
 
-
-
-// $(window).resize( function() {
-
-// get_box_TH();
-
-// });
-
-
-
-
-
-
-
-
-$('.search').each( function() {
-  var search = $(this);
-  $(this).find('input').on('input', function() {
-
-    if ($(this).val() === 'mo') {
-      search.find('.ddm_menu').slideDown();
-      search.find('.btn_X').addClass('show');
-    }else{
-      search.find('.ddm_menu').slideUp();
-      search.find('.btn_X').removeClass('show');
-    }
-  return false;
-  });
-
-
-  $(this).find('a.btn_X , .ddm_menu a').on('click', function() {
-    search.find('input').val('');
-    search.find('.btn_X').removeClass('show');
-    search.find('.ddm_menu').slideUp(function(){
-    if( search.hasClass('v1') ){
-      search.find('a.icon_search').removeClass('open');
-      search.find('input').slideUp();
-    }
-  });
-
-return false;
-});
-
-$(this).find('a.icon_search').on('click', function() {
-
-  if($(this).hasClass('open')){
-      $(this).removeClass('open');
-      search.find('input').val('');
-      search.find('.ddm_menu').slideUp( function(){
-      search.find('input').slideUp();
-      });
-  }else{
-      $(this).addClass('open');
-      search.find('input').slideDown();
-  }
-  
-  return false;
-  });
-
-});
-
-var address_list = [
-'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">No.45, Shifu Rd., Xinyi Dist., Taipei City 110</div><div class="phone_num">8888-888-888</div>',
-'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">Chongqing S. Rd., Zhongzheng District Taipei City 10048</div><div class="phone_num">8888-888-888</div>',
-'<div class="name">Mountain Chiou</div><div class="area">Earth Asia</div><div class="address_txt">No. 1, Sec. 4, Roosevelt Rd., Taipei 10617</div><div class="phone_num">8888-888-888</div>'];
-
-// drop down menu
-$('.ddm_if , .ddm_sm , .ddm').each(function () {
-  var ts_ddm = $(this);
-  var btn_text = '';
-
-if ($(this).find('.ddm_menu').hasClass('month')) {
-
-  var month = [];
-  for (var i = 1 ; i <= 12; i++) {
-    if(i <= 9 ){
-      i = '0' + i;
-    }
-    month += '<a href="#">' + i + '</a>';
-  }
-  $(this).find('.month').html(month);
-
-}else if ($(this).find('.ddm_menu').hasClass('day')) {
-  
-  var day = [];
-  for (var i = 1 ; i <= 31; i++) {
-    if(i <= 9 ){i = '0' + i;}
-    day += '<a href="#">' + i + '</a>';
-  }
-
-  $(this).find('.month').html(day);
-
-}else if ($(this).find('.ddm_menu').hasClass('year')) {
-  var year = [];
-  for (var i = 1 ; i <= 15; i++) {
-    year += '<a href="#">' + ( 2019 + i - 1) + '</a>';
-  }
-  $(this).find('.year').html(year);
-
-}
-
-$(this).find('a.ddm_btn').on('click', function() {
-
-    if ( ts_ddm.hasClass('click_rotate') ) {
-      $(this).next().slideUp(180 , function(){
-        ts_ddm.removeClass('click_rotate');
-      });
-
-    }else{
-        ts_ddm.addClass('click_rotate');
-        $(this).next().slideDown();
-    }
-    return false;
-});
-
-$(this).find('.ddm_menu a').on('click', function() {
-
-    if($(this).parent('.ddm_menu').hasClass('issue') ){
-      btn_text = $(this).find('> span:first-child').text();
-    }else{
-      btn_text = $(this).text(); 
-    }
-
-    if ( $(this).text() === 'Home') {
-      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[0]);
-    }else if ( $(this).text() === 'Offect') {
-      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[1]);
-    }else if ( $(this).text() === 'School') {
-      ts_ddm.prevAll('.txt_info').empty().html('<a class="btn_edit" href="#">EDIT</a>' + address_list[2]);
-    }
-
-    ts_ddm.find('.btn_info').text(btn_text).addClass('click');
-
-    ts_ddm.find('.ddm_menu').slideUp(180 , function(){
-      ts_ddm.removeClass('click_rotate');
-    });
-
-  return false;
-  });
-
-});
-
-
-
-
-
-
-
-$('.radio_btn , .sm_radio_box').on('click', function() {
-  $(this).find('.icon').toggleClass('click')
-  $(this).siblings().find('.icon').removeClass('click');
-  return false;
-});
-
-$('.select_btn , .sm_check_box').on('click', function() {
-    if( $(this).find('.icon').hasClass('click') ){
-      $(this).next('form').slideDown();
-      $(this).find('.icon').removeClass('click');
-
-    }else{
-      $(this).next('form').slideUp();
-      $(this).find('.icon').addClass('click');
-
-    }
-  return false;
-});
-
-
-
-
-
-
-$('.plus_less_box').each(function () {
-    var qty = $(this);
-    var num = 0;
-    function change_num(num_info){
-      num += num_info;
-      qty.find('.num_box').text(num);
-    }
-
-    $(this).find(".less_icon").on('click', function(){
-      if(num === 1){
-        change_num(0); 
-      }else{
-        change_num(-1); 
-      }
-    return false;     
-    });
-
-    $(this).find(".plus_icon").on('click', function(){
-      change_num(1); 
-      return false;         
-    });
-    
-    change_num(1);
-});
-
-
-
 $('.rwd_demo > div').each(function() {
 
 var ts = $(this);
@@ -686,7 +652,6 @@ var ts = $(this);
 // .num_box
 // .less_icon
 // .plus_icon
-
 
 ts.find('.plus_less_box').each(function () {
 
@@ -830,15 +795,11 @@ ts.find('.popup_bg').delay(360).fadeOut(360, function(){
 
 
 
-$('.icon_my_favorites').on('click', function() {
+// $('.icon_my_favorites').on('click', function() {
 
-if ($(this).hasClass('click')) {
-
-}
-
-
-  return false;
-});
+//   if ($(this).hasClass('click')) {}
+//   return false;
+// });
 
 
 
@@ -866,12 +827,8 @@ $('.slide_show').each(function() {
              
       $(this).find('.dot_box').html(build_dot_btn);
       $(this).find('.dot_box.icon').html(build_img_btn);
-
       // $(this).find('.page_num.v4').append('<div>'+ hmp +'</div>').prepend('<div>'+ (now_tag + 1) +'</div>');
       $(this).find('.page_num.v4 .total_page_num').text(hmp);
-
-
-
 
       function slide_LR(i){
           now_tag = i;
@@ -880,10 +837,10 @@ $('.slide_show').each(function() {
           ts_slide_show.find('.page_num .buoy').css({ width:'calc(' + (100 / hmp) * ( now_tag + 1) + '% - 4px)' });
           ts_slide_show.find('.now_page_num').text(now_tag + 1);
 
-        chang_style();
+        change_style();
       }
 
-      function chang_style(){
+      function change_style(){
 
             if(now_tag === 0){
                 ts_slide_show.find('.l_icon').addClass('un_click');
@@ -902,7 +859,6 @@ $('.slide_show').each(function() {
             }
 
             ts_slide_show.find('.dot_box a').eq(now_tag).addClass('click_now').siblings().removeClass('click_now');
-
       }
 
       $(this).find('.dot_box a').on('click', function() {
@@ -936,8 +892,7 @@ $('.slide_show').each(function() {
           }else{
             slide_LR( now_tag -= 1);
           }
-              
-
+        
         }else if($(this).hasClass('r_icon')){
          
           if(now_tag === hmp-1){
@@ -952,15 +907,14 @@ $('.slide_show').each(function() {
       });
 
 
-if( ts_slide_show.parent().hasClass('product_owl_clutch') ){
-  slide_LR(2);
+  if( ts_slide_show.parent().hasClass('product_owl_clutch') ){
+    slide_LR(2);
+  }else{
+    slide_LR(now_tag);
+  }
 
-}else{
-  slide_LR(now_tag);
-}
-
-
-});// slide show
+});
+// slide show
 
 
 if(win_W < 767) {
@@ -968,7 +922,8 @@ if(win_W < 767) {
 }
 
 
-});// end
+});
+// end
 
 
 
@@ -995,11 +950,6 @@ $(window).resize( function() {
 });
 
 
-
-
-$(window).on('load', function() {
-
-});// header
 
 
 

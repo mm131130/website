@@ -329,7 +329,6 @@ ul ul li:first-child:nth-last-child(9)~li{
 }
 .logo_if_v2{
     display: inline-block;
-
     background-image: url('../img-if/ifchic_v02_b.svg');
 
     width: 197px;
@@ -347,12 +346,14 @@ ul ul li:first-child:nth-last-child(9)~li{
      background-image: url('../img-if/ifchic_v02_g.svg');
 }
 
+/* 20190908 */
+.signin_register .logo_if_v2{
+    width: 100%;
+    margin:48px 0 9px 0;
 
-
-
+}
 .if_v2 header{
     text-align: center;
-
 }
 .if_v2 .logo_if_v2{
     margin:15px 0 15px 0;
