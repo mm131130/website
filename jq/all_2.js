@@ -469,22 +469,27 @@ var coin_event_box_H = 0;
 var coin_T = 0;
 function coin_event_box_TH(){
 
-  $('.rwd_demo').each(function() {
-    coin_event_box_T = $(this).find('.coin_event_box').position().top;
-    coin_event_box_H = $(this).find('.coin_event_box').outerHeight();
-  });
+
+  coin_event_box_T = $('.rwd_demo .coin_event_box').position().top;
+  coin_event_box_H = $('.rwd_demo .coin_event_box').outerHeight();
+
+
+
+
 
   // coin_event_box_T = $('.rwd_demo .coin_event_box').position().top;
   // coin_event_box_H = $('.rwd_demo .coin_event_box').outerHeight();
 
   coin_T = coin_event_box_T + ( coin_event_box_H / 2 );
   $('.coin_icon').css({top : coin_T +'px'});
-
 }
 
+
+
+
+
+
 $('.rwd_demo .popup_event_box').after('<div class="popup_bg">&nbsp;</div>');
-
-
 
 $('.rwd_size_box > a').on('click' , function() {
 
@@ -638,9 +643,13 @@ get_box_TH();
 control_menu_style();
 moveBody( now_page );
 moveMenu( now_page );
+
+
+if( $('.rwd_demo').find('div').hasClass('coin_event_box') ) {
+    
 coin_event_box_TH();
 
-
+}
 
 
 
@@ -806,7 +815,7 @@ ts.find('.popup_bg').delay(360).fadeOut(360, function(){
 
 
 
-$('.slide_show').each(function() {
+$('.slide_show:not(.products_box)').each(function() {
 
   var ts_slide_show = $(this);
   var build_dot_btn = '';

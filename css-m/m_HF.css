@@ -230,10 +230,7 @@ header .mm_nav.v1{
     font-size:12px;
 
     color: #656d78;
-
     letter-spacing: 0.036em;
-
-
     }
 
 .mm_nav .bold{
@@ -249,16 +246,14 @@ header .mm_nav.v1{
     color:#000;
     }
 .mm_nav .bold span,
-.mm_nav ul a:not(.num_boo_m) span{
+.mm_nav a:not(.num_boo_m) span{
     display: block;
     clear: both;
     font-size:12px;
-
+    line-height: 16px;
+    font-family: roboto_light;
     color: #656d78;
-
-    letter-spacing: 0.036em;
-
-
+    /* letter-spacing: 0.036em; */
     }
 
 .mm_nav a:hover{
@@ -303,6 +298,8 @@ header .mm_nav.v1{
     -20px 60px 40px rgba(0,0,0,0.12),
     -30px 90px 60px rgba(0,0,0,0.09);
     } 
+
+
 .mm_nav ul li > *:first-child{
     padding-top: 26px;
     } 
@@ -410,6 +407,9 @@ header.m_HF.v2 > a{
 
  */
 
+
+
+
 .v2.mm_nav{
     /* display: none; */
     top: 72px;
@@ -440,7 +440,38 @@ header.m_HF.v2 > a{
     0 90px 60px rgba(0,0,0,0.09);
 }
 
+.v2.mm_nav > li > span, 
+.v2.mm_nav li div, 
+.v2.mm_nav li a{
+    line-height: 18px;
+    padding: 16px 18px;
+}
+
+.v2.mm_nav > li{
+    padding-bottom: 18px;  
+    }
+.v2.mm_nav > li:last-child{
+    padding-bottom: 0;  
+    }
+.v2.mm_nav > li > .bold{
+    opacity: 0.63;
+    color: #656d78;
+    padding-left: 18px;  
+    }
+
+.v2.mm_nav > li > a{
+    padding-left: 36px;
+    }
+.v2.mm_nav li a.bold{
+    opacity: 1;
+
+    font-size:14px;
+    color: #000;
+
+}
+
 .v2.mm_nav ul{
+    display: block;
     position: static;
     width: 100% ;
     max-height: none;
@@ -453,6 +484,7 @@ header.m_HF.v2 > a{
 .v2.mm_nav .bold{
     padding-left: 27px;  
     }
+
 .v2.mm_nav ul li{
     display: block;
     min-width: none;
@@ -460,7 +492,6 @@ header.m_HF.v2 > a{
 .v2.mm_nav ul a{
     padding-left: 36px;
 }
-
 .v2.mm_nav li,
 .v2.mm_nav a{
     /* position: static; */

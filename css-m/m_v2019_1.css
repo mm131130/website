@@ -379,6 +379,8 @@ h5{
 }
 .m_s_subtitle,
 h6{
+  display: block;
+  clear: both;
     font-size:16px;
     line-height:18px;
     font-family: roboto_Regular;
@@ -512,7 +514,12 @@ li{
 
 /* home page */
 /* slide_show */
-.slide_show{
+
+
+
+/* hide 20190904 */
+
+/* .slide_show{
     position: relative;
     display: inline-block;
     width: 100%;
@@ -520,18 +527,14 @@ li{
     background-color:#fff;
     overflow: hidden;
     }
-
 .demo_box .slide_show{
     height: 100%;
     }
-
-
 .page_box{
     display: block;
     width: 100%;
     height: 100%;
     white-space: nowrap;
-
     -webkit-transition: all 0.36s ease-in-out;
     -o-transition: all 0.36s ease-in-out;
     transition: all 0.36s ease-in-out;    
@@ -545,7 +548,7 @@ li{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    }
+    } */
 
 
 

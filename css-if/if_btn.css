@@ -2201,18 +2201,23 @@ a.icon_my_favorites:hover .num_boo{
 
 /* jQ */
 
+.icon_my_favorites{
+
+    -webkit-transform:rotate(0) ;
+    -ms-transform:rotate(0) ;
+    transform:rotate(0) ;
+}
 
 .icon_my_favorites.click_{
 
+    -webkit-transform:rotate(12deg) ;
+    -ms-transform:rotate(12deg) ;
+    transform:rotate(12deg) ;
+
     background-position-x:-200px;
     background-position-y:-1100px;
-
 }
-
-
 .icon_my_favorites.click_:hover{
-
-
     background-position-y:-1050px;
 
 }
@@ -3386,30 +3391,30 @@ transform:rotate(0deg) translateY(-50%) rotate(-180deg);
     position: relative;
     padding-left: 36px;
     display: block;
-  clear: both;
-  font-size: 14px;
-  line-height: 18px;
-  padding:6px 16px 6px 36px ;
+    clear: both;
+    font-size: 14px;
+    line-height: 18px;
+    padding:6px 16px 6px 36px ;
 }
 .radio_btn_list a:before,
 .select_btn_list a:before{
+    content: '';
+    display: block;
 
-content: '';
-display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 
-  position: absolute;
-
-  top: -3px;
-
-  left: 0;
+    width: 36px;
+    height: 36px;
 
 
-  width: 36px;
-  height: 36px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 
-  background-image: url(../img-if/icon_2017.svg);
-  background-position-y:-807px;
-
+    background-image: url(../img-if/icon_2017.svg);
+    background-position-y:-807px;
 }
 
 .radio_btn_list a:before{
@@ -3423,6 +3428,121 @@ display: block;
 .select_btn_list a.click:before{
   background-position-y: -857px;
 }
+
+
+
+
+
+.radio_btn_list.v2 a:before,
+.select_btn_list.v2 a:before{
+
+    -webkit-transition:-webkit-transform 0.27s;    
+    transition:-webkit-transform 0.27s;    
+    -o-transition:transform 0.27s;    
+    transition:transform 0.27s;    
+    transition:transform 0.27s, -webkit-transform 0.27s;
+
+}
+.radio_btn_list.v2 a:after,
+.select_btn_list.v2 a:after{
+
+
+    -webkit-transition:-webkit-transform 0.45s;    
+    transition:-webkit-transform 0.45s;    
+    -o-transition:transform 0.45s;    
+    transition:transform 0.45s;    
+    transition:transform 0.45s, -webkit-transform 0.45s;
+
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    border-radius: 2px;
+
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        -ms-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+}
+
+
+.radio_btn_list.v2 a:before,
+.select_btn_list.v2 a:before{
+    width: 12px;
+    height: 12px;
+
+    border: 1px #aaaaaa solid;
+    border-radius: 300%;
+    background: none;
+    background-color: #fff;
+}
+
+.radio_btn_list.v2 a.click:before,
+.select_btn_list.v2 a.click:before{
+
+    width: 14px;
+    height: 14px;
+    border-radius: 0;
+
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+
+
+.radio_btn_list.v2 a.click:after{
+
+    display: block;
+
+    top: 15px;
+    left: 15px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color:#0f1329;
+
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+
+}
+
+.select_btn_list.v2 a.click:after{
+
+    display: block;
+
+    top: 13px;
+    left: 15px;
+
+
+    width: 12px;
+    height: 6px;
+
+    border-left: 2px #0f1329 solid;
+    border-bottom: 2px #0f1329 solid;
+
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+
+
+
+
 
 
 
