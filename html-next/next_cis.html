@@ -47,11 +47,13 @@
 <link media="all" rel="stylesheet" href="../css-if/if_btn.css">
 <link media="all" rel="stylesheet" href="../css-if/rwd_demo_2.css">
 
-
 <style>
-body{
 
+body{
     background-color: #ffe610;
+    background-image: url(../img-m/bg_01.jpg);
+    background-repeat: repeat !important;
+    background-color: #35373c;
 }	 
 
 body, html, div:not(.rwd_demo) .row_list{
@@ -59,36 +61,16 @@ body, html, div:not(.rwd_demo) .row_list{
   /* height: auto; */
 }
 
-
-
-
-.next_logo img{
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-
-
-}
-
-
-
-
 .color.boo{
   display: inline-block;
   position: relative;
-
-
   width:72px;
   height:72px;
   margin:0 auto;
   border:1px #FFFFFF solid;
   border-radius:50%;
-
-
   margin: 18px;
-
 }
-
 
 .color.boo span{
   position: absolute;
@@ -99,29 +81,27 @@ body, html, div:not(.rwd_demo) .row_list{
   line-height: 18px;
   padding: 9px;
 
-
   color: #fff;
-color:#2e58a6;
+  color:#2e58a6;
   transform: translateX(-50%);
-
 }
-
-
-
-
 
 .color.blue{
   background-color:#2a519b;
   background-color:#2e58a6;
-
 }
+
 .color.yellow{
   background-color:#e5c147;
   background-color:#ffe610;
-
 }
-.color.gray{
+
+.color.gray-1{
   background-color:#dfdfdf;
+}
+
+.color.gray-2{
+  background-color:#a3a3a3;
 }
 
 .standard_color{
@@ -130,20 +110,203 @@ color:#2e58a6;
 
 
 
+.bga{
+  display: block;
 
+  position: relative;
+  left: 50%;
+
+  margin-left: -100%;
+
+  width: 480px;
+  height: 480px;
+  /* background-color: black; */
+  /* margin:0; */
+
+  background-size:400%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image:url(../img-next/logo_design/next_dev-17.svg);
+}
+
+
+
+.dev_box{
+
+    display: flex ;
+
+    justify-content: center;
+
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+
+width: 100%;
+
+
+
+
+/*     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; */
+
+
+}
+
+.dev_box > div{
+
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  /* border: 1px #000 solid; */
+
+
+
+  margin: 180px 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+
+
+  background-image:url(../img-next/bg_01.jpg);
+  background-repeat:repeat !important;
+
+    -moz-box-shadow:
+    0 90px 90px rgba(0,0,0,0.54);
+
+    -webkit-box-shadow:
+    0 90px 90px rgba(0,0,0,0.54);
+
+    box-shadow:
+/*     0 30px 90px rgba(0,0,0,0.6),
+    0 60px 60px rgba(0,0,0,0.4), */
+    0 90px 90px rgba(0,0,0,0.54);
+
+
+}
+
+.txt_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 18px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: roboto_Regular;
+
+  color:#a3a3a3;
+    letter-spacing: 0.06em;
+
+
+}
+.next_slogan{
+  color:#a3a3a3;
+    display: block;
+    clear: both;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: roboto_Regular;
+
+    text-transform: uppercase;
+    letter-spacing: 0.30em;
+    margin-right: -0.30em;
+    padding: 10px 0;
+
+}
+
+.next_logo{
+  position: relative;
+}
+
+.next_logo h2{
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color:#2e58a6;
+  transform: translateX(-50%);
+}
+
+.next_logo img{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
 
 </style>
 
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/all_2.js"></script>
 
-
-
 <script>
 
 
+  function isiPad(){
+    return (navigator.platform.indexOf("iPad") != -1);
+  }
 
+  $(function(){
 
+    if($(window).width() > 1025) {
+        // $(".background").css({"background-image": "url(next_dev-17.svg)", "background-size": "1920px 960px"});
+        if(!isiPad()){
+
+          var vertical=0,
+          horizontal=0;
+
+          setInterval(function(){
+            var y = 480*vertical,
+            x = 480*horizontal,
+            y_animate = false;
+
+            $('.bga').css({"background-position": "-"+x+"px -"+y+"px"});
+
+            if(horizontal < 3){
+              horizontal = horizontal+1;
+            }
+            else{
+              horizontal = 0;
+              y_animate = true;
+            } 
+
+            if(vertical < 8){
+              if(y_animate){
+              vertical = vertical+1;
+              y_animate = false;
+              }
+            }else{
+              vertical = 0;
+              y_animate = false;
+              } 
+          },180);
+        }
+    }
+  });
 
 
 </script>
@@ -152,22 +315,36 @@ color:#2e58a6;
 <body>
 
 
-<div class=" flex_box next_logo">
-<img src="../img-next/logo_design/next_logo_3.svg">
+
+<div class="dev_box">
+
+  <div>
+
+      <div class="txt_box">Dev 20190917</div>
+      <div class="bga"></div>
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+  </div><div class="next_logo">
+
+      <div class="txt_box">Dev 20190912</div>
+      <img src="../img-next/logo_design/next_logo_4_b.svg">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+  </div><div>
+    
+    <div class="txt_box">Dev 20190909</div>
+
+    <div class="standard_color">
+        <h2>Standard color</h2>
+        <div class="color boo blue"><span>#2e58a6</span></div>
+        <div class="color boo yellow"><span>#ffe610</span></div>
+        <div class="color boo gray-1 "><span>#dfdfdf</span></div>
+        <div class="color boo gray-2 "><span>#a3a3a3</span></div>
+    </div>
+
+  </div>
+
 </div>
-
-
-
-
-
-<div class="standard_color">
-<h2>Standard color</h2>
-
-<div class="color boo blue"><span>#2e58a6</span></div>
-<div class="color boo yellow"><span>#ffe610</span></div>
-<div class="color boo gray "><span>#dfdfdf</span></div>
-</div>
-
 
 </body>
 </html>
