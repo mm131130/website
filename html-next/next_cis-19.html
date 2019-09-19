@@ -69,7 +69,7 @@ body, html, div:not(.rwd_demo) .row_list{
   margin:0 auto;
   border:1px #FFFFFF solid;
   border-radius:50%;
-  margin: 18px;
+  margin: 18px 18px 36px 18px;
 }
 
 .color.boo span{
@@ -130,37 +130,28 @@ body, html, div:not(.rwd_demo) .row_list{
 }
 
 
-
+/* 垂直置中 */
 .dev_box{
 
     display: flex ;
-
     justify-content: center;
-
     flex-direction: row;
-    
     flex-wrap: wrap;
 
-width: 100%;
 
-
-
-
-/*     display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex ;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; */
-
-
+    width: 100%;
 }
 
 .dev_box > div{
@@ -169,12 +160,11 @@ width: 100%;
 
   width: 100%;
   max-width: 1200px;
-  height: 800px;
+  min-height: 800px;
   /* border: 1px #000 solid; */
 
-
-
   margin: 180px 0;
+  padding: 90px 0;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +215,107 @@ width: 100%;
 
 
 }
+
+
+
+
+.next_logo{
+  position: relative;
+}
+
+.next_logo h2{
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color:#2e58a6;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+}
+.next_logo img{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* #85511f = 133,81,31,0.5 */
+
+
+
+.a4{
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  /* z-index: 2; */
+
+
+  width: 630px;
+  height: 900px;
+  background-color: #fff;
+
+}
+
+.card{
+
+  position: absolute;
+
+  top: 270px;
+  left: calc(50% - 315px);
+
+  z-index: 9;
+  width: 270px;
+  height: 150px;
+  background-color:#a3a3a3;
+
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+}
+
+
+.a4 .next_logo{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 72px;
+  height: auto;
+}
+.card .next_logo{
+  position: absolute;
+  top: 9px;
+  left: calc( 100% - 63px);
+  width: 54px;
+  height: auto;
+}
+.card.item_2{
+  top: 450px;
+  overflow: hidden;
+  background-color:#ffe610;
+}
+.card.item_2 .next_logo{
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: 72%;
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+
+
+}
+
+
 .next_slogan{
   color:#a3a3a3;
     display: block;
@@ -240,23 +331,66 @@ width: 100%;
 
 }
 
-.next_logo{
-  position: relative;
-}
-
-.next_logo h2{
+.a4 .next_slogan{
   position: absolute;
-  left: 50%;
-  bottom: 50px;
-  color:#2e58a6;
-  transform: translateX(-50%);
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  transform-origin: top right;
+  transform: rotate(90deg);
+
+  padding: 0;
+
 }
 
-.next_logo img{
-  width: 100%;
-  max-width: 450px;
-  height: auto;
+.a4,
+.card{
+
+      -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    box-shadow:
+    /* 30px 90px 40px rgba(133,81,31,0.25), */
+    30px 90px 60px rgba(133,81,31,0.45);
+
 }
+
+
+
+@media screen and (max-width:767px) {
+
+
+
+.dev_box > div{
+  overflow: hidden;
+  width: 90%;
+}
+
+.a4{
+  position: absolute;
+
+  top: 90px;
+  left: 30px;
+}
+.card{
+  left:0;
+  transform: none;
+
+}
+
+
+.color.boo{
+  display: block;
+
+
+}
+
+}
+
+
 
 </style>
 
@@ -266,15 +400,15 @@ width: 100%;
 <script>
 
 
-  function isiPad(){
-    return (navigator.platform.indexOf("iPad") != -1);
-  }
+  // function isiPad(){
+    // return (navigator.platform.indexOf("iPad") != -1);
+  // }
 
   $(function(){
 
-    if($(window).width() > 1025) {
+    // if($(window).width() > 1025) {
         // $(".background").css({"background-image": "url(next_dev-17.svg)", "background-size": "1920px 960px"});
-        if(!isiPad()){
+        // if(!isiPad()){
 
           var vertical=0,
           horizontal=0;
@@ -304,8 +438,8 @@ width: 100%;
               y_animate = false;
               } 
           },180);
-        }
-    }
+        // }
+    // }
   });
 
 
@@ -317,6 +451,37 @@ width: 100%;
 
 
 <div class="dev_box">
+
+
+
+
+<div>
+      <div class="txt_box">Dev 20190919</div>
+
+  <!-- <div class="card ">dasad</div> -->
+   <div class="card">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt="">
+    </div>
+
+   <div class="card item_2">
+      <img class="next_logo" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
+
+      <!-- <img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""> -->
+    </div>
+
+
+
+  <div class="a4">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_b.svg" alt="">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+  </div>
+
+
+
+</div>
+
 
   <div>
 
@@ -334,13 +499,13 @@ width: 100%;
     
     <div class="txt_box">Dev 20190909</div>
 
-    <div class="standard_color">
-        <h2>Standard color</h2>
+
+        <!-- <h2>Standard color</h2> -->
         <div class="color boo blue"><span>#2e58a6</span></div>
         <div class="color boo yellow"><span>#ffe610</span></div>
         <div class="color boo gray-1 "><span>#dfdfdf</span></div>
         <div class="color boo gray-2 "><span>#a3a3a3</span></div>
-    </div>
+
 
   </div>
 
