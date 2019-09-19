@@ -100,8 +100,18 @@ body, html, div:not(.rwd_demo) .row_list{
   background-color:#dfdfdf;
 }
 
+.bg.gray-2,
 .color.gray-2{
+
+  background: none;
   background-color:#a3a3a3;
+}
+
+
+[class*="gray-"] .next_slogan{
+  color:#ffe610;
+
+
 }
 
 .standard_color{
@@ -303,16 +313,22 @@ body, html, div:not(.rwd_demo) .row_list{
   overflow: hidden;
   background-color:#ffe610;
 }
-.card.item_2 .next_logo{
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
+.card.item_2 .txt_next{
+  position: absolute;
+top: 50%;
+left: 50%;
+
   width: 72%;
+
+
+
   -webkit-transform: translate(-50% , -50%);
   -ms-transform: translate(-50% , -50%);
   transform: translate(-50% , -50%);
+}
 
-
+.gray-2 .txt_next{
+  width: 72%;
 }
 
 
@@ -455,7 +471,7 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 
-<div>
+<div style="margin-bottom:0; ">
       <div class="txt_box">Dev 20190919</div>
 
   <!-- <div class="card ">dasad</div> -->
@@ -464,7 +480,7 @@ body, html, div:not(.rwd_demo) .row_list{
     </div>
 
    <div class="card item_2">
-      <img class="next_logo" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
+      <img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
 
       <!-- <img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""> -->
     </div>
@@ -478,8 +494,15 @@ body, html, div:not(.rwd_demo) .row_list{
 
   </div>
 
+</div>
 
 
+
+
+<div class="bg gray-2 " style="margin-top:0; ">
+      <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+  
 </div>
 
 
