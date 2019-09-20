@@ -223,6 +223,8 @@ body, html, div:not(.rwd_demo) .row_list{
   position: absolute;
   top: 0;
   left: 0;
+
+  z-index: 300;
   padding: 18px;
 
     font-size: 14px;
@@ -337,8 +339,8 @@ body, html, div:not(.rwd_demo) .row_list{
   background-color: #fff;
   background-color: #e7e7e7;
   background-color:#2e58a6;
-  
 
+  border-radius: 2px;
 
   border-top: 1px #537ec8 solid;
   border-left: 1px #537ec8 solid;
@@ -434,7 +436,6 @@ body, html, div:not(.rwd_demo) .row_list{
 .card{
 
   overflow: hidden;
-
   position: absolute;
 
   top: 270px;
@@ -450,6 +451,71 @@ body, html, div:not(.rwd_demo) .row_list{
   transform: translateX(-50%);
 }
 
+
+
+
+
+.card_list{
+  padding:0 !important; 
+  min-height: none;
+  height: 1200px;
+}
+.card_list .txt_box{
+
+  color:#ffe610;
+
+
+
+
+
+}
+
+
+.card_list > div:not(.txt_box){
+  display: flex ;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 2700px;
+
+    transform-origin: center center;
+
+    transform: rotate(15deg);
+/*   background-color:#ffe610;
+  background-color:#a3a3a3; */
+
+
+}
+
+.card_list > div:not(.txt_box) > div{
+
+  position: relative;
+  width: 540px;
+  height: 300px;
+/*   background-color:#ffe610;
+  background-color:#a3a3a3; */
+}
+
+.card_list > div:not(.txt_box) > div:nth-child(odd){
+/*   background-color:#a3a3a3;
+  background-color:#ffe610; */
+
+
+  background-color:#ffe610;
+  background-color:#a3a3a3;
+
+      -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    box-shadow:
+    /* 30px 90px 40px rgba(133,81,31,0.25), */
+    30px 90px 60px rgba(133,81,31,0.45);
+
+}
 
 .a4 .next_logo{
   position: absolute;
@@ -469,6 +535,22 @@ body, html, div:not(.rwd_demo) .row_list{
 }
 
 
+.card_list .next_logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 108px;
+  height: auto;
+
+    -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+}
+
+
+
+
+
 .card.item_2{
   top: 450px;
   background-color:#ffe610;
@@ -486,13 +568,13 @@ body, html, div:not(.rwd_demo) .row_list{
 }
 .txt_next{
   width: 72%;
-
 }
+
+.card_list .txt_next,
 .card .txt_next{
   position: absolute;
   top: 50%;
   left: 50%;
-
 
   -webkit-transform: translate(-50% , -50%);
   -ms-transform: translate(-50% , -50%);
@@ -678,6 +760,46 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 
+<div class="card_list">
+
+<div class="txt_box">Dev 20190921</div>
+
+<div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+ 
+</div>  
+
+</div>
 
 <div style="margin-bottom:0; ">
       <div class="txt_box">Dev 20190919</div>
