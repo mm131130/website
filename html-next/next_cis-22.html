@@ -127,7 +127,7 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 
-.bga{
+[class*="bga_"]{
   display: block;
 
   position: relative;
@@ -140,11 +140,30 @@ body, html, div:not(.rwd_demo) .row_list{
   /* background-color: black; */
   /* margin:0; */
 
-  background-size:400%;
+  /* background-size:400%; */
   background-repeat: no-repeat;
   background-position: 0 0;
+
+}
+
+.bga_v1{
+  background-size:1920px 3840px;
+
   background-image:url(../img-next/logo_design/next_dev-17.svg);
 }
+
+.bga_v2{
+  /* background-size:800%; */
+
+  background-size: 3840px 4800px;
+  background-image:url(../img-next/logo_design/next_logo_list-2.svg);
+}
+
+
+
+
+
+
 
 
 /* 垂直置中 */
@@ -716,34 +735,74 @@ body, html, div:not(.rwd_demo) .row_list{
         // $(".background").css({"background-image": "url(next_dev-17.svg)", "background-size": "1920px 960px"});
         // if(!isiPad()){
 
-          var vertical=0,
-          horizontal=0;
+
+
+
+          var 
+  
+          w_1=0,
+          h_1=0,
+          w_2=0,
+          h_2=0;
+
 
           setInterval(function(){
-            var y = 480*vertical,
-            x = 480*horizontal,
-            y_animate = false;
 
-            $('.bga').css({"background-position": "-"+x+"px -"+y+"px"});
+            var 
+            x1 = 480 * w_1,
+            y1 = 480 * h_1,
+            x2 = 480 * w_2,
+            y2 = 480 * h_2,
+            h_1_animate = false;
+            h_2_animate = false;
 
-            if(horizontal < 3){
-              horizontal = horizontal+1;
+
+          $('.bga_v1').css({"background-position": "-"+x1+"px -"+y1+"px"});
+
+            if(w_1 < 3){
+              w_1 = w_1+1;
             }
             else{
-              horizontal = 0;
-              y_animate = true;
+              w_1 = 0;
+              h_1_animate = true;
             } 
 
-            if(vertical < 8){
-              if(y_animate){
-              vertical = vertical+1;
-              y_animate = false;
+            if(h_1 < 7){
+              if(h_1_animate){
+              h_1 = h_1+1;
+              h_1_animate = false;
               }
             }else{
-              vertical = 0;
-              y_animate = false;
-              } 
-          },180);
+              h_1 = 0;
+              h_1_animate = false;
+            }
+
+          $('.bga_v2').css({"background-position": "-"+x2+"px -"+y2+"px"});
+
+
+            if(w_2 < 8){
+              w_2 = w_2+1;
+            }
+            else{
+              w_2 = 0;
+              h_2_animate = true;
+            } 
+
+            if(h_2 < 9){
+              if(h_2_animate){
+              h_2 = h_2+1;
+              h_2_animate = false;
+              }
+            }else{
+              h_2 = 0;
+              h_2_animate = false;
+            }
+
+// }
+  // });
+
+
+          },120);
         // }
     // }
   });
@@ -757,6 +816,30 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 <div class="dev_box">
+
+
+  <div style="margin-bottom:0;">
+      <div class="txt_box">Dev 20190922</div>
+      <div class="bga_v2"></div>
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+  </div>
+
+
+
+<div style="margin-top:0; padding:0; ">
+      <img class="" src="../img-next/logo_design/dev_21-1.jpg" alt="">
+</div>
+
+<!-- 
+
+<div style="margin-top:0; padding:0; background:none; box-shadow: none; ">
+      <img class="" src="../img-next/logo_design/dev_21-2.svg" alt="" style="height: 300px;">
+</div>
+
+
+ -->
+
+
 
 
 
@@ -872,9 +955,8 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
   <div>
-
       <div class="txt_box">Dev 20190917</div>
-      <div class="bga"></div>
+      <div class="bga_v1"></div>
       <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
 
   </div><div class="next_logo">

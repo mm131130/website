@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!-- Mountain make 20190917 - Copyright 2019 Chiou wen shan. All Rights Reserved. -->
+
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="960px" height="1920px" viewBox="-479.5 1440.5 960 1920" enable-background="new -479.5 1440.5 960 1920"
 	 xml:space="preserve">
 
-	 <!-- Mountain make 20190918 - Chiou wen shan -->
 <g>
 	<path d="M-334,1501v5.498c14.642,6.743,26.129,19.19,31.56,34.502H-324v-15h-10v5h5v60h-60v-60h40v-5h-45v15h-21.56
 		c6.036-17.019,19.541-30.524,36.56-36.56V1521h5v-18.101c4.019-1.038,8.204-1.658,12.5-1.835V1521h5v-19.937
@@ -846,7 +848,8 @@
 <path d="M-359,2821c-7.011,0-13.74-1.22-20-3.44v5.291c6.302,2.037,13.02,3.149,20,3.149c25.074,0,46.816-14.206,57.658-35h-5.73
 	C-317.463,2808.916-336.841,2821-359,2821z"/>
 <polygon points="-374,2821 -379,2821 -379,2737.465 -344,2772.465 -344,2701 -339,2701 -339,2784.535 -374,2749.535 "/>
-	 <!-- Mountain make 20190918 - Chiou wen shan - 版權所有 邱文山 -->
+	 <!-- Mountain make 20190917 - Copyright 2019 Chiou wen shan. All Rights Reserved. -->
+
 <g>
 	
 		<rect x="-125.885" y="2791.366" transform="matrix(-0.9659 -0.2588 0.2588 -0.9659 -968.8755 5485.1831)" fill="#FFFFFF" width="5" height="29.999"/>
@@ -922,6 +925,9 @@
 	<polygon fill="#A3A3A3" points="307.967,2792.82 304.431,2789.284 363.5,2730.216 363.5,2779.714 414.033,2729.18 
 		417.569,2732.716 358.5,2791.784 358.5,2742.286 	"/>
 </g>
+
+	 <!-- Mountain make 20190917 - Copyright 2019 Chiou wen shan. All Rights Reserved. -->
+
 <g>
 	
 		<rect x="102.48" y="2788.687" transform="matrix(-0.866 -0.5 0.5 -0.866 -1205.9788 5284.2231)" fill="#2E58A6" width="5" height="29.999"/>
