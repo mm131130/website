@@ -135,8 +135,8 @@ body, html, div:not(.rwd_demo) .row_list{
 
   margin-left: -100%;
 
-  width: 480px;
-  height: 480px;
+  width: 360px;
+  height: 360px;
   /* background-color: black; */
   /* margin:0; */
 
@@ -147,16 +147,29 @@ body, html, div:not(.rwd_demo) .row_list{
 }
 
 .bga_v1{
-  background-size:1920px 3840px;
+  background-size:1920px 3840px; 
+  /* 480 */
+  background-size:1440px 2880px;
+  /* 360 */
 
   background-image:url(../img-next/logo_design/next_dev-17.svg);
+
+/*   4 8
+1440 
+2880 */
+
 }
 
 .bga_v2{
   /* background-size:800%; */
 
-  background-size: 3840px 4800px;
+  /* background-size: 3840px 4800px; */
+  
+  background-size:2880px 3600px;
   background-image:url(../img-next/logo_design/next_logo_list-2.svg);
+
+/*   8 10
+  2880 3600 */
 }
 
 
@@ -416,18 +429,24 @@ body, html, div:not(.rwd_demo) .row_list{
   -ms-transform: rotate(45deg); */
 
 
-  transform:rotate(45deg);
-
+/*   transform:rotate(45deg);
   transform-origin:300px 300px;
+   */
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 
-      -moz-box-shadow:
-    2px 2px 2px rgba(18,30,72,0.54);
+  -webkit-transform-origin:300px 300px;
+  -ms-transform-origin:300px 300px;
+  transform-origin:300px 300px;
+  -moz-box-shadow:
+  2px 2px 2px rgba(18,30,72,0.54);
 
-    -webkit-box-shadow:
-    2px 2px 2px rgba(18,30,72,0.54);
+  -webkit-box-shadow:
+  2px 2px 2px rgba(18,30,72,0.54);
 
-    box-shadow:
-    2px 2px 2px rgba(18,30,72,0.45);
+  box-shadow:
+  2px 2px 2px rgba(18,30,72,0.45);
 
 
 }
@@ -480,32 +499,51 @@ body, html, div:not(.rwd_demo) .row_list{
   height: 1200px;
 }
 .card_list .txt_box{
-
   color:#ffe610;
-
-
-
-
-
 }
 
 
 .card_list > div:not(.txt_box){
+
+  /* 由左至右 換行 繼續 */
   display: flex ;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    width: 2700px;
-
-    transform-origin: center center;
-
-    transform: rotate(15deg);
+  width: 2700px;
+  
 /*   background-color:#ffe610;
   background-color:#a3a3a3; */
 
 
+
+
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
+
+
 
 .card_list > div:not(.txt_box) > div{
 
@@ -519,22 +557,85 @@ body, html, div:not(.rwd_demo) .row_list{
 .card_list > div:not(.txt_box) > div:nth-child(odd){
 /*   background-color:#a3a3a3;
   background-color:#ffe610; */
-
-
   background-color:#ffe610;
   background-color:#a3a3a3;
+  /* background-color:#262b4a; */
 
-      -moz-box-shadow:
-    30px 90px 60px rgba(133,81,31,0.54);
+  -moz-box-shadow:
+  30px 90px 60px rgba(133,81,31,0.54);
 
-    -webkit-box-shadow:
-    30px 90px 60px rgba(133,81,31,0.54);
+  -webkit-box-shadow:
+  30px 90px 60px rgba(133,81,31,0.54);
 
-    box-shadow:
-    /* 30px 90px 40px rgba(133,81,31,0.25), */
-    30px 90px 60px rgba(133,81,31,0.45);
+  box-shadow:
+  /* 30px 90px 40px rgba(133,81,31,0.25), */
+  30px 90px 60px rgba(133,81,31,0.45);
+}
+
+
+
+
+
+
+
+
+
+/* v2 */
+
+
+.card_list.v2{
+  height: 900px;
+}
+
+.card_list.v2 > div:not(.txt_box){
+  width: 1800px;
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.card_list.v2 > div:not(.txt_box) > div{
+  width: 360px;
+  height: 200px;
+}
+
+/* 
+9 6 540
+5 6 300
+
+9 5 450
+5 5 250
+
+2250
+
+
+9 4 360
+5 4 200
+
+2250
+
+
+9 3 270
+5 3 150 */
+
+
+.card_list.v2 .next_logo{
+width: 15%;
+}
+
+.card_list.v2 .txt_next{
+width: 63%;
 
 }
+
+.card_list.v2 > div:not(.txt_box) > div:nth-child(odd){
+  background-color:#262b4a;
+
+
+  background-image:url(../img-next/bg_02.jpg);
+  background-repeat:repeat !important;
+}
+
+
 
 .a4 .next_logo{
   position: absolute;
@@ -558,10 +659,10 @@ body, html, div:not(.rwd_demo) .row_list{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 108px;
+  width: 21%;
   height: auto;
 
-    -webkit-transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
   -ms-transform: translate(-50% , -50%);
   transform: translate(-50% , -50%);
 }
@@ -754,10 +855,10 @@ body, html, div:not(.rwd_demo) .row_list{
           setInterval(function(){
 
             var 
-            x1 = 480 * w_1,
-            y1 = 480 * h_1,
-            x2 = 480 * w_2,
-            y2 = 480 * h_2,
+            x1 = 360 * w_1,
+            y1 = 360 * h_1,
+            x2 = 360 * w_2,
+            y2 = 360 * h_2,
             h_1_animate = false;
             h_2_animate = false;
 
@@ -807,7 +908,7 @@ body, html, div:not(.rwd_demo) .row_list{
   // });
 
 
-          },120);
+          }, 240);
         // }
     // }
   });
@@ -823,6 +924,10 @@ body, html, div:not(.rwd_demo) .row_list{
 <div class="dev_box">
 
 
+
+
+
+
   <div style="margin-bottom:0;">
       <div class="txt_box">Dev 20190922</div>
       <div class="bga_v2"></div>
@@ -831,10 +936,60 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 
-<div style="margin-top:0; padding:0; ">
+<div style="margin:0; padding:0; ">
       <img class="" src="../img-next/logo_design/dev_21-1.jpg" alt="">
 </div>
 
+
+
+
+  <div class="card_list v2" style="margin-top:0;">
+
+
+<!-- <div class="txt_box">Dev 20190922</div> -->
+
+<div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue-1.svg" alt=""></div>
+
+ 
+</div>
+
+</div>
 <!-- 
 
 <div style="margin-top:0; padding:0; background:none; box-shadow: none; ">
@@ -885,7 +1040,7 @@ body, html, div:not(.rwd_demo) .row_list{
   <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
   <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
  
-</div>  
+</div>
 
 </div>
 
