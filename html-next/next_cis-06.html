@@ -60,40 +60,139 @@ body, html, div:not(.rwd_demo) .row_list{
   /* height: auto; */
 }
 
-.color.boo{
-  display: inline-block;
-  position: relative;
-  width:72px;
-  height:72px;
-  margin:0 auto;
-  border:1px #FFFFFF solid;
-  border-radius:50%;
-  margin: 18px 18px 36px 18px;
+
+
+
+.dev_box .img_box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    padding-top: 54px;
+}
+.dev_box .img_box{
+  overflow: unset;
+  background: none;
+  box-shadow: none;
 }
 
-.color.boo span{
+.img_box > img:not([class*="w_"]){
+  width: 50%;
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+.img_box > img{
+  width: 100% !important;
+}
+
+
+
+}
+
+
+
+
+.c_ticket{
+  display: inline-block;
+  border-radius: 8px;
+
+  padding:6px;
+
+  /* background-color: #fff; */
+}
+
+.c_block{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 180px;
+  height: 180px;
+  border-radius:40px;
+  border: 1px #fff solid;
+  background-color: #000;
+
+
+}
+.c_block img{
   position: absolute;
-  bottom: -36px;
+  top: 50%;
   left: 50%;
 
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-  color:#2e58a6;
-  color:#a3a3a3;
-    letter-spacing: 0.30em;
-    margin-right: -0.30em;
+  transform: translate(-50%, -50%);
 
-  padding: 9px;
+  width: 54%;
+  height: 54%;
 
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+
+}
+.c_block[class*="_inset"]:before{
+  display: block;
+
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  z-index: 100;
+
+  width: 27%;
+  height: 21%;
+  border-radius: 50%;
+
+  background-color: red;
+
+
+  transform: rotate(-45deg);
+  background: linear-gradient(180deg, rgba(255,255,255,0.81) 0%, rgba(255,255,255,0) 81%);
+
 
 }
 
 
-.color.blue{
+
+
+.c_number{
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+
+  color:#a3a3a3;
+
+      letter-spacing: 0.1em;
+    margin-right: -0.30em;
+
+  padding:6px; 
+}
+
+
+
+
+
+
+
+
+.blue-1{
   background-color:#2a519b;
   background-color:#2e58a6;
   background-color:#3b64db;
@@ -120,24 +219,25 @@ body, html, div:not(.rwd_demo) .row_list{
   background-color:#f7cf18;
 }
 
+.gray-1{
+  background-image: none ;
 
-
-
-
-  /* text-shadow: #f3bb07; */
-
-
-
-
-.color.gray-1{
   background-color:#dfdfdf;
 }
 
-.bg.gray-2,
+.gray-2,
 .color.gray-2{
   background: none;
+  background-image: none !important;
+
   background-color:#a3a3a3;
 }
+
+.gray-3{
+
+
+}
+
 
 .gray-2 .txt_box{
   color:#f7cf18;
@@ -307,22 +407,13 @@ body, html, div:not(.rwd_demo) .row_list{
 
 
 
-
-
-
-
-
-
-
-
-
 .txt_box{
   position: absolute;
   top: 0;
   left: 0;
 
   z-index: 300;
-  padding: 18px;
+  padding: 17px 18px;
 
     font-size: 14px;
     line-height: 20px;
@@ -534,10 +625,14 @@ body, html, div:not(.rwd_demo) .row_list{
 }
 
 
-/* 12
+/* 
+12
 9 1 9 3
 9 2 18 6
+
 9 3 27 9 */
+
+/* v1 - 9 x 5 */
 /* v2 - 9 x 5.4 */
 
 .card{
@@ -1242,19 +1337,24 @@ width: 150px;
 
 /* .card.c_bg_c_yellow_1, */
 .c_bg_c_yellow_1{
-    border-top: 1px #fdf374 solid;
-    border-left: 1px #fcee63 solid;
-    border-bottom: 1px #f5c614 solid;
-    border-right: 1px #f8d527 solid;
-    background-color: #ffe610;
+  border-top: 1px #fdf374 solid;
+  border-bottom: 1px #f9d62c solid;
+  border-left: 1px #fcee63 solid;
+  border-right: 1px #fade3b solid;
+  background-color: #ffe610;
 }
 
 .c_bg_c_blue_1{
-    border-left: 1px #4c70d9 solid;  
-    border-right: 1px #314ec5 solid;  
-    border-bottom: 1px #3959cc solid;
-    background-color: #3b64db;
+  border-top: 1px #658ee9 solid;
+  border-bottom: 1px #243eba solid;
+  border-left: 1px #557be0 solid;
+  border-right: 1px #314fc6 solid;
+  background-color: #3b64db;
 }
+
+
+
+
 .c_bg_c_gray_1{
   background-color:#a3a3a3;
 }
@@ -1297,7 +1397,7 @@ width: 150px;
   width: 90%;
 }
 
-.dev_box > div > img:not(.next_logo){
+.dev_box > div:not(.img_box) > img:not(.next_logo){
   width: auto;
   height: 100%;
 }
@@ -1381,29 +1481,27 @@ width: 150px;
 
 .dev_box [class*="bg_color_"]{
   background-image: none ;
-  background-size: 1200px 1200px !important;
   background-position: center top !important;
 }
 
 
 .dev_box .bg_color_2,
 .bg_color_2{
+  background: -o-radial-gradient( #ffe610 50%, #3b64db 50%) ;
   background: radial-gradient( #ffe610 50%, #3b64db 50%) ;
-}
-
-.dev_box .bg_color_6,
-.bg_color_6{
-  background: linear-gradient(  #ffe610 , #3b64db 50%) ;
-  background-size: auto !important;
 }
 
 .dev_box .bg_color_3,
 .bg_color_3{
+  background: -o-radial-gradient(#3b64db 50%, #ffe610 50%) ;
   background: radial-gradient(#3b64db 50%, #ffe610 50%) ;
 }
 
 .dev_box .bg_color_4,
 .bg_color_4{
+  background: 
+  -o-radial-gradient( #2e58a6 30%, rgba(0,0,0,0) 30%), 
+  -o-radial-gradient(#ffe610 60%, #a3a3a3 60%);
   background: 
   radial-gradient( #2e58a6 30%, rgba(0,0,0,0) 30%), 
   radial-gradient(#ffe610 60%, #a3a3a3 60%);
@@ -1412,9 +1510,112 @@ width: 150px;
 .dev_box .bg_color_5,
 .bg_color_5{
   background: 
+  -o-radial-gradient( #ffe610 30%, rgba(0,0,0,0) 30%),
+  -o-radial-gradient( #a3a3a3 60%, #2e58a6 60%);
+  background: 
   radial-gradient( #ffe610 30%, rgba(0,0,0,0) 30%),
   radial-gradient( #a3a3a3 60%, #2e58a6 60%);
 }
+
+.dev_box .bg_color_6,
+.bg_color_6{
+  background: -webkit-gradient(  linear , left top, left bottom , from(#ffe610) , color-stop(50%, #3b64db)) ;
+  background: -o-linear-gradient(  #ffe610 , #3b64db 50%) ;
+  background: linear-gradient(  #ffe610 , #3b64db 50%) ;
+  background-size: auto !important;
+}
+
+
+.dev_box .bg_color_7,
+.bg_color_7{
+  background: -o-radial-gradient( #ffe610, #3b64db) ;
+  background: radial-gradient( #ffe610, #3b64db) ;
+}
+
+.dev_box .bg_color_8,
+.bg_color_8{
+  background: -o-radial-gradient(#3b64db, #ffe610) ;
+  background: radial-gradient(#3b64db, #ffe610) ;
+}
+
+.dev_box .bg_color_9,
+.bg_color_9{
+  background: 
+  -o-radial-gradient( #2e58a6 , rgba(0,0,0,0) 30%), 
+  -o-radial-gradient(#ffe610 , #a3a3a3 );
+  background: 
+  radial-gradient( #2e58a6 , rgba(0,0,0,0) 30%), 
+  radial-gradient(#ffe610 , #a3a3a3 );
+}
+
+.dev_box .bg_color_10,
+.bg_color_10{
+  background: 
+  -o-radial-gradient( #ffe610 , rgba(0,0,0,0) 30%),
+  -o-radial-gradient( #a3a3a3 , #2e58a6 );
+  background: 
+  radial-gradient( #ffe610 , rgba(0,0,0,0) 30%),
+  radial-gradient( #a3a3a3 , #2e58a6 );
+}
+
+/* 
+00007b
+f3b400
+d57200
+9f9f9f
+000000
+ */
+
+.blue_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #0000a7 inset, 
+  4px 9px 27px #00007b inset;
+}
+.yellow_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #f7cd00 inset,
+  4px 9px 27px #f3b400 inset;
+
+}
+.yellow_2_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #e3a100 inset,
+  4px 9px 27px #d57200 inset;
+
+}
+.gray_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #bfbfbf inset,
+  4px 9px 27px #9f9f9f inset;
+
+}
+.gray_2_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #474747 inset,
+  4px 9px 27px #000000 inset;
+
+}
+
+
+/* 0000a7
+f7cd00
+e3a100
+bfbfbf
+474747
+
+ */
+
+
 
 [class*="bg_color_"] > .next_logo{
   display: inline-block;
@@ -1452,6 +1653,7 @@ padding-bottom: 90px;
 align-items: center;
 justify-content:flex-end !important;
 padding-bottom: 90px;
+  background-size: 1200px 1200px !important;
 
 }
 /* #2e58a6
@@ -1497,6 +1699,21 @@ padding-bottom: 90px;
 }
 
 
+
+.test_logo > img{
+  width: 150px;
+}
+
+
+
+
+/* #3580be
+#bde6f3
+#f08257
+#3e35be
+#babfec
+#eed15e
+#b4b8be */
 
 </style>
 
@@ -1598,43 +1815,104 @@ padding-bottom: 90px;
 
 <div class="dev_box">
 
-<div class="bg gray-2 shadow_blue color_page" style="margin-bottom:0;">
-<div class="txt_box">Dev 20190926</div>
+
+
+
+<div class="img_box">
+<div class="txt_box">Dev 20191006</div>
+
+<img src="../img-next/logo_design/p04.jpg">
+<img src="../img-next/logo_design/p02.jpg">
+<img src="../img-next/logo_design/p01.jpg">
+<img src="../img-next/logo_design/p03.jpg">
+
+<img src="../img-next/logo_design/p07.jpg">
+<img src="../img-next/logo_design/p06.jpg">
+
+<img class="w_100" src="../img-next/logo_design/p05.jpg">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg_color_10 shadow_blue color_page" style="margin-bottom:0;">
+  <div class="txt_box">Dev 20190926</div>
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_9 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+</div><div class="bg_color_8 shadow_blue color_page" style="margin:0;">
+
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_blue-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+</div><div class="bg_color_7 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg gray-2 shadow_blue color_page" style="margin:0;">
+
 
   <div class="color_boo bg_color_6">
     <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
     <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
     <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
-
   </div>
-</div>
+
+
+</div><div class="bg_color_5 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_4 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_3 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_blue-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_2 shadow_blue color_page" style="margin-top:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
 
 
 
-<div class="bg_color_5 shadow_blue color_page" style="margin:0;">
-<img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
-    <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
-    <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
-</div>
 
-<div class="bg_color_4 shadow_blue color_page" style="margin:0;">
-<img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
-    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
-    <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
-
-</div>
-
-<div class="bg_color_3 shadow_blue color_page" style="margin:0;">
-<img class="next_logo" src="../img-next/logo_design/next_logo_5_blue-2.svg" alt="">
-    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
-    <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
-</div>
-
-<div class="bg_color_2 shadow_blue color_page" style="margin-top:0;">
-<img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
-
-    <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
-    <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
 </div>
 
 
@@ -2132,18 +2410,15 @@ padding-bottom: 90px;
       <img src="../img-next/logo_design/next_logo_4_b.svg">
       <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
 
-  </div><div>
+  </div><div class="color_box v2">
     
     <div class="txt_box">Dev 20190909</div>
-
-
-        <!-- <h2>Standard color</h2> -->
-        <div class="color boo blue"><span>#2e58a6</span></div>
-        <div class="color boo yellow-1"><span>#ffe610</span></div>
-        <div class="color boo yellow-2"><span>#f7cf18</span></div>
-        <div class="color boo gray-1 "><span>#dfdfdf</span></div>
-        <div class="color boo gray-2 "><span>#a3a3a3</span></div>
-
+    <!-- <h2>Standard color</h2> -->
+    <div class="color boo blue-1"><span>#2e58a6</span></div>
+    <div class="color boo yellow-1"><span>#ffe610</span></div>
+    <div class="color boo yellow-2"><span>#f7cf18</span></div>
+    <div class="color boo gray-1 "><span>#dfdfdf</span></div>
+    <div class="color boo gray-2 "><span>#a3a3a3</span></div>
 
   </div>
 

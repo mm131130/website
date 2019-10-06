@@ -247,8 +247,9 @@ h1{
     display: inline-block;
     text-align: center;
     width: 100%;
-}
-.m_page_name {
+
+
+
     padding: 99px 0 27px 0;
 }
 
@@ -482,12 +483,15 @@ li{
 .dark_night,
 .dark_night *,
 .dark_night h1,
+.dark_night .tag,
 .dark_night .tag:before,
 .dark_night .tag:after{
 
   /* opacity:0.45; */
   color: #fff;
 }
+
+
 .dark_night .double_quotes:after,   
 .dark_night .double_quotes:before{
   
@@ -649,6 +653,7 @@ li{
 
     text-transform: uppercase;
     padding: 0 0 9px 0;
+    padding: 0;
 }
 .tag:after, 
 .tag:before{
@@ -675,7 +680,7 @@ p_price
 
 
 
-
+/* 
 .product_brand,
 .product_name{
   font-size:14px;
@@ -740,7 +745,7 @@ p_price
     padding: 15px 0;
 }
 
-
+ */
 
 
 

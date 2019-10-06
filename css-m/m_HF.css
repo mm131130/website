@@ -614,8 +614,7 @@ header.m_HF.v1 *[class*="logo-"]{
 
 
 
-
-.num_boo_m span {
+.num_boo_m > span:not(.txt) {
     display: inline-block;
     font-size: 12px;
     line-height: 24px;
@@ -637,11 +636,18 @@ header.m_HF.v1 *[class*="logo-"]{
     vertical-align: baseline;
 }
 
-.num_boo_m:hover span {
+.num_boo_m:hover > span:not(.txt) {
     background-color: #e9573f;
 }
 
-
+.num_boo_m > .txt {
+    display: block;
+    clear: both;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: roboto_light;
+    color: #656d78;
+}
 
 
 
