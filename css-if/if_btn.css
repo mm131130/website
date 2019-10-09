@@ -99,7 +99,7 @@ three_line
 
 */
 
-
+/* switch */
 
 
 
@@ -3547,5 +3547,344 @@ transform:rotate(0deg) translateY(-50%) rotate(-180deg);
 
 
 
+
+
+
+
+
+
+/* 
+
+center
+right
+
+ */
+
+
+
+
+
+.c_btn_style{
+    line-height: 18px;
+    margin-bottom: 9px;
+    padding:45px 18px 18px 18px ;
+
+    text-align: center;
+    background-image: url(../img-if/arrow.png);
+    background-position: top center;
+}
+
+.switch{
+    position: relative;
+
+    color: #a0a0a0;
+
+    width: 100%;
+    min-height: 36px;
+
+    margin-bottom: 9px;
+
+    cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.switch.right{
+
+    padding-right: 90px;
+
+
+}
+.switch .text_L,
+.switch .text_R{
+  font-size: 16px;
+  line-height: 18px;
+  color: #a3a3a3;
+
+  text-transform: uppercase;
+
+  padding-left:18px;
+  padding-right:18px;
+
+  width:calc(50% - 36px) ;
+
+}
+
+.switch .text_L{
+ text-align: right;
+}
+
+
+.slider{
+
+    position: relative;
+    overflow: hidden;
+
+  width: 72px;
+  height: 36px;
+
+  border-radius: 200px;
+  background-color: #a3a3a3;
+
+  background-color: #d1c1b2;
+  background-color: #f2d3c4;
+
+}
+
+
+.switch.right .slider{
+  position: absolute;
+  top: 0;
+  right: 18px;
+
+}
+
+.slider + h6{
+    padding:9px 18px;
+    line-height: 18px;
+}
+
+
+
+.switch.s_1 .slider{
+
+}
+.switch.s_2 .slider{
+    overflow: visible;
+    border-radius: 0;
+}
+
+.switch.s_3 .slider{
+    border-radius: 0;
+}
+
+.switch.s_5 .slider{
+  width: 54px;
+    overflow: visible;
+
+}
+
+
+
+
+.slider .btn_boo,
+.slider:before {
+    position: absolute;
+    z-index: 2;
+
+    content: "";
+
+    height: 24px;
+    width: 24px;
+
+    top: 6px;
+    left: 6px;
+
+border-radius: 300px;
+
+    background-color: white;
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+
+    -webkit-box-shadow: 0 5px 6px 0 rgba(103, 59, 41,0.45);
+    -moz-box-shadow: 0 5px 6px 0 rgba(103, 59, 41,0.45);
+    box-shadow: 0 5px 6px 0 rgba(103, 59, 41,0.45);
+}
+
+
+.switch.s_2 .slider:before{
+    left: 10px;
+
+    border-radius: 2px;
+    transform: rotate(45deg);
+
+}
+.switch.s_3 .slider:before {
+    border-radius: 0;
+}
+
+
+.switch.s_4 .slider{
+    border-radius: 8px;
+
+}
+
+.switch.s_4 .slider:before {
+    border-radius: 2px;
+}
+
+
+
+
+
+
+.switch.s_5 .slider{
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.switch.s_5 .slider:before {
+
+    top: 9px;
+    left: 9px;
+    height: 18px;
+    width: 18px;
+}
+
+
+.switch.s_6 .slider {
+
+    width: 44px;
+
+    height: 22px;
+    border:1px #a0a0a0 solid ;
+
+    background-color: #fff;
+}
+
+.switch.s_6 .slider:before {
+
+    top: 2px;
+    left: 2px;
+
+    height: 12px;
+    width: 12px;
+
+    box-shadow: none;
+    border:2px #0f1329 solid ;
+}
+
+
+
+
+
+.slider_selection{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+justify-content:  space-between  ;
+
+}
+.slider_selection a{
+
+  /* color: #fff; */
+
+  width: auto;
+  padding:18px ;
+
+  text-align: center;
+
+}
+
+.slider_selection .slider{
+  width: 100%;
+}
+
+
+
+
+
+.slider_selection .slider .bg_color{
+    position: absolute;
+
+    z-index: 1;
+
+    content: "";
+
+    height: 36px;
+
+  width: 36px;
+  min-width: 36px;
+
+    top: 0;
+    left: 0;
+
+
+
+  border-radius: 200px;
+
+    background-color: #243eba;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+
+
+}
+
+
+
+
+.slider_selection .slider:before{
+  display: none;
+
+}
+
+/* jQ */
+
+
+
+.switch.on *{
+  color: #0f1329;
+}
+.switch.on:not(.s6) .slider{
+  background-color: #a97962;
+}
+
+.switch.on .slider:before {
+    left: calc(100% - 30px) ;
+/*     -webkit-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    -moz-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45); */
+}
+
+.switch.s_2.on .slider:before {
+    left: calc(100% - 34px) ;
+}
+
+
+
+
+.switch.s_5.on .slider{
+    border-radius: 300px 0 0 300px;
+}
+.switch.s_5.on .slider:before {
+    left: calc(100% - 9px) ;
+}
+
+
+.switch.s_6.on .slider:before {
+    left: calc(100% - 18px) ;
+}
+
+.switch.on .text_L{
+  color: #a3a3a3;
+  opacity: 0.5;
+}
+
+
+.switch.on .text_R{
+  color: #0f1329;
+
+}
 
 

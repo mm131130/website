@@ -331,6 +331,19 @@ transform: translate(0, -50%);
 }
 
 
+
+
+
+[class*="mobile_"] .popup_event_box{
+  position: static;
+  transform: none;
+}
+
+
+
+
+
+
 </style>
 <script src="../jq/jquery_3_2_1_min.js"></script>
 <script src="../jq/all_2.js"></script>
@@ -342,6 +355,24 @@ transform: translate(0, -50%);
 $(window).on('load', function() {
 
 
+  var change_num = 1;
+  
+  $('.c_btn_style').on('click', function() {
+ 
+    change_num += 1;
+    if (change_num > 6) {
+      change_num = 1;
+    }
+  var class_name = 's_' + change_num;
+
+  $(this).siblings().removeClass().attr('class', class_name).addClass('switch , right' );
+    return false;
+  });
+
+  $('.switch').on('click', function() {
+    $(this).toggleClass('on');
+    return false;
+  });
 
  
 
@@ -373,8 +404,6 @@ Sign in & Register
 
 <!-- COMPONENTS -->
 <div class="content_box if_bg">
-
-
 
 
 <!-- 
@@ -463,10 +492,152 @@ Sign in & Register
 
 
 
+<div class="mobile_size_iphone6">
+
+<div class="m_l_subtitle">Switch Button</div>
+
+<div class="m_s_subtitle">s6</div>
+
+<div class="switch s_6">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+<div class="m_s_subtitle">s5</div>
+
+  <div class="switch s_5">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+<div class="m_s_subtitle">s4</div>
+
+  <div class="switch s_4">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+<div class="m_s_subtitle">s3</div>
+
+  <div class="switch s_3">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+<div class="m_s_subtitle">s2</div>
+
+<div class="switch s_2">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+<div class="m_s_subtitle">s1</div>
+
+<div class="switch s_1">
+  <div class="text_L">off</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">on</div>
+</div>
+
+
+</div>
+
+
+<div class="mobile_size_iphone6">
+
+
+
+<a class="c_btn_style" href="#">Change switch button style</a> 
+
+<div class="switch s_3 right">
+<div class="slider">&nbsp;</div>
+<h6>Crossfade
+<p>Allows for a smooth transition between songs.</p>
+</h6>
+</div>
+
+<div class="switch s_3 right">
+  <div class="slider">&nbsp;</div>
+
+<h6>Offline mode
+<p>Download your tracks so you can listen offline without internet. You will be only allowed to play songs that have been downloaded in this mode.</p>
+</h6>
+</div>
+
+<div class="switch s_3 right">
+  <div class="slider">&nbsp;</div>
+  <h6>Show unplayable songs<p>Show songs that are unplayable.</p></h6>
+
+</div>
+
+<div class="switch s_3 right">
+  <div class="slider">&nbsp;</div>
+  <h6>Private session<p>No one can see what your listening to.</p></h6>
+</div>
+
+<div class="switch s_3 right">
+  <div class="slider">&nbsp;</div>
+
+  <h6>Normalize volume<p>Makes volume the same for all tracks.</p></h6>
+</div>
+
+
+</div>
 
 
 
 
+<div class="mobile_size_iphone6">
+
+<div class="popup_event_box">
+
+<h3>IFCHIC newsletter</h3>
+<h5>Want more of the stuff that refines you? Sign up for your boundary-busting bulletin.</h5>
+
+<input class="w_100" type="text" placeholder="Email Address *">
+
+
+<div class="select_btn click">
+    <a class="icon" href="#">&nbsp;</a>
+    <div>
+      
+Please keep me up to date with special offers and news from IFCHIC and other brands within the by email. You can unsubscribe at any time.
+
+    </div>
+</div>
+<div class="select_btn click">
+    <a class="icon" href="#">&nbsp;</a>
+    <div>
+      
+Please keep me up to date with special offers and news just by email from carefully selected companies. Your personal details will not be shared with those companies - we send the emails and you can unsubscribe at any time.
+
+    </div>
+</div>
+
+
+<div class="select_btn">
+
+    <div>
+      
+By submitting your information, you agree to the Terms & Conditions and Privacy & Cookies Policy.
+
+
+    </div>
+</div>
+
+
+<a class="w_100 btn_B v1" href="#">Sign Up</a>
+<div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+</div>
+
+
+
+</div>
 
 
 
@@ -503,7 +674,7 @@ Sign in & Register
 </div>
 
 
-<!-- DON'T MISS OUT! -->
+<!-- DON'T MISS OUT!
 
 <div class="mobile_size_iphone6">
 <div class="signin_register">
@@ -517,12 +688,12 @@ Sign in & Register
 
 </div>
 </div>
-
+-->
 
 
 <!-- Have an Account? -->
 
-
+<!--  -->
 
 <div class="mobile_size_iphone6">
 <div class="signin_register">

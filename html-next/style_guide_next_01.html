@@ -69,8 +69,266 @@ body{
   padding:72px 0 9px 0;
 }
 
+.next_bg > * {
+    background-color: #ececec;
 
 
+}
+
+
+
+
+.c_rotate{
+
+  font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 9px;
+    padding:45px 18px 18px 18px ;
+
+    text-align: center;
+    background-image: url(../img-if/arrow.png);
+    background-position: top center;
+}
+
+
+
+.switch{
+  cursor: pointer;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-bottom: 9px;
+}
+.switch .text_L,
+.switch .text_R{
+  font-size: 16px;
+  line-height: 18px;
+  color: #a3a3a3;
+  padding-left:18px;
+  padding-right:18px;
+
+  width:calc(50% - 54px) ;
+}
+
+.switch .text_L{
+  color: #243eba;
+
+  text-align: right;
+}
+.switch .text_R{
+  color: #a3a3a3;
+}
+
+.slider{
+  position: relative;
+  width: 108px;
+  height: 36px;
+
+  border-radius: 200px;
+  background-color: #a3a3a3;
+  background-color: #dfdfdf;
+}
+
+.slider_selection{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 9px;
+
+
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+
+}
+
+[class*="mobile_"] .slider_selection{
+  width:90%;
+}
+
+
+
+
+.slider_selection.rotate_45{
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width:100%;
+
+
+}
+.slider_selection.rotate_90{
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width:120%;
+
+  margin-top: 120px;
+
+}
+.slider_selection.rotate_45 a,
+.slider_selection.rotate_90 a{
+  -webkit-transform: translateY(-18px) rotate(90deg);
+      -ms-transform: translateY(-18px) rotate(90deg);
+          transform: translateY(-18px) rotate(90deg);
+
+}
+
+.slider_selection a{
+  line-height: 18px;
+  color: #a3a3a3;
+  text-align: center;
+
+  width: auto;
+  padding:16px 0;
+
+
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+
+}
+
+.slider_selection .slider{
+  width: 100%;
+}
+
+
+
+
+
+.slider_selection .slider .bg_color{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+
+
+  border-radius: 200px;
+
+    background-color: #3b64db;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+
+
+}
+
+.slider .btn_boo,
+.slider:before {
+    position: absolute;
+    z-index: 2;
+
+    content: "";
+
+    height: 26px;
+    width: 26px;
+
+    top: 5px;
+    left: 5px;
+
+border-radius: 200px;
+
+    background-color: white;
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+
+    -webkit-box-shadow: 0 5px 6px 0 rgba(163, 163, 163,0.45);
+    -moz-box-shadow: 0 5px 6px 0 rgba(163, 163, 163,0.45);
+    box-shadow: 0 5px 6px 0 rgba(163, 163, 163,0.45);
+
+}
+.slider .btn_boo{
+    -webkit-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    -moz-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+
+}
+
+
+.slider_selection .slider:before{
+  display: none;
+
+}
+
+/* jQ */
+
+.switch.on .slider{
+  background-color: #3b64db;
+}
+
+.switch.on .slider:before {
+    left: calc(100% - 31px) ;
+    -webkit-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    -moz-box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+    box-shadow: 0 5px 6px 0 rgba(36,62,186,0.45);
+}
+.switch.on .text_L{
+  color: #a3a3a3;
+}
+.switch.on .text_R{
+  color: #243eba;
+}
+
+
+.slider_selection .select_color{
+  color: #243eba;
+}
 
 
 
@@ -82,7 +340,136 @@ body{
 <script>
   $(function(){
 
+
+
+
+
+$('.next_bg > div').each(function() {
+
+  var next_bg = $(this);
+
+
+
+  var change_num = 2;
+
+  next_bg.find('.c_rotate').on('click', function() {
+
+  change_num += 1;
+
+if( change_num > 3 ){
+  change_num = 1;
+  next_bg.find('.slider_selection').removeClass('rotate_90 , rotate_45');
+
+}else if( change_num === 1 ){
+  next_bg.find('.slider_selection').removeClass('rotate_90 , rotate_45');
+
+}else if( change_num === 2 ){
+  next_bg.find('.slider_selection').addClass('rotate_45');
+
+}else{
+  next_bg.find('.slider_selection').removeClass('rotate_45').addClass('rotate_90');
+
+}
+
+
+
+
+    return false;
   });
+  
+});
+
+
+
+
+  $('.switch').on('click', function() {
+    $(this).toggleClass('on');
+    return false;
+  });
+
+
+
+
+// var hm_item = $('.slider_selection > a').legend;
+// var move_vel = hm_item / 100;
+
+$('.slider_selection').each(function() {
+
+  var ts = $(this);
+  var hmi = ts.find('a').length;
+  var btn_w = 100 / hmi;
+
+
+ ts.find('a').css({ width: 100 / hmi + '%' });
+
+
+// var width_n = 0;
+// var left_n = 0;
+
+function slider_selection_move(i){
+
+  // var n = i;
+
+    // ts.find('.slider .bg_color').css({ width:' 100 / hmp * (i+1)'});
+
+
+// if(hmi-2 === i){
+//   width_n = 0;
+//   left_n = 31;
+
+// }else{
+//   width_n = 18;
+//   left_n = 13;
+// }
+
+
+    ts.find('.slider .bg_color').css({ width:'calc(' + ( btn_w * i + btn_w / 2 ) + '% + 18px)' });
+    ts.find('.slider .btn_boo').css({ left:'calc(' + ( btn_w * i + btn_w / 2 ) + '% - 13px)' });
+}
+
+slider_selection_move(0);
+
+
+
+
+   // ts.find('.btn_boo').text(hmi);
+
+   ts.find('a').on('click', function() {
+
+    $(this).addClass('select_color').siblings().removeClass('class select_color');
+
+
+
+  // if($(this).index() === 0){
+    // ts.find('.slider .bg_color').css({ width:'36px' });
+            // slider_selection_move( 0 );
+
+
+    // ts.find('.slider .bg_color').css({ width:'' });
+    // ts.find('.slider .btn_boo').css({ left:'' });
+      if($(this).index() === hmi-1){
+          ts.find('.slider .bg_color').css({ width:' 100%' });
+          // ts.find('.slider .btn_boo').css({ left:'calc(100% - 31px)' });
+          ts.find('.slider .btn_boo').css({ left:'calc(' + ( btn_w * ( hmi-1 ) + btn_w / 2 ) + '% - 13px)' });
+
+
+        }else{
+          slider_selection_move( $(this).index() );
+      }
+
+           // ts.find('.slider:before').css({ backgroundColor:'red'});
+      // ts.find('.slider .bg_color').css({ left:' '});
+      return false;
+    });
+
+
+  });
+
+
+
+
+  });
+
 
 
 </script>
@@ -102,8 +489,113 @@ Style Guide
 
 
 
-<!-- <h6>Standard color</h6> -->
 
+
+
+<div class="content_box next_bg">
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Switch Button</div>
+
+<div class="switch">
+  <div class="text_L">Dollar</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">NT</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Switch Selection
+
+<a class="c_rotate" href="#">Change switch button style</a> 
+</div>
+
+<div class="slider_selection rotate_45">
+  
+  <a class="select_color" href="#">1,000</a>
+  <a href="#">3,000</a>
+  <a href="#">5,000</a>
+  <a href="#">10,000</a>
+  <a href="#">30,000</a>
+  <a href="#">50,000</a>
+
+
+  <div class="slider">
+    
+    <div class="btn_boo">&nbsp;</div>
+    <div class="bg_color">&nbsp;</div>
+
+  </div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<!-- 
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Switch Button</div>
+
+
+
+<h6>How many colours?</h6>
+
+<div class="switch">
+  <div class="text_L">One</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">Two</div>
+
+</div>
+
+<h6>What size?</h6>
+
+<div class="switch">
+  <div class="text_L">Dollar</div>
+  <div class="slider">&nbsp;</div>
+  <div class="text_R">NT</div>
+
+</div>
+
+<h6>How many item?</h6>
+
+<div class="slider_selection">
+  
+  <a class="select_color" href="#">1,000</a>
+  <a href="#">3,000</a>
+  <a href="#">5,000</a>
+  <a href="#">10,000</a>
+  <a href="#">30,000</a>
+  <a href="#">50,000</a>
+
+
+  <div class="slider">
+    
+    <div class="btn_boo">&nbsp;</div>
+    <div class="bg_color">&nbsp;</div>
+
+  </div>
+
+</div>
+
+</div> -->
+</div>
 
 <div class="color_box v1">
 
@@ -116,39 +608,31 @@ Style Guide
 
   </div><div class="border_color_blue">
 
-
-
-
-
     <div class="color_info p_TL">BORDER COLOR<br>multiply screen 36%<br><br>#557be0</div>
     <div class="color_info p_BR">#314fc6</div>
-  <div class="boo">
-      
-    <div class="color_info p_T">#658ee9</div>
-    <div class="color_info p_B">#243eba</div>
-  </div>
+    <div class="boo">
+      <div class="color_info p_T">#658ee9</div>
+      <div class="color_info p_B">#243eba</div>
+    </div>
+
 </div><div>
-
-
 
     <div class="color_info p_TL">#ffe610</div>
     <div class="color_info p_BR">255, 230, 16</div>
     <div class="boo" style="background-color:#ffe610;"></div>
+
 </div><div class="border_color_yellow">
 
 
     <div class="color_info p_TL">BORDER COLOR<br>multiply screen 36%<br><br>#fcee63</div>
-
     <div class="color_info p_BR">#fade3b</div>
     <div class="boo">
-      
-    <div class="color_info p_T">#fdf374</div>
-    <div class="color_info p_B">#f9d62c</div>
-
+      <div class="color_info p_T">#fdf374</div>
+      <div class="color_info p_B">#f9d62c</div>
     </div>
 
-
   </div><div>
+
     <div class="color_info p_TL">#f7cf18</div>
     <div class="color_info p_BR">247, 207, 24</div>
     <div class="boo" style="background-color:#f7cf18;"></div>
@@ -159,9 +643,8 @@ Style Guide
 
     <div class="color_info p_BR">#efc940</div>
     <div class="boo">
-      
-    <div class="color_info p_T">#f9e86e</div>
-    <div class="color_info p_B">#edc238</div>
+      <div class="color_info p_T">#f9e86e</div>
+      <div class="color_info p_B">#edc238</div>
 
     </div>
 
