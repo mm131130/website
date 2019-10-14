@@ -1,6 +1,76 @@
 /* 20190924 */
 /* Copyright Chiou Wen Shan */
 
+h1 {
+    display: block;
+    clear: both;
+    font-size: 45px;
+    line-height: 45px;
+    font-family: roboto_thin;
+    color: #243eba;
+    text-align: center;
+    letter-spacing: 0;
+    word-spacing: 0.12em;
+    text-transform: uppercase;
+
+}
+
+.t_title, h3 {
+    font-size: 27px;
+    line-height: 27px;
+    font-family: roboto_thin;
+    font-family: roboto_light;
+
+    color: #243eba;
+
+    padding: 9px 18px;
+
+}
+h3 p{
+  font-family: roboto_Regular;
+  color: #686868;
+
+
+}
+
+
+
+h6{
+  display: block;
+    clear: both;
+    font-size:16px;
+    line-height:18px;
+    font-family: roboto_Medium;
+
+    color: #243eba;
+
+
+    text-transform: uppercase;
+    padding: 18px 0 9px 18px;
+}
+h6 p{
+  font-size: 14px;
+
+
+
+}
+
+
+p{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: roboto_Regular;
+  font-family: Arial, sans-serif;
+  color: #8e8e8e;
+  color: #686868;
+
+  text-transform: none;
+  word-spacing: 0;
+}
+
+
+
+
 form{}
 label{}
 input{}
@@ -132,7 +202,7 @@ label,
 .label{
     display: block;
     clear: both;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     color: #9d9d9d;
     /* color: #dfdfdf; */
@@ -144,13 +214,17 @@ label + *{
   margin: 0;
 }
 
+textarea ~ [class*="btn_"],
+input ~ [class*="btn_"],
+
+.input_box  ~ [class*="btn_"]{
+  margin-top: 9px;
+}
 
 
 
 
-
-
-
+input_box
 
 /* cis - color */
 .dev_box .color_box,

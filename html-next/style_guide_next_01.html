@@ -94,6 +94,7 @@ body{
 
 
 .switch{
+  position: relative;
   cursor: pointer;
 
   display: -webkit-box;
@@ -120,6 +121,28 @@ body{
 
   margin-bottom: 9px;
 }
+
+
+
+
+.switch.right {
+  padding-right: 99px;
+}
+.switch.right .slider {
+    position: absolute;
+    top: 9px;
+    right: 18px;
+    width: 63px;
+}
+
+.slider + h6 p,
+.slider + h6{
+  color: #a3a3a3;
+}
+
+
+
+
 .switch .text_L,
 .switch .text_R{
   font-size: 16px;
@@ -206,21 +229,31 @@ body{
 }
 .slider_selection.rotate_45 a,
 .slider_selection.rotate_90 a{
+
+  margin-bottom: 0;
+  padding:16px 0;
+
   -webkit-transform: translateY(-18px) rotate(90deg);
       -ms-transform: translateY(-18px) rotate(90deg);
           transform: translateY(-18px) rotate(90deg);
 
 }
 
+
+
+
+
 .slider_selection a{
+  z-index: 100;
   line-height: 18px;
   color: #a3a3a3;
+
   text-align: center;
 
   width: auto;
-  padding:16px 0;
 
-
+  margin-bottom: -36px;
+  padding:16px 0 52px 0;
 
     -webkit-transition: .4s;
     -moz-transition: .4s;
@@ -229,6 +262,9 @@ body{
     transition: .4s;
 
 }
+
+
+
 
 .slider_selection .slider{
   width: 100%;
@@ -307,6 +343,16 @@ border-radius: 200px;
 }
 
 /* jQ */
+.switch.on h6{
+  color: #243eba;
+}
+
+.switch.on h6 p{
+  color: #686868;
+}
+
+
+
 
 .switch.on .slider{
   background-color: #3b64db;
@@ -324,10 +370,475 @@ border-radius: 200px;
 .switch.on .text_R{
   color: #243eba;
 }
-
-
 .slider_selection .select_color{
   color: #243eba;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+person_list
+wallet_box
+transfer_box
+add_person_box
+success_box
+ */
+
+
+.person_list .person_info{
+  width: 33.333333%;
+}
+.person_info{
+  display: inline-block;
+  padding: 18px;
+}
+.person_info .photo{
+  display: block;
+
+  width: 100%; 
+  width: 90px;
+  height: 90px;
+
+  /* padding:0; */
+  /* padding-bottom:calc(100% - 2px); */
+
+  background-color: #ffe610;
+  border-radius: 100%;
+  border: 1px #fff solid;
+}
+
+.person_info .name{
+    display: block;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: roboto_Medium;
+    color: #243eba;
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* padding: 18px 0 9px 18px; */
+    padding: 9px 0;
+}
+.person_info .name span{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+
+}
+.person_info.right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+}
+
+.person_info.open .photo{
+  width: 100%; 
+  width: 120px;
+  height: 120px;
+  padding: 0;
+}
+
+.person_info.right .name{
+    text-align: left;
+    padding: 9px;
+}
+
+
+
+[class*="mobile_"] .wallet_box{
+
+
+/* .wallet_box{ */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  position: absolute;
+
+  left:50%;
+  bottom:-50px;
+
+  text-align: left;
+
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+
+  padding:0 ; 
+  background-color: blue;
+  border-radius: 100% ;
+
+
+
+    -webkit-transform: translate(-50%, 0);  
+  -ms-transform: translate(-50%, 0);  
+  transform: translate(-50%, 0);
+
+
+}
+
+.wallet_box *{
+  display: inline-block;
+  color: #fff;
+
+  width: 100%;
+  padding: 0;
+  padding-left: 18px;
+  /* padding:18px; */
+}
+
+.wallet_box > div{
+  margin-top:-18px;
+}
+
+
+.wallet_val{
+    display: block;
+    clear: both;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: roboto_thin;
+    /* color: #243eba; */
+    /* text-align: center; */
+    letter-spacing: 0;
+    word-spacing: 0.12em;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.transfer_money{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+    padding: 90px 0;
+
+  position: relative;
+
+  width: 100%;
+  height:100%;
+
+  min-height: 540px;
+
+  border:1px red solid; 
+}
+.plus_bg,
+.btn_plus{
+  display: inline-block;
+  position: absolute;
+
+  top: 18px;
+  left:calc(100% - 68px) ;
+
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+.plus_bg{
+  top: 43px;
+  left:calc(100% - 43px) ; 
+  z-index: 1;
+  background-color:red;
+  background-color: #3b64db;
+  border-radius:100%;
+
+}
+
+.btn_plus.un:hover{
+  cursor: default ;
+}
+.btn_plus .icon{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 300px;
+}
+
+
+.btn_plus .icon:before,
+.btn_plus .icon:after{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ffe610;
+
+}
+
+
+.btn_plus .icon:before{
+  width: 1px;
+  height: 30px;
+}
+.btn_plus .icon:after{
+  width: 30px;
+  height: 1px;
+}
+.btn_plus:not(.un) .icon:hover:before,
+.btn_plus:not(.un) .icon:hover:after{
+  background-color: #000;
+}
+
+/* jQ */
+.plus_bg.open,
+.plus_bg.click{
+  width: 10000px;
+  height: 10000px;
+  background-color: #ffe610;
+}
+.plus_bg.success,
+.plus_bg.click_2{
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  background-color: #3b64db;
+}
+.btn_plus.open,
+.btn_plus.click{
+  top: 27px;
+  left: 18px;
+}
+.btn_plus.open .icon,
+.btn_plus.click .icon{
+  transform: rotate(225deg);
+  background-color: rgba(255, 230, 16, 0);
+}
+.btn_plus.open .icon:before,
+.btn_plus.open .icon:after,
+.btn_plus.click .icon:before,
+.btn_plus.click .icon:after{
+  background-color: #000;
+}
+.btn_plus.open .icon:before,
+.btn_plus.click .icon:before{
+  height: 36px;
+}
+.btn_plus.open .icon:after,
+.btn_plus.click .icon:after{
+  width: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+.btn_plus.success .icon{
+  /* background-color: red; */
+}
+
+
+.btn_plus.success{
+  top: 50%;
+  left: 50%;
+}
+.btn_plus.success .icon:before{
+  top: -56px;
+
+  width: 9px;
+  height: 90px;
+  transform:none;
+}
+.btn_plus.success .icon:after{
+
+  top: 50%;
+  left: -26px;
+
+  width: 60px;
+  height: 9px;
+
+  transform:none;
+
+}
+.btn_plus.success .icon{
+  -webkit-transform: rotate(45deg) translate(9px, 9px);
+  -ms-transform: rotate(45deg) translate(9px, 9px);
+  transform: rotate(45deg) translate(9px, 9px);
+  }
+
+.plus_bg.success{
+  position: static;
+  transform: none;
+}
+
+
+
+
+
+.add_person_box{
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  z-index: 2;
+  width: 100%;
+  max-width: 320px;
+
+}
+
+.plus_bg,
+.btn_plus .icon:before,
+.btn_plus .icon:after,
+.btn_plus.success,
+.add_person_box{
+
+  -webkit-transform: translate(-50%, -50%);  
+  -ms-transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
+}
+
+
+
+.add_person_box.open{
+  top: 50%;
+}
+.add_person_box.send{
+  top: -200%;
+}
+
+.transfer_box,
+.success_box {
+  display: none;
+  z-index: 2;
+  width: 100%;
+  max-width: 320px;
+
+}
+/* .success_box [class*="btn_"]{
+  margin-top: 240px;
+}
+ */
+
+
+.add_person_box > *,
+.success_box > *,
+.transfer_box > *{
+  width: 100%;
+}
+
+
+
+.plus_bg,
+.btn_plus,
+.btn_plus .icon,
+.btn_plus .icon:before,
+.btn_plus .icon:after,
+
+.add_person_box{
+    -webkit-transition: all .6s;    
+    -o-transition: all .6s;    
+    transition: all .6s;
+}
+/* .photo{
+    transition: width , height , .6s;
+}
+
+
+ */
+
+
+
+
+
+.btn_blue,
+.btn_yellow,
+.btn_gray{
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffe610;
+
+  text-align: center;
+  padding:16px 0; 
+  background-color: #3b64db;
+  border-radius: 300px;
+}
+.btn_blue.radius,
+.btn_yellow.radius{
+  width: 50px !important;
+  height: 50px;
+}
+.btn_blue:hover{
+  color:#000;
+  background-color: #243eba;
+  background-color: #ffe610;
+}
+.btn_yellow{
+  color:#243eba;
+  background-color: #ffe610;
+}
+.btn_yellow:hover{
+  color:#fff;
+  background-color: #f7cf18;
+  background-color: #a3a3a3;
+}
+
+.btn_gray{
+  color:#243eba;
+  background-color: #dfdfdf;
+}
+.btn_gray:hover{
+  color:#a3a3a3;
+  background-color: #fff;
+
+}
+
+
+
+
+
+
+.btn_radius{
+  display: inline-block;
+
+  width: 50px !important;
+  height: 50px;
+  background-color: #ffe610;
+  border-radius: 100%;
+  border: 1px #fff solid;
 }
 
 
@@ -376,7 +887,166 @@ if( change_num > 3 ){
 
     return false;
   });
+
+
+
+
+
+
+var person_box = '';
+for (var i = 1 ; i <= 9 ; i++) {
+
+person_box += '<a class="person_info" href="#"><span class="photo"></span><span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span></a>';
+
+}
+
+
+next_bg.find('.person_list').append(person_box);
+
+
+// next_bg.find('.btn_plus').on('click' , function(){
+
+//   var icon = $(this);
   
+//   icon.toggleClass('click');
+
+//   if (next_bg.find('.plus_bg').hasClass('click_2')) {
+//     next_bg.find('.plus_bg').removeClass('click_2 click');
+
+//   }else{
+//     next_bg.find('.plus_bg').toggleClass('click');
+
+//   }
+
+//   next_bg.find('.person_list').toggle();
+//   next_bg.find('.transfer_money_page').show();
+//   return false;
+
+// });
+
+
+
+
+
+
+// :not(.popup_bg)
+
+var num = 1;
+
+next_bg.find('.btn_plus').on('click', function() {
+
+
+
+if ($(this).hasClass('un')) {
+
+
+}else if ($(this).hasClass('open')) {
+
+$(this).removeClass('open').nextAll('.plus_bg , .add_person_box').removeClass('open');
+next_bg.find('.person_list').fadeIn(210);
+
+}else{
+
+next_bg.find('.person_list').fadeOut(210);
+$(this).addClass('open').nextAll('.plus_bg , .add_person_box').removeClass('send').addClass('open');
+
+}
+
+
+return false;
+
+});
+
+
+
+var person_name = '';
+next_bg.find('a').on('click', function() {
+
+if ($(this).hasClass('un')) {
+
+}else if ($(this).text() === 'Send') {
+
+$(this).parent('.add_person_box').removeClass('open').addClass('send').prevAll('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
+
+  next_bg.find('.success_box').delay(540).fadeIn(450);
+  next_bg.find('.success_box p').html('Your pet get 300 experience points. ');
+
+
+
+}else if ($(this).text() === 'Down') {
+
+  next_bg.find('.btn_plus , .plus_bg ').removeClass('success un');
+  next_bg.find('.person_list h3 , .person_list .wallet_box').css({display:''});
+  next_bg.find('.success_box').fadeOut('210', function(){
+    next_bg.find('.person_list').delay(270).fadeIn();
+  });
+
+
+}else if ($(this).text() === 'Transfer') {
+
+  next_bg.find('.transfer_box , .person_list').fadeOut('180', function(){
+    next_bg.find('.person_info').removeClass('open right').siblings('.person_info').fadeIn(210);
+  });
+
+  next_bg.find('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
+  next_bg.find('.success_box').delay(540).fadeIn(450);
+
+
+  next_bg.find('.success_box p').html('You success transfer 3,000 to '+ person_name +'. <br> Your pet get 3,000 experience points. ');
+
+
+}else if ($(this).text() === 'Back') {
+
+  next_bg.find('.person_info , .transfer_box , .person_list h3 , .person_list .wallet_box').css({display:''}).removeClass('open right');
+
+
+
+
+}else if ($(this).hasClass('person_info')) {
+  person_name = $(this).find('.name').text();
+
+  if ($(this).hasClass('open')) {
+    $(this).removeClass('open right').siblings('.person_info').fadeIn(210);
+
+  }else{
+
+    $(this).addClass('open right').siblings('.person_info , h3 , .wallet_box').css({display:'none'});
+      // $(this).addClass('right open');
+      // next_bg.find('.person_info').addClass('right');
+      next_bg.find('.transfer_box').show();
+
+
+  }
+
+
+
+
+
+
+
+}
+
+
+return false;
+
+});
+
+
+
+
+
+
+
+// next_bg.find('.transfer_money_page .btn_blue').on('click' , function(){
+//   next_bg.find('.plus_bg').removeClass('click').addClass('click_2');
+//   return false;
+// });
+
+
+
+
+
+
 });
 
 
@@ -399,42 +1069,16 @@ $('.slider_selection').each(function() {
   var hmi = ts.find('a').length;
   var btn_w = 100 / hmi;
 
+  ts.find('a').css({ width: 100 / hmi + '%' });
 
- ts.find('a').css({ width: 100 / hmi + '%' });
+  function slider_selection_move(i){
+      ts.find('.slider .bg_color').css({ width:'calc(' + ( btn_w * i + btn_w / 2 ) + '% + 18px)' });
+      ts.find('.slider .btn_boo').css({ left:'calc(' + ( btn_w * i + btn_w / 2 ) + '% - 13px)' });
+  }
 
+  slider_selection_move(0);
 
-// var width_n = 0;
-// var left_n = 0;
-
-function slider_selection_move(i){
-
-  // var n = i;
-
-    // ts.find('.slider .bg_color').css({ width:' 100 / hmp * (i+1)'});
-
-
-// if(hmi-2 === i){
-//   width_n = 0;
-//   left_n = 31;
-
-// }else{
-//   width_n = 18;
-//   left_n = 13;
-// }
-
-
-    ts.find('.slider .bg_color').css({ width:'calc(' + ( btn_w * i + btn_w / 2 ) + '% + 18px)' });
-    ts.find('.slider .btn_boo').css({ left:'calc(' + ( btn_w * i + btn_w / 2 ) + '% - 13px)' });
-}
-
-slider_selection_move(0);
-
-
-
-
-   // ts.find('.btn_boo').text(hmi);
-
-   ts.find('a').on('click', function() {
+  ts.find('a').on('click', function() {
 
     $(this).addClass('select_color').siblings().removeClass('class select_color');
 
@@ -468,6 +1112,15 @@ slider_selection_move(0);
 
 
 
+
+
+
+
+
+
+
+
+
   });
 
 
@@ -485,13 +1138,6 @@ slider_selection_move(0);
 Style Guide
 <p>photoshop<span>/</span>photography</p>
 </div>
-
-
-
-
-
-
-
 <div class="content_box next_bg">
 
 
@@ -499,7 +1145,9 @@ Style Guide
 
 
 
+
 <div class="mobile_size_iphone6">
+
 <div class="m_l_subtitle">Switch Button</div>
 
 <div class="switch">
@@ -518,7 +1166,7 @@ Style Guide
 <div class="mobile_size_iphone6">
 <div class="m_l_subtitle">Switch Selection
 
-<a class="c_rotate" href="#">Change switch button style</a> 
+<a class="c_rotate" href="#">Change rotate deg</a> 
 </div>
 
 <div class="slider_selection rotate_45">
@@ -544,6 +1192,61 @@ Style Guide
 
 </div>
 
+
+
+
+
+<div class="mobile_size_iphone6">
+
+
+<h3>Security
+<p>Enable additional protection.</p>
+</h3>
+
+
+<div class="switch right on">
+<div class="slider">&nbsp;</div>
+
+<h6>Location-based security 
+<p>We will use your location to determine if your card has been compromised and help prevent fraudulent transactions.
+</p>
+</h6>
+</div>
+<div class="switch right on">
+<div class="slider">&nbsp;</div>
+<h6>
+Swipe payments 
+<p>Sometimes cards are getting cloned. Switch off swipe payments for extra security.
+</p>
+</h6>
+</div>
+<div class="switch right on">
+<div class="slider">&nbsp;</div>
+<h6>
+Contactless payments 
+<p>If you do not use contactless payments, you can switch them off for extra security.
+</p>
+</h6>
+</div>
+<div class="switch right on">
+<div class="slider">&nbsp;</div>
+<h6>
+ATM withdrawals 
+<p>If you do not plan to withdraw cash, you can switch ATM withdrawals off.
+</p>
+</h6>
+</div>
+<div class="switch right on">
+<div class="slider">&nbsp;</div>
+<h6>
+Online transactions
+<p>Internet-based transactions are generally higher risk. You can switch them off for extra security.
+</p>
+</h6>
+</div>
+
+
+</div>
 
 
 
