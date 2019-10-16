@@ -1171,13 +1171,17 @@ $('.input_box').on('click', function() {
 
 function check_list(){
 
+// transfer_box
 
+// add_person_box
 
-  if (next_bg.find('input').val() === '') {
+// message_box
+
+  if (next_bg.find('.add_person_box input').val() === '') {
     next_bg.find('.input_box').addClass('error').find('input').addClass('error_color').attr('placeholder', text[0]);
 
 
-  }else if (next_bg.find('input').val() === 'MM') {
+  }else if (next_bg.find('.add_person_box input').val() === 'MM') {
 
  next_bg.find('.add_person_box').removeClass('open').addClass('send').siblings('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
     // next_bg.find('input').val('');
@@ -1423,6 +1427,8 @@ Style Guide
 <a class="btn_plus" href="#"><span class="icon">&nbsp;</span></a>
 <div class="plus_bg">&nbsp;</div>
 
+
+<!--  -->
 <div class="person_list">
 
 <h3>Who do you want to transfer money to?
@@ -1436,9 +1442,10 @@ Style Guide
     <div class="wallet_val">888,888,888.00</div>
   </div>
 </div>
-
-
 </div>
+
+
+
 <!--  -->
 <div class="transfer_box">
 
@@ -1451,11 +1458,7 @@ Style Guide
 
 <a class="btn_blue" href="#">Transfer</a>
 <a class="btn_yellow" href="#">Back</a>
-
-
 </div>
-
-
 
 
 <!--  -->
@@ -1463,13 +1466,27 @@ Style Guide
   <h3>Add new person</h3>
 
   <div class="input_box">
-    <label for="id_search">ID</label>
+    <label for="id_search">ID Search</label>
     <input id="id_search" type="text" placeholder="Input ID or phone number.">
   </div>
 
   <a class="btn_blue" href="#">Send</a>
 </div>
 
+
+
+
+<!-- <div class="add_person_box open">
+  <h3>Add new person</h3>
+
+  <div class="input_box">
+    <label for="id_search">ID Search</label>
+    <input id="id_search" type="text" placeholder="Input ID or phone number">
+  </div>
+
+  <a class="btn_blue" href="#">Send</a>
+</div>
+ -->
 
 
 <!--  -->
