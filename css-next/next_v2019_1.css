@@ -92,6 +92,24 @@ textarea {
     }/* IE 10+ */
 
 
+
+.error ::-webkit-input-placeholder{
+    color:red;
+    }/* Chrome/Opera/Safari */
+.error ::-moz-placeholder{ 
+    color:red;
+    }/* Firefox 19+ */
+.error :-moz-placeholder{ 
+    color:red;
+    }/* Firefox 18- */
+.error :-ms-input-placeholder{ 
+    color:red;
+    }/* IE 10+ */
+
+
+
+
+
 textarea:focus::-webkit-input-placeholder,
 input:focus::-webkit-input-placeholder{
     color:transparent;
@@ -224,7 +242,10 @@ input ~ [class*="btn_"],
 
 
 
-input_box
+.input_box.error input{
+  color: red;
+    }
+
 
 /* cis - color */
 .dev_box .color_box,
