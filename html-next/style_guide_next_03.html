@@ -60,6 +60,19 @@ body{
 }
  */
 
+
+ .content_box:not(.rwd_demo) > [class*="mobile_"]{
+  padding:90px 0 0 0; 
+
+
+ }
+
+.mobile_size_iphone6.loney_star {
+    margin-left: calc( ( 100% - 375px ) / 2);
+    margin-right: calc( ( 100% - 375px ) / 2);
+}
+
+
 .color_box h5{
   display: block;
   clear: both;
@@ -398,9 +411,26 @@ person_list
 wallet_box
 transfer_box
 add_person_box
-success_box
+message_box
  */
 
+
+
+.person_list{
+  /* position: relative; */
+
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+}
 
 .person_list .person_info{
   width: 33.333333%;
@@ -424,6 +454,24 @@ success_box
   border: 1px #fff solid;
 }
 
+
+
+
+
+
+
+
+
+
+.person_info span{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+    text-align: center;
+
+}
+
 .person_info .name{
     display: block;
 
@@ -431,38 +479,58 @@ success_box
     line-height: 18px;
     font-family: roboto_Medium;
     color: #243eba;
-    text-align: center;
+
     /* text-transform: uppercase; */
     /* padding: 18px 0 9px 18px; */
-    padding: 9px 0;
+    /* padding: 9px 0 0 0; */
 }
-.person_info .name span{
-    display: block;
-    font-size: 14px;
-    line-height: 16px;
-    color: #686868;
 
-}
-.person_info.right{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width:100%;
+.person_info.open{
+  position: absolute;
+  top: 25%;
+
+
+  text-align: center;
+
+  -webkit-transform: translateY(-50%);  
+  -ms-transform: translateY(-50%);  
+  transform: translateY(-50%);
 }
 
 .person_info.open .photo{
+  display: inline-block;
   width: 100%; 
   width: 120px;
   height: 120px;
   padding: 0;
 }
 
-.person_info.right .name{
-    text-align: left;
-    padding: 9px;
+
+
+
+
+.person_info.open,
+.person_info.right{
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* justify-content: center; */
+  width:100%;
 }
 
 
+
+
+
+.person_info.open span{
+    text-align: right;
+
+}
+
+.person_info.open .person_name span{
+
+    padding-right: 18px;
+}
 
 [class*="mobile_"] .wallet_box{
 
@@ -485,6 +553,8 @@ success_box
   left:50%;
   bottom:-50px;
 
+  z-index: 100;
+
   text-align: left;
 
   width: 100%;
@@ -495,12 +565,16 @@ success_box
   background-color: blue;
   border-radius: 100% ;
 
-
-
-    -webkit-transform: translate(-50%, 0);  
+  -webkit-transform: translate(-50%, 0);  
   -ms-transform: translate(-50%, 0);  
   transform: translate(-50%, 0);
+}
 
+
+
+.wallet_box.hide,
+[class*="mobile_"] .wallet_box.hide{
+  bottom:-100%;
 
 }
 
@@ -549,7 +623,8 @@ success_box
   align-items: center;
   flex-direction: column;
   
-    padding: 90px 0;
+/* align-content: stretch;   */
+  /* padding: 90px 0; */
 
   position: relative;
 
@@ -558,7 +633,10 @@ success_box
 
   min-height: 540px;
 
-  border:1px red solid; 
+
+  padding-top: 72px;
+
+  /* border:1px red solid;  */
 }
 .plus_bg,
 .btn_plus{
@@ -572,6 +650,12 @@ success_box
   width: 50px;
   height: 50px;
 }
+
+.btn_plus{
+  width: 50px !important;
+
+}
+
 .plus_bg{
   top: 43px;
   left:calc(100% - 43px) ; 
@@ -582,6 +666,8 @@ success_box
 
 }
 
+
+*.un:hover,
 .btn_plus.un:hover{
   cursor: default ;
 }
@@ -618,36 +704,47 @@ success_box
 .btn_plus:not(.un) .icon:hover:after{
   background-color: #000;
 }
+.btn_plus:not(.un):hover .icon,
+.btn_plus:not(.un):hover .icon{
+  background-color: #ffe610;
+}
+
 
 /* jQ */
-.plus_bg.open,
-.plus_bg.click{
+.plus_bg.open{
   width: 10000px;
   height: 10000px;
   background-color: #ffe610;
 }
-.plus_bg.success,
-.plus_bg.click_2{
+
+.plus_bg.success{
   top: 50%;
   left: 50%;
   width: 180px;
   height: 180px;
   background-color: #3b64db;
 }
+
+
+
+
 .btn_plus.open,
+.plus_bg.click,
 .btn_plus.click{
   top: 27px;
   left: 18px;
 }
+.plus_bg.click{
+  transform: none;
+}
+
 .btn_plus.open .icon,
 .btn_plus.click .icon{
   transform: rotate(225deg);
   background-color: rgba(255, 230, 16, 0);
 }
 .btn_plus.open .icon:before,
-.btn_plus.open .icon:after,
-.btn_plus.click .icon:before,
-.btn_plus.click .icon:after{
+.btn_plus.open .icon:after{
   background-color: #000;
 }
 .btn_plus.open .icon:before,
@@ -669,48 +766,85 @@ success_box
 
 
 .btn_plus.success .icon{
-  /* background-color: red; */
 }
 
 
+.btn_plus.error,
 .btn_plus.success{
-  top: 50%;
+  top: 33.333333%;
   left: 50%;
 }
 .btn_plus.success .icon:before{
   top: -56px;
-
   width: 9px;
   height: 90px;
   transform:none;
 }
 .btn_plus.success .icon:after{
-
   top: 50%;
   left: -26px;
-
   width: 60px;
   height: 9px;
-
   transform:none;
-
 }
+
 .btn_plus.success .icon{
   -webkit-transform: rotate(45deg) translate(9px, 9px);
   -ms-transform: rotate(45deg) translate(9px, 9px);
   transform: rotate(45deg) translate(9px, 9px);
   }
 
+
+
+
+
+
+.btn_plus.error {
+  transform: translate(-50% , -50%);
+}
+
+.btn_plus.error .icon:before{
+  width: 9px;
+  height: 180px;
+  background-color: #fff;
+}
+.btn_plus.error .icon:after{
+  width: 180px;
+  height: 9px;
+  background-color: #fff;
+}
+
+.btn_plus.error .icon{
+  -webkit-transform: rotate(45deg) translate(9px, 9px);
+  -ms-transform: rotate(45deg) translate(9px, 9px);
+  transform: rotate(45deg) translate(9px, 9px);
+  }
+
+
+
 .plus_bg.success{
-  position: static;
-  transform: none;
+/*   position: static;
+  transform: none; */
+
+  top: 33.333333%;
+}
+
+.plus_bg.error{
+    width: 10000px;
+    height: 10000px;
+    background-color:#a3a3a3;
 }
 
 
 
 
 
-.add_person_box{
+
+
+
+.transfer_box,
+.add_person_box,
+.message_box{
   position: absolute;
   top: 200%;
   left: 50%;
@@ -720,10 +854,15 @@ success_box
 
 }
 
+
+
+
+
 .plus_bg,
 .btn_plus .icon:before,
 .btn_plus .icon:after,
 .btn_plus.success,
+
 .add_person_box{
 
   -webkit-transform: translate(-50%, -50%);  
@@ -733,29 +872,95 @@ success_box
 
 
 
+
+
+.transfer_box{
+  -webkit-transform: translate(-50%, 0%);  
+  -ms-transform: translate(-50%, 0%);  
+  transform: translate(-50%, 0%);
+}
+
+
+
+
+
+
+
+
+
+.transfer_box.open,
 .add_person_box.open{
   top: 50%;
 }
+
+.transfer_box.send,
 .add_person_box.send{
   top: -200%;
 }
 
-.transfer_box,
-.success_box {
+
+.message_box {
   display: none;
-  z-index: 2;
-  width: 100%;
-  max-width: 320px;
+  -webkit-transform: translate(-50%, 0%);  
+  -ms-transform: translate(-50%, 0%);  
+  transform: translate(-50%, 0%);
+  top: calc(33.333333% + 108px);
+}
+
+
+
+
+.message_box h3{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.message_box .info{
+  position: relative;
+  padding:3px 18px 3px 18px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.message_box .info:before{
+
+  display: block;
+  content: '';
+  position: absolute;
+
+  top: 11px;
+  left: 5px;
+
+  width: 6px;
+  height: 6px;
+
+  transform: rotate(45deg) ;
+
+  background-color: #a3a3a3;
+
 
 }
-/* .success_box [class*="btn_"]{
+
+.message_box h3 .info:first-child{
+  margin-top: 12px;
+
+
+}
+
+
+
+
+/* .message_box [class*="btn_"]{
   margin-top: 240px;
 }
  */
 
 
 .add_person_box > *,
-.success_box > *,
+.message_box > *,
 .transfer_box > *{
   width: 100%;
 }
@@ -767,8 +972,12 @@ success_box
 .btn_plus .icon,
 .btn_plus .icon:before,
 .btn_plus .icon:after,
+.transfer_box,
+.add_person_box,
 
-.add_person_box{
+.wallet_box
+
+{
     -webkit-transition: all .6s;    
     -o-transition: all .6s;    
     transition: all .6s;
@@ -809,6 +1018,7 @@ success_box
 .btn_yellow{
   color:#243eba;
   background-color: #ffe610;
+  background-color: #f7cf18;
 }
 .btn_yellow:hover{
   color:#fff;
@@ -816,13 +1026,23 @@ success_box
   background-color: #a3a3a3;
 }
 
+
+
+
 .btn_gray{
   color:#243eba;
   background-color: #dfdfdf;
+  color:#a3a3a3;
+
+
 }
 .btn_gray:hover{
   color:#a3a3a3;
   background-color: #fff;
+  color:#ffe610;
+
+
+  background-color: #3b64db;
 
 }
 
@@ -900,104 +1120,173 @@ person_box += '<a class="person_info" href="#"><span class="photo"></span><span 
 
 }
 
-
-next_bg.find('.person_list').append(person_box);
-
-
-// next_bg.find('.btn_plus').on('click' , function(){
-
-//   var icon = $(this);
-  
-//   icon.toggleClass('click');
-
-//   if (next_bg.find('.plus_bg').hasClass('click_2')) {
-//     next_bg.find('.plus_bg').removeClass('click_2 click');
-
-//   }else{
-//     next_bg.find('.plus_bg').toggleClass('click');
-
-//   }
-
-//   next_bg.find('.person_list').toggle();
-//   next_bg.find('.transfer_money_page').show();
-//   return false;
-
-// });
+next_bg.find('.person_list:not(.un)').append(person_box);
 
 
 
-
-
-
-// :not(.popup_bg)
 
 var num = 1;
 
-next_bg.find('.btn_plus').on('click', function() {
+next_bg.find('.btn_plus:not(.un)').on('click', function() {
 
 
+// next_bg.find('.add_person_box').css({display:''});
 
-if ($(this).hasClass('un')) {
-
+if ($(this).hasClass('click')) {
+  next_bg.find('.transfer_box , .person_info , .btn_plus , .plus_bg').removeClass('open click un');
+  next_bg.find('.person_info , h3 ').css({display:''});
+  next_bg.find('.wallet_box').removeClass('hide');
 
 }else if ($(this).hasClass('open')) {
-
-$(this).removeClass('open').nextAll('.plus_bg , .add_person_box').removeClass('open');
-next_bg.find('.person_list').fadeIn(210);
+  $(this).removeClass('open').nextAll('.plus_bg , .add_person_box').removeClass('open');
+  next_bg.find('.person_list').fadeIn(210);
+  next_bg.find('.wallet_box').removeClass('hide');
 
 }else{
-
-next_bg.find('.person_list').fadeOut(210);
-$(this).addClass('open').nextAll('.plus_bg , .add_person_box').removeClass('send').addClass('open');
+  next_bg.find('.person_list').fadeOut(210);
+  $(this).addClass('open').nextAll('.plus_bg , .add_person_box').removeClass('send').addClass('open');
+  next_bg.find('.wallet_box').addClass('hide');
 
 }
-
 
 return false;
 
 });
 
-
-
+var input_txt = '';
+var input_num = '';
 var person_name = '';
-next_bg.find('a').on('click', function() {
 
-if ($(this).hasClass('un')) {
-
-}else if ($(this).text() === 'Send') {
-
-$(this).parent('.add_person_box').removeClass('open').addClass('send').prevAll('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
-
-  next_bg.find('.success_box').delay(540).fadeIn(450);
-  next_bg.find('.success_box p').html('Your pet get 300 experience points. ');
+var text = [
+// 'Need enter something... please~',
+'Enter "MM" please~',
+'add to your account. Your <span class="pet_name">pet</span> get <span>300</span> experience points.',
+'This account does not exist or not open search.',
+'Enter "888" please~',
+];
 
 
 
-}else if ($(this).text() === 'Down') {
+$('.input_box').on('click', function() {
+  $(this).removeClass('error');
+});
 
+
+
+
+
+function check_list(){
+
+// transfer_box
+
+// add_person_box
+
+// message_box
+
+  if (next_bg.find('.add_person_box input').val() === '') {
+    next_bg.find('.input_box').addClass('error').find('input').addClass('error_color').attr('placeholder', text[0]);
+
+
+  }else if (next_bg.find('.add_person_box input').val() === 'MM') {
+
+ next_bg.find('.add_person_box').removeClass('open').addClass('send').siblings('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
+    // next_bg.find('input').val('');
+
+    next_bg.find('.message_box h3').html('Success! <p><span>'+ input_txt + '</span> ' + text[1] +'</p>');
+    next_bg.find('.message_box [class*="btn_"]').text('Continue');
+    next_bg.find('.message_box').delay(540).fadeIn(450);
+
+  }else{
+
+    next_bg.find('.add_person_box , .transfer_box').removeClass('open').siblings('.btn_plus , .plus_bg ').removeClass('open').addClass('error un');
+    next_bg.find('.message_box h3').html('Error! <p>' + text[2] +'</p>');
+    next_bg.find('.message_box [class*="btn_"]').text('Retry');
+    next_bg.find('.message_box').delay(540).fadeIn(450);
+
+  }
+}
+
+
+next_bg.find('a:not(.un)').on('click', function() {
+
+
+if ($(this).text() === 'Send') {
+
+input_txt = next_bg.find('#id_search').val();
+
+check_list();
+
+
+}else if ($(this).text() === 'Retry') {
+
+  next_bg.find('.message_box').fadeOut('210', function(){
+    next_bg.find('.add_person_box').addClass('open').siblings('.btn_plus , .plus_bg').removeClass('send error un').addClass('open');
+  });
+
+
+
+
+}else if ($(this).text() === 'Continue') {
+
+
+  // next_bg.find('.add_person_box , .transfer_box').hide(function(){
+
+  //   $(this).removeClass('open send');
+
+  // });
+
+  next_bg.find('.add_person_box , .transfer_box').removeClass('open');
   next_bg.find('.btn_plus , .plus_bg ').removeClass('success un');
-  next_bg.find('.person_list h3 , .person_list .wallet_box').css({display:''});
-  next_bg.find('.success_box').fadeOut('210', function(){
-    next_bg.find('.person_list').delay(270).fadeIn();
+
+
+
+  next_bg.find('.person_list h3').css({display:''});
+  next_bg.find('.wallet_box').removeClass('hide');
+
+  next_bg.find('.message_box').fadeOut('210', function(){
+    next_bg.find('.person_list').delay(210).fadeIn();
   });
 
 
 }else if ($(this).text() === 'Transfer') {
 
-  next_bg.find('.transfer_box , .person_list').fadeOut('180', function(){
+
+
+
+input_num = next_bg.find('#transfer_amount').val();
+
+
+
+  if (next_bg.find('input').val() === '') {
+    next_bg.find('.input_box').addClass('error').find('input').addClass('error_color').attr('placeholder', text[3]);
+
+
+  }else if (next_bg.find('input').val() === '888') {
+
+  next_bg.find('.person_list').fadeOut('180', function(){
+
+    next_bg.find('.transfer_box').removeClass('open').addClass('send');
+    next_bg.find('.btn_plus , .plus_bg ').removeClass('click open').addClass('success un');
     next_bg.find('.person_info').removeClass('open right').siblings('.person_info').fadeIn(210);
   });
 
-  next_bg.find('.btn_plus , .plus_bg ').removeClass('open').addClass('success un');
-  next_bg.find('.success_box').delay(540).fadeIn(450);
+
+  next_bg.find('.message_box').delay(540).fadeIn(450);
+
+  next_bg.find('.message_box h3').html('Success!<p>You success transfer <span>'+ input_num +'</span> to <span>'+ person_name +'</span>.</p><p>Your <span>pet</span> get <span>'+ input_num +'</span> experience points.</p>');
 
 
-  next_bg.find('.success_box p').html('You success transfer 3,000 to '+ person_name +'. <br> Your pet get 3,000 experience points. ');
+}
+
 
 
 }else if ($(this).text() === 'Back') {
 
-  next_bg.find('.person_info , .transfer_box , .person_list h3 , .person_list .wallet_box').css({display:''}).removeClass('open right');
+  next_bg.find('.add_person_box , .transfer_box , .btn_plus , .plus_bg').removeClass('open click');
+  next_bg.find('.person_info').removeClass('open').siblings('.person_info').fadeIn(210);
+
+  next_bg.find('.person_list h3').css({display:''});
+  next_bg.find('.wallet_box').removeClass('hide');
 
 
 
@@ -1005,24 +1294,12 @@ $(this).parent('.add_person_box').removeClass('open').addClass('send').prevAll('
 }else if ($(this).hasClass('person_info')) {
   person_name = $(this).find('.name').text();
 
-  if ($(this).hasClass('open')) {
-    $(this).removeClass('open right').siblings('.person_info').fadeIn(210);
 
-  }else{
-
-    $(this).addClass('open right').siblings('.person_info , h3 , .wallet_box').css({display:'none'});
-      // $(this).addClass('right open');
-      // next_bg.find('.person_info').addClass('right');
-      next_bg.find('.transfer_box').show();
-
-
-  }
-
-
-
-
-
-
+    $(this).addClass('open un').siblings('.person_info , h3').css({display:'none'});
+    next_bg.find('.wallet_box').addClass('hide');   
+     
+    next_bg.find('.btn_plus , .plus_bg').removeClass('send open').addClass('click');
+    next_bg.find('.transfer_box').removeClass('send').addClass('open');
 
 }
 
@@ -1146,9 +1423,386 @@ Style Guide
 
 
 
+
+
 <div class="mobile_size_iphone6">
 
-<div class="m_l_subtitle">Switch Button</div>
+  <div class="m_l_subtitle">Transfer money
+    <p>Step One <br>
+Select one person photo click.
+    </p>
+  </div>
+
+
+
+
+
+<div class="transfer_money">
+
+<a class="btn_plus un" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg" >&nbsp;</div>
+
+<div class="person_list un">
+<h3>Who do you want to transfer money to?
+  <p>Select person transfer money.</p>
+</h3>
+
+
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+<a class="person_info un" href="#">
+  <span class="photo"></span>
+  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
+</a>
+
+<div class="wallet_box">
+  <div>
+    <h6>Wallet</h6>
+    <div class="wallet_val">888,888,888.00</div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">&nbsp;
+    <p>Step Two<br>
+      Input transfer amount.<br>Click "Transfe" button.</p>
+  </div>
+
+
+
+<div class="transfer_money">
+
+<a class="btn_plus click un" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg click" >&nbsp;</div>
+
+
+
+<div class="person_list un">
+<a class="person_info open un" href="#"><span class="photo"></span><span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span></a>
+
+</div>
+
+
+<div class="transfer_box open">
+
+<h3>How much money will you transfer?</h3>
+
+  <div class="input_box">
+    <label for="transfer_amount">Transfer Amount</label>
+    <input id="transfer_amount" type="text" placeholder="Input number">
+  </div>
+
+<a class="btn_blue un" href="#">Transfer</a>
+<a class="btn_yellow un" href="#">Back</a>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">&nbsp;
+    <p>Step Three<br>Popup success info.<br>Click "Continue" button continue. </p>
+  </div>
+
+<div class="transfer_money">
+
+<a class="btn_plus success un" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg success">&nbsp;</div>
+
+<!--  -->
+<div class="message_box" style="display: block;">
+  <h3>Success!
+
+<p>You success transfer <span>888</span> to <span>Mountain</span>.</p><p>Your <span>pet</span> get <span>888</span> experience points.</p>
+
+  </h3>
+  <a class="btn_blue un" href="#">Continue</a>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">Add new person
+    <p>Step One<br>Click "+" plus button.</p>
+  </div>
+
+
+
+
+<div class="transfer_money">
+<a class="btn_plus" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg" >&nbsp;</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">&nbsp;
+    <p>Step Two<br>
+Input transfer person account or phone number.
+    </p>
+  </div>
+
+
+
+<div class="transfer_money">
+<a class="btn_plus open" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg open" >&nbsp;</div>
+
+
+
+<div class="add_person_box open">
+  <h3>Add new person</h3>
+
+  <div class="input_box">
+    <label for="id_search">ID Search</label>
+    <input id="id_search" type="text" placeholder="Input account or phone number">
+  </div>
+
+  <a class=" btn_blue" href="#">Send</a>
+</div>
+
+
+
+<div class="message_box">
+
+  <h3>
+
+  </h3>
+
+  <a class="btn_gray" href="#">Retry</a>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">&nbsp;
+    <p>Step Three<br>
+      Popup success info.<br>
+Click "Continue" button continue.</p>
+  </div>
+
+
+
+
+<div class="transfer_money">
+<a class="btn_plus success un" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg success" >&nbsp;</div>
+
+<!--  -->
+<div class="message_box" style="display: block;">
+  <h3>Success!
+    <p><span>MM</span> add to your account. Your <span>pet</span> get <span>300</span> experience points.</p>
+  </h3>
+  <a class="btn_blue un" href="#">Continue</a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">&nbsp;
+    <p>Error Message</p>
+  </div>
+
+
+  <div class="transfer_money">
+  <a class="btn_plus error un" href="#"><span class="icon">&nbsp;</span></a>
+  <div class="plus_bg error" >&nbsp;</div>
+
+  <!--  -->
+  <div class="message_box" style="display: block;">
+    <h3>Error!
+      <p>This account does not exist or not open search.</p>
+
+    </h3>
+    <a class="btn_gray un" href="#">Retry</a>
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="mobile_size_iphone6 loney_star">
+
+  <div class="m_l_subtitle">Transfer money function test</div>
+
+<div class="transfer_money">
+
+<a class="btn_plus" href="#"><span class="icon">&nbsp;</span></a>
+<div class="plus_bg">&nbsp;</div>
+
+
+<!--  -->
+<div class="person_list">
+
+<h3>Who do you want to transfer money to?
+  <p>Select person transfer money.</p>
+</h3>
+
+
+<div class="wallet_box">
+  <div>
+    <h6>Wallet</h6>
+    <div class="wallet_val">888,888,888.00</div>
+  </div>
+</div>
+</div>
+
+
+
+<!--  -->
+<div class="transfer_box">
+
+<h3>How much money will you transfer?</h3>
+
+  <div class="input_box">
+    <label for="transfer_amount">Transfer Amount</label>
+    <input id="transfer_amount" type="text" placeholder="Input number">
+  </div>
+
+<a class="btn_blue" href="#">Transfer</a>
+<a class="btn_yellow" href="#">Back</a>
+</div>
+
+
+<!--  -->
+<div class="add_person_box">
+  <h3>Add new person</h3>
+
+  <div class="input_box">
+    <label for="id_search">ID Search</label>
+    <input id="id_search" type="text" placeholder="Input ID or phone number.">
+  </div>
+
+  <a class="btn_blue" href="#">Send</a>
+</div>
+
+
+
+
+<!-- <div class="add_person_box open">
+  <h3>Add new person</h3>
+
+  <div class="input_box">
+    <label for="id_search">ID Search</label>
+    <input id="id_search" type="text" placeholder="Input ID or phone number">
+  </div>
+
+  <a class="btn_blue" href="#">Send</a>
+</div>
+ -->
+
+
+<!--  -->
+<div class="message_box">
+  <h3>Success!
+    <p>Your pet get 300 experience points.</p>
+  </h3>
+  <a class="btn_blue" href="#">Continue</a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+
+  <div class="m_l_subtitle">Button style</div>
+  
+<div class="m_s_subtitle">Blue</div>
+    <a class="btn_blue" href="#">btn blue</a>
+    <div class="m_s_subtitle">Yellow</div>
+    <a class="btn_yellow" href="#">btn yellow</a>
+    <div class="m_s_subtitle">Gray</div>
+    <a class="btn_gray" href="#">btn gray</a>
+
+</div>
+
+
+
+<div class="mobile_size_iphone6">
+
+<div class="m_l_subtitle">Switch button</div>
 
 <div class="switch">
   <div class="text_L">Dollar</div>
@@ -1164,7 +1818,7 @@ Style Guide
 
 
 <div class="mobile_size_iphone6">
-<div class="m_l_subtitle">Switch Selection
+<div class="m_l_subtitle">Switch selection
 
 <a class="c_rotate" href="#">Change rotate deg</a> 
 </div>
