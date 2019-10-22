@@ -3,7 +3,12 @@
 // open_close
 
 
-$(function() {
+// $(function() {
+
+
+
+$(window).on('load', function() {
+
 
 $('body').prepend('<header class="m_HF v2"></header>');
 
