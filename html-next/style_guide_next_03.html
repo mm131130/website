@@ -443,6 +443,8 @@ message_box
 .person_info .photo{
   display: block;
 
+  overflow: hidden;
+
   width: 100%; 
   width: 90px;
   height: 90px;
@@ -476,27 +478,39 @@ message_box
 .person_info .name{
     display: block;
 
-    font-size: 18px;
-    line-height: 18px;
-    font-family: roboto_Medium;
+    font-size: 14px;
+    line-height: 16px;
+    /* font-family: roboto_Medium; */
     color: #243eba;
 
-    /* text-transform: uppercase; */
-    /* padding: 18px 0 9px 18px; */
-    /* padding: 9px 0 0 0; */
+    letter-spacing: 0;
+
+    text-transform: uppercase;
+
+    padding-top: 9px;
 }
+
+.person_info .person_name span{
+
+  line-height: 14px;
+
+    padding-top: 6px;
+}
+
+
+
 
 .person_info.open{
   position: absolute;
   top: 25%;
-
-
   text-align: center;
-
   -webkit-transform: translateY(-50%);  
   -ms-transform: translateY(-50%);  
   transform: translateY(-50%);
 }
+
+
+
 
 .person_info.open .photo{
   display: inline-block;
@@ -508,7 +522,14 @@ message_box
 
 
 
+.person_info.open .name{
+  font-size: 18px;
+  line-height: 18px;
+    padding-top: 0;
 
+
+
+}
 
 .person_info.open,
 .person_info.right{
@@ -525,11 +546,9 @@ message_box
 
 .person_info.open span{
     text-align: right;
-
 }
 
 .person_info.open .person_name span{
-
     padding-right: 18px;
 }
 
@@ -1002,18 +1021,43 @@ h3{
  */
 
 
+
+.btn_text,
 .btn_blue,
 .btn_yellow,
 .btn_gray{
   font-size: 16px;
   line-height: 18px;
-
   text-align: center;
   padding:14px 0; 
-
   border-radius: 300px;
 }
 
+
+.btn_text{
+
+  color: #314fc6;
+  padding:16px 0; 
+  border-radius: 0;
+}
+.btn_text:hover{
+
+  color: #000;
+}
+
+
+.box_shadow_s1{
+    -webkit-box-shadow: 0 2px 6px 2px rgba(163, 163, 163,0.63);
+    -moz-box-shadow: 0 2px 6px 2px rgba(163, 163, 163,0.63);
+    box-shadow: 0 2px 6px 2px rgba(163, 163, 163,0.63);
+}
+
+
+.box_shadow_s1:hover{
+    -webkit-box-shadow: 0 1px 3px 0 rgba(163, 163, 163,0.45) inset;
+    -moz-box-shadow: 0 1px 3px 0 rgba(163, 163, 163,0.45) inset;
+    box-shadow: 0 1px 3px 0 rgba(163, 163, 163,0.45) inset;
+}
 
 
 .btn_blue{
@@ -1105,9 +1149,7 @@ a.btn_blue:hover{
 .btn_yellow{
   color:#243eba;
   background-color: #f7cf18;
-
   border: 2px #f7cf18 solid;
-
 }
 .btn_yellow.status_hover,
 .btn_yellow.status_focus,
@@ -1259,6 +1301,100 @@ a.btn_gray:hover{
 }
 
 
+
+
+
+.balls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  padding: 0;
+  height: 50px;
+}
+
+
+
+
+.balls div {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  -webkit-transform: translateY(-100%);
+
+      -ms-transform: translateY(-100%);
+
+          transform: translateY(-100%);
+  -webkit-animation: wave 0.5s ease-in-out alternate infinite;
+          animation: wave 0.5s ease-in-out alternate infinite;
+
+  margin: 0 6px;
+}
+
+
+.btn_yellow.balls div {
+  background-color:#243eba;
+}
+.btn_blue.balls div {
+  background-color:#ffe610;
+}
+
+
+.balls div:nth-of-type(1) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.balls div:nth-of-type(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.balls div:nth-of-type(3) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+
+@keyframes wave {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+
 </style>
 
 <script src="../jq/jquery_3_2_1_min.js"></script>
@@ -1308,13 +1444,81 @@ if( change_num > 3 ){
 
 
 
+var name_f = [
+'Robert',
+'Chris',
+'Mark',
+'Chris',
+'Scarlett',
+'Jeremy',
+'Don',
+'Paul',
+'Brie',
+'Karen',
+'Danai',
+'Benedict',
+'Jon',
+'Bradley',
+'Gwyneth',
+'Josh',
+]
+
+var name_l = [
+'Downey',
+'Evans',
+'Ruffalo',
+'Hemsworth',
+'Johansson',
+
+'Renner',
+'Cheadle',
+'Rudd',
+'Larson',
+'Gillan',
+
+'Gurira',
+'Wong',
+'Favreau',
+'Cooper',
+'Paltrow',
+'Brolin',
+]
+
+
+var job = [
+'King',
+'Queen',
+'Rook',
+'Knight',
+'Bishops',
+'Pawns',
+
+]
+// random_num(num);
+
+var aaa_n = name_l.length;
+
+
+function random_num(num){
+  var what_face = Math.floor((Math.random() * num) );
+  return what_face;
+}
+
 
 var person_box = '';
+
 for (var i = 1 ; i <= 9 ; i++) {
 
-person_box += '<a class="person_info" href="#"><span class="photo"></span><span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span></a>';
+var first_n = random_num(aaa_n);
+var last_n = random_num(aaa_n);
+var job_n = random_num(6);
+
+person_box += '<a class="person_info" href="#"><span class="photo" style=""><img src="../img-m/image/201308-'+ i +'.jpg"></span><span class="person_name"><span class="name">'+ name_f[first_n] + ' ' + name_l[last_n] +'</span><span>'+job[job_n]+'</span></span></a>';
 
 }
+
+
+
 
 next_bg.find('.person_list:not(.un)').append(person_box);
 
@@ -1589,11 +1793,6 @@ var num_face = 12;
 // var what_face = 0;
 
 
-function random_num(num){
-  var what_face = Math.floor((Math.random() * num) );
-  return what_face;
-}
-
 
 
 
@@ -1679,49 +1878,11 @@ Select one person photo click.
 <a class="btn_plus un" href="#"><span class="icon">&nbsp;</span></a>
 <div class="plus_bg" >&nbsp;</div>
 
-<div class="person_list un">
+<div class="person_list">
 <h3>Who do you want to transfer money to?
   <p>Select person transfer money.</p>
 </h3>
 
-
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
-<a class="person_info un" href="#">
-  <span class="photo"></span>
-  <span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span>
-</a>
 
 <div class="wallet_box">
   <div>
@@ -1755,10 +1916,9 @@ Select one person photo click.
 <a class="btn_plus click un" href="#"><span class="icon">&nbsp;</span></a>
 <div class="plus_bg click" >&nbsp;</div>
 
-
-
 <div class="person_list un">
-<a class="person_info open un" href="#"><span class="photo"></span><span class="person_name"><span class="name">Mountain</span><span>Mountain</span></span></a>
+<a class="person_info open un" href="#"><span class="photo"><img src="../img-m/image/201308-10.jpg">
+</span><span class="person_name"><span class="name">Dobe</span><span>Boss</span></span></a>
 
 </div>
 
@@ -1798,7 +1958,7 @@ Select one person photo click.
 <div class="message_box" style="display: block;">
   <h3>Success!
 
-<p>You success transfer <span>888</span> to <span>Mountain</span>.</p><p>Your <span>pet</span> get <span>888</span> experience points.</p>
+<p>You success transfer <span>888</span> to <span>Dobe</span>.</p><p>Your <span>pet</span> get <span>888</span> experience points.</p>
 
   </h3>
   <a class="btn_blue un" href="#">Continue</a>
@@ -2020,17 +2180,34 @@ Click "Continue" button continue.</p>
 
 
 
-
 <div id="button" class="mobile_size_iphone6">
 
   <div class="m_l_subtitle">Button style</div>
   
+
+<div class="m_s_subtitle">Text</div>
+<a class="btn_text" href="#">Btn text</a>
+<!-- 
+<div class="m_s_subtitle">Ghost</div>
+<a class="btn_ghost" href="#">Ghost Button</a>
+
+<div class="m_s_subtitle">Raised</div>
+<a class="btn_raised" href="#">Raised Button</a>
+
+<div class="m_s_subtitle">Toggle</div>
+<a class="btn_toggle" href="#">Toggle Button</a>
+ -->
+
+
+
 <div class="m_s_subtitle">Blue</div>
-    <a class="btn_blue" href="#">btn blue</a>
+    <a class="btn_blue" href="#">Btn blue</a>
+
     <div class="m_s_subtitle">Yellow</div>
-    <a class="btn_yellow" href="#">btn yellow</a>
-    <div class="m_s_subtitle">Gray</div>
-    <a class="btn_gray" href="#">btn gray</a>
+    <a class="btn_yellow" href="#">Btn yellow</a>
+
+    <div class="m_s_subtitle">Ghost</div>
+    <a class="btn_gray" href="#">Btn ghost</a>
 
 </div>
 
@@ -2068,7 +2245,13 @@ progress -->
 <div class="btn_blue status_disable">Blue</div>
 
 <div class="m_s_subtitle">Loading</div>
-<div class="btn_blue status_loading"> •  •  • </div>
+<div class="btn_blue status_loading balls">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
 
 <div class="m_s_subtitle">Number</div>
 <a class="btn_blue" href="#">more items <span class="num_boo">88</span></a>
@@ -2098,7 +2281,14 @@ progress -->
 <div class="btn_yellow status_disable">Blue</div>
 
 <div class="m_s_subtitle">Loading</div>
-<div class="btn_yellow status_loading"> •  •  • </div>
+<div class="btn_yellow status_loading balls">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+
+</div>
 
 <div class="m_s_subtitle">Number</div>
 <a class="btn_yellow" href="#">more items <span class="num_boo">88</span></a>
