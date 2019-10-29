@@ -167,7 +167,7 @@ three_line
 /* 
 .status_normal
 .status_pressed
-.status_disabled
+.status_disable
 .status_loading 
 
 */
@@ -297,14 +297,14 @@ input ~ *[class*="btn_"]{
 
 .btn_Bisque.status_loading,
 .btn_Bisque.status_pressed,
-a.btn_Bisque:not(.status_disabled):hover{
+a.btn_Bisque:not(.status_disable):hover{
     color: #0f1329 !important;
    background-color:#f2d3c4;
 }
 
 .btn_G.status_loading,
 .btn_G.status_pressed,
-a.btn_G:not(.status_disabled):hover{
+a.btn_G:not(.status_disable):hover{
     color:#703926 !important;
     background-color:#f2d3c4;
 
@@ -312,14 +312,14 @@ a.btn_G:not(.status_disabled):hover{
 
 .btn_B.status_loading,
 .btn_B.status_pressed,
-a.btn_B:not(.status_disabled):hover{
+a.btn_B:not(.status_disable):hover{
     color:#f2d3c4 !important; 
     background-color:#1b365d;   
     }
 
 .btn_W.status_loading,  
 .btn_W.status_pressed,
-a.btn_W:not(.status_disabled):hover{ 
+a.btn_W:not(.status_disable):hover{ 
     color:#703926 !important;
     border-color:#a97962;
     background-color: #fbf3eb;
@@ -340,9 +340,9 @@ a.btn_W:not(.status_disabled):hover{
 .btn_G.status_pressed,
 .btn_B.status_pressed,
 .btn_W.status_pressed,  
-a.btn_G:not(.status_disabled):hover,
-a.btn_B:not(.status_disabled):hover,
-a.btn_W:not(.status_disabled):hover{ 
+a.btn_G:not(.status_disable):hover,
+a.btn_B:not(.status_disable):hover,
+a.btn_W:not(.status_disable):hover{ 
     -webkit-box-shadow:
     0px 0px 0px rgba(0,0,0,0);
     -moz-box-shadow:
@@ -353,10 +353,10 @@ a.btn_W:not(.status_disabled):hover{
 
 
 
-.btn_Bisque.status_disabled,
-.btn_G.status_disabled,
-.btn_B.status_disabled,
-.btn_W.status_disabled{
+.btn_Bisque.status_disable,
+.btn_G.status_disable,
+.btn_B.status_disable,
+.btn_W.status_disable{
     opacity: 0.72;
     cursor: default;
     background-color: #fff;
@@ -369,7 +369,7 @@ a.btn_W:not(.status_disabled):hover{
     border: 1px #e6e6e6 solid;
 }
 
-.btn_Bisque.status_disabled{
+.btn_Bisque.status_disable{
     border-width: 2px ;
 }
 
@@ -400,7 +400,7 @@ a.btn_W:not(.status_disabled):hover{
     padding: 15px 18px;
 } */
 
-*[class*="mobile_"] .status_disabled{
+*[class*="mobile_"] .status_disable{
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -2035,7 +2035,7 @@ input:focus{
 /* 
 .status_normal
 .status_pressed
-.status_disabled
+.status_disable
 .status_loading 
 
 */
@@ -2189,9 +2189,9 @@ a.icon_my_favorites:hover .num_boo{
 
 
 
-.status_disabled.icon_my_favorites,
-.status_disabled.icon_shopping_bag,
-.status_disabled.icon_search{
+.status_disable.icon_my_favorites,
+.status_disable.icon_shopping_bag,
+.status_disable.icon_search{
 
     /* opacity: 0.45; */
     cursor: default;
@@ -2276,9 +2276,9 @@ a.icon_my_favorites:hover .num_boo{
     background-color: #a97962;
 
 }
-.status_disabled.icon_my_favorites .num_boo,
-.status_disabled.icon_shopping_bag .num_boo,
-.status_disabled.icon_search .num_boo{
+.status_disable.icon_my_favorites .num_boo,
+.status_disable.icon_shopping_bag .num_boo,
+.status_disable.icon_search .num_boo{
 
     background-color:#c8c8c8;
 
@@ -3564,15 +3564,9 @@ right
 
 
 
-.c_btn_style{
-    line-height: 18px;
-    margin-bottom: 9px;
-    padding:45px 18px 18px 18px ;
 
-    text-align: center;
-    background-image: url(../img-if/arrow.png);
-    background-position: top center;
-}
+
+
 
 .switch{
     position: relative;
@@ -3888,3 +3882,31 @@ justify-content:  space-between  ;
 }
 
 
+
+
+
+/* 
+.c_btn_style{
+    line-height: 18px;
+    margin-bottom: 9px;
+    padding:45px 18px 18px 18px ;
+    text-align: center;
+    background-image: url(../img-if/arrow.png);
+    background-position: top center;
+}
+
+ */
+.c_btn_style {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 9px;
+    padding: 45px 18px 18px 18px;
+    text-align: center;
+    background-image: url(../img-if/arrow.png);
+    background-position: 72% 0;
+
+
+
+}

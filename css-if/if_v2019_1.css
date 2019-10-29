@@ -1789,9 +1789,9 @@ background-color:#fff;
 
 
 
+/* 20181001 */
+/* 20191026 */
 
-/* progress */
-/* 20190704 */
 
 .progress {
   position: relative;
@@ -1806,7 +1806,6 @@ background-color:#fff;
   min-width: 320px;
   margin: 27px auto 27px auto;
 }
-
 .progress:before {
   content: '';
   position: absolute;
@@ -1823,6 +1822,9 @@ background-color:#fff;
   -webkiit-transform: translate(-50% , -50%);
   -ms-transform: translate(-50% , -50%);
   transform: translate(-50% , -50%);
+
+
+
 }
 
 .progress div {
@@ -1840,15 +1842,66 @@ background-color:#fff;
   text-align: center;
 }
 
+
+.progress > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+
+}
+
+.progress div span{
+
+  font-size: 12px;
+  line-height: 18px;
+  font-family: roboto_regular;
+  color: #a39849;  
+  letter-spacing: 0.06em;
+
+  text-transform: none;
+  white-space: nowrap;
+
+
+}
+
+
+.progress div .num{
+
+}
+.progress div .txt{
+  position: absolute;
+  top: calc( 100% + 6px );
+  left: 50%;
+  -webkiit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+
+
 .progress .check{
   color: #0f1315;
   border: 2px #a18e5d solid;
   border: 2px #0f1315 solid;
+
+
+  
 }
 
 .progress .check span{
   color: #0f1315;
 }
+
 
 .progress .complete {
   position: relative;
@@ -1860,52 +1913,45 @@ background-color:#fff;
 
 }
 
+.progress .complete .num{
 
-.progress div span{
-  position: absolute;
+  color: #fff;
 
-  top: calc( 100% + 6px );
-  left: 50%;
 
-  font-size: 12px;
-  line-height: 18px;
 
-  font-family: roboto_regular;
-  color: #a39849;  
-  letter-spacing: 0.06em;
-
-  text-transform: none;
-  white-space: nowrap;
-
-  -webkiit-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
 }
 
-/* *[class*="mobile_"] .progress:not(.v4):not(.v5):not(.v6) div:nth-child(odd) span{
-   top: calc( 100% + 24px );
 
-} */
 
-*[class*="mobile_"] .progress:not(.v4):not(.v5):not(.v6) div:first-child span{
+.progress.s3 div .num,
+.progress.s4 div .num,
+.progress.s5 div .num,
+.progress.s6 div .num{
+  display: none !important;
+}
+
+
+[class*="mobile_"] .progress:not(.s4):not(.s5):not(.s6) div:first-child .txt{
   -webkiit-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
 
-*[class*="mobile_"] .progress:not(.v4):not(.v5):not(.v6) div:last-child span{
+[class*="mobile_"] .progress:not(.s4):not(.s5):not(.s6) div:last-child .txt{
   -webkiit-transform: translate(-100%, 0%);
   -ms-transform: translate(-100%, 0%);
   transform: translate(-100%, 0%);
 }
+
+
 
 @media screen and (max-width:767px) {
-.progress:not(.v4):not(.v5):not(.v6) div:first-child span{
+.progress:not(.s4):not(.s5):not(.s6) div:first-child .txt{
   -webkiit-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
-.progress:not(.v4):not(.v5):not(.v6) div:last-child span{
+.progress:not(.s4):not(.s5):not(.s6) div:last-child .txt{
   -webkiit-transform: translate(-100%, 0%);
   -ms-transform: translate(-100%, 0%);
   transform: translate(-100%, 0%);
@@ -1913,20 +1959,20 @@ background-color:#fff;
 }
 
 
-.progress.v1 div {
+.progress.s1 div {
   width: 36px;
   height: 36px;
   line-height: 32px;
 }
 
-.progress.v2 div {
+.progress.s2 div {
   width: 36px;
   height: 36px;
   border-radius: 6px;
   line-height: 32px;
 }
 
-.progress.v2 div:before {
+.progress.s2 div:before {
   content: '';
   display: block;
 
@@ -1945,42 +1991,45 @@ background-color:#fff;
   border-color: #d1c1b2 transparent;
 }
 
-.progress.v2 .check:before{
+.progress.s2 .check:before{
   border-color: #0f1315 transparent;
 }
 
-.progress.v4 div {
+.progress.s4 div {
   border-radius: 4px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.progress.v4 div span{
 
+
+.progress.s4 div .txt{
   top: calc( 50% );
   left: calc( 50% );
-
   -webkit-transform-origin:top center ;
   -ms-transform-origin:top center ;
   transform-origin:top center ;
-
   -webkit-transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
   -ms-transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
   transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
 }
 
 
-*[class*="mobile_"] .progress.v4 div:first-child span{
+
+
+
+[class*="mobile_"] .progress.s4 div:first-child .txt{
   -webkit-transform-origin:left top;
       -ms-transform-origin:left top;
           transform-origin:left top;
+
   -webkit-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
       -ms-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
           transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
 }
 
-*[class*="mobile_"] .progress.v4 div:last-child span{
+[class*="mobile_"] .progress.s4 div:last-child .txt{
   -webkit-transform-origin:right top;
       -ms-transform-origin:right top;
           transform-origin:right top;
@@ -1988,9 +2037,11 @@ background-color:#fff;
       -ms-transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
           transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
 }
+
+
 
 @media screen and (max-width:767px) {
-.progress.v4 div:first-child span{
+.progress.s4 div:first-child .txt{
   -webkit-transform-origin:left top;
       -ms-transform-origin:left top;
           transform-origin:left top;
@@ -1999,7 +2050,7 @@ background-color:#fff;
           transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
 }
 
-.progress.v4 div:last-child span{
+.progress.s4 div:last-child .txt{
   -webkit-transform-origin:right top;
       -ms-transform-origin:right top;
           transform-origin:right top;
@@ -2008,28 +2059,28 @@ background-color:#fff;
           transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
 }
 }
-.progress.v5 {
+.progress.s5 {
   margin-top: 54px;
 }
 
-.progress.v5 .check{
+.progress.s5 .check{
   border-color: #a97962;
 }
-.progress.v5 .complete {
+.progress.s5 .complete {
   border-color: #a97962;
 }
 
 
-.progress.v6 {
+.progress.s6 {
   margin-top: 54px;
 }
-.progress.v5 div span,
-.progress.v6 div span{
+.progress.s5 div span,
+.progress.s6 div span{
   display: none;
 }
 
-.progress.v5 .check span,
-.progress.v6 .check span{
+.progress.s5 .check span,
+.progress.s6 .check span{
   display: block;
 
   top: -18px;
@@ -2045,14 +2096,14 @@ background-color:#fff;
   background-color: #0f1315;
 }
 
-.progress.v5 .check span{
+.progress.s5 .check span{
   background-color: #a97962;
 }
 
 
 
-.progress.v5 .check span:before,
-.progress.v6 .check span:before{
+.progress.s5 .check span:before,
+.progress.s6 .check span:before{
   content: '';
   display: block;
 
@@ -2070,32 +2121,36 @@ border-style: solid;
 border-width: 6px 4px 0 4px;
 border-color: #0f1315 transparent;
 }
-.progress.v5 .check span:before{
+.progress.s5 .check span:before{
 border-color: #a97962 transparent;
 }
-.progress.v6 .check{
+
+
+
+
+.progress.s6 .check{
   border-color: #0f1315;
 }
-.progress.v6 .complete {
+.progress.s6 .complete {
   border-color: #0f1315;
   background-color: #0f1315;
 }
 
-.progress.v5:before,
-.progress.v6:before {
-
+.progress.s5:before,
+.progress.s6:before {
   height: 3px;
 }
-.progress.v5:after,
-.progress.v6:after {
+
+.progress.s5:after,
+.progress.s6:after {
   content: '';
   position: absolute;
 
   top: 50%;
   left: 0;
-
   z-index: 6;
-  /* width: calc( 50% ); */
+
+width: 50%;
   height: 2px;
 
   background-color: #a97962;
@@ -2104,13 +2159,27 @@ border-color: #a97962 transparent;
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-.progress.v5:after {
-  width: 50%;
-}
 
-.progress.v6:after {
-  width: 0%;
+/* .progress.s5:after{
+  width: 66.666666%;
+
+}
+.progress.s6:after {
+  width: 33.333333%;
+
+} */
+
+
+
+.progress.s6:after {
   background-color: #0f1315;
 }
+
+
+
+
+
+
+
 
 

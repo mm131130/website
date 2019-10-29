@@ -44,6 +44,8 @@
 <link media="all" rel="stylesheet" href="../css-m/m_HF.css">
 
 <link media="all" rel="stylesheet" href="../css-next/next_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-next/next_btn.css">
+
 
 
 <style>
@@ -94,15 +96,18 @@ body{
 
 .c_rotate{
 
+
   font-size: 16px;
     line-height: 18px;
     color: #000;
+
+    width: 100%;
     margin-bottom: 9px;
     padding:45px 18px 18px 18px ;
 
     text-align: center;
     background-image: url(../img-if/arrow.png);
-    background-position: top center;
+    background-position: 72% 0;
 }
 
 
@@ -1415,11 +1420,49 @@ $('.next_bg > div').each(function() {
 
   var change_num = 2;
 
+  var change_style = 1;
+var c_num=1;
+
+
   next_bg.find('.c_rotate').on('click', function() {
 
+  change_style += 1;
+
+
+
+  if ($(this).hasClass('progress_style')) {
+
+
+
+
+
+if( change_style === 1 ){
+  c_num = 1;
+}else if( change_style === 2 ){
+  c_num = 3;
+}else if( change_style === 3 ){
+  c_num = 6;
+}else if( change_style > 3 ){
+  change_style = 1;
+  c_num = 1;
+  
+}
+
+   next_bg.find('.progress').removeClass().addClass('progress , s' + c_num );
+
+
+
+
+
+
+
+}else{
   change_num += 1;
 
+
 if( change_num > 3 ){
+
+
   change_num = 1;
   next_bg.find('.slider_selection').removeClass('rotate_90 , rotate_45');
 
@@ -1434,7 +1477,7 @@ if( change_num > 3 ){
 
 }
 
-
+}
 
 
     return false;
@@ -1861,6 +1904,77 @@ Style Guide
 <p>photoshop<span>/</span>photography</p>
 </div>
 <div class="content_box next_bg">
+
+
+
+
+<div class="mobile_size_iphone6 ">
+
+
+<div class="m_l_subtitle">Progress
+  <a class="c_rotate progress_style" href="#">Change style</a> 
+</div>
+
+
+<div class="progress s1">
+  <div class="complete"><span class="num">1</span><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div class="mobile_size_iphone6 ">
+
+<!-- <div class="m_l_subtitle">Progress</div> -->
+<div class="m_l_subtitle">&nbsp;<p>Style list</p></div>
+
+<div class="m_s_subtitle">s1</div>
+<div class="progress s1">
+  <div class="complete"><span class="num">1</span><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+  
+</div>
+
+
+
+<div class="m_s_subtitle">s2</div>
+<div class="progress s3">
+  <div class="complete"><span class="num">1</span><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+  
+</div>
+
+
+
+<div class="m_s_subtitle">s3</div>
+<div class="progress s6">
+  <div class="complete"><span class="num">1</span><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+  
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
 
 
 

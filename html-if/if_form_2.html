@@ -356,16 +356,41 @@ $(window).on('load', function() {
 
 
   var change_num = 1;
+  var change_style = 1;
+
   
   $('.c_btn_style').on('click', function() {
- 
+
+
+
     change_num += 1;
+
     if (change_num > 6) {
       change_num = 1;
     }
-  var class_name = 's_' + change_num;
 
-  $(this).siblings().removeClass().attr('class', class_name).addClass('switch , right' );
+
+
+    if ($(this).hasClass('change_progress_style')) {
+
+      $(this).parents('.mobile_size_iphone6').find('.progress').removeClass().addClass('progress , s' +  change_num );
+
+    }else{
+
+
+
+  $(this).siblings().removeClass().attr('class','s_' + change_num ).addClass('switch , right' ); 
+
+
+
+    }
+ 
+
+
+
+
+
+
     return false;
   });
 
@@ -1254,57 +1279,97 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 
 
 
+
+
+
+<div class="mobile_size_iphone6 ">
+<div class="m_l_subtitle">Progress
+
+  <a class="c_btn_style change_progress_style" href="#">Change style</a> 
+
+</div>
+
+
+
+<div class="progress s1">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+
+</div>
+
+</div>
+
+
+
 <div class="mobile_size_iphone6 ">
 
-<div class="m_l_subtitle">Progress</div>
+<div class="m_l_subtitle">&nbsp;
+<p>Style list</p></div>
 
-<div class="m_s_subtitle">v1</div>
-<div class="progress v1">
-  <div class="complete">1<span>Bag</span></div>
-  <div class="check">2<span>Payment</span></div>
-  <div>3<span>Review</span></div>
-  <div>4<span>Get Mail</span></div>
-
-</div>
-
-<div class="m_s_subtitle">v2</div>
-<div class="progress v2">
-  <div class="complete">1<span>Bag</span></div>
-  <div class="check">2<span>Payment</span></div>
-  <div>3<span>Review</span></div>
-</div>
-
-
-<div class="m_s_subtitle">v3</div>
-<div class="progress v3">
-  <div class="complete"><span>Bag</span></div>
-  <div class="complete"><span>Payment</span></div>
-  <div class="check"><span>Review</span></div>
-  <div><span>Get Mail</span></div>
+<div class="m_s_subtitle">s1</div>
+<div class="progress s1">
+  <div class="check"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class=""><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+  <div><span class="num">4</span><span class="txt">Get Mail</span></div>
 
 </div>
 
-<div class="m_s_subtitle">v4</div>
-<div class="progress v4">
-  <div class="complete"><span>Bag</span></div>
-  <div class="complete"><span>Payment</span></div>
-  <div class="check"><span>Review</span></div>
-</div>
 
-<div class="m_s_subtitle">v5</div>
-<div class="progress v5">
-  <div class="complete"><span>Bag</span></div>
-  <div class="check"><span>Payment</span></div>
-  <div><span>Review</span></div>
+<div class="m_s_subtitle">s2</div>
+<div class="progress s2">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+  <div><span class="num">4</span><span class="txt">Get Mail</span></div>
+
 </div>
 
 
-<div class="m_s_subtitle">v6</div>
-<div class="progress v6">
-  <div class="check"><span>Bag</span></div>
-  <div><span>Payment</span></div>
-  <div><span>Review</span></div>
+<div class="m_s_subtitle">s3</div>
+<div class="progress s3">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="complete"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div class="check"><span class="num">3</span><span class="txt">Review</span></div>
+  <div><span class="num">4</span><span class="txt">Get Mail</span></div>
+
 </div>
+
+<div class="m_s_subtitle">s4</div>
+<div class="progress s4">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="complete"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div class="complete"><span class="num">3</span><span class="txt">Review</span></div>
+  <div class="check"><span class="num">4</span><span class="txt">Get Mail</span></div>
+
+</div>
+
+<div class="m_s_subtitle">s5</div>
+<div class="progress s5">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div class=""><span class="num">3</span><span class="txt">Review</span></div>
+
+
+</div>
+
+<div class="m_s_subtitle">s6</div>
+<div class="progress s6">
+  <div class="complete"><spna class="num">1</spna><span class="txt">Bag</span></div>
+  <div class="check"><span class="num">2</span><span class="txt">Payment</span></div>
+  <div><span class="num">3</span><span class="txt">Review</span></div>
+
+
+</div>
+
+
+
+
+
+
+
+
 
 </div>
 
@@ -1320,8 +1385,8 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="m_s_subtitle">Pressed</div>
 <div class="btn_B status_pressed">Black</div>
 
-<div class="m_s_subtitle">Disabled</div>
-<div class="btn_B status_disabled">Black</div>
+<div class="m_s_subtitle">Disable</div>
+<div class="btn_B status_disable">Black</div>
 
 <div class="m_s_subtitle">Loading</div>
 <div class="btn_B status_loading"> •  •  • </div>
@@ -1347,8 +1412,8 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="m_s_subtitle">Pressed</div>
 <div class="btn_G status_pressed">Gold</div>
 
-<div class="m_s_subtitle">Disabled</div>
-<div class="btn_G status_disabled">Gold</div>
+<div class="m_s_subtitle">Disable</div>
+<div class="btn_G status_disable">Gold</div>
 
 <div class="m_s_subtitle">Loading</div>
 <div class="btn_G status_loading"> •  •  • </div>
@@ -1372,8 +1437,8 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="m_s_subtitle">Pressed</div>
 <div class="btn_W status_pressed">White</div>
 
-<div class="m_s_subtitle">Disabled</div>
-<div class="btn_W status_disabled">White</div>
+<div class="m_s_subtitle">Disable</div>
+<div class="btn_W status_disable">White</div>
 
 <div class="m_s_subtitle">Loading</div>
 <div class="btn_W status_loading"> •  •  • </div>
@@ -1396,8 +1461,8 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="m_s_subtitle">Pressed</div>
 <div class="btn_Bisque status_pressed">White</div>
 
-<div class="m_s_subtitle">Disabled</div>
-<div class="btn_Bisque status_disabled">White</div>
+<div class="m_s_subtitle">Disable</div>
+<div class="btn_Bisque status_disable">White</div>
 
 <div class="m_s_subtitle">Loading</div>
 <div class="btn_Bisque status_loading"> •  •  • </div>
@@ -1524,8 +1589,8 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="m_s_subtitle">Pressed</div>
 <div class="icon_search status_pressed">&nbsp;</div>
 
-<div class="m_s_subtitle">Disabled</div>
-<div class="icon_search status_disabled">&nbsp;</div>
+<div class="m_s_subtitle">Disable</div>
+<div class="icon_search status_disable">&nbsp;</div>
 </div>
 
 
@@ -1761,10 +1826,10 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="icon_my_favorites status_pressed"><span class="num_boo">88</span></div>
 </div>
 
-<div class="m_s_subtitle">Disabled</div>
+<div class="m_s_subtitle">Disable</div>
 <!-- <div class="flex_space_around"> -->
-<div class="icon_my_favorites status_disabled">&nbsp;</div>
-<!-- <div class="icon_my_favorites status_disabled"><span class="num_boo">0</span></div>
+<div class="icon_my_favorites status_disable">&nbsp;</div>
+<!-- <div class="icon_my_favorites status_disable"><span class="num_boo">0</span></div>
 </div> -->
 </div>
 
@@ -1851,11 +1916,11 @@ You received this email because you are registered on IFCHIC.COM. We respect you
 <div class="icon_shopping_bag status_pressed">&nbsp;</div>
 <div class="icon_shopping_bag status_pressed"><span class="num_boo">88</span></div>
 </div>
-<div class="m_s_subtitle">Disabled</div>
+<div class="m_s_subtitle">Disable</div>
 
 <!-- <div class="flex_space_around"> -->
-<div class="icon_shopping_bag status_disabled">&nbsp;</div>
-<!-- <div class="icon_shopping_bag status_disabled"><span class="num_boo">0</span></div>
+<div class="icon_shopping_bag status_disable">&nbsp;</div>
+<!-- <div class="icon_shopping_bag status_disable"><span class="num_boo">0</span></div>
 </div> -->
 </div>
 

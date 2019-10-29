@@ -1,0 +1,408 @@
+
+
+
+
+
+/* 20181001 */
+/* 20191026 */
+
+
+.progress {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 54%;
+  min-width: 320px;
+  margin: 27px auto 27px auto;
+}
+.progress:before {
+  content: '';
+  position: absolute;
+
+  z-index: 3;
+
+  top: 50%;
+  left: 50%;
+  width: calc( 100% - 24px );
+  height: 2px;
+
+  background-color: #d1c1b2;
+  background-color: #a3a3a3;
+
+  -webkiit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+
+
+
+}
+
+.progress div {
+  display: block;
+  position: relative;
+  z-index: 9;
+  width: 16px;
+  height: 16px;
+  background-color: #fef3f1;
+  background-color: #f6f6f4;
+  border: 2px #d1c1b2 solid;
+  border: 2px #a3a3a3 solid;
+
+  /* a3a3a3 */
+  /* border: 2px #ffe610 solid; */
+
+
+
+  border-radius: 300px;
+  font-size: 14px;
+  color: #a97962;
+  text-align: center;
+}
+
+
+.progress > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+
+}
+
+.progress div span{
+
+  font-size: 12px;
+  line-height: 18px;
+  font-family: roboto_regular;
+  color: #a39849;  
+
+  color: #a3a3a3;
+  letter-spacing: 0.06em;
+
+  text-transform: none;
+  white-space: nowrap;
+
+
+}
+
+
+.progress div .num{
+  font-size: 14px;
+  color: #8e8e8e;
+
+}
+.progress div .txt{
+  position: absolute;
+  top: calc( 100% + 6px );
+  left: 50%;
+  -webkiit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+
+
+.progress .check{
+  color: #0f1315;
+  border: 2px #a18e5d solid;
+  border: 2px #0f1315 solid;
+  border: 2px #3b64db solid;
+
+}
+
+.progress .check span{
+  color: #0f1315;
+}
+
+
+.progress .complete {
+  position: relative;
+  /* border: none; */
+  background-color: #981643;
+  background-color: #0f1315;
+  background-color: #ffe610;
+  color: #fff;
+
+}
+
+.progress .complete .num{
+
+  color: #000;
+
+
+
+}
+
+
+
+.progress.s3 div .num,
+.progress.s4 div .num,
+.progress.s5 div .num,
+.progress.s6 div .num{
+  display: none !important;
+}
+
+
+[class*="mobile_"] .progress:not(.s4):not(.s5):not(.s6) div:first-child .txt{
+  -webkiit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+
+[class*="mobile_"] .progress:not(.s4):not(.s5):not(.s6) div:last-child .txt{
+  -webkiit-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
+}
+
+
+
+@media screen and (max-width:767px) {
+.progress:not(.s4):not(.s5):not(.s6) div:first-child .txt{
+  -webkiit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+.progress:not(.s4):not(.s5):not(.s6) div:last-child .txt{
+  -webkiit-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
+}
+}
+
+
+.progress.s1 div {
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+}
+
+.progress.s2 div {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  line-height: 32px;
+}
+
+.progress.s2 div:before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top:100% ;
+  left: 50%;
+
+  z-index: -1;
+
+  -webkit-transform: translate(-50%, 2px);
+  -ms-transform: translate(-50%, 2px);
+  transform: translate(-50%, 2px);
+
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #a3a3a3 transparent;
+}
+
+.progress.s2 .check:before{
+  border-color: #243eba transparent;
+}
+
+.progress.s4 div {
+  border-radius: 4px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.progress.s4 div .txt{
+  top: calc( 50% );
+  left: calc( 50% );
+  -webkit-transform-origin:top center ;
+  -ms-transform-origin:top center ;
+  transform-origin:top center ;
+  -webkit-transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
+  -ms-transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
+  transform: rotate( 0deg) translate( calc( -50% + 9px  ), 9px) rotate(-45deg);
+}
+
+
+
+
+
+[class*="mobile_"] .progress.s4 div:first-child .txt{
+  -webkit-transform-origin:left top;
+      -ms-transform-origin:left top;
+          transform-origin:left top;
+
+  -webkit-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+      -ms-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+          transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+}
+
+[class*="mobile_"] .progress.s4 div:last-child .txt{
+  -webkit-transform-origin:right top;
+      -ms-transform-origin:right top;
+          transform-origin:right top;
+  -webkit-transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+      -ms-transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+          transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+}
+
+
+
+@media screen and (max-width:767px) {
+.progress.s4 div:first-child .txt{
+  -webkit-transform-origin:left top;
+      -ms-transform-origin:left top;
+          transform-origin:left top;
+  -webkit-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+      -ms-transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+          transform: rotate( 0deg) translate(9px , 9px) rotate(-45deg);
+}
+
+.progress.s4 div:last-child .txt{
+  -webkit-transform-origin:right top;
+      -ms-transform-origin:right top;
+          transform-origin:right top;
+  -webkit-transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+      -ms-transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+          transform: rotate( 0deg) translate( calc( -100% + 9px  ) ,9px) rotate(-45deg);
+}
+}
+.progress.s5 {
+  margin-top: 54px;
+}
+
+.progress.s5 .check{
+  border-color: #a97962;
+}
+.progress.s5 .complete {
+  border-color: #a97962;
+}
+
+
+.progress.s6 {
+  margin-top: 54px;
+}
+.progress.s5 div span,
+.progress.s6 div span{
+  display: none;
+}
+
+.progress.s5 .check .txt,
+.progress.s6 .check .txt{
+  display: block;
+
+  top: -18px;
+  color: #fff;
+
+  padding:9px 18px;
+
+  -webkiit-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+
+  background-color: #fff;
+  background-color: #3b64db;
+}
+
+.progress.s5 .check .txt{
+  background-color: #f7cf18;
+}
+
+
+
+.progress.s5 .check span:before,
+.progress.s6 .check span:before{
+  content: '';
+  display: block;
+
+  position: absolute;
+top:100% ;
+left: 50%;
+
+z-index: -1;
+
+-webkit-transform: translate(-50%, 1px);
+-ms-transform: translate(-50%, 1px);
+transform: translate(-50%, 1px);
+
+border-style: solid;
+border-width: 6px 4px 0 4px;
+border-color: #243eba transparent;
+}
+
+
+.progress.s5 .check span:before{
+border-color: #edc238 transparent;
+}
+
+
+
+.progress.s5 .check{
+  border-color: #f7cf18;
+}
+.progress.s5 .complete {
+  border-color: #f7cf18;
+  background-color: #edc238;
+}
+
+
+
+.progress.s6 .check{
+  border-color: #3b64db;
+}
+.progress.s6 .complete {
+  border-color: #3b64db;
+  background-color: #243eba;
+}
+
+/* .progress.s5:before,
+.progress.s6:before {
+  height: 3px;
+}
+ */
+.progress.s5:after,
+.progress.s6:after {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  z-index: 6;
+
+  width: 50%;
+  height: 2px;
+
+  background-color: #f7cf18;
+
+  -webkiit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+
+.progress.s6:after {
+
+  background-color: #0f1315;
+  background-color: #3b64db;
+
+
+
+}
+
