@@ -566,9 +566,7 @@ transition: all 0.6s;
 
 .cloud_img.column{
 	overflow: visible;
-
 	width: 100%;
-/* 	max-width: 1200px; */
 	height: auto;
 }
 
@@ -720,10 +718,14 @@ background-position-y:-145px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+
+
 	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-	-ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+        flex-direction: row;
+
+
  	-ms-flex-wrap: wrap;
  	    flex-wrap: wrap;
  	-webkit-box-pack:  center;
@@ -731,6 +733,8 @@ background-position-y:-145px;
 	justify-content:  center;
 	margin-left: 0 !important;
 }
+
+
 .column .page{
 	overflow: visible;	
 	display: block;
@@ -792,10 +796,10 @@ background-position-y:-145px;
 
 $(function() {
 
-
+var hm_image = 262;
 var page_box = '';
 
-for( var page = 1 ; page <= 232 ; page++ ){
+for( var page = 1 ; page <= hm_image ; page++ ){
 var p_num = page;
 
 if(page >= 1 && page <= 9){
@@ -914,6 +918,8 @@ $('.row_or_column > a').on('click', function() {
 <div class="cloud_img">
 
 <div class="m_page_name dark_night">
+
+<span class="tag">Mountain</span>
 corporate image
 <p>html<span>/</span>css<span>/</span>rwd</p>
 </div>
