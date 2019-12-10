@@ -81,9 +81,9 @@
 }
 
 .logo-m-a.w_180.black:hover,
-.logo-m-b.w_180.black:hover,
+a.logo-m-b.w_180.black:hover,
 .logo-m-a.w_180:hover,
-.logo-m-b.w_180:hover{
+a.logo-m-b.w_180:hover{
   background-position-y: -360px;
 }
 
@@ -116,11 +116,11 @@
 
 
 .logo-m-a:hover,
-.logo-m-b:hover,
+a.logo-m-b:hover,
 .logo-m-c:hover,
 .logo-m-d:hover,
 .logo-m-a.black:hover,
-.logo-m-b.black:hover,
+a.logo-m-b.black:hover,
 .logo-m-c.black:hover,
 .logo-m-d.black:hover{
     background-position-y: -144px;
@@ -343,17 +343,23 @@ h4 p{
   font-size: 16px;
   color: inherit;
   font-family: roboto_light;
+
+  padding-left:18px;
+  padding-right:18px;
+
 }
 
+.m_l_subtitle p span{
+  font-family: roboto_Regular;
+  padding-bottom: 9px;
+}
 
 .m_m_subtitle + .m_m_subtitle{
   font-family: roboto_thin;
-
 }
 .m_l_subtitle + h3{
   font-family: roboto_light;
 }
-
 h4 + h4{
   font-family: roboto_Regular;
 }
@@ -387,6 +393,10 @@ h6{
     font-family: roboto_Regular;
     color: #0f1329;
     text-transform: uppercase;
+
+
+    word-spacing: 0.27em;
+    letter-spacing: 0.03em;
 
     width: 100%;
     padding: 18px 18px 9px 18px;
@@ -513,47 +523,6 @@ li{
 .page{
 
 }
-
-
-
-/* home page */
-/* slide_show */
-
-
-
-/* hide 20190904 */
-
-/* .slide_show{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100vh;
-    background-color:#fff;
-    overflow: hidden;
-    }
-.demo_box .slide_show{
-    height: 100%;
-    }
-.page_box{
-    display: block;
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-    -webkit-transition: all 0.36s ease-in-out;
-    -o-transition: all 0.36s ease-in-out;
-    transition: all 0.36s ease-in-out;    
-    }
-.page_box > *{
-    display:inline-block;
-    white-space: normal;
-    }
-.page{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    } */
-
 
 
 
@@ -1302,20 +1271,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* content_menu */
 
 .rwd_size_box{
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
   /* padding-bottom: 15px; */
   position: relative;
+/*   
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0); */
 }
 .rwd_size_box p{
 /*   float: left;
   display: inline-block;
   line-height: 18px;
   padding:36px 0; */
+
+
 
   margin-bottom: -27px;
   opacity: 0.54;
@@ -1327,13 +1299,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 .rwd_size_box a{
+  display: inline-block;
   position: relative;
   z-index: 1;
   width: 50px;
-  height: 90px;
+  height: 56px;
   border-radius: 4px;
 
-  float: left;
+  /* float: left; */
 }
 .rwd_size_box a,
 .rwd_size_box a > span{
