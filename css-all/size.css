@@ -674,8 +674,8 @@ display: flex;
 
     min-height: 668px;
     height:auto;
-    margin-left:calc( ( 30% - 375px  ) / 2) ;
-    margin-right:calc( ( 30% - 375px  ) / 2) ;
+    margin-left:calc( ( 30% - 375px ) / 2) ;
+    margin-right:calc( ( 30% - 375px ) / 2) ;
 }
 
 .rwd_demo.mobile_size_iphone5 > div,
@@ -685,17 +685,23 @@ display: flex;
 
     min-height: 568px;
     height: 100%;
-    margin-left:calc( ( 30% - 320px  ) / 2) ;
-    margin-right:calc( ( 30% - 320px  ) / 2) ;
+    margin-left:calc( ( 30% - 320px ) / 2) ;
+    margin-right:calc( ( 30% - 320px ) / 2) ;
+}
+
+.rwd_demo[class*="mobile_size_"] div[class*="product_"], 
+.rwd_demo[class*="mobile_size_"] .open_list,
+.rwd_demo.mobile_size_iphone6 > div,
+.rwd_demo.mobile_size_iphone5 > div{
+    height: 100% ;
 }
 
 
-[class*="mobile_size_"] div[class*="product_"], 
-[class*="mobile_size_"] .open_list,
-.mobile_size_iphone6 > div,
-.mobile_size_iphone5 > div{
-    height: 100% !important;
-}
+
+
+
+
+
 
 .rwd_demo[class*="ipad_"],
 .rwd_demo[class*="mobile_"]{
