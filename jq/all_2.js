@@ -825,34 +825,55 @@ $('.slide_show:not(.products_box)').each(function() {
   var ts_slide_show = $(this);
   var build_dot_btn = '';
   var build_img_btn = '';
+  var build_img_btn_2 = '';
+  // products list page slide show
+  var build_img_btn_3 = '';
+
   var now_tag = 0;
   var hmp = $(this).find('.page_box > .page').length;
   var img_url = [];
   var img_url_2 = [];  
 
- // var build_img_btn_2 = '';
+
 
 
   $(this).find('.page_box > .page').each(function(i) {
       img_url.push($(this).attr('date-icon-src'));
+
+      img_url_2.push($(this).find('img').attr('src'));
+
       build_dot_btn += '<a href="#">&nbsp;</a>';
+
       build_img_btn += '<a href="#"><span class="img_box"><img src=" '+ img_url[i] +' "></span></a>';
+
+      build_img_btn_2 += '<a href="#"><span class="img_box"><img src=" '+ img_url_2[i] +' "></span></a>';
+
+      build_img_btn_3 += '<a href="#"><span class="">$nbsp;</span></a>';
+
   });
-             
+  
+
       $(this).find('.dot_box').html(build_dot_btn);
       $(this).find('.dot_box.icon').html(build_img_btn);
-      // $(this).find('.page_num.v4').append('<div>'+ hmp +'</div>').prepend('<div>'+ (now_tag + 1) +'</div>');
+      $(this).find('.dot_box.icon._v4').html(build_img_btn_2);
+      $(this).find('.dot_box.icon._v6').html(build_img_btn_3);
+
       $(this).find('.page_num.v4 .total_page_num').text(hmp);
 
       function slide_LR(i){
           now_tag = i;
 
           ts_slide_show.find('.page_box').stop(true).css({ marginLeft:- 100 * i + '%' });
+          ts_slide_show.siblings('.products_list').find('.page_box').stop(true).css({ marginLeft:- 100 * i + '%' });
+
+
           ts_slide_show.find('.page_num .buoy').css({ width:'calc(' + (100 / hmp) * ( now_tag + 1) + '% - 4px)' });
           ts_slide_show.find('.now_page_num').text(now_tag + 1);
 
         change_style();
       }
+
+
 
       function change_style(){
 
@@ -874,6 +895,27 @@ $('.slide_show:not(.products_box)').each(function() {
 
             ts_slide_show.find('.dot_box a').eq(now_tag).addClass('click_now').siblings().removeClass('click_now');
       }
+
+
+
+
+      $(this).find('.dot_box a').on('click', function() {
+
+
+
+            slide_LR( now_tag = $(this).index() );
+
+
+        
+
+            return false;
+
+
+
+      });
+
+
+
 
       $(this).find('.dot_box a').on('click', function() {
             slide_LR(now_tag = $(this).index());
@@ -943,22 +985,23 @@ if(win_W < 767) {
 
 
 
-
-
 $(window).resize( function() {
   var win_W = $(window).width();
 
-  if (win_W === 1024 ) {
+  if( win_W >= 1025 ) {
+    $('.rwd_demo').removeClass().addClass('rwd_demo w_1400');
+    $('.rwd_size_box .w-1400').addClass('is_you').siblings().removeClass('is_you');
+
+  }else if( win_W === 1024 ) { 
     $('.rwd_demo').removeClass().addClass('rwd_demo ipad_w');
     $('.rwd_size_box .w-ipad_w').addClass('is_you').siblings().removeClass('is_you');
 
-  }else if(win_W <= 1023 && win_W >= 768 ) {
+  }else if( win_W <= 1023 && win_W >= 768 ) {
     $('.rwd_demo').removeClass().addClass('rwd_demo ipad_h');
     $('.rwd_size_box .w-ipad_h').addClass('is_you').siblings().removeClass('is_you');
 
-  }else if(win_W < 767) {
+  }else if( win_W < 767 ) {
     $('.rwd_demo').removeClass().addClass('rwd_demo mobile_size_iphone5');
-    // $('.rwd_size_box .w-ipad_h').addClass('is_you').siblings().removeClass('is_you');
   }
 
 });
