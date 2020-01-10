@@ -32,12 +32,21 @@
 .ipad_h .slide_show{
     height:1024px;
 }
+
+/* .mobile_size_iphone7 :not([class*="product_"]):not(.open_list) .slide_show{
+    height: 736px;
+} */
+
+
 .mobile_size_iphone7 :not([class*="product_"]):not(.open_list) .slide_show{
     height: 736px;
 }
+
 .mobile_size_iphone6 .slide_show{
+    height: auto;
 }
 .mobile_size_iphone5 .slide_show{
+    height: auto;
 }
 
 [class*="mobile_size_"] .open_list .page_box, 
@@ -45,6 +54,10 @@
 .mobile_size_iphone5 > :not([class*="product_"]) .page_box{
     position: static;
     white-space: normal;
+}
+
+[class*="mobile_size_"] [class*="product_"] .page_box{
+    height: 540px;
 }
 
 [class*="mobile_size_"] [class*="product_"] .page img,
@@ -184,8 +197,8 @@
     display: block;
 }
 
-:not([class*="product_"]) .page_box{
-    margin-left: 0px !important;
+div:not(div[class*="product_"]) .page_box{
+    margin-left: 0 !important;
     position: static !important;
     white-space: normal !important;
 }
@@ -260,6 +273,10 @@
 *[class*="mobile_size_"] [class*="product_"] .dot_box{
     position: static;
     transform: none;
+
+    display: block;
+
+    
 }
 
 
@@ -326,7 +343,11 @@
     padding: 18px 0 0 0;
 }
 
-}  
+}
+
+
+
+
 @media screen and (max-width:767px) {
 
 *[class*="product_"] .dot_box{
@@ -468,10 +489,12 @@
 
 
 *[class*="mobile_size_"] .product_owl_clutch .page:nth-child(3) img{
-     height: 568px;
-    -webkit-transform: translate(-50% , 27%);
-    -moz-transform: translate(-50% , 27%);   
-    transform: translate(-50% , 27%);
+     /* height: 568px; */
+    height: 540px ;
+
+    -webkit-transform: translate(-50% , 0);
+    -moz-transform: translate(-50% , 0);   
+    transform: translate(-50% , 0);
 
     -webkit-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
@@ -3460,6 +3483,11 @@ background: -moz-linear-gradient(left,
 
 /* .oprah_winfrey */
 
+
+.oprah_winfrey .page p{
+    color: #0f1329;
+} 
+
 .oprah_winfrey .page:nth-child(1) img{
   /*   left: 54%; */
 }
@@ -3584,6 +3612,14 @@ background: -moz-linear-gradient(left,
     left: 6%;
 }
 }
+
+
+/* 
+.content_menu > *:nth-child(3n + 2),
+.content_menu > *:nth-child(3n + 1){
+    display: none !important;
+} */
+
 
 
 

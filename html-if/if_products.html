@@ -76,6 +76,10 @@ body, html, div:not(.rwd_demo) .row_list{
 .row_list .dot_box{
   transition: all 0.3s ;
 }
+
+
+
+.row_list .dot_box.icon._v6,
 .row_list .dot_box.icon._v4,
 .row_list .dot_box.icon._v3,
 .row_list .dot_box.icon._v2 {
@@ -85,6 +89,14 @@ body, html, div:not(.rwd_demo) .row_list{
     -ms-transform: translateX(-49px);
     transform: translateX(-49px);
 }
+
+
+
+
+
+
+
+
 .row_list .page_num.v2{
   right: calc( 14.285714% - 30px );
   bottom: calc( 50% - 50px );
@@ -716,9 +728,11 @@ position: relative;
   font-size: 14px;
   line-height: 18px;
 }
+
+
 .filter > li{
   position: relative;
-  border-bottom: 1px #000 solid;
+  /* border-bottom: 1px #000 solid; */
 }
 .filter > li > a{
   font-size: 13px;
@@ -951,16 +965,9 @@ $('.f_switch.v2').each(function() {
 
 <div class="row_list">
 
-	
-
-
-
-
-
-
 <div class="most_btn">
-      <a class="btn_L_most" href="#">&nbsp;</a>
-    <a class="btn_R_most" href="#">&nbsp;</a>
+  <a class="btn_L_most" href="#">&nbsp;</a>
+  <a class="btn_R_most" href="#">&nbsp;</a>
 </div>
    
 <div class="dot_box icon _v4"></div>
@@ -969,8 +976,6 @@ $('.f_switch.v2').each(function() {
   <div class="now_page_num"></div>
   <div class="total_page_num"></div>
 </div>
-
-
 
 <div class="products_box">
 
@@ -988,13 +993,14 @@ $('.f_switch.v2').each(function() {
 
 </div>
 
-
- -->
-
+-->
 
 
 
-<div id="if_components" class="m_page_name dark_night">Products Page
+
+<div class="m_page_name dark_night">
+<div class="tag">IFCHIC</div>
+Products Page
 <p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p>
 </div>
 
@@ -1008,11 +1014,13 @@ $('.f_switch.v2').each(function() {
   <div class=" f_switch v1">
   Outfit view
   </div>
+
   <div class=" f_switch v2">
     <a class="row_1" href="#">Row one line</a>
     <a class="row_2" href="#">Row two line</a>
     <a class="column_4" href="#">Column view</a>
   </div>
+
   <div class=" f_switch v2">
     <a class="" herf="#">Alphabetically</a>
     <a herf="#">Just In</a>
@@ -1410,7 +1418,7 @@ outfit_view -->
     <a class="btn_R_most" href="#">&nbsp;</a>
 </div>
    
-<div class="dot_box icon _v4"></div>
+<div class="dot_box icon _v6"></div>
 
 <div class="page_num v2">
   <div class="now_page_num"></div>

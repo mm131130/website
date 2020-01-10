@@ -260,27 +260,35 @@ b{
 .rwd_demo .slide_show{
     height: 100%;
     }
+
+
+
 .page_box{
-    display: block;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    width: 100%;
-    height: 100%;
-    /* white-space: nowrap; */
-    -webkit-transition: all 0.36s ease-in-out;
-    -o-transition: all 0.36s ease-in-out;
-    transition: all 0.36s ease-in-out;    
-    }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-box-pack: center;    
+  -ms-flex-pack: center;    
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  /* white-space: nowrap; */
+  -webkit-transition: all 0.36s ease-in-out;
+  -o-transition: all 0.36s ease-in-out;
+  transition: all 0.36s ease-in-out;    
+}
 .page_box > *{
     display:inline-block;
     white-space: normal;
@@ -293,22 +301,55 @@ b{
     }
 
 
-[class*="mobile_"] .page_box,
-[class*="mobile_"] .page{
+
+
+
+.mobile_size_iphone6 .page_box,
+.mobile_size_iphone6 .page,
+.mobile_size_iphone5 .page_box,
+.mobile_size_iphone5 .page{
   height: auto;
 }
 
+
+
+
+
+/* [class*="mobile_"] .page_box,
+[class*="mobile_"] .page
+ */
+
+/*  */
+
 .products_list {
   width: calc(90%);
-  height: auto !important;
+  height: auto;
   padding-top: 18px;
   padding-bottom: 18px;
+  background: none;
 }
+
+.products_list .page_box{
+  -webkit-box-pack: center;    
+  -ms-flex-pack: center;    
+  justify-content: center;
+}
+
+
 .products_list .page{
-   /* width: 25%; */
   width: 25%;
-  height: 100%;
+  height: auto;
+  background: #fff;
   }
+
+.slide_show.products_list .page > div:not(.pics){
+  padding: 12px;
+}
+
+
+
+
+
 .products_list .pics img{
     width:100%;
     height:auto;
@@ -325,10 +366,6 @@ b{
     -webkit-transform:translateX(-50%);
     -moz-transform:translateX(-50%);
     transform:translateX(-50%);
-
-/*     -webkit-transition: width , 0.27s ease-in-out;
-    -o-transition: width , 0.27s ease-in-out;  
-    transition: width , 0.27s ease-in-out; */
     }
 .page_info{
     text-align:center;
@@ -341,12 +378,9 @@ b{
     transform:translate(-50% , -50%);
     padding:27px;
 }   
-
 .open_list .page_info p{
   text-align: left;
 }   
-
-
 .page_info .btn_more{
   margin-top: 9px;
 }
@@ -453,16 +487,15 @@ p_price
   border-top:1px #c8c8c8 solid;
   transform:translate(-50%,-50%) rotate(9deg);
   -ms-transform:translate(-50%,-50%) rotate(9deg);
--moz-transform:translate(-50%,-50%) rotate(9deg);
--webkit-transform:translate(-50%,-50%) rotate(9deg);
--o-transform:translate(-50%,-50%) rotate(9deg);
+  -moz-transform:translate(-50%,-50%) rotate(9deg);
+  -webkit-transform:translate(-50%,-50%) rotate(9deg);
+  -o-transform:translate(-50%,-50%) rotate(9deg);
 
   } 
 .p_discount{
   color:#F00 !important;
   font-family: roboto_Regular;
   font-style:italic;
-  background-image:;
   }
   
 
@@ -484,8 +517,6 @@ p_price
     z-index: 300;
     top: 50%;
     width:25%;
-
-
     text-align: center;
 }
 
@@ -511,7 +542,6 @@ p_price
     clear: both;
     font-size: 12px;
     line-height: 18px;
-
     padding: 4px 0;
 }
 
@@ -545,8 +575,8 @@ a.btn_item_name:hover {
 }
 
 .btn_more_details{
-    display: none;
-      text-transform: lowercase !important;
+  display: none;
+  text-transform: lowercase !important;
 }
 
 
@@ -568,9 +598,6 @@ a.btn_item_name:hover {
     margin-left: calc(50% - 25px);
     }   
 .double_quotes:after{
-
-    /* margin-left: calc(100% - 50px); */
-/*     float:right; */
     background-position-x:-350px;   
     }   
 .double_quotes:before{
@@ -603,15 +630,17 @@ a.btn_item_name:hover {
 .signin_or_register{
 
   color: #595a5e;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
 }
 
