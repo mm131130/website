@@ -1379,6 +1379,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   transform:translate(-50% , 50%);
 
 }
+
+.content_box .popup_event_box{
+  margin-left: calc( ( 100% - 300px ) / 2);
+  margin-right: calc( ( 100% - 300px ) / 2);
+}
+
+
 }
 
 
