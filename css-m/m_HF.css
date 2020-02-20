@@ -256,6 +256,21 @@ header .mm_nav.v1{
     /* letter-spacing: 0.036em; */
     }
 
+
+.mm_nav .bold span.info{
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 18px;
+    color:#000 !important;
+    font-family: roboto_Medium;
+
+    
+    }
+
+
+
+
 .mm_nav a:hover{
     color:#e9573f !important;
     }
