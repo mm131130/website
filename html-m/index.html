@@ -76,48 +76,36 @@ body{
     display: -ms-flexbox;
     display: flex;
 
-    flex-direction: row;
-        flex-wrap: wrap;
-align-content: center;
-  /*   -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-            align-items: center; */
+/*   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center; */
 
-
-                        align-items: center;
-    /* justify-content: space-evenly; */
-
-    justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 
 }
 
-.icon_box > *:nth-child(4n){
-    display: block;
-    clear: both;
 
-
-    }
 
 .icon_btn{
 
     text-align: center;
-    /* display: inline-block; */
-
-    /* margin:3% calc( 12.5% - 60px ) 3% calc( 12.5% - 60px ); */
-
     margin: 36px;
     position: relative;
-
-
     padding: 0 0 72px 0;
 
 
@@ -127,35 +115,31 @@ align-content: center;
 
     overflow: hidden;
 
-  
-
-    /* width: 100%; */
     width: 120px;
     height: 120px;
-
-    /* padding-top:100%; */
-    /* border: 3px #fff solid; */
 
     border-radius: 23.4375%;
 
     background-color: #fff;
 
-
+    -webkit-box-shadow: 
+    0 9px 9px rgba(0,0,0,0.18),
+    0 6px 6px rgba(0,0,0,0.36),
+    0 3px 3px rgba(0,0,0,0.54),
+    0 27px 27px rgba(0,0,0,0.09) inset,
+    0 18px 18px rgba(0,0,0,0.18) inset,
+    0 9px 9px rgba(0,0,0,0.27) inset;
 
     box-shadow: 
     0 9px 9px rgba(0,0,0,0.18),
     0 6px 6px rgba(0,0,0,0.36),
     0 3px 3px rgba(0,0,0,0.54),
-
     0 27px 27px rgba(0,0,0,0.09) inset,
     0 18px 18px rgba(0,0,0,0.18) inset,
     0 9px 9px rgba(0,0,0,0.27) inset;
 }
 
 .icon_ios:hover{
-
-
-
     box-shadow: 0 1px 1px rgba(0,0,0,0.54);
 
 }
@@ -163,15 +147,15 @@ align-content: center;
 
 .number{
 
-
-
-}
-
-.number{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
 
 
     position: absolute;
@@ -182,10 +166,9 @@ align-content: center;
     right: calc( 50% - 70px);
 
     width: 33%;
-    /* height: 33%; */
+
 
     padding-bottom: 33%;
-
 
     font-size: 18px;
     line-height: 21px;
@@ -200,21 +183,16 @@ align-content: center;
 
 .number .n{
 
-
-
     position: absolute;
-
 
     top: 50%;
     left: 50%;
 
+
+    -webkit-transform: translate(-50%, -50%) rotate(9deg);
+    -ms-transform: translate(-50%, -50%) rotate(9deg);
     transform: translate(-50%, -50%) rotate(9deg);
-
-
 }
-
-
-
 
 .icon_name{
 
@@ -230,22 +208,18 @@ align-content: center;
     color: #fff;
 
     text-transform: uppercase;
-
     text-align: center;
-
     letter-spacing: 0.18em;
 
 
-width: 100%;
-    /* padding: 30px 0 72px 0; */
+    width: 100%;
 
 
     margin-right: -0.18em;
-    /* border: 3px #fff solid; */
 
+    -webkit-transform: translate(-50% , 50%);
+    -ms-transform: translate(-50% , 50%);
     transform: translate(-50% , 50%);
-
-
 
 }
 
