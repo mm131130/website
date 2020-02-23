@@ -7,9 +7,7 @@ $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
 
     var ts_H = $(this);
 
-
-
-    if ( $('div').hasClass('prtfolio_box') ) {
+    if ( $('div').hasClass('icon_box') ) {
         
         $('.three_line').addClass('click');
         $('[class*="_nav"]').animate({left: '72px' }, 100);
