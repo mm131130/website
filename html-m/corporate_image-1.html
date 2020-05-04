@@ -820,85 +820,45 @@ background-position-y:-145px;
 
 
 .pagination a {
-	/* opacity: 0.45; */
 	font-size: 18px;
+	line-height: 50px;
 
     font-family: roboto_light;
+	color:#939498;
+    text-align: center;
 
-	    /* font-family: roboto_Regular; */
-
-
-	    color:#939498;
 	width: 50px;
-	line-height: 50px;
+
+}
+.pagination a:hover {
+	color: #fff;
+
 	/* background-color: #fff; */
 }
-
-
-.pagination a:hover {
-
-	/* opacity: 1; */
-	color: #fff;
-}
-
-
 .pagination a.click {
 	font-size: 18px;
-    /* font-family: roboto_thin; */
-	/* opacity: 1; */
-
-	    font-family: roboto_Regular;
-
-		color: #fff;
-
-
-		border-bottom: 1px #939498 solid;
+	font-family: roboto_Regular;
+	color: #fff;
+	border-bottom: 1px #939498 solid;
 }
-
-
-
-/* 
-.dot_box.hide a:nth-last-child(-n+10),
-.page_box.hide .page:nth-last-child(-n+10){
-	display: none;
-}
-
-
- */
-
-
-
-
-
-
 .add_L,
 .add_R{
-
-
     position: relative;
- 
 }
 .add_L{
     margin-left:50px;
 
 }
 .add_R{
-
     margin-right:50px;
-
 }
-
 .add_L:before,
 .add_R:before{
-	/* opacity: 0.45; */
-
     position: absolute;
+    z-index: -1;
 
     display: block;
-
     content: '...';
-
-
     width: 50px;
     height: 50px;
 
@@ -946,11 +906,11 @@ $('.cloud_img').each(function() {
 
 var cloud_img = $(this);
 
-var hmi = 446;
+var hmi = 500;
 
-var repeat_time = 30;
+var repeat_time = 18;
 
-var one_page_max = 30;
+var one_page_max = 18;
 
 var hmp = Math.ceil( hmi / one_page_max );
 
@@ -1128,9 +1088,6 @@ $(this).find('a').on('click', function() {
 
 	    
 	}
-
-
-
 
 	slide_move(0);
 
