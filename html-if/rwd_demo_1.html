@@ -1,0 +1,2350 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css-all/all.css">
+<link media="all" rel="stylesheet" href="../css-all/size.css">
+<link media="all" rel="stylesheet" href="../css-all/fonts.css">
+
+<link media="all" rel="stylesheet" href="../css-m/m_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-m/m_HF.css">
+
+<link media="all" rel="stylesheet" href="../css-if/if_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-if/if_btn.css">
+
+<link media="all" rel="stylesheet" href="../css-if/rwd_demo_2.css">
+
+<style>
+
+body{
+
+  overflow: hidden;
+
+ background-image:url(../img-m/bg_01.jpg);
+ background-repeat:repeat !important;
+ background-color: #35373c;
+}
+
+
+
+
+
+/* 
+20190829 - add
+loading function
+*/
+
+
+.loading_box{
+  position:fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:3000;
+
+
+/*   background: url('../img-m/image/bg-pan.jpg') ;
+background-size: cover;
+background-position: center center; */
+
+background-color: #fff;
+
+  opacity: 0.96;
+
+
+}
+.loading_box img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0.96;
+  width: auto;
+  height: 100%;
+
+}
+
+
+.loading_box [class*="logo-"]{
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+    -moz-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    -webkit-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 30px rgba(0,0,0,0.2),
+    -30px 90px 60px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.loading_box .loading_icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+ width: 90px;
+  height: 90px;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px red solid; */
+  /* background-color: red; */
+
+
+
+
+}
+.loading_box .loading_icon.v1{
+
+    -webkit-animation:box_rotate 1.8s infinite;
+    -moz-animation:box_rotate 1.8s infinite;    
+    animation:box_rotate 1.8s infinite;
+}
+
+
+.loading_box .loading_icon.v2{
+/* 
+    -webkit-animation:box_rotate_30 3.6s infinite;
+    -moz-animation:box_rotate_30 3.6s infinite;    
+    animation:box_rotate_30 3.6s infinite; */
+}
+
+.loading_box .loading_icon div{
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #000;
+  /* border: 1px red solid; */
+
+}
+
+
+.loading_box .loading_icon div:nth-child(1),
+.loading_box .loading_icon div:nth-child(4),
+.loading_box .loading_icon div:nth-child(7){
+
+/*     -webkit-animation: box_L 1.8s ease-in-out infinite;
+    -moz-animation: box_L 1.8s ease-in-out infinite;    
+    animation: box_L 1.8s ease-in-out infinite; */
+}
+
+
+
+.p1{
+
+  top:-30px;
+  left:-30px;
+  transform-origin: bottom right;
+}
+.p2{
+  top:-30px;
+  left:30px;
+  transform-origin: bottom center ;
+}
+.p3{
+  top:-30px;
+  left:90px;
+  transform-origin: bottom left ;
+}
+
+.p4{
+  top:30px;
+  left:-30px;
+  transform-origin: center right ;
+  /* transform: translateY(-50%); */
+}
+.p5{
+  top:30px;
+  left:30px;
+  transform-origin: center center ;
+  /* transform: translateY(-50%); */
+
+}
+.p6{
+  top:30px;
+  left:90px;
+  transform-origin: center left ;
+  /* transform: translateY(-50%); */
+
+}
+.p7{
+  transform-origin: top right;
+  top:90px;
+  left:-30px;
+}
+.p8{
+  transform-origin: top center ;
+  top:90px;
+  left:30px;
+  /* transform: translateX(-50%); */
+
+}
+.p9{
+  transform-origin: top left ;
+  top:90px;
+  left:90px;
+}
+
+
+
+
+.v2 .p1{
+
+  top:-30px;
+  left:-30px;
+  transform-origin: bottom right;
+
+
+}
+.v2 .p2{
+  top:-30px;
+  left:30px;
+  transform-origin: bottom center ;
+}
+.v2 .p3{
+  top:-30px;
+  left:90px;
+  transform-origin: bottom left ;
+}
+
+.v2 .p4{
+  top:30px;
+  left:-30px;
+  transform-origin: center right ;
+  /* transform: translateY(-50%); */
+}
+.v2 .p5{
+  top:30px;
+  left:30px;
+  transform-origin: center center ;
+  /* transform: translateY(-50%); */
+
+}
+.v2 .p6{
+  top:30px;
+  left:90px;
+  transform-origin: center left ;
+  /* transform: translateY(-50%); */
+
+}
+.v2 .p7{
+  transform-origin: top right;
+  top:90px;
+  left:-30px;
+}
+.v2 .p8{
+  transform-origin: top center ;
+  top:90px;
+  left:30px;
+  /* transform: translateX(-50%); */
+
+}
+.v2 .p9{
+  transform-origin: top left ;
+  top:90px;
+  left:90px;
+}
+
+
+.loading_box .loading_icon.v2 div{
+
+
+    -webkit-animation:box_TL 1.8s infinite;
+    -moz-animation:box_TL 1.8s infinite;    
+    animation:box_TL 1.8s infinite;
+
+}
+
+
+
+@-webkit-keyframes box_TL {
+50%{
+  opacity: 0.3;
+  top:30px;
+  left:30px;
+
+  background-color: #f2433a;
+
+  border-radius: 4px;
+
+  }
+100% {
+  opacity: 1;
+
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+}
+}
+@keyframes box_TL { 
+50%{
+  opacity: 0.3;
+  background-color: #f2433a;
+  border-radius: 4px;
+
+  top:30px;
+  left:30px;
+
+
+    width: 18px;
+  height: 18px;
+  }
+100% {
+  opacity: 1;
+
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+
+} 
+}
+
+@-webkit-keyframes box_rotate_30 {
+  100% {
+    -webkit-transform:translate(-50%, -50%) rotate(30deg);
+    -ms-transform:translate(-50%, -50%) rotate(30deg);
+    transform:translate(-50%, -50%) rotate(30deg);
+  }
+}
+@keyframes box_rotate_30 { 
+  100% {
+    -webkit-transform:translate(-50%, -50%) rotate(30deg);
+    -ms-transform:translate(-50%, -50%) rotate(30deg);
+    transform:translate(-50%, -50%) rotate(30deg);
+  } 
+}
+
+@-webkit-keyframes box_rotate {
+  50%{
+    background-color: rgba(0, 0, 0,0.1);
+    }
+  100%{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes box_rotate { 
+  50%{
+    background-color: rgba(0, 0, 0,0.1);
+  }
+  100% {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  } 
+}
+
+
+
+</style>
+
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/all_2.js"></script>
+<script>
+
+$(function() {
+
+
+  function loading(){
+// setTimeout
+// setInterval
+  setTimeout( function() {
+    $('.loading_box').fadeOut('360', function() {
+        $('body').css({ overflow: 'unset'});
+    });
+        },3000
+      );
+  }
+
+  loading();
+
+
+$('.slide_U_D').on('click', function() {
+
+if ($(this).hasClass('open')) {
+  $(this).removeClass('open');
+  $(this).next().slideUp();
+
+}else{
+  $(this).addClass('open').siblings().removeClass('open');
+  $(this).siblings(':not(.slide_U_D)').slideUp();
+  $(this).next().slideDown();
+
+}
+  return false;
+});
+
+}); // end
+
+</script>
+</head>
+<body>
+
+
+
+<div class="loading_box">
+
+
+<!--   <div class="loading_icon v1">
+    <div class="p1">&nbsp;</div>
+    <div class="p2">&nbsp;</div>
+    <div class="p3">&nbsp;</div>
+    <div class="p4">&nbsp;</div>
+    <div class="p5">&nbsp;</div>
+
+    <div class="p6">&nbsp;</div>
+    <div class="p7">&nbsp;</div>
+    <div class="p8">&nbsp;</div>
+    <div class="p9">&nbsp;</div>
+  </div>
+
+ -->
+
+  <div class="loading_icon v2">
+    <div class="p1">&nbsp;</div>
+    <div class="p2">&nbsp;</div>
+    <div class="p3">&nbsp;</div>
+    <div class="p4">&nbsp;</div>
+    <div class="p5">&nbsp;</div>
+
+    <div class="p6">&nbsp;</div>
+    <div class="p7">&nbsp;</div>
+    <div class="p8">&nbsp;</div>
+    <div class="p9">&nbsp;</div>
+  </div>
+  <!-- <a class="logo-m-b w_180 white " href="#">&nbsp;</a> -->
+<!-- <img src="../img-m/image/bg-pan.jpg"> -->
+
+</div>
+
+<a class="open_close" href="#">
+    <span class="line_A">&nbsp;</span>
+    <span class="line_B">&nbsp;</span>
+</a>
+
+<div class="content_menu"></div>
+
+<div class="control_menu">
+      <a class="c_Top" href="#"><span>T<span></a>
+      <a class="c_Prev" href="#"><span>P<span></a>
+      <div class="content_num"><span></span><span></span></div>
+      <a class="c_Next" href="#"><span>N<span></a>
+      <a class="c_Bottom" href="#"><span>B<span></a>
+</div>
+
+
+
+
+
+<div id="rwd_demo" class="m_page_name dark_night">
+<div class="tag">Select size</div>
+
+  RWD Mockup
+<!-- <p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p> -->
+
+
+
+
+<div class="rwd_size_box">
+      <!-- <p>Select screen width</p> -->
+          <!-- <div class="tag_btn">&nbsp;</div> -->
+          <a class="w-fullscreen" href="#"><span>100<span>%</span></span></a>   
+          <a class="w-1400 is_you" href="#"><span>1400<span>px</span></span></a>
+          <a class="w-ipad_w" href="#"><span>1024<span>px</span></span></a>
+          <a class="w-ipad_h" href="#"><span>768<span>px</span></span></a>
+          <a class="w-414" href="#"><span>425<span>px</span></span></a>
+          <a class="w-375" href="#"><span>375<span>px</span></span></a>
+          <a class="w-320" href="#"><span>320<span>px</span></span></a>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="content_box rwd_demo w_1400">
+
+<div date-title="New In" date-content="new_in" class="screen_size new_in">
+
+<a class="coin_icon" href="#"><img src="../img-if/coin_2.gif"></a>
+
+<div class="popup_event_box coin_event_box">
+  <a class="btn_X v1" href="#">&nbsp;</a>
+  <div class="heading">You've found an <span>ifchic coin</span></div>
+
+  <div class="coin_note"><img src="../img-if/note_003.png"></div>
+
+  <div class="signin_or_register">
+  <a class="btn_more" href="#">Sign In</a>or<a class="btn_more" href="#">Register</a>
+  </div>
+
+  <h4>Now to collect and use them on!</h4>
+  <a class="btn_more" href="html/v01/customer_care_ifchic24_Event_FAQ.html">ifchic24</a>
+
+  <div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+
+</div>
+
+
+
+
+<div class="add_coins_note">
+  <a class="btn_X v1" href="#">&nbsp;</a>
+  <h2>+$2 IFCHIC Coins!</h2>
+  <p>2 more left for the day.</p>
+</div>
+
+
+
+
+<div class="slide_show new_in">
+<!--   <a class="btn_L v4" href="#">&nbsp;</a>
+  <a class="btn_R v4" href="#">&nbsp;</a> -->
+
+  <div class="btn_LR v1">
+     <a class="l_icon v2" href="#">&nbsp;</a><a class="r_icon v2" href="#">&nbsp;</a>
+  </div>
+
+  <a class="btn_T_L show_what_is_new" href="#"><span>What's<br>New</span></a>
+  <a class="btn_T_R show_shop_now" href="#"><span>Shop<br>Now</span></a>
+
+  <div class="dot_box v1"></div>
+
+
+
+<div class="page_box">
+
+<!-- p01 -->
+
+
+
+
+<div date-text="Style" class="page">
+<img src="../img-if/second_layer/banner_01_1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Style</div>
+Midi Style</div>
+<p>Wide shoulder straps and a loose fit give this crepe dress an effortless ease – wear alone or layer over a white T-shirt.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div date-text="New In" class="page">
+
+<!-- p02 -->
+
+<img src="../img-if/second_layer/banner_01_2.jpg">
+
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">New In</div>
+New Denim</div>
+<p>The label reworks the denim jacket with this longline design. Layer over wide-legged trousers, as you would a tunic.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-text="Editor's" class="page">
+
+<!-- p03 -->
+
+<img src="../img-if/second_layer/banner_01_3.jpg">
+
+<div class="mw_450 page_info">
+  <div class="heading">
+    <div class="tag">Editor's</div>
+    Fresh Tailoring
+  </div>
+
+  <p>The blazer, remixed: this single-breasted style in crisp ivory cotton is transitional tailoring at its best.</p>
+  <a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><!-- page -->
+
+</div><!-- page_box -->
+
+</div><!-- hone_page_slide_show -->
+
+
+
+
+
+<div class="popup_box shop_now_box">
+
+<div class="slide_show products_list">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+
+<!--     <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a> -->
+
+<div class="page_box">
+
+<div class="page">
+
+<div class="pics"><img src="../img-if/products_pics/p01.jpg"></div>
+<div class="">
+    <div class="product_brand">HELMUT LANG</div>
+    <div class="product_name">Side-tie crepe dress</div>
+    <div class="p_price">$482</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p02.jpg"></div>
+<div class="">
+    <div class="product_brand">OSMAN</div>
+    <div class="product_name">Hemera tie-waist crepe dress</div>
+    <div class="p_price"><span class="o_price">$695</span><span class="p_discount">$556</span></div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p03.jpg"></div>
+<div class="">
+    <div class="product_brand">RAEY</div>
+    <div class="product_name">Side-split triangle dress</div>
+    <div class="p_price">$609</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p04.jpg"></div>
+<div class="">
+    <div class="product_brand">LEMAIRE</div>
+    <div class="product_name">Tie-waist cotton-crepe dress</div>
+    <div class="p_price">$829</div>
+</div>
+
+</div><div class="page">
+
+<div class="pics"><img src="../img-if/products_pics/p05.jpg"></div>
+<div class="">
+    <div class="product_brand">HELMUT LANG</div>
+    <div class="product_name">Long-line denim trench coat</div>
+    <div class="p_price">$421</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p06.jpg"></div>
+<div class="">
+    <div class="product_brand">EMILIA WICKSTEAD</div>
+    <div class="product_name">Florance hooded denim trench coat</div>
+    <div class="p_price">$1,534</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p07.jpg"></div>
+<div class="">
+    <div class="product_brand">M.I.H JEANS</div>
+    <div class="product_name">Raglan-sleeves denim coat</div>
+    <div class="p_price">$416</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p08.jpg"></div>
+<div class="">
+    <div class="product_brand">SEA</div>
+    <div class="product_name">Distressed denim coat</div>
+    <div class="p_price">$485</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p09.jpg"></div>
+<div class="">
+    <div class="product_brand">HELMUT LANG</div>
+    <div class="product_name">Single-breasted canvas blazer</div>
+    <div class="p_price">$539</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p10.jpg"></div>
+<div class="">
+    <div class="product_brand">BALMAIN</div>
+    <div class="product_name">Six-button double-breasted cotton blazer</div>
+    <div class="p_price">$1,329</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p11.jpg"></div>
+<div class="">
+    <div class="product_brand">BALMAIN</div>
+    <div class="product_name">Two-button collarless double-breasted blazer</div>
+    <div class="p_price">$1,779</div>
+</div>
+
+</div><div class="page">
+<div class="pics"><img src="../img-if/products_pics/p12.jpg"></div>
+<div class="">
+    <div class="product_brand">BALMAIN</div>
+    <div class="product_name">Six-button collarless cropped blazer</div>
+    <div class="p_price">$1,104</div>
+</div>
+
+</div>
+
+</div><!-- page box products_box -->
+</div><!-- slide_show -->
+</div><!-- shop_now_box -->
+
+
+
+
+
+
+<!-- what's news -->
+
+<div class="popup_box what_is_new_box">
+
+<img src="../img-if/banner/banner_tibi.jpg">
+
+<div class="mw_450 page_info">
+<a class="btn_X v1" href="#">&nbsp;</a>
+<div class="heading signature">
+<div class="tag">Designer</div>
+Amy Smilovic</div>
+<h4>Loves Wearing Blazers, Is Over Selfies</h4>
+<p>
+Fashion designer Amy Smilovic has been wearing her own creations since before she launched her women’s wear label Tibi in 1997. Today, she mixes them with pieces from Celine, Saint Laurent, and treasures found...</p>
+
+<a class="btn_B btn_more" href="#">Learn More</a>
+<!-- <a class="btn_G btn_more" href="#">Learn More</a>
+<a class="btn_W btn_more" href="#">Learn More</a>
+ -->
+
+<!-- <p class="" style="display:none !important;">
+<span> on eBay for a modern, feminine look. Here, Smilovic shares her favorite places to shop—both in New York and around the world, her go-to accessories, and her style icons.</span>
+
+With neither formal training as a designer nor experience working in fashion, then financial services marketing-executive Amy Smilovic started TIBI as an expat in Hong Kong nearly 20 years ago. Targeting the market for womenswear between high-end luxury and mass-market brands, Smilovic took her vision – a few rough design sketches – and had them made into sample pieces. With another American expat, Octavia Hyland, the pair established TIBI in 1997. A local factory produced their first designs, comprised of skirts and simple dresses, and modest sales gave Smilovic the confidence to move the business to the United States after Hyland’s departure. In September 2006, the first TIBI retail store opened in New York City. Central to the line are three major themes – clean, feminine, and relaxed – that Smilovic integrated into each subsequent collection beginning in 2014 as part of a rebranding exercise.
+</p> -->
+
+</div>
+</div>
+
+</div><!-- screen_size new in -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<!-- p01 -->
+
+
+<div date-title="Anytime Black Dresses" date-content="black_dress" class="screen_size black_dress">
+
+
+
+<a class="coin_icon" href="#"><img src="../img-if/coin_2.gif"></a>
+
+<div class="popup_event_box coin_event_box">
+  <a class="btn_X v1" href="#">&nbsp;</a>
+  <div class="heading">You've found an <span>ifchic coin</span></div>
+
+  <div class="coin_note"><img src="../img-if/note_003.png"></div>
+
+  <div class="signin_or_register">
+  <a class="btn_more" href="#">Sign In</a>or<a class="btn_more" href="#">Register</a>
+  </div>
+
+  <h4>Now to collect and use them on!</h4>
+  <a class="btn_more" href="html/v01/customer_care_ifchic24_Event_FAQ.html">ifchic24</a>
+
+  <div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+
+</div>
+
+<div class="add_coins_note">
+  <a class="btn_X v1" href="#">&nbsp;</a>
+  <h2>+$2 IFCHIC Coins!</h2>
+  <p>2 more left for the day.</p>
+</div>
+
+
+
+
+<!-- 
+<div class="popup_event_box un_padding">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+    <img class="img_center" src="../img-if/popup/pop_38_1.jpg">
+    <img class="img_top" src="../img-if/popup/pop_38_T.png">
+    <div>
+    <h3>
+    <div class="tag">Spring Sale</div>
+    Extra 30% off final sale item</h3>
+    <a class="btn_more" href="#">Shop Now</a>
+    <div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+    </div>
+</div>
+ -->
+
+
+
+
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+
+    <div class="dot_box v1"><a href="#">btn</a></div>
+
+    
+
+<div class="page_box ">
+<!-- p01 -->
+
+<div date-text="Black" class="page">
+<img src="../img-if/second_layer/black-dress-1-1.jpg">
+
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Anytime Black Dress</div>
+<p>Transcend trends with a versatile, low-maintenance black dress that goes from night to day.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-text="Tank" class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/black-dress-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Tank Dress</div>
+<p>Opt for dark hues that offer cool perspectives on favorite classics.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-text="Shirt" class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/black-dress-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Shirt Dress</div>
+<p>Lend instant elegance to your wardrobe rotation with a sharp, collared button down black dress.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-text="Midi" class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/black-dress-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Midi Dress</div>
+<p>Flattering, forgiving, and comfortable, discover casual-cool pieces that blend fashion with function.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+<!--  -->
+
+
+
+
+
+<div date-title="All You Need White" date-content="all_you_need_white" class="screen_size all_you_need_white">
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v3"><a href="#">btn</a></div>
+
+<div class="page_box">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/banner_04_1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+All You Need White</div>
+<p>Other colors come and go, but white is always in, especially when it’s warm and sunny out.</p>
+
+
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/banner_04_2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">TIBI</div>
+
+<p>
+Drape Twill Off-Shoulder Dress.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/banner_04_3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">KIRO JEANS</div>
+<p>
+Moltani Romper.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p04 -->
+
+<img src="../img-if/second_layer/banner_04_4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">REBECCA TAYLOR</div>
+<p>
+Off Shoulder Embroidery Gauze Dress.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+<div date-title="Summer Allure" date-content="summer_allure" class="screen_size summer_allure">
+
+  
+<div class="slide_show">
+
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v3"><a href="#">btn</a></div>
+
+<div class="page_box">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/banner_03_1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Summer Allure</div>
+<p>Bring back the romance with this sequence of dreamy, delectable designs for every occasion.</p>
+
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/banner_03_2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">PURE EMBRACE</div>
+<p>Accentuate and turn heads in a gently flared crochet dress.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/banner_03_3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">MONO ROMANCE</div>
+<p>Pair leather slides with monochromatic, luxe separates for an unforgettable summer statement.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p04 -->
+
+<img src="../img-if/second_layer/banner_03_4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">FRESH TAILORING</div>
+<p>The blazer, remixed: this single-breasted style in crisp ivory cotton is transitional tailoring at its best.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div date-title="Spring Refresh" date-content="spring_refresh" class="screen_size spring_refresh">
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+
+    <div class="dot_box v2"><a href="#">btn</a></div>
+
+
+<div class="page_box">
+
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/spring-love-1-1.jpg">
+
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Spring Refresh</div>
+<p>From vivid prints to clean-cut silhouettes, shed those winter blues and start fresh.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+
+<!-- p02 -->
+
+<img src="../img-if/second_layer/spring-love-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">PERFECT PEPLUM</div>
+<p>Classic peplum in timeless designs and patterns bound to freshen up your day.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+
+<!-- p03 -->
+
+<img src="../img-if/second_layer/spring-love-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">ANYTIME JUMPSUITS</div>
+<p>Stay cool, comfortable, and composed in a modern interpretation of the classic jumpsuit.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div><div class="page">
+
+<!-- p04 -->
+
+<img src="../img-if/second_layer/spring-love-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">SWEET DENIM</div>
+<p>A new, feminine take on denim through gingham ruffles and backside button details.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+</div>
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div date-title="Easy White On White" date-content="all_white" class="screen_size all_white">
+
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v1"><a href="#">btn</a></div>
+
+    
+
+<div class="page_box ">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/all-white-1-1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Easy White On White</div>
+<p>White monochrome. Four ways to wearing this season’s hottest all-white trend. Find yours now.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/all-white-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Lady in White</div>
+<p>Add a touch of femininity with delicate details.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/all-white-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">White Denim</div>
+<p>The perfect spring-to-summer jacket in pure white.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/all-white-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Classic White</div>
+<p>Never go wrong with a classic white shirt and pants.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+
+<div date-title="Party Night" date-content="party_evening" class="screen_size party_evening">
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v1"><a href="#">btn</a></div>
+
+<div class="page_box ">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/party-evening-1-1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Party Night</div>
+<p>Less is more. Forget about sequins and glitter, holiday-party dressing can be so simple yet so chic.</p>
+
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/party-evening-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Sleek Separates</div>
+<p>Opt for a considerably cooler party look with sleek separates.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+
+<img src="../img-if/second_layer/party-evening-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Timeless Classic</div>
+<p>LBD, a timeless classic that never fails to deliver both style and elegance.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+
+<div date-title="Denim At Work" date-content="denim_at_work" class="screen_size denim_at_work">
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v3"><a href="#">btn</a></div>
+
+<div class="page_box ">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/denim-at-work-1-1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Denim At Work</div>
+<p>Denim shirts, pants, skirts, and layering pieces your work wardrobe needs now.</p>
+
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/denim-at-work-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">DENIM ON DENIM</div>
+
+<p>Spruce up your work wardrobe with a covetable denim skirt and top.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+
+<img src="../img-if/second_layer/denim-at-work-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">DISTRESSED DENIM</div>
+<p>Give your work outfit some edge with a pair of tastefully tattered jeans.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div class="page">
+<!-- p04 -->
+
+
+<img src="../img-if/second_layer/denim-at-work-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">WHITE DENIM</div>
+<p>Make white denim work-worthy by adding a structured blazer and killer heels.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+
+<div date-title="70s Throwback" date-content="_70s_Throwback" class="screen_size _70s_Throwback">
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+<div class="dot_box v2"><a href="#">btn</a></div>
+<div class="page_box">
+
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/70s-1-1.jpg">
+
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+70s Throwback</div>
+<p>Fall/Winter's fashion flashback, sets the best in retro-glam silhouettes, flared jeans & peasant dresses.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div class="page">
+
+<!-- p02 -->
+
+<img src="../img-if/second_layer/70s-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Monochromatic Elegance</div>
+<p>Mono simplicity elevates your go-to work staples this season.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+
+</div><div class="page">
+
+<!-- p03 -->
+
+<img src="../img-if/second_layer/70s-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Whimsical Print</div>
+<p>Add an unapologetic touch of flare with an ultra-feminine print dress.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+
+</div><div class="page">
+
+<!-- p04 -->
+
+<img src="../img-if/second_layer/70s-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Perfect Wide Leg</div>
+<p>From flares to wide-leg pants, freshest styles make chic effortless.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+</div>
+
+
+
+
+
+
+
+<div date-title="Brave New Kolors" date-content="brave_new_kolors" class="screen_size brave_new_kolors">
+<div class="slide_show">
+
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+<div class="dot_box v1"><a href="#">btn</a></div>
+
+
+
+<div class="page_box">
+
+<div class="page">
+    <img src="../img-if/second_layer/deekeller-01.jpg"> 
+<div class="page_info mw_450 ">
+
+<div class="heading">
+<div class="tag">COVER STORY</div> 
+BRAVE NEW KOLORS</div>
+<p>Korean cultures are making waves into the global scene, from k-pop to Seoul Fashion Week. Keep an eye for talented and fearless Korean Designs from Big Park, Cres. E. Dim, Surreal But Nice, and Kye.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+    
+</div><div class="page">
+
+    <img src="../img-if/second_layer/deekeller-02.jpg">
+    <div class="page_info mw_450">
+        <div class="heading">STRAPPY HEELS</div>
+        <p>Strappy shoes add a dose of sex appeal. A harness strap provides edge, while a thin ankle strap looks sleek. Go quirky-chic and wear them with full skirts, basic tees, and novelty clutches.</p>    
+  <a class="btn_more" href="#">VIEW COLLECTION</a>
+    </div>
+    
+</div><div class="page">
+
+    <img src="../img-if/second_layer/deekeller-03.jpg"> 
+    <div class="page_info mw_450">
+        <div class="heading">AROUND THE BLOCK</div>
+        <p>A sharp pointed toe and a block heel give an architectural update to classic office pumps. For a powerful yet chic look, pair them with straight-leg pants or culottes and a graphic blouse.</p>
+     <a class="btn_more" href="#">VIEW COLLECTION</a>   
+    </div>
+    
+    
+</div><!--page-->
+</div><!--page_box-->
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div date-title="Cozy Up With Chunky Knits" date-content="chunky_knit" class="screen_size chunky_knit">
+
+<div class="slide_show">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v1"><a href="#">btn</a></div>
+
+<div class="page_box ">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/chunky-knit-1-1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Cozy up with chunky knits</div>
+<p>Every woman needs a versatile, endlessly comfortable piece for those wintry days. Find yours now.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+
+
+
+</div><div class="page">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/chunky-knit-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">On a whim</div>
+<p>Lively, bold, and full of spirit, this line up is in a class of its own.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/chunky-knit-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Primp and preen</div>
+<p>Bold and demure, sassy yet sweet, traditional knitwear takes on a modern flair.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/chunky-knit-1-4.jpg">
+<div class="mw_450 page_info">
+<div class="heading">Easygoing gets going</div>
+<p>Like an old friend, these timeless pieces endure the test of time.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+<!-- chunky_knit -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div date-title="Denim" date-content="denim_on_denim" class="screen_size denim_on_denim">
+
+<div class="slide_show">
+
+      <a class="btn_L v4" href="#">&nbsp;</a>
+      <a class="btn_R v4" href="#">&nbsp;</a>
+
+<div class="page_num v4">
+  <div class="now_page_num">1</div>
+  <span class="line v2"><span class="buoy">&nbsp;</span></span>
+  <div class="total_page_num">88</div>
+</div>
+
+
+
+
+
+<div class="dot_box icon _v2"></div>
+ 
+<div class="page_box">
+
+<!-- p01 -->
+<div date-icon-src="../img-if/second_layer/denim-on-denim-1-2_icon.jpg" class="page">
+<img src="../img-if/second_layer/denim-on-denim-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Denim on Denim</div>
+<p>Denim Is Universal And Seasonless, It Goes Beyond The Simple Jeans. Double Up You Denim With Contrasting Wash For A Stylish Chic.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div date-icon-src="../img-if/second_layer/denim-on-denim-1-1_icon.jpg" class="page">
+
+
+<!-- p02 -->
+<img src="../img-if/second_layer/denim-on-denim-1-1.jpg">
+<div class="mw_450 page_info">
+<div class="heading">A Denim Moment</div>
+<p>Team Up Your Denim Pieces For An Off-day Chic Or A Casual Friday In The Office.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-icon-src="../img-if/second_layer/denim-on-denim-1-3_icon.jpg" class="page">
+
+
+<!-- p03 -->
+<img src="../img-if/second_layer/denim-on-denim-1-3.jpg">
+<div class="mw_450 page_info double_quotes">
+<div class="modern_display_ti">
+Blue jeans are the most beautiful things since the dondola
+</div>
+<div class="who_say"> - Diana Vreeland - </div>
+
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+
+</div>
+
+
+
+
+<div date-title="Winter Essentials" date-content="winter_Essentials" class="screen_size winter_essentials ">
+<div class="slide_show">
+
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+
+<div class="dot_box icon _v1"></div>
+<div class="page_box">
+
+<!-- p01 -->
+
+<div date-icon-src="../img-if/second_layer/winter-essentials-1-1_icon.jpg" class="page">
+<img src="../img-if/second_layer/winter-essentials-1-1.jpg">
+
+
+
+<div class="mw_450 page_info">
+<div class="heading">
+<div class="tag">Cover Story</div>
+Winter Essentials</div>
+<p>Winter's equivalent of a statement necklace, luxurious fur outwear is guaranteed to be a must-have this season.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+
+</div>
+
+</div><div date-icon-src="../img-if/second_layer/winter-essentials-1-2_icon.jpg" class="page">
+
+<!-- p02 -->
+
+<img src="../img-if/second_layer/winter-essentials-1-2.jpg">
+<div class="mw_450 page_info">
+<div class="heading">A Playful Classic</div>
+<p>Blending sophistication with cool graphics, this sweater is one of the season’s most covetable knits.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+
+</div><div date-icon-src="../img-if/second_layer/winter-essentials-1-3_icon.jpg" class="page">
+
+<!-- p03 -->
+
+<img src="../img-if/second_layer/winter-essentials-1-3.jpg">
+<div class="mw_450 page_info">
+<div class="heading">A Need For Tweed</div>
+<p>Crafted with inventive silhouettes, this heritage fabric has gotten a high-fashion makeover of epic proportions.</p>
+<a class="btn_more" href="#">VIEW COLLECTION</a>
+</div>
+</div>
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+
+</div>
+<!-- Winter Essentials -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div date-title="Amal Alamuddin" date-content="amal_alamuddin" class="screen_size amal_alamuddin open_list">
+
+<div class="popup_event_box un_padding">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+    <img class="img_center" src="../img-if/popup/pop_38_1.jpg">
+    <img class="img_top" src="../img-if/popup/pop_38_T.png">
+    <div>
+    <h3>
+    <div class="tag">Spring Sale</div>
+    Extra 30% off final sale item</h3>
+    <a class="btn_more" href="#">Shop Now</a>
+    <div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+    </div>
+</div>
+
+<div class="slide_show amal_alamuddin">
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+    <div class="dot_box v1"><a href="#">btn</a></div>
+
+    
+
+<div class="page_box">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/amal-alamuddin-1-1.jpg">
+
+
+<div class="mw_450 page_info ">
+<div class="heading signature">
+<div class="tag">The Woman</div>
+Amal Alamuddin</div>
+
+<!-- <h4>THE HUMAN RIGHTS LAWYER WHO TOOK HOLLYWOOD AND GEORGE CLOONEY BY STORM</h4> -->
+<p>
+    When we take a look at George Clooney’s past partners, we see a bevy of tall, tanned blonde women that don’t necessarily have an accolades under their belt. And as an A-list star, why would you need to stray away from the constant posse of Victoria’s Secret supermodels that are readily available to you?
+</p>
+<p>
+Because a certain human rights lawyer and goddess named Amal Alamuddin graced him with his presence, and his world was never the same after that. Neither was ours.
+</p>
+<p>
+The Lebanese-British activist and lawyer grew up in England, studying at the prestigious institutes Oxford University and NYU before embarking on her journey as a lawyer.</p>
+
+<div class="by_who"><span>by</span> Naima Karp<div class="add_time">12/12, 9999</div></div>
+
+</div>
+
+</div><div class="page ">
+<!-- p02 -->
+
+<img src="../img-if/second_layer/amal-alamuddin-1-2.jpg">
+<div class="mw_450 page_info">
+
+<p>
+<span class="drop_cap_letter">A</span>
+lamuddin has worked on the Enron case, along with Kofi Annan, for the United Nations commission on Syria. She’s defended Wiki-Leaks editor-in-chief Julian Assange and former Ukrainian prime minster Yulia Tymoshenko, but has always remembered to take the side of the underdog and represent them too.
+</p>
+<p>
+Much of her work also revolves around the mistreatment of women; Amal has worked closely with abused Yazidi women.
+</p>
+<p>
+If you were set to marry George Clooney, you would think that your lifestyle would change drastically. But that’s one thing that Amal ensured never happened. Her lifestyle was dedicating all of her time to helping others in need through her fight for justice, and she refused to sacrifice that just because she was marrying a celebrity.
+</p>
+
+</div>
+
+</div><div class="page ">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/amal-alamuddin-1-3.jpg">
+<div class="mw_450 page_info">
+
+<p>
+<span class="drop_cap_letter">F</span>
+Fortunately, Amal married not just a celebrity but a socially and politically minded man who supports and contributes to her activism and philanthropic efforts.
+</p>
+<p>
+While Amal has made incredible strides with her humanitarian and poverty aid work, the media still focuses on her style over her impressive work. As she fought against a Turkish politician denying the genocide of over 1.5 million people, journalists were still more interested in what designer threads the lawyer would tout.
+</p>
+<p>
+She jokingly responded: “Ede and Ravenscroft,” to them, the brand who has been making legal robes for centuries. This cheeky comment diverted a superficial question, showing Amal take control of the conversation to give the voiceless a voice, inspiring many in the process.
+</p>
+
+</div>
+
+</div><div class="page">
+<!-- p03 -->
+
+<img src="../img-if/second_layer/amal-alamuddin-1-4.jpg">
+<div class="mw_450 page_info">
+
+<p>
+    <span class="drop_cap_letter">G</span>
+eorge must have recognized the substance underneath Amal's jaw-dropping, effortless beauty, realizing that he needed to hold on to this other-worldly woman. She handled the transition to fame in the public eye flawlessly, but still remained focused and dedicated to her craft.
+</p>
+<p>
+Her goal isn’t to be photographed by the paparazzi —— it’s to create world peace and end suffering. She uses her clout and smarts to fight for the rights of others, rather than her name and appearance. She’s a reminder for us to stop obsessing over editing Instagram photos, and instead do something to better someone else’s life.
+</p>
+<p>
+Amal is proof that you can be a stunning humanitarian, and not let celebrity overshadow that fact. While many celebrities use existing fame to aid their humanitarian efforts, Amal is just doing her job, dedicating herself selflessly to the plight of others as she has since Day One.
+</p>
+
+</div>
+
+</div>
+
+</div><!-- page_box -->
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div date-title="Oprah winfrey" date-content="oprah_winfrey" class="screen_size oprah_winfrey open_list">
+
+<div class="popup_event_box bg_c_0f1329 double_quotes dark_night">
+    <a class="btn_X v1" href="#">&nbsp;</a>
+    <div class="tag">The Woman</div>
+    <h2 class="cool_info">You become what you believe !</h2>
+    <a class="btn_more" href="#">learn more</a>
+    <div class="ifchic_slogan">SHOP • PLAY • LOVE</div>
+</div>
+
+<div class="slide_show">
+<!--     <a class="btn_shop_the_look" href="#">shop the look</a> -->
+    <a class="btn_L v4" href="#">&nbsp;</a>
+    <a class="btn_R v4" href="#">&nbsp;</a>
+
+    <div class="dot_box v1"><a href="#">btn</a></div>
+    
+<div class="page_box">
+<!-- p01 -->
+
+<div class="page">
+<img src="../img-if/second_layer/oprah_05.jpg">
+
+<div class="w_40 page_info ">
+
+<div class="heading">
+<div class="tag">The Woman</div>
+“BELIEVE IN YOURSELF”</div>
+<div class="wm_50">
+
+<p>Oprah Winfrey has always been about making women feel good about themselves--i.e. inspiring them to “live their best lives.”</p>
+<p>
+Oprah is much more than a TV personality and her recent speech at the Golden Globes (where she received the prestigious Cecil B. DeMille Award) was one of her most “golden” moments yet. Immediately following her now-legendary early January acceptance speech, 
+</p>
+
+</div><div class="wm_50">
+
+<p>
+the media and fans were suggesting that she run for president in the next election!
+</p>
+<p>
+While there are many people in the US with rags to riches tales, Oprah’s “back story” is special. She was a minority female who overcame poverty and childhood molestation to become a beauty queen and then a local TV personality in Baltimore circa 1976 with the show People Are Talking.
+</p>
+</div>
+
+<div class=" by_who"><span>by</span> Anne Raso<div class="add_time">12/12, 9999</div>
+
+</div>
+
+</div>
+
+
+
+
+</div><div class="page">
+
+<!-- p02 -->
+
+<img src="../img-if/second_layer/oprah_02.jpg">
+
+
+<div class="w_100 page_info ">
+<div class="w_33">
+<p>
+<span class="drop_cap_letter">S</span>
+he parlayed her smarts and natural charisma into a national self-named talk show in 1986 and then went on to make the careers of others like Dr. Oz and Dr. Phil by giving them guest spots. As we all now know, Oprah then parlayed her successful talk show into a vast empire that includes OWN TV, an acting career that is presently on hold, a national magazine and a huge network of charities that includes building schools in poor areas around the world. (Oprah appears on the The 50 Most Generous Americans list every year.)
+</p>
+<p>
+In 2003, she became the first African-American billionaire in the world. When a consumer product of any sort gets mentioned as one of “Oprah’s Favorite Things” in an article or online post, it immediately sells out. Few people wield this kind of power who are as utterly likable as Oprah—she still seems like “one of us” despite her power and wealth and she is arguably the single most influential female in the world today.
+</p>
+
+</div>
+
+<div class="w_33">
+<p>
+Oprah’s belief system is based on the Golden Rule and people who have met her or have worked with her say that she makes you feel important and takes what you say seriously. In one of her Lifeclass programs, Lady O summed the key to a happy life up in one sentence: “You must believe in yourself and believe that the life you want is well within your reach.”
+</p>
+<p>
+Oprah is so beloved because she is not only an impeccable speaker but because she lays her soul bare while most celebrities are guarded. Winfrey’s beliefs on suffering, gratitude, generosity, forgiveness and other spiritual topics are ones that stick with us. She tells women to never forget where they came from, love themselves the way they are, to offer help to others and to always put aside time for pampering even if they are not affluent. Oprah is about “ah ha” moments and being spiritual even if it is not via organized religion.
+</p>
+
+</div>
+</div>
+</div><div class="page">
+
+<!-- p03 -->
+
+<img src="../img-if/second_layer/oprah_03.jpg">
+
+<div class="w_40 page_info">
+
+<h4>Oprah Winfrey</h4>
+
+<div class="heading">
+YOU BECOME WHAT YOU BELIEVE !
+</div>
+
+<p>
+As we go to press, the rumors are still flying that Oprah is considering running for president even though “the queen of all media” has not commented on this firsthand; back in October, Oprah dismissed that she was considering running for any sort of political office. Whether she runs for the 2020 US presidency or not, she will always be a leader whose heart of gold leads the way for inspiration and positivity in women’s lives.
+</p>
+
+
+</div>
+</div>
+
+</div><!-- page_box -->
+</div><!-- hone_page_slide_show -->
+</div>
+
+<!-- screen_size -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="" date-title="PRODUCT<br>Owl Clutch" date-content="owl_clutch" class="product_owl_clutch screen_size">
+
+<div class="slide_show">
+
+<div class="page_box ">
+    <div class="page">
+        <img src="../img-if/products_pics/p-01.jpg">
+    </div><div class="page">
+        <img src="../img-if/products_pics/p-02.jpg">
+    </div><div class="page">
+        <img src="../img-if/products_pics/p-03.jpg">
+    </div><div class="page">
+        <img src="../img-if/products_pics/p-04.jpg">
+    </div><div class="page">
+        <img src="../img-if/products_pics/p-05.jpg">
+    </div>   
+</div><!-- page_box -->
+
+<div class="dot_box v1"><a href="#">btn</a></div>
+
+</div>
+
+
+<div class="product_info">
+<div class="l">
+
+    <a class="product_brand" href="#">5PM COUTURE</a>
+    <div class="product_name">Owl Clutch</div>
+    <div class="p_price"><span class="o_price">$137</span><span class="p_discount get_num">$68</span></div>
+
+<div class="product_detail">
+
+
+    <a class="btn_item_name slide_U_D" href="#">VIEW NOTES</a>
+
+    <div>
+        <p>From ball gowns to blue jeans, opulent events to dinner with friends, switch up your party looks with 5PM Couture's playful Owl clutch it makes every ensemble and moment more memorable.</p>
+        <div class="list_item">
+        <p>Owl shape hard-shell clutch.</p>
+        <p>Crystal embellishments at opening.</p> 
+        <p>Fully lined, dust bag included.</p>
+        </div>
+        <p>Item Code <span>F0052F13-Black</span></p>
+        <p>View More <a href="#">5PM Couture</a> <a href="#">Shoulder bags</a></p>
+    </div>
+
+    <a class="btn_item_name slide_U_D" href="#">SIZE &amp; FIT</a>
+
+    <div>
+        <p>Height <span>15cm</span></p>
+        <p>Length <span>22cm</span></p>
+        <p>Depth <span>8cm</span></p>
+        <p>Strap drop <span>appx. 53cm</span></p>
+        <p>Top handle drop <span>6cm</span></p>
+    </div>
+</div>
+</div>
+
+<div class="r">
+
+
+
+    <div class="btn_item_name">Color <span>Black</span></div>
+
+
+<div class="plus_less_box">
+    <a class="less_icon v2" href="#">&nbsp;</a><span class="num_box">1</span><a class="plus_icon v2" href="#">&nbsp;</a>
+</div>
+
+
+
+
+<div class="btn_item_name ">Size <span>(IT)</span></div>
+
+    <div class="w_100 ddm_if">
+    <a class="ddm_btn" href="#"><span class="btn_info">Choose your size *</span>
+      <span class="btn_img d_icon v1">&nbsp;</span></a>
+    <div class="ddm_menu">
+        <a href="#">A</a>
+        <a href="#">B</a>
+        <a href="#">C</a>
+        <a href="#">D</a>
+    </div>
+    </div>
+
+    <a class="w_100 btn_B" href="#">Add to Bag</a>
+    <a class="link_info" href="#">view item's measurements</a>
+    <a class="link_info" href="#">size guide</a>
+
+    <div class="btn_item_name">Share &amp; Favorite</div>
+
+    <div class="social_media_box v3">
+        <a class="social_media_btn icon_pinterest" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_facebook" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_instagram" href="#">&nbsp;</a>
+   </div>
+
+</div>
+</div>
+</div><!-- screen_size -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div date-title="Product Page<br>Mansur Gavriel" date-content="mansur_gavriel_3" class="product_mansur_gavriel screen_size">
+
+    <div class="slide_show">
+        <div class="page_box">
+            <div class="page">
+
+                <img src="../img-if/products_pics/product-p11-3.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p11-1.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p11-2.jpg">
+            </div>
+        </div>
+
+        <div class="dot_box v2"></div>   
+    </div>
+
+
+<div class="product_info">   
+<div class="r">
+
+
+    <div class="product_brand">Mansur Gavriel</div>
+    <div class="product_name">flamma mini bucket bag</div>
+
+    <div class="p_price"><span class="o_price">$610</span><span class="p_discount get_num">$305</span></div>
+<div class="btn_item_name">Color <span>Black</span></div>
+    
+ 
+    
+<div class="plus_less_box v02">
+    <a class="less_icon v2" href="#">&nbsp;</a><span class="num_box">1</span><a class="plus_icon v2" href="#">&nbsp;</a>
+</div>
+    <a class="btn_B w_100" href="#">add to bag</a>
+
+    <div class="social_media_box v3">
+        <a class="social_media_btn icon_pinterest" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_facebook" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_instagram" href="#">&nbsp;</a>
+   </div>
+
+
+</div>
+
+
+<div class="l">
+    <a class="btn_item_name slide_U_D btn_more_details" href="#">more details</a>
+
+<div class="product_detail">
+
+
+    <a class="btn_item_name slide_U_D" href="#">NOTES</a>
+
+    <div>
+    <p>
+    Combining understated refinement with exacting Italian craftsmanship, Mansur Gavriel have established themselves as the bags of desire amongst the fashion elite. Crafted from navy calf leather, this Mansur Gavriel circle bag serves up sophisticated style with minimal fuss.
+    </p>
+ </div>
+   <a class="btn_item_name slide_U_D" href="#">Details</a>
+
+
+
+  <div>   
+    <div class="list_item">
+    <p>New circle shape for Spring 2016</p>
+    <p>Top handle</p>
+    <p>Zip closure</p>
+    <p>Gold foil print logo</p>
+    <p>Composition: 100% leather</p>
+    <p>Imported</p>
+    </div>
+
+    <p>Item Code <span>519017-Black</span></p>
+
+
+
+    </div>
+
+    <a class="btn_item_name slide_U_D" href="#">SIZE &amp; FIT</a>
+
+    <div>
+    <p>This bag measures <span>11in H x 11.5in W x 3in D</span></p>
+    <a class="link_info" href="#">view item's measurements</a>
+    <a class="link_info" href="#">size guide</a>        
+
+    </div>
+
+</div>
+
+
+</div>
+</div>
+
+</div><!-- screen_size -->
+
+
+
+
+<div date-title="Product Page<br>Mansur Gavriel" date-content="mansur_gavriel_2" class="screen_size product_mansur_gavriel">
+
+    <div class="slide_show">
+        <div class="page_box">
+            <div class="page">
+
+                <img src="../img-if/products_pics/product-p12-3.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p12-1.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p12-2.jpg">
+            </div>
+        </div>
+
+        <div class="dot_box v2"></div>   
+    </div>
+
+
+<div class="product_info">   
+<div class="r">
+    <div class="product_brand">Mansur Gavriel</div>
+    <div class="product_name">navy leather circle bag</div>
+    <div class="p_price get_num">1095</div>    
+    <div class="btn_item_name">Color <span>Black</span></div>
+ 
+<div class="plus_less_box v02">
+    <a class="less_icon v2" href="#">&nbsp;</a><span class="num_box">1</span><a class="plus_icon v2" href="#">&nbsp;</a>
+</div>
+
+    <a class="btn_B w_100" href="#">add to bag</a>
+
+    <div class="social_media_box v3">
+        <a class="social_media_btn icon_pinterest" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_facebook" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_instagram" href="#">&nbsp;</a>
+   </div>
+</div>
+
+
+<div class="l">
+
+<a class="btn_item_name slide_U_D btn_more_details" href="#">more details</a>
+
+<div class="product_detail">
+
+
+    <a class="btn_item_name slide_U_D" href="#">NOTES</a>
+
+    <div>
+    <p>
+    Combining understated refinement with exacting Italian craftsmanship, Mansur Gavriel have established themselves as the bags of desire amongst the fashion elite. Crafted from navy calf leather, this Mansur Gavriel circle bag serves up sophisticated style with minimal fuss.
+    </p>
+ </div>
+   <a class="btn_item_name slide_U_D" href="#">Details</a>
+
+
+
+  <div>   
+    <div class="list_item">
+    <p>New circle shape for Spring 2016</p>
+    <p>Top handle</p>
+    <p>Zip closure</p>
+    <p>Gold foil print logo</p>
+    <p>Composition: 100% leather</p>
+    <p>Imported</p>
+    </div>
+
+    <p>Item Code <span>519017-Black</span></p>
+
+
+
+    </div>
+
+    <a class="btn_item_name slide_U_D" href="#">SIZE &amp; FIT</a>
+
+    <div>
+    <p>This bag measures <span>11in H x 11.5in W x 3in D</span></p>
+    <a class="link_info" href="#">view item's measurements</a>
+    <a class="link_info" href="#">size guide</a>        
+
+    </div>
+
+</div>
+
+
+</div>
+</div>
+
+</div><!-- screen_size -->
+
+
+
+
+
+
+
+
+
+<div date-title="Product Page<br>Mansur Gavriel" date-content="mansur_gavriel_1" class="screen_size product_mansur_gavriel">
+
+    <div class="slide_show">
+        <div class="page_box">
+            <div class="page">
+
+                <img src="../img-if/products_pics/product-p13-3.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p13-1.jpg">
+            </div><div class="page">
+                <img src="../img-if/products_pics/product-p13-2.jpg">
+            </div>
+        </div>
+
+        <div class="dot_box v2"></div>   
+    </div>
+
+
+<div class="product_info">   
+<div class="r">
+    <div class="product_brand">Mansur Gavriel</div>
+    <div class="product_name">black flamma mini lady bag</div>
+ 
+    <div class="p_price"><span class="o_price">$610</span><span class="p_discount get_num">$750</span></div>
+    <div class="btn_item_name">Color <span>Black</span></div>
+ 
+<div class="plus_less_box v02">
+    <a class="less_icon v2" href="#">&nbsp;</a><span class="num_box">1</span><a class="plus_icon v2" href="#">&nbsp;</a>
+</div>
+
+    <a class="btn_B w_100" href="#">add to bag</a>
+
+    <div class="social_media_box v3">
+        <a class="social_media_btn icon_pinterest" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_facebook" href="#">&nbsp;</a>
+        <a class="social_media_btn icon_instagram" href="#">&nbsp;</a>
+   </div>
+</div>
+
+
+<div class="l">
+    <a class="btn_item_name slide_U_D btn_more_details" href="#">more details</a>
+
+<div class="product_detail">
+
+
+    <a class="btn_item_name slide_U_D" href="#">NOTES</a>
+
+    <div>
+    <p>
+    Combining understated refinement with exacting Italian craftsmanship, Mansur Gavriel have established themselves as the bags of desire amongst the fashion elite. Crafted from navy calf leather, this Mansur Gavriel circle bag serves up sophisticated style with minimal fuss.
+    </p>
+ </div>
+   <a class="btn_item_name slide_U_D" href="#">Details</a>
+
+
+
+  <div>   
+    <div class="list_item">
+    <p>New circle shape for Spring 2016</p>
+    <p>Top handle</p>
+    <p>Zip closure</p>
+    <p>Gold foil print logo</p>
+    <p>Composition: 100% leather</p>
+    <p>Imported</p>
+    </div>
+
+    <p>Item Code <span>519017-Black</span></p>
+
+
+
+    </div>
+
+    <a class="btn_item_name slide_U_D" href="#">SIZE &amp; FIT</a>
+
+    <div>
+    <p>This bag measures <span>11in H x 11.5in W x 3in D</span></p>
+    <a class="link_info" href="#">view item's measurements</a>
+    <a class="link_info" href="#">size guide</a>        
+
+    </div>
+
+</div>
+
+
+</div>
+</div>
+
+</div><!-- screen_size -->
+
+
+
+</div> <!-- rwd_demo -->
+
+</body>
+</html>

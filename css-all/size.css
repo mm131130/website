@@ -1,0 +1,900 @@
+/* max width */
+
+
+.only{
+	display: inline-block !important;		
+	float: none !important;
+	margin: 18px auto;
+}
+.h_100vh{
+	min-height:100vh;
+	height:100%;
+	}
+
+@media screen and (max-width:1023px) {
+
+.h_100vh{
+	height:100%;
+	}
+.vino_logo.h_100vh{
+	min-height:auto;
+	height:100vh;	
+	}
+
+}
+
+
+
+
+.w_360{
+	max-width:360px;
+	width:100%;
+	}
+
+
+.w_240{
+	max-width:240px;
+	width:100%;
+	}
+
+.mw_1200{
+	max-width:1200px;
+	width:100%;
+	margin:0 auto;
+	}
+.mw_900{
+	max-width:900px;
+	width:100%;
+	margin:0 auto;	
+	}	
+		
+.mw_600{
+	max-width:600px;
+	width:100%;
+	margin:0 auto;	
+	}	
+
+
+
+
+.mw_540{
+	max-width:540px;
+	width:100%;
+	margin:0 auto;	
+	}		
+.mw_450{
+	max-width:450px;
+	width:100%;
+	margin:0 auto;
+	}	
+.mw_360{
+	clear:both;
+	max-width:360px;
+	width:100%;
+	margin:0 auto;	
+	}	
+.mw_270{
+	clear:both;
+	max-width:270px;
+	width:100%;
+	margin:0 auto;	
+	}		
+
+
+
+
+*[class*="mobile_"] *[class*="mw_"]{
+	padding: 18px;
+}
+
+.w_100{
+	display: inline-block;	
+	clear:both;
+	width:100%;
+	}
+
+.w_91{
+	width:91.666666%;
+	}	
+
+.w_90{
+	width:90%;
+	}
+
+
+.w_83{
+	width:83.333333%;
+	}
+
+.w_80{
+	width:80%;
+	}
+.w_75{
+	width:75%;
+	}	
+.w_70{
+	width:70%;
+	}
+.w_66{
+	width:66.666666%;
+	}
+.w_60{
+	width:60%;
+	}
+.w_58{
+	width:58.333333%;
+	}
+.w_50{
+	width:50%;
+	}
+.w_41{
+	width:41.666666%;
+	}	
+.w_40{
+	width:40%;
+	}	
+.w_33{
+	width:33.333333%;
+	}	
+.w_30{
+	width:30%;
+	}	
+.w_25{
+	width:25%;
+	}
+.w_21{
+	width:21%;
+	}					
+.w_20{
+	width:20%;
+	}	
+.w_16{
+  width:16.666666%;
+  }   
+.w_14{
+  width:14.285714%;
+  }   
+.w_10{
+	width:10%;
+	}
+
+.w_8{
+	width:8.333333%;
+	}		
+
+
+
+*[class*="mobile_"] .mw_1200 > *[class*="w_"]{
+	width:100%;
+}
+
+
+@media screen and (max-width:767px) {
+.mw_1200 > *[class*="w_"]{
+	width:100%;
+}
+}
+
+
+
+*[class^="col_m_"],
+*[class^="wm_"]{
+	margin-left:1%;
+	margin-right:1%;
+	}
+.wm_100{
+	width:98%;
+	}
+.wm_90{
+	width:88%;
+	}	
+.wm_80{
+	width:78%;
+	}
+.wm_75{
+	width:73%;
+	}	
+.wm_70{
+	width:68%;
+	}
+.wm_66{
+	width:64.666666%;
+	}	
+.wm_60{
+	width:58%;
+	}
+.wm_58{
+	width:56.333333%;
+	}	
+.wm_50{
+	width:48%;
+	}
+.wm_41{
+	width:39.666666%;
+	}	
+.wm_40{
+	width:38%;
+	}	
+.wm_33{
+	width:31.333333%;
+	}	
+.wm_30{
+	width:28%;
+	}	
+.wm_25{
+	width:23%;
+	}				
+.wm_20{
+	width:18%;
+	}	
+.wm_12{
+	width:10.5%;
+	}		
+.wm_16{
+	width:14.666666%;
+	}	
+.wm_10{
+	width:8%;
+	}
+/* 12 */			
+.wm_8{
+	width:6.333333%;
+	}	
+	
+*[class*="ipad_"] .mw_1200{
+	padding:18px;
+}
+
+*[class*="mobile_"] .mw_1200 > *[class*="wm_"]{
+	width:98%;
+}
+
+@media screen and (max-width:767px) {
+.mw_1200 > *[class*="wm_"]{
+	width:98%;
+}
+}
+
+
+
+
+
+		
+
+
+/* 12 */
+.col_12{
+  width:100%;
+  }
+/* 11 */
+.col_11{
+  width:91.666666%;
+  }
+/* 10 */
+.col_10{
+  width:83.333333%;
+  }
+/* 9 */
+.col_9{
+  width:75%;
+  }
+/* 8 */
+.col_8{
+  width:66.666666%;
+  }
+/* 7 */
+.col_7{
+  width:58.333333%;
+  }
+/* 6 */
+.col_6{
+  width:50%;
+  }
+/* 5 */
+.col_5{
+  width:41.666666%;
+  }
+/* 4 */
+.col_4{
+  width:33.333333%;
+  }
+/* 3 */
+.col_3{
+  width:25%;
+  }
+/* 2 */
+.col_2{
+  width:16.666666%;
+  }
+/* 1 */
+.col_1{
+  width:8.333333%;
+  }
+.col_m_12{
+  width:98%;
+  }
+.col_m_11{
+  width:89.666666%;
+  }
+.col_m_10{
+  width:81.333333%;
+  }
+.col_m_9{
+  width:73%;
+  }
+.col_m_8{
+  width:64.666666%;
+  }
+.col_m_7{
+  width:56.333333%;
+  }
+.col_m_6{
+  width:48%;
+  }
+.col_m_5{
+  width:39.666666%;
+  }
+.col_m_4{
+  width:31.333333%;
+  }
+.col_m_3{
+  width:23%;
+  }
+.col_m_2{
+  width:14.666666%;
+  }
+.col_m_1{
+  width:6.333333%;
+  }
+	
+
+
+
+*[class^="col_"],
+*[class^="col_m_"],
+*[class^="w_"]:not([class^="w_100"]),	
+*[class^="wm_"]:not([class^="wm_100"]){
+	float:left;
+	}
+	
+@media screen and (max-width:767px) {
+
+/* *:not('form') *[class^="wm_"],
+*:not('form') *[class^="w_"]{
+ */
+*[class^="wm_"],
+*[class^="w_"]{
+	display:inline-block;
+	float:none;
+/* 	margin-left:4.5%;
+	margin-right:4.5%;	
+	width:91%; */
+	}
+}
+
+
+
+    
+
+
+.flex_space_around{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  	-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    -webkit-box-align: center;    
+    -ms-flex-align: center;   
+     align-items: center;
+
+
+     width: 100%;
+
+  min-height: 90px;
+  height: auto;
+	}
+
+
+
+
+
+.flex_center_center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content_box,
+.rwd_demo{
+    overflow: hidden;
+    width: 100%;
+    margin:0 auto; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+  -webkit-box-pack: center;    
+  -ms-flex-pack: center;    
+  justify-content: center;
+}
+
+/* .components_demo > *, */
+.content_box > *,
+.rwd_demo > *{
+    overflow: hidden;
+    position: relative !important;
+
+    display: block;
+    margin-bottom: 300px;
+
+    -moz-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    -webkit-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 30px rgba(0,0,0,0.2),
+    -30px 90px 60px rgba(0,0,0,0.1);
+
+    background-color: #fff;
+
+    margin-left:calc( ( 30% - 300px  ) / 2) ;
+    margin-right:calc( ( 30% - 300px  ) / 2) ;
+}
+.content_box > .popup_event_box{
+      -moz-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    -webkit-box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 20px rgba(0,0,0,0.2),
+    -30px 90px 30px rgba(0,0,0,0.1);
+    box-shadow:
+    -10px 30px 10px rgba(0,0,0,0.3),
+    -20px 60px 30px rgba(0,0,0,0.2),
+    -30px 90px 60px rgba(0,0,0,0.1);
+}
+
+.content_box:not(.rwd_demo) > [class*="mobile_"]{
+  position: relative;
+
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;  
+  -webkit-box-direction: normal;  
+  -ms-flex-direction: column;  
+  flex-direction: column;
+  -ms-flex-item-align: start; 
+  align-self: flex-start;
+  padding: 90px 0;
+}
+
+.content_box > [class*="mobile_"] > .input,
+.content_box > [class*="mobile_"] > .search,
+.content_box > [class*="mobile_"] > [class*="ddm_"],
+.content_box > [class*="mobile_"] > [class*="btn_"]{
+  width:calc( 100% - 36px );
+}
+.content_box .m_l_subtitle{
+  opacity: 0.45;
+  position: absolute;
+  top:12px;
+  left: 0;
+
+  z-index: 900;
+  text-align: center;
+}
+.content_box .space{
+  display: block;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px #9d9d9d solid;
+  opacity: 0.45;
+}
+
+
+
+
+
+.w_fullscreen > *{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-top: 1px #000 solid;
+
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+.w_1400 > *{
+    width: 1420px;
+    height: 720px;
+}
+
+
+.ipad_w:not(.rwd_demo):not(.content_box),
+.content_box.ipad_w > *,
+.rwd_demo.ipad_w > *{
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  
+  max-width: 1024px;
+  height: 100%;
+  min-height: 768px;
+  margin-left:calc( ( 100% - 1034px  ) / 2) ;
+  margin-right:calc( ( 100% - 1034px  ) / 2) ;
+}
+.ipad_h:not(.rwd_demo):not(.content_box),
+.content_box.ipad_h > *,
+.rwd_demo.ipad_h > *{
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+
+  max-width: 768px;
+  height: 100%;
+  min-height: 1024px;
+  margin-left:calc( ( 100% - 778px  ) / 2) ;
+  margin-right:calc( ( 100% - 778px  ) / 2) ;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+.ipad_w:not(.rwd_demo):not(.content_box),
+.content_box.ipad_w > *,
+.rwd_demo.ipad_w > *{
+  width: calc(100% - 18px);
+}
+}
+
+
+
+
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+.ipad_w:not(.rwd_demo):not(.content_box),
+.content_box.ipad_w > *,
+.rwd_demo.ipad_w > *{
+
+  height: 1024px;
+}
+.ipad_h:not(.rwd_demo):not(.content_box),
+.content_box.ipad_h > *,
+.rwd_demo.ipad_h > *{
+
+  width: calc(100% - 18px);
+}
+}
+
+@media screen and (max-width:767px) {
+.ipad_w:not(.rwd_demo):not(.content_box),
+.content_box.ipad_w > *,
+.rwd_demo.ipad_w > *,
+.ipad_h:not(.rwd_demo):not(.content_box),
+.content_box.ipad_h > *,
+.rwd_demo.ipad_h > *{
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  min-height: 668px;
+    height:auto;
+
+}
+}
+
+
+
+.rwd_demo.mobile_size_iphone7 > div,
+.mobile_size_iphone7:not(.rwd_demo){
+    width: 100%;
+    max-width: 414px;
+    min-height: 736px;
+    height:100%;
+    margin-left:calc( ( 30% - 414px  ) / 2) ;
+    margin-right:calc( ( 30% - 414px  ) / 2) ;
+}
+
+.rwd_demo.mobile_size_iphone6 > div,
+.mobile_size_iphone6:not(.rwd_demo){
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+
+    min-height: 668px;
+    height:auto;
+    margin-left:calc( ( 30% - 375px ) / 2) ;
+    margin-right:calc( ( 30% - 375px ) / 2) ;
+}
+
+.rwd_demo.mobile_size_iphone5 > div,
+.mobile_size_iphone5:not(.rwd_demo){
+    width: 100%;
+    max-width: 320px;
+
+    min-height: 568px;
+    height: 100%;
+    margin-left:calc( ( 30% - 320px ) / 2) ;
+    margin-right:calc( ( 30% - 320px ) / 2) ;
+}
+
+.rwd_demo[class*="mobile_size_"] div[class*="product_"], 
+.rwd_demo[class*="mobile_size_"] .open_list,
+.rwd_demo.mobile_size_iphone6 > div,
+.rwd_demo.mobile_size_iphone5 > div{
+    height: 100% ;
+}
+
+
+
+
+
+
+
+
+.rwd_demo[class*="ipad_"],
+.rwd_demo[class*="mobile_"]{
+    display: flex;
+    position: static;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: auto;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    margin: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+
+.rwd_demo.mobile_size_iphone7 > div
+.mobile_size_iphone7:not(.rwd_demo){
+    margin-left:calc( ( 50% - 414px  ) / 2) ;
+    margin-right:calc( ( 50% - 414px  ) / 2) ;
+}
+
+.rwd_demo.mobile_size_iphone6 > div,
+.mobile_size_iphone6:not(.rwd_demo){
+    margin-left:calc( ( 50% - 375px  ) / 2) ;
+    margin-right:calc( ( 50% - 375px  ) / 2) ;
+}
+
+.rwd_demo.mobile_size_iphone5 > div,
+.mobile_size_iphone5:not(.rwd_demo){
+    margin-left:calc( ( 50% - 320px  ) / 2) ;
+    margin-right:calc( ( 50% - 320px  ) / 2) ;
+}
+
+}
+
+@media screen and (max-width:1023px) {
+
+.rwd_demo.mobile_size_iphone7 > div,
+.mobile_size_iphone7:not(.rwd_demo),
+
+.rwd_demo.mobile_size_iphone6 > div,
+.mobile_size_iphone6:not(.rwd_demo),
+
+.rwd_demo.mobile_size_iphone5 > div,
+.mobile_size_iphone5:not(.rwd_demo){
+    margin-left:auto;
+    margin-right:auto;
+}
+}
+
+@media screen and (max-width:767px) {
+  .content_box > *{
+    width: calc(100% - 27px) !important;
+  }
+}
+@media screen and (max-width:375px) {
+  .content_box > *{
+
+    width: calc(100% - 18px) !important;
+  }
+}
+
+
+/* 
+.mobile_size_iphon6.un{
+	padding: 90px 18px !important;
+}
+.mobile_size_iphon6.un > *{
+    width: 100%;
+
+}
+ */
+
+.un_bg{
+	background: none !important;
+	border-color: transparent;
+	box-shadow: none !important;
+
+	padding-left: 18px !important;
+}
+
+
+
+
+
+@media screen and (max-width:320px) {
+*[class*="mobile_"] *[class*="mw_"] {
+    padding: 0;
+}
+*[class*="mobile_"] .mw_1200 > *[class*="wm_"] {
+    width: 100%;
+    margin: 0;
+}
+}
+
+
+
+.mobile_size_iphon5 {
+	position: relative;
+
+    display: block;
+    clear: both;
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    margin: 90px auto 90px auto;
+    padding: 90px 15px;
+    border: 5px #eceae4 solid;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    background: -webkit-linear-gradient(top, #f4f4f4 0%,#fafafa 100%);
+    background: -moz-linear-gradient(top, #f4f4f4 0%, #fafafa 100%);
+    background: linear-gradient(to bottom, #f4f4f4 0%,#fafafa 100%);
+
+
+/* 
+    -webkit-box-shadow:
+0 25px 25px rgba(198,184,173,0.55),
+0 50px 50px rgba(192,189,184,0.4),
+0 100px 100px rgba(226,227,232,0.3);
+
+	-moz-box-shadow:
+0 25px 25px rgba(198,184,173,0.55),
+0 50px 50px rgba(192,189,184,0.4),
+0 100px 100px rgba(226,227,232,0.3);
+
+	-o-box-shadow:
+0 25px 25px rgba(198,184,173,0.55),
+0 50px 50px rgba(192,189,184,0.4),
+0 100px 100px rgba(226,227,232,0.3); */
+/* 
+	box-shadow:
+0 20px 20px rgba(198,184,173,0.6),
+0 40px 40px rgba(192,189,184,0.4),
+0 60px 60px rgba(226,227,232,0.2); */
+
+    box-shadow: 
+    -10px 30px 10px rgba(0,0,0,0.3), 
+    -20px 60px 30px rgba(0,0,0,0.2), 
+    -30px 90px 60px rgba(0,0,0,0.1);
+}
+
+
+.mobile_size_iphon5 > div{
+	overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 570px;
+    background-color: #f2f1ed;
+    background-color: #FFF;
+    border: 2px #eceae4 solid;
+
+    background-size:100% auto;
+    background-position: center center;
+}
+
+
+.mobile_size_iphone_X {
+	overflow: hidden;
+    transform: rotate(23.5deg);
+    border-radius: 69px;
+    border: 25px #000000 solid;
+    max-width: 425px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.2), -40px 40px 40px rgba(0,0,0,0.8), -60px 60px 60px rgba(0,0,0,0.4), -80px 80px 80px rgba(0,0,0,0.2);
+    box-shadow: 
+    -120px 120px 30px rgba(0,0,0,0.2), 
+    -150px 150px 60px rgba(0,0,0,0.4), 
+    -180px 180px 90px rgba(0,0,0,0.06);
+
+   }
+.mobile_size_iphone_X > div{
+	overflow: hidden;
+  	width: 100%;
+    height: 812px;
+
+    background-size: auto 100%;
+    background-position: center center;
+
+}
+
+
+
+
+
+
