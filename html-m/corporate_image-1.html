@@ -906,7 +906,7 @@ $('.cloud_img').each(function() {
 
 var cloud_img = $(this);
 
-var hmi = 579;
+var hmi = 693;
 
 var repeat_time = 18;
 
@@ -957,8 +957,12 @@ function load_img(p , r){
 			p_num = page + p ;
 
 			if( p_num <= 9 ){
+				p_num = '00' + p_num;
+
+			}else if( p_num <= 99 ){
 				p_num = '0' + p_num;
 			}
+
 
 			add_page += '<div id="page_' + p_num + '" class="page"><div><img src="../img-m/cloud_img/p' + p_num + '.jpg"></div></div>';
 
@@ -1283,9 +1287,6 @@ Cloud
 </div><!-- page_box -->
 
 </div><!-- hone_page_slide_show -->
-
-
-
 
 
 
