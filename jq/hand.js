@@ -3,7 +3,7 @@ $(window).on('load', function() {
 
 $('body').prepend('<header class="m_HF v2"></header>');
 
-$('header.m_HF.v2').load('../html-m/header-load.html' , function(){
+$('header.m_HF.v2').load('../html/header.html' , function(){
 
     var ts_H = $(this);
 
@@ -64,27 +64,22 @@ $('header.m_HF.v2').load('../html-m/header-load.html' , function(){
 
         ts_H.find('[class*="_nav"] li').removeClass('open');
         ts_H.find('.three_line').removeClass('click');
-        ts_H.find('[class*="_nav"] ul').slideUp(300, function(){
-        ts_H.find('[class*="_nav"]').animate({left: '-400px'}, 100 );
 
-    });
+        ts_H.find('[class*="_nav"] ul').slideUp(300, function(){
+            ts_H.find('[class*="_nav"]').animate({left: '-400px'}, 100 );
+        });
         
     $('html, body').animate({scrollTop: $(this.hash).offset().top }, 1000);
 
     return false;
     });
 
-
-
     if (window.location.hash) scroll(0, 0);
+
     if (window.location.hash) {
         $('html, body').stop(true).animate({scrollTop: $(window.location.hash).offset().top }, 1000 );
     }
   });// header
-
-
-
-
 
 });
 

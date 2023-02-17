@@ -1,0 +1,209 @@
+/* all 2026-2023*/
+
+::-moz-selection {
+  background: initial;
+}
+::selection {
+  background: initial;
+}
+
+body{
+	background-color: #fef7e6;
+}
+body{
+ background-image:url(../img/bg_01.jpg);
+ background-repeat:repeat !important;
+ background-color: #35373c;
+}
+
+/* *[id^="MywebFrameSet"]{
+	display:none;
+	} */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+body{
+	font-family:Arial, sans-serif;
+	font-size:16px;
+	/* line-height:1.5; */
+	color: #000;
+	background: #fff;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	margin:0;
+	padding:0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	background-repeat:no-repeat !important;
+	vertical-align:top;	
+}
+
+html, 
+body,
+img{
+	border: 0;
+}
+
+img{
+	width:100%;
+	vertical-align:top;
+}
+
+video,
+button,
+input,
+textarea{
+	outline:none;
+	border:none;
+}
+
+button{
+	cursor:pointer;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+h1,h2, h3, h4, h5, h6{ 
+	font-weight: normal; 
+}
+a{
+	text-decoration:none;
+    letter-spacing: 0.024em;
+    word-spacing: 0.18em;
+    letter-spacing: 0.018em;
+    word-spacing: 0.09em;	
+}
+table{ 
+	width:auto; 
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+li{
+	list-style:  none;
+}
+
+
+
+
+.flex_box{
+	display: -webkit-box ;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex !important;
+	/*左右至中*/
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	/*上下至中*/
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	/*元素的排列方向:從上到下，再由左到右*/
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+		
+	}
+	
+	
+.version_num{
+	display:block;
+	position: absolute;
+	top:0;
+	left:0;
+	font-size:12px;
+	line-height:18px;
+	font-family:Helvetica, Arial, sans-serif;
+	
+	color:#FFF;
+	text-align:center;	
+	padding:27px 0;
+	width:72px;
+	height:72px;
+	background-color: #000;
+	}
+
+/* jq */
+.filter_ef{
+	opacity: 0.45;
+    -webkit-filter:blur(3px);
+    filter:blur(3px);
+}	
+
+.sm_bg > *{
+    background-color: #fbfbf2;
+}
+
+.if_bg > *{
+    background-color: #fef4ef;
+}
+
+
+body{
+	/* background-color: #fef7e6; */
+}
+
+body{
+	background-image:url(../img-m/bg_01.jpg);
+	background-repeat:repeat !important;
+	background-color: #35373c;
+
+	/* background-color: red; */
+}
+
+
+

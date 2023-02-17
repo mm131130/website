@@ -1,0 +1,270 @@
+<!dooctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img-m/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css/all.css">
+<link media="all" rel="stylesheet" href="../css-all/size.css">
+<link media="all" rel="stylesheet" href="../css-all/fonts.css">
+
+<!-- <link media="all" rel="stylesheet" href="../css-all/all_m_v2019.css"> -->
+<link media="all" rel="stylesheet" href="../css-m/m_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css-m/m_HF.css">
+
+
+
+
+<style>
+
+body{
+	background-color: #fef7e6;
+}
+body{
+ background-image:url(../img-m/bg_01.jpg);
+ background-repeat:repeat !important;
+ background-color: #35373c;
+}
+
+
+
+.cookieScript{
+
+	display: block;
+	position: fixed;
+	left:3%;
+	bottom: 0;
+
+	width: 27%;
+
+	background-color: #fef7e6;
+	background-color: #35373c;
+	background-color: rgba(53,55,60,0.9);
+
+ 	box-shadow: 
+ 	-9px 18px 9px rgb(0 , 0 , 0 , 27%),
+ 	-18px 26px 18px rgb(0 , 0 , 0 , 18%), 
+ 	-27px 54px 27px rgb(0 , 0 , 0 , 9%);
+
+}
+.cookieScript *{
+
+	color: #fff;
+
+}
+
+
+
+
+
+
+
+.cloud{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+}
+
+
+
+.cloud > *{
+	display: block;
+
+	overflow: hidden;
+	/* width: calc( 20% - 45px ); */
+
+	width: 100%;
+	max-width: 210px;
+	min-width: 210px;
+
+
+
+	padding:0;
+ 	margin: 27px;
+
+
+
+ 	border-radius: 4px;
+
+ 	background-color: #fff;
+
+ 	box-shadow: 
+ 	-9px 18px 9px rgb(0 , 0 , 0 , 27%),
+ 	-18px 26px 18px rgb(0 , 0 , 0 , 18%), 
+ 	-27px 54px 27px rgb(0 , 0 , 0 , 9%);
+}
+
+
+.cloud .text{
+	display: block;
+	font-size: 16px;
+	line-height: 21px;
+
+	padding: 18px 18px 18px 18px ;
+}
+
+
+
+.cloud .num{
+	display: block;
+	font-size: 16px;
+	line-height: 21px;
+	color: #35373c;
+	text-align: right;
+	padding: 18px;
+}
+
+
+</style>
+
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/hand.js"></script>
+<script src="../jq/number.js"></script>
+
+
+<script>
+
+$(function() {
+
+
+
+
+// $(window).load(function() {
+
+
+
+// var maxNum = 693 ;
+var cloudBox = '';
+var cloudImgNum = 0;
+var cloudImgNumTxt = 0;
+
+
+
+	$('.cloud').each(function() {
+
+		for (var i = 1 ; i <= cloud_total ; i++) {
+		
+		cloudImgNum = i ;
+		cloudImgNumTxt = i ;
+			
+			if ( cloudImgNum <= 9 ) {
+				cloudImgNum = '00' + i;
+				cloudImgNumTxt= '000' + i;
+
+			}else if( cloudImgNum <= 99 ){
+				cloudImgNum = '0' + i;
+				cloudImgNumTxt  = '00' + i;
+
+			}else if( cloudImgNum <= 999 ){
+				cloudImgNumTxt  = '0' + i;
+
+			}else{
+				cloudImgNumTxt  = i;
+
+			}
+
+
+			// cloudBox += '<div><img src="../img-m/cloud_img-s/p'+ cloudImgNum +'.jpg"><div class="text">View And Verify The Authenticity Of NFTs With This Index</div><div class="num">'+ cloudImgNum +'</div></div>'
+
+
+			// cloudBox += '<div><img src="../img-m/cloud_img-s/p'+ cloudImgNum +'.jpg"><div class="num">'+ cloudImgNum +'</div></div>';
+
+			cloudBox += '<div><img src="../img-cloud/p'+ cloudImgNum +'.jpg"><div class="num">'+ cloudImgNumTxt +'</div></div>';
+
+		}
+		
+	});
+
+
+$('.cloud').append(cloudBox);
+
+
+});
+
+
+</script>
+</head>
+<body>   
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="cookieScript">
+
+<h2>
+This website uses cookies
+
+<p>
+This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy. <a href="#">Read more</a>
+
+<div>STRICTLY NECESSARY</div>
+
+<div>PERFORMANCE</div>
+
+<div>TARGETING</div>
+
+ACCEPT ALL
+
+DECLINE ALL
+
+<a href="#">SHOW DETAILS</a>
+
+
+
+
+</div>
+ -->
+
+
+
+
+
+<div class="cloud">
+
+
+</div>
+
+</body>
+</html>
