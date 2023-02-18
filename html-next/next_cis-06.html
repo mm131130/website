@@ -1,0 +1,2453 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css/all.css">
+<link media="all" rel="stylesheet" href="../css/size.css">
+<link media="all" rel="stylesheet" href="../css/fonts.css">
+<link media="all" rel="stylesheet" href="../css/m_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css/header.css">
+
+<link media="all" rel="stylesheet" href="../css-next/next_v2019_1.css">
+
+
+<style>
+
+
+
+body, html, div:not(.rwd_demo) .row_list{
+	height: 100%;
+  /* height: auto; */
+}
+
+
+
+
+.dev_box .img_box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    padding-top: 54px;
+}
+
+.dev_box .img_box:first-child{
+
+    padding-top: 0;
+    margin-top: 0;
+
+
+}
+
+
+
+.dev_box .img_box{
+  overflow: unset;
+  background: none;
+  box-shadow: none;
+}
+
+.img_box > img:not([class*="w_"]){
+  width: 50%;
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+.img_box > img{
+  width: 100% !important;
+}
+
+
+
+}
+
+
+
+
+.c_ticket{
+  display: inline-block;
+  border-radius: 8px;
+
+  padding:6px;
+
+  /* background-color: #fff; */
+}
+
+.c_block{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 180px;
+  height: 180px;
+  border-radius:40px;
+  border: 1px #fff solid;
+  background-color: #000;
+
+
+}
+.c_block img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 54%;
+  height: 54%;
+
+
+}
+.c_block[class*="_inset"]:before{
+  display: block;
+
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  z-index: 100;
+
+  width: 27%;
+  height: 21%;
+  border-radius: 50%;
+
+  background-color: red;
+
+
+  transform: rotate(-45deg);
+  background: linear-gradient(180deg, rgba(255,255,255,0.81) 0%, rgba(255,255,255,0) 81%);
+
+
+}
+
+
+
+
+.c_number{
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+
+  color:#a3a3a3;
+
+      letter-spacing: 0.1em;
+    margin-right: -0.30em;
+
+  padding:6px; 
+}
+
+
+
+
+
+
+
+
+.blue-1{
+  background-color:#2a519b;
+  background-color:#2e58a6;
+  background-color:#3b64db;
+
+
+/* 
+#2e58a6
+#3b64db 
+*/
+}
+.dev_box .bg_color_blue,
+.bg_color_blue{
+  background: none;
+  background-color:#3b64db;
+}
+
+.yellow-1,
+.color.yellow-1{
+  background-color:#e5c147;
+  background-color:#ffe610;
+}
+.yellow-2,
+.color.yellow-2{
+  background-color:#f7cf18;
+}
+
+.gray-1{
+  background-image: none ;
+
+  background-color:#dfdfdf;
+}
+
+.gray-2,
+.color.gray-2{
+  background: none;
+  background-image: none !important;
+
+  background-color:#a3a3a3;
+}
+
+.gray-3{
+
+
+}
+
+
+.gray-2 .txt_box{
+  color:#f7cf18;
+}
+
+[class*="gray-"] .next_slogan{
+  color:#ffe610;
+}
+
+.standard_color{
+  text-align: center;
+}
+
+
+[class*="bga_"]{
+  display: block;
+
+  position: relative;
+  left: 50%;
+
+  margin-left: -100%;
+
+  width: 360px;
+  height: 360px;
+  /* background-color: black; */
+  /* margin:0; */
+
+  /* background-size:400%; */
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.bga_v1{
+  background-size:1920px 3840px; 
+  /* 480 */
+  background-size:1440px 2880px;
+  /* 360 */
+
+  background-image:url(../img-next/logo_design/next_dev-17.svg);
+
+/*   4 8
+1440 
+2880 */
+
+}
+
+.bga_v2{
+  /* background-size:800%; */
+
+  /* background-size: 3840px 4800px; */
+  
+  background-size:2880px 3600px;
+  background-image:url(../img-next/logo_design/next_logo_list-2.svg);
+
+/*   8 10
+  2880 3600 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 垂直置中 */
+.dev_box{
+
+/*     display: flex ;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ */
+
+
+    display: flex ;
+
+    flex-direction: column;
+    align-items:  center;
+    flex-wrap: wrap;
+
+
+/*     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; */
+
+
+    width: 100%;
+}
+
+.dev_box > div{
+
+  overflow: hidden;
+
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+  min-height: 800px;
+  /* border: 1px #000 solid; */
+
+  margin: 180px 0;
+  /* padding: 90px 0; */
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  /*   -ms-flex-item-align: start;
+    align-self: flex-start; */
+
+
+  background-image:url(../img-next/bg_01.jpg);
+  background-repeat:repeat !important;
+
+    -moz-box-shadow:
+    0 90px 90px rgba(0,0,0,0.54);
+
+    -webkit-box-shadow:
+    0 90px 90px rgba(0,0,0,0.54);
+
+    box-shadow:
+/*     0 30px 90px rgba(0,0,0,0.6),
+    0 60px 60px rgba(0,0,0,0.4), */
+    0 90px 90px rgba(0,0,0,0.54);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.txt_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 300;
+  padding: 17px 18px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: roboto_Regular;
+
+  color:#a3a3a3;
+    letter-spacing: 0.06em;
+
+
+}
+
+
+.txt_box{
+  display: none !important;
+}
+
+
+
+
+.next_logo{
+  position: relative;
+}
+
+.next_logo h2{
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color:#2e58a6;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+}
+.next_logo img{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* #85511f = 133,81,31,0.5 */
+
+
+
+.a4{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  /* z-index: 2; */
+  width: 630px;
+  height: 900px;
+  background-color: #fff;
+  background-color: #e7e7e7;
+
+  border-top: 1px #f7f7f7 solid;
+  border-left: 1px #efefef solid;
+
+}
+
+.mail_box{
+  position: absolute;
+  top: calc( 33% - 126px);
+  left: calc( 50% - 126px);
+
+  display: block;
+  overflow: hidden;
+  width: 1200px;
+  height: 600px;
+
+
+  background-color: #fff;
+  background-color: #e7e7e7;
+
+  border-top: 1px #f7f7f7 solid;
+  border-left: 1px #efefef solid;
+
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+
+  -webkit-transform-origin:126px 126px;
+  -ms-transform-origin:126px 126px;
+  transform-origin:126px 126px;
+
+    -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    box-shadow:
+    30px 90px 60px rgba(133,81,31,0.45);
+}
+
+
+.mail_box_2{
+
+  position: relative;
+/*   position: absolute;
+  top: calc( 33% - 126px);
+  left: calc( 50% - 126px); */
+
+  display: block;
+  overflow: hidden;
+  width: 510px;
+  height: 420px;
+
+
+  background-color: #fff;
+  background-color: #e7e7e7;
+  background-color:#2e58a6;
+
+  border-radius: 2px;
+
+  border-top: 1px #537ec8 solid;
+  border-left: 1px #537ec8 solid;
+  border-bottom: 1px #25315e solid;
+  border-right: 1px #25315e solid;
+
+
+
+
+/*   -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+ */
+/*   -webkit-transform-origin:126px 126px;
+  -ms-transform-origin:126px 126px;
+  transform-origin:126px 126px; */
+
+
+
+
+    -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+
+    box-shadow:
+    30px 90px 60px rgba(133,81,31,0.45);
+}
+
+
+
+
+
+.mail_box_2:before{
+
+
+  display: block;
+  content: '';
+
+
+  position: absolute;
+  top: calc( -27% - 300px);
+  left: calc( 50% - 300px);
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 30px;
+  background-color: #2e58a6;
+
+/* 
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg); */
+
+
+/*   transform:rotate(45deg);
+  transform-origin:300px 300px;
+   */
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transform-origin:300px 300px;
+  -ms-transform-origin:300px 300px;
+  transform-origin:300px 300px;
+  -moz-box-shadow:
+  2px 2px 2px rgba(18,30,72,0.54);
+
+  -webkit-box-shadow:
+  2px 2px 2px rgba(18,30,72,0.54);
+
+  box-shadow:
+  2px 2px 2px rgba(18,30,72,0.45);
+
+
+}
+
+
+
+.mail_box .next_logo{
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 144px;
+  height: auto;
+}
+.mail_box_2 .next_logo{
+  position: absolute;
+  top: 20px;
+  left: calc( 50% - 60px );
+  width: 120px;
+  height: auto;
+}
+
+
+/* 
+12
+9 1 9 3
+9 2 18 6
+
+9 3 27 9 */
+
+/* v1 - 9 x 5 */
+/* v2 - 9 x 5.4 */
+
+.card{
+  overflow: hidden;
+  position: absolute;
+
+  top: 270px;
+  left: calc(50% - 315px);
+
+  z-index: 9;
+  width: 270px;
+  height: 150px;
+  background-color:#a3a3a3;
+
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* .card.v3, */
+.card.v2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  /* align-content: center; */
+
+  width: 450px;
+  height: 270px;
+
+  border-radius:15px; 
+
+/*   border-top: 1px #fef777 solid;
+  border-left: 1px #fef777 solid;
+
+  border-bottom: 1px #f5c614 solid;
+  border-right: 1px #f8d527 solid; */
+
+  /* background-color:#ffe610; */
+
+  padding:27px; 
+
+/*   -moz-box-shadow:
+  30px 90px 60px rgba(25,37,111,0.54);
+  -webkit-box-shadow:
+  30px 90px 60px rgba(25,37,111,0.54);
+  box-shadow:
+  30px 90px 60px rgba(25,37,111,0.54);
+ */
+
+
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+
+}
+.card.v2 .next_logo{
+  position: absolute;
+  top: 27px;
+    /* top: calc( 100% - 63px); */
+
+  left: calc( 100% - 51px);
+  width: 36px;
+  width: 24px;
+
+
+  height: auto;
+}
+.card.v2 .txt_next{
+    top: 30px;
+    left: 27px;
+
+    transform: none;
+    width: auto;
+    height: 18px;
+}
+.card.v2 > div:last-child{
+  margin-left: 20%;
+}
+
+
+
+
+.wallet_cash{
+  margin-left: 0 !important;
+  margin-top: -15px;
+}
+.wallet_cash .num{
+  font-size: 36px;
+  line-height: 36px;
+  font-family: roboto_light;
+
+  color: #3b64db;
+
+  text-align: center;
+
+  padding:10px 0; 
+}
+.wallet_cash span{
+  color: #9d9d9d;
+  font-family: roboto_thin;
+}
+
+
+.wallet_cash > span{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+.c_bg_c_blue_1 .wallet_cash span{
+  color: #ffe610;
+  color: #fff;
+  }
+.c_bg_c_blue_1 .wallet_cash .num{
+  color: #fff;
+  color: #ffe610;
+}
+
+.c_bg_c_gray_1 .wallet_cash span{
+  color: #ffe610;
+  color: #fff;
+  }
+.c_bg_c_gray_1 .wallet_cash .num{
+  color: #fff;
+  color: #ffe610;
+}
+
+.c_bg_c_black_1 .wallet_cash span{
+  color: #ffe610;
+  color: #fff;
+  }
+.c_bg_c_black_1 .wallet_cash .num{
+  color: #fff;
+  color: #ffe610;
+}
+
+
+
+
+
+#card_num{
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.27em;
+  word-spacing: 0.2em;
+
+  margin-right: -0.27em;
+
+  padding-top:14px;
+  padding-bottom:14px;
+
+}
+
+
+.card.c_p_13,
+.card.c_p_11,
+.card.c_p_09,
+.card.c_p_07,
+.card.c_p_05{
+  align-content: center;
+}
+.card.c_p_13 .txt_next,
+.card.c_p_11 .txt_next,
+.card.c_p_09 .txt_next,
+.card.c_p_07 .txt_next,
+.card.c_p_05 .txt_next{
+  top: calc( 100% - 45px);
+  left: calc( 100% - 135px);
+}
+
+
+
+
+
+.c_bg_c_yellow_1 .textarea,
+.c_bg_c_yellow_1 .input,
+.c_bg_c_yellow_1 textarea,
+.c_bg_c_yellow_1 input{
+  color: #2d49c3;
+  background-color:#f7cf18;
+}
+.c_bg_c_yellow_1 ::-webkit-input-placeholder{
+    color:#3b64db;
+    }/* Chrome/Opera/Safari */
+.c_bg_c_yellow_1 ::-moz-placeholder{ 
+    color:#3b64db;
+    }/* Firefox 19+ */
+.c_bg_c_yellow_1 :-moz-placeholder{ 
+    color:#3b64db;
+    }/* Firefox 18- */
+.c_bg_c_yellow_1 :-ms-input-placeholder{
+    color:#3b64db;
+    }/* IE 10+ */
+
+
+.c_bg_c_blue_1 .textarea,
+.c_bg_c_blue_1 .input,
+.c_bg_c_blue_1 textarea,
+.c_bg_c_blue_1 input{
+  color: #f7cf18;
+  background-color:#2d49c3;
+}
+.c_bg_c_blue_1 ::-webkit-input-placeholder{
+    color:#ffe610;
+    }/* Chrome/Opera/Safari */
+.c_bg_c_blue_1 ::-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 19+ */
+.c_bg_c_blue_1 :-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 18- */
+.c_bg_c_blue_1 :-ms-input-placeholder{
+    color:#ffe610;
+    }/* IE 10+ */
+
+
+
+
+
+
+
+
+.c_bg_c_gray_1 .textarea,
+.c_bg_c_gray_1 .input,
+.c_bg_c_gray_1 textarea,
+.c_bg_c_gray_1 input{
+  color: #f7cf18;
+  background-color:#b8b8b8;
+}
+.c_bg_c_gray_1 ::-webkit-input-placeholder{
+    color:#ffe610;
+    }/* Chrome/Opera/Safari */
+.c_bg_c_gray_1 ::-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 19+ */
+.c_bg_c_gray_1 :-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 18- */
+.c_bg_c_gray_1 :-ms-input-placeholder{
+    color:#ffe610;
+    }/* IE 10+ */
+
+
+.c_bg_c_black_1 .textarea,
+.c_bg_c_black_1 .input,
+.c_bg_c_black_1 textarea,
+.c_bg_c_black_1 input{
+  color: #f7cf18;
+  background-color:#262b4a;
+}
+.c_bg_c_black_1 ::-webkit-input-placeholder{
+    color:#ffe610;
+    }/* Chrome/Opera/Safari */
+.c_bg_c_black_1 ::-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 19+ */
+.c_bg_c_black_1 :-moz-placeholder{ 
+    color:#ffe610;
+    }/* Firefox 18- */
+.c_bg_c_black_1 :-ms-input-placeholder{
+    color:#ffe610;
+    }/* IE 10+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_list{
+  padding:0 !important; 
+  min-height: none;
+  height: 1200px;
+}
+.card_list .txt_box{
+  color:#ffe610;
+}
+
+
+.card_list > div:not(.txt_box){
+
+  /* 由左至右 換行 繼續 */
+  display: flex ;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 2700px;
+  
+/*
+  background-color:#ffe610;
+  background-color:#a3a3a3;
+*/
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+
+
+.card_list > div:not(.txt_box) > div{
+
+  position: relative;
+  width: 540px;
+  height: 300px;
+/*   background-color:#ffe610;
+  background-color:#a3a3a3; */
+}
+
+.card_list > div:not(.txt_box) > div:nth-child(odd){
+/*   background-color:#a3a3a3;
+  background-color:#ffe610; */
+  background-color:#ffe610;
+  background-color:#a3a3a3;
+  /* background-color:#262b4a; */
+
+  -moz-box-shadow:
+  30px 90px 60px rgba(133,81,31,0.54);
+
+  -webkit-box-shadow:
+  30px 90px 60px rgba(133,81,31,0.54);
+
+  box-shadow:
+  /* 30px 90px 40px rgba(133,81,31,0.25), */
+  30px 90px 60px rgba(133,81,31,0.45);
+}
+
+
+
+
+
+
+
+
+
+/* v2 */
+
+
+.card_list.v2{
+  height: 900px;
+}
+
+.card_list.v2 > div:not(.txt_box){
+  width: 1800px;
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.card_list.v2 > div:not(.txt_box) > div{
+  width: 360px;
+  height: 200px;
+}
+
+/* 
+9 6 540
+5 6 300
+
+9 5 450
+5 5 250
+
+2250
+
+
+9 4 360
+5 4 200
+
+2250
+
+
+9 3 270
+5 3 150 */
+
+
+.card_list.v2 .next_logo{
+width: 15%;
+}
+
+.card_list.v2 .txt_next{
+width: 63%;
+
+}
+
+.card_list.v2 > div:not(.txt_box) > div:nth-child(odd){
+  background-color:#262b4a;
+
+
+  background-image:url(../img-next/bg_02.jpg);
+  background-repeat:repeat !important;
+}
+
+
+
+
+/* next_slogan */
+.card_list.v3 > div:not(.txt_box):not(.next_slogan){
+  width: 1800px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.card_list.v3 .next_slogan{
+  position: absolute;
+  top: calc( 50% + 54px );
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.card_list.v3 .txt_next{
+
+width: 150px;
+  top: calc( 50% + 54px );
+
+}
+
+
+
+.card_list.v3 > div:not(.txt_box) > div{
+/*   display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+
+      align-items:  center;
+  justify-content: center; 
+     */
+
+
+  width:calc( 300px - 6px );
+  height:calc( 300px - 6px );
+  width:calc( 300px  );
+  height:calc( 300px  );
+
+  background: none !important;
+  box-shadow: none !important;
+
+  border-right: 1px #a3a3a3 dashed;
+  border-top: 1px #a3a3a3 dashed;
+
+
+  border-radius: 6px;
+
+  margin: 3px;
+
+
+
+
+
+}
+
+.card_list.v3 > div > div img{
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  margin: -10.5%;
+
+
+
+}
+
+
+
+
+
+
+
+
+.a4 .next_logo{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 72px;
+  height: auto;
+}
+
+
+.card .next_logo{
+  position: absolute;
+  top: 9px;
+  left: calc( 100% - 63px);
+  width: 54px;
+  height: auto;
+}
+
+
+.card_list .next_logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21%;
+  height: auto;
+
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+}
+
+
+
+/* 
+
+.card.item_2{
+  top: 450px;
+  background-color:#ffe610;
+}
+
+.card.item_3{
+  top: 50%;
+  left: calc(50% + 255px);
+  background-color:#ffe610;
+  background-color: #a3a3a3;
+
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+}
+
+
+ */
+.txt_next{
+  width: 72%;
+}
+
+.card_list .txt_next,
+.card .txt_next{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+}
+
+
+
+.next_slogan{
+  color:#a3a3a3;
+    display: block;
+    clear: both;
+    
+    z-index: 300;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: roboto_Regular;
+
+    text-transform: uppercase;
+    letter-spacing: 0.30em;
+    margin-right: -0.30em;
+    padding: 10px 0;
+
+}
+
+.a4 .next_slogan{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  transform-origin: top right;
+  transform: rotate(90deg);
+
+  padding: 0;
+
+}
+
+.a4{
+
+    -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+    box-shadow:
+    30px 90px 60px rgba(133,81,31,0.45);
+
+}
+
+
+
+
+
+
+/* card position */
+/* card background color */
+
+
+.c_p_01{
+  top: 50%;
+  left: calc(50% + 255px);
+}
+.c_p_02{
+  top: 270px;
+  left: calc(50% - 315px);
+}
+.c_p_03{
+  top: 450px;
+  left: calc(50% - 315px);
+}
+
+
+
+
+
+.c_p_04{
+  top: 9%;
+  left: 60%;
+
+}
+.c_p_05{
+  top: 18%;
+  left: 24%;
+}
+
+
+.c_p_06{
+  top: 27%;
+  left: 70%;
+
+}
+.c_p_07{
+  top: 36%;
+  left: 34%;
+}
+
+
+.c_p_08{
+  top: 45%;
+  left: 80%;
+}
+.c_p_09{
+  top: 54%;
+  left: 44%;
+}
+
+
+.c_p_10{
+  top: 63%;
+  left: 70%;
+
+}
+.c_p_11{
+  top: 72%;
+  left: 34%;
+}
+
+
+.c_p_12{
+  top: 81%;
+  left: 60%;
+}
+.c_p_13{
+  top: 90%;
+  left: 24%;
+}
+
+
+
+
+
+
+
+
+
+/* .card.c_bg_c_yellow_1, */
+.c_bg_c_yellow_1{
+  border-top: 1px #fdf374 solid;
+  border-bottom: 1px #f9d62c solid;
+  border-left: 1px #fcee63 solid;
+  border-right: 1px #fade3b solid;
+  background-color: #ffe610;
+}
+
+.c_bg_c_blue_1{
+  border-top: 1px #658ee9 solid;
+  border-bottom: 1px #243eba solid;
+  border-left: 1px #557be0 solid;
+  border-right: 1px #314fc6 solid;
+  background-color: #3b64db;
+}
+
+
+
+
+.c_bg_c_gray_1{
+  background-color:#a3a3a3;
+}
+.c_bg_c_black_1{
+  background-color:#000;
+}
+.c_bg_c_white_1{
+  background-color:#fff;
+}
+
+
+
+
+
+
+
+.shadow_yellow{
+    -moz-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+    -webkit-box-shadow:
+    30px 90px 60px rgba(133,81,31,0.54);
+    box-shadow:
+    30px 90px 60px rgba(133,81,31,0.45);
+}
+.shadow_blue{
+    -moz-box-shadow:
+    30px 90px 60px rgba(25,37,111,0.54);
+    -webkit-box-shadow:
+    30px 90px 60px rgba(25,37,111,0.54);
+    box-shadow:
+    30px 90px 60px rgba(25,37,111,0.54);
+}
+
+@media screen and (max-width:767px) {
+
+
+
+.dev_box > div{
+  overflow: hidden;
+  width: 90%;
+}
+
+.dev_box > div:not(.img_box) > img:not(.next_logo){
+  width: auto;
+  height: 100%;
+}
+
+.a4{
+  position: absolute;
+
+  top: 90px;
+  left: 30px;
+}
+.card{
+  left:0;
+  transform: none;
+}
+
+
+
+.c_p_05,
+.c_p_07,
+.c_p_09,
+.c_p_11,
+.c_p_13{
+  left: 21%;
+}
+
+/* .card.item_3{
+  top: 63%;
+  left: calc(50% + 81px);
+ 
+}
+ */
+
+.color.boo{
+  display: block;
+}
+
+}
+
+
+
+
+.add_line:before,
+.add_line:after{
+  display: block;
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+
+  z-index: 300;
+
+  width: 1px;
+  height: 300px;
+
+  background-color: red;
+}
+
+
+.add_line:after{
+  width: 300px;
+  height: 1px;
+}
+
+
+.dev_box .bg_color{
+/* background: none !important; */
+/* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+
+  background: -webkit-linear-gradient(-33deg, #ffe610 50%, #3b64db 50%);
+  background: -o-linear-gradient(-33deg, #ffe610 50%, #3b64db 50%);
+  background: -moz-linear-gradient(-33deg, #ffe610 50%, #3b64db 50%);
+  background: linear-gradient(-33deg, #ffe610 50%, #3b64db 50%) ;
+/*   background: 
+  linear-gradient(66deg, #ffe610 33%, rgba(0,0,0,0) 33%), 
+  linear-gradient(10deg, #2e58a6 66%, #a3a3a3 66%); */
+}
+
+
+
+.dev_box [class*="bg_color_"]{
+  background-image: none ;
+  background-position: center top !important;
+}
+
+
+.dev_box .bg_color_2,
+.bg_color_2{
+  background: -o-radial-gradient( #ffe610 50%, #3b64db 50%) ;
+  background: radial-gradient( #ffe610 50%, #3b64db 50%) ;
+}
+
+.dev_box .bg_color_3,
+.bg_color_3{
+  background: -o-radial-gradient(#3b64db 50%, #ffe610 50%) ;
+  background: radial-gradient(#3b64db 50%, #ffe610 50%) ;
+}
+
+.dev_box .bg_color_4,
+.bg_color_4{
+  background: 
+  -o-radial-gradient( #2e58a6 30%, rgba(0,0,0,0) 30%), 
+  -o-radial-gradient(#ffe610 60%, #a3a3a3 60%);
+  background: 
+  radial-gradient( #2e58a6 30%, rgba(0,0,0,0) 30%), 
+  radial-gradient(#ffe610 60%, #a3a3a3 60%);
+}
+
+.dev_box .bg_color_5,
+.bg_color_5{
+  background: 
+  -o-radial-gradient( #ffe610 30%, rgba(0,0,0,0) 30%),
+  -o-radial-gradient( #a3a3a3 60%, #2e58a6 60%);
+  background: 
+  radial-gradient( #ffe610 30%, rgba(0,0,0,0) 30%),
+  radial-gradient( #a3a3a3 60%, #2e58a6 60%);
+}
+
+.dev_box .bg_color_6,
+.bg_color_6{
+  background: -webkit-gradient(  linear , left top, left bottom , from(#ffe610) , color-stop(50%, #3b64db)) ;
+  background: -o-linear-gradient(  #ffe610 , #3b64db 50%) ;
+  background: linear-gradient(  #ffe610 , #3b64db 50%) ;
+  background-size: auto !important;
+}
+
+
+.dev_box .bg_color_7,
+.bg_color_7{
+  background: -o-radial-gradient( #ffe610, #3b64db) ;
+  background: radial-gradient( #ffe610, #3b64db) ;
+}
+
+.dev_box .bg_color_8,
+.bg_color_8{
+  background: -o-radial-gradient(#3b64db, #ffe610) ;
+  background: radial-gradient(#3b64db, #ffe610) ;
+}
+
+.dev_box .bg_color_9,
+.bg_color_9{
+  background: 
+  -o-radial-gradient( #2e58a6 , rgba(0,0,0,0) 30%), 
+  -o-radial-gradient(#ffe610 , #a3a3a3 );
+  background: 
+  radial-gradient( #2e58a6 , rgba(0,0,0,0) 30%), 
+  radial-gradient(#ffe610 , #a3a3a3 );
+}
+
+.dev_box .bg_color_10,
+.bg_color_10{
+  background: 
+  -o-radial-gradient( #ffe610 , rgba(0,0,0,0) 30%),
+  -o-radial-gradient( #a3a3a3 , #2e58a6 );
+  background: 
+  radial-gradient( #ffe610 , rgba(0,0,0,0) 30%),
+  radial-gradient( #a3a3a3 , #2e58a6 );
+}
+
+/* 
+00007b
+f3b400
+d57200
+9f9f9f
+000000
+ */
+
+.blue_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #0000a7 inset, 
+  4px 9px 27px #00007b inset;
+}
+.yellow_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #f7cd00 inset,
+  4px 9px 27px #f3b400 inset;
+
+}
+.yellow_2_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #e3a100 inset,
+  4px 9px 27px #d57200 inset;
+
+}
+.gray_1_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #bfbfbf inset,
+  4px 9px 27px #9f9f9f inset;
+
+}
+.gray_2_inset{
+  box-shadow:
+  0 36px 9px rgba(0,0,0,0.27),
+  0 36px 18px rgba(0,0,0,0.18),
+  9px 18px 45px #474747 inset,
+  4px 9px 27px #000000 inset;
+
+}
+
+
+/* 0000a7
+f7cd00
+e3a100
+bfbfbf
+474747
+
+ */
+
+
+
+[class*="bg_color_"] > .next_logo{
+  display: inline-block;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 6%;
+  min-width: 54px;
+  max-width: 54px;
+  height: auto;
+}
+[class*="bg_color_"] > .txt_next{
+  width:290px;
+}
+
+.color_boo{
+  width: 600px;
+  height: 600px;
+  border-radius: 1200px;
+
+display: flex ;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+
+justify-content:flex-end;
+
+padding-bottom: 90px;
+
+}
+
+
+.color_page{
+
+align-items: center;
+justify-content:flex-end !important;
+padding-bottom: 90px;
+  background-size: 1200px 1200px !important;
+
+}
+/* #2e58a6
+#3b64db */
+
+/* .dev_box .bg_color{
+
+
+  background: -webkit-radial-gradient(#ffe610 50%, #3b64db 50%);
+  background: -o-radial-gradient(#ffe610 50%, #3b64db 50%);
+  background: -moz-radial-gradient(#ffe610 50%, #3b64db 50%);
+
+  background: radial-gradient(#ffe610 50%, #3b64db 50%) ;
+
+  background: 
+  radial-gradient( #2e58a6 270px, rgba(0,0,0,0) 270px), 
+  radial-gradient(#ffe610 540px, #a3a3a3 540px);
+  background-size: 1200px 1200px;
+
+}
+
+ */
+
+
+
+
+
+.v6,
+.v7{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.v6{
+  top: 33.333333%;
+  left: 33.333333%;
+}
+
+.v7{
+  top: 66.666666%;
+  left: 66.666666%;
+}
+
+
+
+.test_logo > img{
+  width: 150px;
+}
+
+
+
+
+/* #3580be
+#bde6f3
+#f08257
+#3e35be
+#babfec
+#eed15e
+#b4b8be */
+
+</style>
+
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/hand.js"></script>
+
+<script src="../jq/all_2.js"></script>
+
+<script>
+
+
+  // function isiPad(){
+    // return (navigator.platform.indexOf("iPad") != -1);
+  // }
+
+  $(function(){
+
+    // if($(window).width() > 1025) {
+        // $(".background").css({"background-image": "url(next_dev-17.svg)", "background-size": "1920px 960px"});
+        // if(!isiPad()){
+
+
+
+
+          var 
+  
+          w_1=0,
+          h_1=0,
+          w_2=0,
+          h_2=0;
+
+
+          setInterval(function(){
+
+            var 
+            x1 = 360 * w_1,
+            y1 = 360 * h_1,
+            x2 = 360 * w_2,
+            y2 = 360 * h_2,
+            h_1_animate = false;
+            h_2_animate = false;
+
+
+          $('.bga_v1').css({"background-position": "-"+x1+"px -"+y1+"px"});
+
+            if(w_1 < 3){
+              w_1 = w_1+1;
+            }
+            else{
+              w_1 = 0;
+              h_1_animate = true;
+            } 
+
+            if(h_1 < 7){
+              if(h_1_animate){
+              h_1 = h_1+1;
+              h_1_animate = false;
+              }
+            }else{
+              h_1 = 0;
+              h_1_animate = false;
+            }
+
+          $('.bga_v2').css({"background-position": "-"+x2+"px -"+y2+"px"});
+
+
+            if(w_2 < 8){
+              w_2 = w_2+1;
+            }
+            else{
+              w_2 = 0;
+              h_2_animate = true;
+            } 
+
+            if(h_2 < 9){
+              if(h_2_animate){
+              h_2 = h_2+1;
+              h_2_animate = false;
+              }
+            }else{
+              h_2 = 0;
+              h_2_animate = false;
+            }
+
+// }
+  // });
+
+
+          }, 240);
+        // }
+    // }
+  });
+
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<div class="m_page_name dark_night">
+
+<div class="tag">NEXT</div>
+Style Guide
+<p>photoshop<span>/</span>photography</p>
+</div>
+
+<div class="dev_box">
+
+
+
+
+
+
+
+
+
+<div class="img_box">
+<div class="txt_box">Dev 20191006</div>
+
+<img src="../img-next/logo_design/p04.jpg">
+<img src="../img-next/logo_design/p02.jpg">
+<img src="../img-next/logo_design/p01.jpg">
+<img src="../img-next/logo_design/p03.jpg">
+
+<img src="../img-next/logo_design/p07.jpg">
+<img src="../img-next/logo_design/p06.jpg">
+
+<img class="w_100" src="../img-next/logo_design/p05.jpg">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg_color_10 shadow_blue color_page" style="margin-bottom:0;">
+  <div class="txt_box">Dev 20190926</div>
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_9 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+</div><div class="bg_color_8 shadow_blue color_page" style="margin:0;">
+
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_blue-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+</div><div class="bg_color_7 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg gray-2 shadow_blue color_page" style="margin:0;">
+
+
+  <div class="color_boo bg_color_6">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+  </div>
+
+
+</div><div class="bg_color_5 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_4 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_3 shadow_blue color_page" style="margin:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_blue-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+</div><div class="bg_color_2 shadow_blue color_page" style="margin-top:0;">
+
+  <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+  <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue.svg" alt="">
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="bg_color_blue" style="margin-bottom:0; height: 1800px;">
+<div class="txt_box">Dev 20190924</div>
+<!-- <div class="next_slogan">Mutual &bull; Flow &bull; Future</div> -->
+
+<!-- next_logo_6_blue -->
+
+
+
+
+
+<div class="card v2 c_p_13 c_bg_c_white_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt="">
+
+
+<div class="wallet_cash">
+<span class="w_100">Your Wallet</span>
+<div class="num"><span>$</span> 888,888,888.<span>00</span></div>
+</div>
+
+</div>
+
+
+<div class="card v2 c_p_12 c_bg_c_white_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt="">
+
+    <div class="w_100">
+      <label for="card_num">Card Number</label>
+      <input id="card_num" type="text" placeholder="8888 8888 8888 8888">
+    </div>
+
+    <div class="w_50">
+      <label for="card_exp">Expiration</label>
+      <input id="card_exp" type="text" placeholder="Love 3000">
+    </div>
+
+    <div class="w_30">
+      <label for="card_ccv">CCV</label>
+      <input id="card_ccv" type="text" placeholder="888">
+    </div>
+
+  </div>
+
+
+
+<div class="card v2 c_p_11 c_bg_c_black_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt="">
+
+
+<div class="wallet_cash">
+<span class="w_100">Your Wallet</span>
+<div class="num"><span>$</span> 888,888,888.<span>00</span></div>
+</div>
+
+</div>
+
+
+<div class="card v2 c_p_10 c_bg_c_black_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt="">
+
+    <div class="w_100">
+      <label for="card_num">Card Number</label>
+      <input id="card_num" type="text" placeholder="8888 8888 8888 8888">
+    </div>
+
+    <div class="w_50">
+      <label for="card_exp">Expiration</label>
+      <input id="card_exp" type="text" placeholder="Love 3000">
+    </div>
+
+    <div class="w_30">
+      <label for="card_ccv">CCV</label>
+      <input id="card_ccv" type="text" placeholder="888">
+    </div>
+
+  </div>
+
+
+
+
+
+<div class="card v2 c_p_09 c_bg_c_gray_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+
+
+<div class="wallet_cash">
+<span class="w_100">Your Wallet</span>
+<div class="num"><span>$</span> 888,888,888.<span>00</span></div>
+</div>
+
+</div>
+
+
+<div class="card v2 c_p_08 c_bg_c_gray_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_5_y-2.svg" alt="">
+
+    <div class="w_100">
+      <label for="card_num">Card Number</label>
+      <input id="card_num" type="text" placeholder="8888 8888 8888 8888">
+    </div>
+
+    <div class="w_50">
+      <label for="card_exp">Expiration</label>
+      <input id="card_exp" type="text" placeholder="Love 3000">
+    </div>
+
+    <div class="w_30">
+      <label for="card_ccv">CCV</label>
+      <input id="card_ccv" type="text" placeholder="888">
+    </div>
+
+  </div>
+
+
+
+<div class="card v2 c_p_07 c_bg_c_blue_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt="">
+
+
+<div class="wallet_cash">
+<span class="w_100">Your Wallet</span>
+<div class="num"><span>$</span> 888,888,888.<span>00</span></div>
+</div>
+
+</div>
+
+
+<div class="card v2 c_p_06 c_bg_c_blue_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt="">
+
+    <div class="w_100">
+      <label for="card_num">Card Number</label>
+      <input id="card_num" type="text" placeholder="8888 8888 8888 8888">
+    </div>
+
+    <div class="w_50">
+      <label for="card_exp">Expiration</label>
+      <input id="card_exp" type="text" placeholder="Love 3000">
+    </div>
+
+    <div class="w_30">
+      <label for="card_ccv">CCV</label>
+      <input id="card_ccv" type="text" placeholder="888">
+    </div>
+
+  </div>
+
+
+
+<div class="card v2 c_p_05 c_bg_c_yellow_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_1.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_6_blue.svg" alt="">
+
+
+<div class="wallet_cash">
+<span class="w_100">Your Wallet</span>
+<div class="num"><span>$</span> 888,888,888.<span>00</span></div>
+</div>
+
+</div>
+
+
+<div class="card v2 c_p_04 c_bg_c_yellow_1 shadow_blue">
+    <img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_1.svg" alt="">
+    <img class="next_logo" src="../img-next/logo_design/next_logo_6_blue.svg" alt="">
+
+    <div class="w_100">
+      <label for="card_num">Card Number</label>
+      <input id="card_num" type="text" placeholder="8888 8888 8888 8888">
+    </div>
+
+    <div class="w_50">
+      <label for="card_exp">Expiration</label>
+      <input id="card_exp" type="text" placeholder="Love 3000">
+    </div>
+
+    <div class="w_30">
+      <label for="card_ccv">CCV</label>
+      <input id="card_ccv" type="text" placeholder="888">
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<div class="bg_color" style="margin:0;">
+
+  <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+<img class="next_logo v6" src="../img-next/logo_design/next_logo_6_y.svg" alt="">
+<img class="next_logo v7" src="../img-next/logo_design/next_logo_7_blue.svg" alt="">
+
+
+</div>
+
+
+  <div style="margin-bottom:0;">
+      <div class="txt_box">Dev 20190922</div>
+      <div class="bga_v2"></div>
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+  </div>
+
+
+
+<div style="margin:0; padding:0; ">
+      <img class="" src="../img-next/logo_design/dev_21-1.jpg" alt="">
+</div>
+
+
+
+
+
+
+  <div class="card_list v3" style="margin:0;">
+      <!-- <div class="next_slogan">Mutual &bull; Flow &bull; Future</div> -->
+
+<img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_1.svg" alt="">
+
+<!-- <div class="txt_box">Dev 20190922</div> -->
+
+<div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+
+ <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_g.svg" alt=""></div>
+  
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_g.svg" alt=""></div>
+  
+  
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+  <div class="card_list v2" style="margin-top:0;">
+
+
+<!-- <div class="txt_box">Dev 20190922</div> -->
+
+<div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_7_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_6_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_blue_2.svg" alt=""></div>
+
+ 
+</div>
+
+</div>
+<!-- 
+
+<div style="margin-top:0; padding:0; background:none; box-shadow: none; ">
+      <img class="" src="../img-next/logo_design/dev_21-2.svg" alt="" style="height: 300px;">
+</div>
+
+
+ -->
+
+
+
+
+
+<div class="card_list">
+
+<div class="txt_box">Dev 20190921</div>
+
+<div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+  <div><img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt=""></div>
+  <div><img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt=""></div>
+ 
+</div>
+
+</div>
+
+<div style="margin-bottom:0; height: 1200px;">
+  <div class="txt_box">Dev 20190919</div>
+
+  <div class="card c_p_02 shadow_yellow">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt="">
+  </div>
+
+  <div class="card c_p_03 c_bg_c_yellow_1 shadow_yellow">
+      <img class="txt_next" src="../img-next/logo_design/next_txt_1_g.svg" alt="">
+  </div>
+
+  <div class="a4">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_b.svg" alt="">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+  </div>
+
+</div>
+
+
+
+
+<div class="bg gray-2 " style="margin:0; ">
+      <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+</div>
+
+
+
+
+<div class="" style="margin:0; ">
+  <div class="next_slogan">Mutual • Flow • Future</div>
+  <div class="mail_box">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_b.svg" alt="">
+  </div>
+
+</div>
+
+
+<div class="" style="margin-top:0; ">
+  <div class="next_slogan">Mutual • Flow • Future</div>
+
+  <div class="card c_p_01 shadow_yellow">
+      <img class="txt_next" src="../img-next/logo_design/next_txt_1_y.svg" alt="">
+  </div>
+
+  <div class="mail_box_2 shadow_yellow">
+      <img class="next_logo" src="../img-next/logo_design/next_logo_5_y.svg" alt="">
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+      <div class="txt_box">Dev 20190917</div>
+      <div class="bga_v1"></div>
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+  </div><div class="next_logo">
+
+      <div class="txt_box">Dev 20190912</div>
+      <img src="../img-next/logo_design/next_logo_4_b.svg">
+      <div class="next_slogan">Mutual &bull; Flow &bull; Future</div>
+
+  </div><div class="color_box v2">
+    
+    <div class="txt_box">Dev 20190909</div>
+    <!-- <h2>Standard color</h2> -->
+    <div class="color boo blue-1"><span>#2e58a6</span></div>
+    <div class="color boo yellow-1"><span>#ffe610</span></div>
+    <div class="color boo yellow-2"><span>#f7cf18</span></div>
+    <div class="color boo gray-1 "><span>#dfdfdf</span></div>
+    <div class="color boo gray-2 "><span>#a3a3a3</span></div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

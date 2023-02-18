@@ -1,0 +1,1440 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="I am a designer who currently works freelance in Taipei. My value is intersecting logical and emotional concepts.">
+<meta name="keywords" content="MOUNTAIN, MM, Planning, Art Direction, Graphic Design, VI Design, Web Direction, UI Design, UX Design, Web Development">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img/mm_logo.png">
+
+<link media="all" rel="stylesheet" href="../css/all.css">
+<link media="all" rel="stylesheet" href="../css/size.css">
+<link media="all" rel="stylesheet" href="../css/fonts.css">
+<link media="all" rel="stylesheet" href="../css/m_v2019_1.css">
+<link media="all" rel="stylesheet" href="../css/header.css">
+
+<link media="all" rel="stylesheet" href="../css-sm/sm_2019_1.css">
+<link media="all" rel="stylesheet" href="../css-sm/sm_btn.css">
+
+
+
+
+<style>
+
+/* body{
+		background-color:#faf5f0;
+		} */
+
+
+p + button{
+	margin: 0;
+} 
+.info_box > .ddm_sm,
+.info_box > button{
+	width: 48%;
+}
+
+
+
+
+
+
+</style>
+<script src="../jq/jquery_3_2_1_min.js"></script>
+<script src="../jq/hand.js"></script>
+<script src="../jq/all_2.js"></script>
+
+
+<script>
+
+$(window).on('load', function() {
+
+
+	$('a.sm_on_off').on('click', function() {
+
+		if ($(this).hasClass('on')) {
+			$(this).removeClass('on');
+			$(this).parent('.day_night').removeClass('day');
+			// $(this).prev('.t_main_title').text('Night !');
+		}else{
+			$(this).addClass('on');
+			$(this).parent('.day_night').addClass('day');
+			// $(this).prev('.t_main_title').html('Good<br>Day !');
+		}
+
+		return false;
+	});
+
+
+	$('.info_box').each(function() {
+		var ts_info_box = $(this);
+
+		$(this).find('.btn_txt , .btn_add_address , .btn-continue , .btn-cancel , .btn_add_code').on('click', function() {
+
+		if ( $(this).hasClass('btn_txt') ) {
+			ts_info_box.find('> *').hide();
+			ts_info_box.find('form').slideDown();
+
+		}else if ( $(this).hasClass('btn_add_address') ) {
+			ts_info_box.find('> *').hide();
+			ts_info_box.find('form').slideDown();
+
+		}else if( $(this).hasClass('btn-continue') ) {
+			ts_info_box.find('form').slideUp(180);
+			ts_info_box.find('form').siblings().show();
+			$(this).parent().prev('.sm_check_box').find('.icon').addClass('click');
+
+		}else if( $(this).hasClass('btn-cancel') ) {
+			ts_info_box.find('form').slideUp(180);
+			ts_info_box.find('form').siblings().show();
+			$(this).parent().prev('.sm_check_box').find('.icon').addClass('click');
+
+		}
+
+		return false;
+
+		});
+	});
+
+
+$('.payment_total').each(function() {
+	
+
+var ts_payment_total = $(this);
+
+	$(this).find('.btn_add_code').on('click', function() {
+
+
+	if ( $(this).hasClass('open') ) {
+		$(this).removeClass('open').parents('.payment_total').find('.add_gift_code').slideUp();
+	}else {
+		$(this).addClass('open').parents('.payment_total').find('.add_gift_code').slideDown();
+
+	}
+	return false;
+	});
+
+	$(this).find('button').on('click', function() {
+		ts_payment_total.find('.add_gift_code').slideUp();
+		ts_payment_total.find('.btn_add_code').removeClass('open');
+	return false;
+	});
+
+
+
+});
+// payment_total
+
+});
+
+</script>
+</head>
+<body>
+
+
+
+
+
+
+<div id="sm_frontend" class="m_page_name dark_night">Frontend
+<p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p>
+</div>
+
+
+
+<a class="change-size mobile" href="#"><span>Change screen size</span></a>
+
+<div class="content_box sm_bg">
+
+
+
+<div class="mobile_size_iphone6 un_bg dark_night">
+<div class="m_m_subtitle">Vino e-commerce application</div>
+<div class="m_m_subtitle">The application let your customers find good wine and buy. Let you manage your platform better.</div>
+<br>
+<div class="m_m_subtitle tag_arrow m320">
+  <div>Payment Flow<span class="icon">&nbsp;</span></div>
+</div>
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6 change_size">
+
+
+<div class="box_name">Shopping Bag
+
+<div class="progress v2">
+	<div class="check"><span>Shapping Bag</span></div>
+	<div class=""><span>Payment</span></div>
+	<div><span>Review</span></div>
+</div>
+
+</div>
+
+<div class="mw_1200">
+
+<div class="wm_66 bag_list">
+
+<!-- <div class="p_table item_name">
+    <div class="p_description">ITEM</div>
+    <div class="p_qty">QTY</div>
+    <div class="p_price">PRICE</div>
+</div> -->
+
+
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_tessano_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Tessano</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$2,499</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_brugneto_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Brugneto</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,618</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_sangiovese_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Sangiovese</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,488</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_rosso_dei_castelli_sammarinesi_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Rosso Dei Castelli</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$999</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_roncale_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Roncale</p><p>white wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,468</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table">
+	<div class="p_description">
+		<div class="product_img">
+			<img src="../img-sm/products/p_sm_caldese_1.jpg"></div>
+		<p class="product_brands">San Marino</p>
+		<p class="product_name">Caldese</p>
+		<p>white wine</p>
+	</div>
+	<div class="p_qty">1</div><div class="p_price">NT$2208</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+
+
+
+
+
+</div><div class="wm_33">
+
+
+
+	<h5>Summary</h5>
+<div class=" payment_total">
+		<p>Shopping Bag <a class="icon_question" href="#">?
+			<span class="tooltip a_l">We estimate shipping fees using your location. You will be able to change your shipping method before completing your order.</span>
+
+		</a> <span>$5,605</span></p>
+		<p>Sales Tax 
+		<a class="icon_question" href="#">?
+<span class="tooltip a_l">We estimate taxes using your location. You will be able to change your shipping address before completing your order.</span>
+
+		</a><span>$0</span></p>
+		<p>Shipping <span>$40</span></p>
+		<p>Promo Code <a class="btn_add_code" href="#">Add</a> <span>-$160</span></p>
+
+
+		<div class="add_gift_code">
+			
+			<div class="m_s_subtitle">Limit one per order</div>
+			<input class="wm_100" name="" type="text" autocomplete="off" placeholder="Enter Gift Code"> 
+			<button type="button" class="wm_50 btn_white btn-cancel">Remove</button>
+			<button type="button" class="wm_50 btn_wine_red btn-continue">Apple</button>
+
+		</div>
+
+		<p>Order Total <span>$5,485</span></p>
+	</div>
+
+
+<button type="button" class="wm_100 btn_wine_red">Check Out</button>
+</div>
+<!-- wm_33 -->
+
+</div>
+<!-- max width 1200 -->
+
+</div>
+<!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile_size_iphone6 change_size">
+
+<div class="box_name">Checkout
+<div class="progress v2">
+	<div class="complete"><span>Shapping Bag</span></div>
+	<div class="check"><span>Payment</span></div>
+	<div><span>Review</span></div>
+</div>
+</div>
+
+
+
+
+
+<div class="mw_1200">
+
+<div class="wm_33">
+	<h5>Summary</h5>
+	
+	<div class="payment_total">
+		<p>Shopping Bag <a class="icon_question" href="#">?
+			<span class="tooltip a_l">We estimate shipping fees using your location. You will be able to change your shipping method before completing your order.</span>
+
+		</a> <span>$5,605</span></p>
+		<p>Sales Tax 
+		<a class="icon_question" href="#">?
+<span class="tooltip a_l">We estimate taxes using your location. You will be able to change your shipping address before completing your order.</span>
+
+		</a><span>$0</span></p>
+		<p>Shipping <span>$40</span></p>
+		<p>Promo Code <a class="btn_add_code" href="#">Add</a> <span>-$160</span></p>
+
+
+		<div class="add_gift_code">
+			
+			<div class="m_s_subtitle">Limit one per order</div>
+			<input class="wm_100" name="" type="text" autocomplete="off" placeholder="Enter Gift Code"> 
+			<button type="button" class="wm_50 btn_white btn-cancel">Remove</button>
+			<button type="button" class="wm_50 btn_wine_red btn-continue">Apple</button>
+
+		</div>
+
+		<p>Order Total <span>$5,485</span></p>
+	</div>
+
+
+
+</div><div class="wm_66">
+
+
+
+<h5>Shipping Address</h5>
+<div class="info_box">
+
+<form class="none">
+	<h3>EDIT This Address</h3>
+	<input class="wm_50" name="fname" type="text" autocomplete="off" placeholder="First Name *"> 
+	<input class="wm_50" name="lname" type="text" autocomplete="off" placeholder="Last Name *"> 
+	<textarea class="wm_100" rows="2" name="address_post" autocomplete="off" placeholder="Address *"></textarea>
+	<input class="wm_100" name="country" type="text" autocomplete="off" placeholder="Country *"> 
+	<input class="wm_100" name="city" type="text" autocomplete="off" placeholder="City *"> 
+	<input class="wm_50" name="state_region" type="text" autocomplete="off" placeholder="State/Region *"> 
+	<input class="wm_50" name="zipc" type="text" autocomplete="off" placeholder="Zip Code *"> 
+	<input class="wm_100" name="pnum" type="text" autocomplete="off" placeholder="Phone Number *"> 
+	<button type="button" class="wm_50 btn_white btn-cancel">Cancel</button>
+	<button type="button" class="wm_50 btn_wine_red btn-continue">Continue</button>
+</form>	
+
+
+
+<div class="txt_info">
+	<a class="btn_txt" href="#">EDIT</a>
+
+	<div class="name">Mountain Chiou</div>
+	<div class="area">Earth Asia</div>
+	<div class="address_txt">No.45, Shifu Rd., Xinyi Dist., Taipei City 110</div>
+	<div class="phone_num">8888-888-888</div>
+</div>
+
+<button type="button" class="wm_50 btn_white btn_add_address">Add New Address</button>
+
+<div class="wm_50 ddm_sm">
+<a class="ddm_btn" href="#"><span class="btn_info click">CHANGE</span><span class="btn_img btn_down">&nbsp;</span></a>
+	<div class="ddm_menu">
+		<a href="#">Home</a>
+		<a href="#">Offect</a>
+		<a href="#">School</a>
+	</div>
+</div>
+
+</div>
+
+<!-- info_box -->
+
+
+<h5>Shipping Method</h5>
+
+<div class="info_box">
+<div class="txt_info">
+
+<p>$20.00 International Shipping (2-5 Business Days)</p>
+<p>Eco-friendly Packaging</p>
+</div>
+</div>
+
+
+<h5>Payment Method</h5>
+<div class="info_box">
+	<div class="wm_50">
+	<label for="">Card Holder's Name</label>
+	<input class="w_100" name="fname" type="text" autocomplete="off" placeholder="Name *"> 
+	</div>
+
+	<div class="wm_50">
+	<label for="">Card Number</label>
+	<input class="w_100" name="fname" type="text" autocomplete="off" placeholder="Number *"> 
+	</div>
+
+	<div class="wm_33">
+	<label for="">Exp Month</label>
+	<div class="w_100 ddm_sm">
+		<a class="ddm_btn" href="#"><span class="btn_img btn_down">&nbsp;</span><span class="btn_info">mm</span></a>
+		<div class="ddm_menu month">
+		</div>
+	</div>
+
+	</div>
+
+<div class="wm_33">
+
+<label for="">Exp Year</label>
+
+<div class="w_100 ddm_sm">
+		<a class="ddm_btn" href="#"><span class="btn_img btn_down">&nbsp;</span><span class="btn_info">yy</span></a>
+
+	<div class="ddm_menu year">
+
+	</div>
+</div>
+</div>
+
+<div class="wm_33">
+<label for="">CVV</label>
+<input class="w_100" name="fname" type="text" autocomplete="off" placeholder="X X X X"> 
+</div>
+
+
+<div class="m_s_subtitle">BILLING ADDRESS</div>
+
+<div class="wm_100 sm_check_box"><span class="icon click">&nbsp;</span>Use shipping address as billing address</div>
+
+<form class="none">
+<h3>EDIT BILLING ADDRESS</h3>
+	<input class="wm_100" name="country" type="text" autocomplete="off" placeholder="Country *"> 
+	<textarea class="wm_100" rows="2" name="address_post" autocomplete="off" placeholder="Address *"></textarea>
+	<input class="wm_33" name="city" type="text" autocomplete="off" placeholder="City *"> 
+	<input class="wm_33" name="state_region" type="text" autocomplete="off" placeholder="State/Region *"> 
+	<input class="wm_33" name="zipc" type="text" autocomplete="off" placeholder="Zip Code *"> 
+	<button type="button" class="wm_50 btn_white btn-cancel">Cancel</button>
+	<button type="button" class="wm_50 btn_wine_red btn-continue">Continue</button>
+</form>
+
+<button type="button" class="wm_50 btn_white btn-cancel">Cancel</button>
+<button type="button" class="wm_50 btn_wine_red btn-continue">Continue</button>
+
+</div>
+<!-- info_box -->
+
+</div>
+<!-- checkout_box -->
+
+</div>
+<!-- max width 1200 -->
+
+</div>
+<!-- device size -->
+
+
+
+
+
+<!-- Review start -->
+
+<div class="mobile_size_iphone6 change_size">
+
+<div class="box_name">Review
+
+<div class="progress v2">
+	<div class="complete"><span>Shapping Bag</span></div>
+	<div class="complete"><span>Payment</span></div>
+	<div class="check"><span>Review</span></div>
+</div>
+</div>
+
+<div class="mw_600">
+
+
+<h5>Shopping Bag</h5>
+
+
+
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_tessano_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Tessano</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$2,499</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_brugneto_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Brugneto</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,618</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_sangiovese_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Sangiovese</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,488</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_rosso_dei_castelli_sammarinesi_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Rosso Dei Castelli</p><p>red wine</p></div><div class="p_qty">1</div><div class="p_price">NT$999</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table"><div class="p_description"><div class="product_img"><img src="../img-sm/products/p_sm_roncale_1.jpg"></div><p class="product_brands">San Marino</p><p class="product_name">Roncale</p><p>white wine</p></div><div class="p_qty">1</div><div class="p_price">NT$1,468</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+<div class="p_table">
+	<div class="p_description">
+		<div class="product_img">
+			<img src="../img-sm/products/p_sm_caldese_1.jpg"></div>
+		<p class="product_brands">San Marino</p>
+		<p class="product_name">Caldese</p>
+		<p>white wine</p>
+	</div>
+	<div class="p_qty">1</div><div class="p_price">NT$2,208</div>
+<a class="btn_X v2" href="#">&nbsp;</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<h5>Summary</h5>
+
+<div class="payment_total">
+		<p>Shopping Bag <span>$5,605</span></p>
+		<p>Sales Tax <span>$0</span></p>
+		<p>Shipping <span>$40</span></p>
+		<p>Promo Code <b>#88888</b> <span>-$160</span></p>
+
+
+		<p>Order Total <span>$5,485</span></p>
+</div>
+
+
+
+
+<h5>Shipping Address</h5>
+
+<div class="txt_info">
+Mountain Chiou<br>
+Earth Asia
+No.45, Shifu Rd., Xinyi Dist., Taipei City 110<br>
+8888-888-888
+</div>
+
+<h5>Shipping Method</h5>
+
+<div class="txt_info">
+
+$20.00 International Shipping (2-5 Business Days)<br>
+Eco-friendly Packaging
+</div>
+
+
+<h5>Payment Method</h5>
+
+<div class="txt_info">
+<b>visa</b><br>
+	<!-- &#10045 &#10045 &#10045 &#10045 -  -->
+<!-- 	&#10045 &#10045 &#10045 &#10045 - 
+	&#10045 &#10045 &#10045 &#10045 - 
+	&#10045 &#10045 9 9  -->
+	8888 8888 8888 8888
+	<a class="btn_txt" href="#">Change</a>
+</div>
+
+<div class="m_s_subtitle">Billing Address</div>
+
+<div class="txt_info">
+Use shipping address as billing address
+
+</div>
+	<button type="button" class="wm_50 btn_white btn-cancel">Back</button>
+	<button type="button" class="wm_50 btn_wine_red btn-continue">Buy Now</button>
+</div>
+
+</div>
+<!-- end -->
+
+
+
+
+
+
+<div class="mobile_size_iphone6 ">
+<!-- <h1>congratulations</h1> -->
+<div class="popup_box">
+
+
+	<div class=""></div>
+
+	<h1>Thanks</h1>
+	<h2>Your order has been accepted</h2>
+	<button type="button" class="wm_100 btn_wine_red">Shopping</button>
+	</div>
+
+</div>
+
+
+<div class="mobile_size_iphone6 un_bg dark_night">
+
+<div class="m_m_subtitle">LOG In & Create An Account</div>
+</div>
+
+
+<div class="mobile_size_iphone6">
+
+
+<div class="popup_box">
+
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Log in
+</div>  
+<form>
+      
+<button type="button" class="wm_100 btn_fb">Continue With Facebook</button>
+
+<div class="or_line"><span>or</span></div>
+
+
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email *">  
+<input class="wm_100" name="pwd" type="text" autocomplete="off" placeholder="Password *">
+	<a class="w_50 sm_radio_box" href="#"><span class="icon">&nbsp;</span>Show Password</a>
+	<a class="w_50 b_forgot" href="#">Forgot your password?</a> 
+<button type="button" class="wm_100 btn_wine_red">Log in</button>
+</form>
+
+
+<a class="v2" href="#">Need an account?<br>
+<span>Create an account</span>
+</a>
+<div class="sm_slogan">vino • wine</div>
+</div>
+
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+
+<div class="popup_box">
+
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Create an account
+</div> 
+<form>
+<button type="button" class="wm_100 btn_fb">Sign up With Facebook</button>
+<p>We won’t post without your permission.</p>
+
+
+<div class="or_line"><span>or</span></div>
+
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email *">  
+<input class="wm_100" name="pwd" type="text" autocomplete="off" placeholder="Password *">
+<div class="sm_radio_box">
+	<span class="icon">&nbsp;</span>I agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>.</div>
+<button type="button" class="wm_100 btn_wine_red">Create Account</button>
+</form>
+<a class="v2" href="#">Already have an account?<br>
+<span>Log In</span>
+</a>
+<div class="sm_slogan">vino • wine</div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+
+<div class="popup_box">
+<a class="btn_X v2" href="#">&nbsp;</a>
+
+<div class="box_name">Forgot Password
+<p>Enter your email and you will receive a message with a link to reset your password.</p></div>
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email">
+<a class="wm_100 btn_wine_red" href="#">Submit Email</a>
+<div class="sm_slogan">vino • wine</div>
+</div>
+</div>
+<!-- Forgot Password -->
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+<div class="popup_box">
+
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Check your email
+<p>You will receive an email shortly with instructions on how to reset your password.</p></div>
+<a class="wm_100 btn_wine_red" href="#">Continue Shopping</a>
+<div class="sm_slogan">vino • wine</div>
+
+</div>
+</div>
+
+<!-- Check your email -->
+
+
+
+<div class="mobile_size_iphone6 flex_center_center">
+
+
+<div class="mw_600">
+
+<div class="box_name">Please Reset Your Password</div>
+<div class="m_subtitle">
+Dear Mountain
+</div>
+<div class="m_subtitle">
+We received a request to reset the password for your Sammarinese account.
+Please reset your password.
+</div>
+
+<a class="wm_100 btn_wine_red" href="#">Reset Password</a>
+
+<div class=" sm_note v2">
+If you are having trouble, please copy and paste this entire link into your browser:
+<a href="#">http://www.sammarinese.com/users/password/edit?reset_password_token=b15f88f4ec54361939a6c256235a001acd3c95239ad5fc6e501a50f10a8cefec</a>
+For security reasons, this link will only be active for the next 4 hours.
+</div>
+<div class="vino_logo v1">
+	<img src="../img-sm/sm_vino_logo_02_b.svg">
+</div>
+<div class="sm_slogan">vino • wine</div>
+
+</div>
+
+
+</div>
+
+<!-- Please Reset Your Password -->
+
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="popup_box">
+
+<a class="btn_X v2" href="#">&nbsp;</a>
+
+<div class="box_name">Change Your Password
+
+<p>Please enter a new password below to change your password.</p></div>
+
+<input class="wm_100" name="password" type="password" autocomplete="off" placeholder="Password">
+<input class="wm_100" name="pwd_cfm" type="text" autocomplete="off" placeholder="Re-enter Password *">
+
+<a class="wm_100 btn_wine_red" href="#">Change Password</a>
+<div class="sm_slogan">vino • wine</div>
+
+
+</div>
+</div>
+
+
+<!-- Change Your Password -->
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+
+<div class="popup_box">
+<a class="btn_X v2" href="#">&nbsp;</a>
+
+<div class="box_name">Return</div>
+
+<form>
+
+<textarea class="wm_100" rows="6" autocomplete="off" placeholder="If you have a moment, please let us know why you return...(optional)"></textarea>
+
+<div class="wm_100 ddm_sm">
+
+<a class="ddm_btn" href="#"><span class="btn_info">Please tell us reason (optional)</span><span class="btn_img btn_down">&nbsp;</span></a>
+<div class="ddm_menu">
+<a href="#">Defect</a>
+<a href="#">Changed Mind</a>
+<a href="#">Perfume</a>
+<a href="#">Flavor</a>
+<a href="#">Color</a>
+<a href="#">Not as expected</a>
+</div>
+</div>  
+
+<div class="sm_note">
+No refunds or exchanges for purchases made with event and for all sale items!
+</div>
+
+<button type="button" class="wm_100 btn_wine_red">Return</button>
+
+</form>
+<div class="sm_slogan">vino • wine</div>
+
+</div>
+
+</div>
+
+<!-- Return -->
+
+
+<div class="mobile_size_iphone6">
+
+
+<div class="popup_box">
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Are you sure?
+
+</div>
+
+<form>
+<p>You want to unsubscribe from our Daily Newsletter?</p>
+<textarea class="w_100" rows="6" autocomplete="off" placeholder="If you have a moment, please let us know why you unsubscribed....(optional)"></textarea>
+
+<p>Yes, please unsubscribe me from the Daily Newsletter.</p>
+
+<button type="button" class="wm_100 btn_wine_red">Unsubscribe</button>
+
+</form>
+
+<a class="v2" href="#">CONTINUE<span>SHOPPING</span></a>
+<div class="sm_slogan">vino • wine</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<div id="sm_backend" class="m_page_name dark_night">Backend
+<p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p>
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6 un_bg dark_night">
+
+<div class="m_m_subtitle">Log In & Create An Account</div>
+
+</div>
+
+
+
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night">
+	<div class="popup_box">
+
+	<div class="vino_logo v1">
+		<img src="../img-sm/sm_vino_logo_02_w.svg">
+	</div>
+
+<div class="sm_slogan">vino • wine</div>
+
+	</div>
+
+
+</div>
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night">
+
+
+<div class="popup_box">
+
+<div class="vino_logo v1">
+	<img src="../img-sm/sm_vino_logo_02_w.svg">
+</div>
+
+
+<form>
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Log In</div> 
+
+
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email *">  
+<input class="wm_100" name="pwd" type="text" autocomplete="off" placeholder="Password *">
+	<a class="w_50 sm_radio_box" href="#"><span class="icon">&nbsp;</span>Show Password</a>
+	<a class="w_50 b_forgot" href="#">Forgot your password?</a> 
+<button type="button" class="wm_100 btn_wine_red">Log in</button>
+</form>
+
+<a class="v2" href="#">Need an account?<br>
+<span>Create an account</span>
+</a>
+<div class="sm_slogan">vino • wine</div>
+</div>
+</div>
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night">
+
+
+<div class="popup_box">
+<div class="vino_logo v1">
+<img src="../img-sm/sm_vino_logo_02_w.svg">
+</div>
+
+<form>
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Create an Account</div>
+
+<input class="wm_100" name="iname" type="text" autocomplete="off" placeholder="Employee ID">
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email *">  
+<input class="wm_100" name="pwd" type="text" autocomplete="off" placeholder="Password *">
+<div class="sm_radio_box"><span class="icon">&nbsp;</span>I agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>.</div>
+<button type="button" class="wm_100 btn_wine_red">Create Account</button>
+</form>
+
+<a class="v2" href="#">Already have an account?<br>
+<span>Log In</span>
+</a>
+
+<div class="sm_slogan">vino • wine</div>
+</div>
+
+</div>
+<!-- Create an Account -->
+
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night">
+
+
+<div class="popup_box">
+
+<div class="vino_logo v1">
+<img src="../img-sm/sm_vino_logo_02_w.svg">
+</div>
+
+<form>
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Reset Your Password</div> 
+<input class="wm_100" name="iname" type="text" autocomplete="off" placeholder="Employee ID">
+<input class="wm_100" name="email" type="text" autocomplete="off" placeholder="Email *"> 
+
+<button type="button" class="wm_100 btn_wine_red">Sumbmit</button>
+
+</form>
+<div class="sm_slogan">vino • wine</div>
+</div>
+</div>
+
+<!-- Reset Your Password -->
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night">
+
+<div class="popup_box">
+<div class="vino_logo v1">
+<img src="../img-sm/sm_vino_logo_02_w.svg">
+</div>
+<form>
+<a class="btn_X v2" href="#">&nbsp;</a>
+<div class="box_name">Check your email
+<p>You will receive an email shortly with instructions on how to reset your password.</p>
+</div>
+
+<button type="button" class="wm_100 btn_wine_red">Close</button>
+</form>
+<div class="sm_slogan">vino • wine</div>
+
+</div>
+</div>
+
+<!-- Check your email -->
+
+
+
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night flex_center_center">
+
+<div class="popup_box mw_600">
+<div class="vino_logo v1">
+<img src="../img-sm/sm_vino_logo_02_w.svg">
+</div>
+
+<form>
+<div class="box_name">Reset Your Password</div> 
+<div class="s_subtitle">We've just received a password reset request for <strong>mountain@mountain.com</strong>. Please click the link below to reset your password.</div>
+
+<button type="button" class="wm_100 btn_wine_red">Reset Password</button>
+<div class="sm_note v2">
+Copyright © 2018 Mountain - All rights reserved.<br>
+Ailing address is : Mountain :<br>
+If you would like to update your email preferences or unsubscribe, please <a href="#box_6">click here</a>.
+</div>
+</form>
+
+<!-- <div class="sm_note_02"> -->
+
+
+<div class="sm_slogan">vino • wine</div>
+</div>
+
+</div>
+
+<!-- email - Reset Your Password -->
+
+<!-- #fbfbf2 -->
+
+
+
+
+<div class="mobile_size_iphone6 sm_bg_color-01 change_size dark_night ">
+<div class="popup_box">
+
+<div class="vino_logo v1">
+<img src="../img-sm/sm_vino_logo_02_w.svg">
+
+</div>
+
+<form>
+	<a class="btn_X v2" href="#">&nbsp;</a>
+
+<div class="box_name">Reset Password</div>  
+<input class="wm_100" name="pwd" type="text" autocomplete="off" placeholder="Password *">
+<input class="wm_100" name="pwd_cfm" type="text" autocomplete="off" placeholder="Re-enter Password *">
+<button type="button" class="wm_100 btn_wine_red">Reset</button>
+</form>
+<div class="sm_slogan">vino • wine</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div id="sm_components" class="m_page_name dark_night">Components
+<p>html<span>/</span>css<span>/</span>jquery<span>/</span>rwd</p>
+</div>
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Tooltip</div>
+
+<div class="m_s_subtitle">Top</div>
+<div class="flex_space_around">
+<span class="tooltip a_d">Tooltip</span>
+<span class="tooltip a_d v2">Tooltip</span>
+<span class="tooltip a_d v3">Tooltip</span>
+</div>
+<div class="m_s_subtitle">Right</div>
+<div class="flex_space_around">
+<span class="tooltip a_r">Tooltip</span>
+<span class="tooltip a_r v2">Tooltip</span>
+<span class="tooltip a_r v3">Tooltip</span>
+</div>
+<div class="m_s_subtitle">Left</div>
+<div class="flex_space_around">
+<span class="tooltip a_l">Tooltip</span>
+<span class="tooltip a_l v2">Tooltip</span>
+<span class="tooltip a_l v3">Tooltip</span>
+</div>
+<div class="m_s_subtitle">Bottom</div>
+<div class="flex_space_around">
+<span class="tooltip a_t">Tooltip</span>
+<span class="tooltip a_t v2">Tooltip</span>
+<span class="tooltip a_t v3">Tooltip</span>
+</div>
+</div>
+
+
+<div class="mobile_size_iphone6">
+<div class=" m_l_subtitle">Tooltip</div>
+
+<div class="m_s_subtitle">Top</div>
+
+<div class="flex_space_around">
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_d" style="display: block;">Tooltip</span>
+</a>
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_d v2" style="display: block;">Tooltip</span>
+</a>
+
+</div>
+
+
+
+<div class="m_s_subtitle">Right</div>
+<div class="flex_space_around">
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_r" style="display: block;">Tooltip</span>
+</a>
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_r v2" style="display: block;">Tooltip</span>
+</a>
+</div>
+
+
+
+<div class="m_s_subtitle">Left</div>
+<div class="flex_space_around">
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_l" style="display: block;">Tooltip</span>
+</a>
+
+<a class="icon_question" href="#">?
+<span class="tooltip a_l v2" style="display: block;">Tooltip</span>
+</a>
+</div>
+
+<div class="m_s_subtitle">Bottom</div>
+<div class="flex_space_around">
+
+	<a class="icon_question" href="#">?
+	<span class="tooltip a_t" style="display: block;">Tooltip</span>
+	</a>
+
+	<a class="icon_question" href="#">?
+	<span class="tooltip a_t v2" style="display: block;">Tooltip</span>
+	</a>
+</div>
+</div>
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Progress</div>
+
+
+
+<div class="m_s_subtitle">v1</div>
+
+<div class="progress">
+	<div class="complete"><span>Shapping Bag</span></div>
+	<div class="check"><span>Payment</span></div>
+	<div><span>Review</span></div>
+</div>
+
+
+<div class="m_s_subtitle">v2</div>
+<div class="progress v2">
+	<div class="complete"><span>Shapping Bag</span></div>
+	<div class="check"><span>Payment</span></div>
+	<div><span>Review</span></div>
+</div>
+
+
+<div class="m_s_subtitle">v3<br>
+<p>When class has mobile , media screen size &lt; 767. Progress rotate 90 deg.</p>
+</div>
+
+<div class="progress rotate">
+	<div class="complete"><span>Sign In</span></div>
+
+	<div class="complete"><span>Shapping Bag</span></div>
+	<div class="check"><span>Payment</span></div>
+	<div><span>Review</span></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Controls</div>
+
+
+<div class="m_s_subtitle">Normal</div>
+<div class="flex_space_around">	
+<div class="sm_check_box"><span class="icon">&nbsp;</span>Check Button</div>
+<div class="sm_radio_box"><span class="icon">&nbsp;</span>Radio Button</div>
+</div>
+
+<div class="m_s_subtitle">Pressed</div>
+<div class="flex_space_around">
+<div class="sm_check_box status_pressed"><span class="icon">&nbsp;</span>Check Button</div>
+<div class="sm_radio_box status_pressed"><span class="icon">&nbsp;</span>Radio Button</div>
+
+</div>
+<div class="m_s_subtitle">Click</div>
+<div class="flex_space_around">
+<div class="sm_check_box status_click"><span class="icon">&nbsp;</span>Check Button</div>
+<div class="sm_radio_box status_click"><span class="icon">&nbsp;</span>Radio Button</div>
+
+</div>
+<div class="m_s_subtitle">Disabled</div>
+<div class="flex_space_around">
+<div class="sm_check_box status_disabled"><span class="icon">&nbsp;</span>Check Button</div>
+<div class="sm_radio_box status_disabled"><span class="icon">&nbsp;</span>Radio Button</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+<div class="m_l_subtitle">Toggle Button
+<p>v1</p></div>
+
+
+<div class="m_s_subtitle">Normal</div>
+
+	<div class="sm_on_off v2">
+	<span class="radius_icon">&nbsp;</span>
+	<span class="txt_on">ON</span><span class="txt_off">OFF</span>
+	</div>
+
+
+<div class="m_s_subtitle">Pressed</div>
+	<div class="sm_on_off v2 status_pressed">
+	<span class="radius_icon">&nbsp;</span>
+	<span class="txt_on">ON</span><span class="txt_off">OFF</span>
+	</div>
+
+<div class="m_s_subtitle">Click</div>
+	<div class="sm_on_off v2 status_click">
+	<span class="radius_icon">&nbsp;</span>
+	<span class="txt_on">ON</span><span class="txt_off">OFF</span>
+	</div>
+
+<div class="m_s_subtitle">Disabled</div>
+	<div class="sm_on_off v2 status_disabled">
+	<span class="radius_icon">&nbsp;</span>
+	<span class="txt_on">ON</span><span class="txt_off">OFF</span>
+	</div>
+
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6 day_night">
+
+<div class="m_l_subtitle">Toggle Button
+<p>v2</p></div>
+<a class="sm_on_off v14" href="#">
+	<span class="day_icon"><span class="icon">&nbsp;</span></span>
+	<span class="night_icon"><span class="icon">&nbsp;</span></span>
+</a>
+</div>
+
+
+
+
+
+<div class="mobile_size_iphone6">
+
+<div class="m_l_subtitle">Dropdown form</div>
+
+<div class="m_s_subtitle">Empty</div>
+
+<div class="ddm_sm">
+  <div class="ddm_btn"><div class="btn_img btn_down ">&nbsp;</div><div class="btn_info">Title</div></div>
+</div>
+
+<div class="m_s_subtitle">Click</div>
+
+<div class="ddm_sm click_rotate status_click">
+  	<div class="ddm_btn"><div class="btn_img btn_down">&nbsp;</div><div class="btn_info">Title</div></div>
+	<div class="ddm_menu">
+		<a href="#">Ms</a>
+		<a href="#">Mrs</a>
+		<a href="#">Miss</a>
+		<a href="#">Mr</a>
+	</div>
+
+</div>
+
+<div class="m_s_subtitle">Filled</div>
+<div class="ddm_sm">
+  <div class="ddm_btn"><div class="btn_img btn_down">&nbsp;</div><div class="btn_info click">Ms</div></div>
+</div>
+
+</div>
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Inner Form<p>v1</p></div>
+
+<div class="m_s_subtitle">Empty</div>
+<div class="input status_empty">Type something...</div>
+
+<div class="m_s_subtitle">Typing</div>
+<div class="input status_focus">Hello Wo I</div>
+
+<div class="m_s_subtitle">Filled</div>
+<div class="input status_filled">Hello World</div>
+
+<div class="m_s_subtitle">Error</div>
+<div class="input status_error">Some Error</div>
+
+</div>
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">Red Button</div>
+<div class="m_s_subtitle">Normal</div>
+<div class="btn_wine_red">Red</div>
+
+<div class="m_s_subtitle">Pressed</div>
+<div class="btn_wine_red status_pressed">Red</div>
+
+<div class="m_s_subtitle">Disabled</div>
+<div class="btn_wine_red status_disabled">Red</div>
+
+<div class="m_s_subtitle">Loading</div>
+<div class="btn_wine_red status_loading"> •  •  • </div>
+
+<div class="m_s_subtitle">Number</div>
+<a class="btn_wine_red" href="#">more items <span class="num_boo">88</span></a>
+
+</div>
+
+
+
+<div class="mobile_size_iphone6">
+<div class="m_l_subtitle">White Button</div>
+<div class="m_s_subtitle">Normal</div>
+<div class="btn_white">White</div>
+
+<div class="m_s_subtitle">Pressed</div>
+<div class="btn_white status_pressed">White</div>
+
+<div class="m_s_subtitle">Disabled</div>
+<div class="btn_white status_disabled">White</div>
+
+<div class="m_s_subtitle">Loading</div>
+<div class="btn_white status_loading"> •  •  • </div>
+
+<div class="m_s_subtitle">Number</div>
+<a class="btn_white" href="#">more items <span class="num_boo">88</span></a>
+
+</div>
+
+
+
+<div class="mobile_size_iphone6">
+	<div class="m_l_subtitle">Blue Button</div>
+	<div class="m_s_subtitle">Normal</div>
+	<div class="btn_fb">Blue</div>
+
+	<div class="m_s_subtitle">Pressed</div>
+	<div class="btn_fb status_pressed">Blue</div>
+
+	<div class="m_s_subtitle">Disabled</div>
+	<div class="btn_fb status_disabled">Blue</div>
+
+	<div class="m_s_subtitle">Loading</div>
+	<div class="btn_fb status_loading"> •  •  • </div>
+
+
+	<div class="m_s_subtitle">Number</div>
+	<a class="btn_fb" href="#">more items <span class="num_boo">88</span></a>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- end components_demo -->
+
+
+</body>
+</html>

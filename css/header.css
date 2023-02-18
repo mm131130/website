@@ -15,6 +15,10 @@ control_menu  1500
 
 
 
+.hiddenScrollbar{
+    overflow: hidden;
+}
+
 
 
 .three_line{

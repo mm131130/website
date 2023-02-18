@@ -76,6 +76,23 @@
     margin: 0;
 }
 
+
+
+.logo-m-a{
+  float: left;
+}
+
+
+@media screen and (max-width:767px){
+
+.logo-m-a{
+  float: right;
+}
+}
+
+
+
+
 .logo-m-a.w_180,
 .logo-m-b.w_180{
   width:180px;

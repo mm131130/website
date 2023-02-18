@@ -7,14 +7,16 @@ $('header.m_HF.v2').load('../html/header.html' , function(){
 
     var ts_H = $(this);
 
-    if ( $('div').hasClass('icon_box') ) {
+    // if ( $('div').hasClass('icon_box') ) {
         
-        $('.three_line').addClass('click');
-        $('[class*="_nav"]').animate({left: '72px' }, 100);
+    //     $('.three_line').addClass('click');
+    //     $('[class*="_nav"]').animate({left: '72px' }, 100);
 
-    }
+    // }
     
     ts_H.find('.three_line').on('click', function() {
+
+
 
         $('.open_close').removeClass('baby_come_back');
     
@@ -23,6 +25,7 @@ $('header.m_HF.v2').load('../html/header.html' , function(){
         if($(this).hasClass('click')){
 
             $(this).removeClass('click');
+            $('body').removeClass('hiddenScrollbar');
 
             ts_H.find('[class*="_nav"]').animate({left: '-400px'}, 100 , function(){
                 $(this).find(' > li').removeClass('open');
@@ -30,7 +33,9 @@ $('header.m_HF.v2').load('../html/header.html' , function(){
             });
 
         }else{
-            $(this).addClass('click');  
+            
+            $(this).addClass('click'); 
+            $('body').addClass('hiddenScrollbar'); 
 
             if( ts_H.hasClass('v1') ){
                 ts_H.find('[class*="_nav"]').animate({left: '0'}, 100);
