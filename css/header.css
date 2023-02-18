@@ -14,6 +14,9 @@ control_menu  1500
 
 
 
+
+
+
 .three_line{
     display: none;
     position: relative;
@@ -21,6 +24,8 @@ control_menu  1500
     height: 60px;
     background-color: #fff;
 }
+
+
 .three_line .line{
     position: absolute;
 
@@ -36,7 +41,7 @@ control_menu  1500
     background-color: #000 !important;
 }
 .three_line.white .line{
-    background-color: #fff !important;
+    background-color: #fff;
 }
 .three_line .line._a{
     -webkit-transform: translate(-50%, calc(-50% - 6px));
@@ -53,6 +58,8 @@ control_menu  1500
     -ms-transform: translate(-50%, calc(-50% + 6px));
     transform: translate(-50%, calc(-50% + 6px));
 }
+
+
 .three_line:hover .line{
     background-color:#e9573f;
 }
@@ -74,10 +81,6 @@ control_menu  1500
     transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
 }
 
-
-
-
-
 .three_line.transition{
     -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
     transition: width , height , 0.3s ease-in-out , -webkit-transform;
@@ -86,6 +89,16 @@ control_menu  1500
     transition: transform , width , height , 0.3s ease-in-out , -webkit-transform; 
     transition: transform , width , height , 0.3s ease-in-out; 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -348,10 +348,6 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 }
 .cloud_img .page > div{
 
-
-
-
-
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
@@ -387,18 +383,12 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
     -20px 60px 30px rgba(0,0,0,0.2),
     -30px 90px 60px rgba(0,0,0,0.1);
 
-
-
-
-
 }
 
 .cloud_img .page > div:not( .animation_sun_moon ) > img{
-
 	width: auto;
 	max-height: 720px;
 	height: 100%;
-
 }
 
 
@@ -620,16 +610,15 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 }
 
 .cloud_img .page > div{
+
 	overflow: hidden;
-
 	display: block;
-
 	height:100%;
 	width: 100%;
 
-	border-radius: 6px;
+/* 	border-radius: 6px;
 
-	border: 3px #000 solid;
+	border: 3px #000 solid; */
 }
 
 .cloud_img .page img {
@@ -650,6 +639,7 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 
 
 
+
 .row_or_column{
 	position:fixed;
 	top: 201px;
@@ -660,40 +650,39 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 	display:block;
 	font-size: 18px;
 	line-height: 18px;
-	width: 50px;
-	height: 50px;
+	width: 72px;
+	height: 72px;
 	background-image: url('../img/icon.svg');
 
 	/* background-position-y: -100px;  */
-
 	/* background-color: red;  */
 }
 
 .icon_row{
-	background-position:0px -50px; 
+	background-position:-14px -214px; 
+
 }
 .icon_column {
-	background-position:-50px -50px; 
+	background-position:-114px -214px; 
+
 }
 
 
 .dark_night .icon_row{
-	background-position:0 0; 
+	background-position:-14px -514px; 
 }
 .dark_night .icon_column {
-	background-position:-50px 0; 
+	background-position:-114px -514px; 
 
 }
 .row_or_column.dark_night a:hover{
-
-	background-position-y:-150px; 
+	background-position-y:-414px; 
 }
 
 
 .icon_row.click,
 .icon_column.click{
 	display: none;
- 
 }
 
 
@@ -743,6 +732,21 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 
 
 
+.column .row_or_column{
+	top: 0;
+	left:calc( 100% - 72px );
+	background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:1180px){
@@ -763,6 +767,18 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 }
 
 }
+
+
+@media screen and (max-width:767px){
+
+.row_or_column{
+	display: none;
+}
+
+}
+
+
+
 
 @media screen and (max-width:425px){
 .column .page_box{
@@ -818,7 +834,8 @@ transform: rotate(0deg) translate(0% , 0%) rotate(360deg);
 }
 .pagination a:hover {
 	color: #fff;
-
+	color:#e9573f;
+	font-weight: 900;
 	/* background-color: #fff; */
 }
 .pagination a.click {

@@ -1964,9 +1964,9 @@ color: #fff !important;
 
   background-color: #000;
 
-  -webkit-transform: translate(-50%, -45%) rotate(63deg);
-      -ms-transform: translate(-50%, -45%) rotate(63deg);
-          transform: translate(-50%, -45%) rotate(63deg);
+  -webkit-transform: translate(-50%, -50%) rotate(63deg);
+      -ms-transform: translate(-50%, -50%) rotate(63deg);
+          transform: translate(-50%, -50%) rotate(63deg);
 }
 
 .dark_night .m_page_num:before,
@@ -1995,7 +1995,9 @@ color: #fff !important;
 }
 
 .m_page_num .pageNow{
-  width:100px;
+
+  /* min-width:100px; */
+  width:auto;
 }
 
 @media screen and (max-width:1024px){
