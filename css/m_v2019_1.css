@@ -1932,7 +1932,7 @@ color: #fff !important;
 }
 
 .tag_arrow .icon:after{
-    left: calc( 50% + 3px) ;
+    left: calc( 50% + 3px) ;  
     z-index: 3;
     background-color:#0f1329;
 }
