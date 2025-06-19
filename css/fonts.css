@@ -48,6 +48,27 @@ kaushanscript_regular
 parisienne_regular
 tangerine_bold
 tangerine_regular */
+@font-face {
+font-family:"firaSansRegular";
+src: url("../font/firaSans/firaSansRegular.ttf");
+}
+
+
+
+@font-face {
+font-family:"firaSansBlack";
+src: url("../font/firaSans/FiraSans-Black.ttf");
+}
+
+
+
+
+
+
+
+
+/* firaSans */
+
 
 
 
@@ -101,6 +122,10 @@ url("../font/roboto/roboto_thin.woff") format("woff"),
 url("../font/roboto/roboto_thin.ttf") format("truetype"),
 url("../font/roboto/roboto_thin.otf") format("opentype");
 }
+
+
+
+
 
 @font-face {
 font-family:"northwell_alt";
