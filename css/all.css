@@ -1,11 +1,11 @@
 /* all 2026-2023*/
 
-::-moz-selection {
+/* ::-moz-selection {
   background: initial;
 }
 ::selection {
   background: initial;
-}
+} */
 
 body{
 	background-color: #fef7e6;
