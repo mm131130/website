@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+
+<!--
+
+
+
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////      //////      //////
+      //////////////////////////////
+      //////////////////////////////
+      //////////////////////////////
+
+
+
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>MOUNTAIN</title>
+
+<meta name="description" content="Mountain">
+<meta name="keywords" content="Mountain">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+
+<link media="all" rel="shortcut icon" href="../img_alcohol/alcohol-logo-3.jpg">
+
+<link media="all" rel="stylesheet" href="../css/all.css">
+<link media="all" rel="stylesheet" href="../css/fonts.css">
+
+<!-- <link media="all" rel="stylesheet" href="css-all/size.css">
+<link media="all" rel="stylesheet" href="css-m/m_v2019_1.css"> -->
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.pList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+  gap: 18px;
+
+  justify-content: center;
+
+}
+
+
+
+
+
+
+/* .product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+#pagination {
+  text-align: center;
+  padding: 20px;
+}
+.page-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  background: #f9f9f9;
+}
+.page-btn.active {
+  background: #333;
+  color: #fff;
+}
+ */
+
+        /* 分页控件 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            gap: 10px;
+        }
+
+        .page-btn {
+            padding: 8px 16px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .page-btn.active {
+            background: #2980b9;
+        }
+
+  
+
+
+
+.pagination{
+
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 10px;
+
+}
+.pagination .page-btn {
+    font-size: 18px;
+    line-height: 36px;
+    color: #000;
+
+    padding: 0 16px;
+    border-radius: 3px;
+
+    transition: background 0.3s;
+
+    background: #f6f7fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1), 0 3px 1px rgba(200,207,217,0.81);
+
+}
+
+
+.pagination .page-btn.active{
+
+    cursor: initial;
+
+    border-bottom:0px ;
+    background-color: #e2e6eb;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.1),inset 0 3px 1px rgba(200,207,217,0.81);
+    transform: translateY(3px);
+
+}
+
+
+
+
+
+.p-box{
+    font-family: didot;
+    letter-spacing: 0.03em;
+    background: white;
+    /* border:1px solid red;  */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 18px;
+    transition: transform 0.3s;
+    /* width: 300px; */
+    max-width: 360px;
+}
+.p-box:hover {
+    transform: translateY(-3px);
+}
+.p-box img{
+    width: 100%;
+}
+.label{
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* align-items:center; */
+    align-content:center;
+    min-height: 210px;
+}
+.label > *{
+    text-align: center;
+}
+.num{
+    font-size: 12px;
+    line-height: 15px;
+    font-family: roboto_light;
+    text-align: left;
+    opacity: 0.54;
+}
+.years{
+    font-size: 27px;
+    line-height: 30px;
+    font-family: modern_display_TI;
+}
+.ages{
+    font-size: 27px;
+    line-height: 30px;
+    /* text-transform:uppercase; */
+}
+.ages span{
+    font-size: 12px;
+    font-family: roboto_light;
+    padding-right:6px;
+    padding-left:6px;
+}
+.title{
+    font-size: 27px;
+    line-height: 30px;
+    font-family: modern_display;
+
+    letter-spacing: normal;
+    word-spacing: 0.1em;
+    text-transform:uppercase;
+    transform: rotate(-2.1deg);
+}
+.subtitle{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding:0 0 18px 0;
+
+}
+.p-box > div:not(.label){
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 36px;
+    padding:0 27px 0 12px;
+}
+.p-box > div:not(.label) span{
+    font-size: 12px;
+    line-height: 36px;
+
+    font-family: roboto_light;
+    opacity: 0.54;
+}
+.unit{
+    position: absolute;
+    top: -9px;
+    right: 0;
+    font-size: 15px !important;
+    width: 27px;
+    padding-left: 6px;
+    transform: rotate(9deg);
+}
+.note{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: roboto_light;
+
+    margin-top:18px; 
+
+    padding:18px 0 18px 27px;
+
+    border-top:1px solid rgba(0, 0, 0, 0.18);
+}
+.note li{
+    opacity: 0.54;
+}
+
+
+  </style>
+</head>
+
+
+
+
+
+<body>
+  <div class="pList"></div>
+  <!-- <div class="pagination"></div> -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+
+
+const perPage = 30;
+let products = [];
+
+$(document).ready(function () {
+  $.ajax({
+    url: '../xml/brandy-on.xml',
+    dataType: 'xml',
+    success: function (xml) {
+      // products = [];
+      $(xml).find('alcohol_info').each(function () {
+        products.push($(this));
+      });
+
+      const totalPages = Math.ceil(products.length / perPage);
+      renderPagination(totalPages);
+      renderPage(1);
+
+
+
+      $('.label > * ').filter(function() {
+          return $(this).text().indexOf('-') >= 0;
+      }).hide();
+    },
+    error: function () {
+      alert('資料載入失敗，請檢查 XML 路徑或檔案格式');
+    }
+  });
+});
+
+// 點擊分頁按鈕
+$(document).on('click', '.pagination .page-btn', function () {
+  const page = $(this).data('page');
+  renderPage(page);
+  $('.pagination .page-btn').removeClass('active');
+  $('.pagination .page-btn[data-page="' + page + '"]').addClass('active');
+});
+
+// 產生分頁按鈕
+function renderPagination(totalPages) {
+  let html = '';
+  for (let i = 1; i <= totalPages; i++) {
+    html += `<span class="page-btn${i === 1 ? ' active' : ''}" data-page="${i}">${i}</span>`;
+  }
+
+  $('.pagination').remove(); // 移除舊的
+  $('.pList').before('<div class="pagination">' + html + '</div>');
+  $('.pList').after('<div class="pagination">' + html + '</div>');
+}
+
+// 顯示當頁產品
+function renderPage(page) {
+  const start = (page - 1) * perPage;
+  const pageProducts = products.slice(start, start + perPage);
+
+  let html = '';
+  pageProducts.forEach(p => {
+    html += renderBasicInfo(p);
+  });
+
+  $('.pList').html(html);
+}
+
+function renderBasicInfo($product) {
+  const notes = $product.find('notes tip').map(function () {
+    return `<li>${$(this).text()}</li>`;
+  }).get().join('');
+
+  return `
+    <div class="p-box ${$product.find('num').text()}">
+      <img src="${$product.find('img_url').text()}">
+
+      <div class="num"><span>${$product.find('num').text()}</span></div>
+
+      <div class="label">
+        <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
+        <div class="title">${$product.find('brand').text()}</div>
+        <div class="subtitle">${$product.find('subtitle').text()}</div>
+        <div class="years">${$product.find('distillation_year').text()}</div>
+      </div>
+
+      <div><span>origin</span>${$product.find('origin').text()}</div>
+      <div><span>area</span>${$product.find('area').text()}</div>
+      <div><span>subarea</span>${$product.find('subarea').text()}</div>
+      <div><span>distillation</span>${$product.find('distillation_year').text()}</div>
+      <div><span>bottling</span>${$product.find('bottling_year').text()}</div>
+      <div><span>ages</span>${$product.find('age').text()}</div>
+      <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
+      <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
+  
+    </div>
+  `;
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
