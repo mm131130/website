@@ -45,19 +45,60 @@
 <style>
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
   background: #f0f2f5;
 }
+
+
+header,
+footer{
+  position: relative;
+  height: 90px;
+
+  text-align: center;
+}
+
+footer{
+
+  margin-bottom: 18px;
+
+
+}
+header img.logo_A,
+header img.logo_B,
+footer img.logo_A,
+footer img.logo_B{
+  width: auto;
+}
+
+header img.logo_A,
+footer img.logo_A{
+  height: 100%;
+}
+
+header img.logo_B,
+footer img.logo_B{
+  position: absolute;
+  left: calc(50% + 39px);
+  bottom: 0;
+  height: 33%;
+}
+
+
+
+
+
 
 .pList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
   gap: 18px;
-
   justify-content: center;
 
-}
 
+  padding: 0 18px;
+  /* max-width: 1350px; */
+  /* background-color: red; */
+}
 
 
 
@@ -161,10 +202,10 @@ body {
     padding: 18px;
     transition: transform 0.3s;
     /* width: 300px; */
-    max-width: 360px;
+    /* max-width: 360px; */
 }
 .p-box:hover {
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
 }
 .p-box img{
     width: 100%;
@@ -262,6 +303,55 @@ body {
     opacity: 0.54;
 }
 
+@media screen and (max-width:767px) {
+
+
+.pList {
+
+  grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+  gap: 6px;
+
+
+}
+.p-box{
+  overflow: hidden;
+  padding:0 !important; 
+}
+
+.p-box img{
+ 
+  position: relative;
+    height: auto;
+    width: 210px;
+    left: 50%;
+    transform: translateX( calc( -105px ) );
+
+}
+
+.p-box div{
+  display: block !important; 
+}
+.p-box span{
+  display: block; 
+  
+  line-height: 15px !important;
+
+}
+
+.title{
+  font-size: 21px;
+
+
+}
+.unit{
+
+  position: relative;
+  top: 0;
+  display: inline-block !important;
+}
+
+}
+
 
   </style>
 </head>
@@ -271,7 +361,26 @@ body {
 
 
 <body>
+
+  <header class="">
+    <img class="logo_A" src="../img_alcohol/alcohol-logo-1.jpg">
+    <img class="logo_B" src="../img_alcohol/alcohol-logo-2.jpg">
+  </header><!-- /header -->
+
   <div class="pList"></div>
+
+
+  <footer class="">
+    <img class="logo_A" src="../img_alcohol/alcohol-logo-1.jpg">
+    <img class="logo_B" src="../img_alcohol/alcohol-logo-2.jpg">
+
+  </footer>
+
+
+
+
+
+
   <!-- <div class="pagination"></div> -->
 
 
@@ -323,7 +432,7 @@ $(document).on('click', '.pagination .page-btn', function () {
 function renderPagination(totalPages) {
   let html = '';
   for (let i = 1; i <= totalPages; i++) {
-    html += `<span class="page-btn${i === 1 ? ' active' : ''}" data-page="${i}">${i}</span>`;
+    html += `<a class="page-btn${i === 1 ? ' active' : ''}" href="#" data-page="${i}">${i}</a>`;
   }
 
   $('.pagination').remove(); // 移除舊的
