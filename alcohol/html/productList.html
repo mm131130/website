@@ -57,6 +57,7 @@ footer{
   text-align: center;
 }
 
+header,
 footer{
 
   margin-bottom: 18px;
@@ -413,6 +414,10 @@ $(document).ready(function () {
       $('.label > * ').filter(function() {
           return $(this).text().indexOf('-') >= 0;
       }).hide();
+
+
+
+
     },
     error: function () {
       alert('資料載入失敗，請檢查 XML 路徑或檔案格式');
@@ -436,7 +441,7 @@ function renderPagination(totalPages) {
   }
 
   $('.pagination').remove(); // 移除舊的
-  $('.pList').before('<div class="pagination">' + html + '</div>');
+  // $('.pList').before('<div class="pagination">' + html + '</div>');
   $('.pList').after('<div class="pagination">' + html + '</div>');
 }
 

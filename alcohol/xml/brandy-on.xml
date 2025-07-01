@@ -444,7 +444,7 @@
 	<num>b0020</num>
 	<type>Brandy</type>
 	<brand>Cognac</brand>
-	<subtitle>Crès anciens fins bars</subtitle>
+	<subtitle>Très anciens fins bois</subtitle>
 
 	<origin>France</origin>
 	<area>Cognac</area>
@@ -453,10 +453,9 @@
     <distillation_year>-</distillation_year>
     <bottling_year>-</bottling_year>
     <age>-</age>
-    <capacity>1000</capacity>
-    <strength>40.8</strength>
+    <capacity>700</capacity>
+    <strength>40</strength>
     
-
 </alcohol_info>
 
 
