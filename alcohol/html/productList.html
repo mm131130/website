@@ -336,13 +336,25 @@ footer img.logo_B{
 .p-box > div:not(.label){
   display: block !important;
   font-size: 17px;
-  line-height: 21px; 
+  line-height: 21px;  
+}
+
+
+
+.p-box > div{
+
+  font-size: 17px;
+  line-height: 21px;  
 }
 
 .p-box > div:not(.label) span{
- 
   line-height: 21px;
   padding-top: 9px;
+}
+
+.p-box .title,
+.p-box .subtitle{
+  line-height: 20px;
 }
 
 
@@ -434,11 +446,8 @@ $(document).ready(function () {
 
 
 
-      $('.label > * ').filter(function() {
-          return $(this).text().indexOf('-') >= 0;
-      }).hide();
 
-
+rLine();
 
 
     },
@@ -454,7 +463,21 @@ $(document).on('click', '.pagination .page-btn', function () {
   renderPage(page);
   $('.pagination .page-btn').removeClass('active');
   $('.pagination .page-btn[data-page="' + page + '"]').addClass('active');
+
+rLine();
+
 });
+function rLine() {
+
+
+      $('.label > * ').filter(function() {
+          return $(this).text().indexOf('-') >= 0;
+      }).hide();
+
+}
+
+
+
 
 // 產生分頁按鈕
 function renderPagination(totalPages) {
