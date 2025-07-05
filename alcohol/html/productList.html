@@ -329,14 +329,37 @@ footer img.logo_B{
 
 }
 
-.p-box div{
+/* .p-box div{
   display: block !important; 
+} */
+
+.p-box > div:not(.label){
+  display: block !important;
+  font-size: 17px;
+  line-height: 21px; 
 }
-.p-box span{
+
+.p-box > div:not(.label) span{
+ 
+  line-height: 21px;
+  padding-top: 9px;
+}
+
+
+/* .p-box span{
   display: block; 
   
   line-height: 15px !important;
 
+}
+
+
+ */
+
+
+.p-box span{
+  display: block; 
+  line-height: 15px !important;
 }
 
 .title{
