@@ -392,10 +392,66 @@ footer img.logo_B{
 
 
 
-.b0017-1951:hover {
-    cursor: pointer;
+
+
+
+
+
+
+.slide_show{
+  height: 100vh;
+
 }
 
+
+
+.imgBox{
+
+
+
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+ 
+  justify-content: center;
+
+
+
+
+  overflow-x: auto;
+
+  width: 100%;
+  height: 100%;
+  transition: all 0.36s ease-in-out;
+}
+
+.imgBox div{
+  overflow: hidden;
+  height: 100%;
+  width: 270px;
+
+
+  /*   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, max-content) );
+  justify-content: center;
+  gap: 18px; */
+
+
+  
+}
+.imgBox div img{
+
+
+  height: 100%;
+  width: auto;
+
+margin-left: 50%;
+  transform: translateX( -50% );
+
+
+  
+}
   </style>
 </head>
 
@@ -406,18 +462,20 @@ footer img.logo_B{
 <body>
 
   <header class="">
+  <a href="productList.html">
     <img class="logo_A" src="../img_alcohol/alcohol-logo-1.jpg">
     <img class="logo_B" src="../img_alcohol/alcohol-logo-2.jpg">
-  </header><!-- /header -->
+  </a>
+  </header>
 
-  <div class="pList"></div>
+  <div class="slide_show"><div class="imgBox"></div></div>
 
-
-  <footer class="">
+  <header class="">
+  <a href="productList.html">
     <img class="logo_A" src="../img_alcohol/alcohol-logo-1.jpg">
     <img class="logo_B" src="../img_alcohol/alcohol-logo-2.jpg">
-
-  </footer>
+  </a>
+  </header>
 
 
 
@@ -434,126 +492,33 @@ footer img.logo_B{
 <script>
 
 
-const perPage = 30;
-let products = [];
-
-$(document).ready(function () {
-  $.ajax({
-    url: '../xml/brandy-on.xml',
-    dataType: 'xml',
-    success: function (xml) {
-      // products = [];
-      $(xml).find('alcohol_info').each(function () {
-        products.push($(this));
-      });
-
-      const totalPages = Math.ceil(products.length / perPage);
-      renderPagination(totalPages);
-      renderPage(1);
-
-
-
-    $('*[class*="b0017"]').on('click', function() {
-        window.open('b0017.html', '_blank');
-    });
-
-
-rLine();
-
-
-    },
-    error: function () {
-      alert('資料載入失敗，請檢查 XML 路徑或檔案格式');
-    }
-  });
-});
-
-// 點擊分頁按鈕
-
-
-$(document).on('click', '.p-box .b0017-1951', function () {
-  window.open('b0017.html', '_blank');
-});
-
-$(document).on('click', '.pagination .page-btn', function () {
-  const page = $(this).data('page');
-  renderPage(page);
-  $('.pagination .page-btn').removeClass('active');
-  $('.pagination .page-btn[data-page="' + page + '"]').addClass('active');
-
-rLine();
-
-});
-
-
-
-function rLine() {
-
-
-      $('.label > * ').filter(function() {
-          return $(this).text().indexOf('-') >= 0;
-      }).hide();
-
-}
 
 
 
 
-// 產生分頁按鈕
-function renderPagination(totalPages) {
-  let html = '';
-  for (let i = 1; i <= totalPages; i++) {
-    html += `<a class="page-btn${i === 1 ? ' active' : ''}" href="#" data-page="${i}">${i}</a>`;
+$(function() {
+
+
+
+var b0017 = '';
+
+for( var i = 1 ; i <= 45 ; i++ ){
+
+  if (i <= 9) {
+    var num = 50 + i;
   }
 
-  $('.pagination').remove(); // 移除舊的
-  // $('.pList').before('<div class="pagination">' + html + '</div>');
-  $('.pList').after('<div class="pagination">' + html + '</div>');
+      b0017 += '<div><img src="../img_alcohol/b0017-S/b0017-19' + num + '-1.jpg"></div>';
+
 }
 
-// 顯示當頁產品
-function renderPage(page) {
-  const start = (page - 1) * perPage;
-  const pageProducts = products.slice(start, start + perPage);
+$('.imgBox').append( b0017 );
 
-  let html = '';
-  pageProducts.forEach(p => {
-    html += renderBasicInfo(p);
-  });
 
-  $('.pList').html(html);
-}
 
-function renderBasicInfo($product) {
-  const notes = $product.find('notes tip').map(function () {
-    return `<li>${$(this).text()}</li>`;
-  }).get().join('');
 
-  return `
-    <div class="p-box ${$product.find('num').text()}">
-      <img src="${$product.find('img_url').text()}">
 
-      <div class="num"><span>${$product.find('num').text()}</span></div>
-
-      <div class="label">
-        <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
-        <div class="title">${$product.find('brand').text()}</div>
-        <div class="subtitle">${$product.find('subtitle').text()}</div>
-        <div class="years">${$product.find('distillation_year').text()}</div>
-      </div>
-
-      <div><span>origin</span>${$product.find('origin').text()}</div>
-      <div><span>area</span>${$product.find('area').text()}</div>
-      <div><span>subarea</span>${$product.find('subarea').text()}</div>
-      <div><span>distillation</span>${$product.find('distillation_year').text()}</div>
-      <div><span>bottling</span>${$product.find('bottling_year').text()}</div>
-      <div><span>ages</span>${$product.find('age').text()}</div>
-      <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
-      <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
-  
-    </div>
-  `;
-}
+});
 
 
 
