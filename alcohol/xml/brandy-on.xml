@@ -4,7 +4,7 @@
 <!-- B_List -->
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0001-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0001-1.jpg</img_url>
 	<num>b0001</num>
 	<type>Brandy</type>
 	<brand>Crus Du Cognac EXTRA</brand>
@@ -24,7 +24,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0002-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0002-1.jpg</img_url>
 	<num>b0002</num>
 	<type>Brandy</type>
 	<brand>Leadership XO</brand>
@@ -44,7 +44,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0003-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0003-1.jpg</img_url>
 	<num>b0003</num>
 	<type>Brandy</type>
 	<brand>Frapin</brand>
@@ -64,7 +64,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0004-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0004-1.jpg</img_url>
 	<num>b0004</num>
 	<type>Brandy</type>
 	<brand>Delamain</brand>
@@ -84,7 +84,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0005-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0005-1.jpg</img_url>
 	<num>b0005</num>
 	<type>Brandy</type>
 	<brand>Haselnuss</brand>
@@ -104,7 +104,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0006-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0006-1.jpg</img_url>
 	<num>b0006</num>
 	<type>Brandy</type>
 	<brand>Delamain</brand>
@@ -124,7 +124,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0007-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0007-1.jpg</img_url>
 	<num>b0007</num>
 	<type>Brandy</type>
 	<brand>Delord</brand>
@@ -144,7 +144,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0008-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0008-1.jpg</img_url>
 	<num>b0008</num>
 	<type>Brandy</type>
 	<brand>Delord</brand>
@@ -164,7 +164,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0009-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0009-1.jpg</img_url>
 	<num>b0009</num>
 	<type>Brandy</type>
 	<brand>Delord</brand>
@@ -184,7 +184,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0010-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0010-1.jpg</img_url>
 	<num>b0010</num>
 	<type>Brandy</type>
 	<brand>Prunier</brand>
@@ -204,7 +204,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0011-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0011-1.jpg</img_url>
 	<num>b0011</num>
 	<type>Brandy</type>
 	<brand>Volare XO</brand>
@@ -226,7 +226,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0012-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0012-1.jpg</img_url>
 	<num>b0012</num>
 	<type>Brandy</type>
 	<brand>Volare XO</brand>
@@ -251,7 +251,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0012-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0012-1.jpg</img_url>
 	<num>b0012</num>
 	<type>Brandy</type>
 	<brand>Frapin</brand>
@@ -276,7 +276,7 @@
 </alcohol_info>
  -->
 <alcohol_info>
-	<img_url>../img_alcohol/b0013-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0013-1.jpg</img_url>
 	<num>b0013</num>
 	<type>Brandy</type>
 	<brand>Pearle de Brillet</brand>
@@ -296,7 +296,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0014-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0014-1.jpg</img_url>
 	<num>b0014</num>
 	<type>Brandy</type>
 	<brand>Charles VII Cognac</brand>
@@ -315,28 +315,42 @@
 
 </alcohol_info>
 
+
+
+
+
 <alcohol_info>
-	<img_url>../img_alcohol/b0015-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0015-1.jpg</img_url>
 	<num>b0015</num>
+	<name_c>加絲達賀</name_c>
+
 	<type>Brandy</type>
-	<brand>Armagnac Castarède</brand>
-	<subtitle>Caetarede Bas Armagnac</subtitle>
+	<brand>Castarède</brand>
+	<subtitle>Bas Armagnac</subtitle>
 
 	<origin>France</origin>
 	<area>Armagnac</area>
 	<subarea>Bas</subarea>
 
-    <distillation_year>1982</distillation_year>
+    <distillation_year>1964</distillation_year>
     <bottling_year>20130628</bottling_year>
-    <age>31</age>
+    <age>49</age>
     <capacity>500</capacity>
     <strength>40.0</strength>
     
-
+<!-- 	<qty>1</qty>
+	<buy>20161213</buy>
+	<price>6,000</price>
+	<notes>
+		<tip>20250427</tip>
+		<tip>1964 ~ 1993 = 30</tip>
+	</notes> -->
+	
 </alcohol_info>
 
+
 <alcohol_info>
-	<img_url>../img_alcohol/b0016-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0016-1.jpg</img_url>
 	<num>b0016</num>
 	<type>Brandy</type>
 	<brand>Camus Cognac</brand>
@@ -358,7 +372,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0017-1951-0.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0017-1951-0.jpg</img_url>
 	<num>b0017-1951 to 1995</num>
 	<type>Brandy</type>
 	<brand>S.Havion-Ehny</brand>
@@ -397,7 +411,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0018-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0018-1.jpg</img_url>
 	<num>b0018</num>
 	<type>Brandy</type>
 	<brand>N°14</brand>
@@ -419,7 +433,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0019-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0019-1.jpg</img_url>
 	<num>b0019</num>
 	<type>Brandy</type>
 	<brand>Gautier</brand>
@@ -440,7 +454,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0020-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0020-1.jpg</img_url>
 	<num>b0020</num>
 	<type>Brandy</type>
 	<brand>Cognac</brand>
@@ -460,7 +474,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0021-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0021-1.jpg</img_url>
 	<num>b0021</num>
 	<type>Brandy</type>
 	<brand>Bisquit</brand>
@@ -489,7 +503,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0022-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0022-1.jpg</img_url>
 	<num>b0022</num>
 	<type>Brandy</type>
 	<brand>Elusa</brand>
@@ -511,7 +525,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0023-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0023-1.jpg</img_url>
 	<num>b0023</num>
 	<type>Brandy</type>
 	<brand>Elusa</brand>
@@ -531,7 +545,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0024-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0024-1.jpg</img_url>
 	<num>b0024</num>
 	<type>Brandy</type>
 	<brand>Seviac</brand>
@@ -551,7 +565,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0025-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0025-1.jpg</img_url>
 	<num>b0025</num>
 	<type>Brandy</type>
 	<brand>Fine Champagne</brand>
@@ -574,7 +588,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0026-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0026-1.jpg</img_url>
 	<num>b0026</num>
 	<type>Brandy</type>
 	<brand>Lepanto</brand>
@@ -594,7 +608,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0027-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0027-1.jpg</img_url>
 	<num>b0027</num>
 	<type>Brandy</type>
 	<brand>Vieil-Armagnac</brand>
@@ -616,7 +630,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0028-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0028-1.jpg</img_url>
 	<num>b0028</num>
 	<type>Brandy</type>
 
@@ -640,7 +654,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0029-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0029-1.jpg</img_url>
 	<num>b0029</num>
 	<type>Brandy</type>
 
@@ -661,7 +675,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0030-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0030-1.jpg</img_url>
 	<num>b0030</num>
 	<type>Brandy</type>
 
@@ -683,7 +697,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0033-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0033-1.jpg</img_url>
 	<num>b0033</num>
 	<type>Brandy</type>
 
@@ -705,7 +719,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0034-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0034-1.jpg</img_url>
 	<num>b0034</num>
 	<type>Brandy</type>
 
@@ -728,7 +742,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0035-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0035-1.jpg</img_url>
 	<num>b0035</num>
 	<type>Brandy</type>
 
@@ -751,7 +765,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0036-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0036-1.jpg</img_url>
 	<num>b0036</num>
 	<type>Brandy</type>
 
@@ -772,7 +786,7 @@
 
 </alcohol_info>
 <alcohol_info>
-	<img_url>../img_alcohol/b0037-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0037-1.jpg</img_url>
 	<num>b0037</num>
 	<type>Brandy</type>
 
@@ -793,7 +807,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/b0038-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/b0038-1.jpg</img_url>
 	<num>b0038</num>
 	<type>Brandy</type>
 
@@ -824,7 +838,7 @@
 <!-- W_List -->
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0001-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0001-1.jpg</img_url>
 	<num>w0001</num>
 	<type>Whisky</type>
 	<brand>Siqnatory Vintage</brand>
@@ -846,7 +860,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0002-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0002-1.jpg</img_url>
 	<num>w0002</num>
 	<type>Whisky</type>
 	<brand>Anchentoshan</brand>
@@ -865,7 +879,7 @@
 
 </alcohol_info>
 <alcohol_info>
-	<img_url>../img_alcohol/w0003-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0003-1.jpg</img_url>
 	<num>w0003</num>
 	<type>Whisky</type>
 	<brand>Chieftain's Choice</brand>
@@ -884,7 +898,7 @@
 
 </alcohol_info>
 <alcohol_info>
-	<img_url>../img_alcohol/w0004-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0004-1.jpg</img_url>
 	<num>w0004</num>
 	<type>Whisky</type>
 	<brand>Dun Bheagan</brand>
@@ -903,7 +917,7 @@
 
 </alcohol_info>
 <alcohol_info>
-	<img_url>../img_alcohol/w0005-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0005-1.jpg</img_url>
 	<num>w0005</num>
 	<type>Whisky</type>
 
@@ -926,7 +940,7 @@ Bottled 1990s - Ceramic Decanter
 
 </alcohol_info>
 <alcohol_info>
-	<img_url>../img_alcohol/w0006-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0006-1.jpg</img_url>
 	<num>w0006</num>
 	<type>Whisky</type>
 	<brand>Evan Williams</brand>
@@ -948,7 +962,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0007-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0007-1.jpg</img_url>
 	<num>w0007</num>
 	<type>Whisky</type>
 	<brand>Scott's Selection</brand>
@@ -968,7 +982,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0008-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0008-1.jpg</img_url>
 	<num>w0008</num>
 	<type>Whisky</type>
 	<brand>Scott's Selection</brand>
@@ -1013,7 +1027,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
  -->
 <alcohol_info>
-	<img_url>../img_alcohol/w0009-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0009-1.jpg</img_url>
 	<num>w0009</num>
 	<type>Whisky</type>
 	<brand>Longmorn</brand>
@@ -1034,7 +1048,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0010-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0010-1.jpg</img_url>
 	<num>w0010</num>
 	<type>Whisky</type>
 	<brand>Ballantine's</brand>
@@ -1054,7 +1068,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/empty.jpg</img_url>
+	<img_url>../img_alcohol/s/empty.jpg</img_url>
 	<num>w0011</num>
 	<type>Whisky</type>
 	<brand>Scottish Prince</brand>
@@ -1075,7 +1089,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0012-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0012-1.jpg</img_url>
 	<num>w0012</num>
 	<type>Whisky</type>
 	<brand>Celtic Legends</brand>
@@ -1095,7 +1109,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0013-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0013-1.jpg</img_url>
 	<num>w0013</num>
 	<type>Whisky</type>
 	<brand>Royal Salute</brand>
@@ -1115,13 +1129,12 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0014-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0014-1.jpg</img_url>
 	<num>w0014</num>
+	<name_c>百富</name_c>
 	<type>Whisky</type>
 	<brand>The Balvenie</brand>
 	<subtitle>Single Barrel</subtitle>
-
-
 
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1137,7 +1150,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0015-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0015-1.jpg</img_url>
 	<num>w0015</num>
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
@@ -1158,7 +1171,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0016-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0016-1.jpg</img_url>
 	<num>w0016</num>
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
@@ -1178,7 +1191,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0017-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0017-1.jpg</img_url>
 	<num>w0017</num>
 	<type>Whisky</type>
 	<brand>Hibiki</brand>
@@ -1197,7 +1210,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0018-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0018-1.jpg</img_url>
 	<num>w0018</num>
 	<type>Whisky</type>
 	<brand>Macallan</brand>
@@ -1221,7 +1234,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0019-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0019-1.jpg</img_url>
 	<num>w0019</num>
 	<type>Whisky</type>
 	<brand>Macallan</brand>
@@ -1241,7 +1254,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0020-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0020-1.jpg</img_url>
 	<num>w0020</num>
 	<type>Whisky</type>
 	<brand>Yamazaki</brand>
@@ -1260,7 +1273,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0021-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0021-1.jpg</img_url>
 	<num>w0021</num>
 	<type>Whisky</type>
 	<brand>Yamazaki</brand>
@@ -1280,7 +1293,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0022-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0022-1.jpg</img_url>
 	<num>w0022</num>
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
@@ -1305,7 +1318,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0023-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0023-1.jpg</img_url>
 	<num>w0023</num>
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
@@ -1324,7 +1337,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0024-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0024-1.jpg</img_url>
 	<num>w0024</num>
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
@@ -1343,7 +1356,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0025-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0025-1.jpg</img_url>
 	<num>w0025</num>
 
 	<type>Whisky</type>
@@ -1363,7 +1376,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0026-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0026-1.jpg</img_url>
 	<num>w0026</num>
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
@@ -1382,7 +1395,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0027-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0027-1.jpg</img_url>
 	<num>w0027</num>
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
@@ -1401,7 +1414,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0028-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0028-1.jpg</img_url>
 	<num>w0028</num>
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
@@ -1424,7 +1437,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0029-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0029-1.jpg</img_url>
 	<num>w0029</num>
 	<type>Whisky</type>
 	<brand>Glenfiddich</brand>
@@ -1443,7 +1456,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0030-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0030-1.jpg</img_url>
 	<num>w0030</num>
 	<type>Whisky</type>
 	<brand>Glenfiddich</brand>
@@ -1462,7 +1475,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0031-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0031-1.jpg</img_url>
 	<num>w0031</num>
 	<type>Whisky</type>
 	<brand>Glenlivet</brand>
@@ -1481,7 +1494,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0032-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0032-1.jpg</img_url>
 	<num>w0032</num>
 	<type>Whisky</type>
 	<brand>Old Pulteney</brand>
@@ -1500,7 +1513,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0033-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0033-1.jpg</img_url>
 	<num>w0033</num>
 	<type>Whisky</type>
 	<brand>Glen Ord</brand>
@@ -1523,7 +1536,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0034-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0034-1.jpg</img_url>
 	<num>w0034</num>
 	<type>Whisky</type>
 	<brand>Celtic Nations</brand>
@@ -1543,7 +1556,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0035-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0035-1.jpg</img_url>
 	<num>w0035</num>
 	<type>Whisky</type>
 	<brand>CRobert Burns</brand>
@@ -1562,7 +1575,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0036-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0036-1.jpg</img_url>
 	<num>w0036</num>
 	<type>Whisky</type>
 	<brand>Royal Crystal</brand>
@@ -1582,7 +1595,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0037-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0037-1.jpg</img_url>
 	<num>w0037</num>
 	<type>Whisky</type>
 	<brand>Royal Crystal</brand>
@@ -1602,7 +1615,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0038-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0038-1.jpg</img_url>
 	<num>w0038</num>
 	<type>Whisky</type>
 	<brand>Talisker</brand>
@@ -1623,7 +1636,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0039-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0039-1.jpg</img_url>
 	<num>w0039</num>
 	<type>Whisky</type>
 	<brand>Talisker</brand>
@@ -1644,7 +1657,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/w0040-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/w0040-1.jpg</img_url>
 	<num>w0040</num>
 	<type>Whisky</type>
 	<brand>Bunnahabhain</brand>
@@ -1666,7 +1679,7 @@ Bottled 1990s - Ceramic Decanter
 <!-- R_List -->
 
 <alcohol_info>
-	<img_url>../img_alcohol/r0001-1.jpg</img_url>
+	<img_url>../img_alcohol/s/r0001-1.jpg</img_url>
 	<num>r0001</num>
 	<type>Wine</type>
 
@@ -1687,7 +1700,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/r0002-1.jpg</img_url>
+	<img_url>../img_alcohol/s/r0002-1.jpg</img_url>
 	<num>r0002</num>
 	<type>Wine</type>
 	<brand>Dalva Porto</brand>
@@ -1707,7 +1720,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/r0004-1.jpg</img_url>
+	<img_url>../img_alcohol/s/r0004-1.jpg</img_url>
 	<num>r0004</num>
 	<type>Wine</type>
 	<brand>Château Pichon Longueville Comtesse de Lalande</brand>
@@ -1727,7 +1740,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/r0005-1.jpg</img_url>
+	<img_url>../img_alcohol/s/r0005-1.jpg</img_url>
 	<num>r0005</num>
 	<type>Wine</type>
 	<brand>Grands~Echezeaux Grand Cru</brand>
@@ -1747,7 +1760,7 @@ Bottled 1990s - Ceramic Decanter
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/s0001-1.jpg</img_url>
+	<img_url>../img_alcohol/s/s0001-1.jpg</img_url>
 	<num>s0001</num>
 	<type>Wine</type>
 	<brand>Noble One</brand>
@@ -1767,7 +1780,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/s0002-1.jpg</img_url>
+	<img_url>../img_alcohol/s/s0002-1.jpg</img_url>
 	<num>s0002</num>
 	<type>Wine</type>
 	<brand>Château Caillou</brand>
@@ -1788,7 +1801,7 @@ Bottled 1990s - Ceramic Decanter
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/s0004-1.jpg</img_url>
+	<img_url>../img_alcohol/s/s0004-1.jpg</img_url>
 	<num>s0004</num>
 	<type>Wine</type>
 	<brand>Prucia</brand>
