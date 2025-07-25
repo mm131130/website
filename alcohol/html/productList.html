@@ -443,8 +443,9 @@ footer img.logo_B{
 
     border-radius: 18px;
 
+  /* background-color: rgba(0, 0, 0, 0.45); */
 
-  background-color: black;
+
 
     transform: translate( -50% , calc( -50% + 18px) ) rotate(-6deg);
     box-shadow: 0 6px 9px rgba(0,0,0,0.45);
@@ -811,45 +812,45 @@ $(document).on('click', '.areU_18 a', function() {
 
 
 function getRandomImage() {
-  // 聲明所有變量
+
   var type = 0;
   var prefix ='';
   var randomNum = 0;
   var numStr ='';
   var imagePath = '';
   
-  // 使用if-else決定類型
-  if (Math.floor(Math.random() * 0) + 1 < 2) {
+
+  if (Math.floor(Math.random() * 2) + 1 < 2) {
+
+
     type = 1;
   } else {
     type = 2;
   }
   
-  // 使用if-else決定前綴
+
   if (type === 1) {
     prefix = 'b00';
   } else {
     prefix = 'w00';
   }
   
-  // 生成1-40的隨機數
+
   randomNum = Math.floor(Math.random() * 30) + 1;
   
-  // 確保兩位數格式
+
   if (randomNum < 10) {
     numStr = '0' + randomNum.toString();
   } else {
     numStr = randomNum.toString();
   }
-  
-  // 拼接圖片路徑
-  // imagePath = 'images/' + prefix + numStr + '.jpg';
-  
 
 
-    imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
-$('.popup > div').append(imagePath)
-  // return imagePath;
+
+  imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
+
+$('.popup > div').append(imagePath);
+
 }
 
 
