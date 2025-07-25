@@ -699,6 +699,7 @@ $(document).ready(function () {
 
 rLine();
 
+getRandomImage();
 
     },
     error: function () {
@@ -706,7 +707,7 @@ rLine();
     }
   });
 
-getRandomImage();
+
 
 });
 
@@ -780,7 +781,11 @@ function renderBasicInfo($product) {
     <div class="p-box ${$product.find('num').text()}">
       <img src="${$product.find('img_url').text()}">
 
-      <div class="num"><span>${$product.find('num').text()}</span></div>
+      <div class="num">
+      <span>${$product.find('num').text()}</span>
+      <span>${$product.find('name_c').text()}</span>
+
+      </div>
 
       <div class="label">
         <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
