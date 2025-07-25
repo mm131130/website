@@ -435,17 +435,21 @@ footer img.logo_B{
   left: 50%;
   z-index: 150;
 
-
+/* 
   height: 100%;
+  max-height: 720px;
+
+  height: calc( 100%; - 90px);
+ */
+
+  height: calc( 100vh - 180px);
   max-height: 720px;
 
   max-width: 360px;
 
-
     border-radius: 18px;
 
   /* background-color: rgba(0, 0, 0, 0.45); */
-
 
 
     transform: translate( -50% , calc( -50% + 18px) ) rotate(-6deg);
@@ -574,6 +578,36 @@ footer img.logo_B{
  }
 
 
+@media screen and (max-width:1200px) {
+
+
+ .popup > div{
+  height: 720px;
+
+
+  /* max-width: 300px; */
+
+
+}
+}
+
+
+
+/* @media screen and (max-width:1024px) { */
+
+
+/*  .popup > div{
+  height: 720px;
+
+ */
+  /* max-width: 300px; */
+
+
+/* } */
+
+/* } */
+
+
 @media screen and (max-width:400px) {
 
 
@@ -595,6 +629,8 @@ footer img.logo_B{
  .popup > div{
 
   max-width: 270px;
+  height: 540px;
+
 }
 
 

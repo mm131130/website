@@ -729,13 +729,15 @@
 
 
 
-<!-- <alcohol_info>
+<alcohol_info>
 	<img_url>../img_Alcohol/s/b0031-1.jpg</img_url>
 	<num>b0031</num>
+	<name_c>普諾尼</name_c>
+
 	<type>Brandy</type>
 
-	<brand></brand>
-	<subtitle></subtitle>
+	<brand>Prunier</brand>
+	<subtitle>Grande Champagne</subtitle>
 
 
 	<origin>France</origin>
@@ -744,29 +746,31 @@
 
     <distillation_year>-</distillation_year>
     <bottling_year>-</bottling_year>
-    <age>80</age>
+    <age>-</age>
     <capacity>700</capacity>
-    <strength>40.0</strength>
+    <strength>43.0</strength>
 </alcohol_info>
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0032-1.jpg</img_url>
 	<num>b0032</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 
-	<brand></brand>
-	<subtitle></subtitle>
+	<brand>Vieux Millenaire</brand>
+	<subtitle>Lhéraud</subtitle>
 
 
 	<origin>France</origin>
 	<area>Cognac</area>
-	<subarea>Grande Champagne</subarea>
+	<subarea>-</subarea>
 
     <distillation_year>-</distillation_year>
     <bottling_year>-</bottling_year>
-    <age>80</age>
+    <age>20</age>
     <capacity>700</capacity>
-    <strength>40.0</strength>
-</alcohol_info> -->
+    <strength>43.0</strength>
+</alcohol_info>
 
 
 
