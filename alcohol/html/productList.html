@@ -46,7 +46,16 @@
 body {
   font-family: Arial, sans-serif;
   background: #f0f2f5;
+
+
 }
+body.overflow_hidden{
+
+
+  overflow: hidden;
+  
+}
+
 
 
 header,
@@ -198,12 +207,18 @@ footer img.logo_B{
     letter-spacing: 0.03em;
     background: white;
     /* border:1px solid red;  */
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 9px;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
     padding: 18px;
     transition: transform 0.3s;
     /* width: 300px; */
     /* max-width: 360px; */
+}
+
+.b0017-1951{
+    box-shadow: 0 6px 12px rgba(125, 143, 181, 0.5) ;
+
+
 }
 .p-box:hover {
     /* transform: translateY(-3px); */
@@ -396,6 +411,168 @@ footer img.logo_B{
     cursor: pointer;
 }
 
+
+
+
+.popup{
+
+
+  position: absolute;
+  z-index: 100;
+ height: 100vh;
+ width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.45);
+
+
+ }
+ .popup > div{
+  overflow: hidden;
+  position: relative;
+
+  top: 50%;
+  left: 50%;
+  z-index: 150;
+
+
+  height: calc( 100vh - 180px);
+
+  max-width: 360px;
+
+
+    border-radius: 18px;
+
+
+  background-color: black;
+
+    transform: translate( -50% , calc( -50% + 18px) ) rotate(-6deg);
+    box-shadow: 0 6px 9px rgba(0,0,0,0.45);
+}
+
+
+
+
+.areU_18{
+
+
+  position: absolute;
+  top: 45%;
+  right: 15%;
+  z-index: 300;
+
+
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+
+  color: #5d0b24;
+
+  transform: translate(0%, -50%) rotate(6deg);
+
+}
+
+
+
+.areU_18 span,
+.areU_18 a{
+  display: block;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-family: roboto_light;
+}
+
+.areU_18 .t_18{
+
+  font-size: 270px;
+  line-height: 150px;
+  font-family: northwell_alt;
+
+  padding-top:120px ;
+    transform: rotate(-18deg);
+
+  /* padding-top: 120px; */
+
+}
+
+.areU_18 > *:not(.t_18){
+    transform: rotate(6deg);
+
+}
+
+
+
+.areU_18 .btn_yes{
+
+  position: relative;
+  top: -30px;
+  /* right:0; */
+
+ /*  display: flex;
+  justify-content: center; */
+
+  display: block;
+
+
+
+  height: 90px;
+  width:90px;
+
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+
+  height: 90px;
+  width:90px;
+
+
+
+  border-radius: 100%;
+  background-color: #5d0b24;
+  box-shadow: 0 2px 3px rgba(0,0,0,1);
+ 
+  transform: rotate(12deg);
+}
+
+.areU_18 .btn_yes:hover{
+
+
+  /* background-color: rgba(93, 11, 36, 0.45); */
+
+  box-shadow: 0 9px 9px rgba(0,0,0,0.45) inset;
+ 
+  transform: rotate(-6deg);
+
+
+     -webkit-transition: all 0.27s ease-in-out;
+    -o-transition: all 0.27s ease-in-out;  
+    transition: all 0.27s ease-in-out;
+}
+
+
+
+
+
+
+
+.popup div img{
+  position: relative;
+
+  top:50%;
+  left: 50%;
+  z-index: 200;
+
+
+  height:150%;
+  width: auto;
+    transform: translate( -72% , -50% ) rotate(6deg);
+ }
+
+
+
+
   </style>
 </head>
 
@@ -403,7 +580,34 @@ footer img.logo_B{
 
 
 
-<body>
+<body class="overflow_hidden">
+
+
+
+
+<div class="popup">
+
+  <div>
+
+
+
+<div class="areU_18">
+      <span>Are u</span>
+      <span class="t_18">18</span>
+      <!-- <span class="btn_note">if u have 18 years old clack this btn</span> -->
+      <a class="btn_yes" href="#">yes</a>
+</div>
+
+
+
+
+
+    <!-- <img class="popup_bg" src="../img_alcohol/s/b0014-1.jpg"> -->
+
+  </div>
+  
+</div>
+
 
   <header class="">
     <img class="logo_A" src="../img_alcohol/alcohol-logo-1.jpg">
@@ -437,6 +641,8 @@ footer img.logo_B{
 const perPage = 30;
 let products = [];
 
+
+
 $(document).ready(function () {
   $.ajax({
     url: '../xml/brandy-on.xml',
@@ -466,7 +672,15 @@ rLine();
       alert('資料載入失敗，請檢查 XML 路徑或檔案格式');
     }
   });
+
+getRandomImage();
+
 });
+
+
+
+
+
 
 // 點擊分頁按鈕
 
@@ -553,6 +767,57 @@ function renderBasicInfo($product) {
   
     </div>
   `;
+}
+
+
+
+$(document).on('click', '.areU_18 a', function() {
+  $('body.overflow_hidden').removeClass('overflow_hidden');
+  $('.popup').remove();
+});
+
+
+
+function getRandomImage() {
+  // 聲明所有變量
+  var type = 0;
+  var prefix ='';
+  var randomNum = 0;
+  var numStr ='';
+  var imagePath = '';
+  
+  // 使用if-else決定類型
+  if (Math.floor(Math.random() * 0) + 1 < 2) {
+    type = 1;
+  } else {
+    type = 2;
+  }
+  
+  // 使用if-else決定前綴
+  if (type === 1) {
+    prefix = 'b00';
+  } else {
+    prefix = 'w00';
+  }
+  
+  // 生成1-40的隨機數
+  randomNum = Math.floor(Math.random() * 30) + 1;
+  
+  // 確保兩位數格式
+  if (randomNum < 10) {
+    numStr = '0' + randomNum.toString();
+  } else {
+    numStr = randomNum.toString();
+  }
+  
+  // 拼接圖片路徑
+  // imagePath = 'images/' + prefix + numStr + '.jpg';
+  
+
+
+    imagePath = '<img class="popup_bg" src="../img_alcohol/s/' + prefix + numStr + '-1.jpg">';
+$('.popup > div').append(imagePath)
+  // return imagePath;
 }
 
 
