@@ -6,6 +6,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0001-1.jpg</img_url>
 	<num>b0001</num>
+	<name_c>庫茲</name_c>
+
 	<type>Brandy</type>
 	<brand>Crus Du Cognac EXTRA</brand>
 	<subtitle>-</subtitle>
@@ -26,6 +28,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0002-1.jpg</img_url>
 	<num>b0002</num>
+	<name_c>統領</name_c>
+
 	<type>Brandy</type>
 	<brand>Leadership XO</brand>
 	<subtitle>-</subtitle>
@@ -46,6 +50,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0003-1.jpg</img_url>
 	<num>b0003</num>
+	<name_c>法樂檳</name_c>
+
 	<type>Brandy</type>
 	<brand>Frapin</brand>
 	<subtitle>-</subtitle>
@@ -66,6 +72,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0004-1.jpg</img_url>
 	<num>b0004</num>
+	<name_c>德拉曼 - 晚禱</name_c>
+
 	<type>Brandy</type>
 	<brand>Delamain</brand>
 	<subtitle>Cognac Grande Champagne</subtitle>
@@ -106,6 +114,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0006-1.jpg</img_url>
 	<num>b0006</num>
+	<name_c>德拉曼</name_c>
+
 	<type>Brandy</type>
 	<brand>Delamain</brand>
 	<subtitle>Grande Champagne De Cognac</subtitle>
@@ -126,6 +136,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0007-1.jpg</img_url>
 	<num>b0007</num>
+	<name_c>狄龍</name_c>
+
 	<type>Brandy</type>
 	<brand>Delord</brand>
 	<subtitle>Vieil Armagnac</subtitle>
@@ -146,6 +158,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0008-1.jpg</img_url>
 	<num>b0008</num>
+	<name_c>狄龍</name_c>
+
 	<type>Brandy</type>
 	<brand>Delord</brand>
 	<subtitle>Vieil Armagnac</subtitle>
@@ -166,6 +180,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0009-1.jpg</img_url>
 	<num>b0009</num>
+	<name_c>狄龍</name_c>
+
 	<type>Brandy</type>
 	<brand>Delord</brand>
 	<subtitle>Vieil Armagnac</subtitle>
@@ -186,6 +202,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0010-1.jpg</img_url>
 	<num>b0010</num>
+	<name_c>普諾尼</name_c>
+
 	<type>Brandy</type>
 	<brand>Prunier</brand>
 	<subtitle>-</subtitle>
@@ -206,6 +224,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0011-1.jpg</img_url>
 	<num>b0011</num>
+	<name_c>寶拉蕊</name_c>
+
 	<type>Brandy</type>
 	<brand>Volare XO</brand>
 	<subtitle>-</subtitle>
@@ -228,6 +248,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0012-1.jpg</img_url>
 	<num>b0012</num>
+	<name_c>寶拉蕊</name_c>
+
 	<type>Brandy</type>
 	<brand>Volare XO</brand>
 	<subtitle>-</subtitle>
@@ -275,6 +297,8 @@
 	</notes>
 </alcohol_info>
  -->
+
+
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0013-1.jpg</img_url>
 	<num>b0013</num>
@@ -298,6 +322,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0014-1.jpg</img_url>
 	<num>b0014</num>
+	<name_c>利豪 - 查理七世</name_c>
+
 	<type>Brandy</type>
 	<brand>Charles VII Cognac</brand>
 	<subtitle>Lhéraud</subtitle>
@@ -345,13 +371,15 @@
 		<tip>20250427</tip>
 		<tip>1964 ~ 1993 = 30</tip>
 	</notes> -->
-	
+
 </alcohol_info>
 
 
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0016-1.jpg</img_url>
 	<num>b0016</num>
+	<name_c>卡慕</name_c>
+
 	<type>Brandy</type>
 	<brand>Camus Cognac</brand>
 	<subtitle>Île de Ré</subtitle>
@@ -374,6 +402,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0017-1951-0.jpg</img_url>
 	<num>b0017-1951 to 1995</num>
+	<name_c>伊尼</name_c>
+
 	<type>Brandy</type>
 	<brand>S.Havion-Ehny</brand>
 	<subtitle>Vintage</subtitle>
@@ -390,24 +420,6 @@
     
 
 </alcohol_info>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <alcohol_info>
@@ -435,6 +447,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0019-1.jpg</img_url>
 	<num>b0019</num>
+	<name_c>古殿</name_c>
+
 	<type>Brandy</type>
 	<brand>Gautier</brand>
 	<subtitle>Cognac XO gold &amp; blue</subtitle>
@@ -476,6 +490,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0021-1.jpg</img_url>
 	<num>b0021</num>
+	<name_c>百事吉</name_c>
+
 	<type>Brandy</type>
 	<brand>Bisquit</brand>
 	<subtitle>Napoleno</subtitle>
@@ -505,6 +521,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0022-1.jpg</img_url>
 	<num>b0022</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 	<brand>Elusa</brand>
 	<subtitle>Lhéraud</subtitle>
@@ -527,6 +545,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0023-1.jpg</img_url>
 	<num>b0023</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 	<brand>Elusa</brand>
 	<subtitle>Lhéraud</subtitle>
@@ -547,6 +567,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0024-1.jpg</img_url>
 	<num>b0024</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 	<brand>Seviac</brand>
 	<subtitle>Lhéraud</subtitle>
@@ -567,6 +589,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0025-1.jpg</img_url>
 	<num>b0025</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 	<brand>Fine Champagne</brand>
 	<subtitle>Lhéraud</subtitle>
@@ -610,6 +634,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0027-1.jpg</img_url>
 	<num>b0027</num>
+	<name_c>利豪</name_c>
+
 	<type>Brandy</type>
 	<brand>Vieil-Armagnac</brand>
 	<subtitle>Baron G. Legrand&lt;br/&gt;Guy Lhéraud</subtitle>
@@ -632,6 +658,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0028-1.jpg</img_url>
 	<num>b0028</num>
+	<name_c>康福壽</name_c>
+
 	<type>Brandy</type>
 
 	<brand>Courvoisier</brand>
@@ -656,10 +684,12 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0029-1.jpg</img_url>
 	<num>b0029</num>
+	<name_c>郁金香</name_c>
+
 	<type>Brandy</type>
 
-	<brand>Grande Champagne XO</brand>
-	<subtitle>Maison Guerbe</subtitle>
+	<brand>Maison Guerbe XO</brand>
+	<subtitle>Grande Champagne</subtitle>
 
 	<origin>France</origin>
 	<area>Cognac</area>
@@ -696,9 +726,58 @@
 
 </alcohol_info>
 
+
+
+
+<!-- <alcohol_info>
+	<img_url>../img_Alcohol/s/b0031-1.jpg</img_url>
+	<num>b0031</num>
+	<type>Brandy</type>
+
+	<brand></brand>
+	<subtitle></subtitle>
+
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>80</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+</alcohol_info>
+<alcohol_info>
+	<img_url>../img_Alcohol/s/b0032-1.jpg</img_url>
+	<num>b0032</num>
+	<type>Brandy</type>
+
+	<brand></brand>
+	<subtitle></subtitle>
+
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>80</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+</alcohol_info> -->
+
+
+
+
+
+
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0033-1.jpg</img_url>
 	<num>b0033</num>
+	<name_c>人頭馬</name_c>
+
 	<type>Brandy</type>
 
 	<brand>RÉMY MARTIN 1738</brand>
@@ -721,6 +800,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0034-1.jpg</img_url>
 	<num>b0034</num>
+	<name_c>御鹿</name_c>
+
 	<type>Brandy</type>
 
 	<brand>Hine</brand>
@@ -744,6 +825,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0035-1.jpg</img_url>
 	<num>b0035</num>
+	<name_c>御鹿</name_c>
+
 	<type>Brandy</type>
 
 	<brand>Hine XO</brand>
@@ -788,6 +871,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0037-1.jpg</img_url>
 	<num>b0037</num>
+	<name_c>軒尼詩</name_c>
+
 	<type>Brandy</type>
 
 	<brand>Hennessy XO</brand>
@@ -809,6 +894,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/b0038-1.jpg</img_url>
 	<num>b0038</num>
+	<name_c>軒尼詩</name_c>
+
 	<type>Brandy</type>
 
 	<brand>Hennessy XO</brand>
@@ -824,8 +911,6 @@
     <age>-</age>
     <capacity>700</capacity>
     <strength>40.0</strength>
-    
-
 </alcohol_info>
 
 
@@ -840,6 +925,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0001-1.jpg</img_url>
 	<num>w0001</num>
+	<name_c>聖佛力</name_c>
+
 	<type>Whisky</type>
 	<brand>Siqnatory Vintage</brand>
 	<subtitle>-</subtitle>
@@ -855,13 +942,14 @@
     <age>40</age>
     <capacity>700</capacity>
     <strength>56.8</strength>
-    
 
 </alcohol_info>
 
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0002-1.jpg</img_url>
 	<num>w0002</num>
+	<name_c>歐肯</name_c>
+
 	<type>Whisky</type>
 	<brand>Anchentoshan</brand>
 	<subtitle>-</subtitle>
@@ -881,6 +969,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0003-1.jpg</img_url>
 	<num>w0003</num>
+	<name_c>老酋長</name_c>
+
 	<type>Whisky</type>
 	<brand>Chieftain's Choice</brand>
 	<subtitle>-</subtitle>
@@ -900,6 +990,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0004-1.jpg</img_url>
 	<num>w0004</num>
+	<name_c>唐堡</name_c>
+
 	<type>Whisky</type>
 	<brand>Dun Bheagan</brand>
 	<subtitle>-</subtitle>
@@ -920,10 +1012,8 @@
 	<img_url>../img_Alcohol/s/w0005-1.jpg</img_url>
 	<num>w0005</num>
 	<type>Whisky</type>
+	<name_c>格蘭傑</name_c>
 
-<!-- 	Glenmorangie 18 Year Old Maltman's Special Reserve
-Bottled 1990s - Ceramic Decanter
-70cl / 43% -->
 	<brand>Glenmorangie</brand>
 	<subtitle>Maltman's Special Reserve</subtitle>
 
@@ -942,6 +1032,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0006-1.jpg</img_url>
 	<num>w0006</num>
+	<name_c>伊凡威廉</name_c>
+
 	<type>Whisky</type>
 	<brand>Evan Williams</brand>
 	<subtitle>-</subtitle>
@@ -964,6 +1056,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0007-1.jpg</img_url>
 	<num>w0007</num>
+	<name_c>史考特</name_c>
+
 	<type>Whisky</type>
 	<brand>Scott's Selection</brand>
 	<subtitle>Longmorn-Glenlivet</subtitle>
@@ -984,6 +1078,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0008-1.jpg</img_url>
 	<num>w0008</num>
+	<name_c>史考特</name_c>
+
 	<type>Whisky</type>
 	<brand>Scott's Selection</brand>
 	<subtitle>Tomation</subtitle>
@@ -998,7 +1094,6 @@ Bottled 1990s - Ceramic Decanter
     <capacity>700</capacity>
     <strength>45.9</strength>
     
-
 </alcohol_info>
 
 
@@ -1050,6 +1145,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0010-1.jpg</img_url>
 	<num>w0010</num>
+	<name_c>百齡罈</name_c>
+
 	<type>Whisky</type>
 	<brand>Ballantine's</brand>
 	<subtitle>-</subtitle>
@@ -1070,6 +1167,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_alcohol/s/empty.jpg</img_url>
 	<num>w0011</num>
+	<name_c>蘇格蘭王子</name_c>
+
 	<type>Whisky</type>
 	<brand>Scottish Prince</brand>
 
@@ -1091,6 +1190,7 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0012-1.jpg</img_url>
 	<num>w0012</num>
+
 	<type>Whisky</type>
 	<brand>Celtic Legends</brand>
 	<subtitle>single malt scotch whisky</subtitle>
@@ -1111,6 +1211,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0013-1.jpg</img_url>
 	<num>w0013</num>
+	<name_c>皇家禮炮</name_c>
+
 	<type>Whisky</type>
 	<brand>Royal Salute</brand>
 	<subtitle>-</subtitle>
@@ -1132,6 +1234,7 @@ Bottled 1990s - Ceramic Decanter
 	<img_url>../img_Alcohol/s/w0014-1.jpg</img_url>
 	<num>w0014</num>
 	<name_c>百富</name_c>
+
 	<type>Whisky</type>
 	<brand>The Balvenie</brand>
 	<subtitle>Single Barrel</subtitle>
@@ -1152,6 +1255,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0015-1.jpg</img_url>
 	<num>w0015</num>
+	<name_c>大摩 90s</name_c>
+
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
 	<subtitle>single highland malt scotch whisky</subtitle>
@@ -1173,6 +1278,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0016-1.jpg</img_url>
 	<num>w0016</num>
+	<name_c>大摩</name_c>
+
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
 	<subtitle>cabernet sauvignon</subtitle>
@@ -1193,6 +1300,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0017-1.jpg</img_url>
 	<num>w0017</num>
+	<name_c>響</name_c>
+
 	<type>Whisky</type>
 	<brand>Hibiki</brand>
 	<subtitle>suntory</subtitle>
@@ -1212,6 +1321,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0018-1.jpg</img_url>
 	<num>w0018</num>
+	<name_c>麥卡倫</name_c>
+
 	<type>Whisky</type>
 	<brand>Macallan</brand>
 	<subtitle>-</subtitle>
@@ -1236,6 +1347,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0019-1.jpg</img_url>
 	<num>w0019</num>
+	<name_c>麥卡倫</name_c>
+
 	<type>Whisky</type>
 	<brand>Macallan</brand>
 	<subtitle>1861 Replica</subtitle>
@@ -1256,6 +1369,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0020-1.jpg</img_url>
 	<num>w0020</num>
+	<name_c>山崎</name_c>
+
 	<type>Whisky</type>
 	<brand>Yamazaki</brand>
 	<subtitle>-</subtitle>
@@ -1275,6 +1390,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0021-1.jpg</img_url>
 	<num>w0021</num>
+	<name_c>山崎</name_c>
+
 	<type>Whisky</type>
 	<brand>Yamazaki</brand>
 	<subtitle>Sherry Cask</subtitle>
@@ -1295,6 +1412,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0022-1.jpg</img_url>
 	<num>w0022</num>
+	<name_c>老麥頑童</name_c>
+
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
 	<subtitle>-</subtitle>
@@ -1320,6 +1439,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0023-1.jpg</img_url>
 	<num>w0023</num>
+	<name_c>老麥頑童</name_c>
+
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
 	<subtitle>commemoration bottling</subtitle>
@@ -1339,6 +1460,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0024-1.jpg</img_url>
 	<num>w0024</num>
+	<name_c>老麥頑童</name_c>
+
 	<type>Whisky</type>
 	<brand>The old malt cask</brand>
 	<subtitle>60th Commemoration Bottling</subtitle>
@@ -1358,6 +1481,7 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0025-1.jpg</img_url>
 	<num>w0025</num>
+	<name_c>皇家藍勳</name_c>
 
 	<type>Whisky</type>
 	<brand>Royal Lochnagar</brand>
@@ -1378,6 +1502,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0026-1.jpg</img_url>
 	<num>w0026</num>
+	<name_c>高原騎士</name_c>
+
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
@@ -1397,6 +1523,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0027-1.jpg</img_url>
 	<num>w0027</num>
+	<name_c>高原騎士</name_c>
+
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
 	<subtitle>Einar</subtitle>
@@ -1416,6 +1544,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0028-1.jpg</img_url>
 	<num>w0028</num>
+	<name_c>高原騎士</name_c>
+
 	<type>Whisky</type>
 	<brand>Highland Park</brand>
 
@@ -1433,12 +1563,11 @@ Bottled 1990s - Ceramic Decanter
 
 </alcohol_info>
 
-
-
-
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0029-1.jpg</img_url>
 	<num>w0029</num>
+	<name_c>格蘭菲迪</name_c>
+
 	<type>Whisky</type>
 	<brand>Glenfiddich</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
@@ -1458,6 +1587,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0030-1.jpg</img_url>
 	<num>w0030</num>
+	<name_c>格蘭菲迪</name_c>
+
 	<type>Whisky</type>
 	<brand>Glenfiddich</brand>
 	<subtitle>Pure Single Malt</subtitle>
@@ -1477,6 +1608,8 @@ Bottled 1990s - Ceramic Decanter
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0031-1.jpg</img_url>
 	<num>w0031</num>
+	<name_c>格蘭利威</name_c>
+
 	<type>Whisky</type>
 	<brand>Glenlivet</brand>
 	<subtitle>Archive</subtitle>
