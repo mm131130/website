@@ -1102,7 +1102,7 @@
 
 
 <!-- <alcohol_info>
-	<img_url>../img_alcohol/empty.jpg</img_url>
+	<img_url>../img_Alcohol/empty.jpg</img_url>
 	<num>w0000</num>
 	<type>-</type>
 	<brand>-</brand>
@@ -1169,7 +1169,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/empty.jpg</img_url>
+	<img_url>../img_Alcohol/s/empty.jpg</img_url>
 	<num>w0011</num>
 	<name_c>蘇格蘭王子</name_c>
 
@@ -1633,6 +1633,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0032-1.jpg</img_url>
 	<num>w0032</num>
+	<name_c>富特尼</name_c>
+
 	<type>Whisky</type>
 	<brand>Old Pulteney</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
@@ -1675,6 +1677,7 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0034-1.jpg</img_url>
 	<num>w0034</num>
+
 	<type>Whisky</type>
 	<brand>Celtic Nations</brand>
 	<subtitle>Blended Malt Whisky</subtitle>
@@ -1695,8 +1698,11 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0035-1.jpg</img_url>
 	<num>w0035</num>
+	<name_c>柏恩斯</name_c>
+
+
 	<type>Whisky</type>
-	<brand>CRobert Burns</brand>
+	<brand>Robert Burns</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1714,6 +1720,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0036-1.jpg</img_url>
 	<num>w0036</num>
+	<name_c>蘇格蘭之星</name_c>
+
 	<type>Whisky</type>
 	<brand>Royal Crystal</brand>
 	<subtitle>Highland Single Malt Scotch Whisky</subtitle>
@@ -1734,6 +1742,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0037-1.jpg</img_url>
 	<num>w0037</num>
+	<name_c>蘇格蘭之星</name_c>
+
 	<type>Whisky</type>
 	<brand>Royal Crystal</brand>
 	<subtitle>Highland Single Malt Scotch Whisky</subtitle>
@@ -1754,6 +1764,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0038-1.jpg</img_url>
 	<num>w0038</num>
+	<name_c>泰斯卡</name_c>
+
 	<type>Whisky</type>
 	<brand>Talisker</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
@@ -1775,6 +1787,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0039-1.jpg</img_url>
 	<num>w0039</num>
+	<name_c>泰斯卡</name_c>
+
 	<type>Whisky</type>
 	<brand>Talisker</brand>
 	<subtitle>Single Malt Scotch Whisky</subtitle>
@@ -1796,6 +1810,8 @@
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0040-1.jpg</img_url>
 	<num>w0040</num>
+	<name_c>布納哈本</name_c>
+
 	<type>Whisky</type>
 	<brand>Bunnahabhain</brand>
 	<subtitle>-</subtitle>
@@ -1810,13 +1826,12 @@
     <capacity>700</capacity>
     <strength>46.3</strength>
     
-
 </alcohol_info>
 
 <!-- R_List -->
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/r0001-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/r0001-1.jpg</img_url>
 	<num>r0001</num>
 	<type>Wine</type>
 
@@ -1837,7 +1852,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/r0002-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/r0002-1.jpg</img_url>
 	<num>r0002</num>
 	<type>Wine</type>
 	<brand>Dalva Porto</brand>
@@ -1857,7 +1872,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/r0004-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/r0004-1.jpg</img_url>
 	<num>r0004</num>
 	<type>Wine</type>
 	<brand>Château Pichon Longueville Comtesse de Lalande</brand>
@@ -1877,7 +1892,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/r0005-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/r0005-1.jpg</img_url>
 	<num>r0005</num>
 	<type>Wine</type>
 	<brand>Grands~Echezeaux Grand Cru</brand>
@@ -1897,7 +1912,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/s0001-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/s0001-1.jpg</img_url>
 	<num>s0001</num>
 	<type>Wine</type>
 	<brand>Noble One</brand>
@@ -1917,7 +1932,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/s0002-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/s0002-1.jpg</img_url>
 	<num>s0002</num>
 	<type>Wine</type>
 	<brand>Château Caillou</brand>
@@ -1938,7 +1953,7 @@
 
 
 <alcohol_info>
-	<img_url>../img_alcohol/s/s0004-1.jpg</img_url>
+	<img_url>../img_Alcohol/s/s0004-1.jpg</img_url>
 	<num>s0004</num>
 	<type>Wine</type>
 	<brand>Prucia</brand>
