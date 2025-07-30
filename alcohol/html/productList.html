@@ -443,9 +443,9 @@ footer img.logo_B{
  */
 
   height: calc( 100vh - 180px);
-  max-height: 720px;
+  max-height: 600px;
 
-  max-width: 360px;
+  max-width: 300px;
 
     border-radius: 18px;
 
@@ -492,13 +492,15 @@ footer img.logo_B{
 }
 
 .areU_18 .t_18{
+  position: relative;
+  left: 12%;
 
   font-size: 270px;
   line-height: 150px;
   font-family: northwell_alt;
 
   padding-top:120px ;
-    transform: rotate(-18deg);
+    transform: rotate(-21deg);
 
   /* padding-top: 120px; */
 
@@ -643,6 +645,198 @@ footer img.logo_B{
 
 }
 
+.menu{
+
+  overflow: hidden;
+  position: absolute;
+  z-index: 50;
+  top: 60px;
+  left: 0;
+
+  background-color: #fff;
+
+  width: 18%;
+
+    box-shadow: 0 6px 9px rgba(0,0,0,0.45);
+  border:1px rgba(0, 0, 0, 0.27) solid; 
+
+    border-radius: 0 9px 9px 9px;
+
+}
+
+
+
+.menu img{
+
+  height: 100%;
+  width: auto;
+
+}
+
+.menu a{
+  display: block;
+
+  font-size: 15px;
+
+
+  color: black;
+
+  /* height: 60px; */
+
+  padding: 8px 18px 7px 18px;
+  min-width: 100%;
+
+  /* border-bottom:1px rgba(0, 0, 0, 0.27) solid;  */
+
+}
+
+
+.menu a span{
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background-size: 100% ;
+}
+
+
+.menu a:nth-child(1) span{
+  background-image: url('../img_Alcohol/w_Wine-r.png');
+
+}
+
+.menu a:nth-child(2) span{
+  background-image: url('../img_Alcohol/w_Smell-r.png');
+}
+
+
+.menu a:nth-child(odd){
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .menu a img{
+    transform:rotate(9deg);
+}
+.menu a:nth-child(odd) img{
+    transform:rotate(-3deg);
+} */
+
+
+
+.menu a:hover{
+  color: #5d0b24;
+}
+.menu a:hover img{
+  opacity: 0;
+}
+
+
+.menu a:nth-child(3),
+.menu a:nth-child(4){
+  opacity: 0.36;
+}
+
+
+
+
+
+
+.btn_X{
+  display: block;
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+}
+
+.btn_X .line{
+  display: block;
+  
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+
+}
+
+.btn_X .line._a{
+    -webkit-transform: translate(-50%, calc(-50% - 6px));
+    -ms-transform: translate(-50%, calc(-50% - 6px));
+    transform: translate(-50%, calc(-50% - 6px));
+}
+.btn_X .line._b{
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.btn_X .line._c{
+    -webkit-transform: translate(-50%, calc(-50% + 6px));
+    -ms-transform: translate(-50%, calc(-50% + 6px));
+    transform: translate(-50%, calc(-50% + 6px));
+}
+
+
+
+
+
+/* 
+.btn_X.click .lineA{
+
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+}
+.btn_X.click .lineB{
+    width: 0;
+
+}
+.btn_X.click .lineC{
+
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+
+}
+ */
+
+.btn_X.click .line._a{
+
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+}
+.btn_X.click .line._b{
+    width: 0;
+
+}
+.btn_X.click .line._c{
+
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -654,12 +848,37 @@ footer img.logo_B{
 
 
 
+<!-- <div class="btn_X ">
+
+  <span class="line _a">&nbsp;</span>
+  <span class="line _b">&nbsp;</span>
+  <span class="line _c">&nbsp;</span>
+
+</div> -->
+
+
+<!-- <div class="dropDown">
+
+  <a class="btn_X white click" href="#">
+    <span class="line _a">&nbsp;</span>
+    <span class="line _b">&nbsp;</span>
+    <span class="line _c">&nbsp;</span>
+  </a>
+
+  <div class="menu">
+    <a href="#"><span><img src="../img_Alcohol/w_Wine.png"></span>嚐</a>
+    <a href="#">聞<span><img src="../img_Alcohol/w_Smell.png"></span></a>
+    <a href="#"><span><img src="../img_Alcohol/w_Tea.png"></span>甕</a>
+    <a href="#">藏<span><img src="../img_Alcohol/w_Word.png"></span></a>
+  </div>
+
+</div>
+ -->
+
 
 <div class="popup">
 
   <div>
-
-
 
 <div class="areU_18">
       <span>Are u</span>
@@ -821,7 +1040,6 @@ function renderBasicInfo($product) {
       <div class="num">
       <span>${$product.find('num').text()}</span>
       <span>${$product.find('name_c').text()}</span>
-
       </div>
 
       <div class="label">
