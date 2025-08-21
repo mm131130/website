@@ -1828,6 +1828,150 @@
     
 </alcohol_info>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0047-1.jpg</img_url>
+	<num>w0047</num>
+	<name_c>達摩</name_c>
+
+	<type>NotForSale</type>
+	<brand>Dalmore</brand>
+	<subtitle>King Alexander III</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0048-1.jpg</img_url>
+	<num>w0048</num>
+	<name_c>達摩</name_c>
+
+	<type>NotForSale</type>
+
+	<brand>Dalmore</brand>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0049-1.jpg</img_url>
+	<num>w0049</num>
+	<name_c>達摩</name_c>
+
+	<type>NotForSale</type>
+
+	<brand>Dalmore</brand>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0050-1.jpg</img_url>
+	<num>w0050</num>
+	<name_c>達摩</name_c>
+
+	<type>notforsale</type>
+
+	<brand>Dalmore</brand>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>15</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+
+</alcohol_info>
+
+
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0051-1.jpg</img_url>
+	<num>w0051</num>
+	<name_c>達摩</name_c>
+
+	<type>notforsale</type>
+	<brand>Dalmore</brand>
+	<subtitle>cabernet sauvignon</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>1973</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>33</age>
+	<capacity>700</capacity>
+	<strength>45.0</strength>
+
+
+</alcohol_info>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- R_List -->
 
 <alcohol_info>
