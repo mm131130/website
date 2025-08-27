@@ -669,7 +669,7 @@ footer img.logo_B{
   left: 50%;
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: #5d0b24;
 }
 
 .three_line .line._a{
@@ -902,7 +902,7 @@ footer img.logo_B{
   </header><!-- /header -->
 
 
-<div class="three_line click">
+<div class="three_line">
   <span class="line _a">&nbsp;</span>
   <span class="line _b">&nbsp;</span>
   <span class="line _c">&nbsp;</span>
@@ -1083,6 +1083,16 @@ ts.find('.dropDown a').on('click', function () {
   $(this).addClass('click').siblings('a').removeClass('click');
 });
 
+
+
+
+
+
+
+ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior if needed
+        $('.three_line').toggleClass('click');
+    });
 
 
 });
