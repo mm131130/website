@@ -451,7 +451,7 @@
 
 	<type>Brandy</type>
 	<brand>Gautier</brand>
-	<subtitle>Cognac XO gold &amp; blue</subtitle>
+	<subtitle>Cognac XO Gold &amp; Blue</subtitle>
 
 	<origin>France</origin>
 	<area>Cognac</area>
@@ -472,7 +472,7 @@
 	<num>b0020</num>
 	<type>Brandy</type>
 	<brand>Cognac</brand>
-	<subtitle>Très anciens fins bois</subtitle>
+	<subtitle>Très Anciens Fins Bois</subtitle>
 
 	<origin>France</origin>
 	<area>Cognac</area>
@@ -1263,7 +1263,7 @@
 
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
-	<subtitle>single highland malt scotch whisky</subtitle>
+	<subtitle>Single Highland Malt Scotch Whisky</subtitle>
 
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1286,7 +1286,7 @@
 
 	<type>Whisky</type>
 	<brand>Dalmore</brand>
-	<subtitle>cabernet sauvignon</subtitle>
+	<subtitle>Cabernet Sauvignon</subtitle>
 
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1301,26 +1301,7 @@
 
 </alcohol_info>
 
-<alcohol_info>
-	<img_url>../img_Alcohol/s/w0017-1.jpg</img_url>
-	<num>w0017</num>
-	<name_c>響</name_c>
 
-	<type>Whisky</type>
-	<brand>Hibiki</brand>
-	<subtitle>suntory</subtitle>
-	<origin>Japan</origin>
-	<area>-</area>
-	<subarea>-</subarea>
-
-	<distillation_year>-</distillation_year>
-	<bottling_year>-</bottling_year>
-	<age>17</age>
-	<capacity>700</capacity>
-	<strength>43.0</strength>
-
-
-</alcohol_info>
 
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0018-1.jpg</img_url>
@@ -1361,7 +1342,7 @@
 	<area>Scotland</area>
 	<subarea>-</subarea>
 
-	<distillation_year>1861</distillation_year>
+	<distillation_year>-</distillation_year>
 	<bottling_year>-</bottling_year>
 	<age>-</age>
 	<capacity>700</capacity>
@@ -1419,7 +1400,7 @@
 	<name_c>老麥頑童</name_c>
 
 	<type>Whisky</type>
-	<brand>The old malt cask</brand>
+	<brand>The Old Malt Cask</brand>
 	<subtitle>-</subtitle>
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1446,8 +1427,9 @@
 	<name_c>老麥頑童</name_c>
 
 	<type>Whisky</type>
-	<brand>The old malt cask</brand>
-	<subtitle>commemoration bottling</subtitle>
+	<brand>The Old Malt Cask</brand>
+
+	<subtitle>60th Commemoration Bottling</subtitle>
 	<origin>England</origin>
 	<area>Scotland</area>
 	<subarea>-</subarea>
@@ -1467,7 +1449,8 @@
 	<name_c>老麥頑童</name_c>
 
 	<type>Whisky</type>
-	<brand>The old malt cask</brand>
+	<brand>The Old Malt Cask</brand>
+
 	<subtitle>60th Commemoration Bottling</subtitle>
 	<origin>England</origin>
 	<area>Scotland</area>
@@ -1482,26 +1465,34 @@
 
 </alcohol_info>
 
+
+
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0025-1.jpg</img_url>
 	<num>w0025</num>
-	<name_c>皇家藍勳</name_c>
+	<name_c>老麥頑童</name_c>
 
 	<type>Whisky</type>
-	<brand>Royal Lochnagar</brand>
-	<subtitle>Rare Malts</subtitle>
+	<brand>The Old Malt Cask</brand>
+	<subtitle>-</subtitle>
 	<origin>England</origin>
 	<area>Scotland</area>
 	<subarea>-</subarea>
  	
-    <distillation_year>1974</distillation_year>
-    <bottling_year>2004</bottling_year>
-    <age>30</age>
+    <distillation_year>1965</distillation_year>
+    <bottling_year>200411</bottling_year>
+    <age>39</age>
     <capacity>700</capacity>
-    <strength>56.2</strength>
+    <strength>48.1</strength>
     
 
 </alcohol_info>
+
+
+
+
+
+
 
 <alcohol_info>
 	<img_url>../img_Alcohol/s/w0026-1.jpg</img_url>
@@ -1953,7 +1944,7 @@
 	<subarea>Highland</subarea>
 
 	<distillation_year>1973</distillation_year>
-	<bottling_year>-</bottling_year>
+	<bottling_year>2006</bottling_year>
 	<age>33</age>
 	<capacity>700</capacity>
 	<strength>45.0</strength>
@@ -1963,7 +1954,92 @@
 
 
 
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0052-1.jpg</img_url>
+	<num>w0052</num>
+	<name_c>響</name_c>
 
+	<type>Whisky</type>
+	<brand>Hibiki</brand>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>17</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0053-1.jpg</img_url>
+	<num>w0053</num>
+	<name_c>響</name_c>
+
+	<type>Whisky</type>
+	<brand>Hibiki 90s</brand>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>17</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0054-1.jpg</img_url>
+	<num>w0054</num>
+	<name_c>響</name_c>
+
+	<type>Whisky</type>
+	<brand>Hibiki 90s</brand>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+
+</alcohol_info>
+
+
+
+<alcohol_info>
+	<img_url>../img_Alcohol/s/w0055-1.jpg</img_url>
+	<num>w0055</num>
+	<name_c>皇家藍勳</name_c>
+
+	<type>Whisky</type>
+	<brand>Royal Lochnagar</brand>
+	<subtitle>Rare Malts</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1974</distillation_year>
+    <bottling_year>2004</bottling_year>
+    <age>30</age>
+    <capacity>700</capacity>
+    <strength>56.2</strength>
+    
+
+</alcohol_info>
 
 
 
