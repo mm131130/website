@@ -1,0 +1,2771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products_list>
+
+<!-- B_List -->
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+	<img_url>../img_Alcohol/s/b0001-1.jpg</img_url>
+	<num>b0001</num>
+	<type>brandy</type>
+
+	<name_c>庫茲</name_c>
+	<brand>Crus</brand>
+
+	<main_title>Crus Du Cognac EXTRA</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Crande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0002-1.jpg</img_url>
+	<num>b0002</num>
+	<type>brandy</type>
+
+	<name_c>統領</name_c>
+	<brand>Leadership</brand>
+
+	<main_title>Leadership XO</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Fine Champagne</subarea>
+
+    <distillation_year>1930</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>900</capacity>
+	<strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0003-1.jpg</img_url>
+	<num>b0003</num>
+	<type>brandy</type>
+
+	<name_c>法樂檳</name_c>
+	<brand>Frapin</brand>
+
+	<main_title>Frapin</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>1989</distillation_year>
+    <bottling_year>2019</bottling_year>
+    <age>20</age>
+    <capacity>350</capacity>
+    <strength>41.3</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0004-1.jpg</img_url>
+	<num>b0004</num>
+	<type>brandy</type>
+
+	<name_c>德拉曼 - 晚禱</name_c>
+	<brand>Delamain</brand>
+
+	<main_title>Delamain</main_title>
+	<subtitle>Cognac Grande Champagne</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0005-1.jpg</img_url>
+	<num>b0005</num>
+	<type>brandy</type>
+
+	<name_c>-</name_c>
+	<brand>Lörch</brand>
+
+	<main_title>Haselnuss</main_title>
+	<subtitle>GEIST</subtitle>
+
+	<origin>Germany</origin>
+	<area>Baden-Württemberg</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>500</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0006-1.jpg</img_url>
+	<num>b0006</num>
+	<type>brandy</type>
+
+	<name_c>德拉曼</name_c>
+	<brand>Delamain</brand>
+
+	<main_title>Delamain</main_title>
+	<subtitle>Grande Champagne De Cognac</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>60</age>
+	<capacity>700</capacity>
+    <strength>43</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0007-1.jpg</img_url>
+	<num>b0007</num>
+	<type>brandy</type>
+
+	<name_c>狄龍</name_c>
+	<brand>Delord</brand>
+
+	<main_title>Delord</main_title>
+	<subtitle>Vieil Armagnac</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1940</distillation_year>
+    <bottling_year>20011205</bottling_year>
+    <age>61</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0008-1.jpg</img_url>
+	<num>b0008</num>
+	<type>brandy</type>
+
+	<name_c>狄龍</name_c>
+	<brand>Delord</brand>
+
+	<main_title>Delord</main_title>
+	<subtitle>Vieil Armagnac</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1962</distillation_year>
+    <bottling_year>20040923</bottling_year>
+    <age>42</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0009-1.jpg</img_url>
+	<num>b0009</num>
+	<type>brandy</type>
+
+	<name_c>狄龍</name_c>
+	<brand>Delord</brand>
+
+	<main_title>Delord</main_title>
+	<subtitle>Vieil Armagnac</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1964</distillation_year>
+    <bottling_year>20040923</bottling_year>
+    <age>40</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0010-1.jpg</img_url>
+	<num>b0010</num>
+	<type>brandy</type>
+
+	<name_c>普諾尼</name_c>
+	<brand>Prunier 1976</brand>
+
+	<main_title>Prunier</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>1976</distillation_year>
+    <bottling_year>2006</bottling_year>
+    <age>30</age>
+    <capacity>700</capacity>
+    <strength>62.7</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0011-1.jpg</img_url>
+	<num>b0011</num>
+	<type>brandy</type>
+
+	<name_c>寶拉蕊</name_c>
+	<brand>Volaré</brand>
+
+	<main_title>Volaré XO</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0012-1.jpg</img_url>
+	<num>b0012</num>
+	<type>brandy</type>
+
+	<name_c>寶拉蕊</name_c>
+	<brand>Volaré</brand>
+
+	<main_title>Volaré XO</main_title>
+	<subtitle>-</subtitle>
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0013-1.jpg</img_url>
+	<num>b0013</num>
+	<type>brandy</type>
+	
+	<name_c>-</name_c>
+	<brand>Pearle</brand>
+
+	<main_title>Pearle de Brillet</main_title>
+	<subtitle>Liqueur</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>24</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0014-1.jpg</img_url>
+	<num>b0014</num>
+	<type>brandy</type>
+
+	<name_c>利豪 - 查理七世</name_c>
+	<brand>Lhéraud Charles VII</brand>
+
+	<main_title>Charles VII Cognac</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1965</distillation_year>
+    <bottling_year>2008</bottling_year>
+    <age>43</age>
+    <capacity>700</capacity>
+    <strength>44</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0015-1.jpg</img_url>
+	<num>b0015</num>
+	<type>brandy</type>
+
+	<name_c>加絲達賀</name_c>
+	<brand>Castarède</brand>
+
+	<main_title>Castarède</main_title>
+	<subtitle>Bas Armagnac</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>Bas</subarea>
+
+    <distillation_year>1964</distillation_year>
+    <bottling_year>20130628</bottling_year>
+    <age>49</age>
+    <capacity>500</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0016-1.jpg</img_url>
+	<num>b0016</num>
+	<type>brandy</type>
+
+	<name_c>卡慕</name_c>
+	<brand>Camus</brand>
+
+	<main_title>Île de Ré</main_title>
+	<subtitle>Camus Cognac</subtitle>
+
+	<origin>France</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0017-1.jpg</img_url>
+	<!-- <num>b0017-1951 to 1995</num> -->
+	<num>b0017</num>
+
+	<type>brandy</type>
+
+	<name_c>伊尼</name_c>
+	<brand>S.Havion-Ehny</brand>
+
+	<main_title>S.Havion-Ehny</main_title>
+	<subtitle>Négociant-Éleveur</subtitle>
+<!-- 
+	<main_title>S.Havion-Ehny</main_title>
+	<subtitle>Négociant-Éleveur</subtitle> -->
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>Ténarèze</subarea>
+
+    <distillation_year>1979</distillation_year>
+    <bottling_year>20130103</bottling_year>
+    <age>34</age>
+    <capacity>700</capacity>
+    <strength>43</strength>
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0018-1.jpg</img_url>
+	<num>b0018</num>
+	<type>brandy</type>
+
+	<name_c>格羅斯佩蘭</name_c>
+	<brand>Grosperrin</brand>
+
+	<main_title>N°14</main_title>
+	<subtitle>Cognac Grosperrin</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Petite Champagne</subarea>
+
+    <distillation_year>1914</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>1000</capacity>
+    <strength>40.8</strength>
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0019-1.jpg</img_url>
+	<num>b0019</num>
+	<type>brandy</type>
+
+	<name_c>古殿</name_c>
+	<brand>Gautier</brand>
+
+	<main_title>Gautier</main_title>
+	<subtitle>Cognac XO gold &amp; blue</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>XO</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0020-1.jpg</img_url>
+	<num>b0020</num>
+	<type>brandy</type>
+
+	<name_c>-</name_c>
+	<brand>Vallein Tercinier</brand>
+
+	<main_title>Cognac</main_title>
+	<subtitle>Très anciens fins bois</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40</strength>
+ 
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0021-1.jpg</img_url>
+	<num>b0021</num>
+	<type>brandy</type>
+
+	<name_c>百事吉</name_c>
+	<brand>Bisquit</brand>
+
+	<main_title>Bisquit</main_title>
+	<subtitle>Napoleno</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Fine Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>-</capacity>
+    <strength>-</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0022-1.jpg</img_url>
+	<num>b0022</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Elusa</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1959</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0023-1.jpg</img_url>
+	<num>b0023</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Elusa</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>Bas</subarea>
+
+    <distillation_year>1969</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0024-1.jpg</img_url>
+	<num>b0024</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Seviac</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>Bas</subarea>
+
+    <distillation_year>1980</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>-</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0025-1.jpg</img_url>
+	<num>b0025</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Fine Champagne</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Fine Champagne</subarea>
+
+    <distillation_year>1949</distillation_year>
+    <bottling_year>20100124</bottling_year>
+    <age>61</age>
+    <capacity>700</capacity>
+    <strength>42.3</strength>
+  
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0026-1.jpg</img_url>
+	<num>b0026</num>
+	<type>brandy</type>
+
+	<name_c>力潘度</name_c>
+	<brand>Lepanto</brand>
+
+	<main_title>Lepanto</main_title>
+	<subtitle>Brandy de Jerez</subtitle>
+
+	<origin>Spain</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>36.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0027-1.jpg</img_url>
+	<num>b0027</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Vieil-Armagnac</main_title>
+	<subtitle>Baron G. Legrand&lt;br/&gt;Guy Lhéraud</subtitle>
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>Bas</subarea>
+
+    <distillation_year>1931</distillation_year>
+    <bottling_year>20060417</bottling_year>
+    <age>75</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0028-1.jpg</img_url>
+	<num>b0028</num>
+	<type>brandy</type>
+
+	<name_c>康福壽</name_c>
+	<brand>Courvoisier</brand>
+
+	<main_title>Courvoisier</main_title>
+	<subtitle>Napoleno</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Fine Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0029-1.jpg</img_url>
+	<num>b0029</num>
+	<type>brandy</type>
+
+	<name_c>郁金香</name_c>
+	<brand>Maison Guerbe</brand>
+
+	<main_title>Maison Guerbe XO</main_title>
+	<subtitle>Grande Champagne</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0030-1.jpg</img_url>
+	<num>b0030</num>
+	<type>brandy</type>
+
+	<name_c>-</name_c>
+	<brand>La Fontaine de La Pouyade</brand>
+
+	<main_title>La Fontaine De La Pouyade</main_title>
+	<subtitle>Grande Fine Champagne Cognac</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>80</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0031-1.jpg</img_url>
+	<num>b0031</num>
+	<type>brandy</type>
+
+	<name_c>普諾尼</name_c>
+	<brand>Prunier</brand>
+
+	<main_title>Prunier</main_title>
+	<subtitle>Grande Champagne</subtitle>
+
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0032-1.jpg</img_url>
+	<num>b0032</num>
+	<type>brandy</type>
+
+	<name_c>利豪</name_c>
+	<brand>Lhéraud</brand>
+
+	<main_title>Vieux Millenaire</main_title>
+	<subtitle>Lhéraud</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>20</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0033-1.jpg</img_url>
+	<num>b0033</num>
+	<type>brandy</type>
+
+	<name_c>人頭馬</name_c>
+	<brand>RÉMY MARTIN 1738</brand>
+
+	<main_title>RÉMY MARTIN 1738</main_title>
+	<subtitle>Fine Champagne Cognac</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Fine Champagne</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0034-1.jpg</img_url>
+	<num>b0034</num>
+	<type>brandy</type>
+
+	<name_c>御鹿</name_c>
+	<brand>Hine</brand>
+
+	<main_title>Hine</main_title>
+	<subtitle>Grande Champagne</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>1938</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0035-1.jpg</img_url>
+	<num>b0035</num>
+	<type>brandy</type>
+
+	<name_c>御鹿</name_c>
+	<brand>Hine</brand>
+
+	<main_title>Hine XO</main_title>
+	<subtitle>-</subtitle>
+
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0036-1.jpg</img_url>
+	<num>b0036</num>
+	<type>brandy</type>
+
+	<name_c>-</name_c>
+	<brand>Ladan</brand>
+
+	<main_title>Ladan XO</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0037-1.jpg</img_url>
+	<num>b0037</num>
+	<type>brandy</type>
+
+	<name_c>軒尼詩</name_c>
+	<brand>Hennessy</brand>
+
+	<main_title>Hennessy XO</main_title>
+	<subtitle>1990s</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0038-1.jpg</img_url>
+	<num>b0038</num>
+	<type>brandy</type>
+
+	<name_c>軒尼詩</name_c>
+	<brand>Hennessy</brand>
+
+	<main_title>Hennessy XO</main_title>
+	<subtitle>1980s</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0039-1.jpg</img_url>
+	<num>b0039</num>
+	<type>brandy</type>
+
+	<name_c>夏堡</name_c>
+	<brand>Chabot 1971</brand>
+
+	<main_title>Chabot</main_title>
+	<subtitle>Armagnac</subtitle>
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1971</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0040-1.jpg</img_url>
+	<num>b0040</num>
+	<type>brandy</type>
+
+	<name_c>夏堡</name_c>
+	<brand>Chabot 1966</brand>
+
+	<main_title>Chabot</main_title>
+	<subtitle>Armagnac</subtitle>
+
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1966</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0041-1.jpg</img_url>
+	<num>b0041</num>
+	<type>brandy</type>
+
+	<name_c>夏堡</name_c>
+	<brand>Chabot 1961</brand>
+
+	<main_title>Chabot</main_title>
+	<subtitle>Armagnac</subtitle>
+
+
+	<origin>France</origin>
+	<area>Armagnac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1961</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0042-1.jpg</img_url>
+	<num>b0042</num>
+	<type>notForSale</type>
+
+	<name_c>皮爾帕門</name_c>
+	<brand>Pierre Balmain</brand>
+
+	<main_title>Cognac Distinction</main_title>
+	<subtitle>Pierre Balmain</subtitle>
+
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>500</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0043-1.jpg</img_url>
+	<num>b0043</num>
+	<type>notForSale</type>
+
+	<name_c>-</name_c>
+	<brand>Raymond Ragnaud</brand>
+
+	<main_title>Raymond Ragnaud</main_title>
+	<subtitle>Cognac Très Vieille Grande Champagne</subtitle>
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>1952</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>500</capacity>
+    <strength>50.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0044-1.jpg</img_url>
+	<num>b0044</num>
+	<type>notForSale</type>
+
+	<name_c>-</name_c>
+	<brand>Raymond Ragnaud</brand>
+
+	<main_title>Raymond Ragnaud</main_title>
+	<subtitle>Cognac Hérutage</subtitle>
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
+
+    <distillation_year>1906</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>500</capacity>
+    <strength>45.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/b0045-1.jpg</img_url>
+	<num>b0045</num>
+	<type>brandy</type>
+
+	<name_c>哈帝鑽石</name_c>
+	<brand>A. Hardy</brand>
+
+	<main_title>A. Hardy</main_title>
+	<subtitle>Noces de Diamant</subtitle>
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<!-- W_List -->
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0001-1.jpg</img_url>
+	<num>w0001</num>
+	<type>whisky</type>
+
+	<name_c>聖佛力</name_c>
+	<brand>Signatory</brand>
+
+	<main_title>Signatory Vintage</main_title>
+	<subtitle></subtitle>
+
+	<origin>Englind</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+    <distillation_year>19651011</distillation_year>
+    <bottling_year>20060616</bottling_year>
+    <age>40</age>
+    <capacity>700</capacity>
+    <strength>56.8</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0002-1.jpg</img_url>
+	<num>w0002</num>
+	<type>whisky</type>
+
+	<name_c>歐肯</name_c>
+	<brand>Auchentoshan</brand>
+
+	<main_title>Auchentoshan</main_title>
+	<subtitle></subtitle>
+
+	<origin>Englind</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1999</distillation_year>
+    <bottling_year>2008</bottling_year>
+    <age>9</age>
+    <capacity>700</capacity>
+    <strength>58.2</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0003-1.jpg</img_url>
+	<num>w0003</num>
+	<type>whisky</type>
+
+	<name_c>老酋長</name_c>
+	<brand>Chieftain's Choice</brand>
+
+	<main_title>Chieftain's Choice</main_title>
+	<subtitle>Blended Scotch Whisky</subtitle>
+
+	<origin>Englind</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>32</age>
+    <capacity>750</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0004-1.jpg</img_url>
+	<num>w0004</num>
+	<type>whisky</type>
+
+	<name_c>唐堡</name_c>
+	<brand>Dun Bheagan</brand>
+
+	<main_title>Dun Bheagan</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+
+	<origin>Englind</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1974</distillation_year>
+    <bottling_year>2003</bottling_year>
+    <age>28</age>
+    <capacity>700</capacity>
+    <strength>54.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0005-1.jpg</img_url>
+	<num>w0005</num>
+	<type>whisky</type>
+
+	<name_c>格蘭傑</name_c>
+	<brand>Glenmorangie</brand>
+
+	<main_title>Glenmorangie</main_title>
+	<subtitle>Maltman's Special Reserve</subtitle>
+
+	<origin>Englind</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>18</age>
+    <capacity>750</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0006-1.jpg</img_url>
+	<num>w0006</num>
+	<type>whisky</type>
+
+	<name_c>伊凡威廉</name_c>
+	<brand>Evan Williams</brand>
+
+	<main_title>Evan Williams</main_title>
+	<subtitle>Kentucky Straight Bourbon Whiskey</subtitle>
+
+	<origin>American</origin>
+	<area>Kentucky</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>19990622</distillation_year>
+    <bottling_year>20090401</bottling_year>
+    <age>9</age>
+    <capacity>700</capacity>
+    <strength>43.3</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0007-1.jpg</img_url>
+	<num>w0007</num>
+	<type>whisky</type>
+
+	<name_c>史考特</name_c>
+	<brand>Scott's</brand>
+
+	<main_title>Scott's</main_title>
+	<subtitle>Longmorn-Glenlivet</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1972</distillation_year>
+    <bottling_year>2004</bottling_year>
+    <age>32</age>
+    <capacity>700</capacity>
+    <strength>49.2</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0008-1.jpg</img_url>
+	<num>w0008</num>
+	<type>whisky</type>
+
+	<name_c>史考特</name_c>
+	<brand>Scott's</brand>
+
+	<main_title>Scott's</main_title>
+	<subtitle>Tomation</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1967</distillation_year>
+    <bottling_year>2004</bottling_year>
+    <age>37</age>
+    <capacity>700</capacity>
+    <strength>45.9</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0009-1.jpg</img_url>
+	<num>w0009</num>
+	<type>whisky</type>
+
+	<name_c>可登麥凱蘭</name_c>
+	<brand>Gordon &amp; Macphail</brand>
+
+	<main_title>Longmorn</main_title>
+	<subtitle>Cask Strength</subtitle>
+	<origin>England</origin>
+	<area>Soctland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>19681114</distillation_year>
+    <bottling_year>20100512</bottling_year>
+    <age>42</age>
+    <capacity>700</capacity>
+    <strength>61.9</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0010-1.jpg</img_url>
+	<num>w0010</num>
+	<type>whisky</type>
+
+	<name_c>百齡罈</name_c>
+	<brand>Ballantine's</brand>
+
+	<main_title>Ballantine's</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>17</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>0</img_how_many>
+
+	<img_url>../img_Alcohol/s/empty.jpg</img_url>
+	<num>w0011</num>
+	<type>whisky</type>
+
+	<name_c>蘇格蘭王子</name_c>
+	<brand>Scottish Prince</brand>
+
+	<main_title>Scottish Prince</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>30</age>
+    <capacity>750</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0012-1.jpg</img_url>
+	<num>w0012</num>
+	<type>whisky</type>
+
+	<name_c>-</name_c>
+	<brand>Celtic Legends</brand>
+
+	<main_title>Celtic Legends</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1977</distillation_year>
+    <bottling_year>2002</bottling_year>
+    <age>25</age>
+    <capacity>700</capacity>
+    <strength>55.2</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0013-1.jpg</img_url>
+	<num>w0013</num>
+	<type>whisky</type>
+
+	<name_c>皇家禮炮</name_c>
+	<brand>Royal Salute</brand>
+
+	<main_title>Royal Salute</main_title>
+	<subtitle>Blended</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>21</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0014-1.jpg</img_url>
+	<num>w0014</num>
+	<type>whisky</type>
+
+	<name_c>百富</name_c>
+	<brand>Balvenie</brand>
+
+	<main_title>Balvenie</main_title>
+	<subtitle>Single Barrel</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>19741211</distillation_year>
+    <bottling_year>20010103</bottling_year>
+    <age>25</age>
+    <capacity>700</capacity>
+    <strength>46.9</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>5</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0015-1.jpg</img_url>
+	<num>w0015</num>
+	<type>whisky</type>
+
+	<name_c>達摩 90s</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>Single Highland Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>750</capacity>
+	<strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0016-2.jpg</img_url>
+	<num>w0016</num>
+	<type>whisky</type>
+
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>cabernet sauvignon</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>1973</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>33</age>
+	<capacity>700</capacity>
+	<strength>45.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0018-1.jpg</img_url>
+	<num>w0018</num>
+	<type>whisky</type>
+
+	<name_c>麥卡倫</name_c>
+	<brand>Macallan</brand>
+
+	<main_title>Macallan</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>750</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0019-1.jpg</img_url>
+	<num>w0019</num>
+	<type>whisky</type>
+
+	<name_c>麥卡倫</name_c>
+	<brand>Macallan</brand>
+
+	<main_title>Macallan</main_title>
+	<subtitle>1861 Replica</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>42.7</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0020-1.jpg</img_url>
+	<num>w0020</num>
+	<type>whisky</type>
+
+	<name_c>山崎</name_c>
+	<brand>Yamazaki 12yo</brand>
+
+	<main_title>Yamazaki</main_title>
+	<subtitle>-</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0021-1.jpg</img_url>
+	<num>w0021</num>
+	<name_c>山崎</name_c>
+
+	<type>whisky</type>
+	<brand>Yamazaki</brand>
+	<main_title>Yamazaki</main_title>
+	<subtitle>2009 Sherry Cask</subtitle>
+
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>48.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0022-1.jpg</img_url>
+	<num>w0022</num>
+	<type>whisky</type>
+
+	<name_c>老麥頑童</name_c>
+	<brand>Old Malt Cask</brand>
+
+	<main_title>The Old Malt Cask</main_title>
+	<subtitle>-</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1974</distillation_year>
+    <bottling_year>2009</bottling_year>
+    <age>35</age>
+    <capacity>700</capacity>
+    <strength>47.4</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0023-1.jpg</img_url>
+	<num>w0023</num>
+	<type>whisky</type>
+
+	<name_c>老麥頑童</name_c>
+	<brand>Old Malt Cask</brand>
+
+	<main_title>The Old Malt Cask</main_title>
+	<subtitle>60th Commemoration Bottling</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>30</age>
+    <capacity>700</capacity>
+    <strength>52.5</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0024-1.jpg</img_url>
+	<num>w0024</num>
+	<type>whisky</type>
+
+	<name_c>老麥頑童</name_c>
+	<brand>Old Malt Cask</brand>
+
+	<main_title>The Old Malt Cask</main_title>
+	<subtitle>60th Commemoration Bottling</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>32</age>
+    <capacity>700</capacity>
+    <strength>55.4</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0025-1.jpg</img_url>
+	<num>w0025</num>
+	<type>whisky</type>
+
+	<name_c>老麥頑童</name_c>
+	<brand>Old Malt Cask</brand>
+
+	<main_title>The Old Malt Cask</main_title>
+	<subtitle>-</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1965</distillation_year>
+    <bottling_year>200411</bottling_year>
+    <age>39</age>
+    <capacity>700</capacity>
+    <strength>48.1</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0026-1.jpg</img_url>
+	<num>w0026</num>
+	<type>whisky</type>
+
+	<name_c>高原騎士</name_c>
+	<brand>Highland Park</brand>
+
+	<main_title>Highland Park</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1998</distillation_year>
+    <bottling_year>2011</bottling_year>
+    <age>13</age>
+    <capacity>1000</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0027-1.jpg</img_url>
+	<num>w0027</num>
+	<type>whisky</type>
+
+	<name_c>高原騎士</name_c>
+	<brand>Highland Park</brand>
+
+	<main_title>Highland Park</main_title>
+	<subtitle>Einar</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>1000</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0028-1.jpg</img_url>
+	<num>w0028</num>
+	<type>whisky</type>
+
+	<name_c>高原騎士</name_c>
+	<brand>Highland Park 25yo</brand>
+
+	<main_title>Highland Park</main_title>
+	<subtitle>-</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>25</age>
+    <capacity>750</capacity>
+    <strength>51.5</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0029-1.jpg</img_url>
+	<num>w0029</num>
+	<type>whisky</type>
+
+	<name_c>格蘭菲迪</name_c>
+	<brand>Glenfiddich</brand>
+
+	<main_title>Glenfiddich</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>18</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0030-1.jpg</img_url>
+	<num>w0030</num>
+	<type>whisky</type>
+
+	<name_c>格蘭菲迪</name_c>
+	<brand>Glenfiddich</brand>
+
+	<main_title>Glenfiddich</main_title>
+	<subtitle>Pure Single Malt</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>21</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0031-1.jpg</img_url>
+	<num>w0031</num>
+
+	<type>whisky</type>
+
+	<name_c>格蘭利威</name_c>
+	<brand>Glenlivet</brand>
+
+	<main_title>Glenlivet</main_title>
+	<subtitle>Archive</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>21</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0032-1.jpg</img_url>
+	<num>w0032</num>
+	<type>whisky</type>
+
+	<name_c>富特尼</name_c>
+	<brand>Old Pulteney</brand>
+
+	<main_title>Old Pulteney</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>12</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0033-1.jpg</img_url>
+	<num>w0033</num>
+	<type>whisky</type>
+
+	<name_c>-</name_c>
+	<brand>Glen Ord</brand>
+	<main_title>Glen Ord</main_title>
+	<subtitle>Scotch Single Malt Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>25</age>
+    <capacity>700</capacity>
+    <strength>58.3</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0034-1.jpg</img_url>
+	<num>w0034</num>
+	<type>whisky</type>
+
+	<name_c>-</name_c>
+	<brand>Celtic Nations</brand>
+
+	<main_title>Celtic Nations</main_title>
+	<subtitle>Celtic Blended Malt Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>46.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0035-1.jpg</img_url>
+	<num>w0035</num>
+	<type>whisky</type>
+
+	<name_c>柏恩斯</name_c>
+	<brand>Robert Burns</brand>
+
+	<main_title>Robert Burns</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0036-1.jpg</img_url>
+	<num>w0036</num>
+	<type>whisky</type>
+
+	<name_c>蘇格蘭之星</name_c>
+	<brand>Royal Crystal 18yo</brand>
+
+	<main_title>Royal Crystal</main_title>
+	<subtitle>Highland Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>18</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0037-1.jpg</img_url>
+	<num>w0037</num>
+	<type>whisky</type>
+
+	<name_c>蘇格蘭之星</name_c>
+	<brand>Royal Crystal 15yo</brand>
+
+	<main_title>Royal Crystal</main_title>
+	<subtitle>Highland Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>15</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0038-1.jpg</img_url>
+	<num>w0038</num>
+	<type>whisky</type>
+
+	<name_c>泰斯卡</name_c>
+	<brand>Talisker</brand>
+
+	<main_title>Talisker</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Isle of Skye</subarea>
+ 	
+    <distillation_year>2002</distillation_year>
+    <bottling_year>2013</bottling_year>
+    <age>11</age>
+    <capacity>700</capacity>
+    <strength>45.8</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0039-1.jpg</img_url>
+	<num>w0039</num>
+	<type>whisky</type>
+
+	<name_c>泰斯卡</name_c>
+	<brand>Talisker 10yo</brand>
+
+	<main_title>Talisker</main_title>
+	<subtitle>Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Isle of Skye</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>10</age>
+    <capacity>1000</capacity>
+    <strength>45.8</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0040-1.jpg</img_url>
+	<num>w0040</num>
+	<type>whisky</type>
+
+	<name_c>布納哈本</name_c>
+	<brand>Bunnahabhain</brand>
+
+	<main_title>Bunnahabhain</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>18</age>
+    <capacity>700</capacity>
+    <strength>46.3</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0041-1.jpg</img_url>
+	<num>w0041</num>
+
+	<type>whisky</type>
+
+	<name_c>鄧肯泰勒</name_c>
+	<brand>Octave</brand>
+
+	<main_title>Octave</main_title>
+	<subtitle>Cask from Duncan Taylor</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1999</distillation_year>
+    <bottling_year>2011</bottling_year>
+    <age>12</age>
+    <capacity>700</capacity>
+    <strength>55.1</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0042-1.jpg</img_url>
+	<num>w0042</num>
+	<type>whisky</type>
+
+	<name_c>奧特摩</name_c>
+	<brand>Octomore</brand>
+
+	<main_title>Octomore</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>61.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0043-1.jpg</img_url>
+	<num>w0043</num>
+	<type>whisky</type>
+
+	<name_c>格蘭路思</name_c>
+	<brand>Glenrothes</brand>
+
+	<main_title>Glenrothes</main_title>
+	<subtitle>Select Reserve</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+ <alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0044-1.jpg</img_url>
+	<num>w0044</num>
+	<type>whisky</type>
+
+	<name_c>裸雀</name_c>
+	<brand>Naked Grouse</brand>
+
+	<main_title>The Naked Grouse</main_title>
+	<subtitle>Blended Scoch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0045-1.jpg</img_url>
+	<num>w0045</num>
+	<type>whisky</type>
+
+	<name_c>麥卡倫</name_c>
+	<brand>Macallan</brand>
+
+	<main_title>Macallan</main_title>
+	<subtitle>Cask Strength</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>10</age>
+	<capacity>1000</capacity>
+	<strength>58.1</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0046-1.jpg</img_url>
+	<num>w0046</num>
+	<type>whisky</type>
+
+	<name_c>麥卡倫</name_c>
+	<brand>Macallan</brand>
+
+	<main_title>Macallan</main_title>
+	<subtitle>Gran Resena</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>700</capacity>
+	<strength>45.6</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0047-1.jpg</img_url>
+	<num>w0047</num>
+	<type>notForSale</type>
+
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>King Alexander III</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0048-1.jpg</img_url>
+	<num>w0048</num>
+	<type>notForSale</type>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0049-1.jpg</img_url>
+	<num>w0049</num>
+	<type>notForSale</type>
+
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>12</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0050-1.jpg</img_url>
+	<num>w0050</num>
+	<type>notforsale</type>
+
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>15</age>
+	<capacity>700</capacity>
+	<strength>40.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0051-1.jpg</img_url>
+	<num>w0051</num>
+	<type>notforsale</type>
+
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
+	<main_title>Dalmore</main_title>
+	<subtitle>cabernet sauvignon</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>Highland</subarea>
+
+	<distillation_year>1973</distillation_year>
+	<bottling_year>2006</bottling_year>
+	<age>33</age>
+	<capacity>700</capacity>
+	<strength>45.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0052-1.jpg</img_url>
+	<num>w0052</num>
+	<type>whisky</type>
+
+	<name_c>響 v11</name_c>
+	<brand>Hibiki v11</brand>
+
+	<main_title>Hibiki</main_title>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>17</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0053-1.jpg</img_url>
+	<num>w0053</num>
+	<type>whisky</type>
+
+	<name_c>響 v8</name_c>
+	<brand>Hibiki v8</brand>
+
+	<main_title>Hibiki 90s</main_title>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>17</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+</alcohol_info>
+
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0054-1.jpg</img_url>
+	<num>w0054</num>
+	<type>whisky</type>
+
+	<name_c>響 v5</name_c>
+	<brand>Hibiki v5</brand>
+
+	<main_title>Hibiki 90s</main_title>
+	<subtitle>suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>700</capacity>
+	<strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0055-1.jpg</img_url>
+	<num>w0055</num>
+	<type>whisky</type>
+
+	<name_c>皇家藍勳</name_c>
+	<brand>Royal Lochnagar</brand>
+
+	<main_title>Royal Lochnagar</main_title>
+	<subtitle>Rare Malts</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1974</distillation_year>
+    <bottling_year>2004</bottling_year>
+    <age>30</age>
+    <capacity>700</capacity>
+    <strength>56.2</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0056-1.jpg</img_url>
+	<num>w0056</num>
+	<type>whisky</type>
+
+	<name_c>鶴</name_c>
+	<brand>Nikka</brand>
+
+	<main_title>Nikka</main_title>
+	<subtitle>Suntory</subtitle>
+	<origin>Japan</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>43.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0057-1.jpg</img_url>
+	<num>w0057</num>
+	<type>whisky</type>
+
+	<name_c>雅柏</name_c>
+	<brand>Ardbeg</brand>
+
+	<main_title>Ardbeg</main_title>
+	<subtitle>Uigeadail</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>54.2</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0058-1.jpg</img_url>
+	<num>w0058</num>
+	<type>whisky</type>
+
+	<name_c>蘇格蘭王</name_c>
+	<brand>King of Scots</brand>
+
+	<main_title>King of Scots</main_title>
+	<subtitle>Rare Extra Old Scotch Whisky</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>1974</distillation_year>
+    <bottling_year>2004</bottling_year>
+    <age>30</age>
+    <capacity>750</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0059-1.jpg</img_url>
+	<num>w0059</num>
+	<type>whisky</type>
+
+	<name_c>約翰走路 藍</name_c>
+	<brand>Johnnie Walker Blue</brand>
+
+	<main_title>Blue Lable</main_title>
+	<subtitle>Johnnie Walker</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>43.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>4</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0060-1.jpg</img_url>
+	<num>w0060</num>
+	<type>whisky</type>
+
+	<name_c>約翰走路 金</name_c>
+	<brand>Johnnie Walker Gold</brand>
+
+	<main_title>Gold Lable</main_title>
+	<subtitle>Johnnie Walker</subtitle>
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+ 	
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>18</age>
+    <capacity>200</capacity>
+    <strength>40.0</strength>
+
+</alcohol_info>
+
+<!-- R_List -->
+
+<alcohol_info>
+
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/r0001-1.jpg</img_url>
+	<num>r0001</num>
+	<type>Wine</type>
+
+	<name_c>拉圖堡</name_c>
+	<brand>Château Latour</brand>
+
+	<main_title>Château Latour</main_title>
+	<subtitle>-</subtitle>
+
+	<origin>France</origin>
+	<area>Bordeaux</area>
+	<subarea>Pauillac</subarea>
+
+    <distillation_year>1953</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>13.0</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/r0002-1.jpg</img_url>
+	<num>r0002</num>
+	<type>Wine</type>
+
+	<name_c>黛華波特</name_c>
+	<brand>Dalva Porto</brand>
+
+	<main_title>Dalva Porto</main_title>
+	<subtitle>C.da Silva</subtitle>
+	<origin>Portugal</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1975</distillation_year>
+    <bottling_year>2005</bottling_year>
+    <age>30</age>
+    <capacity>750</capacity>
+    <strength>20.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/r0004-1.jpg</img_url>
+	<num>r0004</num>
+	<type>Wine</type>
+
+	<name_c>碧尚女爵堡</name_c>
+	<brand>Château Pichon Longueville Comtesse de Lalande</brand>
+
+	<main_title>Château Pichon Longueville</main_title>
+	<subtitle>Comtesse de Lalande</subtitle>
+
+	<origin>France</origin>
+	<area>Bordeaux</area>
+	<subarea>Pauillac</subarea>
+
+    <distillation_year>1986</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>12.5</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/r0005-1.jpg</img_url>
+	<num>r0005</num>
+	<type>Wine</type>
+
+	<name_c>亞柏彼修</name_c>
+	<brand>Albert Bichot</brand>
+
+	<main_title>Grands-Echezeaux Grand Cru</main_title>
+	<subtitle>Domaine du Clos Frantin</subtitle>
+
+	<origin>France</origin>
+	<area>Bordeaux</area>
+	<subarea>Pauillac</subarea>
+
+    <distillation_year>2002</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>12.5</strength>
+    
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/s0001-1.jpg</img_url>
+	<num>s0001</num>
+	<type>Wine</type>
+
+	<name_c>第一貴族</name_c>
+	<brand>Noble One</brand>
+
+	<main_title>Noble One</main_title>
+	<subtitle>De Bortoli</subtitle>
+	<origin>Australia</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+    <distillation_year>1992</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>12.0</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>2</img_how_many>
+
+	<img_url>../img_Alcohol/s/s0002-1.jpg</img_url>
+	<num>s0002</num>
+	<type>Wine</type>
+
+	<name_c>-</name_c>
+	<brand>Château Caillou</brand>
+
+	<main_title>Château Caillou</main_title>
+	<subtitle>Sauternes</subtitle>
+
+	<origin>France</origin>
+	<area>Bordeaux</area>
+	<subarea>Sauternes</subarea>
+
+    <distillation_year>2007</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>13.5</strength>
+
+</alcohol_info>
+
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/s0004-1.jpg</img_url>
+	<num>s0004</num>
+	<type>Wine</type>
+
+	<name_c>芙樂夏</name_c>
+	<brand>Prucia</brand>
+
+	<main_title>Prucia</main_title>
+	<subtitle>Plum Liqueur</subtitle>
+
+	<origin>France</origin>
+	<area>-</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>700</capacity>
+    <strength>15.0</strength>
+    
+</alcohol_info>
+
+
+</products_list>

@@ -49,24 +49,20 @@ body {
 
 
 }
+
 body.overflow_hidden{
-
-
   overflow: hidden;
-  
 }
-
-
 
 header,
 footer{
+  z-index: 100;
   position: relative;
   height: 90px;
   text-align: center;
 }
 
-header,
-footer{
+header{
   margin-bottom: 18px;
 }
 
@@ -100,12 +96,11 @@ footer img.logo_B{
 
 
 .pList {
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
-  gap: 18px;
+  gap: 12px;
   justify-content: center;
-
-
   padding: 0 18px;
   /* max-width: 1350px; */
   /* background-color: red; */
@@ -140,6 +135,8 @@ footer img.logo_B{
 
         /* 分页控件 */
         .pagination {
+          z-index: 50;
+
             display: flex;
             justify-content: center;
             margin: 30px 0;
@@ -205,15 +202,27 @@ footer img.logo_B{
 
 .p-box{
     font-family: didot;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.027em;
     background: white;
     /* border:1px solid red;  */
     border-radius: 9px;
     /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
-    padding: 18px;
+    /* padding: 18px; */
     transition: transform 0.3s;
     /* width: 300px; */
     /* max-width: 360px; */
+
+    overflow: hidden;
+
+    padding-bottom: 18px;
+}
+
+
+.p-box:not([data-hmi="0"]) {
+  /* border: 2px solid blue;
+  background-color: red; */
+
+  cursor: pointer; 
 }
 
 .b0017-1951{
@@ -280,16 +289,16 @@ footer img.logo_B{
     padding:0 0 18px 0;
 
 }
-.p-box > div:not(.label){
+.pInfo > div:not(.label){
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 36px;
     padding:0 27px 0 12px;
 }
-.p-box > div:not(.label) span{
+.pInfo > div:not(.label) span{
     font-size: 12px;
     line-height: 36px;
 
@@ -302,7 +311,7 @@ footer img.logo_B{
     right: 0;
     font-size: 15px !important;
     width: 27px;
-    padding-left: 6px;
+    padding-left: 3px;
     transform: rotate(9deg);
 }
 .note{
@@ -322,63 +331,57 @@ footer img.logo_B{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:767px) {
 
 
 .pList {
-
-  grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+  padding:0 6px; 
+  grid-template-columns: repeat(auto-fit, minmax(calc(50vw - 24px), max-content));
   gap: 6px;
-
-
 }
+
+/* 
 .p-box{
   overflow: hidden;
   padding:0 !important; 
 }
+ */
 
 .p-box img{
  
   position: relative;
     height: auto;
-    width: 210px;
+    width: 360px;
     left: 50%;
-    transform: translateX( calc( -105px ) );
+    transform: translateX( calc( -180px ) );
 
 }
 
-/* .p-box div{
-  display: block !important; 
-} */
-
-.p-box > div:not(.label){
-  display: block !important;
-  font-size: 17px;
-  line-height: 21px;  
-}
-
-
-
-.p-box > div{
-
-  font-size: 17px;
-  line-height: 21px;  
-}
-
-.p-box > div:not(.label) span{
-  line-height: 21px;
-  padding-top: 9px;
+.label {
+    min-height: 150px;
 }
 
 .p-box .title,
 .p-box .subtitle{
   line-height: 20px;
-}
-
-
-.p-box span{
-  display: block; 
-  line-height: 15px !important;
 }
 
 .title{
@@ -388,9 +391,22 @@ footer img.logo_B{
 }
 .unit{
 
-  position: relative;
-  top: 0;
-  display: inline-block !important;
+  top: 9px;
+  text-align: left;
+
+}
+
+.pInfo > div:not(.label){
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.pInfo > div:not(.label) span{
+  display: block;
+  line-height: 18px;
+  padding-top: 9px;
 }
 
 
@@ -399,7 +415,18 @@ footer img.logo_B{
 
 
 
+.img_Box img{
+ 
+  position: relative;
 
+  z-index: -1;
+
+  width: auto;
+   
+    left: 50%;
+    transform: translateX( -50% );
+
+}
 }
 
 
@@ -414,10 +441,9 @@ footer img.logo_B{
 
 
 .popup{
-
-
-  position: absolute;
   z-index: 200;
+  position: fixed;
+  
 
   overflow: hidden;
 
@@ -651,13 +677,13 @@ footer img.logo_B{
 
 
 .three_line{
+
+   z-index: 150;
   overflow: hidden;
 
   position: fixed;
   top: 0;
   left: 0;
-
-  z-index: 100;
 
   width:54px;
   height: 54px;
@@ -879,6 +905,60 @@ footer img.logo_B{
 
 
 
+
+.category{
+  z-index: 50;
+
+  position: fixed;
+
+  
+}
+
+.category a{
+  font-family: didot;
+  font-size: 15px;
+  color: #5d0b24;
+  text-transform: uppercase;
+}
+
+.category span{
+
+font-family: roboto_light;
+font-size: 12px;
+color: #2f0612;
+
+opacity: 0.5;
+}
+
+
+.category span:before{
+
+  content: "/"; 
+  display: inline-block; 
+  width: 18px; 
+
+
+  text-align: center; /* 文字居中 */
+  line-height: 18px; /* 行高等於高度可垂直居中 */
+
+
+}
+
+
+
+.productPage{
+  z-index: 1;
+
+}
+.slide_show img{
+  height: 100vh;
+}
+.productPage + footer{
+    margin-top: 90px;
+}
+
+
+
   </style>
 </head>
 
@@ -969,305 +1049,387 @@ footer img.logo_B{
 <script>
 
 var perPage = 30;
-var products = [];
-var currentFilter = null; 
-
-var defaultFilter = "whisky";
 
 
-// $(document).ready(function () {
+var psData = [];
+
+var currentFilter = '';
+var defaultFilter = 'whisky';
+var totalPages = 0;
+var filteredProducts = []; // 重命名以避免冲突
 
 $(window).on('load', function() {
-  $.ajax({
-    url: '../xml/brandy-on.xml',
-    dataType: 'xml',
-    success: function (xml) {
-
-      $(xml).find('alcohol_info').each(function () {
-        products.push($(this));
-      });
-
-   // 如果有預設篩選條件
-      if (defaultFilter) {
-        currentFilter = defaultFilter;
-        var filtered = filterProducts(defaultFilter);
-        var totalPages = Math.ceil(filtered.length / perPage);
-        renderPagination(totalPages);
-        renderPage(1, filtered);
-
-      } else {
-        // 沒有預設 → 顯示全部
-        var totalPages = Math.ceil(products.length / perPage);
-        renderPagination(totalPages);
-        renderPage(1, products);
-      }
-
-
-
-    $(document).on('click', '*[class*="b0017"]', function () {
-    // $('*[class*="b0017"]').on('click', function() {
-      window.open('b0017.html', '_blank');
-      return false;
-
+    // 加载XML数据
+    loadProductsData();
+    
+    // 绑定菜单事件
+    bindMenuEvents();
+    
+    // 绑定其他事件
+    $('.three_line').on('click', function() {
+        $(this).toggleClass('click');
+        return false;
     });
-
-
-
-      rLine();
-    },
-    error: function () {
-      alert('資料載入失敗，請檢查 XML 路徑或檔案格式');
-    }
-
-  }); //ajax
-
-function filterProducts(type) {
-  var filtered = [];
-  for (var i = 0; i < products.length; i++) {
-    var $p = products[i];
-    var pType = $p.find('type').text().toLowerCase();
-    var tags = pType.split(/\s+/);
-    for (var j = 0; j < tags.length; j++) {
-      if (tags[j] === type.toLowerCase()) {
-        filtered.push($p);
-        break;
-      }
-    }
-  }
-  return filtered;
-}
-
-
-
-
-
-$('.three_line').on('click', function() {
-    $(this).toggleClass('click');
-    return false;
 });
 
+// 加载产品数据
+function loadProductsData() {
+    $.ajax({
+        url: '../xml/alcohol-on.xml',
+        dataType: 'xml',
+        success: function(xml) {
+            // parseProductsData(xml);
+        $(xml).find('alcohol_info').each(function () {
+          psData.push($(this));
+        });
 
-$('.alcohol_menu').each(function() {
-  
-  var ts = $(this);
-
-
-  ts.find('a').on('click', function (e) {
-
-    e.preventDefault();
-
-    var type = $(this).data('type'); 
-    var filtered = [];
-    currentFilter = type;
-
-  for (var i = 0; i < products.length; i++) {
-    var $p = products[i];
-    var pType = $p.find('type').text().toLowerCase();
-    var tags = pType.split(/\s+/);
-    for (var j = 0; j < tags.length; j++) {
-      if (tags[j] === type.toLowerCase()) {
-        filtered.push($p);
-        break; // 找到一個就不用再檢查
-      }
-    }
-  }
-
-  var totalPages = Math.ceil(filtered.length / perPage);
-  renderPagination(totalPages);
-  renderPage(1, filtered);
-
-
-
-  rLine();
-
-
-    });
- 
-
-ts.find('> a').on('click', function () {
-
-
-  $(this).addClass('click').siblings('a').removeClass('click');
-  $(this).next('div').find('a').removeClass('click');
-  $(this).next('div').find('a:first').addClass('click');
-
-
-});
-ts.find('.dropDown a').on('click', function () {
-  $(this).addClass('click').siblings('a').removeClass('click');
-});
-
-
-
-
-
-
-
-ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
-        e.preventDefault(); // Prevent default link behavior if needed
-        $('.three_line').toggleClass('click');
-    });
-
-
-});
-getRandomImage();
-
-}); //$(document).ready
-
-// === 點擊分頁按鈕 ===
-$(document).on('click', '.pagination .page-btn', function () {
-  var page = $(this).data('page');
-
-  if (currentFilter) {
-    // 篩選過的 products
-    var filtered = [];
-    $.each(products, function (i, $p) {
-      var pType = $p.find('type').text().toLowerCase();
-      var types = currentFilter.split(" ");
-      var match = false;
-      $.each(types, function (j, t) {
-        if (pType.indexOf(t) >= 0) {
-          match = true;
+            // 应用默认筛选
+            if (defaultFilter) {
+                applyFilter(defaultFilter);
+            } else {
+                renderAllProducts();
+            }
+            
+            // 绑定特定元素事件
+          
+            
+            rLine();
+        },
+        error: function() {
+            alert('资料载入失败，请检查 XML 路径或档案格式');
         }
-      });
-      if (match) filtered.push($p);
     });
-    renderPage(page, filtered);
-  } else {
-    renderPage(page, products);
-  }
-
-  $('.pagination .page-btn').removeClass('active');
-  $('.pagination .page-btn[data-page="' + page + '"]').addClass('active');
-
-  rLine();
-});
-
-
-// === 產生分頁按鈕 ===
-function renderPagination(totalPages) {
-  var html = '';
-  for (var i = 1; i <= totalPages; i++) {
-    html += '<a class="page-btn' + (i === 1 ? ' active' : '') + '" href="#" data-page="' + i + '">' + i + '</a>';
-  }
-
-  $('.pagination').remove();
-  $('.pList').after('<div class="pagination">' + html + '</div>');
 }
 
 
-// === 顯示當頁產品 ===
-function renderPage(page, list) {
-  var data = list || products; // 沒有篩選時用全產品
-  var start = (page - 1) * perPage;
-  var pageProducts = data.slice(start, start + perPage);
-
-  var html = '';
-  $.each(pageProducts, function (i, p) {
-    html += renderBasicInfo(p);
+  $(document).on('click', '*[class*="b0017"]', function() {
+    window.open('b0017.html', '_blank');
+    return false;
   });
 
-  $('.pList').html(html);
+// 解析产品数据
+// function parseProductsData(xml) {
+//     $(xml).find('alcohol_info').each(function() {
+//         psData.push($(this));
+//     });
+// }
+
+// 应用筛选
+function applyFilter(type) {
+    currentFilter = type;
+    filteredProducts = filterProducts(type);
+    totalPages = Math.ceil(filteredProducts.length / perPage);
+    renderPagination(totalPages);
+    render_ProductsListPage(1, filteredProducts);
+    rLine();
+}
+
+// 筛选产品
+function filterProducts(type) {
+    var result = [];
+    var typeLower = type.toLowerCase();
+    
+    for (var i = 0; i < psData.length; i++) {
+        var $p = psData[i];
+        var pType = $p.find('type').text().toLowerCase();
+        var tags = pType.split(/\s+/);
+        
+        for (var j = 0; j < tags.length; j++) {
+            if (tags[j] === typeLower) {
+                result.push($p);
+                break;
+            }
+        }
+    }
+    
+    return result;
+}
+
+// 渲染所有产品
+function renderAllProducts() {
+    totalPages = Math.ceil(psData.length / perPage);
+    renderPagination(totalPages);
+    render_ProductsListPage(1, psData);
+}
+
+// 绑定菜单事件
+
+
+
+
+
+
+function bindMenuEvents() {
+
+
+
+    $('.alcohol_menu').each(function() {
+        let ts = $(this);
+        
+        ts.find('a').on('click', function(e) {
+            e.preventDefault();
+
+      $('.pList').removeClass().addClass('pList');
+
+            let type = $(this).data('type');
+            applyFilter(type);
+        });
+        
+        ts.find('> a').on('click', function() {
+            $(this).addClass('click').siblings('a').removeClass('click');
+            $(this).next('div').find('a').removeClass('click');
+            $(this).next('div').find('a:first').addClass('click');
+        });
+        
+        ts.find('.dropDown a').on('click', function() {
+            $(this).addClass('click').siblings('a').removeClass('click');
+        });
+        
+        ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
+            e.preventDefault();
+            $('.three_line').toggleClass('click');
+        });
+    });
+    
+    // 分页事件绑定
+    $(document).on('click', '.pagination .page-btn', function() {
+        var page = $(this).data('page');
+        
+        if (currentFilter) {
+            render_ProductsListPage(page, filteredProducts);
+        } else {
+            render_ProductsListPage(page, psData);
+        }
+        
+        $('.pagination .page-btn').removeClass('active');
+        $(this).addClass('active');
+        rLine();
+    });
+
+
+
+    $(document).on('click', '.category a', function(e) {
+
+      $('.pList').removeClass().addClass('pList');
+
+      e.preventDefault();
+      let type = $(this).data('type');
+      applyFilter(type);
+    });
+
+
+}
+
+// 渲染分页
+function renderPagination(totalPages) {
+    var html = '';
+    for (var i = 1; i <= totalPages; i++) {
+        html += '<a class="page-btn' + (i === 1 ? ' active' : '') + '" href="#" data-page="' + i + '">' + i + '</a>';
+    }
+    $('.pagination').remove();
+    $('.pList').after('<div class="pagination">' + html + '</div>');
+}
+
+// 渲染页面
+function render_ProductsListPage(page, list) {
+    var data = list || psData;
+    var start = (page - 1) * perPage;
+    var pageProducts = data.slice(start, start + perPage);
+    var html = '';
+    
+    for (var i = 0; i < pageProducts.length; i++) {
+        var p = pageProducts[i];
+        html += type_ProductsList(p);
+    }
+    
+    $('.pList').html(html);
 }
 
 
-// === 單一產品 HTML ===
-function renderBasicInfo($product) {
-  var notes = $product.find('notes tip').map(function () {
-    return '<li>' + $(this).text() + '</li>';
-  }).get().join('');
-
-return `
-    <div class="p-box ${$product.find('num').text()}">
-      <img src="${$product.find('img_url').text()}">
+$(document).on('click', '.p-box', function () {
 
 
-      <div class="num">
-        <span>${$product.find('num').text()}</span>
-        <span>${$product.find('name_c').text()}</span>
+  if ($(this).data('hmi') !== 0) {
+
+      $('.pList').addClass('productPage');
+      $('.pagination').remove();
+
+
+  const imgId = $(this).data('id'); 
+
+  const product = psData.find( p => p.find('num').text() === imgId);
+
+  let categoryHtml = '';
+
+  if (product) {
+
+    const type = product.find('type').text();
+    const brand = product.find('brand').text();
+
+    categoryHtml = `
+      <div class="category">
+        <a href="#" data-type="${type}">${type}</a><span>${brand}</span>
       </div>
+    `;
+  }
 
-      <div class="label">
-        <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
-        <div class="title">${$product.find('brand').text()}</div>
-        <div class="subtitle">${$product.find('subtitle').text()}</div>
-        <div class="years">${$product.find('distillation_year').text()}</div>
+  let showImagesHtml = '';
+
+  const imgNum = product.find('img_how_many').text();
+
+  for (let i = 1; i <= imgNum; i++) {
+    showImagesHtml += `
+      <div>
+        <img src="../img_Alcohol/b/${imgId}-${i}.jpg">
+      </div>`;
+  }
+
+
+   const slideShowHtml = `
+    <div class="slide_show">
+      <div class="img_Box">
+        ${showImagesHtml}
       </div>
-
-      <div><span>origin</span>${$product.find('origin').text()}</div>
-      <div><span>area</span>${$product.find('area').text()}</div>
-      <div><span>subarea</span>${$product.find('subarea').text()}</div>
-      <div><span>distillation</span>${$product.find('distillation_year').text()}</div>
-      <div><span>bottling</span>${$product.find('bottling_year').text()}</div>
-      <div><span>ages</span>${$product.find('age').text()}</div>
-      <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
-      <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
-
-
     </div>
   `;
 
 
+$('.pList').html(categoryHtml + slideShowHtml);
+
 }
 
 
-// === 隱藏 label 帶 "-" 的元素 ===
-function rLine() {
-  $('.label > * ').filter(function() {
-    return $(this).text().indexOf('-') >= 0;
-  }).hide();
-}
+$('html, body').animate({ scrollTop: 0 }, 'smooth');
 
 
 
-$(document).on('click', '.areU_18 a', function() {
-  $('body.overflow_hidden').removeClass('overflow_hidden');
-  $('.popup').remove();
 });
 
-
-
-function getRandomImage() {
-
-  var type = 0;
-  var prefix ='';
-  var randomNum = 0;
-  var numStr ='';
-  var imagePath = '';
-  
-
-  if (Math.floor(Math.random() * 2) + 1 < 2) {
-
-
-    type = 1;
-  } else {
-    type = 2;
-  }
-  
-
-  if (type === 1) {
-    prefix = 'b00';
-  } else {
-    prefix = 'w00';
-  }
-  
-
-  randomNum = Math.floor(Math.random() * 30) + 1;
-  
-
-  if (randomNum < 10) {
-    numStr = '0' + randomNum.toString();
-  } else {
-    numStr = randomNum.toString();
-  }
+// return `
+//   <div class="slide_show">
+//     <div class="img_Box">
+//       ${showImagesHtml}
+//     </div>
+//   </div>
+// `;
 
 
 
-  imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
 
-$('.popup > div').append(imagePath);
+
+
+function type_ProductsList($product) {
+
+
+    // var notes = $product.find('notes tip').map(function() {
+    //     return '<li>' + $(this).text() + '</li>';
+    // }).get().join('');
+
+return `
+<div class="p-box" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
+    <img src="${$product.find('img_url').text()}">
+    <div class="pInfo">
+        <div class="num">
+            <span>${$product.find('num').text()}</span>
+            <span>${$product.find('name_c').text()}</span>
+        </div>
+        <div class="label">
+            <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
+            <div class="title">${$product.find('main_title').text()}</div>
+            <div class="subtitle">${$product.find('subtitle').text()}</div>
+            <div class="years">${$product.find('distillation_year').text()}</div>
+        </div>
+        <div><span>origin</span>${$product.find('origin').text()}</div>
+        <div><span>area</span>${$product.find('area').text()}</div>
+        <div><span>subarea</span>${$product.find('subarea').text()}</div>
+        <div><span>distillation</span>${$product.find('distillation_year').text()}</div>
+        <div><span>bottling</span>${$product.find('bottling_year').text()}</div>
+        <div><span>ages</span>${$product.find('age').text()}</div>
+        <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
+        <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
+
+    </div>
+</div>
+`;
+}
+
+function rLine() {
+
+$('.label > *').each(function() {
+    const text = $(this).text().trim();
+    if (text === '-') {
+      $(this).hide();
+    }
+  });
+
 
 }
+
+// 年龄确认弹窗
+$(document).on('click', '.areU_18 a', function() {
+    $('body.overflow_hidden').removeClass('overflow_hidden');
+    $('.popup').remove();
+});
+
+// 获取随机图片
+function getRandomImage() {
+    var type = Math.floor(Math.random() * 2) + 1;
+    var prefix = type === 1 ? 'b00' : 'w00';
+    var randomNum = Math.floor(Math.random() * 30) + 1;
+    var numStr = randomNum < 10 ? '0' + randomNum : randomNum.toString();
+    var imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
+    
+    $('.popup > div').append(imagePath);
+}
+
+getRandomImage();
+
+
+
+
+
+
+// function getRandomImage() {
+
+//   var type = 0;
+//   var prefix ='';
+//   var randomNum = 0;
+//   var numStr ='';
+//   var imagePath = '';
+  
+
+//   if (Math.floor(Math.random() * 2) + 1 < 2) {
+
+
+//     type = 1;
+//   } else {
+//     type = 2;
+//   }
+  
+
+//   if (type === 1) {
+//     prefix = 'b00';
+//   } else {
+//     prefix = 'w00';
+//   }
+  
+
+//   randomNum = Math.floor(Math.random() * 30) + 1;
+  
+
+//   if (randomNum < 10) {
+//     numStr = '0' + randomNum.toString();
+//   } else {
+//     numStr = randomNum.toString();
+//   }
+
+
+
+//   imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
+
+// $('.popup > div').append(imagePath);
+
+// }
 
 
 
