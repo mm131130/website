@@ -936,22 +936,24 @@ opacity: 0.5;
   content: "/"; 
   display: inline-block; 
   width: 18px; 
-
-
   text-align: center; /* 文字居中 */
   line-height: 18px; /* 行高等於高度可垂直居中 */
-
-
 }
-
-
 
 .productPage{
   z-index: 1;
 
 }
+
+
+
 .slide_show img{
   height: 100vh;
+}
+
+.img_Box > div{
+  overflow: hidden;
+
 }
 .productPage + footer{
     margin-top: 90px;
@@ -1300,6 +1302,11 @@ $('.pList').html(categoryHtml + slideShowHtml);
 
 
 $('html, body').animate({ scrollTop: 0 }, 'smooth');
+
+// window.scrollTo({
+//   top: 0,
+//   behavior: 'smooth'
+// });
 
 
 
