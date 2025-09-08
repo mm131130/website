@@ -774,6 +774,7 @@ footer img.logo_B{
   transform: translateX(54px); /* 顯示狀態 */
 }
 
+
 .alcohol_menu{
   position: fixed;
 
@@ -784,69 +785,55 @@ footer img.logo_B{
   transform: translateX( -200%); /* 初始狀態隱藏在右側 */
   transition: transform 0.18s ease-in-out;
   will-change: transform; /* 優化動畫性能 */
+  background-color: #fff;
 
+  padding:18px 0; 
+
+    box-shadow:
+
+  0px 6px 2px rgba(0, 0, 0, 0.3), 
+  0px 9px 3px rgba(0, 0, 0, 0.2);
 }
-
 .alcohol_menu img{
   height: 100%;
   width: auto;
 }
-
 .alcohol_menu a{
-  display:  block;
-  
+  display: block;
+  line-height: 18px;
   color: #000;
-
+  padding: 16px 45px 16px 50px;
+}
+.alcohol_menu a.type{
   height: 50px;
   width: 270px;
-
-  padding: 6px 18px 3px 9px;
-  background-color: #fff;
-
-  box-shadow:
-
-  0px 6px 2px rgba(0, 0, 0, 0.3), 
-  0px 9px 3px rgba(0, 0, 0, 0.2);
+  padding: 3px 45px 2px 9px;
 
 }
-
-.alcohol_menu > a{
-  position: relative;
-  z-index: 10;
+.alcohol_menu li > div a:not(:first-child){
+  font-family: didot;
+  text-align: right;
 }
+.alcohol_menu li > div a:first-child{
+  display: flex;
+  justify-content: space-between;
 
-.alcohol_menu > a.click{
-
-  margin-top: 63px;
-  margin-bottom: 9px;
-
+}
+.alcohol_menu li > div .itemNum{
+  font-size: 12px;
   color: #fff;
 
-  background: linear-gradient(to left, #981643, #5d0b24);
+  opacity: 0.45;
+  background-color: #000;
+  border-radius: 45px;
+  padding: 0 9px;
 
-  border-radius: 3px;
-/*     -webkit-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-    transform: rotate(-12deg); */
-  -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
-  transform-origin: center left;
-
-  transform: rotate(-12deg) translateX(-27px);
-
-  -moz-box-shadow: -10px 30px 10px rgba(0,0,0,0.3), -20px 60px 20px rgba(0,0,0,0.2), -30px 90px 30px rgba(0,0,0,0.1);
-  -webkit-box-shadow: -10px 30px 10px rgba(0, 0, 0, 0.3), -20px 60px 20px rgba(0, 0, 0, 0.2), -30px 90px 30px rgba(0, 0, 0, 0.1);
-  box-shadow: 
-  -10px 30px 10px rgba(0, 0, 0, 0.3), 
-  -20px 60px 30px rgba(0, 0, 0, 0.2), 
-  -30px 90px 30px rgba(0, 0, 0, 0.1);
-
-  transition: transform 0.18s ease-in-out; 
-
+}
+.alcohol_menu a.click{
+  color:#5d0b24;
 }
 .alcohol_menu a .cfff{
   display: none;
-
 }
 .alcohol_menu a.click .c000{
   display: none;
@@ -857,47 +844,6 @@ footer img.logo_B{
 
 
 
-
-
-
-
-
-
-.dropDown {
-  overflow: hidden;
-  display: none;
-
-  border-radius: 3px 3px 6px 6px;
-
-  -moz-box-shadow: -10px 30px 10px rgba(0,0,0,0.3), -20px 60px 20px rgba(0,0,0,0.2), -30px 90px 30px rgba(0,0,0,0.1);
-  -webkit-box-shadow: -10px 30px 10px rgba(0, 0, 0, 0.3), -20px 60px 20px rgba(0, 0, 0, 0.2), -30px 90px 30px rgba(0, 0, 0, 0.1);
-  box-shadow: -10px 30px 10px rgba(0, 0, 0, 0.3), -20px 60px 30px rgba(0, 0, 0, 0.2), -30px 90px 30px rgba(0, 0, 0, 0.1);
-}
-
-.click + .dropDown {
-  position: relative;
-
-  top: -36px;
-  left: 36px;
-  display: block;
-  z-index: 20;
-}
-
-.dropDown + a{
-  z-index: 30;
-}
-
-.dropDown a{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: #000;
-}
-
-.dropDown a.click{
-
-  color: #981643;
-}
 
 
 
@@ -1006,25 +952,40 @@ opacity: 0.5;
 </div>
 
 
-<div class="alcohol_menu">
+<ul class="alcohol_menu">
 
+  <li>
+    <a href="#" class="type click" data-type="whisky">
+      <img class="c000" src="../img_Alcohol/w_Wine.png"><img class="cfff" src="../img_Alcohol/w_Wine-r.png">藏
+    </a>
 
-  <a href="#" class="click" data-type="whisky">
-    <img class="c000" src="../img_Alcohol/w_Wine.png">
-    <img class="cfff" src="../img_Alcohol/w_Wine-w.png">藏</a>
-    <div class="dropDown">
-        <a href="#" class="click" data-type="whisky">威士忌</a>
-        <a href="#" data-type="brandy">白蘭地</a>
-        <a href="#" data-type="wine">紅酒</a>
+    <div>
+      <a href="#" class="click" data-type="whisky">威士忌<span class="itemNum">60</span></a>
+      <a href="#" data-type="dalmore">Dalmore</a>
+      <a href="#" data-type="macallan">Macallan</a>
+      <a href="#" data-type="hibiki">Hibiki</a>
     </div>
-  <a href="#" data-type="notForSale">聞
-    <img class="c000" src="../img_Alcohol/w_Smell.png">
-    <img class="cfff" src="../img_Alcohol/w_Smell-w.png">
-  </a>
+
+    <div>
+      <a href="#" data-type="brandy">白蘭地<span class="itemNum">45</span></a>
+      <a href="#" data-type="lheraud">Lhéraud</a>
+    </div>
+
+    <a href="#" data-type="wine">紅酒</a>
+
+  </li>
+  <li>
+    <a class="type" href="#" data-type="notForSale">聞
+      <img class="c000" src="../img_Alcohol/w_Smell.png">
+      <img class="cfff" src="../img_Alcohol/w_Smell-r.png">
+    </a>
+  </li>
 <!--   <a href="#"><img src="../img_alcohol/w_Tea.png">甕</a>
   <a href="#">藏<img src="../img_alcohol/w_Word.png"></a>
  -->
-</div>
+</ul>
+
+
 
 
   <div class="pList"></div>
@@ -1171,21 +1132,28 @@ function bindMenuEvents() {
         ts.find('a').on('click', function(e) {
             e.preventDefault();
 
-      $('.pList').removeClass().addClass('pList');
-
+            $('.pList').removeClass().addClass('pList');
             let type = $(this).data('type');
             applyFilter(type);
+   
+
+            ts.find('.click').removeClass('click');
+            $(this).addClass('click');
+
         });
+
+
+
         
-        ts.find('> a').on('click', function() {
-            $(this).addClass('click').siblings('a').removeClass('click');
-            $(this).next('div').find('a').removeClass('click');
-            $(this).next('div').find('a:first').addClass('click');
-        });
+        // ts.find('> a').on('click', function() {
+        //     $(this).addClass('click').siblings('a').removeClass('click');
+        //     $(this).next('div').find('a').removeClass('click');
+        //     $(this).next('div').find('a:first').addClass('click');
+        // });
         
-        ts.find('.dropDown a').on('click', function() {
-            $(this).addClass('click').siblings('a').removeClass('click');
-        });
+        // ts.find('.dropDown a').on('click', function() {
+        //     $(this).addClass('click').siblings('a').removeClass('click');
+        // });
         
         ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
             e.preventDefault();
@@ -1253,8 +1221,16 @@ $(document).on('click', '.p-box', function () {
 
   if ($(this).data('hmi') !== 0) {
 
+
+
+
+
+
+
+
+
       $('.pList').addClass('productPage');
-      $('.pagination').remove();
+
 
 
   const imgId = $(this).data('id'); 
@@ -1264,8 +1240,9 @@ $(document).on('click', '.p-box', function () {
   let categoryHtml = '';
 
   if (product) {
+    const fullType = product.find('type').text();
+    const type = fullType.split(' ')[0];
 
-    const type = product.find('type').text();
     const brand = product.find('brand').text();
 
     categoryHtml = `
@@ -1273,6 +1250,9 @@ $(document).on('click', '.p-box', function () {
         <a href="#" data-type="${type}">${type}</a><span>${brand}</span>
       </div>
     `;
+
+    applyFilter(type);
+
   }
 
   let showImagesHtml = '';
@@ -1297,7 +1277,7 @@ $(document).on('click', '.p-box', function () {
 
 
 $('.pList').html(categoryHtml + slideShowHtml);
-
+$('.pagination').remove();
 }
 
 

@@ -331,7 +331,7 @@
 
 	<img_url>../img_Alcohol/s/b0014-1.jpg</img_url>
 	<num>b0014</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪 - 查理七世</name_c>
 	<brand>Lhéraud Charles VII</brand>
@@ -542,7 +542,7 @@
 
 	<img_url>../img_Alcohol/s/b0022-1.jpg</img_url>
 	<num>b0022</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -567,7 +567,7 @@
 
 	<img_url>../img_Alcohol/s/b0023-1.jpg</img_url>
 	<num>b0023</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -592,7 +592,7 @@
 
 	<img_url>../img_Alcohol/s/b0024-1.jpg</img_url>
 	<num>b0024</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -617,7 +617,7 @@
 
 	<img_url>../img_Alcohol/s/b0025-1.jpg</img_url>
 	<num>b0025</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -667,7 +667,7 @@
 
 	<img_url>../img_Alcohol/s/b0027-1.jpg</img_url>
 	<num>b0027</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -793,7 +793,7 @@
 
 	<img_url>../img_Alcohol/s/b0032-1.jpg</img_url>
 	<num>b0032</num>
-	<type>brandy</type>
+	<type>brandy lheraud</type>
 
 	<name_c>利豪</name_c>
 	<brand>Lhéraud</brand>
@@ -1496,7 +1496,7 @@
 
 	<img_url>../img_Alcohol/s/w0015-1.jpg</img_url>
 	<num>w0015</num>
-	<type>whisky</type>
+	<type>whisky dalmore</type>
 
 	<name_c>達摩 90s</name_c>
 	<brand>Dalmore</brand>
@@ -1521,7 +1521,7 @@
 
 	<img_url>../img_Alcohol/s/w0016-2.jpg</img_url>
 	<num>w0016</num>
-	<type>whisky</type>
+	<type>whisky dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -1546,7 +1546,7 @@
 
 	<img_url>../img_Alcohol/s/w0018-1.jpg</img_url>
 	<num>w0018</num>
-	<type>whisky</type>
+	<type>whisky macallan</type>
 
 	<name_c>麥卡倫</name_c>
 	<brand>Macallan</brand>
@@ -1571,7 +1571,7 @@
 
 	<img_url>../img_Alcohol/s/w0019-1.jpg</img_url>
 	<num>w0019</num>
-	<type>whisky</type>
+	<type>whisky macallan</type>
 
 	<name_c>麥卡倫</name_c>
 	<brand>Macallan</brand>
@@ -2206,7 +2206,7 @@
 
 	<img_url>../img_Alcohol/s/w0045-1.jpg</img_url>
 	<num>w0045</num>
-	<type>whisky</type>
+	<type>whisky macallan</type>
 
 	<name_c>麥卡倫</name_c>
 	<brand>Macallan</brand>
@@ -2231,7 +2231,7 @@
 
 	<img_url>../img_Alcohol/s/w0046-1.jpg</img_url>
 	<num>w0046</num>
-	<type>whisky</type>
+	<type>whisky macallan</type>
 
 	<name_c>麥卡倫</name_c>
 	<brand>Macallan</brand>
@@ -2256,7 +2256,7 @@
 
 	<img_url>../img_Alcohol/s/w0047-1.jpg</img_url>
 	<num>w0047</num>
-	<type>notForSale</type>
+	<type>notForSale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2281,7 +2281,7 @@
 
 	<img_url>../img_Alcohol/s/w0048-1.jpg</img_url>
 	<num>w0048</num>
-	<type>notForSale</type>
+	<type>notForSale dalmore</type>
 
 	<main_title>Dalmore</main_title>
 	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
@@ -2303,7 +2303,7 @@
 
 	<img_url>../img_Alcohol/s/w0049-1.jpg</img_url>
 	<num>w0049</num>
-	<type>notForSale</type>
+	<type>notForSale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2328,7 +2328,7 @@
 
 	<img_url>../img_Alcohol/s/w0050-1.jpg</img_url>
 	<num>w0050</num>
-	<type>notforsale</type>
+	<type>notforsale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2353,7 +2353,7 @@
 
 	<img_url>../img_Alcohol/s/w0051-1.jpg</img_url>
 	<num>w0051</num>
-	<type>notforsale</type>
+	<type>notforsale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2378,7 +2378,7 @@
 
 	<img_url>../img_Alcohol/s/w0052-1.jpg</img_url>
 	<num>w0052</num>
-	<type>whisky</type>
+	<type>whisky hibiki</type>
 
 	<name_c>響 v11</name_c>
 	<brand>Hibiki v11</brand>
@@ -2402,7 +2402,7 @@
 
 	<img_url>../img_Alcohol/s/w0053-1.jpg</img_url>
 	<num>w0053</num>
-	<type>whisky</type>
+	<type>whisky hibiki</type>
 
 	<name_c>響 v8</name_c>
 	<brand>Hibiki v8</brand>
@@ -2427,7 +2427,7 @@
 
 	<img_url>../img_Alcohol/s/w0054-1.jpg</img_url>
 	<num>w0054</num>
-	<type>whisky</type>
+	<type>whisky hibiki</type>
 
 	<name_c>響 v5</name_c>
 	<brand>Hibiki v5</brand>
