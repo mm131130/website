@@ -1329,18 +1329,70 @@ return `
 `;
 }
 
+// function rLine() {
+
+// $('.label > *').each(function() {
+//   const text = $(this).text().trim();
+//     if (text === '-') {
+//       $(this).hide();
+//     }
+//   });
+
+
+
+//     const ts = $(this);
+//     const hasSpan = ts.find('span').length > 0;
+//     const hasDash = ts.text().indexOf('-') !== -1;
+
+//     if (hasSpan && hasDash) {
+//       $this.hide();
+//     }
+
+
+
+// }
+// function rLine() {
+//     // 第一部分：隱藏內容為 "-" 的元素
+//     $('.label > *').each(function() {
+//         const text = $(this).text().trim();
+//         if (text === '-') {
+//             $(this).hide();
+//         }
+//     });
+
+//     // 第二部分：修正變數問題
+//     $('.label > *').each(function() {
+//         const $this = $(this); // 正確的變數宣告
+//         const hasSpan = $this.find('span').length > 0;
+//         const hasDash = $this.text().indexOf('-') !== -1;
+
+//         if (hasSpan && hasDash) {
+//             $this.hide();
+//         }
+//     });
+// }
+
+
+
 function rLine() {
+    $('.label > *').each(function() {
+        const ts = $(this);
+        const text = ts.text().trim();
+        
+        // 條件1：內容為 "-"
+      
+        // 條件2：同時包含 span 和 dash
+        const hasSpan = ts.find('span').length > 0;
+        const hasDash = text.indexOf('-') !== -1;
 
-$('.label > *').each(function() {
-    const text = $(this).text().trim();
-    if (text === '-') {
-      $(this).hide();
-    }
-  });
 
-
+        if (text === '-') {
+            ts.hide();
+        }else if (hasSpan && hasDash) {
+            ts.hide();
+        }
+    });
 }
-
 // 年龄确认弹窗
 $(document).on('click', '.areU_18 a', function() {
     $('body.overflow_hidden').removeClass('overflow_hidden');
