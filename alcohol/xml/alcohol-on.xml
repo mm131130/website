@@ -1541,6 +1541,34 @@
 
 </alcohol_info>
 
+
+
+<alcohol_info>
+
+	<img_how_many>3</img_how_many>
+
+	<img_url>../img_Alcohol/s/w0017-1.jpg</img_url>
+	<num>w0017</num>
+	<type>whisky</type>
+
+	<name_c>優勢魁霸</name_c>
+	<brand>Usquaebach</brand>
+
+	<main_title>Usquaebach Elite</main_title>
+	<subtitle>Grand Whisky of the Highlands</subtitle>
+
+	<origin>England</origin>
+	<area>Scotland</area>
+	<subarea>-</subarea>
+
+	<distillation_year>-</distillation_year>
+	<bottling_year>-</bottling_year>
+	<age>-</age>
+	<capacity>750</capacity>
+	<strength>43.0</strength>
+</alcohol_info>
+
+
 <alcohol_info>
 	<img_how_many>3</img_how_many>
 
