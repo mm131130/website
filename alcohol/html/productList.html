@@ -679,8 +679,9 @@ footer img.logo_B{
 
 
 .three_line{
+  cursor: pointer;
 
-   z-index: 150;
+  z-index: 150;
   overflow: hidden;
 
   position: fixed;
@@ -692,10 +693,8 @@ footer img.logo_B{
   background-color: #fff;
 
   box-shadow:
-
   0px 6px 2px rgba(0, 0, 0, 0.3), 
   0px 9px 3px rgba(0, 0, 0, 0.2);
-
 }
 
 .three_line .line{
@@ -728,44 +727,35 @@ footer img.logo_B{
 /* jQ */
 
 .three_line.click{
-
   background-color: #5d0b24;
-
 }
 
 .three_line.click .line._a{
   background-color: #fff;
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+  -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+  transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
 }
 .three_line.click .line._b{
   background-color: #fff;
-
-    left: -100%;
+  left: -100%;
 }
 .three_line.click .line._c{
   background-color: #fff;
-
-    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
-    transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
+  transform: rotate(0deg) translate(-50%, -50%) rotate(-45deg);
 }
 
 
 .three_line .line{
-    -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    transition: width , height , 0.3s ease-in-out , -webkit-transform;
-    -o-transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , 0.3s ease-in-out;
-    transition: transform , width , height , background-color , 0.3s ease-in-out , -webkit-transform; 
-    transition: transform , width , height , background-color , 0.3s ease-in-out; 
+  -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
+  transition: width , height , 0.3s ease-in-out , -webkit-transform;
+  -o-transition: transform , width , height , 0.3s ease-in-out;
+  transition: transform , width , height , 0.3s ease-in-out;
+  transition: transform , width , height , background-color , 0.3s ease-in-out , -webkit-transform; 
+  transition: transform , width , height , background-color , 0.3s ease-in-out; 
 }
-
-
-
-
-
 
 
 
@@ -775,15 +765,13 @@ footer img.logo_B{
 .click + .alcohol_menu {
   transform: translateX(54px); /* 顯示狀態 */
 }
-
-
 .alcohol_menu{
   position: fixed;
 
   top: 54px;
   left: 0;
 
-  z-index: 100;
+  z-index: 150;
   transform: translateX( -200%); /* 初始狀態隱藏在右側 */
   transition: transform 0.18s ease-in-out;
   will-change: transform; /* 優化動畫性能 */
@@ -868,10 +856,7 @@ footer img.logo_B{
 
 .category{
   z-index: 50;
-
-  position: fixed;
-
-  
+  position: fixed;  
 }
 
 .category a{
@@ -1203,8 +1188,6 @@ function bindMenuEvents() {
         rLine();
     });
 
-
-
     $(document).on('click', '.category a', function(e) {
 
       $('.pList').removeClass().addClass('pList');
@@ -1243,7 +1226,6 @@ function render_ProductsListPage(page, list) {
 }
 
 $(document).on('click', '.p-box', function () {
-
 
   if ($(this).data('hmi') !== 0) {
 
@@ -1296,10 +1278,12 @@ $('html, body').animate({ scrollTop: 0 }, 'smooth');
 
 function type_ProductsList($product) {
 
+// const notes = $product.find('notes tip').map(function() {
 
-    // var notes = $product.find('notes tip').map(function() {
-    //     return '<li>' + $(this).text() + '</li>';
-    // }).get().join('');
+//   return `<li>${$(this).text()}</li>`;
+
+// }).get().join('');
+
 
 return `
 <div class="p-box" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
@@ -1374,18 +1358,13 @@ return `
 
 
 
+//判斷 label 內有沒有 -
 function rLine() {
     $('.label > *').each(function() {
         const ts = $(this);
         const text = ts.text().trim();
-        
-        // 條件1：內容為 "-"
-      
-        // 條件2：同時包含 span 和 dash
         const hasSpan = ts.find('span').length > 0;
         const hasDash = text.indexOf('-') !== -1;
-
-
         if (text === '-') {
             ts.hide();
         }else if (hasSpan && hasDash) {
@@ -1393,29 +1372,57 @@ function rLine() {
         }
     });
 }
-// 年龄确认弹窗
+
+
 $(document).on('click', '.areU_18 a', function() {
     $('body.overflow_hidden').removeClass('overflow_hidden');
     $('.popup').remove();
 });
 
 // 获取随机图片
-function getRandomImage() {
-    var type = Math.floor(Math.random() * 2) + 1;
-    var prefix = type === 1 ? 'b00' : 'w00';
-    var randomNum = Math.floor(Math.random() * 30) + 1;
-    var numStr = randomNum < 10 ? '0' + randomNum : randomNum.toString();
-    var imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
+// function getRandomImage() {
+//     const or_1_2 = Math.floor(Math.random() * 2) + 1;
+//     const w00_or_b00 = or_1_2 === 1 ? 'b00' : 'w00';
+//     const randomNum = Math.floor(Math.random() * 30) + 1;
+//     const add_0 = randomNum < 10 ? '0' + randomNum : randomNum.toString();
+//     const imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + w00_or_b00 + add_0 + '-1.jpg">';
     
-    $('.popup > div').append(imagePath);
+//     $('.popup > div').append(imagePath);
+// }
+
+// getRandomImage();
+
+
+
+
+function getRandomImage() {
+
+    const or_1_2 = Math.floor(Math.random() * 2) + 1;
+
+    let w00_or_b00 = '';
+    
+    if (or_1_2 === 1) {
+        w00_or_b00 = 'b00';
+    } else {
+        w00_or_b00 = 'w00';
+    }
+    
+    const randomNum = Math.floor(Math.random() * 30) + 1;
+
+    let add_0 = 0;
+    
+    if (randomNum < 10) {
+        add_0 = '0' + randomNum;
+    } else {
+        add_0 = randomNum.toString();
+    }
+    
+    const popupBgImg = '<img class="popup_bg" src="../img_Alcohol/s/' + w00_or_b00 + add_0 + '-1.jpg">';
+    
+    $('.popup > div').append(popupBgImg);
 }
 
 getRandomImage();
-
-
-
-
-
 
 // function getRandomImage() {
 

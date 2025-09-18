@@ -1139,6 +1139,27 @@
     
 </alcohol_info>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- W_List -->
 
 <alcohol_info>
@@ -2311,6 +2332,9 @@
 	<num>w0048</num>
 	<type>notForSale dalmore</type>
 
+	<name_c>達摩</name_c>
+	<brand>Dalmore</brand>
+
 	<main_title>Dalmore</main_title>
 	<subtitle>Gran Reserva Single Malt Scotch Whisky</subtitle>
 
@@ -2468,14 +2492,14 @@
 
 	<distillation_year>-</distillation_year>
 	<bottling_year>-</bottling_year>
-	<age>-</age>
+	<age>17</age>
 	<capacity>700</capacity>
 	<strength>43.0</strength>
 
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>3</img_how_many>
+	<img_how_many>4</img_how_many>
 
 	<img_url>../img_Alcohol/s/w0055-1.jpg</img_url>
 	<num>w0055</num>
@@ -2617,6 +2641,23 @@
     <strength>40.0</strength>
 
 </alcohol_info>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- R_List -->
 
