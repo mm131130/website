@@ -101,13 +101,19 @@ footer img.logo_B{
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+
   gap: 12px;
   justify-content: center;
   padding: 0 18px;
-  /* max-width: 1350px; */
-  /* background-color: red; */
+
 }
 
+
+.vintages.pList {
+ 
+  grid-template-columns: repeat(auto-fit, minmax(270px, min(100%, 300px)));
+
+}
 
 
 
@@ -159,10 +165,6 @@ footer img.logo_B{
             background: #2980b9;
         }
 
-  
-
-
-
 .pagination{
 
     display: flex;
@@ -171,6 +173,7 @@ footer img.logo_B{
     gap: 10px;
 
 }
+
 .pagination .page-btn {
     font-size: 18px;
     line-height: 36px;
@@ -186,7 +189,6 @@ footer img.logo_B{
 
 }
 
-
 .pagination .page-btn.active{
 
     cursor: initial;
@@ -197,10 +199,6 @@ footer img.logo_B{
     transform: translateY(3px);
 
 }
-
-
-
-
 
 .p-box{
     font-family: didot;
@@ -284,6 +282,7 @@ footer img.logo_B{
     text-transform:uppercase;
     transform: rotate(-2.1deg);
 }
+
 .subtitle{
     font-size: 18px;
     line-height: 24px;
@@ -665,22 +664,9 @@ footer img.logo_B{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .three_line{
   cursor: pointer;
-
+  
   z-index: 150;
   overflow: hidden;
 
@@ -693,8 +679,10 @@ footer img.logo_B{
   background-color: #fff;
 
   box-shadow:
+
   0px 6px 2px rgba(0, 0, 0, 0.3), 
   0px 9px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 .three_line .line{
@@ -729,16 +717,16 @@ footer img.logo_B{
 .three_line.click{
   background-color: #5d0b24;
 }
-
 .three_line.click .line._a{
   background-color: #fff;
-  -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-  -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
-  transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
+    transform: rotate(0deg) translate(-50%, -50%) rotate(45deg);
 }
 .three_line.click .line._b{
   background-color: #fff;
-  left: -100%;
+
+    left: -100%;
 }
 .three_line.click .line._c{
   background-color: #fff;
@@ -749,22 +737,19 @@ footer img.logo_B{
 
 
 .three_line .line{
-  -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
-  transition: width , height , 0.3s ease-in-out , -webkit-transform;
-  -o-transition: transform , width , height , 0.3s ease-in-out;
-  transition: transform , width , height , 0.3s ease-in-out;
-  transition: transform , width , height , background-color , 0.3s ease-in-out , -webkit-transform; 
-  transition: transform , width , height , background-color , 0.3s ease-in-out; 
+    -webkit-transition: width , height , 0.3s ease-in-out , -webkit-transform;
+    transition: width , height , 0.3s ease-in-out , -webkit-transform;
+    -o-transition: transform , width , height , 0.3s ease-in-out;
+    transition: transform , width , height , 0.3s ease-in-out;
+    transition: transform , width , height , background-color , 0.3s ease-in-out , -webkit-transform; 
+    transition: transform , width , height , background-color , 0.3s ease-in-out; 
 }
-
-
-
-
-
 
 .click + .alcohol_menu {
   transform: translateX(54px); /* 顯示狀態 */
 }
+
+
 .alcohol_menu{
   position: fixed;
 
@@ -779,11 +764,24 @@ footer img.logo_B{
 
   padding:18px 0; 
 
-    box-shadow:
-
+  box-shadow:
   0px 6px 2px rgba(0, 0, 0, 0.3), 
   0px 9px 3px rgba(0, 0, 0, 0.2);
 }
+
+
+.alcohol_menu li:not(:first-child){
+
+  padding-top:9px;
+  border-top:1px #d1d1d1 solid; 
+
+
+
+
+}
+
+
+
 .alcohol_menu img{
   height: 100%;
   width: auto;
@@ -820,8 +818,8 @@ footer img.logo_B{
   background-color: #000;
   border-radius: 45px;
   padding: 0 9px;
-
 }
+
 .alcohol_menu a.click{
   color:#5d0b24;
 }
@@ -829,10 +827,7 @@ footer img.logo_B{
   /* color:#5d0b24; */
   font-family: modern_display;
   text-transform: uppercase;
-
-
 }
-
 
 .alcohol_menu a .cfff{
   display: none;
@@ -844,19 +839,9 @@ footer img.logo_B{
   display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
 .category{
   z-index: 50;
-  position: fixed;  
+  position: fixed;
 }
 
 .category a{
@@ -867,17 +852,15 @@ footer img.logo_B{
 }
 
 .category span{
+  font-family: roboto_light;
+  font-size: 12px;
+  color: #2f0612;
 
-font-family: roboto_light;
-font-size: 12px;
-color: #2f0612;
-
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 
 .category span:before{
-
   content: "/"; 
   display: inline-block; 
   width: 18px; 
@@ -887,10 +870,7 @@ opacity: 0.5;
 
 .productPage{
   z-index: 1;
-
 }
-
-
 
 .slide_show img{
   height: 100%;
@@ -915,6 +895,145 @@ opacity: 0.5;
  */
 
 
+/* .vintages{
+    z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+  gap: 12px;
+  justify-content: center;
+  padding: 0 18px;
+} */
+
+/* .vintages > div{
+  width: 300px;
+
+} */
+
+
+.vintages{
+
+
+}
+.yearBox{
+
+
+    letter-spacing: 0.027em;
+    background: white;
+    /* border: 1px solid red; */
+    border-radius: 9px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    /* padding: 18px; */
+    transition: transform 0.3s;
+    /* width: 300px; */
+    /* max-width: 360px; */
+    overflow: hidden;
+    padding: 18px;
+}
+
+.yearBox > div{
+  clear: both;
+
+  display:block;
+
+  font-size: 15px;
+  line-height: 18px;
+
+
+  width: 100%;
+
+  padding: 9px 0;
+
+}
+
+.yearBox .yearTitle{
+  font-family: roboto_light;
+  padding:0 0 18px 0;
+}
+
+.yearBox .yearItem{
+  position: relative;
+
+  font-size: 18px;
+  font-family: didot;
+  cursor: pointer;
+
+  padding-left:30px; 
+}
+.yearItem span{
+  display: block;
+  clear: both;
+}
+.yearTitle{
+
+}
+/* .color_whisky{
+  background-color:#8b4513 ;
+ 
+}
+.color_brandy{
+  background-color:#d2691e;
+
+}
+.color_wine{
+  position: relative;
+
+  /* padding-left:1em ; */
+
+
+.cup{
+  /* overflow: hidden; */
+  width: 27px;
+  height: 21px; 
+
+
+    position: absolute;
+  left: 0;
+
+}
+
+
+/* cup color_brandy */
+.color_whisky.cup:before,
+.color_brandy.cup:before,
+.color_wine.cup:before{
+
+  /* transform: translate(18px, 0); */
+
+  content: "";
+  display: inline-block;
+  width: 18px;         /* 小方塊寬 */
+  height: 12px;        /* 小方塊高 */
+  margin-right: 0.5em;
+  border-radius: 0 0 180px 180px; /* 稍微圓角 */
+
+}
+
+.color_whisky.cup:before{
+  /* background-color:#B87333 ; */
+  background-color:#a64b2a ;
+  transform: translate(0 , -3px);
+}
+.color_brandy.cup:before{
+  background-color:#b86b2a;
+  transform: rotate(-12deg) translate(0 , -3px);
+
+
+}
+.color_wine.cup:before{
+  background-color:#7b0323;
+  background-color:#5d0b24;
+  transform: rotate(12deg) translate(0 , -3px);
+
+
+}
+
+
+
+.cup{
+
+}
+
+
   </style>
 </head>
 
@@ -924,34 +1043,28 @@ opacity: 0.5;
 
 <body class="overflow_hidden">
 
-
-
-
 <div class="popup">
 
   <div>
 
-<div class="areU_18">
+    <div class="areU_18">
       <span>Are u</span>
       <span class="t_18">18</span>
       <!-- <span class="btn_note">if u have 18 years old clack this btn</span> -->
       <a class="btn_yes" href="#">yes</a>
-</div>
+    </div>
 
   </div>
   
 </div>
-
-
-
-
-
 
   <header class="">
     <img class="logo_A" src="../img_Alcohol/alcohol-logo-1.jpg">
     <img class="logo_B" src="../img_Alcohol/alcohol-logo-2.jpg">
   </header><!-- /header -->
 
+<!-- <button id="btnAAA">AAA</button>
+<div class="yearList"></div> -->
 
 <div class="three_line">
   <span class="line _a">&nbsp;</span>
@@ -963,17 +1076,18 @@ opacity: 0.5;
 <ul class="alcohol_menu">
 
   <li>
-    <a href="#" class="type click" data-type="whisky">
+    <a class="btn-vintages" href="#">時光機</a>
+  </li>
+
+
+  <li>
+    <a href="#" class="type" data-type="whisky">
       <img class="c000" src="../img_Alcohol/w_Wine.png"><img class="cfff" src="../img_Alcohol/w_Wine-r.png">藏
     </a>
 
     <div>
-      <a href="#" class="click" data-type="whisky">威士忌
-
-        <span class="itemNum whisky">0</span></a>
-
-
-      <a href="#" data-type="dalmore">Dalmore</a>
+      <a href="#" class="click" data-type="whisky">威士忌<span class="itemNum whisky">0</span></a>
+      <a href="#" data-type="Dalmore">Dalmore</a>
       <a href="#" data-type="macallan">Macallan</a>
       <a href="#" data-type="hibiki">Hibiki</a>
     </div>
@@ -986,42 +1100,121 @@ opacity: 0.5;
     <a href="#" data-type="wine">紅酒</a>
 
   </li>
+
   <li>
     <a class="type" href="#" data-type="notForSale">聞
       <img class="c000" src="../img_Alcohol/w_Smell.png">
       <img class="cfff" src="../img_Alcohol/w_Smell-r.png">
     </a>
   </li>
+
+
+
+
 <!--   <a href="#"><img src="../img_alcohol/w_Tea.png">甕</a>
   <a href="#">藏<img src="../img_alcohol/w_Word.png"></a>
  -->
 </ul>
 
+<div class="pList"></div>
 
+<footer class="">
 
+  <img class="logo_A" src="../img_Alcohol/alcohol-logo-1.jpg">
+  <img class="logo_B" src="../img_Alcohol/alcohol-logo-2.jpg">
 
-  <div class="pList"></div>
+</footer>
 
-
-  <footer class="">
-    <img class="logo_A" src="../img_Alcohol/alcohol-logo-1.jpg">
-    <img class="logo_B" src="../img_Alcohol/alcohol-logo-2.jpg">
-
-  </footer>
-
-
-
-
-
-
-  <!-- <div class="pagination"></div> -->
-
-
+<!-- <div class="pagination"></div> -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
 <script>
+
+// === AAA 年份列表功能 ===
+$(document).on('click', '.btn-vintages', function () {
+
+    var yearMap = {}; // { 1978: [ {brand:'Dalmore', type:'whisky'}, ... ], ... }
+    // 整理 psData 資料
+    for (let i = 0; i < psData.length; i++) {
+        const you = psData[i];
+        const year = you.find('distillation_year').text();
+        const brand = you.find('brand').text();
+        const type = you.find('type').text().toLowerCase().split(/\s+/)[0];
+        const num = you.find('num').text();
+        const hmi = you.find('img_how_many').text();
+
+
+        // 限制只取 1890~2000 年之間
+
+        if (year) {
+
+            const y = parseInt(year, 10);
+
+            if (y >= 1890 && y <= 2000) {
+
+                if (!yearMap[y]) {
+                    yearMap[y] = [];
+                }
+                
+                // yearMap[y].push({ brand: brand, type: type });
+
+yearMap[y].push({ 
+  brand: brand, 
+  type: type,
+  num: num,
+  hmi: hmi 
+});
+            }
+        }
+    }
+
+    // 取出所有年份並排序
+
+    const years = [];
+
+    for (const key in yearMap) {
+        if ( yearMap.hasOwnProperty(key) ) {
+            years.push(parseInt(key, 10));
+        }
+    }
+
+    years.sort( function ( a , b ) {
+     return b - a; 
+   });
+
+    // 組 HTML
+
+    let html = '';
+    for (let y = 0; y < years.length; y++) {
+        const year = years[y];
+        const brands = yearMap[year];
+
+        let brandHtml = '';
+
+        for (let j = 0; j < brands.length; j++) {
+            // brandHtml += '<div class="yearItem btn_pBox color_' + brands[j].type + '">' + brands[j].brand + '</div>';
+          brandHtml += 
+            `<div class="yearItem btn_pBox" data-id="${brands[j].num}" data-hmi="${brands[j].hmi}">
+
+            <div class="cup color_${brands[j].type}">&nbsp;</div>
+            <span class="num">${brands[j].num}</span>
+            ${brands[j].brand}</div>`;
+        }
+
+        html +=
+        `<div class="yearBox" data-year="${year}">
+          <div class="yearTitle">${year}</div>
+          ${brandHtml}
+        </div>`;
+    }
+
+    // 顯示在一個容器 (建議在 HTML 加 <div id="yearList"></div>)
+
+    $('.pList').addClass('vintages').html(html);
+    $('.pagination').remove();
+
+});
 
 var perPage = 30;
 var psData = [];
@@ -1029,14 +1222,12 @@ var currentFilter = '';
 var defaultFilter = 'whisky';
 var totalPages = 0;
 var filteredProducts = []; // 重命名以避免冲突
-
 var hmWhisky = 60;
 var hmBrandy = 45;
 
 $(window).on('load', function() {
 
     loadProductsData();
-    
     bindMenuEvents();
 
     $('.three_line').on('click', function() {
@@ -1044,7 +1235,6 @@ $(window).on('load', function() {
         return false;
     });
 });
-
 
 function loadProductsData() {
 
@@ -1066,7 +1256,6 @@ function loadProductsData() {
             rLine();
 
           $('span.itemNum.whisky').text(hmWhisky);
-  
           $('span.itemNum.brandy').text(hmBrandy);
         },
         error: function() {
@@ -1074,40 +1263,6 @@ function loadProductsData() {
         }
     });
 }
-
-
-
-
-// function hmTypeNum() {
-
-
-//   for (var i = 0; i < psData.length; i++) {
-//     var typeText = $.trim(psData[i].find('type').text()).toLowerCase();
-
-//     if (typeText.indexOf('whisky') !== -1) { hmWhisky++; }
-//     if (typeText.indexOf('brandy') !== -1) { hmBrandy++; }
-//   }
-
-//   // 確保這兩個 span 存在於頁面中
-//   $('.years').text(hmWhisky);
-//   $('.years').text(hmBrandy);
-// }
-
-
-  // $(document).on('click', '*[class*="b0017"]', function() {
-  //   window.open('b0017.html', '_blank');
-  //   return false;
-  // });
-
-// 解析产品数据
-// function parseProductsData(xml) {
-//     $(xml).find('alcohol_info').each(function() {
-//         psData.push($(this));
-//     });
-// }
-
-// 应用筛选
-
 
 function applyFilter(type) {
     currentFilter = type;
@@ -1118,35 +1273,24 @@ function applyFilter(type) {
     rLine();
 }
 
-// 筛选产品
+  // 取出 <type> 的內容，轉小寫並拆成陣列
+  // 檢查 tags 是否包含 typeLower
+
 function filterProducts(type) {
-    var result = [];
     var typeLower = type.toLowerCase();
-    
-    for (var i = 0; i < psData.length; i++) {
-        var $p = psData[i];
-        var pType = $p.find('type').text().toLowerCase();
-        var tags = pType.split(/\s+/);
-        
-        for (var j = 0; j < tags.length; j++) {
-            if (tags[j] === typeLower) {
-                result.push($p);
-                break;
-            }
-        }
-    }
-    
-    return result;
+    return psData.filter(function ($p) {
+
+      var tags = $p.find('type').text().toLowerCase().split(/\s+/);
+
+      return tags.includes(typeLower);
+    });
 }
 
-// 渲染所有产品
 function renderAllProducts() {
     totalPages = Math.ceil(psData.length / perPage);
     renderPagination(totalPages);
     render_ProductsListPage(1, psData);
 }
-
-// 绑定菜单事件
 
 function bindMenuEvents() {
 
@@ -1156,21 +1300,28 @@ function bindMenuEvents() {
         ts.find('a').on('click', function(e) {
             e.preventDefault();
 
-            let type = $(this).data('type');
-            applyFilter(type);
-
+        
             ts.find('.click').removeClass('click');
 
             $(this).addClass('click');
+
             $('.pList').removeClass().addClass('pList');
 
-            $('html, body').animate({ scrollTop: 0 }, 'smooth');  
+            $('html, body').animate({ scrollTop: 0 }, 'smooth');
+
+            $('.three_line').toggleClass('click');
+
+    let type = $(this).data('type');
+            applyFilter(type);
+
+
+
         });
 
-        ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
-            e.preventDefault();
-            $('.three_line').toggleClass('click');
-        });
+        // ts.find('a:not(.alcohol_menu > a:first-child)').on('click', function(e) {
+        //     e.preventDefault();
+        //     $('.three_line').toggleClass('click');
+        // });
     });
     
     // 分页事件绑定
@@ -1197,10 +1348,8 @@ function bindMenuEvents() {
       applyFilter(type);
     });
 
-
 }
 
-// 渲染分页
 function renderPagination(totalPages) {
     var html = '';
     for (var i = 1; i <= totalPages; i++) {
@@ -1210,9 +1359,9 @@ function renderPagination(totalPages) {
     $('.pList').after('<div class="pagination">' + html + '</div>');
 }
 
-// 渲染页面
 function render_ProductsListPage(page, list) {
-    var data = list || psData;
+    // var data = list || psData;
+    var data = list;
     var start = (page - 1) * perPage;
     var pageProducts = data.slice(start, start + perPage);
     var html = '';
@@ -1225,16 +1374,14 @@ function render_ProductsListPage(page, list) {
     $('.pList').html(html);
 }
 
-$(document).on('click', '.p-box', function () {
+$(document).on('click', '.btn_pBox', function () {
 
   if ($(this).data('hmi') !== 0) {
 
-  $('.pList').addClass('productPage');
-
-  const imgId = $(this).data('id'); 
-  
-  const product = psData.find( p => p.find('num').text() === imgId);
-  let categoryHtml = '';
+    $('.pList').addClass('productPage');
+    const imgId = $(this).data('id'); 
+    const product = psData.find( p => p.find('num').text() === imgId);
+    let categoryHtml = '';
 
   if (product) {
     const fullType = product.find('type').text();
@@ -1260,33 +1407,41 @@ $(document).on('click', '.p-box', function () {
       </div>`;
   }
 
-
-   const slideShowHtml = `
+  const slideShowHtml = `
     <div class="slide_show">
       <div class="img_Box">
         ${showImagesHtml}
       </div>
     </div>
   `;
-$('.pList').html(categoryHtml + slideShowHtml);
-$('.pagination').remove();
 
+$('.pList').removeClass().addClass('pList').html(categoryHtml + slideShowHtml);
+$('.pagination').remove();
 }
 
 $('html, body').animate({ scrollTop: 0 }, 'smooth');
 });
 
+
+
+
+
+
+
+
+
+
 function type_ProductsList($product) {
 
-// const notes = $product.find('notes tip').map(function() {
+  const notes = $product.find('notes tip').map(function() {
 
-//   return `<li>${$(this).text()}</li>`;
+    return `<li>${$(this).text()}</li>`;
 
-// }).get().join('');
+  }).get().join('');
 
 
 return `
-<div class="p-box" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
+<div class="p-box btn_pBox" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
     <img src="${$product.find('img_url').text()}">
     <div class="pInfo">
         <div class="num">
@@ -1294,7 +1449,7 @@ return `
             <span>${$product.find('name_c').text()}</span>
         </div>
         <div class="label">
-            <div class="ages"><span>AGES</span>${$product.find('age').text()}<span>YEARS</span></div>
+            <div class="ages"><span>AGE</span>${$product.find('age').text()}<span>YEARS</span></div>
             <div class="title">${$product.find('main_title').text()}</div>
             <div class="subtitle">${$product.find('subtitle').text()}</div>
             <div class="years">${$product.find('distillation_year').text()}</div>
@@ -1308,57 +1463,12 @@ return `
         <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
         <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
 
+
     </div>
 </div>
 `;
 }
 
-// function rLine() {
-
-// $('.label > *').each(function() {
-//   const text = $(this).text().trim();
-//     if (text === '-') {
-//       $(this).hide();
-//     }
-//   });
-
-
-
-//     const ts = $(this);
-//     const hasSpan = ts.find('span').length > 0;
-//     const hasDash = ts.text().indexOf('-') !== -1;
-
-//     if (hasSpan && hasDash) {
-//       $this.hide();
-//     }
-
-
-
-// }
-// function rLine() {
-//     // 第一部分：隱藏內容為 "-" 的元素
-//     $('.label > *').each(function() {
-//         const text = $(this).text().trim();
-//         if (text === '-') {
-//             $(this).hide();
-//         }
-//     });
-
-//     // 第二部分：修正變數問題
-//     $('.label > *').each(function() {
-//         const $this = $(this); // 正確的變數宣告
-//         const hasSpan = $this.find('span').length > 0;
-//         const hasDash = $this.text().indexOf('-') !== -1;
-
-//         if (hasSpan && hasDash) {
-//             $this.hide();
-//         }
-//     });
-// }
-
-
-
-//判斷 label 內有沒有 -
 function rLine() {
     $('.label > *').each(function() {
         const ts = $(this);
@@ -1373,27 +1483,10 @@ function rLine() {
     });
 }
 
-
 $(document).on('click', '.areU_18 a', function() {
     $('body.overflow_hidden').removeClass('overflow_hidden');
     $('.popup').remove();
 });
-
-// 获取随机图片
-// function getRandomImage() {
-//     const or_1_2 = Math.floor(Math.random() * 2) + 1;
-//     const w00_or_b00 = or_1_2 === 1 ? 'b00' : 'w00';
-//     const randomNum = Math.floor(Math.random() * 30) + 1;
-//     const add_0 = randomNum < 10 ? '0' + randomNum : randomNum.toString();
-//     const imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + w00_or_b00 + add_0 + '-1.jpg">';
-    
-//     $('.popup > div').append(imagePath);
-// }
-
-// getRandomImage();
-
-
-
 
 function getRandomImage() {
 
@@ -1424,50 +1517,95 @@ function getRandomImage() {
 
 getRandomImage();
 
+</script>
+
+<script>
+// 绑定菜单事件
+
+// function bindMenuEvents() {
+
+//     $('.alcohol_menu').each(function() {
+//         let ts = $(this);
+
+//         // .alcohol_menu a:not(:first-child)
+        
+//         ts.find('a').on('click', function(e) {
+//             e.preventDefault();
+
+//             let type = $(this).data('type');
+//             applyFilter(type);
+
+//             ts.find('.click').removeClass('click');
+
+//             $(this).addClass('click');
+
+//             $('.pList').removeClass(productPage).addClass('pList');
+
+//             $('html, body').animate({ scrollTop: 0 }, 'smooth');  
+//         });
+
+//         ts.find('a').on('click', function(e) {
+//             e.preventDefault();
+//             $('.three_line').toggleClass('click');
+//         });
+//     });
+//     $(document).on('click', '.pagination .page-btn', function() {
+//         var page = $(this).data('page');
+//         if (currentFilter) {
+//             render_ProductsListPage(page, filteredProducts);
+//         } else {
+//             render_ProductsListPage(page, psData);
+//         }     
+//         $('.pagination .page-btn').removeClass('active');
+//         $(this).addClass('active');
+//         rLine();
+//     });
+//     $(document).on('click', '.category a', function(e) {
+//       $('.pList').removeClass().addClass('pList');
+//       e.preventDefault();
+//       let type = $(this).data('type');
+//       applyFilter(type);
+//     });
+// }
+// 筛选产品
+// function filterProducts(type) {
+//     var result = [];
+//     var typeLower = type.toLowerCase();
+    
+//     for (var i = 0; i < psData.length; i++) {
+//         var $p = psData[i];
+//         var pType = $p.find('type').text().toLowerCase();
+//         var tags = pType.split(/\s+/);
+        
+//         for (var j = 0; j < tags.length; j++) {
+//             if (tags[j] === typeLower) {
+//                 result.push($p);
+//                 break;
+//             }
+//         }
+//     }
+    
+//     return result;
+// }
+// var pType = $p.find('type').text().toLowerCase();
+// var tags = pType.split(/\s+/);
+// if (tags[j] === typeLower) {
+//     result.push($p);
+// }
+// 渲染所有产品
+
+// 获取随机图片
 // function getRandomImage() {
-
-//   var type = 0;
-//   var prefix ='';
-//   var randomNum = 0;
-//   var numStr ='';
-//   var imagePath = '';
-  
-
-//   if (Math.floor(Math.random() * 2) + 1 < 2) {
-
-
-//     type = 1;
-//   } else {
-//     type = 2;
-//   }
-  
-
-//   if (type === 1) {
-//     prefix = 'b00';
-//   } else {
-//     prefix = 'w00';
-//   }
-  
-
-//   randomNum = Math.floor(Math.random() * 30) + 1;
-  
-
-//   if (randomNum < 10) {
-//     numStr = '0' + randomNum.toString();
-//   } else {
-//     numStr = randomNum.toString();
-//   }
-
-
-
-//   imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + prefix + numStr + '-1.jpg">';
-
-// $('.popup > div').append(imagePath);
-
+//     const or_1_2 = Math.floor(Math.random() * 2) + 1;
+//     const w00_or_b00 = or_1_2 === 1 ? 'b00' : 'w00';
+//     const randomNum = Math.floor(Math.random() * 30) + 1;
+//     const add_0 = randomNum < 10 ? '0' + randomNum : randomNum.toString();
+//     const imagePath = '<img class="popup_bg" src="../img_Alcohol/s/' + w00_or_b00 + add_0 + '-1.jpg">';
+    
+//     $('.popup > div').append(imagePath);
 // }
 
-
-
+// getRandomImage();
 </script>
 
 </body>
