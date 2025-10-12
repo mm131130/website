@@ -613,28 +613,28 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>3</img_how_many>
+	<img_how_many>2</img_how_many>
 
 	<img_url>../img_Alcohol/s/b0025-1.jpg</img_url>
 	<num>b0025</num>
-	<type>brandy lheraud</type>
+	<type>brandy</type>
 
-	<name_c>利豪</name_c>
-	<brand>Lhéraud</brand>
+	<name_c>法拉賓</name_c>
+	<brand>Frapin</brand>
 
-	<main_title>Fine Champagne</main_title>
-	<subtitle>Lhéraud</subtitle>
+	<main_title>Cognac Frapin XO</main_title>
+	<subtitle>Grande Champagne</subtitle>
 
 	<origin>France</origin>
 	<area>Cognac</area>
-	<subarea>Fine Champagne</subarea>
+	<subarea>Grande Champagne</subarea>
 
-    <distillation_year>1949</distillation_year>
-    <bottling_year>20100124</bottling_year>
-    <age>61</age>
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
     <capacity>700</capacity>
-    <strength>42.3</strength>
-  
+    <strength>40.0</strength>
+    
 </alcohol_info>
 
 <alcohol_info>
@@ -663,24 +663,24 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>2</img_how_many>
+	<img_how_many>3</img_how_many>
 
 	<img_url>../img_Alcohol/s/b0027-1.jpg</img_url>
 	<num>b0027</num>
-	<type>brandy lheraud</type>
+	<type>brandy</type>
 
-	<name_c>利豪</name_c>
-	<brand>Lhéraud</brand>
-
-	<main_title>Vieil-Armagnac</main_title>
-	<subtitle>Baron G. Legrand&lt;br/&gt;Guy Lhéraud</subtitle>
+	<name_c>德魯茲</name_c>
+	<brand>De Luze</brand>
+	
+	<main_title>The 200th Anniversary of France Revolution</main_title>
+	<subtitle>Grand Cognac De Luze</subtitle>
 	<origin>France</origin>
-	<area>Armagnac</area>
-	<subarea>Bas</subarea>
+	<area>Cognac</area>
+	<subarea>Grande Champagne</subarea>
 
-    <distillation_year>1931</distillation_year>
-    <bottling_year>20060417</bottling_year>
-    <age>75</age>
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
     <capacity>700</capacity>
     <strength>40.0</strength>
     
