@@ -407,7 +407,7 @@
 	<img_how_many>1</img_how_many>
 
 	<img_url>../img_Alcohol/s/b0017-1.jpg</img_url>
-	<!-- <num>b0017-1951 to 1995</num> -->
+
 	<num>b0017</num>
 
 	<type>brandy</type>
@@ -417,6 +417,8 @@
 
 	<main_title>S.Havion-Ehny</main_title>
 	<subtitle>Négociant-Éleveur</subtitle>
+	<!-- <num>b0017-1951 to 1995</num> -->
+
 <!-- 
 	<main_title>S.Havion-Ehny</main_title>
 	<subtitle>Négociant-Éleveur</subtitle> -->
@@ -1306,7 +1308,7 @@
  	
     <distillation_year>19990622</distillation_year>
     <bottling_year>20090401</bottling_year>
-    <age>9</age>
+    <age>10</age>
     <capacity>700</capacity>
     <strength>43.3</strength>
 
@@ -1412,7 +1414,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>0</img_how_many>
+	<img_how_many>1</img_how_many>
 
 	<img_url>../img_Alcohol/s/empty.jpg</img_url>
 	<num>w0011</num>
@@ -1785,7 +1787,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>3</img_how_many>
+	<img_how_many>4</img_how_many>
 
 	<img_url>../img_Alcohol/s/w0026-1.jpg</img_url>
 	<num>w0026</num>
@@ -1809,7 +1811,7 @@
 </alcohol_info>
 
 <alcohol_info>
-	<img_how_many>1</img_how_many>
+	<img_how_many>4</img_how_many>
 
 	<img_url>../img_Alcohol/s/w0027-1.jpg</img_url>
 	<num>w0027</num>

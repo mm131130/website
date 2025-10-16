@@ -1078,7 +1078,45 @@ footer img.logo_B{
 }
 
 
-  </style>
+.btnLR{
+
+  position: fixed;
+  z-index: 50;
+  top:33.3333% ;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.btnLR a {
+  display: inline-block;
+    font-family: didot;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5d0b24;
+    text-transform: uppercase;
+
+    padding:0 27px 0 9px;
+    margin:0 0 0 27px;
+
+    background-color: #fff;
+}
+
+.btnLR a:first-child {
+
+    padding:0 9px 0 27px;
+    margin:0 27px 0 0 ;
+
+}
+
+
+
+
+
+
+
+
+
+</style>
 </head>
 
 
@@ -1265,7 +1303,6 @@ function applyFilter(type) {
 
     itemTypeList = filterProducts(type);
     totalPages = Math.ceil( itemTypeList.length / perPage );
-
     buildProductsListPage( 1 , itemTypeList );
     buildPagination( totalPages );
 
@@ -1367,7 +1404,7 @@ function html_Products($product) {
 
 
 return `
-<div class="p-box btn_pBox" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
+<div class="p-box btn-spBox" data-id="${$product.find('num').text()}" data-hmi="${$product.find('img_how_many').text()}">
     <img src="${$product.find('img_url').text()}">
     <div class="pInfo">
         <div class="num">
@@ -1394,56 +1431,93 @@ return `
 `;
 }
 
-$(document).on('click', '.btn_pBox', function () {
-
-  // nowShow = $(this).index();
-  let categoryHtml = '';
-  let showImagesHtml = '';
-
-  if ($(this).data('hmi') !== 0) {
-
-    $('.pList').addClass('productPage');
-    const imgId = $(this).data('id'); 
-    const product = psData.find( p => p.find('num').text() === imgId);
-    const imgNum = product.find('img_how_many').text();
-
-    if (product) {
-      const fullType = product.find('type').text();
-      const brand = product.find('brand').text();
-      const type = fullType.split(' ')[0];
 
 
-      categoryHtml = `
-        <div class="category">
-          <a href="#" data-type="${type}">${type}</a><span>${brand}</span>
-        </div>
-      `;
+let nowShow = 0;
 
-      applyFilter(type);
+$(document).on('click', '.btn-spBox', function () {
+
+  const imgId = $(this).data('id');
+  nowShow = itemTypeList.findIndex(p => p.find('num').text() === imgId);
+
+  showProductDetail(nowShow);
+});
+
+// 左右按鈕點擊事件
+$(document).on('click', '.btn-L, .btn-R', function (e) {
+  e.preventDefault();
+
+  if (itemTypeList.length === 0) return;
+
+  if ($(this).hasClass('btn-L')) {
+    nowShow--;
+    if (nowShow < 0) {
+      nowShow = itemTypeList.length - 1; // 超過第一個 → 回到最後一個
     }
-
-    for (let i = 1; i <= imgNum; i++) {
-      showImagesHtml += `
-        <div>
-          <img src="../img_Alcohol/b/${imgId}-${i}.jpg">
-        </div>`;
+  } else if ($(this).hasClass('btn-R')) {
+    nowShow++;
+    if (nowShow >= itemTypeList.length) {
+      nowShow = 0; // 超過最後一個 → 回到第一個
     }
-
-    const slideShowHtml = `
-      <div class="slide_show">
-        <div class="img_Box">
-          ${showImagesHtml}
-        </div>
-      </div>
-    `;
-
-  $('.pList').removeClass().addClass('pList').html(categoryHtml + slideShowHtml );
-  $('.pagination').remove();
-
   }
 
-$('html, body').animate({ scrollTop: 0 }, 'smooth');
+  showProductDetail(nowShow);
 });
+
+
+
+// === 顯示單一產品的細節頁 ===
+function showProductDetail(index) {
+
+  const product = itemTypeList[index];
+  if (!product) return;
+
+  const imgId = product.find('num').text();
+  const imgNum = product.find('img_how_many').text();
+  const fullType = product.find('type').text();
+  const type = fullType.split(' ')[0];
+  const brand = product.find('brand').text();
+
+  // 頁面內容
+  const categoryHtml = `
+    <div class="category">
+      <a href="#" data-type="${type}">${type}</a><span>${brand}</span>
+    </div>
+  `;
+
+  let showImagesHtml = '';
+  for (let i = 1; i <= imgNum; i++) {
+    showImagesHtml += `
+      <div><img src="../img_Alcohol/b/${imgId}-${i}.jpg"></div>
+    `;
+  }
+
+  const slideShowHtml = `
+    <div class="slide_show">
+      <div class="img_Box">${showImagesHtml}</div>
+    </div>
+  `;
+
+  const btn_LR_Html = `
+    <div class="btnLR">
+      <a href="#" class="btn-L">← Prev</a>
+      <a href="#" class="btn-R">Next →</a>
+    </div>
+  `;
+
+  $('.pList')
+    .removeClass()
+    .addClass('pList productPage')
+    .html(categoryHtml + slideShowHtml + btn_LR_Html);
+
+  $('.pagination').remove();
+
+  $('html, body').animate({ scrollTop: 0 }, 'smooth');
+}
+
+
+
+
 
 
 
@@ -1458,8 +1532,6 @@ $('html, body').animate({ scrollTop: 0 }, 'smooth');
         rLine();
     });
 
-
-
     $(document).on('click', '.category a', function(e) {
 
       $('.pList').removeClass().addClass('pList');
@@ -1469,12 +1541,21 @@ $('html, body').animate({ scrollTop: 0 }, 'smooth');
       applyFilter(type);
     });
 
-
-
     $(document).on('click', '.three_line ', function() {
         $(this).toggleClass('click');
         return false;
     });
+  
+// $(document).on('click', '.btn-L, .btn-R', function() {
+  
+//     if ( $(this).hasClass('btn-L')) {
+
+
+//     } else if ( $(this).hasClass('btn-R')) {
+
+
+//     }
+// });
 
 
 
@@ -1528,7 +1609,7 @@ $(document).on('click', '.btn-vintages', function () {
         for (let j = 0; j < brands.length; j++) {
     
           htmlBrand += 
-            `<div class="yearItem btn_pBox" data-id="${brands[j].num}" data-hmi="${brands[j].hmi}">
+            `<div class="yearItem btn-spBox" data-id="${brands[j].num}" data-hmi="${brands[j].hmi}">
               <div class="color_${brands[j].type}">&nbsp;</div>
               <span class="num">${brands[j].num}</span>
               ${brands[j].brand}
@@ -1589,6 +1670,8 @@ $(window).on('load', function() {
   bindMenuEvents();
 
 });
+
+
 
 </script>
 
