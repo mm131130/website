@@ -1329,34 +1329,7 @@ function rLine() {
 
 
 
-function bindMenuEvents() {
 
-    $('.alcohol_menu').each(function() {
-
-        let ts = $(this);
-        
-        ts.find('a').on('click', function(e) {
-
-          e.preventDefault();
-
-          ts.find('.click').removeClass('click');
-
-          $(this).addClass('click');
-
-          $('.pList').removeClass().addClass('pList');
-
-          $('html, body').animate({ scrollTop: 0 }, 'smooth');
-
-          $('.three_line').toggleClass('click');
-
-          let type = $(this).data('type');
-          
-          applyFilter(type);
-
-        });
-    });
-
-}
 
 
 
@@ -1435,13 +1408,37 @@ return `
 
 let nowShow = 0;
 
+// $(document).on('click', '.btn-spBox', function () {
+
+//   const imgId = $(this).data('id');
+//   nowShow = itemTypeList.findIndex(p => p.find('num').text() === imgId);
+
+//   showProductDetail(nowShow);
+// });
+
+
 $(document).on('click', '.btn-spBox', function () {
-
   const imgId = $(this).data('id');
-  nowShow = itemTypeList.findIndex(p => p.find('num').text() === imgId);
+  let listToUse;
 
+  // 如果是 vintages 頁面的按鈕，就用 psData
+  if ($(this).hasClass('yearItem')) {
+    listToUse = psData;
+  } else {
+    listToUse = itemTypeList;
+  }
+
+  // 找出這個產品在目前清單中的位置
+  nowShow = listToUse.findIndex(p => p.find('num').text() === imgId);
+  if (nowShow === -1) return;
+
+  // 記住目前使用的清單（供左右切換用）
+  itemTypeList = listToUse;
+
+  // 顯示該產品
   showProductDetail(nowShow);
 });
+
 
 // 左右按鈕點擊事件
 $(document).on('click', '.btn-L, .btn-R', function (e) {
