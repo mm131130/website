@@ -1049,7 +1049,7 @@
 
 	<img_url>../img_Alcohol/s/b0042-1.jpg</img_url>
 	<num>b0042</num>
-	<type>notForSale</type>
+	<type>brandy notForSale</type>
 
 	<name_c>皮爾帕門</name_c>
 	<brand>Pierre Balmain</brand>
@@ -1074,7 +1074,7 @@
 
 	<img_url>../img_Alcohol/s/b0043-1.jpg</img_url>
 	<num>b0043</num>
-	<type>notForSale</type>
+	<type>brandy notForSale</type>
 
 	<name_c>-</name_c>
 	<brand>Raymond Ragnaud</brand>
@@ -1098,7 +1098,7 @@
 
 	<img_url>../img_Alcohol/s/b0044-1.jpg</img_url>
 	<num>b0044</num>
-	<type>notForSale</type>
+	<type>brandy notForSale</type>
 
 	<name_c>-</name_c>
 	<brand>Raymond Ragnaud</brand>
@@ -2307,7 +2307,7 @@
 
 	<img_url>../img_Alcohol/s/w0047-1.jpg</img_url>
 	<num>w0047</num>
-	<type>notForSale dalmore</type>
+	<type>whisky notForSale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2332,7 +2332,7 @@
 
 	<img_url>../img_Alcohol/s/w0048-1.jpg</img_url>
 	<num>w0048</num>
-	<type>notForSale dalmore</type>
+	<type>whisky notForSale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2357,7 +2357,7 @@
 
 	<img_url>../img_Alcohol/s/w0049-1.jpg</img_url>
 	<num>w0049</num>
-	<type>notForSale dalmore</type>
+	<type>whisky notForSale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2382,7 +2382,7 @@
 
 	<img_url>../img_Alcohol/s/w0050-1.jpg</img_url>
 	<num>w0050</num>
-	<type>notforsale dalmore</type>
+	<type>whisky notforsale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>
@@ -2407,7 +2407,7 @@
 
 	<img_url>../img_Alcohol/s/w0051-1.jpg</img_url>
 	<num>w0051</num>
-	<type>notforsale dalmore</type>
+	<type>whisky notforsale dalmore</type>
 
 	<name_c>達摩</name_c>
 	<brand>Dalmore</brand>

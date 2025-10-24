@@ -97,23 +97,26 @@ footer img.logo_B{
 
 
 
+
 .pList {
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(270px, min(100%, 300px)));
 
   gap: 12px;
   justify-content: center;
   padding: 0 18px;
 
 }
-
+.pList.productPage{
+  grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+}
 
 .vintages.pList {
- 
   grid-template-columns: repeat(auto-fit, minmax(270px, min(100%, 300px)));
 
 }
+
 
 
 
@@ -1261,43 +1264,59 @@ function bindMenuEvents() {
 
     $('.alcohol_menu').each(function() {
 
-        let ts = $(this);
+      let ts = $(this);
         
-        ts.find('a').on('click', function(e) {
+      ts.find('a').on('click', function(e) {
 
-            e.preventDefault();
+        e.preventDefault();
 
-            ts.find('.click').removeClass('click');
+        ts.find('.click').removeClass('click');
 
-            $(this).addClass('click');
+        $(this).addClass('click');
 
-            $('.pList').removeClass().addClass('pList');
+        $('.pList').removeClass().addClass('pList');
 
-            $('html, body').animate({ scrollTop: 0 }, 'smooth');
+        $('html, body').animate({ scrollTop: 0 }, 'smooth');
 
-            $('.three_line').toggleClass('click');
+        $('.three_line').toggleClass('click');
 
-            let type = $(this).data('type');
-            applyFilter(type);
+        let type = $(this).data('type');
+        applyFilter(type);
 
-        });
+      });
 
     });
 }
+
+// function filterProducts(type) {
+
+//     const typeLower = type.toLowerCase();
+
+//     return psData.filter(function ( $p ) {
+
+//       const tags = $p.find('type').text().toLowerCase().split(/\s+/);
+//       return tags.includes(typeLower);
+//     });
+// }
 
 function filterProducts(type) {
+  const typeLower = type.toLowerCase();
 
-    const typeLower = type.toLowerCase();
+  return psData.filter(function ($p) {
+    const pTypeText = $p.find('type').text().toLowerCase();
+    const tags = pTypeText.split(/\s+/);
 
-    return psData.filter(function ( $p ) {
+    if (typeLower === 'notforsale') {
+      return tags.includes('notforsale');
+    }
 
-      const tags = $p.find('type').text().toLowerCase().split(/\s+/);
-      return tags.includes(typeLower);
+    if (tags.includes('notforsale')) {
+      return false;
+    }
 
-    });
+    return tags.includes(typeLower);
+  });
 }
-
-
 
 function applyFilter(type) {
 
@@ -1305,10 +1324,8 @@ function applyFilter(type) {
     totalPages = Math.ceil( itemTypeList.length / perPage );
     buildProductsListPage( 1 , itemTypeList );
     buildPagination( totalPages );
-
     rLine();
 }
-
 
 function rLine() {
     $('.label > *').each(function() {
@@ -1325,15 +1342,6 @@ function rLine() {
     });
 }
 
-
-
-
-
-
-
-
-
-
 function buildPagination( totalPages ) {
     let html_Pagination = '';
 
@@ -1345,11 +1353,6 @@ function buildPagination( totalPages ) {
 
     $('.pList').after('<div class="pagination">' + html_Pagination + '</div>');
 }
-
-
-
-
-
 
 function buildProductsListPage( page , list ) {
     let html_ProductsPage = '';
@@ -1398,7 +1401,7 @@ return `
         <div><span>ages</span>${$product.find('age').text()}</div>
         <div><span>capacity</span>${$product.find('capacity').text()}<span class="unit">ml</span></div>
         <div><span>strength</span>${$product.find('strength').text()}<span class="unit">%</span></div>
-<ul class="note">${ notes }</ul>
+
     </div>
 </div>
 `;
@@ -1407,15 +1410,6 @@ return `
 
 
 let nowShow = 0;
-
-// $(document).on('click', '.btn-spBox', function () {
-
-//   const imgId = $(this).data('id');
-//   nowShow = itemTypeList.findIndex(p => p.find('num').text() === imgId);
-
-//   showProductDetail(nowShow);
-// });
-
 
 $(document).on('click', '.btn-spBox', function () {
   const imgId = $(this).data('id');
@@ -1428,19 +1422,12 @@ $(document).on('click', '.btn-spBox', function () {
     listToUse = itemTypeList;
   }
 
-  // 找出這個產品在目前清單中的位置
   nowShow = listToUse.findIndex(p => p.find('num').text() === imgId);
   if (nowShow === -1) return;
-
-  // 記住目前使用的清單（供左右切換用）
   itemTypeList = listToUse;
-
-  // 顯示該產品
   showProductDetail(nowShow);
 });
 
-
-// 左右按鈕點擊事件
 $(document).on('click', '.btn-L, .btn-R', function (e) {
   e.preventDefault();
 
@@ -1461,14 +1448,10 @@ $(document).on('click', '.btn-L, .btn-R', function (e) {
   showProductDetail(nowShow);
 });
 
-
-
-// === 顯示單一產品的細節頁 ===
 function showProductDetail(index) {
 
   const product = itemTypeList[index];
   if (!product) return;
-
   const imgId = product.find('num').text();
   const imgNum = product.find('img_how_many').text();
   const fullType = product.find('type').text();
@@ -1483,6 +1466,7 @@ function showProductDetail(index) {
   `;
 
   let showImagesHtml = '';
+
   for (let i = 1; i <= imgNum; i++) {
     showImagesHtml += `
       <div><img src="../img_Alcohol/b/${imgId}-${i}.jpg"></div>
@@ -1512,14 +1496,7 @@ function showProductDetail(index) {
   $('html, body').animate({ scrollTop: 0 }, 'smooth');
 }
 
-
-
-
-
-
-
-
-    $(document).on('click', '.pagination .page-btn', function() {
+  $(document).on('click', '.pagination .page-btn', function() {
         var page = $(this).data('page');
         
         buildProductsListPage(page, itemTypeList);
