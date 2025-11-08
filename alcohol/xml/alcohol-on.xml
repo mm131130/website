@@ -301,30 +301,7 @@
     
 </alcohol_info>
 
-<alcohol_info>
-	<img_how_many>1</img_how_many>
 
-	<img_url>../img_Alcohol/s/b0013-1.jpg</img_url>
-	<num>b0013</num>
-	<type>brandy</type>
-	
-	<name_c>-</name_c>
-	<brand>Pearle</brand>
-
-	<main_title>Pearle de Brillet</main_title>
-	<subtitle>Liqueur</subtitle>
-
-	<origin>France</origin>
-	<area>Cognac</area>
-	<subarea>-</subarea>
-
-    <distillation_year>-</distillation_year>
-    <bottling_year>-</bottling_year>
-    <age>-</age>
-    <capacity>750</capacity>
-    <strength>24</strength>
-    
-</alcohol_info>
 
 <alcohol_info>
 	<img_how_many>2</img_how_many>
@@ -469,7 +446,7 @@
 	<num>b0019</num>
 	<type>brandy</type>
 
-	<name_c>古殿</name_c>
+	<name_c>卡帝耶干邑</name_c>
 	<brand>Gautier</brand>
 
 	<main_title>Gautier</main_title>
@@ -554,7 +531,7 @@
 
 	<origin>France</origin>
 	<area>Armagnac</area>
-	<subarea>-</subarea>
+	<subarea>Vieil-Armagnac</subarea>
 
     <distillation_year>1959</distillation_year>
     <bottling_year>-</bottling_year>
@@ -809,7 +786,7 @@
 
     <distillation_year>-</distillation_year>
     <bottling_year>-</bottling_year>
-    <age>20</age>
+    <age>25</age>
     <capacity>700</capacity>
     <strength>43.0</strength>
 
@@ -878,7 +855,6 @@
 
 	<main_title>Hine XO</main_title>
 	<subtitle>-</subtitle>
-
 
 	<origin>France</origin>
 	<area>Cognac</area>
@@ -1005,7 +981,6 @@
 	<main_title>Chabot</main_title>
 	<subtitle>Armagnac</subtitle>
 
-
 	<origin>France</origin>
 	<area>Armagnac</area>
 	<subarea>-</subarea>
@@ -1030,7 +1005,6 @@
 
 	<main_title>Chabot</main_title>
 	<subtitle>Armagnac</subtitle>
-
 
 	<origin>France</origin>
 	<area>Armagnac</area>
@@ -2838,5 +2812,30 @@
     
 </alcohol_info>
 
+<alcohol_info>
+	<img_how_many>1</img_how_many>
+
+	<img_url>../img_Alcohol/s/s0008-1.jpg</img_url>
+	<num>s0008</num>
+	<type>brandy</type>
+	
+	<name_c>嘉蘭梨汁香甜酒</name_c>
+	<brand>Pearle</brand>
+
+	<main_title>Pearle de Brillet</main_title>
+	<subtitle>Liqueur</subtitle>
+	<!-- Pearle de Brillet Liqueur Cognac -->
+	<origin>France</origin>
+	<area>Cognac</area>
+	<subarea>-</subarea>
+
+    <distillation_year>-</distillation_year>
+    <bottling_year>-</bottling_year>
+    <age>-</age>
+    <capacity>750</capacity>
+    <strength>24</strength>
+    
+	
+</alcohol_info>
 
 </products_list>
