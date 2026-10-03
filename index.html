@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>留言板</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.message {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.time {
+    color: #888;
+    font-size: 13px;
+}
+
+.text {
+    margin-top: 8px;
+    white-space: pre-wrap;
+}
+</style>
+</head>
+
+<body>
+
+<h1>留言板</h1>
+
+<input id="name" placeholder="姓名">
+
+<textarea id="message" placeholder="請輸入留言"></textarea>
+
+<button onclick="sendMessage()">發表留言</button>
+
+<p id="status"></p>
+
+<hr>
+
+<h2>所有留言</h2>
+
+<div id="list">載入中...</div>
+
+<script>
+
+// 填入你的 Google Apps Script Web App 網址
+const API_URL = "https://script.google.com/macros/s/你的ID/exec";
+
+
+// 讀取留言
+function loadMessages() {
+
+    fetch(API_URL)
+    .then(response => response.json())
+    .then(data => {
+
+        const list = document.getElementById("list");
+
+        list.innerHTML = "";
+
+        data.messages.forEach(item => {
+
+            const div = document.createElement("div");
+
+            div.className = "message";
+
+            div.innerHTML = `
+                <div class="name"></div>
+                <div class="text"></div>
+                <div class="time"></div>
+            `;
+
+            div.querySelector(".name").textContent = item.name;
+            div.querySelector(".text").textContent = item.message;
+            div.querySelector(".time").textContent = item.time;
+
+            list.appendChild(div);
+        });
+
+    })
+    .catch(error => {
+
+        document.getElementById("list").textContent =
+            "讀取失敗：" + error;
+
+    });
+}
+
+
+// 發表留言
+function sendMessage() {
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+    const status =
+        document.getElementById("status");
+
+    if (!name || !message) {
+
+        status.textContent = "請輸入姓名和留言";
+
+        return;
+    }
+
+    status.textContent = "送出中...";
+
+    fetch(API_URL, {
+
+        method: "POST",
+
+        body: JSON.stringify({
+            action: "add",
+            name: name,
+            message: message
+        })
+
+    })
+    .then(response => response.json())
+    .then(data => {
+
+        if (!data.success) {
+            throw new Error(data.error);
+        }
+
+        document.getElementById("name").value = "";
+        document.getElementById("message").value = "";
+
+        status.textContent = "留言成功";
+
+        loadMessages();
+
+    })
+    .catch(error => {
+
+        status.textContent =
+            "發生錯誤：" + error.message;
+
+    });
+}
+
+
+// 開啟網頁時載入留言
+loadMessages();
+
+</script>
+
+</body>
+</html>
