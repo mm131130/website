@@ -1,0 +1,893 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+<title>留言板</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<style>
+
+body {
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background: #eef5e8;
+    color: #4f5947;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   登入頁
+   ========================= */
+
+#loginPage {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 35px;
+
+    background: #fffdf4;
+
+    border: 3px solid #c9d8b8;
+    border-radius: 28px;
+
+    box-shadow: 0 8px 20px rgba(75, 90, 65, 0.15);
+
+    text-align: center;
+}
+
+
+/* 登入頁標題 */
+
+#loginPage h1 {
+    margin: 0 0 8px 0;
+
+    color: #647955;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+/* 登入頁副標題 */
+
+#loginPage p {
+    margin: 0 0 25px 0;
+
+    color: #9a9f8c;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* 登入輸入框 */
+
+#loginPage input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 16px;
+    margin: 7px 0;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    border: 2px solid #d7e3c8;
+    border-radius: 16px;
+
+    background: #fffef8;
+    color: #4f5947;
+
+    outline: none;
+}
+
+
+#loginPage input:focus {
+    border-color: #9fb58e;
+}
+
+
+/* 登入按鈕 */
+
+#loginButton {
+    width: 100%;
+
+    padding: 13px;
+    margin-top: 14px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #8fa879;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+#loginButton:hover {
+    background: #789361;
+}
+
+
+/* =========================
+   留言板
+   ========================= */
+
+#boardPage {
+    display: none;
+}
+
+
+/* =========================
+   留言輸入區
+   ========================= */
+
+textarea {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+
+    padding: 16px 18px;
+
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    letter-spacing: 0.5px;
+
+    border: 2px solid #c9d8b8;
+    border-radius: 20px;
+
+    background: #fffdf4;
+    color: #4f5947;
+
+    resize: vertical;
+    outline: none;
+
+    box-shadow: 0 4px 10px rgba(75, 90, 65, 0.08);
+}
+
+
+textarea::placeholder {
+    color: #b1b6a5;
+    letter-spacing: 1px;
+}
+
+
+textarea:focus {
+    border-color: #9fb58e;
+}
+
+
+/* =========================
+   一般按鈕
+   ========================= */
+
+button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 18px;
+
+    background: #9caf88;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #819a6b;
+}
+
+
+/* =========================
+   狀態文字
+   ========================= */
+
+#status {
+    margin: 12px 3px;
+
+    color: #899b76;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   留言卡片
+   ========================= */
+
+.message {
+    position: relative;
+
+    margin: 18px 0;
+    padding: 20px 22px;
+
+    background: #fffdf4;
+
+    border: 2px solid #d5dfc8;
+    border-radius: 22px;
+
+    box-shadow: 0 5px 12px rgba(75, 90, 65, 0.12);
+}
+
+
+/* =========================
+   留言時間
+   ========================= */
+
+.time {
+    margin-bottom: 7px;
+
+    color: #9aa58d;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   留言內容
+   ========================= */
+
+.text {
+    margin-top: 4px;
+
+    color: #4f5947;
+
+    font-size: 18px;
+    font-weight: normal;
+
+    line-height: 1.8;
+
+    letter-spacing: 0.5px;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================
+   刪除按鈕
+   ========================= */
+
+.message button {
+    margin-top: 14px;
+
+    padding: 5px 13px;
+
+    background: #d8b59f;
+    color: white;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    border-radius: 15px;
+}
+
+
+.message button:hover {
+    background: #c89b82;
+}
+
+
+/* =========================
+   手機版
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+
+    #loginPage {
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+
+    #loginPage h1 {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+
+    textarea {
+        height: 105px;
+        font-size: 16px;
+    }
+
+
+    .message {
+        padding: 17px;
+    }
+
+
+    .text {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================== -->
+<!-- 登入頁 -->
+<!-- ==================== -->
+
+<div id="loginPage">
+
+    <h1>登入</h1>
+
+
+
+
+
+<input
+    type="text"
+    id="account"
+    placeholder="帳號"
+>
+
+<input
+    type="text"
+    id="password"
+    placeholder="密碼"
+>
+
+<input
+    type="text"
+    class="authCodeA"
+    placeholder="認證碼"
+>
+
+<input
+    type="text"
+    class="authCodeB"
+    placeholder="認證碼"
+>
+
+<button id="loginButton">
+    登入
+</button>
+
+<div id="loginStatus"></div>
+
+</div>
+
+
+
+<!-- ==================== -->
+<!-- 留言板 -->
+<!-- ==================== -->
+
+<div id="boardPage">
+
+    <h1>留言板</h1>
+
+    <textarea
+        id="message"
+        placeholder="請輸入訊息">
+    </textarea>
+
+    <br>
+
+    <button id="sendButton">發表訊息</button>
+
+    <p id="status"></p>
+
+    <hr>
+
+    <h2>所有訊息</h2>
+
+    <div id="list">
+        載入中...
+    </div>
+
+</div>
+
+
+
+
+<!-- var ACCOUNT_API_URL = "https://script.google.com/macros/s/AKfycbyczZLR0SMzqP9fL35Reeocmxfmk2uU5uA2-Zk6Fmvonx36QUJNFl3AgqguADDRD48/exec";
+
+
+API_URL = "https://script.google.com/macros/s/AKfycbyA7b"+authCodeA+"6kN51J2gFS5zqU2cMIq4hW_slY4nsBAOx5LJ4"+authCodeB+"S9N5Y5pfdGF2il3CVqMWI1o9A/exec"; -->
+
+<script>
+
+var API_URL = "";
+
+
+
+var ACCOUNT_API_URL = "https://script.google.com/macros/s/AKfycbyczZLR0SMzqP9fL35Reeocmxfmk2uU5uA2-Zk6Fmvonx36QUJNFl3AgqguADDRD48/exec";
+
+
+
+
+/* =========================
+   登入
+========================= */
+
+$("#loginButton").click(function() {
+
+    var account =
+        $("#account").val().trim();
+
+    var psWord =
+        $("#password").val().trim();
+
+    var authCodeA =
+        $(".authCodeA").val().trim();
+
+    var authCodeB =
+        $(".authCodeB").val().trim();
+
+
+    /* =========================
+       檢查帳號密碼
+    ========================= */
+
+    if (!account || !psWord) {
+
+        $("#loginStatus").text(
+            "請輸入帳號和密碼"
+        );
+
+        return;
+    }
+
+
+    /* =========================
+       檢查認證碼
+    ========================= */
+
+    if (!authCodeA || !authCodeB) {
+
+        $("#loginStatus").text(
+            "請輸入認證碼 A 和認證碼 B"
+        );
+
+        return;
+    }
+
+
+
+    /* =========================
+       建立留言板 API
+    ========================= */
+
+API_URL = "https://script.google.com/macros/s/AKfycbyA7b"+authCodeA+"6kN51J2gFS5zqU2cMIq4hW_slY4nsBAOx5LJ4"+authCodeB+"S9N5Y5pfdGF2il3CVqMWI1o9A/exec";
+
+
+
+    /* =========================
+       真正驗證帳號密碼
+    ========================= */
+
+    $.get(
+
+        ACCOUNT_API_URL,
+
+        {
+
+            account: account,
+
+            password: psWord
+
+        }
+
+    )
+
+    .done(function(data) {
+
+
+        /* =========================
+           登入失敗
+        ========================= */
+
+        if (!data.success) {
+
+            $("#loginStatus").text(
+                "帳號或密碼錯誤"
+            );
+
+            return;
+        }
+
+
+
+        /* =========================
+           登入成功
+        ========================= */
+
+        window.loginUser = {
+
+            account: data.account,
+
+            nickname: data.nickname,
+
+            image: data.image
+
+        };
+
+
+        $("#loginPage").hide();
+
+        $("#boardPage").show();
+
+
+        $("#welcome").text(
+            "你好，"
+            + data.nickname
+        );
+
+
+        /* =========================
+           讀取留言
+        ========================= */
+
+        loadMessages();
+
+    })
+
+
+    .fail(function() {
+
+        $("#loginStatus").text(
+            "無法連接帳號資料庫"
+        );
+
+    });
+
+});
+
+
+
+/* =========================
+   顯示所有留言
+========================= */
+
+function loadMessages() {
+
+    $("#list").empty();
+
+
+    $.get(API_URL)
+
+    .done(function(data) {
+
+
+        if (!data.success) {
+
+            $("#status").text(
+                "讀取留言失敗"
+            );
+
+            return;
+        }
+
+
+        $.each(
+
+            data.messages,
+
+            function(i, item) {
+
+
+                var box = $("<div>");
+
+                box.addClass(
+                    "message"
+                );
+
+
+
+                /* =========================
+                   暱稱
+                ========================= */
+
+                var nickname =
+                    $("<div>");
+
+                nickname.addClass(
+                    "nickname"
+                );
+
+                nickname.text(
+                    item.nickname
+                );
+
+
+
+                /* =========================
+                   時間
+                ========================= */
+
+                var time =
+                    $("<div>");
+
+                time.addClass(
+                    "time"
+                );
+
+                time.text(
+                    item.time
+                );
+
+
+
+                /* =========================
+                   留言
+                ========================= */
+
+                var text =
+                    $("<div>");
+
+                text.addClass(
+                    "text"
+                );
+
+                text.text(
+                    item.message
+                );
+
+
+
+                /* =========================
+                   刪除按鈕
+                ========================= */
+
+                var del =
+                    $("<button>");
+
+                del.text(
+                    "刪除"
+                );
+
+
+
+                del.click(function() {
+
+
+                    $.ajax({
+
+                        url: API_URL,
+
+                        type: "POST",
+
+                        contentType: "text/plain",
+
+                        data: JSON.stringify({
+
+                            action: "hide",
+
+                            id: item.id
+
+                        }),
+
+
+                        success: function(data) {
+
+
+                            if (data.success) {
+
+                                box.remove();
+
+                            }
+                            else {
+
+                                alert(
+                                    "刪除失敗"
+                                );
+
+                            }
+
+                        },
+
+
+                        error: function() {
+
+                            alert(
+                                "刪除失敗"
+                            );
+
+                        }
+
+                    });
+
+                });
+
+
+
+                /* =========================
+                   組合留言
+                ========================= */
+
+                box.append(
+                    nickname
+                );
+
+                box.append(
+                    time
+                );
+
+                box.append(
+                    text
+                );
+
+                box.append(
+                    del
+                );
+
+
+                $("#list").append(
+                    box
+                );
+
+            }
+
+        );
+
+    })
+
+
+    .fail(function() {
+
+        $("#status").text(
+            "無法讀取留言"
+        );
+
+    });
+
+}
+
+
+
+/* =========================
+   發表留言
+========================= */
+
+$("#sendButton").click(function() {
+
+    var message =
+        $("#message").val().trim();
+
+
+    if (!message) {
+
+        $("#status").text(
+            "請輸入留言"
+        );
+
+        return;
+    }
+
+
+    if (!window.loginUser) {
+
+        $("#status").text(
+            "請先登入"
+        );
+
+        return;
+    }
+
+
+    var nickname =
+        window.loginUser.nickname;
+
+
+
+    /* =========================
+       儲存留言
+    ========================= */
+
+    $.ajax({
+
+        url: API_URL,
+
+        type: "POST",
+
+        contentType: "text/plain",
+
+        data: JSON.stringify({
+
+            action: "add",
+
+            nickname: nickname,
+
+            message: message
+
+        }),
+
+
+        success: function(data) {
+
+
+            if (data.success) {
+
+                $("#message").val("");
+
+                $("#status").text(
+                    "留言成功"
+                );
+
+                loadMessages();
+
+            }
+            else {
+
+                $("#status").text(
+                    "留言失敗"
+                );
+
+            }
+
+        },
+
+
+        error: function() {
+
+            $("#status").text(
+                "無法連接留言資料庫"
+            );
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+
+
+</body>
+
+</html>
